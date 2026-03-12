@@ -88,11 +88,11 @@ export default function HeroEstimateForm() {
           <input
             type="checkbox"
             {...register('consent')}
-            className="mt-1 w-4 h-4 text-primary bg-white border-gray-300 rounded focus:ring-primary focus:ring-2"
+            className="mt-1 w-5 h-5 text-primary bg-white border-gray-300 rounded focus:ring-primary focus:ring-2 cursor-pointer"
           />
-          <span className="text-sm text-gray-700 leading-relaxed">
+          <span className="text-base text-gray-700 leading-relaxed">
             By submitting, you authorize Topline Plumbing to contact you via call, text, or email regarding your inquiry. Message/data rates may apply. Opt out anytime.{' '}
-            <a href="/contact" className="text-blue-600 hover:underline">
+            <a href="/contact" className="text-secondary hover:underline">
               View our Privacy Policy
             </a>
             .

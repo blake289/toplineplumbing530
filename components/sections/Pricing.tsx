@@ -79,7 +79,7 @@ export default function Pricing() {
           {pricingCards.map((card, index) => (
             <div
               key={index}
-              className={`bg-white/5 backdrop-blur-sm p-8 rounded-xl border flex flex-col transition-all duration-base hover:-translate-y-2 hover:bg-white/10 ${
+              className={`bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-xl border flex flex-col transition-all duration-base hover:-translate-y-2 hover:bg-white/10 ${
                 card.featured
                   ? 'border-accent border-2 hover:shadow-2xl'
                   : 'border-white/10 hover:shadow-xl'

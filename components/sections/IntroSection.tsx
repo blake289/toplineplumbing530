@@ -10,7 +10,7 @@ export default function IntroSection() {
           {/* Left: Image with Red Accent */}
           <div className="relative">
             {/* Red accent box behind image */}
-            <div className="absolute top-4 -left-4 w-full h-full bg-primary rounded-lg -z-10" />
+            <div className="absolute top-4 left-2 md:-left-4 w-full h-full bg-primary rounded-lg -z-10" />
             <Image
               src="/images/truck.webp"
               alt="Topline Plumbing Vans"
@@ -33,13 +33,13 @@ export default function IntroSection() {
               Your Local Plumbing Experts
             </h2>
 
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
               As the leading <strong>Redding plumber</strong> since 1998, Topline Plumbing provides the fast, reliable
               solutions you need to stop leaks and clear drains today. Our family-owned team specializes in expert repairs,
               upfront pricing, and comprehensive plumbing services for homeowners and businesses across Northern California.
             </p>
 
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
               Whether you need emergency drain cleaning or a water heater replacement, we are fully licensed, insured, and
               dedicated to getting the job done right the first time with a 100% satisfaction guarantee. Skip the stress and
               the mess; call us now to secure your upfront estimate and see why your neighbors have trusted us for decades.

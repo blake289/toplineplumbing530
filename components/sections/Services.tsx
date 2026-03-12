@@ -89,7 +89,7 @@ export default function Services() {
             <Link
               key={index}
               href={service.href}
-              className="group p-8 border-2 border-border rounded-xl bg-white hover:border-secondary hover:-translate-y-1 hover:shadow-2xl transition-all duration-base flex flex-col h-full"
+              className="group p-6 md:p-8 border-2 border-gray-200 rounded-xl bg-white hover:border-secondary hover:-translate-y-1 hover:shadow-xl transition-all duration-base flex flex-col h-full"
             >
               {/* Icon */}
               <div className="mb-6 text-primary group-hover:scale-110 transition-all duration-base">

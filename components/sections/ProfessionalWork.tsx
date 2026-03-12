@@ -16,15 +16,21 @@ export default function ProfessionalWork() {
             </p>
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-base">
-                <span className="text-primary text-xl">✓</span>
+                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 <span className="text-gray-900">Licensed & Insured Professionals</span>
               </li>
               <li className="flex items-center gap-3 text-base">
-                <span className="text-primary text-xl">✓</span>
+                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 <span className="text-gray-900">Ongoing Training & Certification</span>
               </li>
               <li className="flex items-center gap-3 text-base">
-                <span className="text-primary text-xl">✓</span>
+                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 <span className="text-gray-900">100% Satisfaction Guaranteed</span>
               </li>
             </ul>
@@ -33,7 +39,7 @@ export default function ProfessionalWork() {
           {/* Right: Image with Navy Accent */}
           <div className="relative order-first lg:order-last">
             {/* Navy accent box behind image */}
-            <div className="absolute -top-4 -right-4 w-full h-full bg-navy-900 rounded-lg -z-10" />
+            <div className="absolute -top-4 right-2 md:-right-4 w-full h-full bg-navy-900 rounded-lg -z-10" />
             <Image
               src="/images/joe-cindy.png"
               alt="Topline Plumbing Technician at Work"

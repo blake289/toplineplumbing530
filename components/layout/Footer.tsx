@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12 text-sm md:text-base">
             <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Chico
             </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
               height={80}
               className="mb-4"
             />
-            <p className="text-gray-300 mb-6 text-base">
+            <p className="text-gray-300 mb-6 text-sm">
               Auburn & Grass Valley's most trusted plumber since 1998.
             </p>
             {/* Social Icons */}
@@ -173,7 +173,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:Toplineplumbingredding@gmail.com"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base whitespace-nowrap"
+                className="text-gray-200 hover:text-white hover:translate-x-1 transition-all duration-base text-base whitespace-nowrap"
               >
                 Toplineplumbingredding@gmail.com
               </a>

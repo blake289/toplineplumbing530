@@ -62,7 +62,7 @@ function StatCard({ target, label, highlight = false, suffix = '' }: StatProps) 
   return (
     <div
       ref={ref}
-      className="bg-white p-8 rounded-lg border border-gray-100 text-center shadow-sm"
+      className="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm"
     >
       <div
         className={`text-5xl md:text-6xl font-heading font-extrabold leading-none mb-2 ${
@@ -88,49 +88,55 @@ export default function StatsSection() {
             <h2 className="text-3xl md:text-4xl lg:text-[42px] font-heading font-bold uppercase text-gray-900 mb-6 leading-tight">
               Why Topline Should Be Your First Call
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-prose">
               When an emergency strikes, you don't have time to gamble on an unproven plumber. We built Topline Plumbing on
               a foundation of trust, upfront pricing, and technical excellence.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  ✓
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">
                     Upfront, Transparent Pricing
                   </h4>
-                  <p className="text-gray-600 text-base">
+                  <p className="text-gray-600 text-base max-w-prose">
                     No hidden fees or surprises at the end of the job.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  ✓
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">
                     Local & Dedicated
                   </h4>
-                  <p className="text-gray-600 text-base">
+                  <p className="text-gray-600 text-base max-w-prose">
                     We treat every home with the respect we give our own.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  ✓
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">
                     100% Guaranteed Work
                   </h4>
-                  <p className="text-gray-600 text-base">
+                  <p className="text-gray-600 text-base max-w-prose">
                     Our job isn't done until you're completely satisfied.
                   </p>
                 </div>

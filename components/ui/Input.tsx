@@ -39,7 +39,7 @@ export default function Input({
           font-body
           transition-all duration-fast
           focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent
-          disabled:bg-gray-100 disabled:cursor-not-allowed
+          disabled:bg-gray-100 disabled:cursor-not-allowed disabled:text-gray-500
           ${error ? 'border-primary focus:ring-primary' : 'border-gray-300'}
           ${className}
         `}

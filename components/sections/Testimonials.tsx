@@ -46,7 +46,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl border-l-4 border-primary shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-base flex flex-col h-full"
+              className="bg-white p-6 md:p-8 rounded-xl border-l-4 border-primary shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-base flex flex-col h-full"
             >
               {/* Star Rating */}
               <div className="flex gap-1 mb-6">

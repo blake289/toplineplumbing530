@@ -193,7 +193,7 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
           {/* Mobile CTA Button */}
           <a
             href="tel:5307689446"
-            className="mt-6 h-12 px-6 bg-primary text-white font-btn font-semibold rounded-lg inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all duration-base shadow-md w-full"
+            className="mt-6 h-12 px-6 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all duration-base shadow-md w-full"
             onClick={onClose}
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
