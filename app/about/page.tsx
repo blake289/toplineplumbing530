@@ -161,6 +161,46 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* MEET THE TEAM SECTION */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-8 h-[2px] bg-[#dc2626]" />
+              <span className="text-[#dc2626] text-xs font-bold uppercase tracking-wider">Our Team</span>
+              <div className="w-8 h-[2px] bg-[#dc2626]" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#1e3a5f]">
+              Meet Joe & Cindy Torculas
+            </h2>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+              Family-owned and operated since 1998, serving Redding and Northern California with pride
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-casual.png"
+                alt="Joe and Cindy Torculas - Topline Plumbing Owners"
+                width={1209}
+                height={806}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-work.png"
+                alt="Topline Plumbing Team at Work"
+                width={1280}
+                height={853}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 5 — SOCIAL PROOF STRIP */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
