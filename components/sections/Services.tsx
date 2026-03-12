@@ -92,7 +92,7 @@ export default function Services() {
               className="group p-6 md:p-8 border-2 border-gray-200 rounded-xl bg-white hover:border-secondary hover:-translate-y-1 hover:shadow-xl transition-all duration-base flex flex-col h-full"
             >
               {/* Icon */}
-              <div className="mb-6 text-primary group-hover:scale-110 transition-all duration-base">
+              <div className="mb-6 text-primary">
                 {service.icon}
               </div>
 
