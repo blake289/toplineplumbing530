@@ -35,7 +35,7 @@ export default function Navbar() {
                 <button
                   onMouseEnter={() => setOpenDropdown('services')}
                   onMouseLeave={() => setOpenDropdown(null)}
-                  className="text-white text-sm font-medium hover:text-gray-200 transition-colors flex items-center gap-1 h-11 whitespace-nowrap"
+                  className="text-white text-xs xl:text-sm font-medium hover:text-gray-200 transition-colors flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Services
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <button
                   onMouseEnter={() => setOpenDropdown('areas')}
                   onMouseLeave={() => setOpenDropdown(null)}
-                  className="text-white text-sm font-medium hover:text-gray-200 transition-colors flex items-center gap-1 h-11 whitespace-nowrap"
+                  className="text-white text-xs xl:text-sm font-medium hover:text-gray-200 transition-colors flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Service Areas
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,10 +94,10 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/about" className="text-white text-sm font-medium hover:text-gray-200 transition-colors whitespace-nowrap">
+              <Link href="/about" className="text-white text-xs xl:text-sm font-medium hover:text-gray-200 transition-colors whitespace-nowrap">
                 About
               </Link>
-              <Link href="/contact" className="text-white text-sm font-medium hover:text-gray-200 transition-colors whitespace-nowrap">
+              <Link href="/contact" className="text-white text-xs xl:text-sm font-medium hover:text-gray-200 transition-colors whitespace-nowrap">
                 Contact
               </Link>
             </nav>
