@@ -12,51 +12,10 @@ export default function AboutPage() {
   return (
     <>
       {/* SECTION 1 — PAGE HERO BANNER */}
-      <section className="relative bg-[#1e3a5f] min-h-[280px] md:min-h-[320px] overflow-hidden">
-        {/* Subtle dot pattern overlay */}
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }} />
-
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 items-center">
-            {/* Left side - Text content */}
-            <div className="animate-fade-in-up">
-              {/* Breadcrumb */}
-              <nav className="text-white/50 text-sm mb-4">
-                <Link href="/" className="hover:text-white/70 transition-colors duration-150">Home</Link>
-                <span className="mx-2">/</span>
-                <span className="text-white/70">About</span>
-              </nav>
-
-              {/* H1 */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
-                About Topline Plumbing
-              </h1>
-
-              {/* Red horizontal rule */}
-              <div className="w-12 h-[3px] bg-[#dc2626] mb-4" />
-
-              {/* Subtitle */}
-              <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl">
-                Your trusted plumbing partner in Redding & Northern California since 1998
-              </p>
-            </div>
-
-            {/* Right side - Image (desktop only) */}
-            <div className="hidden lg:block animate-fade-in-right">
-              <div className="relative">
-                <Image
-                  src="/images/joe-cindy.png"
-                  alt="Joe and Cindy Torculas - Topline Plumbing Team"
-                  width={400}
-                  height={500}
-                  className="rounded-xl shadow-2xl object-cover w-full aspect-[4/5]"
-                />
-              </div>
-            </div>
-          </div>
+      <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 text-white">About Topline Plumbing</h1>
+          <p className="text-lg md:text-xl text-white text-opacity-90">Your trusted plumbing partner in Redding & Northern California since 1998</p>
         </div>
       </section>
 
