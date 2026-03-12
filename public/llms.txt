@@ -1,0 +1,128 @@
+# Topline Plumbing 530
+
+> Professional Plumbing Services in Northern California
+
+## Business Information
+
+- **Company**: Topline Plumbing 530
+- **Phone**: (530) 768-9446
+- **Email**: Toplineplumbingredding@gmail.com
+- **Service Area**: Northern California (530 area code)
+- **Established**: 1998
+- **Rating**: 4.9 stars (427+ reviews)
+- **Licenses**: Licensed, Bonded & Insured California Plumber
+
+## Services Offered
+
+### Emergency Services
+- 24/7 Emergency Plumbing
+- Burst Pipe Repair
+- Gas Leak Detection
+- Flood Response
+- Average Response Time: 60 minutes
+
+### Water Heater Services
+- Water Heater Repair
+- Water Heater Replacement
+- Tankless Water Heater Installation
+- Same-Day Service Available
+- Service Starting at $127
+
+### Drain & Sewer
+- Drain Cleaning
+- Sewer Line Clearing
+- Clogged Drain Repair
+- Power Auger Service
+- Service Starting at $130
+
+### Additional Services
+- Repiping Services (PEX & Copper)
+- Fixture Installation (Sinks, Toilets, Faucets, Showers)
+- Leak Detection & Repair
+- Residential & Commercial Plumbing
+
+## Service Areas
+
+Topline Plumbing 530 serves the following cities in Northern California:
+
+1. **Chico** (Butte County)
+2. **Redding** (Shasta County)
+3. **Yuba City** (Sutter County)
+4. **Marysville** (Yuba County)
+5. **Paradise** (Butte County)
+6. **Oroville** (Butte County)
+7. **Red Bluff** (Tehama County)
+8. **Anderson** (Shasta County)
+9. **South Lake Tahoe** (El Dorado County)
+10. **Truckee** (Nevada County)
+11. **Grass Valley** (Nevada County)
+12. **Auburn** (Placer County)
+
+## Key Features
+
+- **Same-Day Service**: Available for most repairs
+- **Upfront Pricing**: No hidden fees
+- **24/7 Availability**: Real person answers, no voicemail
+- **Fully Stocked Trucks**: Most repairs completed on-site
+- **Licensed Professionals**: All plumbers are CA licensed
+- **100% Satisfaction Guarantee**
+
+## Contact Methods
+
+- **Emergency Line**: (530) 768-9446 (24/7)
+- **Online Booking**: Available on website
+- **Email**: Toplineplumbingredding@gmail.com
+- **Service Hours**: 24/7 Emergency Service
+- **Service Radius**: All of Northern California
+
+## Social Media
+
+- Facebook: https://www.facebook.com/profile.php?id=61551944100731
+- Instagram: https://www.instagram.com/toplinewatersolutions/
+
+## Why Choose Topline Plumbing?
+
+1. **Local Expertise**: Serving Northern California for 15+ years
+2. **Fast Response**: 60-minute average emergency response time
+3. **Quality Work**: 4.9-star rating from 427+ satisfied customers
+4. **Transparent**: Upfront pricing before work begins
+5. **Professional**: Licensed, bonded, and insured
+6. **Available**: 24/7 emergency service, same-day appointments
+
+## Common Plumbing Issues We Fix
+
+- Burst pipes and leaks
+- Clogged drains and toilets
+- Water heater failures
+- Sewer backups
+- Gas leaks
+- Low water pressure
+- Fixture installations
+- Pipe replacements
+- Emergency flooding
+
+## Pricing
+
+- **Drain Cleaning**: Starting at $130
+- **Water Heater Service**: Starting at $127
+- **Emergency Service**: Available 24/7
+- **Free Estimates**: Available
+- **Upfront Pricing**: No surprises
+
+## Website Structure
+
+- **Homepage**: Overview of services
+- **Services Pages**: Detailed service information
+  - /services/emergency
+  - /services/water-heater-repair
+  - /services/drain-cleaning
+  - /services/tankless
+- **Service Area Pages**: Location-specific information for all 12 cities
+  - /areas/[city-name]
+- **About**: Company information
+- **Contact**: Contact form and information
+
+---
+
+*Last Updated: March 2026*
+*Built with Next.js | Optimized for SEO*

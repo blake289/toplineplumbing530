@@ -1,0 +1,40 @@
+import { Metadata } from 'next';
+import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
+
+export const metadata: Metadata = {
+  title: 'Plumber in Bella Vista, CA | Topline Plumbing',
+  description: 'Local plumbing services in Bella Vista, CA. Water heater repair, drain cleaning, and emergency plumbing. Call (530) 768-9446.',
+};
+
+export default function BellaVistaPage() {
+  return (
+    <LocationPageTemplate
+      locationName="Bella Vista"
+      hero={{
+        title: 'Local Plumbers Serving Bella Vista, CA',
+        description: 'Quality plumbing services for Bella Vista residents. Water heater repair, drain cleaning, and 24/7 emergency response.',
+      }}
+      about={{
+        intro: "Bella Vista residents deserve plumbing services from a local team that understands the community. Topline Plumbing provides fast, professional service with the personal touch of a family-owned business.",
+        details: "We've been serving Northern California for over 30 years, building our reputation on honesty, quality work, and customer satisfaction. When you call us, you'll always speak with a real person who cares.",
+      }}
+      services={[
+        {
+          title: 'Complete Water Heater Services',
+          description: "From diagnostic inspections to full replacements, we handle all water heater needs. Service starting at $127 with same-day availability.",
+          href: '/services/water-heater-repair',
+        },
+        {
+          title: 'Professional Drain Cleaning',
+          description: 'Clear tough clogs with professional mechanical augering. No harsh chemicals, just effective results. Starting at $130.',
+          href: '/services/drain-cleaning',
+        },
+        {
+          title: 'Round-the-Clock Emergency Service',
+          description: 'Burst pipes? Gas leak? Flooding? Call us anytime, day or night. Real person answers, fast response, upfront pricing.',
+          href: '/services/emergency',
+        },
+      ]}
+    />
+  );
+}
