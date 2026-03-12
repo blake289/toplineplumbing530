@@ -38,7 +38,7 @@ const pricingCards = [
       'Same-day service available',
     ],
     href: '/services/drain-cleaning',
-    featured: true,
+    featured: false,
   },
   {
     icon: (
