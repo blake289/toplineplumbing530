@@ -4,7 +4,7 @@ import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-0">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-0">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -79,11 +79,11 @@ export default function Hero() {
 
           {/* Right: Contact Form */}
           <div className="w-full">
-            <Card padding="md" shadow="xl">
-              <h2 className="text-xl font-heading font-bold text-text-dark mb-3 text-center">
+            <Card padding="sm" shadow="xl">
+              <h2 className="text-lg font-heading font-bold text-text-dark mb-2 text-center">
                 Get a Free Estimate
               </h2>
-              <p className="text-text-light text-sm mb-4">
+              <p className="text-text-light text-sm mb-3">
                 Fill out the form and we'll get back to you within 1 hour
               </p>
               <HeroEstimateForm />

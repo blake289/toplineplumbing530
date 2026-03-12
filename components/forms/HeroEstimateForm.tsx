@@ -43,7 +43,7 @@ export default function HeroEstimateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
       <Input
         label="First Name"
         {...register('firstName')}
@@ -78,7 +78,7 @@ export default function HeroEstimateForm() {
         label="Message"
         {...register('message')}
         placeholder="Brief description of your plumbing need..."
-        rows={3}
+        rows={2}
         error={errors.message?.message}
       />
 
