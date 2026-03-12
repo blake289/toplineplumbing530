@@ -62,64 +62,64 @@ const pricingCards = [
 
 export default function Pricing() {
   return (
-    <section className="py-20 md:py-28" style={{ background: '#0D1B2A' }}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+    <section className="section-padding" style={{ background: '#0D1B2A' }}>
+      <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-[56px] font-heading font-bold uppercase text-white tracking-wider mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
             Our Services & Pricing
           </h2>
-          <p className="text-white text-opacity-70 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Premium plumbing services with transparent, upfront pricing. No hidden fees, no surprises.
           </p>
         </div>
 
-        {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Pricing Cards Grid - Equal height with aligned CTAs */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingCards.map((card, index) => (
             <div
               key={index}
-              className={`bg-white bg-opacity-[0.04] backdrop-blur-sm p-8 md:p-10 rounded-xl border transition-all duration-base hover:-translate-y-2 hover:bg-opacity-[0.08] ${
+              className={`bg-white/5 backdrop-blur-sm p-8 rounded-xl border flex flex-col transition-all duration-base hover:-translate-y-2 hover:bg-white/10 ${
                 card.featured
                   ? 'border-accent border-2 hover:shadow-2xl'
-                  : 'border-white border-opacity-[0.08] hover:shadow-xl'
+                  : 'border-white/10 hover:shadow-xl'
               }`}
             >
               {/* Icon */}
               <div className="mb-6">{card.icon}</div>
 
               {/* Title */}
-              <h3 className="font-heading text-xl uppercase text-white text-opacity-90 tracking-wider mb-4 font-semibold">
+              <h3 className="font-heading text-xl uppercase text-white tracking-wider mb-4 font-semibold">
                 {card.title}
               </h3>
 
-              {/* Price */}
-              <div className="text-6xl md:text-7xl font-heading font-bold text-white mb-5 leading-none">
+              {/* Price - with proper padding/word-break */}
+              <div className="text-5xl md:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2">
                 {card.price}
               </div>
 
               {/* Description */}
-              <p className="text-white text-opacity-60 mb-6 leading-relaxed">
+              <p className="text-white/60 mb-6 leading-relaxed text-base">
                 {card.description}
               </p>
 
-              {/* Features List */}
-              <ul className="space-y-3 mb-8">
+              {/* Features List - flex-grow pushes CTA to bottom */}
+              <ul className="space-y-3 mb-8 flex-grow">
                 {card.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-white text-opacity-70 text-sm">
+                  <li key={idx} className="flex items-start gap-3 text-white/70 text-sm">
                     <span className="text-accent mt-0.5">✓</span>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              {/* CTA Button */}
+              {/* CTA Button - aligned at bottom */}
               <Link
                 href={card.href}
-                className={`block text-center py-3 px-6 rounded-lg font-semibold transition-all duration-base ${
+                className={`block text-center py-3.5 px-6 rounded-full font-semibold transition-all duration-base whitespace-nowrap hover:scale-105 touch-target ${
                   card.featured
-                    ? 'bg-accent text-navy-900 hover:bg-[#d99320] border-2 border-accent'
-                    : 'border-2 border-white border-opacity-20 text-white hover:bg-white hover:bg-opacity-10 hover:border-opacity-40'
+                    ? 'bg-accent text-navy-900 hover:bg-accent-yellow border-2 border-accent shadow-md'
+                    : 'border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/40'
                 }`}
               >
                 Book Service
