@@ -51,7 +51,7 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-navy-900 text-white p-12 rounded-lg">
-            <h2 className="text-3xl font-heading font-bold mb-6 text-white">Why Choose Topline Plumbing?</h2>
+            <h2 className="text-3xl font-heading font-bold mb-6 text-white text-center">Why Choose Topline Plumbing?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span className="text-white font-bold">✓</span></div>
