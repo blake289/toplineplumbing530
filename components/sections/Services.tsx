@@ -89,25 +89,25 @@ export default function Services() {
             <Link
               key={index}
               href={service.href}
-              className="group p-8 border-2 border-white/10 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-secondary/50 hover:-translate-y-1 hover:shadow-xl transition-all duration-base flex flex-col h-full"
+              className="group p-8 border-2 border-border rounded-xl bg-white hover:border-secondary hover:-translate-y-1 hover:shadow-2xl transition-all duration-base flex flex-col h-full"
             >
               {/* Icon */}
-              <div className="mb-6 text-secondary group-hover:text-secondary-light group-hover:scale-110 transition-all duration-base">
+              <div className="mb-6 text-primary group-hover:scale-110 transition-all duration-base">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-heading font-bold text-white mb-3 group-hover:text-secondary-light transition-colors duration-base">
+              <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3 transition-colors duration-base">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-base text-white/75 mb-6 leading-relaxed flex-grow">
+              <p className="text-base text-text-light mb-6 leading-relaxed flex-grow">
                 {service.description}
               </p>
 
               {/* CTA Link */}
-              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-primary-light uppercase text-sm tracking-wide transition-all duration-base">
+              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-primary-dark uppercase text-sm tracking-wide transition-all duration-base">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
