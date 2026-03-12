@@ -37,7 +37,7 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-colors duration-200 flex items-center gap-1 h-11 whitespace-nowrap relative group"
+                  className="text-white text-sm xl:text-base font-medium hover:text-white transition-colors duration-200 flex items-center gap-1 h-11 whitespace-nowrap relative group"
                 >
                   Services
                   <svg className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,7 +72,7 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-colors duration-200 flex items-center gap-1 h-11 whitespace-nowrap relative group"
+                  className="text-white text-sm xl:text-base font-medium hover:text-white transition-colors duration-200 flex items-center gap-1 h-11 whitespace-nowrap relative group"
                 >
                   Service Areas
                   <svg className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,11 +100,11 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/about" className="text-white text-sm xl:text-base font-medium hover:text-secondary focus-visible:text-secondary transition-colors duration-200 whitespace-nowrap relative group">
+              <Link href="/about" className="text-white text-sm xl:text-base font-medium hover:text-white focus-visible:text-white transition-colors duration-200 whitespace-nowrap relative group">
                 About
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary group-hover:w-full transition-all duration-200"></span>
               </Link>
-              <Link href="/contact" className="text-white text-sm xl:text-base font-medium hover:text-secondary focus-visible:text-secondary transition-colors duration-200 whitespace-nowrap relative group">
+              <Link href="/contact" className="text-white text-sm xl:text-base font-medium hover:text-white focus-visible:text-white transition-colors duration-200 whitespace-nowrap relative group">
                 Contact
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary group-hover:w-full transition-all duration-200"></span>
               </Link>

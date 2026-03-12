@@ -110,7 +110,7 @@ export default function Services() {
               </p>
 
               {/* CTA Link */}
-              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-secondary uppercase text-sm tracking-wide transition-colors duration-200">
+              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-primary uppercase text-sm tracking-wide transition-colors duration-200">
                 Learn More
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

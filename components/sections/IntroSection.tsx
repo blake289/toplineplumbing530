@@ -48,7 +48,7 @@ export default function IntroSection() {
             <div>
               <Link
                 href="/contact"
-                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:bg-primary-dark hover:scale-105 transition-all duration-base shadow-md hover:shadow-brand touch-target"
+                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:-translate-y-0.5 hover:shadow-brand transition-all duration-200 shadow-md touch-target"
               >
                 Request Estimate
               </Link>
