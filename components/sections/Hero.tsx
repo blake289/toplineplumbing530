@@ -80,12 +80,9 @@ export default function Hero() {
           {/* Right: Contact Form */}
           <div className="w-full">
             <Card padding="sm" shadow="xl">
-              <h2 className="text-lg font-heading font-bold text-text-dark mb-2 text-center">
+              <h2 className="text-lg font-heading font-bold text-text-dark mb-4 text-center">
                 Get a Free Estimate
               </h2>
-              <p className="text-text-light text-sm mb-3">
-                Fill out the form and we'll get back to you within 1 hour
-              </p>
               <HeroEstimateForm />
             </Card>
           </div>
