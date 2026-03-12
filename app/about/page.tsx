@@ -19,8 +19,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 2 — STATS BAR */}
-      <StatsBar />
+      {/* MEET THE TEAM SECTION - Moved to top */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-8 h-[2px] bg-[#dc2626]" />
+              <span className="text-[#dc2626] text-xs font-bold uppercase tracking-wider">Our Team</span>
+              <div className="w-8 h-[2px] bg-[#dc2626]" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#1e3a5f]">
+              Meet Joe & Cindy Torculas
+            </h2>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+              Family-owned and operated since 1998, serving Redding and Northern California with pride
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-casual.png"
+                alt="Joe and Cindy Torculas - Topline Plumbing Owners"
+                width={1209}
+                height={806}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 3 — OUR STORY (two-column) */}
       <section className="py-20 bg-white">
@@ -112,11 +140,11 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          {/* Cards grid */}
+          {/* Cards grid - Centered */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card 1 - Licensed & Insured */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200">
-              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200 text-center">
+              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -126,8 +154,8 @@ export default function AboutPage() {
             </div>
 
             {/* Card 2 - Upfront Pricing */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200">
-              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200 text-center">
+              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                 </svg>
@@ -137,8 +165,8 @@ export default function AboutPage() {
             </div>
 
             {/* Card 3 - Same-Day Service */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200">
-              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200 text-center">
+              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -148,54 +176,14 @@ export default function AboutPage() {
             </div>
 
             {/* Card 4 - 100% Satisfaction */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200">
-              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:-translate-y-1 focus-within:bg-white/10 transition-all duration-200 text-center">
+              <div className="w-10 h-10 bg-[#dc2626] rounded-full flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">100% Satisfaction Guarantee</h3>
               <p className="text-white/70 text-sm leading-relaxed">We're not done until you're completely satisfied</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MEET THE TEAM SECTION */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-[2px] bg-[#dc2626]" />
-              <span className="text-[#dc2626] text-xs font-bold uppercase tracking-wider">Our Team</span>
-              <div className="w-8 h-[2px] bg-[#dc2626]" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#1e3a5f]">
-              Meet Joe & Cindy Torculas
-            </h2>
-            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-              Family-owned and operated since 1998, serving Redding and Northern California with pride
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/team-casual.png"
-                alt="Joe and Cindy Torculas - Topline Plumbing Owners"
-                width={1209}
-                height={806}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/images/team-work.png"
-                alt="Topline Plumbing Team at Work"
-                width={1280}
-                height={853}
-                className="w-full h-full object-cover"
-              />
             </div>
           </div>
         </div>
