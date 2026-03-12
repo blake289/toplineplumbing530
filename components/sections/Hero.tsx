@@ -79,7 +79,7 @@ export default function Hero() {
 
           {/* Right: Contact Form */}
           <div className="w-full">
-            <Card padding="sm" shadow="xl">
+            <Card padding="sm" shadow="lg">
               <h2 className="text-xl font-heading font-bold text-text-dark mb-4 text-center">
                 Get a Free Estimate
               </h2>
