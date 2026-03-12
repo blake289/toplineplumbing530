@@ -19,7 +19,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   // Base styles - minimum 44px height for WCAG touch targets
-  const baseStyles = 'font-btn font-semibold rounded-full transition-all duration-base focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 touch-target';
+  const baseStyles = 'font-btn font-semibold rounded-full transition-all duration-base focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 touch-target whitespace-nowrap';
 
   // Variant styles with proper hover effects
   const variants = {
