@@ -77,7 +77,7 @@ export default function ContactPage() {
             </div>
 
             <Card padding="lg" shadow="lg">
-              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate</h2>
+              <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate</h2>
               <HeroEstimateForm />
             </Card>
           </div>
