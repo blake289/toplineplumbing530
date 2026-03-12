@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function IntroSection() {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Image with Red Accent */}
@@ -48,7 +48,7 @@ export default function IntroSection() {
             <div>
               <Link
                 href="/contact"
-                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:bg-primary-dark transition-all duration-base shadow-md hover:shadow-lg"
+                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:bg-primary-dark hover:scale-105 transition-all duration-base shadow-md hover:shadow-brand touch-target"
               >
                 Request Estimate
               </Link>

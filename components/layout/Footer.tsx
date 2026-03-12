@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 text-gray-100 py-16 md:py-20">
+    <footer className="bg-navy-900 text-gray-100 section-padding">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Service Areas Section - SEO */}
         <div className="mb-12">
@@ -16,40 +16,40 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
-            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Chico
             </Link>
-            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Redding
             </Link>
-            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Yuba City
             </Link>
-            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Marysville
             </Link>
-            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Paradise
             </Link>
-            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Oroville
             </Link>
-            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Red Bluff
             </Link>
-            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Anderson
             </Link>
-            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber South Lake Tahoe
             </Link>
-            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Truckee
             </Link>
-            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Grass Valley
             </Link>
-            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-full border-2 border-blue-500 text-gray-200 hover:bg-blue-500 hover:text-white transition-all duration-200">
+            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
               Plumber Auburn
             </Link>
           </div>

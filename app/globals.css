@@ -3,43 +3,88 @@
 @tailwind utilities;
 
 @layer base {
+  /* Typography Base */
   html {
-    @apply font-body text-gray-600 scroll-smooth;
-    font-size: 16px;
+    @apply font-body text-base text-text scroll-smooth antialiased;
+    font-size: 16px; /* Never less than 16px for accessibility */
     line-height: 1.6;
   }
 
   body {
     @apply bg-white overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
+  /* Heading Hierarchy */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading text-gray-900;
+    @apply font-heading font-bold text-text-dark;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
   }
 
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+  }
+
+  /* Body text - minimum 16px, good contrast */
+  p {
+    @apply text-base text-text;
+    line-height: 1.7;
+  }
+
+  /* Images */
   img {
     @apply max-w-full h-auto block;
   }
 
+  /* Links */
   a {
-    @apply text-navy-500 transition-colors duration-fast;
+    @apply text-secondary transition-colors duration-base;
   }
 
   a:hover {
-    @apply text-navy-700;
+    @apply text-secondary-dark;
   }
 
+  /* Lists */
   ul {
     @apply list-none;
   }
 
+  /* Buttons */
   button {
     @apply cursor-pointer;
     font-family: inherit;
   }
+
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 rounded;
+  }
 }
 
-/* Custom Animations for Scroll Effects */
+/* Custom Animations */
 @layer utilities {
   .animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
@@ -68,9 +113,9 @@
     transform: translateY(0);
   }
 
-  /* Status Dot Animation */
+  /* Status Dot Animation for 24/7 badge */
   .status-dot {
-    @apply w-2 h-2 rounded-full bg-green-400;
+    @apply w-2 h-2 rounded-full bg-accent-green;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
@@ -82,4 +127,50 @@
       opacity: 0.5;
     }
   }
+
+  /* Touch targets - minimum 44x44px for accessibility */
+  .touch-target {
+    @apply min-w-[44px] min-h-[44px];
+  }
+
+  /* Text overlay on images - WCAG AA compliant */
+  .text-overlay {
+    @apply relative;
+  }
+
+  .text-overlay::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 to-black/30;
+  }
+
+  /* Section spacing consistency */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-padding {
+    @apply px-4 md:px-8 lg:px-12;
+  }
+
+  /* Smooth hover transitions */
+  .hover-lift {
+    @apply transition-all duration-base hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-base hover:scale-105;
+  }
+
+  /* Prevent orphaned words */
+  .no-orphans {
+    text-wrap: pretty;
+  }
 }
+
+/* Responsive breakpoints documentation
+   sm: 640px
+   md: 768px
+   lg: 1024px
+   xl: 1280px
+   2xl: 1536px
+*/

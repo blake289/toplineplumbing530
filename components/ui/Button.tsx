@@ -18,19 +18,19 @@ export default function Button({
   disabled,
   ...props
 }: ButtonProps) {
-  // Base styles (48px minimum height for WCAG compliance)
-  const baseStyles = 'font-btn font-semibold rounded-lg transition-all duration-base focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2';
+  // Base styles - minimum 44px height for WCAG touch targets
+  const baseStyles = 'font-btn font-semibold rounded-full transition-all duration-base focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 touch-target';
 
-  // Variant styles
+  // Variant styles with proper hover effects
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primary-dark focus-visible:ring-primary shadow-md hover:shadow-lg',
-    secondary: 'bg-navy-900 text-white hover:bg-navy-700 focus-visible:ring-navy-700 shadow-md hover:shadow-lg',
-    outline: 'border-2 border-navy-900 text-navy-900 bg-transparent hover:bg-navy-50 focus-visible:ring-navy-500',
+    primary: 'bg-primary text-white hover:bg-primary-dark hover:scale-105 focus-visible:ring-primary shadow-md hover:shadow-brand',
+    secondary: 'bg-secondary text-white hover:bg-secondary-dark hover:scale-105 focus-visible:ring-secondary shadow-md hover:shadow-lg',
+    outline: 'border-2 border-navy-900 text-navy-900 bg-transparent hover:bg-navy-900 hover:text-white focus-visible:ring-navy-500 hover:scale-105',
   };
 
-  // Size styles (48px min height)
+  // Size styles - minimum 44px height
   const sizes = {
-    sm: 'h-10 px-4 text-sm',
+    sm: 'h-11 px-4 text-sm',
     md: 'h-12 px-6 text-base',
     lg: 'h-14 px-8 text-lg',
   };

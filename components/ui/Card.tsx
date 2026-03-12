@@ -6,6 +6,7 @@ export interface CardProps {
   padding?: 'sm' | 'md' | 'lg';
   shadow?: 'none' | 'sm' | 'md' | 'lg';
   hover?: boolean;
+  border?: boolean;
 }
 
 export default function Card({
@@ -14,15 +15,16 @@ export default function Card({
   padding = 'md',
   shadow = 'md',
   hover = false,
+  border = false,
 }: CardProps) {
-  // Padding styles (mobile-first responsive)
+  // Consistent padding across all cards
   const paddingStyles = {
-    sm: 'p-4 lg:p-6',
-    md: 'p-6 lg:p-10',
-    lg: 'p-8 lg:p-12',
+    sm: 'p-4 md:p-6',
+    md: 'p-6 md:p-8',
+    lg: 'p-8 md:p-10 lg:p-12',
   };
 
-  // Shadow styles
+  // Consistent shadow system
   const shadowStyles = {
     none: '',
     sm: 'shadow-sm',
@@ -30,13 +32,26 @@ export default function Card({
     lg: 'shadow-lg',
   };
 
+  // Hover lift animation
   const hoverStyles = hover
-    ? 'transition-all duration-base hover:shadow-lg hover:-translate-y-1'
+    ? 'transition-all duration-base hover:shadow-xl hover:-translate-y-1'
+    : '';
+
+  // Optional border
+  const borderStyles = border
+    ? 'border-2 border-border'
     : '';
 
   return (
     <div
-      className={`rounded-lg ${paddingStyles[padding]} ${shadowStyles[shadow]} ${hoverStyles} ${className || 'bg-white'}`}
+      className={`
+        rounded-lg
+        ${paddingStyles[padding]}
+        ${shadowStyles[shadow]}
+        ${hoverStyles}
+        ${borderStyles}
+        ${className || 'bg-white'}
+      `}
     >
       {children}
     </div>

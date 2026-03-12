@@ -11,54 +11,54 @@ export default function Hero() {
         style={{ backgroundImage: "url('/images/water-heater.webp')" }}
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gray-900 bg-opacity-70" />
+      {/* Dark Overlay for WCAG AA Contrast */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/70" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 w-full">
+      <div className="relative z-10 max-w-[1600px] mx-auto container-padding w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-center">
           {/* Left: Headline & CTAs */}
           <div className="text-white text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 font-body text-sm font-semibold uppercase tracking-wide mb-4 bg-white bg-opacity-15 px-6 py-2 rounded-full backdrop-blur-sm">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+            <div className="inline-flex items-center gap-2 font-body text-sm font-semibold uppercase tracking-wide mb-6 bg-white/15 backdrop-blur-md px-6 py-2.5 rounded-full">
+              <svg className="w-5 h-5 text-accent-green" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <span>Free Estimates • Same-Day Service</span>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-heading font-bold uppercase tracking-wide mb-4 text-white text-3xl md:text-4xl lg:text-5xl leading-tight">
+            {/* Headline - Responsive sizing, no orphans */}
+            <h1 className="font-heading font-bold uppercase tracking-tight mb-6 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight no-orphans">
               Redding's Go-To Plumber for 24/7 Emergencies & Same-Day Repairs
             </h1>
 
-            {/* Feature List - All on same line */}
-            <div className="flex flex-row justify-center lg:justify-start gap-4 md:gap-6 mb-6 text-sm md:text-base">
+            {/* Feature List - All on same line on desktop, wrap on mobile */}
+            <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 md:gap-6 mb-8 text-sm md:text-base">
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Experienced Technicians
               </span>
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
                 Residential & Commercial
               </span>
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 24/7 Emergency Support
               </span>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Clear hierarchy */}
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <a
                 href="tel:5307689446"
-                className="h-14 px-8 bg-blue-500 text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl text-lg"
+                className="h-14 px-8 bg-secondary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-secondary-dark hover:scale-105 transition-all duration-base shadow-lg hover:shadow-xl text-base md:text-lg touch-target"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -67,7 +67,7 @@ export default function Hero() {
               </a>
               <a
                 href="/contact"
-                className="h-14 px-8 bg-primary text-white font-bold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all duration-200 shadow-lg hover:shadow-xl text-lg uppercase tracking-wide"
+                className="h-14 px-8 bg-primary text-white font-btn font-bold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark hover:scale-105 transition-all duration-base shadow-lg hover:shadow-brand text-base md:text-lg uppercase tracking-wide touch-target"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
@@ -79,10 +79,13 @@ export default function Hero() {
 
           {/* Right: Contact Form */}
           <div className="w-full">
-            <Card padding="md" shadow="lg">
-              <h2 className="text-xl font-heading font-bold text-gray-900 mb-4">
+            <Card padding="lg" shadow="xl">
+              <h2 className="text-2xl font-heading font-bold text-text-dark mb-4">
                 Get a Free Estimate
               </h2>
+              <p className="text-text-light mb-6">
+                Fill out the form and we'll get back to you within 1 hour
+              </p>
               <HeroEstimateForm />
             </Card>
           </div>

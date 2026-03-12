@@ -26,45 +26,52 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+    <section className="section-padding bg-background-light">
+      <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-6 py-3 bg-navy-50 text-navy-900 text-xs font-semibold uppercase tracking-wide rounded-full mb-4">
+          <span className="inline-block px-6 py-2.5 bg-secondary/10 text-secondary-dark text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
             Real Reviews from Real Customers
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-[42px] font-heading font-bold uppercase text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-dark mb-4 no-orphans">
             Don't Just Take Our Word for It
           </h2>
+          <p className="text-lg text-text-light max-w-3xl mx-auto">
+            See what our customers have to say about their experience with Topline Plumbing
+          </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Testimonials Grid - Equal height cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-8 rounded-lg border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow duration-base"
+              className="bg-white p-8 rounded-xl border-l-4 border-primary shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-base flex flex-col h-full"
             >
               {/* Star Rating */}
-              <div className="text-yellow-500 mb-4 text-xl tracking-wider">
-                {'★'.repeat(testimonial.rating)}
+              <div className="flex gap-1 mb-6">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-accent-yellow fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-600 italic leading-relaxed mb-6 text-base">
-                "{testimonial.text}"
+              <p className="text-base text-text leading-relaxed mb-6 italic flex-grow">
+                &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Reviewer Info */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-navy-900 text-white flex items-center justify-center font-heading font-bold text-lg">
+              <div className="flex items-center gap-4 pt-6 border-t border-border">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-navy-900 to-navy-700 text-white flex items-center justify-center font-heading font-bold text-base flex-shrink-0">
                   {testimonial.initials}
                 </div>
                 <div>
-                  <div className="font-heading font-bold text-gray-900">
+                  <div className="font-heading font-bold text-text-dark text-base">
                     {testimonial.name}
                   </div>
-                  <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  <div className="text-sm text-text-light">
                     {testimonial.location}
                   </div>
                 </div>
