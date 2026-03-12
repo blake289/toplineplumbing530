@@ -37,10 +37,11 @@ export default function Input({
           w-full h-12 px-4 text-base
           border rounded-md
           font-body
-          transition-all duration-fast
-          focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent
+          transition-all duration-150
+          focus:outline-none focus:ring-2 focus:ring-navy-900/20 focus:border-navy-800
+          hover:border-gray-400
           disabled:bg-gray-100 disabled:cursor-not-allowed disabled:text-gray-500
-          ${error ? 'border-primary focus:ring-primary' : 'border-gray-300'}
+          ${error ? 'border-primary focus:ring-primary/20 focus:border-primary' : 'border-gray-300'}
           ${className}
         `}
         aria-required={required}

@@ -7,49 +7,49 @@ export default function Footer() {
     <footer className="bg-navy-900 text-gray-100 section-padding">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Service Areas Section - SEO */}
-        <div className="mb-12">
+        <div className="mb-12 -mx-6 md:-mx-12 lg:-mx-20 px-6 md:px-12 lg:px-20 py-12 bg-white">
           <div className="text-center mb-8">
-            <h3 className="text-white text-2xl font-bold mb-3">Professional Plumbing Services Throughout Northern California</h3>
-            <p className="text-gray-300 text-base max-w-4xl mx-auto">
+            <h3 className="text-navy-900 text-2xl font-bold mb-3">Professional Plumbing Services Throughout Northern California</h3>
+            <p className="text-gray-700 text-base max-w-4xl mx-auto">
               Licensed plumbers serving the entire 530 area code with emergency plumbing, drain cleaning, water heater service, and all residential & commercial plumbing needs
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12 text-sm md:text-base">
-            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-sm md:text-base">
+            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Chico
             </Link>
-            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Redding
             </Link>
-            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Yuba City
             </Link>
-            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Marysville
             </Link>
-            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Paradise
             </Link>
-            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Oroville
             </Link>
-            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Red Bluff
             </Link>
-            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Anderson
             </Link>
-            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber South Lake Tahoe
             </Link>
-            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Truckee
             </Link>
-            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Grass Valley
             </Link>
-            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-gray-200 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-base touch-target">
+            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
               Plumber Auburn
             </Link>
           </div>

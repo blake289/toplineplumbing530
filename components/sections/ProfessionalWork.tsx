@@ -15,20 +15,20 @@ export default function ProfessionalWork() {
               Our licensed and insured technicians bring years of experience to every job. From water heater repairs to complete system installations, we deliver professional service you can trust.
             </p>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-base">
-                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+              <li className="flex items-center gap-3 text-base group hover:bg-gray-50 p-2 -ml-2 rounded transition-colors duration-150">
+                <svg className="w-6 h-6 text-primary group-hover:text-secondary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-gray-900">Licensed & Insured Professionals</span>
               </li>
-              <li className="flex items-center gap-3 text-base">
-                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+              <li className="flex items-center gap-3 text-base group hover:bg-gray-50 p-2 -ml-2 rounded transition-colors duration-150">
+                <svg className="w-6 h-6 text-primary group-hover:text-secondary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-gray-900">Ongoing Training & Certification</span>
               </li>
-              <li className="flex items-center gap-3 text-base">
-                <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+              <li className="flex items-center gap-3 text-base group hover:bg-gray-50 p-2 -ml-2 rounded transition-colors duration-150">
+                <svg className="w-6 h-6 text-primary group-hover:text-secondary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-gray-900">100% Satisfaction Guaranteed</span>

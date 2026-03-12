@@ -92,15 +92,15 @@ export default function Services() {
             <Link
               key={index}
               href={service.href}
-              className="group p-6 md:p-8 border-2 border-gray-200 rounded-xl bg-white hover:border-secondary hover:-translate-y-1 hover:shadow-xl transition-all duration-base flex flex-col h-full"
+              className="group p-6 md:p-8 border-2 border-gray-200 rounded-xl bg-white hover:border-t-secondary hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] focus-visible:border-t-secondary focus-visible:-translate-y-1 transition-all duration-250 flex flex-col h-full cursor-pointer"
             >
               {/* Icon */}
-              <div className="mb-6 text-primary">
+              <div className="mb-6 text-primary transition-colors duration-200">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3 transition-colors duration-base">
+              <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3 transition-colors duration-200">
                 {service.title}
               </h3>
 
@@ -110,9 +110,9 @@ export default function Services() {
               </p>
 
               {/* CTA Link */}
-              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-primary-dark uppercase text-sm tracking-wide transition-all duration-base">
+              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-secondary uppercase text-sm tracking-wide transition-colors duration-200">
                 Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>

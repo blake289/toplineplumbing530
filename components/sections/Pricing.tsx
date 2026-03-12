@@ -79,10 +79,10 @@ export default function Pricing() {
           {pricingCards.map((card, index) => (
             <div
               key={index}
-              className={`bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-xl border flex flex-col transition-all duration-base hover:-translate-y-2 hover:bg-white/10 ${
+              className={`group bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-xl border flex flex-col transition-all duration-250 hover:-translate-y-1 hover:bg-white/10 ${
                 card.featured
-                  ? 'border-accent border-2 hover:shadow-2xl'
-                  : 'border-white/10 hover:shadow-xl'
+                  ? 'border-accent border-2 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
+                  : 'border-white/10 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
               }`}
             >
               {/* Icon */}
@@ -94,7 +94,7 @@ export default function Pricing() {
               </h3>
 
               {/* Price - with proper padding/word-break */}
-              <div className="text-5xl md:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2">
+              <div className="text-5xl md:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2 group-hover:scale-105 transition-transform duration-200">
                 {card.price}
               </div>
 
@@ -116,7 +116,7 @@ export default function Pricing() {
               {/* CTA Button - aligned at bottom */}
               <Link
                 href={card.href}
-                className={`block text-center py-3.5 px-6 rounded-full font-semibold transition-all duration-base whitespace-nowrap hover:scale-105 touch-target ${
+                className={`block text-center py-3.5 px-6 rounded-full font-semibold transition-all duration-150 whitespace-nowrap hover:-translate-y-[1px] hover:shadow-md focus-visible:-translate-y-[1px] touch-target ${
                   card.featured
                     ? 'bg-accent text-navy-900 hover:bg-accent-yellow border-2 border-accent shadow-md'
                     : 'border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/40'
