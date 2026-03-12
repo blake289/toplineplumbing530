@@ -37,7 +37,7 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
+                  className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Services
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ export default function Navbar() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
+                  className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Service Areas
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,10 +98,10 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/about" className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 whitespace-nowrap">
+              <Link href="/about" className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-all duration-200 whitespace-nowrap">
                 About
               </Link>
-              <Link href="/contact" className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 whitespace-nowrap">
+              <Link href="/contact" className="text-white text-sm xl:text-base font-medium hover:text-secondary transition-all duration-200 whitespace-nowrap">
                 Contact
               </Link>
             </nav>
@@ -111,13 +111,13 @@ export default function Navbar() {
               {/* 24/7 Badge */}
               <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-white/10 backdrop-blur-sm rounded-full whitespace-nowrap">
                 <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse-slow"></span>
-                <span className="text-white text-xs xl:text-sm font-medium">24/7 Support</span>
+                <span className="text-white text-sm xl:text-base font-medium">24/7 Support</span>
               </div>
 
               {/* Phone CTA */}
               <a
                 href="tel:5307689446"
-                className="px-3 xl:px-4 py-2 text-xs xl:text-sm bg-primary text-white font-semibold rounded-full inline-flex items-center gap-1.5 hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap shadow-md"
+                className="px-3 xl:px-4 py-2 text-sm xl:text-base bg-primary text-white font-semibold rounded-full inline-flex items-center gap-1.5 hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap shadow-md"
               >
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
