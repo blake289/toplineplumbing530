@@ -107,7 +107,7 @@ export default function Navbar() {
               {/* 24/7 Badge */}
               <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-white/10 backdrop-blur-sm rounded-full whitespace-nowrap">
                 <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse-slow"></span>
-                <span className="text-white text-xs font-medium">24/7 Support</span>
+                <span className="text-white text-xs xl:text-sm font-medium">24/7 Support</span>
               </div>
 
               {/* Phone CTA */}
