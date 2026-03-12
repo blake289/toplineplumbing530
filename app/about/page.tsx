@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6">About Topline Plumbing</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 text-white">About Topline Plumbing</h1>
           <p className="text-lg md:text-xl text-white text-opacity-90">Your trusted plumbing partner in Redding & Northern California since 1998</p>
         </div>
       </section>
@@ -51,23 +51,23 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-navy-900 text-white p-12 rounded-lg">
-            <h2 className="text-3xl font-heading font-bold mb-6">Why Choose Topline Plumbing?</h2>
+            <h2 className="text-3xl font-heading font-bold mb-6 text-white">Why Choose Topline Plumbing?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span className="text-white font-bold">✓</span></div>
-                <div><h3 className="font-semibold mb-1">Licensed & Insured</h3><p className="text-white text-opacity-80 text-sm">Fully licensed, bonded, and insured for your protection</p></div>
+                <div><h3 className="font-semibold mb-1 text-white">Licensed & Insured</h3><p className="text-white text-opacity-80 text-sm">Fully licensed, bonded, and insured for your protection</p></div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span className="text-white font-bold">✓</span></div>
-                <div><h3 className="font-semibold mb-1">Upfront Pricing</h3><p className="text-white text-opacity-80 text-sm">Know the cost before we start—no surprises</p></div>
+                <div><h3 className="font-semibold mb-1 text-white">Upfront Pricing</h3><p className="text-white text-opacity-80 text-sm">Know the cost before we start—no surprises</p></div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span className="text-white font-bold">✓</span></div>
-                <div><h3 className="font-semibold mb-1">Same-Day Service</h3><p className="text-white text-opacity-80 text-sm">Fast response for urgent plumbing needs</p></div>
+                <div><h3 className="font-semibold mb-1 text-white">Same-Day Service</h3><p className="text-white text-opacity-80 text-sm">Fast response for urgent plumbing needs</p></div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span className="text-white font-bold">✓</span></div>
-                <div><h3 className="font-semibold mb-1">100% Satisfaction Guarantee</h3><p className="text-white text-opacity-80 text-sm">We're not done until you're completely satisfied</p></div>
+                <div><h3 className="font-semibold mb-1 text-white">100% Satisfaction Guarantee</h3><p className="text-white text-opacity-80 text-sm">We're not done until you're completely satisfied</p></div>
               </div>
             </div>
           </div>

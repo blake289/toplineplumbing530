@@ -12,7 +12,7 @@ export default function ContactPage() {
     <>
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6">Contact Us</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 text-white">Contact Us</h1>
           <p className="text-lg md:text-xl text-white text-opacity-90">Get a free estimate or schedule service today</p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-navy-900 text-white p-6 rounded-lg">
-                <h3 className="font-heading font-bold text-xl mb-3">Why Choose Topline?</h3>
+                <h3 className="font-heading font-bold text-xl mb-3 text-white">Why Choose Topline?</h3>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center gap-2"><span className="text-primary">✓</span> Upfront pricing, no hidden fees</li>
                   <li className="flex items-center gap-2"><span className="text-primary">✓</span> Licensed & insured professionals</li>

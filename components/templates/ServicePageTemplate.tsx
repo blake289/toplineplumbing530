@@ -38,7 +38,7 @@ export default function ServicePageTemplate({
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-navy-900">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 leading-tight text-white">
             {hero.title}
           </h1>
           {hero.description.map((paragraph, index) => (
