@@ -185,7 +185,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-600 pt-6 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-300">
+        <div className="border-t border-gray-600 pt-6 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
           <p>&copy; Copyright 2026. Topline Plumbing. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/contact" className="hover:text-white transition-colors duration-fast">
