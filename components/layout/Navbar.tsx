@@ -43,7 +43,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
               {/* Services Dropdown */}
               <div
                 className="relative group"
@@ -127,7 +127,7 @@ export default function Navbar() {
             </nav>
 
             {/* Desktop CTA Section */}
-            <div className="hidden lg:flex items-center gap-4 ml-auto pl-[100px]">
+            <div className="hidden lg:flex items-center gap-3 ml-4 xl:ml-8">
               <StatusDot />
               <a
                 href="tel:5307689446"
