@@ -66,7 +66,7 @@ export default function AboutPage() {
 
             {/* Right column - Contact card */}
             <div className="bg-gray-50 rounded-2xl shadow-md p-8">
-              <h3 className="text-2xl font-heading font-bold text-[#1e3a5f] mb-3">
+              <h3 className="text-3xl font-heading font-bold text-[#1e3a5f] mb-3">
                 Get in Touch Today
               </h3>
 
