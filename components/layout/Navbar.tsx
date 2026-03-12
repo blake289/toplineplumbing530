@@ -31,10 +31,12 @@ export default function Navbar() {
             {/* Desktop Navigation - compact spacing */}
             <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
               {/* Services Dropdown */}
-              <div className="relative group">
+              <div
+                className="relative group"
+                onMouseEnter={() => setOpenDropdown('services')}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                 <button
-                  onMouseEnter={() => setOpenDropdown('services')}
-                  onMouseLeave={() => setOpenDropdown(null)}
                   className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Services
@@ -63,10 +65,12 @@ export default function Navbar() {
               </div>
 
               {/* Service Areas Dropdown */}
-              <div className="relative group">
+              <div
+                className="relative group"
+                onMouseEnter={() => setOpenDropdown('areas')}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                 <button
-                  onMouseEnter={() => setOpenDropdown('areas')}
-                  onMouseLeave={() => setOpenDropdown(null)}
                   className="text-white text-xs xl:text-sm font-medium hover:text-secondary transition-all duration-200 flex items-center gap-1 h-11 whitespace-nowrap"
                 >
                   Service Areas
