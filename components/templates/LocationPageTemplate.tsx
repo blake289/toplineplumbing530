@@ -31,7 +31,7 @@ export default function LocationPageTemplate({
     <>
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 leading-tight">
             {hero.title}
           </h1>
@@ -41,13 +41,13 @@ export default function LocationPageTemplate({
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center hover:bg-primary-dark transition-all duration-base shadow-lg"
+              className="h-12 px-8 bg-primary text-white font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
               Book Service in {locationName} →
             </Link>
             <a
               href="tel:5307689446"
-              className="h-12 px-8 bg-white text-navy-900 font-btn font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all duration-base shadow-lg"
+              className="h-12 px-8 bg-white text-navy-900 font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-gray-100 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
               Call (530) 768-9446
             </a>
@@ -56,8 +56,8 @@ export default function LocationPageTemplate({
       </section>
 
       {/* Main Content Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* About Section */}
             <Card padding="lg" className="bg-gray-50">
@@ -97,8 +97,8 @@ export default function LocationPageTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-navy-900">
-        <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
+      <section className="py-16 md:py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
             Proud to Serve {locationName}
           </h2>
@@ -107,7 +107,7 @@ export default function LocationPageTemplate({
           </p>
           <Link
             href="/contact"
-            className="inline-flex h-14 px-12 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:bg-primary-dark transition-all duration-base shadow-lg hover:shadow-xl text-lg"
+            className="inline-flex h-14 px-12 bg-primary text-white font-btn font-bold rounded-xl items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg hover:shadow-xl text-lg"
           >
             Schedule Service Today →
           </Link>

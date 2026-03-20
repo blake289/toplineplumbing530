@@ -62,7 +62,7 @@ const pricingCards = [
 
 export default function Pricing() {
   return (
-    <section className="section-padding" style={{ background: '#0D1B2A' }}>
+    <section className="section-padding bg-navy-900">
       <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -79,7 +79,7 @@ export default function Pricing() {
           {pricingCards.map((card, index) => (
             <div
               key={index}
-              className={`group bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-xl border flex flex-col transition-all duration-250 hover:-translate-y-1 hover:bg-white/10 ${
+              className={`group bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-2xl border flex flex-col transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-1 hover:bg-white/10 ${
                 card.featured
                   ? 'border-accent border-2 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
                   : 'border-white/10 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
@@ -116,7 +116,7 @@ export default function Pricing() {
               {/* CTA Button - aligned at bottom */}
               <Link
                 href={card.href}
-                className={`block text-center py-3.5 px-6 rounded-full font-semibold transition-all duration-150 whitespace-nowrap hover:-translate-y-[1px] hover:shadow-md focus-visible:-translate-y-[1px] touch-target ${
+                className={`block text-center py-3.5 px-6 rounded-xl font-semibold transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] whitespace-nowrap hover:-translate-y-1 active:translate-y-0 hover:shadow-md focus-visible:-translate-y-1 touch-target ${
                   card.featured
                     ? 'bg-accent text-navy-900 hover:bg-accent-yellow border-2 border-accent shadow-md'
                     : 'border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/40'

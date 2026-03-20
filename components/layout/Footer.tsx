@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="bg-navy-900 text-gray-100 section-padding">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Service Areas Section - SEO */}
         <div className="mb-12 -mx-6 md:-mx-12 lg:-mx-20 px-6 md:px-12 lg:px-20 py-12 bg-white">
           <div className="text-center mb-8">
@@ -16,40 +16,40 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-sm md:text-base">
-            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/chico" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Chico
             </Link>
-            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/redding" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Redding
             </Link>
-            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/yuba-city" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Yuba City
             </Link>
-            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/marysville" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Marysville
             </Link>
-            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/paradise" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Paradise
             </Link>
-            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/oroville" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Oroville
             </Link>
-            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/red-bluff" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Red Bluff
             </Link>
-            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/anderson" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Anderson
             </Link>
-            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/south-lake-tahoe" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber South Lake Tahoe
             </Link>
-            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/truckee" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Truckee
             </Link>
-            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/grass-valley" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Grass Valley
             </Link>
-            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-full border-2 border-secondary text-navy-900 hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-200 touch-target">
+            <Link href="/areas/auburn" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Auburn
             </Link>
           </div>
@@ -102,25 +102,25 @@ export default function Footer() {
             <nav className="flex flex-col gap-3">
               <Link
                 href="/services/water-heater-repair"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Water Heater Repair
               </Link>
               <Link
                 href="/services/tankless"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Tankless Installation
               </Link>
               <Link
                 href="/services/emergency"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Emergency Plumbing
               </Link>
               <Link
                 href="/services/drain-cleaning"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Drain Cleaning
               </Link>
@@ -133,25 +133,25 @@ export default function Footer() {
             <nav className="flex flex-col gap-3">
               <Link
                 href="/areas/shasta-lake"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Shasta Lake, CA
               </Link>
               <Link
                 href="/areas/anderson"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Anderson, CA
               </Link>
               <Link
                 href="/areas/palo-cedro"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Palo Cedro, CA
               </Link>
               <Link
                 href="/areas/bella-vista"
-                className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-base text-base"
+                className="text-gray-300 hover:text-primary font-medium transition-all duration-base text-base"
               >
                 Bella Vista, CA
               </Link>
@@ -188,10 +188,10 @@ export default function Footer() {
         <div className="border-t border-gray-600 pt-6 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
           <p>&copy; Copyright 2026. Topline Plumbing. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/contact" className="hover:text-white transition-colors duration-fast">
+            <Link href="/contact" className="hover:text-primary font-medium transition-colors duration-fast">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="hover:text-white transition-colors duration-fast">
+            <Link href="/contact" className="hover:text-primary font-medium transition-colors duration-fast">
               Terms of Service
             </Link>
           </div>

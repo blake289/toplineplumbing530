@@ -49,13 +49,13 @@ export default function ServicePageTemplate({
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link
               href="/contact"
-              className="h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center hover:bg-primary-dark transition-all duration-base shadow-lg"
+              className="h-12 px-8 bg-primary text-white font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
               Get Your Free Inspection →
             </Link>
             <a
               href="tel:5307689446"
-              className="h-12 px-8 bg-white text-navy-900 font-btn font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all duration-base shadow-lg"
+              className="h-12 px-8 bg-white text-navy-900 font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-gray-100 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
               Call (530) 768-9446
             </a>
@@ -65,8 +65,8 @@ export default function ServicePageTemplate({
 
       {/* Stats Section (if provided) */}
       {stats && stats.length > 0 && (
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+        <section className="py-16 md:py-24 lg:py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-navy-900 mb-12">
               Regular Water Heater Service Will Save You Time & Money
             </h2>
@@ -88,8 +88,8 @@ export default function ServicePageTemplate({
 
       {/* When to Repair vs Replace (if provided) */}
       {(whenToRepair || whenToReplace) && (
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+        <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {whenToRepair && (
                 <Card padding="lg" className="bg-white">
@@ -128,8 +128,8 @@ export default function ServicePageTemplate({
       )}
 
       {/* Services List */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-gray-900 mb-12">
             Our Services
           </h2>
@@ -141,9 +141,9 @@ export default function ServicePageTemplate({
                 </h3>
                 <ul className="space-y-2">
                   {service.items.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
-                      <span className="text-gray-600">{item}</span>
+                    <li key={idx} className="flex items-start gap-3">
+                      <span className="text-primary mt-1 font-bold">✓</span>
+                      <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -154,7 +154,7 @@ export default function ServicePageTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
             {ctaText}
@@ -164,7 +164,7 @@ export default function ServicePageTemplate({
           </p>
           <Link
             href="/contact"
-            className="inline-flex h-14 px-12 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:bg-primary-dark transition-all duration-base shadow-lg hover:shadow-xl text-lg"
+            className="inline-flex h-14 px-12 bg-primary text-white font-btn font-bold rounded-xl items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg hover:shadow-xl text-lg"
           >
             Book Your Free Inspection →
           </Link>

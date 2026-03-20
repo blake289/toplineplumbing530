@@ -35,19 +35,19 @@ export default function Hero() {
             {/* Feature List - All on same line on desktop, wrap on mobile */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 md:gap-6 mb-8 text-sm md:text-base">
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <svg className="w-5 h-5 flex-shrink-0 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Experienced Technicians
               </span>
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <svg className="w-5 h-5 flex-shrink-0 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
                 Residential & Commercial
               </span>
               <span className="flex items-center gap-2 whitespace-nowrap">
-                <svg className="w-5 h-5 flex-shrink-0 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <svg className="w-5 h-5 flex-shrink-0 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 24/7 Emergency Support
@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <a
                 href="tel:5307689446"
-                className="h-14 px-8 bg-secondary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:shadow-[0_4px_12px_rgba(230,57,70,0.4)] hover:-translate-y-[2px] focus-visible:-translate-y-[2px] transition-all duration-200 shadow-lg text-base md:text-lg touch-target"
+                className="h-14 px-8 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:-translate-y-1 transition-all duration-200 shadow-lg text-base md:text-lg touch-target"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>

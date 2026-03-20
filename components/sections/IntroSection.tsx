@@ -5,18 +5,18 @@ import Link from 'next/link';
 export default function IntroSection() {
   return (
     <section className="section-padding bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Image with Red Accent */}
           <div className="relative">
             {/* Red accent box behind image */}
-            <div className="absolute top-4 left-2 md:-left-4 w-full h-full bg-primary rounded-lg -z-10" />
+            <div className="absolute top-4 left-2 md:-left-4 w-full h-full bg-primary rounded-2xl -z-10" />
             <Image
               src="/images/truck.webp"
               alt="Topline Plumbing Vans"
               width={600}
               height={750}
-              className="relative w-full aspect-[4/5] object-cover rounded-lg"
+              className="relative w-full aspect-[4/5] object-cover rounded-2xl shadow-md"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function IntroSection() {
             <div>
               <Link
                 href="/contact"
-                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:-translate-y-0.5 hover:shadow-brand transition-all duration-200 shadow-md touch-target"
+                className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-xl items-center justify-center hover:-translate-y-1 active:translate-y-0 hover:shadow-primary/20 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-md touch-target"
               >
                 Request Estimate
               </Link>

@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/team-casual.png"
+                src="/images/joe-cindy.webp"
                 alt="Joe and Cindy Torculas - Topline Plumbing Owners"
                 width={1209}
                 height={806}

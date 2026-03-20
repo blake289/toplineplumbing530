@@ -62,7 +62,7 @@ function StatCard({ target, label, highlight = false, suffix = '' }: StatProps) 
   return (
     <div
       ref={ref}
-      className="bg-white p-8 rounded-lg border border-gray-200 text-center shadow-sm"
+      className="bg-white p-8 rounded-2xl border border-gray-100 text-center shadow-sm"
     >
       <div
         className={`text-5xl md:text-6xl font-heading font-extrabold leading-none mb-2 ${
@@ -81,7 +81,7 @@ function StatCard({ target, label, highlight = false, suffix = '' }: StatProps) 
 export default function StatsSection() {
   return (
     <section className="section-padding bg-background-light">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Trust Text */}
           <div>
@@ -95,7 +95,7 @@ export default function StatsSection() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-xl flex items-center justify-center">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -111,7 +111,7 @@ export default function StatsSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-xl flex items-center justify-center">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -127,7 +127,7 @@ export default function StatsSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-xl flex items-center justify-center">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>

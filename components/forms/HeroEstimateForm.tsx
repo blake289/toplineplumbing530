@@ -43,7 +43,7 @@ export default function HeroEstimateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 bg-gray-50/50 sm:bg-white sm:shadow-xl sm:border border-gray-100 rounded-3xl p-6 sm:p-10">
       <Input
         label="First Name"
         {...register('firstName')}
@@ -92,7 +92,7 @@ export default function HeroEstimateForm() {
           />
           <span className="text-sm text-gray-700 leading-relaxed">
             By submitting, you authorize Topline Plumbing to contact you via call, text, or email regarding your inquiry. Message/data rates may apply. Opt out anytime.{' '}
-            <a href="/contact" className="text-secondary hover:underline">
+            <a href="/contact" className="text-primary hover:underline">
               View our Privacy Policy
             </a>
             .
@@ -113,7 +113,7 @@ export default function HeroEstimateForm() {
       </Button>
 
       {submitStatus === 'success' && (
-        <div className="p-4 bg-green-50 border border-green-200 rounded-md text-green-800 text-sm">
+        <div className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-sm">
           Thank you! We'll contact you shortly.
         </div>
       )}

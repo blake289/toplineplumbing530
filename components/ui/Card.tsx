@@ -34,18 +34,19 @@ export default function Card({
 
   // Hover lift animation
   const hoverStyles = hover
-    ? 'transition-all duration-base hover:shadow-xl hover:-translate-y-1'
+    ? 'transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] group hover:shadow-xl hover:-translate-y-1 hover:border-gray-200'
     : '';
 
   // Optional border
   const borderStyles = border
-    ? 'border-2 border-border'
+    ? 'border border-gray-100'
     : '';
 
   return (
     <div
       className={`
-        rounded-lg
+        rounded-2xl
+        overflow-hidden
         ${paddingStyles[padding]}
         ${shadowStyles[shadow]}
         ${hoverStyles}
