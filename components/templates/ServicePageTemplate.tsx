@@ -164,7 +164,7 @@ export default function ServicePageTemplate({
           </p>
           <Link
             href="/contact"
-            className="inline-flex h-14 px-12 bg-primary text-white font-btn font-bold rounded-xl items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg hover:shadow-xl text-lg"
+            className="inline-flex h-14 px-12 bg-secondary text-white font-btn font-bold rounded-xl items-center justify-center hover:bg-secondary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg hover:shadow-xl text-lg"
           >
             Book Your Free Inspection →
           </Link>
