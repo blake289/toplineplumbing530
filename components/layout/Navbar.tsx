@@ -136,7 +136,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden text-white p-2 hover:bg-navy-700 rounded transition-colors"
+              className="lg:hidden text-white p-3 hover:bg-navy-700 rounded transition-colors touch-target"
               onClick={toggleMobileMenu}
               aria-label="Menu"
             >

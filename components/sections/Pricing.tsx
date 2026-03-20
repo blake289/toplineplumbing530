@@ -94,7 +94,7 @@ export default function Pricing() {
               </h3>
 
               {/* Price - with proper padding/word-break */}
-              <div className="text-5xl md:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2 group-hover:scale-105 transition-transform duration-200">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2 group-hover:scale-105 transition-transform duration-200">
                 {card.price}
               </div>
 

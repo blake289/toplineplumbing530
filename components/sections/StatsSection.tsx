@@ -62,10 +62,10 @@ function StatCard({ target, label, highlight = false, suffix = '' }: StatProps) 
   return (
     <div
       ref={ref}
-      className="bg-white p-8 rounded-2xl border border-gray-100 text-center shadow-sm"
+      className="bg-white p-5 md:p-8 rounded-2xl border border-gray-100 text-center shadow-sm"
     >
       <div
-        className={`text-5xl md:text-6xl font-heading font-extrabold leading-none mb-2 ${
+        className={`text-4xl md:text-5xl font-heading font-extrabold leading-none mb-2 ${
           highlight ? 'text-primary' : 'text-navy-900'
         }`}
       >

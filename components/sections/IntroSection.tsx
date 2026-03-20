@@ -8,9 +8,9 @@ export default function IntroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Image with Red Accent */}
-          <div className="relative">
+          <div className="relative overflow-hidden md:overflow-visible">
             {/* Red accent box behind image */}
-            <div className="absolute top-4 left-2 md:-left-4 w-full h-full bg-primary rounded-2xl -z-10" />
+            <div className="absolute top-4 left-0 md:-left-4 w-full h-full bg-primary rounded-2xl -z-10" />
             <Image
               src="/images/truck.webp"
               alt="Topline Plumbing Vans"

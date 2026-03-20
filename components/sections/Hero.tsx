@@ -32,8 +32,8 @@ export default function Hero() {
               Redding's Go-To Plumber for 24/7 Emergencies & Same-Day Repairs
             </h1>
 
-            {/* Feature List - All on same line on desktop, wrap on mobile */}
-            <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-4 md:gap-6 mb-8 text-sm md:text-base">
+            {/* Feature List */}
+            <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 md:gap-6 mb-8 text-sm md:text-base">
               <span className="flex items-center gap-2 whitespace-nowrap">
                 <svg className="w-5 h-5 flex-shrink-0 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

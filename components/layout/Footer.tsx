@@ -4,18 +4,18 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 text-gray-100 section-padding">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Service Areas Section - SEO */}
-        <div className="mb-12 -mx-6 md:-mx-12 lg:-mx-20 px-6 md:px-12 lg:px-20 py-12 bg-white">
+    <footer className="bg-navy-900 text-gray-100">
+      {/* Service Areas Section - SEO — full bleed white strip */}
+      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h3 className="text-navy-900 text-2xl font-bold mb-3">Professional Plumbing Services Throughout Northern California</h3>
+            <h3 className="text-navy-900 text-xl sm:text-2xl font-bold mb-3">Professional Plumbing Services Throughout Northern California</h3>
             <p className="text-gray-700 text-base max-w-4xl mx-auto">
               Licensed plumbers serving the entire 530 area code with emergency plumbing, drain cleaning, water heater service, and all residential & commercial plumbing needs
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-sm md:text-base">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 text-sm">
             <Link href="/areas/chico" className="text-center py-3 px-4 rounded-xl border-2 border-primary text-navy-900 hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 ease-[cubic-bezier(0.25,0.8,0.25,1)] touch-target">
               Plumber Chico
             </Link>
@@ -54,7 +54,10 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+      </div>
 
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-t border-gray-700 pt-12">
           {/* Column 1: Company Info */}
@@ -173,7 +176,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:Toplineplumbingredding@gmail.com"
-                className="text-gray-200 hover:text-white hover:translate-x-1 transition-all duration-base text-base whitespace-nowrap"
+                className="text-gray-200 hover:text-white transition-all duration-base text-sm break-all"
               >
                 Toplineplumbingredding@gmail.com
               </a>
@@ -200,3 +203,4 @@ export default function Footer() {
     </footer>
   );
 }
+

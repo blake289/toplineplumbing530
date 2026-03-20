@@ -86,28 +86,28 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               <div className="pl-4 border-l-2 border-gray-100 ml-2 mb-2">
                 <Link
                   href="/services/emergency"
-                  className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Emergency Plumbing
                 </Link>
                 <Link
                   href="/services/water-heater-repair"
-                  className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Water Heaters
                 </Link>
                 <Link
                   href="/services/drain-cleaning"
-                  className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Drain Cleaning
                 </Link>
                 <Link
                   href="/services/tankless"
-                  className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Tankless Upgrades
