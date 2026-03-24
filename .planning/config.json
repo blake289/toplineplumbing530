@@ -1,0 +1,7 @@
+{
+  "granularity": "coarse",
+  "execution": "parallel",
+  "yolo": true,
+  "commit_docs": true,
+  "model_profile": "balanced"
+}
