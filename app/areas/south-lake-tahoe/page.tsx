@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Plumber South Lake Tahoe CA | Licensed Plumbing Service | Topline Plumbing 530',
+  title: 'Plumber in South Lake Tahoe, CA | Topline Plumbing',
   description: 'Licensed plumber in South Lake Tahoe, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in South Lake Tahoe. Call (530) 768-9446',
 };
 

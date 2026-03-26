@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Plumber Marysville CA | Licensed Plumbing Service | Topline Plumbing 530',
+  title: 'Plumber in Marysville, CA | Topline Plumbing',
   description: 'Licensed plumber in Marysville, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Marysville. Call (530) 768-9446',
 };
 

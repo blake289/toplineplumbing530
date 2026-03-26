@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Plumber Truckee CA | Licensed Plumbing Service | Topline Plumbing 530',
+  title: 'Plumber in Truckee, CA | Topline Plumbing',
   description: 'Licensed plumber in Truckee, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Truckee. Call (530) 768-9446',
 };
 

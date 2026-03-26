@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Plumber Chico CA | Licensed Plumbing Service | Topline Plumbing 530',
+  title: 'Plumber in Chico, CA | Topline Plumbing',
   description: 'Licensed plumber in Chico, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Chico. Call (530) 768-9446',
 };
 
