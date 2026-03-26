@@ -1,14 +1,40 @@
 import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
+import FAQSchema from '@/components/layout/FAQSchema';
 
 export const metadata: Metadata = {
   title: 'Tankless Water Heater Installation in Redding, CA | Topline Plumbing',
   description: 'Upgrade to a tankless water heater in Redding. Endless hot water and lower energy bills. Call (530) 768-9446 for a free consultation.',
 };
 
+const tanklessFAQs = [
+  {
+    question: 'How much does tankless water heater installation cost in Redding, CA?',
+    answer: 'Tankless water heater installation in Redding typically ranges from $1,500–$3,500 depending on the unit, gas line requirements, and venting setup. We provide upfront pricing before any work begins. Call (530) 768-9446 for a free consultation.',
+  },
+  {
+    question: 'How much can I save by switching to tankless?',
+    answer: 'Most homeowners save 20–30% on water heating costs by switching to a tankless system. Since tankless heaters only heat water on demand instead of keeping a full tank hot 24/7, they use significantly less energy — especially in households that use hot water consistently throughout the day.',
+  },
+  {
+    question: 'How long do tankless water heaters last?',
+    answer: 'Tankless water heaters typically last 20+ years — nearly double the lifespan of a traditional tank unit (8–12 years). They also tend to have lower long-term repair costs because they have fewer components subject to corrosion or sediment buildup.',
+  },
+  {
+    question: 'What brands of tankless water heaters do you install?',
+    answer: 'We install all major brands including Navien, Rinnai, Noritz, and Rheem. We will recommend the right brand and model for your household size and water usage. Call (530) 768-9446 for a free recommendation.',
+  },
+  {
+    question: 'Do I need to upgrade my gas line for a tankless water heater?',
+    answer: 'Sometimes yes. Tankless units require a larger gas supply than traditional tank heaters, so older homes may need a gas line upgrade. We assess your current gas line during the free consultation and include any required upgrades in your upfront quote. Call (530) 768-9446 to schedule.',
+  },
+];
+
 export default function TanklessWaterHeaterPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <FAQSchema faqs={tanklessFAQs} />
+      <ServicePageTemplate
       hero={{
         title: 'Tankless Water Heater Installation in Redding — Endless Hot Water, Lower Bills',
         description: [
@@ -61,5 +87,6 @@ export default function TanklessWaterHeaterPage() {
       ]}
       ctaText="Ready to Upgrade to Tankless?"
     />
+    </>
   );
 }
