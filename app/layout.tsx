@@ -69,6 +69,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/images/water-heater.webp" fetchPriority="high" />
         <SchemaMarkup />
       </head>
       <body>

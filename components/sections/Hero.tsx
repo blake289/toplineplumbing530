@@ -67,7 +67,7 @@ export default function Hero() {
               </a>
               <a
                 href="/contact"
-                className="h-14 px-8 bg-secondary text-white font-btn font-bold rounded-full inline-flex items-center justify-center gap-2 hover:bg-secondary-dark hover:-translate-y-[2px] focus-visible:-translate-y-[2px] transition-all duration-200 shadow-lg text-base md:text-lg uppercase tracking-wide touch-target"
+                className="h-14 px-8 bg-navy-700 text-white font-btn font-bold rounded-full inline-flex items-center justify-center gap-2 hover:bg-navy-900 hover:-translate-y-[2px] focus-visible:-translate-y-[2px] transition-all duration-200 shadow-lg text-base md:text-lg uppercase tracking-wide touch-target"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>

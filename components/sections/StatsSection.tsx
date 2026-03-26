@@ -101,9 +101,9 @@ export default function StatsSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
                     Upfront, Transparent Pricing
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 text-base max-w-prose">
                     No hidden fees or surprises at the end of the job.
                   </p>
@@ -117,9 +117,9 @@ export default function StatsSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
                     Local & Dedicated
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 text-base max-w-prose">
                     We treat every home with the respect we give our own.
                   </p>
@@ -133,9 +133,9 @@ export default function StatsSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
                     100% Guaranteed Work
-                  </h4>
+                  </h3>
                   <p className="text-gray-600 text-base max-w-prose">
                     Our job isn't done until you're completely satisfied.
                   </p>
