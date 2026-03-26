@@ -24,7 +24,7 @@ export default function Button({
   // Variant styles with proper hover effects
   const variants = {
     primary: 'bg-primary text-white hover:bg-primary-dark hover:-translate-y-1 hover:shadow-primary/20 active:translate-y-0 active:shadow-md focus-visible:ring-primary shadow-md transition-all duration-300',
-    secondary: 'bg-secondary text-white hover:bg-secondary-dark hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:ring-secondary shadow-md transition-all duration-300',
+    secondary: 'bg-navy-700 text-white hover:bg-navy-900 hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:ring-navy-500 shadow-md transition-all duration-300',
     outline: 'border-2 border-navy-900 text-navy-900 bg-transparent hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 focus-visible:ring-navy-500 transition-all duration-200',
   };
 

@@ -94,7 +94,7 @@ export default function HeroEstimateForm() {
           />
           <span className="text-sm text-gray-700 leading-relaxed">
             By submitting, you authorize Topline Plumbing to contact you via call, text, or email regarding your inquiry. Message/data rates may apply. Opt out anytime.{' '}
-            <a href="/contact" className="text-primary hover:underline">
+            <a href="/contact" className="text-primary underline">
               View our Privacy Policy
             </a>
             .

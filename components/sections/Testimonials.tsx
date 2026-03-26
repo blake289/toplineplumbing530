@@ -30,7 +30,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-6 py-2.5 bg-secondary/10 text-secondary-dark text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
+          <span className="inline-block px-6 py-2.5 bg-navy-100 text-navy-700 text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
             Real Reviews from Real Customers
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-dark mb-4 no-orphans">
