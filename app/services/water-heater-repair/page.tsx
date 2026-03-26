@@ -1,14 +1,40 @@
 import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
+import FAQSchema from '@/components/layout/FAQSchema';
 
 export const metadata: Metadata = {
   title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
   description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 768-9446 for a free inspection.",
 };
 
+const waterHeaterFAQs = [
+  {
+    question: "How do I know if my water heater needs to be repaired or replaced?",
+    answer: "If your water heater is under 8 years old and the issue is a faulty thermostat, heating element, or minor leak, repair is usually the right call. If it's 10+ years old, rusting, making loud rumbling noises, or leaking from the tank itself, replacement is almost always more cost-effective. Our plumbers will give you an honest recommendation.",
+  },
+  {
+    question: "How much does water heater replacement cost in Redding, CA?",
+    answer: "Water heater replacement in Redding typically ranges from $900–$1,800 depending on the unit size and type. We provide upfront pricing before any work begins. Call (530) 768-9446 for a free estimate.",
+  },
+  {
+    question: "Can you replace my water heater the same day?",
+    answer: "In most cases, yes. Topline Plumbing offers same-day water heater replacement in Redding, Anderson, Shasta Lake, and surrounding areas. We keep common units in stock. Call (530) 768-9446 and we'll let you know right away.",
+  },
+  {
+    question: "What are the signs my water heater is failing?",
+    answer: "Common warning signs include: no hot water or lukewarm water, water that takes too long to reheat, discolored or rust-colored water, a sulfur or rotten egg smell, popping or rumbling sounds from the tank, water pooling around the base, or a unit that's 10+ years old.",
+  },
+  {
+    question: "Do you install tankless water heaters in Redding?",
+    answer: "Yes. We install and service all major brands of tankless water heaters. Tankless units provide endless hot water and can reduce energy costs by 20–30%. Call (530) 768-9446 for a free assessment to see if tankless is right for your home.",
+  },
+];
+
 export default function WaterHeaterRepairPage() {
   return (
-    <ServicePageTemplate
+    <>
+      <FAQSchema faqs={waterHeaterFAQs} />
+      <ServicePageTemplate
       hero={{
         title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
         description: [
@@ -73,5 +99,6 @@ export default function WaterHeaterRepairPage() {
         },
       ]}
     />
+    </>
   );
 }
