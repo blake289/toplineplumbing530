@@ -1,14 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 import Card from '@/components/ui/Card';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-0">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/water-heater.webp')" }}
+      {/* Background Image — next/image with priority for LCP */}
+      <Image
+        src="/images/water-heater.webp"
+        alt=""
+        fill
+        priority
+        fetchPriority="high"
+        quality={85}
+        sizes="100vw"
+        className="object-cover object-center"
       />
 
       {/* Dark Overlay for WCAG AA Contrast */}
