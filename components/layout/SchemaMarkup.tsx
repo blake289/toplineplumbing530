@@ -29,6 +29,13 @@ export default function SchemaMarkup() {
       { "@type": "City", "name": "Bella Vista" }
     ],
     "description": "Topline Plumbing provides fast, reliable plumbing services in Redding, CA and surrounding areas. We offer emergency plumbing, water heater repair, drain cleaning, and more — with upfront pricing and same-day service available.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "427",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

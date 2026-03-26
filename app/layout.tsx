@@ -27,9 +27,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Topline Plumbing | Premium Plumbers in Redding, CA",
-  description: "Auburn & Grass Valley's most trusted plumber. Fast, reliable, same-day emergency plumbing service. Free water heater inspections.",
-  keywords: "plumber, plumbing, Redding CA, water heater repair, emergency plumbing, drain cleaning",
+  title: "Topline Plumbing | Redding CA Plumber — Same-Day Service",
+  description: "Redding's trusted plumber. Fast, reliable, same-day emergency plumbing service. Water heater repair, drain cleaning, leak detection. Call (530) 768-9446.",
+  keywords: "plumber Redding CA, emergency plumbing Redding, water heater repair Redding, drain cleaning Redding, plumbing service Shasta Lake Anderson CA",
+  icons: {
+    icon: '/images/logo.webp',
+    apple: '/images/logo.webp',
+  },
 };
 
 export default function RootLayout({

@@ -70,7 +70,7 @@ export default function Footer() {
               className="mb-4"
             />
             <p className="text-gray-300 mb-6 text-sm">
-              Auburn & Grass Valley's most trusted plumber since 1998.
+              Redding's most trusted plumber since 1998.
             </p>
             {/* Social Icons */}
             <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/toplinewatersolutions/"
+                href="https://www.instagram.com/toplineplumbing/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
