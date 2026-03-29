@@ -48,11 +48,15 @@ Plans:
 
 ### Phase 4 — Review Generation
 **Goal:** Joe has 10+ Google reviews within 7 days of launch.
-**Status:** 🔴 Not started
+**Status:** 🟡 Planning complete
 **Requires:** Phase 2 complete (review workflow must be active)
+**Plans:** 2 plans
 
 Plans:
-- 4.1 — Arm Joe with review collection script + confirm workflow firing
+- [ ] 04-01-PLAN.md — Configure GHL review settings + prepare Joe's outreach kit
+- [ ] 04-02-PLAN.md — Launch Joe's review sprint + activate automated workflow + track results
+
+**Requirements:** R4.1, R4.2, R4.3, R4.4, R4.5
 
 **Done when:** Joe has 10+ Google reviews and the automated review request is firing after every completed job.
 
