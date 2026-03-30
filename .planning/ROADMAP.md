@@ -86,6 +86,21 @@ Plans:
 
 ---
 
+---
+
+## Backlog
+
+### Phase 999.1: Pitch Joe on Google LSA (Local Services Ads) (BACKLOG)
+
+**Goal:** Upsell Joe on LSA once reviews are in and GBP is optimized — pay per lead, shows above organic and standard ads, perfect for plumbers.
+**Requirements:** TBD — natural conversation point after Phase 4 results are visible
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD (promote with /gsd:review-backlog when ready)
+
+---
+
 ## Execution Order
 
 ```
