@@ -1,9 +1,16 @@
 export default function SchemaMarkup() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "PlumbingService",
+    "@type": ["LocalBusiness", "PlumbingService"],
     "name": "Topline Plumbing",
-    "image": "https://toplineplumbingco.com/images/logo-wide.svg",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://toplineplumbingco.com/images/logo.webp"
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://toplineplumbingco.com/images/logo.webp"
+    },
     "@id": "https://toplineplumbingco.com",
     "url": "https://toplineplumbingco.com",
     "telephone": "(530) 768-9446",
@@ -26,29 +33,32 @@ export default function SchemaMarkup() {
       { "@type": "City", "name": "Shasta Lake" },
       { "@type": "City", "name": "Anderson" },
       { "@type": "City", "name": "Palo Cedro" },
-      { "@type": "City", "name": "Bella Vista" }
+      { "@type": "City", "name": "Bella Vista" },
+      { "@type": "City", "name": "Red Bluff" },
+      { "@type": "City", "name": "Chico" },
+      { "@type": "City", "name": "Oroville" },
+      { "@type": "City", "name": "Yuba City" },
+      { "@type": "City", "name": "Marysville" },
+      { "@type": "City", "name": "Paradise" },
+      { "@type": "City", "name": "Auburn" },
+      { "@type": "City", "name": "Grass Valley" },
+      { "@type": "City", "name": "Truckee" },
+      { "@type": "City", "name": "South Lake Tahoe" }
     ],
     "description": "Topline Plumbing provides fast, reliable plumbing services in Redding, CA and surrounding areas. We offer emergency plumbing, water heater repair, drain cleaning, and more — with upfront pricing and same-day service available.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "reviewCount": "427",
+      "reviewCount": "53",
       "bestRating": "5",
       "worstRating": "1"
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday","Sunday"],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
-        "closes": "23:59",
-        "description": "Emergency service only"
+        "closes": "23:59"
       }
     ],
     "hasOfferCatalog": {
@@ -59,7 +69,11 @@ export default function SchemaMarkup() {
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Repair & Replacement" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Cleaning" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leak Detection & Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pipe Repair & Replacement" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pipe Repair & Replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless Water Heater Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer Line Repair & Replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Line Repair & Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Repiping Services" } }
       ]
     }
   };
