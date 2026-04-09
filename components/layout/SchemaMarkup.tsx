@@ -5,11 +5,11 @@ export default function SchemaMarkup() {
     "name": "Topline Plumbing",
     "image": {
       "@type": "ImageObject",
-      "url": "https://toplineplumbingco.com/images/logo.webp"
+      "url": "https://toplineplumbingco.com/images/logo.png"
     },
     "logo": {
       "@type": "ImageObject",
-      "url": "https://toplineplumbingco.com/images/logo.webp"
+      "url": "https://toplineplumbingco.com/images/logo.png"
     },
     "@id": "https://toplineplumbingco.com",
     "url": "https://toplineplumbingco.com",
@@ -48,8 +48,8 @@ export default function SchemaMarkup() {
     "description": "Topline Plumbing provides fast, reliable plumbing services in Redding, CA and surrounding areas. We offer emergency plumbing, water heater repair, drain cleaning, and more — with upfront pricing and same-day service available.",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "53",
+      "ratingValue": "5.0",
+      "reviewCount": "1",
       "bestRating": "5",
       "worstRating": "1"
     },
