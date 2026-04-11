@@ -65,9 +65,9 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="Topline Plumbing"
-              width={120}
-              height={120}
-              className="mb-4 w-24 h-24"
+              width={200}
+              height={200}
+              className="mb-4 w-40 h-40"
             />
             <p className="text-gray-300 mb-6 text-sm">
               Redding's most trusted plumber since 1998.
