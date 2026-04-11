@@ -51,6 +51,7 @@ export default function SewerLinePage() {
       ]} />
       <FAQSchema faqs={faqs} />
       <ServicePageTemplate
+        faqs={faqs}
         hero={{
           title: 'Sewer Line Repair & Replacement in Redding, CA',
           description: [

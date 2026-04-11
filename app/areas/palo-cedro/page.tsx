@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
+import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
 
 export const metadata: Metadata = {
@@ -56,6 +57,7 @@ export default function PaloCedroPage() {
         },
       ]}
     />
+      <FAQSection faqs={getCityFaqs('palo-cedro')} />
     </>
   );
 }

@@ -51,6 +51,7 @@ export default function DrainCleaningPage() {
       ]} />
       <FAQSchema faqs={drainFAQs} />
       <ServicePageTemplate
+      faqs={drainFAQs}
       hero={{
         title: 'Drain Cleaning in Redding — Fast, Thorough, & Guaranteed',
         description: [

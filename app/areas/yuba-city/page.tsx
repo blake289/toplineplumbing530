@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
+import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
 import React from 'react';
 import Link from 'next/link';
@@ -223,6 +224,9 @@ export default function YubaCityPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={getCityFaqs('yuba-city')} />
 
       {/* CTA Section */}
       <section className="py-16 bg-navy-900 text-white">

@@ -51,6 +51,7 @@ export default function RepipingServicesPage() {
       ]} />
       <FAQSchema faqs={repipingFAQs} />
       <ServicePageTemplate
+      faqs={repipingFAQs}
       hero={{
         title: 'Repiping Services in Redding — Upgrade Your Plumbing System',
         description: [

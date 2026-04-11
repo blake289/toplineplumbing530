@@ -51,6 +51,7 @@ export default function GasLinePage() {
       ]} />
       <FAQSchema faqs={faqs} />
       <ServicePageTemplate
+        faqs={faqs}
         hero={{
           title: 'Gas Line Repair & Installation in Redding, CA',
           description: [

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Card from '@/components/ui/Card';
+import FAQSection from '@/components/layout/FAQSection';
 
 interface Stat {
   value: string;
@@ -10,6 +11,11 @@ interface Stat {
 interface ServiceDetail {
   title: string;
   items: string[];
+}
+
+interface FAQ {
+  question: string;
+  answer: string;
 }
 
 interface ServicePageProps {
@@ -22,6 +28,7 @@ interface ServicePageProps {
   whenToRepair?: string[];
   whenToReplace?: string[];
   services: ServiceDetail[];
+  faqs?: FAQ[];
   ctaText?: string;
 }
 
@@ -31,6 +38,7 @@ export default function ServicePageTemplate({
   whenToRepair,
   whenToReplace,
   services,
+  faqs,
   ctaText = "Not sure what you need?",
 }: ServicePageProps) {
   return (
@@ -152,6 +160,11 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* FAQ Section — only renders if faqs prop is provided */}
+      {faqs && faqs.length > 0 && (
+        <FAQSection faqs={faqs} background="white" />
+      )}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 lg:py-32 bg-gray-50">

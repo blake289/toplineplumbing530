@@ -51,6 +51,7 @@ export default function TanklessWaterHeaterPage() {
       ]} />
       <FAQSchema faqs={tanklessFAQs} />
       <ServicePageTemplate
+      faqs={tanklessFAQs}
       hero={{
         title: 'Tankless Water Heater Installation in Redding — Endless Hot Water, Lower Bills',
         description: [

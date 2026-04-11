@@ -51,6 +51,7 @@ export default function EmergencyPlumbingPage() {
       ]} />
       <FAQSchema faqs={emergencyFAQs} />
       <ServicePageTemplate
+      faqs={emergencyFAQs}
       hero={{
         title: '24/7 Emergency Plumbing in Redding — We Answer, We Show Up, We Fix It',
         description: [

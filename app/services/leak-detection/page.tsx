@@ -51,6 +51,7 @@ export default function LeakDetectionPage() {
       ]} />
       <FAQSchema faqs={faqs} />
       <ServicePageTemplate
+        faqs={faqs}
         hero={{
           title: 'Leak Detection in Redding, CA — Find It Before It Becomes a Disaster',
           description: [

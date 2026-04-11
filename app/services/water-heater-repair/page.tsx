@@ -51,6 +51,7 @@ export default function WaterHeaterRepairPage() {
       ]} />
       <FAQSchema faqs={waterHeaterFAQs} />
       <ServicePageTemplate
+      faqs={waterHeaterFAQs}
       hero={{
         title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
         description: [

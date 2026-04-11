@@ -51,6 +51,7 @@ export default function FixtureInstallsPage() {
       ]} />
       <FAQSchema faqs={fixtureFAQs} />
       <ServicePageTemplate
+      faqs={fixtureFAQs}
       hero={{
         title: 'Fixture Installation in Redding — Professional Plumbing Upgrades',
         description: [
