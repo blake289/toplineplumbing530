@@ -26,18 +26,6 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-center">
           {/* Left: Headline & CTAs */}
           <div className="text-white text-center lg:text-left">
-            {/* Brand Logo */}
-            <div className="flex justify-center lg:justify-start mb-6">
-              <Image
-                src="/images/logo.png"
-                alt="Topline Plumbing"
-                width={140}
-                height={140}
-                priority
-                className="w-28 h-28 md:w-32 md:h-32 drop-shadow-2xl"
-              />
-            </div>
-
             {/* Badge */}
             <div className="inline-flex items-center gap-2 font-body text-sm font-semibold uppercase tracking-wide mb-6 bg-white/15 backdrop-blur-md px-6 py-2.5 rounded-full">
               <svg className="w-5 h-5 text-accent-green" fill="currentColor" viewBox="0 0 20 20">
