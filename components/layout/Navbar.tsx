@@ -15,16 +15,16 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 bg-navy-900 shadow-md border-b border-white/10 z-50">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 hover:opacity-85 hover:scale-[1.02] transition-all duration-200">
               <Image
                 src="/images/logo.png"
                 alt="Topline Plumbing"
-                width={160}
-                height={160}
+                width={200}
+                height={200}
                 priority
-                className="h-16 w-16"
+                className="h-[84px] w-[84px]"
               />
             </Link>
 
