@@ -85,7 +85,7 @@ export default function Hero() {
           </div>
 
           {/* Right: Contact Form */}
-          <div className="hidden lg:block w-full">
+          <div className="w-full">
             <Card padding="sm" shadow="lg">
               <h2 className="text-xl font-heading font-bold text-text-dark mb-4 text-center">
                 Get a Free Estimate

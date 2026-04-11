@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SchemaMarkup from "@/components/layout/SchemaMarkup";
+import MobileCallCTA from "@/components/layout/MobileCallCTA";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'Topline Plumbing',
     images: [
       {
-        url: '/images/water-heater.webp',
+        url: '/images/og-topline.jpg',
         width: 1200,
         height: 630,
         alt: 'Topline Plumbing — Redding CA Licensed Plumber',
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Topline Plumbing | Redding's Trusted Plumber",
     description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service. Call (530) 704-6989.",
-    images: ['/images/water-heater.webp'],
+    images: ['/images/og-topline.jpg'],
   },
   alternates: {
     canonical: 'https://toplineplumbingco.com',
@@ -68,8 +69,9 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        <main id="main">{children}</main>
+        <main id="main" className="pb-16 lg:pb-0">{children}</main>
         <Footer />
+        <MobileCallCTA />
       </body>
     </html>
   );

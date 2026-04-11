@@ -19,7 +19,7 @@ export default function Navbar() {
             {/* Logo - compact */}
             <Link href="/" className="flex-shrink-0 hover:opacity-85 hover:scale-[1.02] transition-all duration-200">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Topline Plumbing"
                 width={260}
                 height={104}

@@ -149,7 +149,7 @@ export default function StatsSection() {
             <StatCard target={30} label="Years Exp." />
             <StatCard target={2487} label="Water Heaters" />
             <div className="col-span-2">
-              <StatCard target={5} label="Min. Avg. Response Time" highlight suffix="" />
+              <StatCard target={5} label="Min. Avg. Call Response" highlight suffix="" />
             </div>
           </div>
         </div>
