@@ -56,7 +56,7 @@ export default function Hero() {
               {[
                 '27+ Years Serving Redding',
                 '2,847 Water Heaters Installed',
-                '60-Min Response Time',
+                '24/7 Emergency Support',
               ].map((item) => (
                 <span key={item} className="flex items-center gap-2">
                   <svg className="w-4 h-4 text-accent-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden>

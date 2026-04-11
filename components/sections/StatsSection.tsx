@@ -116,7 +116,15 @@ export default function StatsSection() {
             <StatCard target={2847} label="Water heaters installed" suffix="+" />
           </div>
           <div className="md:pl-6 md:pr-0 md:text-right">
-            <StatCard target={60} label="Min. average response time" />
+            {/* Static 24/7 display — non-animated for clarity */}
+            <div className="text-center md:text-right flex flex-col gap-3">
+              <div className="text-[56px] md:text-[64px] lg:text-[72px] font-bold leading-none text-white tracking-[-0.035em] tabular-nums">
+                24/7
+              </div>
+              <div className="text-[12px] md:text-[13px] font-semibold tracking-[0.18em] text-white/60 uppercase">
+                Emergency support
+              </div>
+            </div>
           </div>
         </div>
       </div>
