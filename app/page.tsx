@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import IntroSection from '@/components/sections/IntroSection';
 import Services from '@/components/sections/Services';
@@ -7,6 +8,23 @@ import StatsSection from '@/components/sections/StatsSection';
 import Testimonials from '@/components/sections/Testimonials';
 import CTASection from '@/components/sections/CTASection';
 import FAQSchema from '@/components/layout/FAQSchema';
+
+export const metadata: Metadata = {
+  title: 'Topline Plumbing | Redding CA Plumber — Same-Day Service',
+  description: "Redding's trusted plumber. Fast, reliable, same-day emergency plumbing service. Water heater repair, drain cleaning, leak detection. Call (530) 704-6989.",
+  alternates: {
+    canonical: 'https://toplineplumbingco.com',
+  },
+  openGraph: {
+    title: "Topline Plumbing | Redding's Trusted Plumber",
+    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service, water heater repair, drain cleaning. Same-day service available. Call (530) 704-6989.",
+    url: 'https://toplineplumbingco.com',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Redding CA Licensed Plumber' }],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 const homepageFAQs = [
   {
@@ -19,7 +37,7 @@ const homepageFAQs = [
   },
   {
     question: "Do you offer same-day plumbing service in Redding?",
-    answer: "Yes. We offer same-day service for most plumbing repairs in Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and surrounding Northern California communities. Call (530) 768-9446 to schedule.",
+    answer: "Yes. We offer same-day service for most plumbing repairs in Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and surrounding Northern California communities. Call (530) 704-6989 to schedule.",
   },
   {
     question: "How much does a plumber cost in Redding, CA?",
@@ -31,7 +49,7 @@ const homepageFAQs = [
   },
   {
     question: "Do you repair and replace water heaters in Redding?",
-    answer: "Yes. We repair and replace all makes and models of water heaters, including tankless water heaters. Same-day water heater service is available in most cases. Call (530) 768-9446 for a free estimate.",
+    answer: "Yes. We repair and replace all makes and models of water heaters, including tankless water heaters. Same-day water heater service is available in most cases. Call (530) 704-6989 for a free estimate.",
   },
 ];
 

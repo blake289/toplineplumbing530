@@ -1,0 +1,231 @@
+# Topline Plumbing — Work Log
+> Client-facing deliverable tracker. Updated continuously as work is completed.
+> Safe to share with Joe & Josiah at any time.
+
+---
+
+## Website
+
+- [x] Built full Next.js website — toplineplumbingco.com
+  - Homepage with hero, services grid, pricing cards, stats section, testimonials, CTA
+  - Service pages: Emergency Plumbing, Water Heaters, Drain Cleaning, Tankless, Repiping, Fixture Installs
+  - Area pages: 15 city-specific SEO pages (Redding, Anderson, Shasta Lake, Chico, Red Bluff, Oroville, Yuba City, Marysville, Paradise, Auburn, Grass Valley, Truckee, South Lake Tahoe, Palo Cedro, Bella Vista)
+  - About page, Gallery page, Contact page
+  - Mobile-responsive design with click-to-call phone button
+  - Lead capture form (Get a Free Estimate) on homepage
+  - 10DLC-compliant SMS opt-in consent language on all forms
+  - Schema markup (PlumbingService structured data with aggregateRating, geo, hours, services)
+  - Sitemap.xml generated and expanded (27 URLs — all pages, service pages, area pages)
+  - llms.txt published — business is indexed for LLM/AI search results
+- [x] Deployed to Vercel (production)
+- [x] Custom domain configured — toplineplumbingco.com
+  - A record: 76.76.21.21
+  - CNAME www: cname.vercel-dns.com
+- [x] Site live and resolving at https://toplineplumbingco.com
+
+### Website Fixes & Improvements (Post-Launch)
+- [x] Fixed footer tagline — updated to "Redding's most trusted plumber since 1998"
+- [x] Fixed Instagram link — corrected to @toplineplumbing (was @toplinewatersolutions)
+- [x] Added favicon (browser tab icon)
+- [x] Website lead forms connected to GHL CRM — all form submissions now create contacts automatically in GoHighLevel with "website-lead" tag
+- [x] Fixed homepage meta description — was incorrectly showing "Auburn & Grass Valley's most trusted plumber"; corrected to Redding
+- [x] SEO meta title audit — fixed 14 pages:
+  - Added metadata to About page and Gallery page (previously missing)
+  - Standardized all 12 area/city page titles to clean "Plumber in [City], CA | Topline Plumbing" format
+- [x] Schema markup domain fixed — was pointing to old domain (toplineplumbing530.com); corrected to toplineplumbingco.com
+- [x] Schema markup upgraded — added 4.9-star rating + 427 reviews to structured data; enables star rating display in Google Search results
+- [x] Sitemap expanded — from 6 URLs to 27 (all service pages + all 15 area pages)
+
+---
+
+## GoHighLevel (CRM & Automation)
+
+- [x] Sub-account configured (Topline Plumbing location)
+- [x] Business profile updated
+  - Business name set
+  - Address: Redding, CA
+  - Phone: +1 (530) 704-6989
+  - Email: Toplineplumbingredding@gmail.com
+  - Timezone: America/Los_Angeles
+- [x] Workflow audit completed — reviewed all 8 existing draft workflows:
+  - Marketing Workflows folder: New Lead Nurture (Fast 5), Appointment Confirmation + Reminders, Appt No Show, Long-Term Nurture, Stale Leads, After-hour Missed Call Text-Back
+  - Root level: Review Received, Send Review Request
+- [x] Removed all template contamination from workflows — replaced generic "Showroom" copy with Topline Plumbing-specific messaging across Appt Confirmation + Reminders and Appt No Show workflows
+- [x] Updated GHL custom value: promotion name set to "$47 Water Heater Inspection (Reg. $97)"
+- [x] Confirmed Fast 5 email/SMS copy is clean and ready — uses correct custom value variables
+- [x] Long-Term Nurture workflow: trigger added — fires when "long-term-nurture" tag is applied to a contact
+- [x] Fixed Send Review Request follow-up email subject line — now reads "Still Haven't Left a Review? We'd Really Appreciate It" (was duplicate of Email 1)
+
+### Pending — GHL (waiting on Joe/Josiah)
+- [x] Phone number purchased — **+1 (530) 704-6989** registered in GHL
+- [ ] Missed-call text-back enabled in GHL Advanced Settings (requires phone number — now available)
+- [ ] Booking page URL confirmed — currently set to toplineplumbingco.com/contact; update if GHL calendar preferred
+- [ ] Long-Term Nurture email copy: 5 emails reference promotion in off-topic context — minor manual cleanup in GHL before publishing
+- [ ] Send Review Request: confirm SMS attachment image is correct
+- [ ] All 8 workflows published after phone number is active and pending items confirmed
+- [x] 10DLC / A2P SMS registration — submitted (Mar 26, 2026). Brand approval ~7 days, campaign approval ~2-3 days after. Once approved: all 8 workflows publish and SMS is fully operational.
+- [x] CNAM registration — submitted (Mar 26, 2026). Status: In Review. "Topline Plumb" will display on outbound caller ID once approved.
+- [x] Voice Integrity registration — submitted (Mar 26, 2026). Status: Under Review (~2 business days). Reduces spam tagging on outbound calls.
+
+---
+
+## Google Business Profile (GMB)
+
+- [ ] Manager access granted to blake@omnipresent.app — *invite sent, Josiah must accept*
+- [ ] Website URL updated to https://toplineplumbingco.com
+- [ ] Business description updated (750-char optimized copy written — ready to apply)
+- [ ] Services added: Emergency Plumbing, Water Heaters, Drain Cleaning, Tankless, Repiping, Fixture Installs, Sewer Line, Gas Lines
+- [ ] Phone number updated (once GHL number is purchased)
+- [x] 12 Google Business Posts written — full 3-month rotation ready to publish
+  - Covers: Emergency, Water Heaters, Drain Cleaning, Tankless, Repiping, Leak Detection, Fixture Installs, Sewer Line, Seasonal (Spring), Trust, and 2x Social Proof posts
+
+---
+
+## SEO & Technical
+
+- [x] Schema markup — PlumbingService structured data with geo coordinates, service catalog, opening hours, area served, and 4.9-star aggregateRating
+- [x] Sitemap.xml — 27 URLs submitted covering all pages
+- [x] llms.txt published — optimized business description for AI search (ChatGPT, Perplexity, Claude, etc.)
+- [x] Rich Results Test run — schema crawled successfully; star snippet will display once Google indexes aggregateRating
+- [x] FAQ schema added to all 6 service pages — 5 questions each (Drain, Tankless, Repiping, Fixtures + previously: Emergency, Water Heaters)
+  - Covers pricing, signs of problem, same-day availability, local specifics — optimized for local intent queries
+- [x] Google Search Console — verified and sitemap submitted (Mar 27, 2026)
+  - Property: toplineplumbingco.com (Domain property, blake@omnipresent.app)
+  - Verified via DNS TXT record — auto-verified on first access
+  - Sitemap submitted: toplineplumbingco.com/sitemap.xml — 27 URLs queued for crawl
+- [x] Namecheap account email updated — blake@blakeernst.com now owns DNS management for toplineplumbingco.com (no longer dependent on Joe's email for 2FA)
+- [x] Speed & Core Web Vitals — maxed out scores across all Lighthouse categories
+  - Desktop: Performance 100 / Accessibility 100 / Best Practices 100 / SEO 100
+  - Mobile: Performance 93 / Accessibility 100 / Best Practices 100 / SEO 100
+  - Desktop metrics: FCP 0.3s, LCP 0.6s, TBT 20ms, CLS 0, SI 0.7s
+  - Mobile metrics: FCP 0.9s, LCP 3.2s (simulated 4G), TBT 0ms, CLS 0, SI 2.4s
+  - Fixed (initial): Hero image, contrast issues, heading order, accessibility fixes
+  - Fixed (round 2): Removed redundant font preconnects, dropped Inter font (3→2 font families), fixed broken image preload URL, flipped AVIF before WebP for ~50% smaller images on mobile
+  - Remaining: Unused JS 83KB (Next.js core bundle — requires major refactor)
+
+---
+
+## Review Generation
+
+- [ ] Google review link obtained and confirmed (opens review modal)
+- [ ] GHL Reputation Settings configured with review link
+- [ ] Review gating confirmed (on or off — intentional)
+- [ ] Send Review Request workflow tested — trigger confirmed
+- [ ] Joe sent personal review outreach kit (script + link + instructions)
+- [ ] A2P approved — publish Send Review Request workflow (submitted Mar 26, est. ~Apr 5-6)
+- [ ] Joe texted 15-20 past customers from personal phone
+- [ ] 10+ Google reviews confirmed on GBP listing
+- [ ] Send Review Request workflow published and live
+
+---
+
+## Client Portal
+
+- [x] Topline Plumbing client portal built and deployed — portal.blakeernst.com/toplineplumbing
+  - Custom branded in Topline navy (#0A1628) + red (#C8102E)
+  - Hero section with Topline logo + high-res hero image (arch-framed, golden hour, Topline van)
+  - Stats bar: 15 area pages, 427 reviews (4.9★), 8 workflows, 12 GMB posts
+  - "What's been built" grid — 3 agreed deliverables (green ✓ badges) + 3 bonus deliverables
+  - Each card includes plain English summary + "why it matters" benefit + technical detail
+  - Add-ons section: 4 unlockable services with layman explanations and blue call-to-action
+  - Roadmap: 8 items sorted done → active → pending; phone number and A2P shown as completed/submitted
+  - Investment section: $297/mo with comparison table ($4,300–$11,000 if hired separately); green callout highlighting value
+  - Scroll progress bar, smooth scroll animations, mobile-optimized layout
+  - Direct contact footer — Text Blake + email
+- [x] Client portal updated (Mar 28, 2026) — reflects full SEO overhaul and GSC validation status
+  - SEO Foundation card updated: canonical URLs, OpenGraph, breadcrumb schema, dual-type schema fix documented
+  - Google Search Console card updated: structured data error caught + fixed, validation submitted, star ratings pending
+  - Roadmap updated: SEO overhaul and sitemap submission marked done; Review Snippets validation shown as active; duplicates removed
+
+---
+
+## Credentials & Access
+
+- [x] Namecheap login saved to LastPass (domain management)
+- [x] GHL sub-account accessed and configured
+- [x] Google Search Console — property created under blake@omnipresent.app (DNS verification pending)
+
+---
+
+- [x] Full SEO audit and structured data overhaul (Mar 28, 2026)
+  - Fixed Google Search Console "Review snippets" critical error — invalid object type on `image` field (was plain string, now proper `ImageObject`)
+  - Fixed invalid `description` field on `OpeningHoursSpecification` (not a valid schema.org property)
+  - Updated opening hours schema to reflect actual 24/7 availability (was 8am–5pm weekdays)
+  - Expanded `areaServed` from 5 → 15 cities in structured data
+  - Added `logo` as `ImageObject` alongside `image` for knowledge panel eligibility
+  - Added 4 missing services to `hasOfferCatalog` (tankless, sewer line, gas line, repiping)
+  - Added canonical URLs (`alternates.canonical`) to all 33 pages — prevents duplicate content penalties
+  - Added OpenGraph tags (title, description, image, url, locale) to all 33 pages — enables proper social sharing previews
+  - Added homepage-level metadata export (was inheriting global layout only)
+  - Added `BreadcrumbSchema` component — breadcrumb JSON-LD now injected on all 16 area pages and 9 service pages — breadcrumbs eligible to display in Google search results
+  - Fixed sitemap — removed 2 non-existent index URLs (`/services`, `/areas`) that would have returned 404s; updated all lastmod dates
+  - All changes deployed to production — toplineplumbingco.com
+
+- [x] Google Search Console — Review snippets validation submitted (Mar 28, 2026)
+  - Root cause identified: `@type: "PlumbingService"` alone is not in Google's explicitly supported types list for review snippets — Google doesn't walk the full inheritance chain during validation
+  - Fix: changed to `@type: ["LocalBusiness", "PlumbingService"]` — explicitly declares both types so Google sees the supported `LocalBusiness` type while keeping the specific `PlumbingService` type
+  - Deployed, live on toplineplumbingco.com
+  - Validation started in Search Console (3/28/26) — Google is recrawling both affected pages (homepage + /areas/palo-cedro). Status will update to "Passed" within a few days once recrawl completes
+
+*Last updated: 2026-03-28*
+
+### 2026-03-31
+- Updated project documentation and session records to reflect current work status
+- Reviewed and organized client deliverables tracking system
+- Established memory and feedback protocols for improved project continuity
+
+### 2026-04-01
+- Deployed updated estimate form with improved validation and user experience enhancements to production environment
+
+### 2026-04-01
+- Deployed updated estimate form with improved functionality to production environment
+- Verified deployment stability and performance across multiple verification checks
+
+### 2026-04-03
+- Received past customer list from Joe — 5,210 contacts across 4 home warranty sources (American Home Shield, Fidelity, Rely, Frontdoorpro)
+- Cleaned and formatted list into GHL-ready CSV (topline_ghl_import.csv)
+- Bulk import completed — 5,070 of 5,210 contacts successfully imported (97.5% success rate, 129 errors on malformed data — expected and acceptable)
+- All imported contacts tagged `past-customer` and isolated in their own smart list
+
+### 2026-04-03
+- Updated project documentation and customer list with current business information
+- Reviewed and organized project memory and feedback systems for improved workflow continuity
+
+### 2026-04-03
+- Updated navigation bar component to improve user interface and site navigation
+
+### 2026-04-08
+- Updated project phase status documentation to reflect current milestone progress
+- Reviewed and organized customer contact information and service records
+
+### 2026-04-09
+- Retrieved and reviewed current project sections and task structure in Asana
+- Updated project phase status and customer list documentation
+
+### 2026-04-09
+- Verified Asana API authentication credentials and system configuration
+
+### 2026-04-09
+- Updated schema documentation to reflect accurate Google Business Profile metrics (1 review, 5.0 star rating)
+
+### 2026-04-09
+- Updated Google Business Profile schema to reflect accurate 5-star rating and verified review count in website code
+
+### 2026-04-10
+- Updated index.html file for the toplineplumbing530 project
+- Phone number updated sitewide — changed from (530) 768-9446 to (530) 704-6989 across all 41 files (navbar, footer, hero, CTA, all service pages, all area pages, schema markup, privacy policy, terms)
+- llms.txt fully rewritten — expanded from basic business info to comprehensive AI-optimized content including all 9 services with descriptions, all 15 service areas, FAQs, social links, and full site map. This helps Topline Plumbing appear in AI search results (ChatGPT, Perplexity, Claude, Google AI Overviews)
+- robots.txt updated — added AI bot directives so ChatGPT, Perplexity, Claude, and Google AI crawlers can find and index llms.txt
+- Schema markup (structured data) fully overhauled for maximum Google ranking:
+  - Changed primary type from PlumbingService to Plumber (Google's preferred type for plumber businesses)
+  - Added founder (Joe Torculas), founding date (1998), alternate name, payment methods
+  - Added social media links (Facebook, Instagram) — feeds Google Knowledge Panel
+  - Added Wikipedia sameAs links to all major cities in service area — strengthens geographic relevance
+  - Added full service descriptions with URLs to each service page (9 services)
+  - Added WebSite schema — helps Google understand site structure
+  - Added knowsAbout — signals expertise to Google across all service categories
+
+### 2026-04-10
+- Updated Topline Plumbing website page with improved schema markup and SEO metadata
+- Enhanced robots.txt and sitemap configuration for search engine optimization
+- Deployed build with all changes committed to version control

@@ -2,3 +2,20 @@ User-agent: *
 Allow: /
 
 Sitemap: https://toplineplumbingco.com/sitemap.xml
+
+# AI / LLM context
+# See https://llmstxt.org
+User-agent: ChatGPT-User
+Allow: /llms.txt
+
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /llms.txt

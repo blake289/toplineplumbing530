@@ -64,13 +64,13 @@ export default function Hero() {
             {/* CTA Buttons - Clear hierarchy */}
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <a
-                href="tel:5307689446"
+                href="tel:5307046989"
                 className="h-14 px-8 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:-translate-y-1 transition-all duration-200 shadow-lg text-base md:text-lg touch-target"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
                 </svg>
-                (530) 768-9446
+                (530) 704-6989
               </a>
               <a
                 href="/contact"

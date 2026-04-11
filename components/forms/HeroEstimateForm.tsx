@@ -45,20 +45,21 @@ export default function HeroEstimateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 bg-gray-50/50 sm:bg-white sm:shadow-xl sm:border border-gray-100 rounded-3xl p-6 sm:p-10">
-      <Input
-        label="First Name"
-        {...register('firstName')}
-        error={errors.firstName?.message}
-        required
-      />
-
-      <Input
-        label="Last Name"
-        {...register('lastName')}
-        error={errors.lastName?.message}
-        required
-      />
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
+      <div className="grid grid-cols-2 gap-2">
+        <Input
+          label="First Name"
+          {...register('firstName')}
+          error={errors.firstName?.message}
+          required
+        />
+        <Input
+          label="Last Name"
+          {...register('lastName')}
+          error={errors.lastName?.message}
+          required
+        />
+      </div>
 
       <Input
         label="Phone"
@@ -80,28 +81,26 @@ export default function HeroEstimateForm() {
         label="Message"
         {...register('message')}
         placeholder="Brief description of your plumbing need..."
-        rows={2}
+        rows={1}
         error={errors.message?.message}
       />
 
       {/* Consent Checkbox */}
-      <div className="space-y-2">
-        <label className="flex items-start gap-3 cursor-pointer">
+      <div>
+        <label className="flex items-start gap-2 cursor-pointer">
           <input
             type="checkbox"
             {...register('consent')}
-            className="mt-1 w-5 h-5 text-primary bg-white border-gray-300 rounded focus:ring-primary focus:ring-2 cursor-pointer"
+            className="mt-0.5 w-4 h-4 text-primary bg-white border-gray-300 rounded focus:ring-primary focus:ring-2 cursor-pointer flex-shrink-0"
           />
-          <span className="text-sm text-gray-700 leading-relaxed">
-            By submitting, you authorize Topline Plumbing to contact you via call, text, or email regarding your inquiry. Message/data rates may apply. Opt out anytime.{' '}
-            <a href="/contact" className="text-primary underline">
-              View our Privacy Policy
-            </a>
-            .
+          <span className="text-xs text-gray-500 leading-snug">
+            By submitting this form, I consent to receive SMS messages from Topline Plumbing regarding my service request and appointment updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out.{' '}
+            <a href="/privacy" className="text-primary underline">Privacy Policy</a>{' '}&amp;{' '}
+            <a href="/terms" className="text-primary underline">Terms</a>.
           </span>
         </label>
         {errors.consent && (
-          <p className="text-red-600 text-sm">{errors.consent.message}</p>
+          <p className="text-red-600 text-xs mt-1">{errors.consent.message}</p>
         )}
       </div>
 

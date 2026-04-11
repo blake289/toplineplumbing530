@@ -1,16 +1,27 @@
 import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Tankless Water Heater Installation in Redding, CA | Topline Plumbing',
-  description: 'Upgrade to a tankless water heater in Redding. Endless hot water and lower energy bills. Call (530) 768-9446 for a free consultation.',
+  description: 'Upgrade to a tankless water heater in Redding. Endless hot water and lower energy bills. Call (530) 704-6989 for a free consultation.',
+  alternates: { canonical: 'https://toplineplumbingco.com/services/tankless' },
+  openGraph: {
+    title: 'Tankless Water Heater Installation in Redding, CA | Topline Plumbing',
+    description: 'Upgrade to a tankless water heater in Redding. Endless hot water and lower energy bills. Call (530) 704-6989 for a free consultation.',
+    url: 'https://toplineplumbingco.com/services/tankless',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Tankless Water Heater Installation in Redding, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 const tanklessFAQs = [
   {
     question: 'How much does tankless water heater installation cost in Redding, CA?',
-    answer: 'Tankless water heater installation in Redding typically ranges from $1,500–$3,500 depending on the unit, gas line requirements, and venting setup. We provide upfront pricing before any work begins. Call (530) 768-9446 for a free consultation.',
+    answer: 'Tankless water heater installation in Redding typically ranges from $1,500–$3,500 depending on the unit, gas line requirements, and venting setup. We provide upfront pricing before any work begins. Call (530) 704-6989 for a free consultation.',
   },
   {
     question: 'How much can I save by switching to tankless?',
@@ -22,17 +33,22 @@ const tanklessFAQs = [
   },
   {
     question: 'What brands of tankless water heaters do you install?',
-    answer: 'We install all major brands including Navien, Rinnai, Noritz, and Rheem. We will recommend the right brand and model for your household size and water usage. Call (530) 768-9446 for a free recommendation.',
+    answer: 'We install all major brands including Navien, Rinnai, Noritz, and Rheem. We will recommend the right brand and model for your household size and water usage. Call (530) 704-6989 for a free recommendation.',
   },
   {
     question: 'Do I need to upgrade my gas line for a tankless water heater?',
-    answer: 'Sometimes yes. Tankless units require a larger gas supply than traditional tank heaters, so older homes may need a gas line upgrade. We assess your current gas line during the free consultation and include any required upgrades in your upfront quote. Call (530) 768-9446 to schedule.',
+    answer: 'Sometimes yes. Tankless units require a larger gas supply than traditional tank heaters, so older homes may need a gas line upgrade. We assess your current gas line during the free consultation and include any required upgrades in your upfront quote. Call (530) 704-6989 to schedule.',
   },
 ];
 
 export default function TanklessWaterHeaterPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Services', url: 'https://toplineplumbingco.com/services' },
+        { name: 'Tankless Water Heater Installation', url: 'https://toplineplumbingco.com/services/tankless' },
+      ]} />
       <FAQSchema faqs={tanklessFAQs} />
       <ServicePageTemplate
       hero={{

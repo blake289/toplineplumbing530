@@ -201,7 +201,7 @@ export default function GalleryPage() {
             {photos.map((filename, index) => (
               <div
                 key={filename}
-                className="break-inside-avoid mb-3 overflow-hidden rounded-lg cursor-pointer group relative"
+                className="break-inside-avoid mb-3 overflow-hidden rounded-lg cursor-pointer group relative bg-gray-200"
                 onClick={() => openLightbox(index)}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -209,7 +209,10 @@ export default function GalleryPage() {
                   src={`/images/gallery/${encodeURIComponent(filename)}`}
                   alt={`Topline Plumbing project photo ${index + 1}`}
                   loading="lazy"
-                  className="w-full block object-cover transition-transform duration-300 group-hover:scale-105"
+                  decoding="async"
+                  style={{ opacity: 0, transition: 'opacity 0.3s ease, transform 0.3s ease' }}
+                  onLoad={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = '1'; }}
+                  className="w-full block object-cover group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                   <svg
@@ -237,13 +240,13 @@ export default function GalleryPage() {
             Our team delivers quality work on every job. Call us today for a free estimate.
           </p>
           <a
-            href="tel:5307689446"
+            href="tel:5307046989"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold text-lg rounded-xl hover:bg-primary-dark transition-all duration-300 shadow-brand hover:shadow-brand-lg hover:-translate-y-1"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
-            (530) 768-9446
+            (530) 704-6989
           </a>
         </div>
       </section>

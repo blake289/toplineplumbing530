@@ -103,10 +103,10 @@ export default function AboutPage() {
               </p>
 
               <a
-                href="tel:5307689446"
+                href="tel:5307046989"
                 className="block text-[#dc2626] text-2xl font-bold mb-6 hover:text-[#b91c1c] transition-colors duration-150"
               >
-                (530) 768-9446
+                (530) 704-6989
               </a>
 
               <Link
@@ -304,10 +304,10 @@ export default function AboutPage() {
             </Link>
 
             <a
-              href="tel:5307689446"
+              href="tel:5307046989"
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 focus-visible:bg-white/10 transition-all duration-200"
             >
-              Call (530) 768-9446
+              Call (530) 704-6989
             </a>
           </div>
         </div>

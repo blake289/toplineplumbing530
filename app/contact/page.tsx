@@ -3,7 +3,17 @@ import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 export const metadata: Metadata = {
   title: 'Contact Topline Plumbing | Redding, CA',
-  description: 'Contact Topline Plumbing for plumbing services in Redding, CA. Call (530) 768-9446 or request a free estimate online.',
+  description: 'Contact Topline Plumbing for plumbing services in Redding, CA. Call (530) 704-6989 or request a free estimate online.',
+  alternates: { canonical: 'https://toplineplumbingco.com/contact' },
+  openGraph: {
+    title: 'Contact Topline Plumbing | Redding, CA',
+    description: 'Contact Topline Plumbing for plumbing services in Redding, CA. Call (530) 704-6989 or request a free estimate online.',
+    url: 'https://toplineplumbingco.com/contact',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Contact Us in Redding, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function ContactPage() {
@@ -28,7 +38,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-base text-gray-900 uppercase tracking-wide mb-2">Phone</h3>
-                    <a href="tel:5307689446" className="text-lg text-navy-500 hover:text-navy-700">(530) 768-9446</a>
+                    <a href="tel:5307046989" className="text-lg text-navy-500 hover:text-navy-700">(530) 704-6989</a>
                     <p className="text-sm text-gray-600">Available 24/7 for emergencies</p>
                   </div>
                 </div>
@@ -78,6 +88,7 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden bg-white">
               <div className="p-8 md:p-10">
                 <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate</h2>
+                <p className="text-sm text-gray-600 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 mb-4"><strong>Age Restriction:</strong> You must be at least 18 years of age to submit this form and opt in to receive SMS text messages from Topline Plumbing.</p>
                 <HeroEstimateForm />
               </div>
             </div>

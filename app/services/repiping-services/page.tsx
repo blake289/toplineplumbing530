@@ -1,10 +1,21 @@
 import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Repiping Services in Redding, CA | Topline Plumbing',
-  description: 'Professional repiping services in Redding. Upgrade old galvanized or polybutylene pipes to reliable PEX or Copper. Call (530) 768-9446.',
+  description: 'Professional repiping services in Redding. Upgrade old galvanized or polybutylene pipes to reliable PEX or Copper. Call (530) 704-6989.',
+  alternates: { canonical: 'https://toplineplumbingco.com/services/repiping-services' },
+  openGraph: {
+    title: 'Repiping Services in Redding, CA | Topline Plumbing',
+    description: 'Professional repiping services in Redding. Upgrade old galvanized or polybutylene pipes to reliable PEX or Copper. Call (530) 704-6989.',
+    url: 'https://toplineplumbingco.com/services/repiping-services',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Repiping Services in Redding, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 const repipingFAQs = [
@@ -14,7 +25,7 @@ const repipingFAQs = [
   },
   {
     question: 'How much does whole-house repiping cost in Redding, CA?',
-    answer: 'Whole-house repiping in Redding typically ranges from $4,000–$12,000 depending on the size of your home, the pipe material (PEX vs. copper), and the accessibility of existing pipes. We provide a free on-site estimate with detailed upfront pricing. Call (530) 768-9446 to schedule.',
+    answer: 'Whole-house repiping in Redding typically ranges from $4,000–$12,000 depending on the size of your home, the pipe material (PEX vs. copper), and the accessibility of existing pipes. We provide a free on-site estimate with detailed upfront pricing. Call (530) 704-6989 to schedule.',
   },
   {
     question: 'What is the difference between PEX and copper repiping?',
@@ -26,13 +37,18 @@ const repipingFAQs = [
   },
   {
     question: 'Is repiping covered by homeowners insurance?',
-    answer: 'In some cases, yes. If your pipes failed due to a sudden and accidental event like a burst pipe, your insurance may cover repairs. However, gradual deterioration due to age is typically not covered. We can provide detailed documentation of the work done to support any insurance claim. Call (530) 768-9446 for details.',
+    answer: 'In some cases, yes. If your pipes failed due to a sudden and accidental event like a burst pipe, your insurance may cover repairs. However, gradual deterioration due to age is typically not covered. We can provide detailed documentation of the work done to support any insurance claim. Call (530) 704-6989 for details.',
   },
 ];
 
 export default function RepipingServicesPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Services', url: 'https://toplineplumbingco.com/services' },
+        { name: 'Repiping Services', url: 'https://toplineplumbingco.com/services/repiping-services' },
+      ]} />
       <FAQSchema faqs={repipingFAQs} />
       <ServicePageTemplate
       hero={{

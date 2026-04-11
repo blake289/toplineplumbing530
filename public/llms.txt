@@ -1,72 +1,155 @@
 # Topline Plumbing
 
-> Fast, reliable plumbing in Redding, CA and surrounding areas.
+> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day service and 24/7 emergency response across Northern California's entire 530 area code.
 
 ## Business Information
 
 - **Company**: Topline Plumbing
-- **Phone**: (530) 768-9446
+- **Owner**: Joe Torculas
+- **Founded**: 1998
+- **Phone**: (530) 704-6989
 - **Email**: Toplineplumbingredding@gmail.com
 - **Website**: https://toplineplumbingco.com
 - **Location**: Redding, CA 96001
-- **Service Area**: Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, and surrounding Northern California communities
-- **Hours**: Mon–Fri 8am–5pm | 24/7 Emergency Service
-- **License**: Licensed, Bonded & Insured — California
+- **Hours**: 24/7 Emergency Service Available | Regular hours Mon–Sun
+- **License**: Licensed, Bonded & Insured — State of California
+
+## Service Area
+
+Topline Plumbing serves the entire 530 area code across Northern California, including:
+
+- **Primary**: Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista
+- **North State**: Red Bluff, Chico, Oroville, Paradise, Marysville, Yuba City
+- **Sierra / Foothills**: Auburn, Grass Valley, Truckee, South Lake Tahoe
 
 ## Services
 
 ### Emergency Plumbing (24/7)
+Available around the clock, 365 days a year. Call (530) 704-6989 for immediate response.
 - Burst pipe repair
 - Active leak response
 - Flooding and water damage mitigation
 - Gas line emergencies
+- Sewer backups
+- No overtime charges for after-hours calls
 
 ### Water Heater Services
-- Water heater repair (all makes/models)
-- Water heater replacement
-- Tankless water heater installation
+- Water heater repair (all makes and models)
+- Water heater replacement and installation
+- Tankless water heater installation and conversion
+- Bradford White, Rheem, Rinnai, Navien specialists
 - Same-day service available
+- https://toplineplumbingco.com/services/water-heater-repair
+- https://toplineplumbingco.com/services/tankless
 
-### Drain & Sewer
-- Drain cleaning
-- Clogged toilet repair
-- Sewer line clearing
-- Power auger service
+### Drain & Sewer Services
+- Drain cleaning and clog removal
+- Sewer line repair and replacement
+- Camera inspection and sewer scoping
+- Trenchless sewer repair options
+- Power auger and hydrojetting
+- https://toplineplumbingco.com/services/drain-cleaning
+- https://toplineplumbingco.com/services/sewer-line
 
-### General Plumbing
-- Leak detection and repair
+### Leak Detection & Pipe Repair
+- Electronic leak detection
+- Slab leak detection and repair
 - Pipe repair and replacement (PEX & Copper)
-- Fixture installation (sinks, toilets, faucets, showers)
-- Residential plumbing service
+- Whole-home repiping services
+- https://toplineplumbingco.com/services/leak-detection
+- https://toplineplumbingco.com/services/repiping-services
 
-## Key Differentiators
+### Gas Line Services
+- Gas line repair
+- Gas line installation
+- Gas leak detection
+- Gas appliance hookup
+- https://toplineplumbingco.com/services/gas-line
 
-- Upfront pricing before work begins — no hidden fees
-- Same-day service available for most repairs
-- Licensed, insured technicians
-- Real person answers 24/7 — no voicemail
-- 100% satisfaction guarantee
+### Fixture Installation
+- Sink, toilet, faucet, and shower installation
+- Garbage disposal installation
+- Bathroom and kitchen plumbing upgrades
+- ADA-compliant fixture installation
+- https://toplineplumbingco.com/services/fixture-installs
+
+## Why Choose Topline Plumbing
+
+- **Upfront pricing** — Written estimates before work begins, no hidden fees
+- **Same-day service** — Available for most repairs
+- **Licensed & insured** — Fully credentialed California plumber
+- **24/7 emergency response** — Real person answers, no voicemail
+- **100% satisfaction guarantee** — We stand behind every job
+- **Family-owned** — Serving Redding since 1998
+- **5-star rated** — Top-rated on Google
+
+## Frequently Asked Questions
+
+**Q: What areas does Topline Plumbing serve?**
+A: We serve the entire 530 area code including Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, Red Bluff, Chico, Oroville, Paradise, Yuba City, Marysville, Auburn, Grass Valley, Truckee, and South Lake Tahoe.
+
+**Q: Do you offer 24/7 emergency plumbing?**
+A: Yes. Call (530) 704-6989 any time — day or night, weekends and holidays. A real person answers, not a voicemail.
+
+**Q: Do you provide free estimates?**
+A: Yes, we provide free estimates and upfront pricing before any work begins. No surprises, no hidden fees.
+
+**Q: What brands of water heaters do you service?**
+A: We repair and install all major brands including Bradford White, Rheem, Rinnai, Navien, A.O. Smith, and more.
+
+**Q: Are you licensed and insured?**
+A: Yes. Topline Plumbing is fully licensed, bonded, and insured in the State of California.
+
+**Q: How quickly can you respond?**
+A: We offer same-day service for most repairs. For emergencies, we dispatch immediately — often within the hour.
 
 ## Contact
 
-- **Phone**: (530) 768-9446
+- **Phone**: (530) 704-6989
 - **Email**: Toplineplumbingredding@gmail.com
 - **Book Online**: https://toplineplumbingco.com/contact
+- **Free Estimate**: https://toplineplumbingco.com/#estimate
 
-## Social
+## Social Media
 
-- Facebook: https://www.facebook.com/profile.php?id=61551944100731
-- Instagram: https://www.instagram.com/toplineplumbing/
+- **Facebook**: https://www.facebook.com/profile.php?id=61551944100731
+- **Instagram**: https://www.instagram.com/toplineplumbing/
 
-## Website Structure
+## Website Pages
 
-- `/` — Homepage
-- `/services` — Full service listing
-- `/areas` — Service area pages
-- `/about` — About the company
-- `/gallery` — Work portfolio
-- `/contact` — Contact form and booking
+- `/` — Homepage with free estimate form
+- `/about` — About the company, meet the team
+- `/contact` — Contact form and phone booking
+- `/gallery` — Work portfolio and project photos
+- `/services/emergency` — 24/7 Emergency Plumbing
+- `/services/water-heater-repair` — Water Heater Repair & Replacement
+- `/services/tankless` — Tankless Water Heater Installation
+- `/services/drain-cleaning` — Drain Cleaning Services
+- `/services/sewer-line` — Sewer Line Repair & Replacement
+- `/services/leak-detection` — Leak Detection & Repair
+- `/services/repiping-services` — Whole-Home Repiping
+- `/services/gas-line` — Gas Line Repair & Installation
+- `/services/fixture-installs` — Fixture Installation
+- `/areas/redding` — Plumber in Redding, CA
+- `/areas/shasta-lake` — Plumber in Shasta Lake, CA
+- `/areas/anderson` — Plumber in Anderson, CA
+- `/areas/palo-cedro` — Plumber in Palo Cedro, CA
+- `/areas/bella-vista` — Plumber in Bella Vista, CA
+- `/areas/red-bluff` — Plumber in Red Bluff, CA
+- `/areas/chico` — Plumber in Chico, CA
+- `/areas/oroville` — Plumber in Oroville, CA
+- `/areas/paradise` — Plumber in Paradise, CA
+- `/areas/yuba-city` — Plumber in Yuba City, CA
+- `/areas/marysville` — Plumber in Marysville, CA
+- `/areas/auburn` — Plumber in Auburn, CA
+- `/areas/grass-valley` — Plumber in Grass Valley, CA
+- `/areas/truckee` — Plumber in Truckee, CA
+- `/areas/south-lake-tahoe` — Plumber in South Lake Tahoe, CA
+
+## Extended Reference
+
+For complete service details, pricing ranges, and all FAQs, see: https://toplineplumbingco.com/llms-full.txt
 
 ---
 
-*Last updated: March 2026*
+*Last updated: April 2026*

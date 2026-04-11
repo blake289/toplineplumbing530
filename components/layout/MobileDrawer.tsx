@@ -112,6 +112,27 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 >
                   Tankless Upgrades
                 </Link>
+                <Link
+                  href="/services/sewer-line"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Sewer Line Repair
+                </Link>
+                <Link
+                  href="/services/gas-line"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Gas Line Services
+                </Link>
+                <Link
+                  href="/services/leak-detection"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Leak Detection
+                </Link>
               </div>
             )}
           </div>
@@ -199,14 +220,14 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
 
           {/* Mobile CTA Button */}
           <a
-            href="tel:5307689446"
+            href="tel:5307046989"
             className="mt-6 h-12 px-6 bg-primary text-white font-btn font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all duration-base shadow-md w-full"
             onClick={onClose}
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
-            (530) 768-9446
+            (530) 704-6989
           </a>
         </nav>
       </div>

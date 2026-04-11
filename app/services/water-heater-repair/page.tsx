@@ -1,10 +1,21 @@
 import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
-  description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 768-9446 for a free inspection.",
+  description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 704-6989 for a free inspection.",
+  alternates: { canonical: 'https://toplineplumbingco.com/services/water-heater-repair' },
+  openGraph: {
+    title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
+    description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 704-6989 for a free inspection.",
+    url: 'https://toplineplumbingco.com/services/water-heater-repair',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair & Replacement in Redding, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 const waterHeaterFAQs = [
@@ -14,11 +25,11 @@ const waterHeaterFAQs = [
   },
   {
     question: "How much does water heater replacement cost in Redding, CA?",
-    answer: "Water heater replacement in Redding typically ranges from $900–$1,800 depending on the unit size and type. We provide upfront pricing before any work begins. Call (530) 768-9446 for a free estimate.",
+    answer: "Water heater replacement in Redding typically ranges from $900–$1,800 depending on the unit size and type. We provide upfront pricing before any work begins. Call (530) 704-6989 for a free estimate.",
   },
   {
     question: "Can you replace my water heater the same day?",
-    answer: "In most cases, yes. Topline Plumbing offers same-day water heater replacement in Redding, Anderson, Shasta Lake, and surrounding areas. We keep common units in stock. Call (530) 768-9446 and we'll let you know right away.",
+    answer: "In most cases, yes. Topline Plumbing offers same-day water heater replacement in Redding, Anderson, Shasta Lake, and surrounding areas. We keep common units in stock. Call (530) 704-6989 and we'll let you know right away.",
   },
   {
     question: "What are the signs my water heater is failing?",
@@ -26,13 +37,18 @@ const waterHeaterFAQs = [
   },
   {
     question: "Do you install tankless water heaters in Redding?",
-    answer: "Yes. We install and service all major brands of tankless water heaters. Tankless units provide endless hot water and can reduce energy costs by 20–30%. Call (530) 768-9446 for a free assessment to see if tankless is right for your home.",
+    answer: "Yes. We install and service all major brands of tankless water heaters. Tankless units provide endless hot water and can reduce energy costs by 20–30%. Call (530) 704-6989 for a free assessment to see if tankless is right for your home.",
   },
 ];
 
 export default function WaterHeaterRepairPage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Services', url: 'https://toplineplumbingco.com/services' },
+        { name: 'Water Heater Repair & Replacement', url: 'https://toplineplumbingco.com/services/water-heater-repair' },
+      ]} />
       <FAQSchema faqs={waterHeaterFAQs} />
       <ServicePageTemplate
       hero={{

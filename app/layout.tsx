@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins, Inter } from 'next/font/google';
+import { Montserrat, Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -19,21 +19,14 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-btn',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
   title: "Topline Plumbing | Redding CA Plumber — Same-Day Service",
-  description: "Redding's trusted plumber. Fast, reliable, same-day emergency plumbing service. Water heater repair, drain cleaning, leak detection. Call (530) 768-9446.",
+  description: "Redding's trusted plumber. Fast, reliable, same-day emergency plumbing service. Water heater repair, drain cleaning, leak detection. Call (530) 704-6989.",
   keywords: "plumber Redding CA, emergency plumbing Redding, water heater repair Redding, drain cleaning Redding, plumbing service Shasta Lake Anderson CA",
   metadataBase: new URL('https://toplineplumbingco.com'),
   openGraph: {
     title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service, water heater repair, drain cleaning. Same-day service available. Call (530) 768-9446.",
+    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service, water heater repair, drain cleaning. Same-day service available. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com',
     siteName: 'Topline Plumbing',
     images: [
@@ -50,12 +43,15 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service. Call (530) 768-9446.",
+    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service. Call (530) 704-6989.",
     images: ['/images/water-heater.webp'],
   },
+  alternates: {
+    canonical: 'https://toplineplumbingco.com',
+  },
   icons: {
-    icon: '/images/logo.webp',
-    apple: '/images/logo.webp',
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 };
 
@@ -65,12 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${poppins.variable} ${inter.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${poppins.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="/images/water-heater.webp" fetchPriority="high" />
         <SchemaMarkup />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM context" />
       </head>
       <body>
         <Navbar />

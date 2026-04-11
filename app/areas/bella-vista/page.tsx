@@ -1,14 +1,31 @@
 import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Plumber in Bella Vista, CA | Topline Plumbing',
-  description: 'Local plumbing services in Bella Vista, CA. Water heater repair, drain cleaning, and emergency plumbing. Call (530) 768-9446.',
+  description: 'Local plumbing services in Bella Vista, CA. Water heater repair, drain cleaning, and emergency plumbing. Call (530) 704-6989.',
+  alternates: { canonical: 'https://toplineplumbingco.com/areas/bella-vista' },
+  openGraph: {
+    title: 'Plumber in Bella Vista, CA | Topline Plumbing',
+    description: 'Local plumbing services in Bella Vista, CA. Water heater repair, drain cleaning, and emergency plumbing. Call (530) 704-6989.',
+    url: 'https://toplineplumbingco.com/areas/bella-vista',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Licensed Plumber in Bella Vista, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function BellaVistaPage() {
   return (
-    <LocationPageTemplate
+    <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
+        { name: 'Plumber in Bella Vista, CA', url: 'https://toplineplumbingco.com/areas/bella-vista' },
+      ]} />
+      <LocationPageTemplate
       locationName="Bella Vista"
       hero={{
         title: 'Local Plumbers Serving Bella Vista, CA',
@@ -36,5 +53,6 @@ export default function BellaVistaPage() {
         },
       ]}
     />
+    </>
   );
 }

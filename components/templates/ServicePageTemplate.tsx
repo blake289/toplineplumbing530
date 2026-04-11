@@ -54,10 +54,10 @@ export default function ServicePageTemplate({
               Get Your Free Inspection →
             </Link>
             <a
-              href="tel:5307689446"
+              href="tel:5307046989"
               className="h-12 px-8 bg-white text-navy-900 font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-gray-100 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
-              Call (530) 768-9446
+              Call (530) 704-6989
             </a>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function ServicePageTemplate({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} padding="lg" shadow="md" className="hover:shadow-lg transition-shadow duration-base">
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4 whitespace-nowrap">
+                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4 leading-snug">
                   {service.title}
                 </h3>
                 <ul className="space-y-2">

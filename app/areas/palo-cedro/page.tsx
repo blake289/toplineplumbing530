@@ -1,14 +1,31 @@
 import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Plumber in Palo Cedro, CA | Topline Plumbing',
-  description: 'Expert plumbing services in Palo Cedro, CA. Water heater repair, tankless upgrades, and emergency plumbing. Call (530) 768-9446.',
+  description: 'Expert plumbing services in Palo Cedro, CA. Water heater repair, tankless upgrades, and emergency plumbing. Call (530) 704-6989.',
+  alternates: { canonical: 'https://toplineplumbingco.com/areas/palo-cedro' },
+  openGraph: {
+    title: 'Plumber in Palo Cedro, CA | Topline Plumbing',
+    description: 'Expert plumbing services in Palo Cedro, CA. Water heater repair, tankless upgrades, and emergency plumbing. Call (530) 704-6989.',
+    url: 'https://toplineplumbingco.com/areas/palo-cedro',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Licensed Plumber in Palo Cedro, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function PaloCedroPage() {
   return (
-    <LocationPageTemplate
+    <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
+        { name: 'Plumber in Palo Cedro, CA', url: 'https://toplineplumbingco.com/areas/palo-cedro' },
+      ]} />
+      <LocationPageTemplate
       locationName="Palo Cedro"
       hero={{
         title: 'Trusted Plumbers Serving Palo Cedro, CA',
@@ -36,5 +53,6 @@ export default function PaloCedroPage() {
         },
       ]}
     />
+    </>
   );
 }

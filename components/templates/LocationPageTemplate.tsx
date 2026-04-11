@@ -46,10 +46,10 @@ export default function LocationPageTemplate({
               Book Service in {locationName} →
             </Link>
             <a
-              href="tel:5307689446"
+              href="tel:5307046989"
               className="h-12 px-8 bg-white text-navy-900 font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-gray-100 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
             >
-              Call (530) 768-9446
+              Call (530) 704-6989
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function LocationPageTemplate({
 
       {/* Main Content Section */}
       <section className="py-16 md:py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:px-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* About Section */}
             <Card padding="lg" className="bg-gray-50">

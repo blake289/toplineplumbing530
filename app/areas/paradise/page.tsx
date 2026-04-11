@@ -1,14 +1,31 @@
+import { Metadata } from 'next';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import React from 'react';
 import Link from 'next/link';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Plumber in Paradise, CA | Topline Plumbing',
-  description: 'Licensed plumber in Paradise, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Paradise. Call (530) 768-9446',
+  description: 'Licensed plumber in Paradise, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Paradise. Call (530) 704-6989',
+  alternates: { canonical: 'https://toplineplumbingco.com/areas/paradise' },
+  openGraph: {
+    title: 'Plumber in Paradise, CA | Topline Plumbing',
+    description: 'Licensed plumber in Paradise, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Paradise. Call (530) 704-6989',
+    url: 'https://toplineplumbingco.com/areas/paradise',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Licensed Plumber in Paradise, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function ParadisePage() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
+        { name: 'Plumber in Paradise, CA', url: 'https://toplineplumbingco.com/areas/paradise' },
+      ]} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -125,7 +142,7 @@ export default function ParadisePage() {
 
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Paradise - 24/7 Service</h2>
               <p className="text-gray-700">
-                When you have a plumbing emergency in Paradise — burst pipe, water heater flooding, sewer backup, or any urgent plumbing problem — call Topline Plumbing 530 immediately at <strong>(530) 768-9446</strong>. Our emergency plumbers are on-call 24 hours a day, 7 days a week, 365 days a year.
+                When you have a plumbing emergency in Paradise — burst pipe, water heater flooding, sewer backup, or any urgent plumbing problem — call Topline Plumbing 530 immediately at <strong>(530) 704-6989</strong>. Our emergency plumbers are on-call 24 hours a day, 7 days a week, 365 days a year.
               </p>
             </div>
 
@@ -136,13 +153,13 @@ export default function ParadisePage() {
                 <h3 className="text-2xl font-bold mb-2">Paradise Plumber</h3>
                 <p className="mb-4">Call for Same-Day Service</p>
                 <a
-                  href="tel:5307689446"
+                  href="tel:5307046989"
                   className="w-full h-14 px-6 bg-white text-primary font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-gray-100 transition-all shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  (530) 768-9446
+                  (530) 704-6989
                 </a>
               </div>
 
@@ -211,13 +228,13 @@ export default function ParadisePage() {
           <p className="text-xl text-gray-200 mb-8">Licensed plumbers ready to help. Same-day service available in Paradise, California.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a
-              href="tel:5307689446"
+              href="tel:5307046989"
               className="h-14 px-8 bg-primary text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-red-700 transition-all shadow-lg text-lg"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span className="whitespace-nowrap">Call: (530) 768-9446</span>
+              <span className="whitespace-nowrap">Call: (530) 704-6989</span>
             </a>
             <Link
               href="/"

@@ -19,12 +19,12 @@ export default function Navbar() {
             {/* Logo - compact */}
             <Link href="/" className="flex-shrink-0 hover:opacity-85 hover:scale-[1.02] transition-all duration-200">
               <Image
-                src="/images/logo.webp"
+                src="/images/logo.png"
                 alt="Topline Plumbing"
-                width={130}
-                height={52}
+                width={260}
+                height={104}
                 priority
-                className="h-12 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
 
@@ -59,6 +59,15 @@ export default function Navbar() {
                       </Link>
                       <Link href="/services/tankless" className="block px-4 py-2.5 text-sm text-gray-900 hover:bg-red-50 hover:text-primary hover:border-l-[3px] hover:border-l-primary hover:pl-[13px] transition-all duration-150">
                         Tankless Upgrades
+                      </Link>
+                      <Link href="/services/sewer-line" className="block px-4 py-2.5 text-sm text-gray-900 hover:bg-red-50 hover:text-primary hover:border-l-[3px] hover:border-l-primary hover:pl-[13px] transition-all duration-150">
+                        Sewer Line Repair
+                      </Link>
+                      <Link href="/services/gas-line" className="block px-4 py-2.5 text-sm text-gray-900 hover:bg-red-50 hover:text-primary hover:border-l-[3px] hover:border-l-primary hover:pl-[13px] transition-all duration-150">
+                        Gas Line Services
+                      </Link>
+                      <Link href="/services/leak-detection" className="block px-4 py-2.5 text-sm text-gray-900 hover:bg-red-50 hover:text-primary hover:border-l-[3px] hover:border-l-primary hover:pl-[13px] transition-all duration-150">
+                        Leak Detection
                       </Link>
                     </div>
                   </div>
@@ -124,13 +133,13 @@ export default function Navbar() {
 
               {/* Phone CTA */}
               <a
-                href="tel:5307689446"
+                href="tel:5307046989"
                 className="px-3 xl:px-4 py-2 text-sm xl:text-base bg-primary text-white font-semibold min-h-[44px] rounded-xl inline-flex items-center gap-1.5 hover:bg-primary-dark hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:bg-primary-dark focus-visible:-translate-y-1 transition-all duration-300 whitespace-nowrap shadow-md"
               >
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
                 </svg>
-                (530) 768-9446
+                (530) 704-6989
               </a>
             </div>
 

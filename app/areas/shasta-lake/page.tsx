@@ -1,14 +1,31 @@
 import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Plumber in Shasta Lake, CA | Topline Plumbing',
-  description: 'Professional plumbing services in Shasta Lake, CA. Water heater repair, emergency plumbing, and drain cleaning. Call (530) 768-9446.',
+  description: 'Professional plumbing services in Shasta Lake, CA. Water heater repair, emergency plumbing, and drain cleaning. Call (530) 704-6989.',
+  alternates: { canonical: 'https://toplineplumbingco.com/areas/shasta-lake' },
+  openGraph: {
+    title: 'Plumber in Shasta Lake, CA | Topline Plumbing',
+    description: 'Professional plumbing services in Shasta Lake, CA. Water heater repair, emergency plumbing, and drain cleaning. Call (530) 704-6989.',
+    url: 'https://toplineplumbingco.com/areas/shasta-lake',
+    siteName: 'Topline Plumbing',
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Licensed Plumber in Shasta Lake, CA' }],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function ShastaLakePage() {
   return (
-    <LocationPageTemplate
+    <>
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://toplineplumbingco.com' },
+        { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
+        { name: 'Plumber in Shasta Lake, CA', url: 'https://toplineplumbingco.com/areas/shasta-lake' },
+      ]} />
+      <LocationPageTemplate
       locationName="Shasta Lake"
       hero={{
         title: 'Expert Plumbers Serving Shasta Lake, CA',
@@ -36,5 +53,6 @@ export default function ShastaLakePage() {
         },
       ]}
     />
+    </>
   );
 }
