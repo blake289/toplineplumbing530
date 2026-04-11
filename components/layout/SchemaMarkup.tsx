@@ -11,11 +11,11 @@ export default function SchemaMarkup() {
     "email": "Toplineplumbingredding@gmail.com",
     "image": {
       "@type": "ImageObject",
-      "url": "https://toplineplumbingco.com/images/logo.png"
+      "url": "https://toplineplumbingco.com/images/logo.webp"
     },
     "logo": {
       "@type": "ImageObject",
-      "url": "https://toplineplumbingco.com/images/logo.png"
+      "url": "https://toplineplumbingco.com/images/logo.webp"
     },
     "founder": {
       "@type": "Person",

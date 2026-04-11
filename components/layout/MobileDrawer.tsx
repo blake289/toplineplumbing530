@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -52,19 +53,31 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
         aria-modal="true"
         aria-label="Mobile navigation menu"
       >
-        {/* Close Button */}
-        <button
-          className="absolute top-4 right-4 text-gray-900 text-2xl p-2 hover:bg-gray-100 rounded transition-colors"
-          onClick={onClose}
-          aria-label="Close Menu"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+        {/* Drawer Header */}
+        <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+          <Link href="/" onClick={onClose} className="flex items-center gap-2">
+            <Image
+              src="/images/logo.webp"
+              alt="Topline Plumbing"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+            />
+            <span className="font-bold text-navy-900 text-sm leading-tight">TOPLINE<br/>PLUMBING</span>
+          </Link>
+          <button
+            className="text-gray-900 p-2 hover:bg-gray-100 rounded transition-colors"
+            onClick={onClose}
+            aria-label="Close Menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
 
         {/* Navigation Links */}
-        <nav className="mt-16 px-6 pb-6 flex flex-col gap-1">
+        <nav className="px-6 pb-6 flex flex-col gap-1 mt-2">
           {/* Services Dropdown */}
           <div>
             <button
