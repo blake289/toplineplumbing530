@@ -29,7 +29,7 @@ export default function Hero() {
             {/* Brand Logo */}
             <div className="flex justify-center lg:justify-start mb-6">
               <Image
-                src="/images/logo.webp"
+                src="/images/logo.png"
                 alt="Topline Plumbing"
                 width={140}
                 height={140}

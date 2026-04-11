@@ -63,7 +63,7 @@ export default function Footer() {
           {/* Column 1: Company Info */}
           <div>
             <Image
-              src="/images/logo.webp"
+              src="/images/logo.png"
               alt="Topline Plumbing"
               width={120}
               height={120}
