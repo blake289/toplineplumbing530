@@ -18,6 +18,53 @@ export const metadata: Metadata = {
   },
 };
 
+const emergencyHowToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'What to Do in a Plumbing Emergency Before the Plumber Arrives',
+  description:
+    'Step-by-step emergency response to limit damage from a burst pipe, water heater failure, or active leak before the plumber arrives.',
+  totalTime: 'PT10M',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+  tool: [
+    { '@type': 'HowToTool', name: 'Main water shut-off valve' },
+    { '@type': 'HowToTool', name: 'Towels or wet/dry vacuum' },
+    { '@type': 'HowToTool', name: 'Phone to call emergency plumber' },
+  ],
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Shut off the main water valve',
+      text: 'Go to your main water shut-off valve (usually in the garage, near the hose bib, or in the crawlspace) and turn it off immediately. This stops the water flow and limits further damage.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Turn off the water heater',
+      text: 'For gas water heaters, turn the control knob to the pilot position. For electric, flip the water heater breaker. This prevents the tank from running dry and damaging the heating element.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Open faucets to drain the lines',
+      text: 'Open all faucets (hot and cold) to drain any remaining water from the supply lines. This minimizes how much water can leak from the burst or failure point.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Call Topline Plumbing 24/7',
+      text: 'Call (530) 704-6989 for 24/7 emergency plumbing in Redding. A real plumber answers — no voicemail. Average response time 60 minutes. No after-hours premium.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Protect valuables and document damage',
+      text: 'Move furniture, electronics, and valuables out of the affected area. Start soaking up water with towels or a wet/dry vacuum. Take photos of all damage for your insurance claim.',
+    },
+  ],
+};
+
 const emergencyFAQs = [
   {
     question: "How fast does Topline Plumbing respond to plumbing emergencies in Redding?",
@@ -50,6 +97,10 @@ export default function EmergencyPlumbingPage() {
         { name: '24/7 Emergency Plumbing', url: 'https://toplineplumbingco.com/services/emergency' },
       ]} />
       <FAQSchema faqs={emergencyFAQs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencyHowToSchema) }}
+      />
       <ServicePageTemplate
       faqs={emergencyFAQs}
       hero={{

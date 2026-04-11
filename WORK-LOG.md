@@ -89,6 +89,16 @@
 - [x] Rich Results Test run — schema crawled successfully; star snippet will display once Google indexes aggregateRating
 - [x] FAQ schema added to all 6 service pages — 5 questions each (Drain, Tankless, Repiping, Fixtures + previously: Emergency, Water Heaters)
   - Covers pricing, signs of problem, same-day availability, local specifics — optimized for local intent queries
+- [x] **AI crawler access unlocked (Apr 11, 2026)** — robots.txt was silently blocking AI bots from full site
+  - Previously each AI bot only had `Allow: /llms.txt` (no `Allow: /`), so ChatGPT, Perplexity, Claude, etc. could only read llms.txt and nothing else
+  - Now allows full site crawling for: GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, Claude-User, Claude-SearchBot, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, CCBot, cohere-ai, Bytespider, meta-externalagent
+- [x] **Local schema enhanced — 18 zip codes added to areaServed (Apr 11, 2026)**
+  - Adds PostalCodeSpecification entries for every served city: 96001/02/03/07/19/49/73/80, 95926/28/66/69, 95901, 95991, 95945, 95603, 96161, 96150
+  - Geographic targeting signal for Google local pack without cluttering visible page content
+- [x] **FAQ schema added to all 15 city pages (Apr 11, 2026)** — 6 questions per city × 15 cities = 90 new AI-citable Q&A pairs
+  - 5 shared questions per city (24/7 availability, response time, pricing, licensing, services)
+  - 1 city-specific question per city (well systems for Bella Vista/Shasta Lake, freeze damage for Truckee/South Lake Tahoe, Camp Fire rebuilds for Paradise, historic homes in Marysville/Red Bluff, etc.)
+  - All FAQ content lives in `lib/cityFaqs.ts` and renders as JSON-LD via shared FAQSchema component
 - [x] Google Search Console — verified and sitemap submitted (Mar 27, 2026)
   - Property: toplineplumbingco.com (Domain property, blake@omnipresent.app)
   - Verified via DNS TXT record — auto-verified on first access
@@ -229,3 +239,18 @@
 - Updated Topline Plumbing website page with improved schema markup and SEO metadata
 - Enhanced robots.txt and sitemap configuration for search engine optimization
 - Deployed build with all changes committed to version control
+
+### 2026-04-11
+- Mobile experience improvements including optimized call-to-action bar and responsive hero form layout
+- Visual refinements to logo display and social sharing image
+- Bug fixes to statistical labels for improved data presentation
+
+### 2026-04-11
+- Updated Topline Plumbing branding across website header, hero section, and footer with new circular badge logo
+- Optimized logo sizing and placement for improved visual hierarchy and mobile responsiveness
+- Deployed changes to production environment
+
+### 2026-04-11
+- Unblocked AI crawlers (ChatGPT, Claude, Perplexity) to index site content for better discoverability
+- Added postal codes to 50+ service area pages and implemented structured FAQ schema for improved search visibility
+- Fixed top UI issues: color consistency across buttons and sections, enlarged navbar/footer branding to 1.3x size for better recognition

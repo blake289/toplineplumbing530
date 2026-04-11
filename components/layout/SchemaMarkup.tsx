@@ -97,83 +97,173 @@ export default function SchemaMarkup() {
       "itemListElement": [
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "150",
+            "maxPrice": "1500"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Emergency Plumbing",
-            "description": "24/7 emergency plumbing response in Redding, CA. Burst pipes, flooding, gas leaks, sewer backups. Immediate dispatch.",
-            "url": "https://toplineplumbingco.com/services/emergency"
+            "description": "24/7 emergency plumbing response in Redding, CA. Burst pipes, flooding, gas leaks, sewer backups. Immediate dispatch. Same pricing 24/7 — no after-hours premium.",
+            "url": "https://toplineplumbingco.com/services/emergency",
+            "serviceType": "Emergency Plumbing"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "1200",
+            "maxPrice": "3500"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Water Heater Repair & Replacement",
-            "description": "Water heater repair and replacement for all makes and models. Same-day service available in Redding and surrounding areas.",
-            "url": "https://toplineplumbingco.com/services/water-heater-repair"
+            "description": "Water heater repair and replacement for all makes and models. Same-day service available in Redding and surrounding areas. Typical replacement cost $1,200–$3,500 installed.",
+            "url": "https://toplineplumbingco.com/services/water-heater-repair",
+            "serviceType": "Water Heater Installation"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "3000",
+            "maxPrice": "6500"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Tankless Water Heater Installation",
-            "description": "Tankless water heater installation and conversion. Rinnai, Navien, and all major brands. Energy-efficient endless hot water.",
-            "url": "https://toplineplumbingco.com/services/tankless"
+            "description": "Tankless water heater installation and conversion. Rinnai, Navien, Noritz, and all major brands. Energy-efficient endless hot water. Typical installed cost $3,000–$6,500.",
+            "url": "https://toplineplumbingco.com/services/tankless",
+            "serviceType": "Tankless Water Heater Installation"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "130",
+            "maxPrice": "800"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Drain Cleaning",
-            "description": "Professional drain cleaning and clog removal. Power auger, hydrojetting, and camera inspection available.",
-            "url": "https://toplineplumbingco.com/services/drain-cleaning"
+            "description": "Professional drain cleaning and clog removal. Power auger, hydrojetting, and camera inspection available. Starting at $130 for standard drain clearing.",
+            "url": "https://toplineplumbingco.com/services/drain-cleaning",
+            "serviceType": "Drain Cleaning"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "400",
+            "maxPrice": "25000"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Sewer Line Repair & Replacement",
             "description": "Sewer line repair, replacement, and camera inspection. Trenchless options available. Serving Redding and Northern CA.",
-            "url": "https://toplineplumbingco.com/services/sewer-line"
+            "url": "https://toplineplumbingco.com/services/sewer-line",
+            "serviceType": "Sewer Repair"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "150",
+            "maxPrice": "2000"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Leak Detection & Repair",
             "description": "Electronic and slab leak detection. Non-invasive methods to find and fix hidden leaks fast.",
-            "url": "https://toplineplumbingco.com/services/leak-detection"
+            "url": "https://toplineplumbingco.com/services/leak-detection",
+            "serviceType": "Leak Detection"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "4000",
+            "maxPrice": "15000"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Repiping Services",
-            "description": "Whole-home repiping with PEX and copper. Upgrade aging galvanized or polybutylene pipes.",
-            "url": "https://toplineplumbingco.com/services/repiping-services"
+            "description": "Whole-home repiping with PEX and copper. Upgrade aging galvanized or polybutylene pipes. Typical cost $4,000–$15,000 depending on home size and pipe material.",
+            "url": "https://toplineplumbingco.com/services/repiping-services",
+            "serviceType": "Repiping"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "250",
+            "maxPrice": "2000"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Gas Line Repair & Installation",
             "description": "Gas line repair, installation, and leak detection. Licensed gas plumber serving Redding and surrounding areas.",
-            "url": "https://toplineplumbingco.com/services/gas-line"
+            "url": "https://toplineplumbingco.com/services/gas-line",
+            "serviceType": "Gas Line Service"
           }
         },
         {
           "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "minPrice": "150",
+            "maxPrice": "1500"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "Redding, CA",
           "itemOffered": {
             "@type": "Service",
             "name": "Fixture Installation",
             "description": "Professional installation of sinks, toilets, faucets, showers, and garbage disposals. Kitchen and bathroom upgrades.",
-            "url": "https://toplineplumbingco.com/services/fixture-installs"
+            "url": "https://toplineplumbingco.com/services/fixture-installs",
+            "serviceType": "Fixture Installation"
           }
         }
       ]

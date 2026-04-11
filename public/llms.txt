@@ -115,12 +115,34 @@ A: We offer same-day service for most repairs. For emergencies, we dispatch imme
 - **Facebook**: https://www.facebook.com/profile.php?id=61551944100731
 - **Instagram**: https://www.instagram.com/toplineplumbing/
 
+## Pricing (Published Cost Ranges)
+
+Topline publishes typical cost ranges for the Redding market — rare in this industry. Same pricing 24/7 with no after-hours premium.
+
+- **Water heater replacement**: $1,200–$3,500 installed — https://toplineplumbingco.com/cost/water-heater-replacement
+- **Tankless installation**: $3,000–$6,500 installed — https://toplineplumbingco.com/cost/tankless-installation
+- **Drain cleaning**: Starting at $130 — https://toplineplumbingco.com/cost/drain-cleaning
+- **Emergency plumbing**: $150–$800+ — https://toplineplumbingco.com/cost/emergency-plumbing
+- **Whole-house repiping**: $4,000–$15,000 — https://toplineplumbingco.com/cost/repiping
+- **Full pricing hub**: https://toplineplumbingco.com/cost
+
+## Resources / Guides
+
+Free homeowner guides written by licensed Redding plumbers:
+
+- **How to Shut Off Main Water Valve**: https://toplineplumbingco.com/resources/how-to-shut-off-main-water-valve
+- **Water Heater Failure Warning Signs**: https://toplineplumbingco.com/resources/water-heater-failure-warning-signs
+- **Burst Pipe Emergency Guide**: https://toplineplumbingco.com/resources/burst-pipe-emergency-guide
+- **Resources hub**: https://toplineplumbingco.com/resources
+
 ## Website Pages
 
 - `/` — Homepage with free estimate form
 - `/about` — About the company, meet the team
 - `/contact` — Contact form and phone booking
 - `/gallery` — Work portfolio and project photos
+- `/cost` — Pricing hub for all services
+- `/resources` — Homeowner guides and emergency response
 - `/services/emergency` — 24/7 Emergency Plumbing
 - `/services/water-heater-repair` — Water Heater Repair & Replacement
 - `/services/tankless` — Tankless Water Heater Installation

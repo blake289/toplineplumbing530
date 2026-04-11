@@ -109,12 +109,16 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/about" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
-                About
+              <Link href="/cost" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
+                Pricing
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-200"></span>
               </Link>
-              <Link href="/gallery" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
-                Gallery
+              <Link href="/resources" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
+                Resources
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-200"></span>
+              </Link>
+              <Link href="/about" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
+                About
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-200"></span>
               </Link>
               <Link href="/contact" className="text-white text-sm xl:text-base font-medium hover:text-primary focus-visible:text-primary transition-colors duration-200 whitespace-nowrap relative group">
