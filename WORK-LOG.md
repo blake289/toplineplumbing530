@@ -254,3 +254,8 @@
 - Unblocked AI crawlers (ChatGPT, Claude, Perplexity) to index site content for better discoverability
 - Added postal codes to 50+ service area pages and implemented structured FAQ schema for improved search visibility
 - Fixed top UI issues: color consistency across buttons and sections, enlarged navbar/footer branding to 1.3x size for better recognition
+
+### 2026-04-11
+- Added structured data markup for FAQ sections across all service and location pages to improve search visibility
+- Implemented postal codes and city-specific schema to enhance local SEO performance
+- Fixed critical UI color consistency and spacing issues identified in accessibility audit
