@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
+import FAQSchema from '@/components/layout/FAQSchema';
+import { getCityFaqs } from '@/lib/cityFaqs';
 
 export const metadata: Metadata = {
   title: 'Plumber in Shasta Lake, CA | Topline Plumbing',
@@ -25,6 +27,7 @@ export default function ShastaLakePage() {
         { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
         { name: 'Plumber in Shasta Lake, CA', url: 'https://toplineplumbingco.com/areas/shasta-lake' },
       ]} />
+      <FAQSchema faqs={getCityFaqs('shasta-lake')} />
       <LocationPageTemplate
       locationName="Shasta Lake"
       hero={{

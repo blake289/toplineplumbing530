@@ -3,19 +3,53 @@ Allow: /
 
 Sitemap: https://toplineplumbingco.com/sitemap.xml
 
-# AI / LLM context
+# AI / LLM crawlers — full site access
 # See https://llmstxt.org
-User-agent: ChatGPT-User
-Allow: /llms.txt
 
 User-agent: GPTBot
-Allow: /llms.txt
+Allow: /
 
-User-agent: Claude-Web
-Allow: /llms.txt
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
 
 User-agent: anthropic-ai
-Allow: /llms.txt
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 User-agent: PerplexityBot
-Allow: /llms.txt
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /

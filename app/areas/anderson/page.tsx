@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
+import FAQSchema from '@/components/layout/FAQSchema';
+import { getCityFaqs } from '@/lib/cityFaqs';
 import React from 'react';
 import Link from 'next/link';
 
@@ -26,6 +28,7 @@ export default function AndersonPage() {
         { name: 'Areas Served', url: 'https://toplineplumbingco.com/areas' },
         { name: 'Plumber in Anderson, CA', url: 'https://toplineplumbingco.com/areas/anderson' },
       ]} />
+      <FAQSchema faqs={getCityFaqs('anderson')} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
