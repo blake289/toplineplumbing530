@@ -88,7 +88,6 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden bg-white">
               <div className="p-8 md:p-10">
                 <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate</h2>
-                <p className="text-sm text-gray-600 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 mb-4"><strong>Age Restriction:</strong> You must be at least 18 years of age to submit this form and opt in to receive SMS text messages from Topline Plumbing.</p>
                 <HeroEstimateForm />
               </div>
             </div>

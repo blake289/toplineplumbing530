@@ -119,9 +119,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[13px] text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Topline Plumbing. All rights reserved.</p>
-          <div className="flex gap-6">
+        <div className="pt-8 mt-2 flex flex-col md:flex-row items-center justify-between gap-4 text-[15px]">
+          <p className="text-white font-semibold tracking-tight">
+            &copy; {new Date().getFullYear()} Topline Plumbing. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-gray-400">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
