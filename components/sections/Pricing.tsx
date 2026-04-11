@@ -4,7 +4,7 @@ import Link from 'next/link';
 const pricingCards = [
   {
     icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A020" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/>
         <path d="M12 18c-2.21 0-4-1.79-4-4 0-1.5 1.5-3.5 4-5.5 2.5 2 4 4 4 5.5 0 2.21-1.79 4-4 4z"/>
       </svg>
@@ -23,7 +23,7 @@ const pricingCards = [
   },
   {
     icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A020" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="3"/>
         <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"/>
       </svg>
@@ -42,7 +42,7 @@ const pricingCards = [
   },
   {
     icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8A020" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
       </svg>
     ),
@@ -62,7 +62,7 @@ const pricingCards = [
 
 export default function Pricing() {
   return (
-    <section className="section-padding bg-navy-900">
+    <section className="section-padding bg-gradient-to-b from-navy-800 to-navy-900 border-t border-white/10">
       <div className="max-w-7xl mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -86,7 +86,7 @@ export default function Pricing() {
               }`}
             >
               {/* Icon */}
-              <div className="mb-6">{card.icon}</div>
+              <div className="mb-6 text-primary">{card.icon}</div>
 
               {/* Title */}
               <h3 className="font-heading text-xl uppercase text-white tracking-wider mb-4 font-semibold">
