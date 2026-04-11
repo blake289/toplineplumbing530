@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, phone, email, message } = body;
+    const { firstName, lastName, phone, email, service, message } = body;
 
     const apiKey = process.env.GHL_API_KEY;
     const locationId = process.env.GHL_LOCATION_ID;
@@ -14,15 +14,21 @@ export async function POST(request: NextRequest) {
     }
 
     // Build contact payload for GHL v2 API
+    const serviceTag = service ? [`service:${service}`] : [];
+    const customFields = [
+      ...(service ? [{ id: 'service', value: service }] : []),
+      ...(message ? [{ id: 'message', value: message }] : []),
+    ];
+
     const contactPayload = {
       firstName,
       lastName,
       phone,
       email,
       locationId,
-      tags: ['website-lead'],
+      tags: ['website-lead', ...serviceTag],
       source: 'Website Form',
-      ...(message && { customFields: [{ id: 'message', value: message }] }),
+      ...(customFields.length > 0 && { customFields }),
     };
 
     const response = await fetch('https://services.leadconnectorhq.com/contacts/', {

@@ -88,18 +88,18 @@ export default function Hero() {
           </div>
 
           {/* RIGHT — Estimate form card */}
-          <div id="estimate-form" className="w-full">
-            <div className="bg-white rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,23,42,0.15)] border border-gray-100 p-6 sm:p-7 lg:p-8 max-w-md mx-auto lg:max-w-none">
-              <div className="mb-5">
-                <h2 className="text-[22px] font-bold text-navy-900 tracking-tight mb-1.5">
+          <div id="estimate-form" className="w-full lg:pl-4">
+            <div className="bg-white rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,23,42,0.15)] border border-gray-100 p-7 sm:p-8 lg:p-9 max-w-md mx-auto lg:max-w-none">
+              <div className="mb-6">
+                <h2 className="text-[24px] lg:text-[26px] font-bold text-navy-900 tracking-tight mb-2">
                   Get a free estimate
                 </h2>
-                <p className="text-sm text-gray-600">
-                  No hidden fees. Upfront pricing. 60-min response.
+                <p className="text-[14px] text-gray-600 leading-relaxed">
+                  No hidden fees. Upfront pricing. 24/7 emergency support.
                 </p>
               </div>
               <HeroEstimateForm />
-              <p className="mt-4 text-[11px] text-gray-400 text-center leading-relaxed">
+              <p className="mt-5 text-[11px] text-gray-400 text-center leading-relaxed">
                 By submitting you agree to be contacted by Topline Plumbing. We never share your information.
               </p>
             </div>

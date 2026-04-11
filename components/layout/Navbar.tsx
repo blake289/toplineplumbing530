@@ -177,10 +177,17 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 h-11 rounded-full bg-accent-orange text-white text-[14px] font-semibold shadow-sm hover:bg-orange-600 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus-visible:-translate-y-0.5 transition-all duration-200"
+                  className="group inline-flex items-center gap-2 px-6 h-11 rounded-full bg-accent-orange text-white text-[14px] font-semibold shadow-[0_4px_14px_-2px_rgba(249,115,22,0.4)] hover:bg-orange-500 hover:scale-[1.04] hover:shadow-[0_8px_24px_-4px_rgba(249,115,22,0.55)] active:scale-[1.01] focus-visible:scale-[1.04] transition-all duration-200 ease-out"
                 >
-                  Get an Estimate
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5} aria-hidden>
+                  Get a free estimate
+                  <svg
+                    className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.5}
+                    aria-hidden
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>

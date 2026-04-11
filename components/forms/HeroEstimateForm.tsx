@@ -45,8 +45,8 @@ export default function HeroEstimateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
-      <div className="grid grid-cols-2 gap-2">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <div className="grid grid-cols-2 gap-3">
         <Input
           label="First Name"
           {...register('firstName')}
@@ -76,6 +76,40 @@ export default function HeroEstimateForm() {
         error={errors.email?.message}
         required
       />
+
+      {/* Service Required dropdown */}
+      <div className="w-full">
+        <label htmlFor="service" className="block mb-2 font-semibold text-gray-700 text-sm">
+          Service Required
+        </label>
+        <div className="relative">
+          <select
+            id="service"
+            {...register('service')}
+            defaultValue=""
+            className="w-full appearance-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 pr-10 text-base text-gray-900 transition-all duration-150 focus:outline-none focus:ring-2 focus:border-transparent focus:ring-primary/80 hover:border-gray-400"
+          >
+            <option value="" disabled>Select a service…</option>
+            <option value="emergency">Emergency Plumbing</option>
+            <option value="water-heater">Water Heaters</option>
+            <option value="drain-cleaning">Drain Cleaning</option>
+            <option value="tankless">Tankless Upgrades</option>
+            <option value="repiping">Repiping</option>
+            <option value="fixture-installs">Fixture Installs</option>
+            <option value="other">Other</option>
+          </select>
+          <svg
+            className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            aria-hidden
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
 
       <Textarea
         label="Message"

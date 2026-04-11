@@ -5,6 +5,7 @@ export const contactFormSchema = z.object({
   lastName: z.string().min(1, 'Last name is required').max(50, 'Last name is too long'),
   phone: z.string().min(10, 'Phone number must be at least 10 digits').regex(/^[\d\s\-\(\)\+]+$/, 'Invalid phone number format'),
   email: z.string().email('Invalid email address'),
+  service: z.string().optional(),
   message: z.string().optional(),
   consent: z.boolean().refine((val) => val === true, {
     message: 'You must agree to be contacted',

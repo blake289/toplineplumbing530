@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SchemaMarkup from "@/components/layout/SchemaMarkup";
+import MobileCallFab from "@/components/layout/MobileCallFab";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -63,6 +64,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
+        <MobileCallFab />
       </body>
     </html>
   );

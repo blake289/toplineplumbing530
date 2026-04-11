@@ -97,7 +97,9 @@ export default function Footer() {
                 Toplineplumbingredding@gmail.com
               </a>
               <p className="text-gray-400">Serving Redding &amp; Northern California</p>
-              <p className="text-gray-500 text-[12px] mt-1">Licensed &amp; insured in California</p>
+              <p className="text-gray-400 text-[13px] mt-1 font-medium tracking-wide">
+                CA CSLB License # [INSERT NUMBER HERE]
+              </p>
             </div>
           </div>
 
