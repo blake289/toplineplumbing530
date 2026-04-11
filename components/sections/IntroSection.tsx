@@ -23,15 +23,13 @@ export default function IntroSection() {
 
           {/* Right: Text Content */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2 text-navy-500 font-semibold text-sm">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-              </svg>
-              <span>Meet Topline Plumbing</span>
+            <div className="inline-flex items-center gap-2 text-primary font-semibold text-[12px] tracking-[0.12em]">
+              <span className="w-8 h-px bg-primary" aria-hidden />
+              MEET TOPLINE PLUMBING
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-[42px] font-heading font-bold uppercase text-gray-900 leading-tight">
-              Your Local Plumbing Experts
+            <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-navy-900 leading-[1.1] tracking-[-0.02em]">
+              Your local plumbing experts since 1998.
             </h2>
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">

@@ -86,9 +86,11 @@ const config: Config = {
       },
 
       fontFamily: {
-        heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        body: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        btn: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        // Single Inter stack for the entire site — simpler hierarchy via weight
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        btn: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
 
       fontSize: {

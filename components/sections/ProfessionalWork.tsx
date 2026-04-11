@@ -8,8 +8,12 @@ export default function ProfessionalWork() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Text Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-[42px] font-heading font-bold uppercase text-gray-900 mb-6 leading-tight">
-              Expert Technicians, Every Time
+            <div className="inline-flex items-center gap-2 text-primary font-semibold text-[12px] tracking-[0.12em] mb-4">
+              <span className="w-8 h-px bg-primary" aria-hidden />
+              OUR TEAM
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-navy-900 mb-6 leading-[1.1] tracking-[-0.02em]">
+              Expert technicians, every time.
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Our licensed and insured technicians bring years of experience to every job. From water heater repairs to complete system installations, we deliver professional service you can trust.

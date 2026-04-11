@@ -3,14 +3,9 @@ import Link from 'next/link';
 
 const pricingCards = [
   {
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/>
-        <path d="M12 18c-2.21 0-4-1.79-4-4 0-1.5 1.5-3.5 4-5.5 2.5 2 4 4 4 5.5 0 2.21-1.79 4-4 4z"/>
-      </svg>
-    ),
     title: 'Water Heating Service',
     price: '$127',
+    priceNote: 'Starting price',
     description: 'Comprehensive diagnostics, annual flush, and safety inspections for tank or tankless systems.',
     features: [
       'Full system diagnostic check',
@@ -22,14 +17,9 @@ const pricingCards = [
     featured: false,
   },
   {
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"/>
-      </svg>
-    ),
     title: 'Drain Cleaning',
     price: '$130',
+    priceNote: 'Starting price',
     description: 'Professional mechanical augering for stubborn clogs in sinks, toilets, or main sewer lines.',
     features: [
       'Power auger cleaning',
@@ -38,17 +28,13 @@ const pricingCards = [
       'Same-day service available',
     ],
     href: '/services/drain-cleaning',
-    featured: false,
+    featured: true,
   },
   {
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-      </svg>
-    ),
     title: 'Emergency Response',
     price: 'Variable',
-    description: '24/7 emergency plumbing for burst pipes, gas leaks, and flooding—fast response guaranteed.',
+    priceNote: 'Free quote upfront',
+    description: '24/7 emergency plumbing for burst pipes, gas leaks, and flooding — rapid response guaranteed.',
     features: [
       '24/7 availability',
       'Rapid dispatch',
@@ -62,64 +48,90 @@ const pricingCards = [
 
 export default function Pricing() {
   return (
-    <section className="section-padding bg-gradient-to-b from-navy-800 to-navy-900 border-t border-white/10">
-      <div className="max-w-7xl mx-auto container-padding">
+    <section className="py-20 lg:py-28 bg-[#F8FAFC] border-t border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
-            Our Services & Pricing
+        <div className="text-center mb-14 lg:mb-16">
+          <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+            <span className="w-8 h-px bg-primary" aria-hidden />
+            TRANSPARENT PRICING
+            <span className="w-8 h-px bg-primary" aria-hidden />
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1]">
+            Upfront pricing. No surprises.
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Premium plumbing services with transparent, upfront pricing. No hidden fees, no surprises.
+          <p className="text-white/70 text-lg max-w-2xl mx-auto text-gray-600">
+            Flat, honest rates you see before work begins. Plus a free estimate on every job.
           </p>
         </div>
 
-        {/* Pricing Cards Grid - Equal height with aligned CTAs */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {pricingCards.map((card, index) => (
+        {/* Pricing Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+          {pricingCards.map((card) => (
             <div
-              key={index}
-              className={`group bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-2xl border flex flex-col transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] hover:-translate-y-1 hover:bg-white/10 ${
+              key={card.title}
+              className={`relative flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-300 ${
                 card.featured
-                  ? 'border-accent border-2 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
-                  : 'border-white/10 hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]'
+                  ? 'bg-navy-900 text-white border-2 border-navy-900 shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)] md:scale-[1.04] md:-translate-y-1'
+                  : 'bg-white text-navy-900 border border-gray-200 hover:shadow-lg hover:-translate-y-0.5'
               }`}
             >
-              {/* Icon */}
-              <div className="mb-6 text-primary">{card.icon}</div>
+              {/* Featured badge */}
+              {card.featured && (
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-primary text-white text-[11px] font-bold tracking-[0.1em] rounded-full shadow-md">
+                  MOST REQUESTED
+                </div>
+              )}
 
               {/* Title */}
-              <h3 className="font-heading text-xl uppercase text-white tracking-wider mb-4 font-semibold">
+              <h3 className={`text-xl font-bold mb-4 tracking-tight ${card.featured ? 'text-white' : 'text-navy-900'}`}>
                 {card.title}
               </h3>
 
-              {/* Price - with proper padding/word-break */}
-              <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-none break-words pr-2 group-hover:scale-105 transition-transform duration-200">
-                {card.price}
+              {/* Price */}
+              <div className="mb-5">
+                <div className={`text-5xl lg:text-[56px] font-bold leading-none tracking-[-0.03em] ${card.featured ? 'text-white' : 'text-navy-900'}`}>
+                  {card.price}
+                </div>
+                <div className={`text-[13px] mt-2 font-medium ${card.featured ? 'text-white/70' : 'text-gray-500'}`}>
+                  {card.priceNote}
+                </div>
               </div>
 
+              {/* Divider */}
+              <div className={`h-px w-full mb-5 ${card.featured ? 'bg-white/15' : 'bg-gray-100'}`} />
+
               {/* Description */}
-              <p className="text-white/60 mb-6 leading-relaxed text-base">
+              <p className={`text-[15px] leading-relaxed mb-6 ${card.featured ? 'text-white/80' : 'text-gray-600'}`}>
                 {card.description}
               </p>
 
-              {/* Features List - flex-grow pushes CTA to bottom */}
+              {/* Features */}
               <ul className="space-y-3 mb-8 flex-grow">
-                {card.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-white/70 text-sm">
-                    <span className="text-accent mt-0.5">✓</span>
-                    <span>{feature}</span>
+                {card.features.map((feature) => (
+                  <li key={feature} className="flex items-start gap-3 text-[14px]">
+                    <svg
+                      className={`w-5 h-5 flex-shrink-0 mt-0.5 ${card.featured ? 'text-accent-green' : 'text-accent-green'}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2.5}
+                      aria-hidden
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className={card.featured ? 'text-white/85' : 'text-gray-700'}>{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              {/* CTA Button - aligned at bottom */}
+              {/* CTA */}
               <Link
                 href={card.href}
-                className={`block text-center py-3.5 px-6 rounded-xl font-semibold transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] whitespace-nowrap hover:-translate-y-1 active:translate-y-0 hover:shadow-md focus-visible:-translate-y-1 touch-target ${
+                className={`block text-center h-12 leading-[48px] rounded-full font-semibold transition-all duration-200 ${
                   card.featured
-                    ? 'bg-accent text-navy-900 hover:bg-accent-yellow border-2 border-accent shadow-md'
-                    : 'border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/40'
+                    ? 'bg-primary text-white hover:bg-primary-dark shadow-lg'
+                    : 'border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white'
                 }`}
               >
                 Book Service

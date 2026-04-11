@@ -4,17 +4,17 @@ import Link from 'next/link';
 const services = [
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
       </svg>
     ),
     title: 'Emergency Plumbing',
-    description: "Burst pipes, dangerous gas leaks, and floods—we're there fast.",
+    description: "Burst pipes, gas leaks, and floods — we're there fast, any hour of the day or night.",
     href: '/services/emergency',
   },
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
       </svg>
@@ -25,7 +25,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
       </svg>
     ),
@@ -35,31 +35,27 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 16.5c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v.375m0 0c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 017 16.875v-.375z" opacity="0.6" />
       </svg>
     ),
     title: 'Tankless Upgrades',
-    description: 'Endless hot water and lower energy bills with high-efficiency tankless systems.',
+    description: 'Endless hot water and lower energy bills with high-efficiency tankless water heater systems.',
     href: '/services/tankless',
   },
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12M8 12h12M8 17h12M4 7h.01M4 12h.01M4 17h.01" />
-        <circle cx="4" cy="7" r="2" fill="currentColor" opacity="0.4" />
-        <circle cx="4" cy="12" r="2" fill="currentColor" opacity="0.4" />
-        <circle cx="4" cy="17" r="2" fill="currentColor" opacity="0.4" />
       </svg>
     ),
     title: 'Repiping Services',
-    description: 'Upgrade old, failing galvanized or polybutylene pipes to reliable PEX or Copper.',
+    description: 'Upgrade old, failing galvanized or polybutylene pipes to reliable, modern PEX or copper.',
     href: '/services/repiping-services',
   },
   {
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
       </svg>
     ),
@@ -71,49 +67,58 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-navy-900">
-      <div className="max-w-7xl mx-auto container-padding">
+    <section id="services" className="py-20 lg:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block px-6 py-2.5 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
-            Full-Service Plumbing
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4 no-orphans">
-            Whatever the Problem, We Fix It Right
+        <div className="text-center mb-14 lg:mb-16">
+          <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+            <span className="w-8 h-px bg-primary" aria-hidden />
+            FULL-SERVICE PLUMBING
+            <span className="w-8 h-px bg-primary" aria-hidden />
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1] no-orphans">
+            Whatever the problem, we fix it right.
           </h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
-            Professional plumbing services for residential and commercial properties throughout Northern California
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Professional plumbing for homes and businesses throughout Northern California.
           </p>
         </div>
 
-        {/* Services Grid - Uniform height cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {services.map((service, index) => (
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+          {services.map((service) => (
             <Link
-              key={index}
+              key={service.href}
               href={service.href}
-              className="group p-6 md:p-8 border border-gray-100 rounded-2xl bg-white overflow-hidden hover:border-gray-200 hover:-translate-y-1 hover:shadow-xl focus-visible:border-gray-200 focus-visible:-translate-y-1 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] flex flex-col h-full cursor-pointer"
+              className="group relative bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full cursor-pointer transition-all duration-300 hover:border-navy-900/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_-12px_rgba(15,23,42,0.12)]"
             >
-              {/* Icon */}
-              <div className="mb-6 text-primary transition-colors duration-200">
+              {/* Icon badge */}
+              <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-navy-900/[0.04] text-navy-900 group-hover:bg-primary/[0.08] group-hover:text-primary transition-colors duration-300">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3 transition-colors duration-200">
+              <h3 className="text-xl font-bold text-navy-900 mb-3 tracking-tight">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-base text-text-light mb-6 leading-relaxed flex-grow">
+              <p className="text-[15px] text-gray-600 leading-relaxed flex-grow mb-6">
                 {service.description}
               </p>
 
               {/* CTA Link */}
-              <div className="flex items-center gap-2 font-semibold text-primary group-hover:text-primary uppercase text-sm tracking-wide transition-colors duration-200">
-                Learn More
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <div className="flex items-center gap-2 text-navy-900 font-semibold text-sm group-hover:text-primary transition-colors">
+                Learn more
+                <svg
+                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  aria-hidden
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
             </Link>
