@@ -52,6 +52,11 @@ export default function RepipingServicesPage() {
       <FAQSchema faqs={repipingFAQs} />
       <ServicePageTemplate
       faqs={repipingFAQs}
+      pricingCallout={{
+        priceRange: '$4,000–$15,000',
+        href: '/cost/repiping',
+        label: 'See Full Cost Guide',
+      }}
       hero={{
         title: 'Repiping Services in Redding — Upgrade Your Plumbing System',
         description: [

@@ -146,10 +146,10 @@ export default function StatsSection() {
 
           {/* Right: Stats Grid */}
           <div className="grid grid-cols-2 gap-6">
-            <StatCard target={30} label="Years Exp." />
-            <StatCard target={2487} label="Water Heaters" />
+            <StatCard target={27} label="Years Exp." suffix="+" />
+            <StatCard target={2847} label="Water Heaters" suffix="+" />
             <div className="col-span-2">
-              <StatCard target={5} label="Min. Avg. Response Time" highlight suffix="" />
+              <StatCard target={60} label="Min. Avg. Response Time" highlight suffix=" min" />
             </div>
           </div>
         </div>

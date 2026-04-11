@@ -52,6 +52,11 @@ export default function DrainCleaningPage() {
       <FAQSchema faqs={drainFAQs} />
       <ServicePageTemplate
       faqs={drainFAQs}
+      pricingCallout={{
+        priceRange: 'Starting at $130',
+        href: '/cost/drain-cleaning',
+        label: 'See Full Cost Guide',
+      }}
       hero={{
         title: 'Drain Cleaning in Redding — Fast, Thorough, & Guaranteed',
         description: [

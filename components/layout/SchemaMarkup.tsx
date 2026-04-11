@@ -293,6 +293,45 @@ export default function SchemaMarkup() {
     }
   };
 
+  const founderSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://toplineplumbingco.com/#joe-torculas",
+    "name": "Joe Torculas",
+    "jobTitle": "Founder & Master Plumber",
+    "worksFor": {
+      "@id": "https://toplineplumbingco.com/#business"
+    },
+    "alumniOf": "State of California — Licensed Plumbing Contractor",
+    "knowsAbout": [
+      "Residential Plumbing",
+      "Commercial Plumbing",
+      "Emergency Plumbing Response",
+      "Water Heater Installation and Repair",
+      "Tankless Water Heater Systems",
+      "Drain Cleaning and Hydrojetting",
+      "Sewer Line Repair and Replacement",
+      "Gas Line Installation and Repair",
+      "Leak Detection",
+      "Whole-Home Repiping (PEX and Copper)",
+      "Fixture Installation",
+      "California Plumbing Code",
+      "Redding CA Area Plumbing"
+    ],
+    "description": "Joe Torculas founded Topline Plumbing in 1998 and has been serving Redding, California and the entire 530 area code ever since. A licensed California plumbing contractor, Joe has personally overseen more than 2,847 water heater installations, hundreds of whole-home repipes, and thousands of emergency plumbing responses across Shasta County and Northern California.",
+    "url": "https://toplineplumbingco.com/about",
+    "image": "https://toplineplumbingco.com/images/joe-cindy.webp",
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Plumber",
+      "occupationLocation": {
+        "@type": "City",
+        "name": "Redding, CA"
+      },
+      "skills": "Emergency plumbing, water heater repair and replacement, tankless water heater installation, drain cleaning, hydrojetting, sewer line repair, leak detection, repiping, gas line service, fixture installation"
+    }
+  };
+
   return (
     <>
       <script
@@ -302,6 +341,10 @@ export default function SchemaMarkup() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(founderSchema) }}
       />
     </>
   );

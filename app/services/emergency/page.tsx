@@ -103,6 +103,11 @@ export default function EmergencyPlumbingPage() {
       />
       <ServicePageTemplate
       faqs={emergencyFAQs}
+      pricingCallout={{
+        priceRange: '$150–$800+',
+        href: '/cost/emergency-plumbing',
+        label: 'See Full Cost Guide',
+      }}
       hero={{
         title: '24/7 Emergency Plumbing in Redding — We Answer, We Show Up, We Fix It',
         description: [

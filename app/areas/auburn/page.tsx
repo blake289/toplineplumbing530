@@ -59,7 +59,7 @@ export default function AuburnPage() {
             <div className="lg:col-span-2 space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">Your Trusted Plumber in Auburn, California</h2>
               <p className="text-lg text-gray-700">
-                Topline Plumbing 530 is proud to serve Auburn, Placer County with professional plumbing services. Our licensed plumbers have been serving Auburn homeowners and businesses for 15+ years, completing thousands of plumbing jobs across Northern California with a 4.9-star rating.
+                Topline Plumbing 530 is proud to serve Auburn, Placer County with professional plumbing services. Our licensed plumbers have been serving Auburn homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 4.9-star rating.
               </p>
               <p className="text-lg text-gray-700">
                 Whether you need emergency plumbing service at 2am or a scheduled water heater installation, our licensed plumbers in Auburn are ready to help. We offer same-day plumbing service for most repairs in Auburn and surrounding areas.

@@ -52,6 +52,11 @@ export default function WaterHeaterRepairPage() {
       <FAQSchema faqs={waterHeaterFAQs} />
       <ServicePageTemplate
       faqs={waterHeaterFAQs}
+      pricingCallout={{
+        priceRange: '$1,200–$3,500 installed',
+        href: '/cost/water-heater-replacement',
+        label: 'See Full Cost Guide',
+      }}
       hero={{
         title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
         description: [

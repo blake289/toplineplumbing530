@@ -67,11 +67,31 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Topline Plumbing is a family-owned plumbing company dedicated to serving homeowners and businesses across Redding and Northern California. With over 30 years of combined experience, we've built our reputation on honesty, quality workmanship, and exceptional customer service.
+                Topline Plumbing has served Redding and Northern California
+                since 1998. What started as Joe Torculas working solo out of
+                his truck has grown into the 530's most trusted family-owned
+                plumbing company — still built on the same principles: answer
+                the phone, show up when you say you will, quote the price
+                upfront, and stand behind the work.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Over 27+ years in business, we've completed more than 2,847
+                water heater installations, thousands of drain clearings,
+                hundreds of full home repipes, and countless emergency
+                responses at every hour of the day and night. That experience
+                matters — we know which water heaters fail first in Redding's
+                hard water, which neighborhoods have the worst sewer line root
+                intrusion, and which shortcuts other plumbers take that show
+                up as problems two years later.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                We understand that plumbing problems can be stressful and disruptive. That's why we're committed to providing fast, reliable service with upfront pricing and no hidden fees. When you call Topline Plumbing, you'll always speak with a real person who cares about solving your problem.
+                Plumbing problems are stressful. When you call Topline, you'll
+                always speak with a real person who actually does plumbing —
+                not a scheduler, not a voicemail, not an answering service.
+                Upfront pricing, no hidden fees, no after-hours premium. The
+                same way Joe started in 1998.
               </p>
 
               {/* Trust badges */}
@@ -331,7 +351,7 @@ function StatsBar() {
           let yearsCount = 0;
           const yearsInterval = setInterval(() => {
             yearsCount += 1;
-            if (yearsCount >= 30) {
+            if (yearsCount >= 27) {
               clearInterval(yearsInterval);
             }
             setCounts(prev => ({ ...prev, years: yearsCount }));
@@ -341,8 +361,8 @@ function StatsBar() {
           let heatersCount = 0;
           const heatersInterval = setInterval(() => {
             heatersCount += 50;
-            if (heatersCount >= 2487) {
-              heatersCount = 2487;
+            if (heatersCount >= 2847) {
+              heatersCount = 2847;
               clearInterval(heatersInterval);
             }
             setCounts(prev => ({ ...prev, heaters: heatersCount }));

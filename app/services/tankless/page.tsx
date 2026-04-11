@@ -52,6 +52,11 @@ export default function TanklessWaterHeaterPage() {
       <FAQSchema faqs={tanklessFAQs} />
       <ServicePageTemplate
       faqs={tanklessFAQs}
+      pricingCallout={{
+        priceRange: '$3,000–$6,500 installed',
+        href: '/cost/tankless-installation',
+        label: 'See Full Cost Guide',
+      }}
       hero={{
         title: 'Tankless Water Heater Installation in Redding — Endless Hot Water, Lower Bills',
         description: [
