@@ -45,7 +45,7 @@ export default function RedBluffPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <Link href="/" className="text-blue-600 hover:underline">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/#service-areas" className="text-blue-600 hover:underline">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Red Bluff CA</span>
         </div>

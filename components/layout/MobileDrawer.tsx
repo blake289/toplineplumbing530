@@ -192,6 +192,9 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 <Link href="/areas/auburn" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   Auburn
                 </Link>
+                <Link href="/areas" className="block py-3 px-2 text-primary font-semibold hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  View All Areas &rarr;
+                </Link>
               </div>
             )}
           </div>
@@ -202,6 +205,13 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             onClick={onClose}
           >
             Pricing
+          </Link>
+          <Link
+            href="/faq"
+            className="py-3 px-2 text-gray-900 font-medium hover:bg-gray-50 rounded transition-colors"
+            onClick={onClose}
+          >
+            FAQ
           </Link>
           <Link
             href="/resources"

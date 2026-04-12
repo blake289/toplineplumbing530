@@ -80,6 +80,8 @@ export default function Footer() {
               <Link href="/services/tankless" className="text-gray-400 hover:text-white transition-colors">Tankless Installation</Link>
               <Link href="/services/drain-cleaning" className="text-gray-400 hover:text-white transition-colors">Drain Cleaning</Link>
               <Link href="/cost" className="text-gray-400 hover:text-white transition-colors">Pricing &amp; Cost</Link>
+              <Link href="/financing" className="text-gray-400 hover:text-white transition-colors">Payment Options</Link>
+              <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link>
             </nav>
           </div>
 

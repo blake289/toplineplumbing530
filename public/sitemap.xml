@@ -82,6 +82,30 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Areas Served Hub -->
+  <url>
+    <loc>https://toplineplumbingco.com/areas</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://toplineplumbingco.com/faq</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Payment Options -->
+  <url>
+    <loc>https://toplineplumbingco.com/financing</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Area Pages -->
   <url>
     <loc>https://toplineplumbingco.com/areas/redding</loc>

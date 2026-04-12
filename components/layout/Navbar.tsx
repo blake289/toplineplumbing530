@@ -151,6 +151,12 @@ export default function Navbar() {
                             {label}
                           </Link>
                         ))}
+                        <Link
+                          href="/areas"
+                          className="block px-4 py-2.5 text-[14px] text-primary font-semibold hover:bg-gray-50 border-l-2 border-transparent hover:border-primary transition-all duration-150"
+                        >
+                          View All Areas &rarr;
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -158,6 +164,7 @@ export default function Navbar() {
 
                 {[
                   ['Pricing', '/cost'],
+                  ['FAQ', '/faq'],
                   ['Resources', '/resources'],
                   ['About', '/about'],
                   ['Contact', '/contact'],
