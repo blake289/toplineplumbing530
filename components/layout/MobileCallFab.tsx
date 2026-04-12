@@ -31,8 +31,8 @@ export default function MobileCallFab() {
         shadow-[0_10px_30px_-5px_rgba(221,21,21,0.55)]
         ring-4 ring-white/10
         hover:bg-primary-dark active:scale-[0.97]
-        transition-all duration-300
-        ${isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-24 opacity-0 pointer-events-none'}
+        transition-[transform,opacity] duration-200 ease-snappy
+        ${isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-6 opacity-0 pointer-events-none'}
       `}
     >
       <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-white/15">

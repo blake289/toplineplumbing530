@@ -111,7 +111,7 @@ export default function Footer() {
                 <Link
                   key={href}
                   href={href}
-                  className="inline-flex items-center px-2.5 py-1 rounded-full text-[12px] text-gray-400 bg-white/[0.04] border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-all"
+                  className="inline-flex items-center px-2.5 py-1 rounded-full text-[12px] text-gray-400 bg-white/[0.04] border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-[background-color,color,border-color] duration-[160ms] ease-snappy"
                 >
                   {label}
                 </Link>

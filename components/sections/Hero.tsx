@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
               <a
                 href="tel:5307046989"
-                className="h-14 px-8 bg-primary text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg text-base"
+                className="h-14 px-8 bg-primary text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:shadow-md transition-[transform,box-shadow,background-color] duration-200 ease-snappy shadow-lg text-base"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -80,7 +80,7 @@ export default function Hero() {
               </a>
               <a
                 href="#estimate-form"
-                className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center gap-2 border-2 border-navy-900 hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 text-base"
+                className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center gap-2 border-2 border-navy-900 hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] transition-[transform,background-color,color,box-shadow] duration-200 ease-snappy text-base"
               >
                 Book Your Service
               </a>

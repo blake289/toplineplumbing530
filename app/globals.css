@@ -193,6 +193,27 @@
   .animate-fade-in-right {
     animation: fadeInRight 0.6s ease-out forwards;
   }
+
+  /* Dropdown menu entry — scale from top with opacity */
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scaleY(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
+
+/* Disable hover transforms on touch-only devices to prevent false positives */
+@media not all and (hover: hover) and (pointer: fine) {
+  .hover-lift:hover,
+  .hover-scale:hover {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
 }
 
 /* Respect user's reduced motion preferences for accessibility */

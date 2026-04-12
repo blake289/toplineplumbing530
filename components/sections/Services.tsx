@@ -90,10 +90,10 @@ export default function Services() {
             <Link
               key={service.href}
               href={service.href}
-              className="group relative bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full cursor-pointer transition-all duration-300 hover:border-navy-900/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_-12px_rgba(15,23,42,0.12)]"
+              className="group relative bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full cursor-pointer transition-[transform,box-shadow,border-color] duration-200 ease-snappy hover:border-navy-900/20 hover:-translate-y-[3px] hover:shadow-[0_16px_36px_-10px_rgba(15,23,42,0.10)] active:scale-[0.98] active:shadow-sm"
             >
               {/* Icon badge */}
-              <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-navy-900/[0.04] text-navy-900 group-hover:bg-primary/[0.08] group-hover:text-primary transition-colors duration-300">
+              <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-navy-900/[0.04] text-navy-900 group-hover:bg-primary/[0.08] group-hover:text-primary transition-colors duration-200 ease-snappy">
                 {service.icon}
               </div>
 

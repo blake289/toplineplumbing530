@@ -27,7 +27,7 @@ const testimonials = [
 // Inline SVG trust badges — grayscale by default, color on group-hover
 function GoogleReviewsBadge() {
   return (
-    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
       <svg className="w-8 h-8" viewBox="0 0 48 48" aria-hidden>
         <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
         <path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/>
@@ -50,7 +50,7 @@ function GoogleReviewsBadge() {
 
 function BBBBadge() {
   return (
-    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
       <div className="relative flex items-center justify-center w-11 h-11 rounded-lg bg-[#004B87] text-white">
         <span className="text-[11px] font-black tracking-tight leading-none">BBB</span>
       </div>
@@ -64,7 +64,7 @@ function BBBBadge() {
 
 function YelpBadge() {
   return (
-    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
       <svg className="w-9 h-9" viewBox="0 0 228 228" aria-hidden>
         <path fill="#D32323" d="M193.564 124.04l-41.696-13.586s-13.046-3.938-10.11-13.01c0 0 .947-3.048 4.55-7.77l43.77-51.55s3.99-4.85 6.57-6.09c3.27-1.58 7.12-1.2 10.08.46 4.55 2.55 26.46 25.73 30.99 35.58 0 0 8.67 18.95 11.94 45.23 1.34 10.87-.56 18.14-8.25 20.11-7.29 1.86-35.03-9.37-35.03-9.37h-.01zM133.53 151.14L74 105.2S59.24 94.28 67.44 84.38c0 0 3.5-4.35 17.94-6.37l64.38-8.86s5.74-.71 8.82-.25c5.36.8 8.49 4.02 9.71 8.15 1.92 6.55-1.9 40.85-6.16 52.77 0 0-5.17 20.67-22.64 16.43l-5.96-1.1v5.99zM118.02 24.87c-1.76-9.01-5.41-20.67-9.53-25.89-6.24-7.88-33.87-9.03-55.2.58C32.32 9.43 17.4 30.76 15 45.12c-1.97 11.83 4.09 14.82 4.09 14.82l66.21 40.87s8.84 6.49 16.68-.31c8.57-7.42 20.83-60.43 16.04-75.63z"/>
       </svg>
@@ -84,7 +84,7 @@ function YelpBadge() {
 
 function LicensedBadge() {
   return (
-    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
       <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-accent-green/10 text-accent-green">
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} aria-hidden>
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -122,7 +122,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="group bg-white p-7 lg:p-8 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-navy-900/30 hover:-translate-y-1 hover:shadow-[0_20px_40px_-12px_rgba(15,23,42,0.12)] flex flex-col h-full"
+              className="group bg-white p-7 lg:p-8 rounded-2xl border border-gray-200 transition-[transform,box-shadow,border-color] duration-200 ease-snappy hover:border-navy-900/20 hover:-translate-y-[3px] hover:shadow-[0_16px_36px_-10px_rgba(15,23,42,0.10)] active:scale-[0.98] active:shadow-sm flex flex-col h-full"
             >
               {/* Star Rating */}
               <div className="flex gap-1 mb-5">

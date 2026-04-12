@@ -70,10 +70,10 @@ export default function Pricing() {
           {pricingCards.map((card) => (
             <div
               key={card.title}
-              className={`relative flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-300 ${
+              className={`relative flex flex-col rounded-2xl p-8 lg:p-9 transition-[transform,box-shadow,border-color] duration-200 ease-snappy ${
                 card.featured
                   ? 'bg-navy-900 text-white border-2 border-navy-900 shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)] md:scale-[1.04] md:-translate-y-1'
-                  : 'bg-white text-navy-900 border border-gray-200 hover:shadow-lg hover:-translate-y-0.5'
+                  : 'bg-white text-navy-900 border border-gray-200 hover:shadow-lg hover:-translate-y-[3px] active:scale-[0.98] active:shadow-sm'
               }`}
             >
               {/* Featured badge */}
