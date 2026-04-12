@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Reveal from '@/components/ui/Reveal';
 
 const pricingCards = [
   {
@@ -51,19 +52,21 @@ export default function Pricing() {
     <section className="py-20 lg:py-28 bg-[#F8FAFC] border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-14 lg:mb-16">
-          <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
-            <span className="w-8 h-px bg-primary" aria-hidden />
-            TRANSPARENT PRICING
-            <span className="w-8 h-px bg-primary" aria-hidden />
+        <Reveal>
+          <div className="text-center mb-14 lg:mb-16">
+            <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+              <span className="w-8 h-px bg-primary" aria-hidden />
+              TRANSPARENT PRICING
+              <span className="w-8 h-px bg-primary" aria-hidden />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1]">
+              Upfront pricing. No surprises.
+            </h2>
+            <p className="text-lg max-w-2xl mx-auto text-gray-600">
+              Flat, honest rates you see before work begins. Plus a free estimate on every job.
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1]">
-            Upfront pricing. No surprises.
-          </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto text-gray-600">
-            Flat, honest rates you see before work begins. Plus a free estimate on every job.
-          </p>
-        </div>
+        </Reveal>
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">

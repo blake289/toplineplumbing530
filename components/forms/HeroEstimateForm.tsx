@@ -87,7 +87,7 @@ export default function HeroEstimateForm() {
             id="service"
             {...register('service')}
             defaultValue=""
-            className="w-full appearance-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 pr-10 text-base text-gray-900 transition-all duration-150 focus:outline-none focus:ring-2 focus:border-transparent focus:ring-primary/80 hover:border-gray-400"
+            className="w-full appearance-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 pr-10 text-base text-gray-900 transition-[border-color,box-shadow] duration-200 ease-snappy focus:outline-none focus:border-navy-900/40 focus:shadow-[0_0_0_3px_rgba(0,30,56,0.08)] hover:border-gray-300"
           >
             <option value="" disabled>Select a service…</option>
             <option value="emergency">Emergency Plumbing</option>

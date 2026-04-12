@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Reveal from '@/components/ui/Reveal';
 
 export default function ProfessionalWork() {
   return (
@@ -7,6 +8,7 @@ export default function ProfessionalWork() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Text Content */}
+          <Reveal>
           <div>
             <div className="inline-flex items-center gap-2 text-primary font-semibold text-[12px] tracking-[0.12em] mb-4">
               <span className="w-8 h-px bg-primary" aria-hidden />
@@ -39,6 +41,7 @@ export default function ProfessionalWork() {
               </li>
             </ul>
           </div>
+          </Reveal>
 
           {/* Right: Image with Navy Accent */}
           <div className="relative order-first lg:order-last">

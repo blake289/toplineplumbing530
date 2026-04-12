@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Reveal from '@/components/ui/Reveal';
 
 interface StatProps {
   target: number;
@@ -96,6 +97,7 @@ export default function StatsSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         {/* Optional eyebrow label */}
+        <Reveal>
         <div className="text-center mb-12 lg:mb-14">
           <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary-light mb-3">
             <span className="w-8 h-px bg-primary-light" aria-hidden />
@@ -106,6 +108,7 @@ export default function StatsSection() {
             Numbers that say more than any marketing slogan.
           </h2>
         </div>
+        </Reveal>
 
         {/* Stats row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 items-center md:divide-x md:divide-white/10">

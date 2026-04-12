@@ -19,13 +19,12 @@ export default function Button({
   ...props
 }: ButtonProps) {
   // Base styles - minimum 44px height for WCAG touch targets
-  const baseStyles = 'font-btn font-bold rounded-xl transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 touch-target whitespace-nowrap';
+  const baseStyles = 'font-btn font-semibold rounded-full transition-[transform,box-shadow,background-color,color] duration-200 ease-snappy focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 touch-target whitespace-nowrap';
 
-  // Variant styles with proper hover effects
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primary-dark hover:-translate-y-1 hover:shadow-primary/20 active:translate-y-0 active:shadow-md focus-visible:ring-primary shadow-md transition-all duration-300',
-    secondary: 'bg-navy-700 text-white hover:bg-navy-900 hover:shadow-lg hover:-translate-y-1 active:translate-y-0 focus-visible:ring-navy-500 shadow-md transition-all duration-300',
-    outline: 'border-2 border-navy-900 text-navy-900 bg-transparent hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 focus-visible:ring-navy-500 transition-all duration-200',
+    primary: 'bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:scale-[0.97] active:shadow-sm focus-visible:ring-primary shadow-md',
+    secondary: 'bg-navy-700 text-white hover:bg-navy-900 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] focus-visible:ring-navy-500 shadow-md',
+    outline: 'border-2 border-navy-900 text-navy-900 bg-transparent hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] focus-visible:ring-navy-500',
   };
 
   // Size styles - minimum 44px height

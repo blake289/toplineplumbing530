@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Reveal from '@/components/ui/Reveal';
 
 const services = [
   {
@@ -70,19 +71,21 @@ export default function Services() {
     <section id="services" className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-14 lg:mb-16">
-          <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
-            <span className="w-8 h-px bg-primary" aria-hidden />
-            FULL-SERVICE PLUMBING
-            <span className="w-8 h-px bg-primary" aria-hidden />
+        <Reveal>
+          <div className="text-center mb-14 lg:mb-16">
+            <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+              <span className="w-8 h-px bg-primary" aria-hidden />
+              FULL-SERVICE PLUMBING
+              <span className="w-8 h-px bg-primary" aria-hidden />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1] no-orphans">
+              Whatever the problem, we fix it right.
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Professional plumbing for homes and businesses throughout Northern California.
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1] no-orphans">
-            Whatever the problem, we fix it right.
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional plumbing for homes and businesses throughout Northern California.
-          </p>
-        </div>
+        </Reveal>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
