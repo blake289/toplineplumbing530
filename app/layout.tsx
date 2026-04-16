@@ -61,7 +61,7 @@ export default function RootLayout({
         <SchemaMarkup />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM context" />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KR1T2RGRB4"
+          src="https://www.googletagmanager.com/gtag/js?id=G-3ZFMX0QHX2"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -69,7 +69,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-KR1T2RGRB4');
+            gtag('config', 'G-3ZFMX0QHX2');
           `}
         </Script>
       </head>
