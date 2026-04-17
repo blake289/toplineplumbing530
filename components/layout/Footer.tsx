@@ -115,7 +115,7 @@ export default function Footer() {
                 Leave Us a Google Review
               </a>
               <p className="text-gray-400 text-[13px] mt-1 font-medium tracking-wide">
-                CA CSLB License # [INSERT NUMBER HERE]
+                CA CSLB License #596557
               </p>
             </div>
           </div>

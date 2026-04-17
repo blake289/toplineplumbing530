@@ -42,8 +42,8 @@ export default function Hero() {
             <h1 className="text-[2.25rem] sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-bold text-navy-900 leading-[1.05] tracking-[-0.025em] mb-5">
               Redding&apos;s go-to plumber for
               <br className="hidden sm:block" />{' '}
-              <span className="text-primary">24/7 emergencies</span>
-              <span className="text-navy-900"> &amp; same-day repairs.</span>
+              <span className="text-primary">same-day emergencies</span>
+              <span className="text-navy-900"> &amp; trusted repairs.</span>
             </h1>
 
             {/* Subheadline */}
@@ -56,7 +56,7 @@ export default function Hero() {
               {[
                 '27+ Years Serving Redding',
                 '2,847 Water Heaters Installed',
-                '24/7 Emergency Support',
+                'Mon–Fri 8:00a–4:30p',
               ].map((item) => (
                 <span key={item} className="flex items-center gap-2">
                   <svg className="w-4 h-4 text-accent-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden>
@@ -95,7 +95,7 @@ export default function Hero() {
                   Get a free estimate
                 </h2>
                 <p className="text-[14px] text-gray-600 leading-relaxed">
-                  No hidden fees. Upfront pricing. 24/7 emergency support.
+                  No hidden fees. Upfront pricing. Mon&ndash;Fri 8a&ndash;4:30p.
                 </p>
               </div>
               <HeroEstimateForm />

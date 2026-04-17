@@ -49,7 +49,7 @@ const pricingExamples = [
   {
     service: 'Emergency Plumbing',
     range: '$150 – $1,500',
-    note: 'Same rate 24/7 — no after-hours premium',
+    note: 'Same rate as scheduled work during business hours',
     href: '/cost/emergency-plumbing',
   },
   {
@@ -73,9 +73,9 @@ const financingFAQs = [
       'For major projects like whole-home repiping, water heater replacements, and sewer line repairs, we can discuss flexible payment arrangements that work for your budget. Call us at (530) 704-6989 to discuss your specific situation.',
   },
   {
-    question: 'Do you charge extra for emergency or after-hours service?',
+    question: 'Do you charge extra for emergency service?',
     answer:
-      'No. Topline Plumbing charges the same rate 24/7. There is no after-hours premium, weekend surcharge, or holiday markup. The price we quote is the price you pay, day or night.',
+      "No. Topline Plumbing charges the same rate for emergency work as for scheduled work during our business hours (Mon–Fri 8:00a–4:30p). No inflated urgency upcharges — the price we quote is the price you pay.",
   },
   {
     question: 'How does upfront pricing work?',
@@ -236,7 +236,7 @@ export default function FinancingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
             {[
               { title: 'No Hidden Fees', desc: 'The price we quote is the price you pay. Period.' },
-              { title: 'No After-Hours Premium', desc: 'Same rate at 2am as 2pm. Emergencies don\'t wait for business hours.' },
+              { title: 'No Urgency Upcharge', desc: 'Emergency work during business hours is billed at our standard rate.' },
               { title: 'No Pressure', desc: 'Decline the quote and owe nothing. We\'re here to help, not sell.' },
               { title: 'No Hourly Rates', desc: 'Flat-rate pricing so you\'re never watching the clock.' },
             ].map((item) => (

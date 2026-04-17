@@ -25,7 +25,7 @@ const tanklessFAQs = [
   },
   {
     question: 'How much can I save by switching to tankless?',
-    answer: 'Most homeowners save 20–30% on water heating costs by switching to a tankless system. Since tankless heaters only heat water on demand instead of keeping a full tank hot 24/7, they use significantly less energy — especially in households that use hot water consistently throughout the day.',
+    answer: 'Most homeowners save 20–30% on water heating costs by switching to a tankless system. Since tankless heaters only heat water on demand instead of keeping a full tank hot at all times, they use significantly less energy — especially in households that use hot water consistently throughout the day.',
   },
   {
     question: 'How long do tankless water heaters last?',

@@ -148,9 +148,8 @@ export default function ResourcesHubPage() {
             Need a Plumber Right Now?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Topline Plumbing is available 24/7 in the Redding area. Real
-            plumber answers — no voicemail. Upfront pricing — no after-hours
-            premium.
+            Topline Plumbing is open Mon&ndash;Fri 8:00a&ndash;4:30p in the Redding
+            area. Upfront pricing. Licensed, bonded &amp; insured (CSLB #596557).
           </p>
           <a
             href="tel:5307046989"

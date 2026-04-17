@@ -123,7 +123,7 @@ export default function WaterHeaterReplacementCostPage() {
             {
               scenario: 'Emergency same-day swap',
               range: 'Same as above',
-              notes: 'No after-hours premium at Topline',
+              notes: 'Same rate as scheduled during business hours',
             },
           ],
         }}
@@ -216,7 +216,7 @@ export default function WaterHeaterReplacementCostPage() {
             'Refusal to itemize labor, parts, permit, and disposal on the quote. You have a right to see what you\'re paying for.',
             'Cash-only, unpermitted installs. This saves $75–$200 on permit fees but leaves you holding the bag if anything fails (no code protection, no inspection, no recourse).',
             'Pushing a specific brand without explaining why. A good plumber recommends based on your situation — not because they have a dealer incentive.',
-            "After-hours or weekend 'emergency' premiums of 50–100%. Plumbing emergencies don't get more expensive just because they happen at night — Topline's rate is the same 24/7.",
+            "Inflated 'emergency' premiums of 50–100%. The cost of an emergency repair is driven by the work, not the urgency — Topline's rate for emergency work matches scheduled work during business hours.",
             'No written workmanship warranty. If the installer won\'t back their own work in writing, you shouldn\'t trust it.',
           ],
         }}

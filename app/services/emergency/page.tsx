@@ -4,15 +4,15 @@ import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Plumbing in Redding, CA | Topline Plumbing',
-  description: 'Emergency plumber in Redding available 24/7. Fast response for burst pipes, gas leaks, and flooding. Call (530) 704-6989 now.',
+  title: 'Emergency Plumbing in Redding, CA | Topline Plumbing',
+  description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/emergency' },
   openGraph: {
-    title: '24/7 Emergency Plumbing in Redding, CA | Topline Plumbing',
-    description: 'Emergency plumber in Redding available 24/7. Fast response for burst pipes, gas leaks, and flooding. Call (530) 704-6989 now.',
+    title: 'Emergency Plumbing in Redding, CA | Topline Plumbing',
+    description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/emergency',
     siteName: 'Topline Plumbing',
-    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — 24/7 Emergency Plumbing in Redding, CA' }],
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Emergency Plumbing in Redding, CA' }],
     locale: 'en_US',
     type: 'website',
   },
@@ -53,8 +53,8 @@ const emergencyHowToSchema = {
     {
       '@type': 'HowToStep',
       position: 4,
-      name: 'Call Topline Plumbing 24/7',
-      text: 'Call (530) 704-6989 for 24/7 emergency plumbing in Redding. A real plumber answers — no voicemail. Average response time 60 minutes. No after-hours premium.',
+      name: 'Call Topline Plumbing',
+      text: 'Call (530) 704-6989 for emergency plumbing in Redding during business hours (Mon–Fri 8:00a–4:30p). Same-day response. Upfront pricing.',
     },
     {
       '@type': 'HowToStep',
@@ -67,24 +67,24 @@ const emergencyHowToSchema = {
 
 const emergencyFAQs = [
   {
-    question: "How fast does Topline Plumbing respond to plumbing emergencies in Redding?",
-    answer: "Our average emergency response time in Redding is 60 minutes. We're available 24 hours a day, 7 days a week, 365 days a year — including weekends and holidays. Call (530) 704-6989 anytime.",
+    question: "When does Topline Plumbing handle emergencies in Redding?",
+    answer: "Topline Plumbing handles emergency plumbing during business hours: Monday through Friday, 8:00a to 4:30p. For after-hours issues, text (530) 704-6989 and we'll respond first thing the next business day. For active emergencies outside our hours, call 911 if it's a safety issue (gas leak, major flood) or shut off your water at the main valve until we open.",
   },
   {
     question: "What counts as a plumbing emergency?",
     answer: "Common plumbing emergencies include burst pipes, major leaks causing water damage, complete loss of water, sewage backups, gas line problems, water heater flooding, and any situation where water is actively damaging your home or property.",
   },
   {
-    question: "Do you charge extra for after-hours emergency plumbing calls?",
-    answer: "We provide upfront pricing before any work begins. Call us at (530) 704-6989 and we'll give you a clear quote over the phone before dispatching — no surprise bills.",
+    question: "Do you charge extra for emergency plumbing calls?",
+    answer: "No. Emergency calls during our business hours are charged at our standard rate — no surprise upcharges. We provide upfront pricing before any work begins. Call (530) 704-6989 and we'll give you a clear quote over the phone before dispatching.",
   },
   {
     question: "What should I do while waiting for an emergency plumber?",
     answer: "Shut off the main water supply to stop active flooding. For a water heater leak, turn off the cold water inlet valve at the top of the tank. For a gas smell, leave the building immediately and call your gas company before calling a plumber.",
   },
   {
-    question: "Is Topline Plumbing available for emergencies on weekends and holidays?",
-    answer: "Yes. Topline Plumbing provides 24/7 emergency plumbing service every day of the year, including all weekends and holidays. Call (530) 704-6989 at any hour.",
+    question: "What if I have a plumbing emergency after hours or on the weekend?",
+    answer: "Topline is closed evenings and weekends, so for active emergencies outside business hours: shut off your main water valve to stop the flooding, call 911 if it's a safety issue (gas leak, major flood, sewage backing up into living areas), then text (530) 704-6989 and we'll respond first thing the next business day.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function EmergencyPlumbingPage() {
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://toplineplumbingco.com' },
         { name: 'Services', url: 'https://toplineplumbingco.com/services' },
-        { name: '24/7 Emergency Plumbing', url: 'https://toplineplumbingco.com/services/emergency' },
+        { name: 'Emergency Plumbing', url: 'https://toplineplumbingco.com/services/emergency' },
       ]} />
       <FAQSchema faqs={emergencyFAQs} />
       <script
@@ -109,18 +109,18 @@ export default function EmergencyPlumbingPage() {
         label: 'See Full Cost Guide',
       }}
       hero={{
-        title: '24/7 Emergency Plumbing in Redding — We Answer, We Show Up, We Fix It',
+        title: 'Emergency Plumbing in Redding — Same-Day Response During Business Hours',
         description: [
-          "Burst pipe flooding your home? Sewage backing up? Gas leak? Don't wait — call us now.",
-          "Topline Plumbing provides 24/7 emergency plumbing services across Redding and Northern California. A real plumber answers your call, and we aim to be on-site within 60 minutes for local emergencies."
+          "Burst pipe flooding your home? Sewage backing up? Gas leak during business hours? Call us now.",
+          "Topline Plumbing handles emergency plumbing across Redding and Northern California Monday through Friday, 8:00a to 4:30p. Same-day response, upfront pricing, and licensed technicians who actually finish the job."
         ],
       }}
       services={[
         {
           title: 'Our Emergency Response Promise',
           items: [
-            'Real Person Answers — No voicemail. A real plumber answers 24/7',
-            'Fast Response — We aim to be on-site within 60 minutes for Redding emergencies',
+            'Business Hours — Mon–Fri 8:00a–4:30p for live dispatch',
+            'Fast Response — Same-day scheduling for Redding emergencies',
             'Upfront Pricing — Even in emergencies, you will know the cost before we start',
             'Fully Stocked Trucks — We carry parts for most repairs so we can fix it on the spot',
           ],

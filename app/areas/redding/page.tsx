@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Plumber in Redding, CA | Topline Plumbing',
-  description: 'Licensed plumber in Redding, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Redding. Call (530) 704-6989',
+  description: 'Licensed plumber in Redding, California. Same-day emergency plumbing, drain cleaning, water heater repair. Same-day service in Redding. Call (530) 704-6989',
   alternates: { canonical: 'https://toplineplumbingco.com/areas/redding' },
   openGraph: {
     title: 'Plumber in Redding, CA | Topline Plumbing',
-    description: 'Licensed plumber in Redding, California. 24/7 emergency plumbing, drain cleaning, water heater repair. Same-day service in Redding. Call (530) 704-6989',
+    description: 'Licensed plumber in Redding, California. Same-day emergency plumbing, drain cleaning, water heater repair. Same-day service in Redding. Call (530) 704-6989',
     url: 'https://toplineplumbingco.com/areas/redding',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Licensed Plumber in Redding, CA' }],
@@ -70,9 +70,9 @@ export default function ReddingPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/emergency" className="text-blue-600 hover:underline">24/7 Emergency Plumber Redding</Link>
+                    <Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumber Redding</Link>
                   </h3>
-                  <p className="text-gray-700">Plumbing emergencies don't wait for business hours. Our emergency plumbers respond 24/7 to burst pipes, water heater flooding, sewer backups, and all plumbing emergencies in Redding. Average response time: 60 minutes.</p>
+                  <p className="text-gray-700">Topline handles plumbing emergencies in Redding during business hours (Mon–Fri 8:00a–4:30p) — burst pipes, water heater flooding, sewer backups, and all urgent plumbing problems. Same-day response across the Redding area.</p>
                 </div>
 
                 <div>
@@ -115,7 +115,7 @@ export default function ReddingPage() {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span><strong>Fast Response in Redding:</strong> Same-day service available, 24/7 emergency plumbing</span>
+                  <span><strong>Fast Response in Redding:</strong> Same-day service during business hours (Mon–Fri 8:00a–4:30p)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,9 +144,9 @@ export default function ReddingPage() {
                 <Link href="/areas/grass-valley" className="text-blue-600 hover:underline">Plumber Grass Valley</Link>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Redding - 24/7 Service</h2>
+              <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Redding - Same-Day Service</h2>
               <p className="text-gray-700">
-                When you have a plumbing emergency in Redding — burst pipe, water heater flooding, sewer backup, or any urgent plumbing problem — call Topline Plumbing 530 immediately at <strong>(530) 704-6989</strong>. Our emergency plumbers are on-call 24 hours a day, 7 days a week, 365 days a year.
+                When you have a plumbing emergency in Redding — burst pipe, water heater flooding, sewer backup, or any urgent plumbing problem — call Topline Plumbing 530 at <strong>(530) 704-6989</strong> during our business hours (Mon–Fri 8:00a–4:30p). For after-hours issues, text the same number and we'll respond first thing the next business day.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function ReddingPage() {
                     <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    24/7 Emergency
+                    Mon–Fri 8–4:30
                   </li>
                   <li className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

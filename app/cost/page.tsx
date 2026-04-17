@@ -53,7 +53,7 @@ const costGuides = [
     title: 'Emergency Plumbing Cost',
     priceRange: '$150–$800+',
     blurb:
-      "What 24/7 emergency plumbing actually costs in Redding — and why Topline doesn't charge after-hours premiums.",
+      "What emergency plumbing actually costs in Redding — transparent pricing, no surprise upcharges.",
   },
   {
     href: '/cost/repiping',
@@ -87,7 +87,7 @@ export default function CostHubPage() {
           </p>
           <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-3xl mx-auto">
             Every Topline Plumbing job is quoted upfront before we start work.
-            No surprise fees. No after-hours premiums. Call{' '}
+            No surprise fees. Call{' '}
             <a href="tel:5307046989" className="text-accent-green font-bold underline">
               (530) 704-6989
             </a>{' '}
@@ -113,8 +113,8 @@ export default function CostHubPage() {
             gives them room to quote high after they show up. That's not how
             we operate. Joe Torculas has been plumbing in Redding since 1998,
             and Topline has built its reputation on upfront, honest pricing —
-            the same quote whether you call at 3 PM on a Wednesday or 3 AM on
-            Christmas morning.
+            the same quote you get on the phone is the one you pay after the
+            work is done.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             Below is what Redding homeowners typically pay for the most common
@@ -179,10 +179,9 @@ export default function CostHubPage() {
               you pay — not an hour later once we've opened up the wall.
             </p>
             <p>
-              <strong className="text-navy-900">No after-hours premium.</strong>{' '}
-              Some emergency plumbers charge double on nights and weekends.
-              Topline charges the same rate whenever you call. A burst pipe at
-              2 AM costs the same as a scheduled drain cleaning at 2 PM.
+              <strong className="text-navy-900">Consistent rates, no surprise upcharges.</strong>{' '}
+              Emergency calls during our business hours are charged at the
+              same rate as scheduled work. No inflated "emergency" markups.
             </p>
             <p>
               <strong className="text-navy-900">Free diagnostics on most calls.</strong>{' '}
@@ -205,8 +204,8 @@ export default function CostHubPage() {
             Ready for an Exact Quote?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Call now for same-day service, upfront pricing, and a real plumber
-            on the line — not a scheduler.
+            Call during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p) for same-day service
+            and upfront pricing &mdash; no surprise upcharges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

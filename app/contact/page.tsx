@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-base text-gray-900 uppercase tracking-wide mb-2">Phone</h3>
                     <a href="tel:5307046989" className="text-lg text-navy-500 hover:text-navy-700">(530) 704-6989</a>
-                    <p className="text-sm text-gray-600">Available 24/7 for emergencies</p>
+                    <p className="text-sm text-gray-600">Mon&ndash;Fri 8:00a&ndash;4:30p</p>
                   </div>
                 </div>
 
@@ -69,7 +69,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-base text-gray-900 uppercase tracking-wide mb-2">Hours</h3>
-                    <p className="text-gray-600">24/7 Emergency Service<br/>Regular Hours: Mon-Fri 8am-5pm</p>
+                    <p className="text-gray-600">Mon&ndash;Fri 8:00a&ndash;4:30p<br/>Closed Sat &amp; Sun</p>
                   </div>
                 </div>
               </div>

@@ -54,9 +54,9 @@ const drainCostFAQs = [
       "If you've had the same drain clog more than twice in 6 months, or your main sewer line is backing up without a clear cause, a camera inspection is worth the $200–$400. It shows exactly what's happening inside the pipe — roots, grease buildup, collapsed section, or misaligned joints — so the fix is targeted instead of guessed.",
   },
   {
-    question: 'Does Topline charge extra for after-hours drain cleaning?',
+    question: 'Does Topline charge extra for emergency drain cleaning?',
     answer:
-      "No. Topline Plumbing charges the same rate for drain cleaning whether you call at 2 PM on a Tuesday or 2 AM on a Sunday. We're one of the few plumbers in Redding with no after-hours premium — a plumbing emergency shouldn't cost more just because it happened at night.",
+      "No. Topline Plumbing charges the same rate for drain cleaning whether it's a scheduled appointment or an urgent call during our business hours (Mon–Fri 8:00a–4:30p). A plumbing emergency shouldn't cost more just because it's urgent.",
   },
 ];
 
@@ -123,9 +123,9 @@ export default function DrainCleaningCostPage() {
               notes: 'Video + written report, recommended for recurring issues',
             },
             {
-              scenario: 'Emergency / after-hours',
+              scenario: 'Emergency during business hours',
               range: 'Same as above',
-              notes: 'No premium — same rate 24/7',
+              notes: 'Standard rate — no urgency upcharge',
             },
           ],
         }}
@@ -175,7 +175,7 @@ export default function DrainCleaningCostPage() {
             'Testing the drain after clearing to confirm flow is fully restored',
             'Recommendations on how to prevent the clog from returning',
             'Free same-day quote before any work begins',
-            'No after-hours or weekend premium',
+            'Transparent, upfront pricing — no hidden fees',
             '30-day workmanship guarantee — if the clog comes back in 30 days, we come back at no charge',
           ],
         }}

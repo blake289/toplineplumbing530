@@ -51,8 +51,8 @@ export default function ShastaLakePage() {
           href: '/services/drain-cleaning',
         },
         {
-          title: '24/7 Emergency Plumbing',
-          description: 'Burst pipes or a flooded garage? We answer the phone 24/7—no voicemails. Enjoy flat-rate, upfront pricing even on weekends and holidays.',
+          title: 'Same-Day Emergency Plumbing',
+          description: 'Burst pipes or a flooded garage during business hours? Call (530) 704-6989 Mon–Fri 8:00a–4:30p for same-day response and flat-rate, upfront pricing.',
           href: '/services/emergency',
         },
       ]}

@@ -5,7 +5,7 @@ export default function SchemaMarkup() {
     "@id": "https://toplineplumbingco.com/#business",
     "name": "Topline Plumbing",
     "alternateName": "Topline Plumbing 530",
-    "description": "Licensed, bonded & insured plumber in Redding, CA serving the entire 530 area code. 24/7 emergency plumbing, water heater repair, drain cleaning, leak detection, repiping, gas line services, and more — with upfront pricing and same-day service available. Family-owned since 1998.",
+    "description": "Licensed, bonded & insured plumber in Redding, CA serving the entire 530 area code. Emergency plumbing, water heater repair, drain cleaning, leak detection, repiping, gas line services, and more — with upfront pricing and same-day service available during business hours. Family-owned since 1998.",
     "url": "https://toplineplumbingco.com",
     "telephone": "(530) 704-6989",
     "email": "Toplineplumbingredding@gmail.com",
@@ -25,6 +25,21 @@ export default function SchemaMarkup() {
     "priceRange": "$$",
     "currenciesAccepted": "USD",
     "paymentAccepted": "Cash, Credit Card, Debit Card, Check",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "license",
+      "name": "California Contractor License #596557",
+      "recognizedBy": {
+        "@type": "GovernmentOrganization",
+        "name": "California Contractors State License Board",
+        "url": "https://www.cslb.ca.gov/"
+      }
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "CSLB License",
+      "value": "596557"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Redding",
@@ -87,9 +102,9 @@ export default function SchemaMarkup() {
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "16:30"
       }
     ],
     "hasOfferCatalog": {
@@ -110,7 +125,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Emergency Plumbing",
-            "description": "24/7 emergency plumbing response in Redding, CA. Burst pipes, flooding, gas leaks, sewer backups. Immediate dispatch. Same pricing 24/7 — no after-hours premium.",
+            "description": "Emergency plumbing response in Redding, CA during business hours (Mon–Fri 8:00a–4:30p). Burst pipes, flooding, gas leaks, sewer backups. Same-day response with upfront pricing.",
             "url": "https://toplineplumbingco.com/services/emergency",
             "serviceType": "Emergency Plumbing"
           }

@@ -87,7 +87,7 @@ export default function DrainCleaningPage() {
           title: 'Same-Day Service',
           items: [
             'Fast response for urgent clogs',
-            'No after-hours premium charges',
+            'Same-day scheduling during business hours',
             'Upfront pricing before we start',
             'Satisfaction guaranteed',
           ],

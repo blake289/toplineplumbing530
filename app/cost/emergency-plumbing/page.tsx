@@ -6,12 +6,12 @@ import CostPageTemplate from '@/components/templates/CostPageTemplate';
 export const metadata: Metadata = {
   title: 'Emergency Plumbing Cost in Redding, CA | Topline Plumbing',
   description:
-    'Emergency plumbing in Redding costs $150–$800+ depending on the issue. Topline charges NO after-hours premium — same rate 24/7. Call (530) 704-6989 now.',
+    'Emergency plumbing in Redding costs $150–$800+ depending on the issue. Transparent upfront pricing — no surprise upcharges. Call (530) 704-6989 during business hours (Mon–Fri 8a–4:30p).',
   alternates: { canonical: 'https://toplineplumbingco.com/cost/emergency-plumbing' },
   openGraph: {
     title: 'Emergency Plumbing Cost in Redding, CA | Topline Plumbing',
     description:
-      "Emergency plumbing costs $150–$800+ in Redding. Topline charges NO after-hours premium — call (530) 704-6989 24/7.",
+      "Emergency plumbing costs $150–$800+ in Redding. Transparent upfront pricing — call (530) 704-6989 Mon–Fri 8a–4:30p.",
     url: 'https://toplineplumbingco.com/cost/emergency-plumbing',
     siteName: 'Topline Plumbing',
     images: [
@@ -31,12 +31,12 @@ const emergencyCostFAQs = [
   {
     question: 'How much does emergency plumbing cost in Redding, CA?',
     answer:
-      'Emergency plumbing calls in Redding typically run $150–$800+ depending on the issue. A simple shut-off and minor repair (under-sink leak, single fixture issue) is at the low end. Burst pipe repair, water heater flooding, or main line backup can reach $500–$1,500+ depending on cleanup and repair scope. Topline Plumbing charges the same rate 24/7 — no nights/weekends/holiday premium.',
+      'Emergency plumbing calls in Redding typically run $150–$800+ depending on the issue. A simple shut-off and minor repair (under-sink leak, single fixture issue) is at the low end. Burst pipe repair, water heater flooding, or main line backup can reach $500–$1,500+ depending on cleanup and repair scope. Topline Plumbing charges the same rate for emergency work as for scheduled calls during our business hours.',
   },
   {
-    question: 'Do plumbers charge extra for after-hours emergencies?',
+    question: 'Do plumbers charge extra for emergencies?',
     answer:
-      "Most do — typically 50–100% more than the standard rate. Topline Plumbing does NOT charge an after-hours premium. Our rate is the same whether you call at 2 PM on a Tuesday or 2 AM on Christmas morning. A plumbing emergency shouldn't cost more just because it happened at night.",
+      "Many do — typically 50–100% more than the standard rate, especially for after-hours calls. Topline Plumbing charges the same rate for emergency work as scheduled work during our business hours (Mon–Fri 8:00a–4:30p). A plumbing emergency shouldn't cost more just because it's urgent.",
   },
   {
     question: 'Is there a service call or trip charge for emergency plumbing?',
@@ -51,7 +51,7 @@ const emergencyCostFAQs = [
   {
     question: 'How fast can Topline respond to emergencies in Redding?',
     answer:
-      "Topline's average emergency response time in Redding is 60 minutes from call to arrival. For out-of-area calls (Red Bluff, Chico, Paradise) it's typically 60–90 minutes. We're available 24/7/365, and a real plumber answers your call — not a voicemail or answering service.",
+      "During business hours (Mon–Fri 8:00a–4:30p), Topline aims for same-day response to Redding-area emergencies. Typical on-site arrival is under an hour for Redding, Shasta Lake, Anderson, and surrounding addresses. Out-of-area calls (Red Bluff, Chico, Paradise) are scheduled as routing allows. We're closed evenings and weekends.",
   },
   {
     question: 'Should I turn off the water before calling a plumber?',
@@ -77,16 +77,16 @@ export default function EmergencyPlumbingCostPage() {
       <CostPageTemplate
         h1="Emergency Plumbing Cost in Redding, CA"
         priceAnswer="$150–$800+ typical range"
-        priceAnswerDetail="Varies by issue: minor leak repairs $150–$350, burst pipe repair $300–$800, water heater flooding $400–$1,200, main sewer backup $400–$1,000. Topline charges NO after-hours premium — same rate 24/7."
+        priceAnswerDetail="Varies by issue: minor leak repairs $150–$350, burst pipe repair $300–$800, water heater flooding $400–$1,200, main sewer backup $400–$1,000. Transparent upfront pricing — no surprise upcharges."
         intro={[
-          "Plumbing emergencies are stressful enough without worrying that you're being price-gouged because you called at 2 AM. The reality is that most plumbing companies charge 50–100% more for after-hours calls. Topline Plumbing doesn't — our rate is the same whether you call at midday or midnight.",
+          "Plumbing emergencies are stressful enough without worrying that you're being price-gouged. Many plumbing companies tack heavy upcharges onto emergency calls. Topline Plumbing charges the same rate for emergency work as scheduled work during our business hours (Mon–Fri 8:00a–4:30p).",
           "For the Redding and Northern California market, most emergency plumbing calls run $150–$800 depending on the specific issue. A simple shut-off and minor repair is at the low end, while burst pipe repair, water heater flooding, or main sewer backup with water damage can reach $800–$1,500+. Below is a full breakdown of what you should expect to pay.",
-          "If you're reading this with water actively flooding your home, stop reading and call (530) 704-6989 right now. Then turn off the main water valve while you wait.",
+          "If you're reading this with water actively flooding your home during business hours, stop reading and call (530) 704-6989. If it's after hours, shut off your main water valve, call 911 if it's a safety issue (gas, major flood), and text (530) 704-6989 — we'll respond first thing the next business day.",
         ]}
         costRanges={{
           title: 'Typical Emergency Plumbing Cost Ranges',
           description:
-            'Real-world pricing for after-hours emergency calls in the Redding area. All jobs are quoted upfront before any work begins.',
+            'Real-world pricing for emergency calls in the Redding area. All jobs are quoted upfront before any work begins.',
           rows: [
             {
               scenario: 'Minor fixture leak / under-sink emergency',
@@ -138,7 +138,7 @@ export default function EmergencyPlumbingCostPage() {
         factors={{
           title: 'What Affects Emergency Plumbing Cost',
           description:
-            'The hour of the day should not — but the nature of the emergency absolutely does.',
+            'The nature of the emergency drives cost — severity, access, and scope, not arbitrary upcharges.',
           items: [
             {
               factor: 'Type and severity of the emergency',
@@ -163,23 +163,23 @@ export default function EmergencyPlumbingCostPage() {
             {
               factor: 'Response time requirements',
               impact:
-                'Our standard emergency response in Redding is 60 minutes. If you need immediate priority over scheduled calls, we accommodate when possible — no additional charge.',
+                'During business hours, Topline prioritizes active emergencies and aims for same-day response across the Redding area. If you need immediate priority over scheduled calls, we accommodate when possible — no additional charge.',
             },
             {
               factor: "What the plumber claims counts as 'emergency'",
               impact:
-                "Some plumbers charge emergency rates for any after-hours call regardless of severity. Topline doesn't — a slow drip at 9 PM is still billed at our standard rate.",
+                "Some plumbers charge inflated emergency rates for any urgent call regardless of severity. Topline doesn't — a slow drip is still billed at our standard rate.",
             },
           ],
         }}
         whatsIncluded={{
           title: "What's Included in Topline's Emergency Response",
           items: [
-            'Real plumber answers your call — no voicemail, no answering service',
-            '60-minute average response time in the Redding area',
+            'Live scheduling during business hours (Mon–Fri 8:00a–4:30p)',
+            'Same-day on-site response targeted for Redding-area emergencies',
             'Free upfront quote before any repair work begins',
-            'Same pricing as daytime calls — no after-hours or weekend premium',
-            'Licensed California plumber with full insurance coverage',
+            'Standard rate for emergency work — no inflated urgency upcharges',
+            'Licensed California plumber with full insurance coverage (CSLB #596557)',
             'Fully stocked truck — we can usually complete most emergency repairs in a single visit',
             'Protection of your floors and belongings while we work',
             'Testing and full restoration of water or gas service before we leave',
@@ -192,10 +192,10 @@ export default function EmergencyPlumbingCostPage() {
           description:
             "When you're panicking and water is everywhere, you're vulnerable to being overcharged. Know what to watch for.",
           items: [
-            "50–100% 'after-hours premium' on the quote. This is the single most common overcharge. A legitimate emergency repair should cost the same regardless of the time of day.",
+            "50–100% 'emergency' or 'after-hours premium' on the quote. This is the single most common overcharge. A legitimate emergency repair's cost is driven by the work, not the urgency.",
             "'Minimum 2-hour charge' for a 20-minute repair. Pay for the job, not the clock.",
             "Adding 'diagnostic fee' on top of the repair without crediting it. A diagnostic fee should be credited if you approve the repair.",
-            "Pressure to agree to a large repair immediately 'before it gets worse.' A real emergency repair is quoted in writing, and you have the right to get a second opinion — even in the middle of the night.",
+            "Pressure to agree to a large repair immediately 'before it gets worse.' A real emergency repair is quoted in writing, and you have the right to get a second opinion.",
             "'We need to replace everything' quotes. Many emergencies are single-point failures that only need a spot repair. Full repipe recommendations during an emergency are often upsells.",
             'No written invoice or receipt. Always get it in writing so you have recourse if something fails.',
           ],
@@ -203,8 +203,8 @@ export default function EmergencyPlumbingCostPage() {
         localContext={{
           title: 'Emergency Plumbing in the Redding Area',
           paragraphs: [
-            "Topline is based in Redding and dispatches from inside city limits, so response times to Redding, Shasta Lake, Anderson, Palo Cedro, and Bella Vista addresses are typically 30–60 minutes. Out-of-area emergencies (Red Bluff, Chico, Paradise, Oroville) are typically 60–90 minutes. For mountain addresses (Truckee, South Lake Tahoe), we schedule emergency response but cannot always guarantee under-90-minute arrival.",
-            'A real plumber answers your call at (530) 704-6989 — not a national answering service, not a voicemail, and not a scheduling assistant who has to call you back. We know this matters at 2 AM when you have water coming through the ceiling.',
+            "Topline is based in Redding and dispatches from inside city limits during business hours (Mon–Fri 8:00a–4:30p), so same-day response is typical for Redding, Shasta Lake, Anderson, Palo Cedro, and Bella Vista addresses. Out-of-area emergencies (Red Bluff, Chico, Paradise, Oroville) are scheduled as routing allows. We're closed evenings and weekends.",
+            "When you reach us at (530) 704-6989 during business hours, you'll talk with someone who actually does plumbing — not an offshore call center. After hours, text the same number and we'll respond first thing the next business day.",
             "Topline has been handling Redding-area plumbing emergencies since 1998. Joe Torculas has personally responded to thousands of burst pipes, water heater failures, and sewer backups across Shasta County. That experience is what lets us quote accurately over the phone, show up with the right parts, and fix it the first time.",
           ],
         }}

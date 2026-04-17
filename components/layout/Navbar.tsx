@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-9 text-[13px]">
               <div className="flex items-center gap-2 font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-green animate-pulse-slow" aria-hidden />
-                <span>24/7 Emergency Support</span>
+                <span>Mon&ndash;Fri 8a&ndash;4:30p</span>
                 <span className="mx-2 text-white/30">•</span>
                 <span className="text-white/70">Licensed &amp; Insured in California</span>
               </div>

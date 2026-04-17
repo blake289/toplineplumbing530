@@ -51,8 +51,8 @@ export default function PaloCedroPage() {
           href: '/services/water-heater-repair',
         },
         {
-          title: '24/7 Emergency Services',
-          description: 'Plumbing emergencies don\'t wait for business hours. We\'re available 24/7 with fast response and upfront pricing.',
+          title: 'Same-Day Emergency Services',
+          description: 'Burst pipes, water heater failures, or sewer backups? Call during business hours (Mon–Fri 8:00a–4:30p) for same-day response and upfront pricing.',
           href: '/services/emergency',
         },
       ]}

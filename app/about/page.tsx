@@ -79,7 +79,7 @@ export default function AboutPage() {
                 Over 27+ years in business, we've completed more than 2,847
                 water heater installations, thousands of drain clearings,
                 hundreds of full home repipes, and countless emergency
-                responses at every hour of the day and night. That experience
+                responses. That experience
                 matters — we know which water heaters fail first in Redding's
                 hard water, which neighborhoods have the worst sewer line root
                 intrusion, and which shortcuts other plumbers take that show
@@ -87,10 +87,10 @@ export default function AboutPage() {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                Plumbing problems are stressful. When you call Topline, you'll
-                always speak with a real person who actually does plumbing —
-                not a scheduler, not a voicemail, not an answering service.
-                Upfront pricing, no hidden fees, no after-hours premium. The
+                Plumbing problems are stressful. When you reach Topline during
+                business hours (Mon–Fri 8:00a–4:30p), you'll talk with someone
+                who actually does plumbing — not a remote call center.
+                Upfront pricing, no hidden fees, no surprise upcharges. The
                 same way Joe started in 1998.
               </p>
 
@@ -119,7 +119,7 @@ export default function AboutPage() {
               </h3>
 
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Call us anytime — we answer 24/7 for emergencies and same-day service.
+                Call us during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p) for emergencies and same-day service.
               </p>
 
               <a
@@ -411,11 +411,11 @@ function StatsBar() {
 
           {/* Stat 3 */}
           <div className="text-center">
-            <div className="text-4xl font-heading font-bold text-[#dc2626] mb-2">
-              24/7
+            <div className="text-3xl md:text-4xl font-heading font-bold text-[#dc2626] mb-2">
+              Mon&ndash;Fri
             </div>
             <div className="text-sm text-gray-500 uppercase tracking-wide font-semibold">
-              Emergency Service
+              8:00a &ndash; 4:30p
             </div>
           </div>
         </div>

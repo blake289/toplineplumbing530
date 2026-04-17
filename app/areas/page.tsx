@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Service Areas — Plumber in Redding & Northern CA | Topline Plumbing',
     description:
-      'Licensed plumbers serving 15+ Northern California cities. Same-day service, 24/7 emergency response. Call (530) 704-6989.',
+      'Licensed plumbers serving 15+ Northern California cities. Same-day emergency service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/areas',
     siteName: 'Topline Plumbing',
     images: [
@@ -156,8 +156,8 @@ export default function AreasServedPage() {
           <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed max-w-3xl mx-auto">
             Topline Plumbing provides licensed, insured plumbing service across
             15+ cities in Northern California. From our home base in Redding to
-            South Lake Tahoe — same-day service, 24/7 emergency response, and
-            upfront pricing everywhere we go.
+            South Lake Tahoe — same-day service during business hours
+            (Mon&ndash;Fri 8:00a&ndash;4:30p) and upfront pricing everywhere we go.
           </p>
           <p className="text-base text-white/70 leading-relaxed max-w-3xl mx-auto">
             Family-owned since 1998 &bull; Licensed CA Plumber &bull; 27+ years experience
@@ -172,7 +172,7 @@ export default function AreasServedPage() {
             Primary Service Area — Shasta County
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg leading-relaxed max-w-2xl mx-auto">
-            Our fastest response times. Most jobs scheduled same-day. 24/7 emergency plumbing with average 60-minute response.
+            Our fastest response times. Most jobs scheduled same-day during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p).
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {primaryAreas.map((area) => (
@@ -261,8 +261,8 @@ export default function AreasServedPage() {
             {[
               { title: 'Licensed & Insured', desc: 'Fully licensed California plumbing contractor. Bonded and insured on every job.' },
               { title: 'Same-Day Service', desc: 'Most repairs scheduled same-day. No waiting around for a plumber — we show up when we say we will.' },
-              { title: '24/7 Emergency Response', desc: 'Burst pipe at 2am? Sewer backup on a holiday? We answer the phone 24/7, 365 days a year.' },
-              { title: 'Upfront Pricing', desc: 'You see the price before we start work. No hourly surprises, no hidden fees, no after-hours premium.' },
+              { title: 'Same-Day Emergency Response', desc: 'Burst pipe, sewer backup, or water heater flooding? During business hours (Mon–Fri 8:00a–4:30p) we aim to be on-site same-day.' },
+              { title: 'Upfront Pricing', desc: 'You see the price before we start work. No hourly surprises, no hidden fees, no urgency upcharges.' },
               { title: '27+ Years Experience', desc: 'Family-owned since 1998. We\'ve completed thousands of jobs across Northern California.' },
               { title: 'All Major Services', desc: 'Water heaters, drains, sewer lines, gas lines, repiping, leak detection, and more.' },
             ].map((item) => (
@@ -287,8 +287,8 @@ export default function AreasServedPage() {
             Need a Plumber in Northern California?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            From Redding to South Lake Tahoe — Topline Plumbing is ready to help.
-            Same-day service, upfront pricing, 24/7 emergency response.
+            From Redding to South Lake Tahoe &mdash; Topline Plumbing is ready to help.
+            Same-day service during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p) with upfront pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

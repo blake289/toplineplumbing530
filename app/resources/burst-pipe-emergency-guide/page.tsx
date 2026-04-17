@@ -64,8 +64,8 @@ const burstPipeHowToSchema = {
     {
       '@type': 'HowToStep',
       position: 4,
-      name: 'Call a 24/7 plumber',
-      text: 'Call an emergency plumber immediately. In Redding, call Topline Plumbing at (530) 704-6989 — a real plumber answers 24/7 with a 60-minute response target.',
+      name: 'Call a plumber',
+      text: 'Call an emergency plumber immediately. In Redding during business hours (Mon–Fri 8:00a–4:30p), call Topline Plumbing at (530) 704-6989 for same-day response. Outside those hours, text the same number and we\'ll respond first thing the next business day.',
     },
     {
       '@type': 'HowToStep',
@@ -86,7 +86,7 @@ const burstPipeFAQs = [
   {
     question: 'What should I do first if a pipe bursts in my home?',
     answer:
-      'Shut off the main water valve immediately — before you do anything else. Every second the water keeps flowing is more damage. After shutting off the main, turn off the water heater (to prevent it running dry), open faucets to drain remaining water from the lines, and call a 24/7 plumber.',
+      'Shut off the main water valve immediately — before you do anything else. Every second the water keeps flowing is more damage. After shutting off the main, turn off the water heater (to prevent it running dry), open faucets to drain remaining water from the lines, and call a plumber. In Redding, call Topline Plumbing at (530) 704-6989 during business hours (Mon–Fri 8:00a–4:30p).',
   },
   {
     question: 'Does homeowners insurance cover burst pipes?',
@@ -138,11 +138,10 @@ export default function BurstPipeEmergencyGuidePage() {
       <div className="bg-primary text-white py-4">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <p className="text-base md:text-lg font-bold">
-            🚨 Emergency right now? Call Topline 24/7:{' '}
+            Emergency during business hours? Call Topline Mon&ndash;Fri 8&ndash;4:30:{' '}
             <a href="tel:5307046989" className="underline">
               (530) 704-6989
-            </a>{' '}
-            — real plumber answers
+            </a>
           </p>
         </div>
       </div>
@@ -243,16 +242,18 @@ export default function BurstPipeEmergencyGuidePage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-bold text-navy-900 mb-2">
-                    Call a 24/7 plumber
+                    Call a plumber
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    In Redding, call Topline Plumbing at{' '}
+                    In Redding during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p),
+                    call Topline Plumbing at{' '}
                     <a href="tel:5307046989" className="text-primary font-bold underline">
                       (530) 704-6989
-                    </a>
-                    . A real plumber answers 24/7 — no voicemail, no
-                    answering service. Average response time in the Redding
-                    area: 60 minutes.
+                    </a>{' '}
+                    for same-day response. Outside business hours, shut off your
+                    main water valve, call 911 if there is a safety issue, and
+                    text the same number &mdash; we will respond first thing the
+                    next business day.
                   </p>
                 </div>
               </div>
@@ -417,11 +418,12 @@ export default function BurstPipeEmergencyGuidePage() {
       <section className="py-16 bg-navy-900 text-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-            Topline Plumbing — Available 24/7 in Redding
+            Topline Plumbing &mdash; Redding&apos;s Go-To Plumber Since 1998
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-            Real plumber answers. 60-minute average response. Same pricing
-            24/7 — no after-hours premium.
+            Same-day emergency response during business hours (Mon&ndash;Fri
+            8:00a&ndash;4:30p). Upfront pricing. Licensed, bonded &amp; insured
+            (CSLB #596557).
           </p>
           <a
             href="tel:5307046989"
