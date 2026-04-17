@@ -79,8 +79,12 @@ export default function Footer() {
               <Link href="/services/water-heater-repair" className="text-gray-400 hover:text-white transition-colors">Water Heater Repair</Link>
               <Link href="/services/tankless" className="text-gray-400 hover:text-white transition-colors">Tankless Installation</Link>
               <Link href="/services/drain-cleaning" className="text-gray-400 hover:text-white transition-colors">Drain Cleaning</Link>
+              <Link href="/services/repiping-services" className="text-gray-400 hover:text-white transition-colors">Repiping Services</Link>
+              <Link href="/services/sewer-line" className="text-gray-400 hover:text-white transition-colors">Sewer Line</Link>
+              <Link href="/services/leak-detection" className="text-gray-400 hover:text-white transition-colors">Leak Detection</Link>
+              <Link href="/services/gas-line" className="text-gray-400 hover:text-white transition-colors">Gas Line</Link>
+              <Link href="/services/fixture-installs" className="text-gray-400 hover:text-white transition-colors">Fixture Installs</Link>
               <Link href="/cost" className="text-gray-400 hover:text-white transition-colors">Pricing &amp; Cost</Link>
-              <Link href="/financing" className="text-gray-400 hover:text-white transition-colors">Payment Options</Link>
               <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link>
             </nav>
           </div>
@@ -99,6 +103,17 @@ export default function Footer() {
                 Toplineplumbingredding@gmail.com
               </a>
               <p className="text-gray-400">Serving Redding &amp; Northern California</p>
+              <a
+                href="https://go.toplineplumbingco.com/google_review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary-light hover:text-white transition-colors text-[14px] font-medium mt-1"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                Leave Us a Google Review
+              </a>
               <p className="text-gray-400 text-[13px] mt-1 font-medium tracking-wide">
                 CA CSLB License # [INSERT NUMBER HERE]
               </p>

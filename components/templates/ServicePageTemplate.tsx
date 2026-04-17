@@ -228,8 +228,47 @@ export default function ServicePageTemplate({
         <FAQSection faqs={faqs} background="white" />
       )}
 
-      {/* CTA Section */}
+      {/* Areas Served */}
       <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-gray-900 mb-4">
+            Serving 15 Cities Across Northern California
+          </h2>
+          <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+            From Redding to South Lake Tahoe — licensed, bonded &amp; insured plumbers ready for same-day service.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+            {[
+              ['Redding', '/areas/redding'],
+              ['Anderson', '/areas/anderson'],
+              ['Shasta Lake', '/areas/shasta-lake'],
+              ['Palo Cedro', '/areas/palo-cedro'],
+              ['Bella Vista', '/areas/bella-vista'],
+              ['Red Bluff', '/areas/red-bluff'],
+              ['Chico', '/areas/chico'],
+              ['Paradise', '/areas/paradise'],
+              ['Oroville', '/areas/oroville'],
+              ['Yuba City', '/areas/yuba-city'],
+              ['Marysville', '/areas/marysville'],
+              ['Auburn', '/areas/auburn'],
+              ['Grass Valley', '/areas/grass-valley'],
+              ['Truckee', '/areas/truckee'],
+              ['South Lake Tahoe', '/areas/south-lake-tahoe'],
+            ].map(([name, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-center py-3 px-4 rounded-xl bg-white border border-gray-200 text-gray-700 font-medium hover:border-primary hover:text-primary hover:shadow-sm transition-all text-sm"
+              >
+                {name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
             {ctaText}

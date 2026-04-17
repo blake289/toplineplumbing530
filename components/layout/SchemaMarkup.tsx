@@ -74,12 +74,13 @@ export default function SchemaMarkup() {
     ],
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61551944100731",
-      "https://www.instagram.com/toplineplumbing/"
+      "https://www.instagram.com/toplineplumbing/",
+      "https://www.google.com/maps?cid=353211204535522869"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "1",
+      "reviewCount": "7",
       "bestRating": "5",
       "worstRating": "1"
     },

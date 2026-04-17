@@ -59,7 +59,7 @@ export default function GrassValleyPage() {
             <div className="lg:col-span-2 space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">Your Trusted Plumber in Grass Valley, California</h2>
               <p className="text-lg text-gray-700">
-                Topline Plumbing 530 is proud to serve Grass Valley, Nevada County with professional plumbing services. Our licensed plumbers have been serving Grass Valley homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 4.9-star rating.
+                Topline Plumbing 530 is proud to serve Grass Valley, Nevada County with professional plumbing services. Our licensed plumbers have been serving Grass Valley homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 5-Star Rated.
               </p>
               <p className="text-lg text-gray-700">
                 Whether you need emergency plumbing service at 2am or a scheduled water heater installation, our licensed plumbers in Grass Valley are ready to help. We offer same-day plumbing service for most repairs in Grass Valley and surrounding areas.
@@ -127,7 +127,7 @@ export default function GrassValleyPage() {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span><strong>4.9-Star Rating:</strong> 427 five-star reviews from satisfied customers</span>
+                  <span><strong>5-Star Rated:</strong> Trusted by thousands of Northern California homeowners</span>
                 </li>
               </ul>
 
@@ -175,6 +175,11 @@ export default function GrassValleyPage() {
                   <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning</Link></li>
                   <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater</Link></li>
                   <li><Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Upgrades</Link></li>
+                  <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline">Repiping</Link></li>
+                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline">Sewer Line</Link></li>
+                  <li><Link href="/services/gas-line" className="text-blue-600 hover:underline">Gas Line</Link></li>
+                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline">Leak Detection</Link></li>
+                  <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline">Fixture Installs</Link></li>
                 </ul>
               </div>
 
@@ -216,7 +221,7 @@ export default function GrassValleyPage() {
                     <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    4.9★ Rating
+                    5★ Google Rating
                   </li>
                 </ul>
               </div>

@@ -96,6 +96,36 @@ export default function LocationPageTemplate({
         </div>
       </section>
 
+      {/* All Services */}
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-gray-900 mb-8">
+            All Plumbing Services in {locationName}
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-3xl mx-auto">
+            {[
+              ['Emergency Plumbing', '/services/emergency'],
+              ['Water Heater Repair', '/services/water-heater-repair'],
+              ['Tankless Installation', '/services/tankless'],
+              ['Drain Cleaning', '/services/drain-cleaning'],
+              ['Repiping Services', '/services/repiping-services'],
+              ['Sewer Line', '/services/sewer-line'],
+              ['Gas Line', '/services/gas-line'],
+              ['Leak Detection', '/services/leak-detection'],
+              ['Fixture Installs', '/services/fixture-installs'],
+            ].map(([name, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-center py-3 px-4 rounded-xl bg-white border border-gray-200 text-gray-700 font-medium hover:border-primary hover:text-primary hover:shadow-sm transition-all text-sm"
+              >
+                {name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 lg:py-32 bg-navy-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
