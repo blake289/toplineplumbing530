@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service, water heater repair, drain cleaning. Same-day service available. Call (530) 704-6989.",
+    description: "Fast, licensed plumbing in Redding, CA. Emergency plumbing, water heater repair, drain cleaning. Same-day service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Redding CA Licensed Plumber' }],
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 
 const homepageFAQs = [
   {
-    question: "How quickly can Topline Plumbing respond to an emergency in Redding?",
-    answer: "We respond to plumbing emergencies in Redding and surrounding areas within 60 minutes on average. Our licensed plumbers are on-call 24 hours a day, 7 days a week, 365 days a year — including holidays.",
+    question: "What are Topline Plumbing's hours for emergency service in Redding?",
+    answer: "Topline Plumbing handles emergency plumbing during business hours: Monday through Friday, 8:00a to 4:30p. For active emergencies outside our hours, shut off your main water valve and call 911 if there's a safety issue (gas leak, major flood). Text (530) 704-6989 and we'll respond first thing the next business day.",
   },
   {
     question: "Is Topline Plumbing licensed and insured in California?",

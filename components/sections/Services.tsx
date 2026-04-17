@@ -10,7 +10,7 @@ const services = [
       </svg>
     ),
     title: 'Emergency Plumbing',
-    description: "Burst pipes, gas leaks, and floods — we're there fast, any hour of the day or night.",
+    description: "Burst pipes, gas leaks, and floods — same-day response during our business hours.",
     href: '/services/emergency',
   },
   {

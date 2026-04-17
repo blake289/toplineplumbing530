@@ -5,11 +5,11 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Gas Line Repair & Installation in Redding, CA | Topline Plumbing',
-  description: 'Licensed gas line repair and installation in Redding, CA. Gas leaks, new appliance lines, outdoor BBQ hookups. Available 24/7. Call (530) 704-6989.',
+  description: 'Licensed gas line repair and installation in Redding, CA. Gas leaks, new appliance lines, outdoor BBQ hookups. Same-day service Mon–Fri 8a–4:30p. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/gas-line' },
   openGraph: {
     title: 'Gas Line Repair & Installation in Redding, CA | Topline Plumbing',
-    description: 'Licensed gas line repair and installation in Redding, CA. Gas leaks, new appliance lines, outdoor BBQ hookups. Available 24/7. Call (530) 704-6989.',
+    description: 'Licensed gas line repair and installation in Redding, CA. Gas leaks, new appliance lines, outdoor BBQ hookups. Same-day service Mon–Fri 8a–4:30p. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/gas-line',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Gas Line Repair & Installation in Redding, CA' }],
@@ -55,7 +55,7 @@ export default function GasLinePage() {
         hero={{
           title: 'Gas Line Repair & Installation in Redding, CA',
           description: [
-            "Gas leaks are a serious safety hazard — and not something to wait on. Topline Plumbing provides 24/7 emergency gas line repair for Redding homeowners, with licensed plumbers who know California gas code inside and out.",
+            "Gas leaks are a serious safety hazard — and not something to wait on. Topline Plumbing provides same-day emergency gas line repair for Redding homeowners during business hours (Mon–Fri 8:00a–4:30p), with licensed plumbers who know California gas code inside and out. If you smell gas outside our hours, leave the building and call PG&E at 1-800-743-5000.",
             "Whether it's a suspected leak, a new appliance hookup, or an outdoor BBQ line, we handle it safely, properly permitted, and with upfront pricing.",
           ],
         }}
@@ -63,7 +63,7 @@ export default function GasLinePage() {
           {
             title: 'Gas Leak Detection & Repair',
             items: [
-              '24/7 emergency gas leak response',
+              'Same-day emergency response during business hours',
               'Electronic leak detection equipment',
               'Pressure testing after every repair',
               'Full safety inspection included',

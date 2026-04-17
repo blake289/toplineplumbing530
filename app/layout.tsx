@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://toplineplumbingco.com'),
   openGraph: {
     title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service, water heater repair, drain cleaning. Same-day service available. Call (530) 704-6989.",
+    description: "Fast, licensed plumbing in Redding, CA. Emergency plumbing, water heater repair, drain cleaning. Same-day service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com',
     siteName: 'Topline Plumbing',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. 24/7 emergency service. Call (530) 704-6989.",
+    description: "Fast, licensed plumbing in Redding, CA. Same-day emergency service Mon–Fri 8a–4:30p. Call (530) 704-6989.",
     images: ['/images/water-heater.webp'],
   },
   alternates: {

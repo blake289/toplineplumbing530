@@ -2,7 +2,7 @@
  * City-specific FAQs for AI/LLM citation and local SEO.
  * Rendered as JSON-LD FAQPage schema on each /areas/[city] page.
  *
- * Each city has 6 questions covering: 24/7 availability, response time,
+ * Each city has 6 questions covering: business hours, response time,
  * pricing, licensing, services, and a city-specific question.
  */
 
@@ -180,24 +180,24 @@ export function getCityFaqs(slug: string): CityFaq[] {
 
   return [
     {
-      question: `Do you offer 24/7 emergency plumbing in ${name}, CA?`,
-      answer: `Yes. Topline Plumbing 530 offers 24/7 emergency plumbing service in ${name}. We respond to burst pipes, water heater failures, sewer backups, gas leaks, and flooding any hour of the day or night. Call (530) 704-6989 for immediate dispatch.`,
+      question: `What are Topline Plumbing's hours for emergency service in ${name}, CA?`,
+      answer: `Topline Plumbing 530 handles emergency plumbing in ${name} during business hours: Monday through Friday, 8:00a to 4:30p. For active emergencies outside our hours, shut off your main water valve and call 911 if there's a safety issue (gas leak, major flood). Text (530) 704-6989 and we'll respond first thing the next business day.`,
     },
     {
       question: `How fast can a plumber get to ${name}?`,
-      answer: `Typical response time to ${name} is ${responseTime} for emergency calls. ${distanceNote} For non-emergency service, we usually offer same-day or next-day appointments.`,
+      answer: `During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for ${name} emergencies is ${responseTime}. ${distanceNote} For non-emergency service, we usually offer same-day or next-business-day appointments.`,
     },
     {
       question: `How much does a plumber cost in ${name}, CA?`,
-      answer: `Topline Plumbing offers upfront pricing in ${name} — you'll know the full cost before any work begins. Diagnostic calls start affordably, and most common repairs (drain clearing, faucet replacement, water heater service) fall within standard plumbing rates for the 530 area. We never charge hidden fees and pricing is the same on weekends.`,
+      answer: `Topline Plumbing offers upfront pricing in ${name} — you'll know the full cost before any work begins. Diagnostic calls start affordably, and most common repairs (drain clearing, faucet replacement, water heater service) fall within standard plumbing rates for the 530 area. Emergency work during our business hours is billed at our standard rate — no urgency upcharge.`,
     },
     {
       question: `Are you a licensed plumber serving ${name}?`,
-      answer: `Yes. Topline Plumbing 530 is a fully licensed, bonded, and insured California plumbing contractor. We are legally authorized to perform residential and commercial plumbing work throughout ${name} and the entire 530 area code.`,
+      answer: `Yes. Topline Plumbing 530 is a fully licensed, bonded, and insured California plumbing contractor (CSLB #596557). We are authorized to perform residential and commercial plumbing work throughout ${name} and the entire 530 area code.`,
     },
     {
       question: `What plumbing services do you offer in ${name}?`,
-      answer: `We offer the full range of plumbing services in ${name}: 24/7 emergency plumbing, drain cleaning and hydrojetting, water heater repair and replacement, tankless water heater installation, sewer line repair, leak detection, whole-home repiping, gas line service, and fixture installation. Both residential and commercial.`,
+      answer: `We offer the full range of plumbing services in ${name}: emergency plumbing (during business hours), drain cleaning and hydrojetting, water heater repair and replacement, tankless water heater installation, sewer line repair, leak detection, whole-home repiping, gas line service, and fixture installation. Both residential and commercial.`,
     },
     uniqueQ,
   ];

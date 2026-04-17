@@ -39,24 +39,24 @@ const faqCategories: FAQCategory[] = [
     id: 'emergency',
     faqs: [
       {
-        question: 'Do you offer 24/7 emergency plumbing service?',
+        question: 'What are your hours for emergency plumbing?',
         answer:
-          'Yes. Topline Plumbing is available 24 hours a day, 7 days a week, 365 days a year for plumbing emergencies in Redding and Northern California. Call (530) 704-6989 and a real plumber answers — no voicemail, no answering service.',
+          'Topline Plumbing handles emergency plumbing during business hours: Monday through Friday, 8:00a to 4:30p. For after-hours issues, text (530) 704-6989 and we\'ll respond first thing the next business day. For active emergencies outside our hours, call 911 if it\'s a safety issue (gas leak, major flood) or shut off your water at the main valve until we open.',
       },
       {
         question: 'How fast can a plumber get to my house in an emergency?',
         answer:
-          'For Redding, Anderson, and Shasta Lake, our average emergency response time is 60 minutes. For extended service areas like Chico, Paradise, and Oroville, response times are typically 90–120 minutes depending on distance.',
+          'During business hours (Mon–Fri 8:00a–4:30p), we aim to respond same-day to emergencies in Redding, Anderson, and Shasta Lake. For extended service areas like Chico, Paradise, and Oroville, we\'ll schedule as quickly as routing allows.',
       },
       {
-        question: 'Do you charge extra for after-hours or weekend emergency calls?',
+        question: 'Do you charge extra for emergency calls?',
         answer:
-          'No. Topline Plumbing charges the same rate 24/7. There is no after-hours premium, no weekend surcharge, and no holiday markup. The price we quote is the price you pay.',
+          'No. Topline Plumbing charges the same rate for emergency work as standard calls during our business hours. No surprise upcharges — the price we quote is the price you pay.',
       },
       {
         question: 'What should I do if a pipe bursts in my house?',
         answer:
-          'First, shut off the main water valve (usually near the water meter or where the main line enters your home). Then turn off your water heater to prevent damage. Open faucets to drain remaining water. Call us at (530) 704-6989 immediately — we\'ll dispatch a plumber right away.',
+          'First, shut off the main water valve (usually near the water meter or where the main line enters your home). Then turn off your water heater to prevent damage. Open faucets to drain remaining water. Call us at (530) 704-6989 during business hours — we\'ll get a plumber to you as fast as we can.',
       },
     ],
   },

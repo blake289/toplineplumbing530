@@ -119,13 +119,13 @@ export default function StatsSection() {
             <StatCard target={2847} label="Water heaters installed" suffix="+" />
           </div>
           <div className="md:pl-6 md:pr-0 md:text-right">
-            {/* Static 24/7 display — non-animated for clarity */}
+            {/* Static hours display — non-animated for clarity */}
             <div className="text-center md:text-right flex flex-col gap-3">
-              <div className="text-[56px] md:text-[64px] lg:text-[72px] font-bold leading-none text-white tracking-[-0.035em] tabular-nums">
-                24/7
+              <div className="text-[44px] md:text-[52px] lg:text-[58px] font-bold leading-none text-white tracking-[-0.035em] tabular-nums">
+                Mon&ndash;Fri
               </div>
               <div className="text-[12px] md:text-[13px] font-semibold tracking-[0.18em] text-white/60 uppercase">
-                Emergency support
+                8:00a &ndash; 4:30p
               </div>
             </div>
           </div>

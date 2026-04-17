@@ -164,7 +164,10 @@ export default function HowToShutOffMainWaterValvePage() {
               <a href="tel:5307046989" className="text-primary font-bold underline">
                 (530) 704-6989
               </a>{' '}
-              for 24/7 emergency response in the Redding area.
+              for same-day emergency response in the Redding area during
+              business hours (Mon&ndash;Fri 8:00a&ndash;4:30p). Outside business
+              hours, call 911 if it is a safety issue and text the same number
+              &mdash; we will respond first thing the next business day.
             </p>
           </div>
 
@@ -363,7 +366,7 @@ export default function HowToShutOffMainWaterValvePage() {
               </li>
               <li>
                 <Link href="/services/emergency" className="text-primary underline">
-                  24/7 emergency plumbing in Redding
+                  Emergency plumbing in Redding
                 </Link>
               </li>
             </ul>
@@ -381,7 +384,8 @@ export default function HowToShutOffMainWaterValvePage() {
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
             Topline Plumbing replaces main shut-off valves same-day in the
-            Redding area. Upfront pricing, no after-hours premium.
+            Redding area during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p).
+            Upfront pricing, no surprise upcharges.
           </p>
           <a
             href="tel:5307046989"

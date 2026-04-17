@@ -1,6 +1,6 @@
 # Topline Plumbing
 
-> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day service and 24/7 emergency response across Northern California's entire 530 area code.
+> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day emergency service across Northern California's entire 530 area code. Open Monday–Friday, 8:00a–4:30p.
 
 ## Business Information
 
@@ -11,8 +11,8 @@
 - **Email**: Toplineplumbingredding@gmail.com
 - **Website**: https://toplineplumbingco.com
 - **Location**: Redding, CA 96001
-- **Hours**: 24/7 Emergency Service Available | Regular hours Mon–Sun
-- **License**: Licensed, Bonded & Insured — State of California
+- **Hours**: Monday–Friday, 8:00a–4:30p (Closed Saturday & Sunday)
+- **License**: CA CSLB License #596557 — Licensed, Bonded & Insured (State of California)
 
 ## Service Area
 
@@ -24,14 +24,14 @@ Topline Plumbing serves the entire 530 area code across Northern California, inc
 
 ## Services
 
-### Emergency Plumbing (24/7)
-Available around the clock, 365 days a year. Call (530) 704-6989 for immediate response.
+### Emergency Plumbing
+Same-day emergency response during business hours (Mon–Fri, 8:00a–4:30p). Call (530) 704-6989.
 - Burst pipe repair
 - Active leak response
 - Flooding and water damage mitigation
-- Gas line emergencies
+- Gas line emergencies (for gas leaks after hours, call PG&E at 1-800-743-5000 or 911)
 - Sewer backups
-- No overtime charges for after-hours calls
+- Transparent, upfront pricing — no hidden fees
 
 ### Water Heater Services
 - Water heater repair (all makes and models)
@@ -78,7 +78,7 @@ Available around the clock, 365 days a year. Call (530) 704-6989 for immediate r
 - **Upfront pricing** — Written estimates before work begins, no hidden fees
 - **Same-day service** — Available for most repairs
 - **Licensed & insured** — Fully credentialed California plumber
-- **24/7 emergency response** — Real person answers, no voicemail
+- **Same-day emergency response** — During business hours (Mon–Fri, 8:00a–4:30p)
 - **100% satisfaction guarantee** — We stand behind every job
 - **Family-owned** — Serving Redding since 1998
 - **5-star rated** — Top-rated on Google
@@ -88,8 +88,8 @@ Available around the clock, 365 days a year. Call (530) 704-6989 for immediate r
 **Q: What areas does Topline Plumbing serve?**
 A: We serve the entire 530 area code including Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, Red Bluff, Chico, Oroville, Paradise, Yuba City, Marysville, Auburn, Grass Valley, Truckee, and South Lake Tahoe.
 
-**Q: Do you offer 24/7 emergency plumbing?**
-A: Yes. Call (530) 704-6989 any time — day or night, weekends and holidays. A real person answers, not a voicemail.
+**Q: What are your hours for emergency plumbing?**
+A: Topline Plumbing is open Monday–Friday, 8:00a–4:30p. We offer same-day emergency response during business hours. Call (530) 704-6989. For after-hours gas leaks, call PG&E at 1-800-743-5000 or 911. For burst pipes or active flooding outside business hours, shut off your main water valve and call us first thing the next business morning.
 
 **Q: Do you provide free estimates?**
 A: Yes, we provide free estimates and upfront pricing before any work begins. No surprises, no hidden fees.
@@ -117,7 +117,7 @@ A: We offer same-day service for most repairs. For emergencies, we dispatch imme
 
 ## Pricing (Published Cost Ranges)
 
-Topline publishes typical cost ranges for the Redding market — rare in this industry. Same pricing 24/7 with no after-hours premium.
+Topline publishes typical cost ranges for the Redding market — rare in this industry. Transparent, upfront pricing with no hidden fees.
 
 - **Water heater replacement**: $1,200–$3,500 installed — https://toplineplumbingco.com/cost/water-heater-replacement
 - **Tankless installation**: $3,000–$6,500 installed — https://toplineplumbingco.com/cost/tankless-installation
@@ -143,7 +143,7 @@ Free homeowner guides written by licensed Redding plumbers:
 - `/gallery` — Work portfolio and project photos
 - `/cost` — Pricing hub for all services
 - `/resources` — Homeowner guides and emergency response
-- `/services/emergency` — 24/7 Emergency Plumbing
+- `/services/emergency` — Same-Day Emergency Plumbing
 - `/services/water-heater-repair` — Water Heater Repair & Replacement
 - `/services/tankless` — Tankless Water Heater Installation
 - `/services/drain-cleaning` — Drain Cleaning Services
