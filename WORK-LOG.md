@@ -33,7 +33,7 @@
   - Added metadata to About page and Gallery page (previously missing)
   - Standardized all 12 area/city page titles to clean "Plumber in [City], CA | Topline Plumbing" format
 - [x] Schema markup domain fixed — was pointing to old domain (toplineplumbing530.com); corrected to toplineplumbingco.com
-- [x] Schema markup upgraded — added 4.9-star rating + 427 reviews to structured data; enables star rating display in Google Search results
+- [x] Schema markup upgraded — corrected to 5.0-star rating + 7 reviews (actual GBP data); enables star rating display in Google Search results
 - [x] Sitemap expanded — from 6 URLs to 27 (all service pages + all 15 area pages)
 
 ---
@@ -117,7 +117,7 @@
 
 ## Review Generation
 
-- [ ] Google review link obtained and confirmed (opens review modal)
+- [x] Google review link obtained — https://go.toplineplumbingco.com/google_review
 - [ ] GHL Reputation Settings configured with review link
 - [ ] Review gating confirmed (on or off — intentional)
 - [ ] Send Review Request workflow tested — trigger confirmed
@@ -134,7 +134,7 @@
 - [x] Topline Plumbing client portal built and deployed — portal.blakeernst.com/toplineplumbing
   - Custom branded in Topline navy (#0A1628) + red (#C8102E)
   - Hero section with Topline logo + high-res hero image (arch-framed, golden hour, Topline van)
-  - Stats bar: 15 area pages, 427 reviews (4.9★), 8 workflows, 12 GMB posts
+  - Stats bar: 47 pages built, 100% speed score, 15 cities, 5,070 past customers
   - "What's been built" grid — 3 agreed deliverables (green ✓ badges) + 3 bonus deliverables
   - Each card includes plain English summary + "why it matters" benefit + technical detail
   - Add-ons section: 4 unlockable services with layman explanations and blue call-to-action
@@ -284,3 +284,55 @@
 - Deployed updated website with refined UI components, improved mobile call button integration, and enhanced visual consistency across all pages
 - Completed conversion optimization and compliance review across homepage sections including pricing, services, and call-to-action elements
 - Verified production deployment and domain configuration for toplineplumbing530
+
+### 2026-04-12
+- Added comprehensive Areas of Service hub page showcasing all service locations with detailed coverage information
+- Created FAQ page addressing common customer questions about plumbing services and financing options
+- Implemented Financing page highlighting payment plans and financing opportunities for customers
+- Updated site navigation and search engine sitemap to reflect new pages and improve discoverability
+
+### 2026-04-16
+- Corrected Google Analytics configuration across all pages with proper measurement ID
+- Deployed updated analytics implementation to production
+
+### 2026-04-16
+- Corrected Google Analytics configuration across all website pages
+- Deployed updates to production environment
+- Updated project documentation and version tracking
+
+### 2026-04-16
+- Configured and deployed Google Analytics tracking across all website pages
+- Corrected measurement ID to ensure accurate analytics data collection
+
+### 2026-04-16
+- **SEO internal linking overhaul** — pushed to main
+  - Added 5 missing services (repiping, sewer, gas, leak detection, fixtures) to all 12 area page sidebars
+  - Added "Areas Served" section to ServicePageTemplate — every service page now links to all 15 cities
+  - Added "All Services" grid to LocationPageTemplate — Shasta Lake, Palo Cedro, Bella Vista now link to all 9 services
+  - Added 5 missing services to footer navigation
+- **NAP / schema fixes**
+  - Corrected aggregateRating: 7 reviews / 5.0 stars (real GBP data, was incorrectly 427/4.9)
+  - Added Google Maps CID to schema sameAs
+  - Fixed inflated "427 reviews" claim on all 12 area pages
+- **Review generation**
+  - Added "Leave Us a Google Review" link in footer (go.toplineplumbingco.com/google_review)
+- **Housekeeping**
+  - Renamed client-portal-v3 → client-portals
+  - Switched git remote from HTTPS to SSH (token expired)
+- **Still needed:** CSLB license # for footer, verify GBP website points to toplineplumbingco.com
+
+### 2026-04-16
+- Improved internal linking structure across website pages for better navigation and SEO
+- Ensured consistent business name, address, and phone information throughout all web pages
+- Reviewed and validated all external links for accuracy and proper functionality
+
+### 2026-04-17
+- Verified Asana integration credentials are properly configured and accessible
+- **Added CSLB License #596557** to Footer, LocalBusiness schema (hasCredential + identifier), llms.txt, llms-full.txt
+- **Confirmed real business hours with client** — Mon–Fri 8:00a–4:30p, closed weekends, no after-hours emergency coverage
+- **Removed all false "24/7 / real person answers / no voicemail / immediate dispatch / around the clock" claims** across 42 files
+- **SchemaMarkup openingHoursSpecification** rebuilt from 7-day 00:00–23:59 to Mon–Fri 08:00–16:30 only
+- **Reframed /services/emergency and /cost/emergency-plumbing** with honest after-hours guidance (self-help, 911 for gas/flooding, PG&E for utility emergencies)
+- **Rewrote lib/cityFaqs.ts** — all 15 city FAQs now honestly describe business-hours service
+- **Updated StatusDot badge + Navbar** — "24/7 Emergency Support" → "Mon–Fri 8a–4:30p"
+- **Deployed to production** — commit 96dc217, verified READY on Vercel
