@@ -60,6 +60,8 @@ export default function RootLayout({
       <head>
         <SchemaMarkup />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM context" />
+      </head>
+      <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3ZFMX0QHX2"
           strategy="afterInteractive"
@@ -72,8 +74,6 @@ export default function RootLayout({
             gtag('config', 'G-3ZFMX0QHX2');
           `}
         </Script>
-      </head>
-      <body>
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
