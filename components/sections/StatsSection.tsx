@@ -116,7 +116,7 @@ export default function StatsSection() {
             <StatCard target={27} label="Years of experience" suffix="+" />
           </div>
           <div className="md:px-6 md:text-center">
-            <StatCard target={2847} label="Water heaters installed" suffix="+" />
+            <StatCard target={3000} label="Jobs completed" suffix="+" />
           </div>
           <div className="md:pl-6 md:pr-0 md:text-right">
             {/* Static hours display — non-animated for clarity */}

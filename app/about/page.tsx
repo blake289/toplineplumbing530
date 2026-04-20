@@ -76,8 +76,8 @@ export default function AboutPage() {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Over 27+ years in business, we've completed more than 2,847
-                water heater installations, thousands of drain clearings,
+                Over 27+ years in business, we've completed more than 3,000+
+                jobs — water heater installs, drain clearings,
                 hundreds of full home repipes, and countless emergency
                 responses. That experience
                 matters — we know which water heaters fail first in Redding's
@@ -361,8 +361,8 @@ function StatsBar() {
           let heatersCount = 0;
           const heatersInterval = setInterval(() => {
             heatersCount += 50;
-            if (heatersCount >= 2847) {
-              heatersCount = 2847;
+            if (heatersCount >= 3000) {
+              heatersCount = 3000;
               clearInterval(heatersInterval);
             }
             setCounts(prev => ({ ...prev, heaters: heatersCount }));
@@ -405,7 +405,7 @@ function StatsBar() {
               {counts.heaters.toLocaleString()}
             </div>
             <div className="text-sm text-gray-500 uppercase tracking-wide font-semibold">
-              Water Heaters Installed
+              Jobs Completed
             </div>
           </div>
 

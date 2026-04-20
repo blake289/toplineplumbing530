@@ -186,7 +186,7 @@ export default function Navbar() {
                   href="/contact"
                   className="group inline-flex items-center gap-2 px-6 h-11 rounded-full bg-accent-orange text-white text-[14px] font-semibold shadow-[0_4px_14px_-2px_rgba(249,115,22,0.4)] hover:bg-orange-500 hover:scale-[1.04] hover:shadow-[0_8px_24px_-4px_rgba(249,115,22,0.55)] active:scale-[1.01] focus-visible:scale-[1.04] transition-all duration-200 ease-out"
                 >
-                  Get a free estimate
+                  Get a Free Estimate
                   <svg
                     className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
                     fill="none"

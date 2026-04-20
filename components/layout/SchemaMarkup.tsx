@@ -334,7 +334,7 @@ export default function SchemaMarkup() {
       "California Plumbing Code",
       "Redding CA Area Plumbing"
     ],
-    "description": "Joe Torculas founded Topline Plumbing in 1998 and has been serving Redding, California and the entire 530 area code ever since. A licensed California plumbing contractor, Joe has personally overseen more than 2,847 water heater installations, hundreds of whole-home repipes, and thousands of emergency plumbing responses across Shasta County and Northern California.",
+    "description": "Joe Torculas founded Topline Plumbing in 1998 and has been serving Redding, California and the entire 530 area code ever since. A licensed California plumbing contractor, Joe has personally overseen more than 3,000 plumbing jobs — water heater installs, whole-home repipes, and emergency plumbing responses across Shasta County and Northern California.",
     "url": "https://toplineplumbingco.com/about",
     "image": "https://toplineplumbingco.com/images/joe-cindy.webp",
     "hasOccupation": {

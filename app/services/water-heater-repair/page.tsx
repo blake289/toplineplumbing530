@@ -5,11 +5,11 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
-  description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 704-6989 for a free inspection.",
+  description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. 3,000+ jobs completed. Call (530) 704-6989 for a free inspection.",
   alternates: { canonical: 'https://toplineplumbingco.com/services/water-heater-repair' },
   openGraph: {
     title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
-    description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. We've replaced 2,847+ water heaters. Call (530) 704-6989 for a free inspection.",
+    description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. 3,000+ jobs completed. Call (530) 704-6989 for a free inspection.",
     url: 'https://toplineplumbingco.com/services/water-heater-repair',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair & Replacement in Redding, CA' }],
@@ -61,7 +61,7 @@ export default function WaterHeaterRepairPage() {
         title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
         description: [
           "Is your water heater making strange noises? Running out of hot water faster than usual? Leaking around the base?",
-          "Topline Plumbing has replaced 2,847+ water heaters across Northern California. We know how to diagnose problems fast, repair what can be saved, and replace units that are beyond repair — all with same-day service."
+          "With 3,000+ jobs completed across Northern California, Topline Plumbing knows how to diagnose problems fast, repair what can be saved, and replace units that are beyond repair — all with same-day service."
         ],
       }}
       stats={[
