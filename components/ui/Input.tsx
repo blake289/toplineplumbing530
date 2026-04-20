@@ -25,7 +25,7 @@ export default function Input({
       {label && (
         <label
           htmlFor={inputId}
-          className="block mb-2 font-semibold text-gray-700 text-sm"
+          className="block mb-1 font-semibold text-gray-700 text-[13px]"
         >
           {label}
           {required && <span className="text-primary ml-1">*</span>}
@@ -34,7 +34,7 @@ export default function Input({
       <input
         id={inputId}
         className={`
-          w-full rounded-xl border bg-white px-4 py-3.5 text-base text-gray-900 placeholder:text-gray-400
+          w-full rounded-xl border bg-white px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400
           font-body
           transition-[border-color,box-shadow] duration-200 ease-snappy
           focus:outline-none focus:border-navy-900/40 focus:shadow-[0_0_0_3px_rgba(0,30,56,0.08)]
