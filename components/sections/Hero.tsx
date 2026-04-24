@@ -76,12 +76,6 @@ export default function Hero() {
                 </svg>
                 Call (530) 704-6989
               </a>
-              <a
-                href="#estimate-form"
-                className="h-12 px-7 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center gap-2 border-2 border-navy-900 hover:bg-navy-900 hover:text-white hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] transition-[transform,background-color,color,box-shadow] duration-200 ease-snappy text-[15px]"
-              >
-                Book Your Service
-              </a>
             </div>
 
             {/* Trust badges */}
