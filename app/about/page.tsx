@@ -29,7 +29,7 @@ export default function AboutPage() {
               <div className="w-8 h-[2px] bg-[#dc2626]" />
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#1e3a5f]">
-              Meet Joe & Cindy Torculas
+              Meet Joe & Paulette Torculas
             </h2>
             <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
               Family-owned and operated since 1998, serving Redding and Northern California with pride
@@ -39,8 +39,8 @@ export default function AboutPage() {
           <div className="max-w-2xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/joe-cindy.webp"
-                alt="Joe and Cindy Torculas - Topline Plumbing Owners"
+                src="/images/joe-paulette.webp"
+                alt="Joe and Paulette Torculas - Topline Plumbing Owners"
                 width={1209}
                 height={806}
                 className="w-full h-full object-cover"

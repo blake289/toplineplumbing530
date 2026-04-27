@@ -78,7 +78,7 @@ topline-plumbing-nextjs/
 - ✅ Intro section with truck image
 - ✅ Services grid (6 services with hover effects)
 - ✅ Pricing section (3 pricing cards with premium design)
-- ✅ Professional work section (with joe-cindy image)
+- ✅ Professional work section (with joe-paulette image)
 - ✅ Stats section with animated counters
 - ✅ Testimonials section (3 customer reviews)
 - ✅ Final CTA section

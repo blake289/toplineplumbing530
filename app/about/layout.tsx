@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: 'Family-owned plumbing company serving Redding & Northern California since 1998. Licensed, insured, and trusted by thousands of homeowners.',
     url: 'https://toplineplumbingco.com/about',
     siteName: 'Topline Plumbing',
-    images: [{ url: '/images/joe-cindy.webp', width: 1200, height: 630, alt: 'Joe and Cindy — Owners of Topline Plumbing, Redding CA' }],
+    images: [{ url: '/images/joe-paulette.webp', width: 1200, height: 630, alt: 'Joe and Paulette, Owners of Topline Plumbing, Redding CA' }],
     locale: 'en_US',
     type: 'website',
   },
