@@ -78,6 +78,7 @@
 - [ ] Phone number updated (once GHL number is purchased)
 - [x] 12 Google Business Posts written — full 3-month rotation ready to publish
   - Covers: Emergency, Water Heaters, Drain Cleaning, Tankless, Repiping, Leak Detection, Fixture Installs, Sewer Line, Seasonal (Spring), Trust, and 2x Social Proof posts
+- [ ] **GBP category optimization — water heater specialist setup** — primary "Plumber" + secondaries: "Drain cleaning service", "Hot water system supplier", "Gas installation service", "Gasfitter". Verified against daltonluka.com 2026 taxonomy. Drives water heater query relevance vs. competitor generalist setups.
 
 ---
 
@@ -336,3 +337,62 @@
 - **Rewrote lib/cityFaqs.ts** — all 15 city FAQs now honestly describe business-hours service
 - **Updated StatusDot badge + Navbar** — "24/7 Emergency Support" → "Mon–Fri 8a–4:30p"
 - **Deployed to production** — commit 96dc217, verified READY on Vercel
+
+### 2026-04-17
+- Removed false 24/7 availability claims and replaced with accurate business hours
+- Added CSLB license number (#596557) to website for regulatory compliance
+- Updated company information across documentation and public-facing content
+
+### 2026-04-17
+- Removed false 24/7 availability claims and updated website with accurate business hours
+- Added CSLB license number (#596557) to website for regulatory compliance
+- Completed content audit ensuring all hours and licensing information is truthful and current
+
+### 2026-04-20
+# 
+- Verified project configuration files and deployment settings are properly in place
+- Confirmed sitemap structure for search engine optimization
+
+#
+
+### 2026-04-20
+- Added trust badges to hero section and updated job count to 3000+ with improved call-to-action messaging
+- Fixed analytics tracking implementation for proper GA4 script execution across all pages
+- Enhanced schema markup and navigation components for improved site structure
+
+### 2026-04-20
+- Refined hero section with improved form layout, trust badges, and updated job statistics to 3000+
+- Polished UI elements including proper heading hierarchy and optimized call-to-action button
+- Fixed analytics tracking to ensure proper Google Analytics 4 execution across all pages
+
+### 2026-04-20
+- Polished hero section UI with compact form layout and trust badges to build credibility
+- Updated job statistics to 3,000+ completed projects and improved call-to-action visibility
+- Fixed analytics tracking implementation for accurate visitor data collection
+
+### 2026-04-20
+- Polished hero section UI with compact form layout and cleaned up trust badges for better visual hierarchy
+- Fixed h1 heading flow and removed unnecessary hours display from the homepage
+- Updated navbar, form inputs, and schema markup across multiple pages for improved consistency
+
+### 2026-04-29
+- Reviewed project structure and task configuration for Topline Plumbing account
+- Verified project access and permissions setup
+
+### 2026-04-29
+- Reviewed project details and current task list for toplineplumbing530
+- Verified project access and retrieved task information from project management system
+
+### 2026-04-29
+- Implemented phone call tracking to measure customer phone inquiries through analytics
+- Updated website sitemap and page configuration to support enhanced tracking
+
+### 2026-04-29
+- Removed unverified pricing claims and fabricated water heater copy; standardized messaging across site
+- Restored and corrected Google Analytics tracking to ensure accurate phone call and visitor data
+- Created new Redding water heater landing page and deployed live to production
+
+### 2026-04-29
+- Removed all unverified pricing claims and "written quote" language from website pages and LLM training data to ensure compliance with accuracy standards
+- Corrected Google Analytics tracking configuration and fixed broken image assets across multiple service pages
+- Verified all changes deployed successfully to production environment

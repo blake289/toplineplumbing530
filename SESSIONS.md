@@ -1,28 +1,43 @@
-# Session Status — 2026-04-17
+# Session Status — 2026-04-29
 
 ## What Was Done
-- **Added CSLB License #596557** — Joe's license now in Footer, LocalBusiness schema (hasCredential + identifier), llms.txt, llms-full.txt
-- **Removed all false 24/7 / live-answer claims** — 42 files rewritten. Real hours now Mon–Fri 8:00a–4:30p, closed weekends
-- **SchemaMarkup openingHoursSpecification** rebuilt to Mon–Fri 08:00–16:30 only (was 7-day 00:00–23:59)
-- **Reframed /services/emergency + /cost/emergency-plumbing** — honest after-hours guidance (self-help, 911, PG&E), no false promises
-- **Rewrote lib/cityFaqs.ts** — all 15 city FAQs now honest about business hours
-- **Josiah confirmed** (via Blake): hours Mon–Fri 8a–4:30p, no after-hours emergency
-- **Merged to main** — commit 96dc217, production deployed and verified READY on Vercel
+- **NEW: /water-heater-replacement-redding landing page** — conversion-focused LSA target page. Built from 7-competitor research (Earl's, Royal, Wallner, Custom, Roto-Rooter, Carlson's, Alpha & Omega).
+- **Sitewide pricing audit + scrub** — removed all unverified $ amounts (40 files, 2079 deletions). Only homepage Pricing.tsx cards retain $127/$130/Variable theme baseline.
+- **Deleted `/cost/*` (6 pages)** — pricing pages with unverified ranges from Apr 11 SEO push.
+- **Deleted `/financing` page** — Topline does NOT offer financing (Blake confirmed).
+- **Removed all "in writing" / "written quote" claims** — unverified vs Topline's actual quote practice.
+- **Removed "hybrid heat pump WH" service bullet** — unverified service.
+- **301 redirects added** in next.config.ts: `/cost/*` → service pages, `/financing` → `/contact`. Preserves SEO equity.
+- **Insurance proof submitted to LSA** — license + insurance both in, awaiting Google verification email.
+- **Merged to main + deployed to production** — commits `475532a` (main merge) + `98f7107` (heat pump cleanup). All routes verified live, all 7 redirects 308 working.
 
-## Blake's Open Items
-- **GMB hours update** — business.google.com → Edit hours to Mon–Fri 8a–4:30p, scrub any 24/7 language, remove 24-hour attributes (Asana task 1214106015523206)
-- **GHL MCTB** — Settings → Phone Numbers → (530) 704-6989 → Missed Call Text Back. Paste: "Hey, it's Joe with Topline Plumbing. Sorry I missed your call. Text me what's going on and I'll get back to you as soon as I'm available."
-- **Google listing agent spam** — scam robocalls, Joe can ignore/block, not a real Google service
+## Verified This Session (don't doubt)
+- "3,000+ jobs" claim — Topline GHL has 3,300 contacts (Blake confirmed). Site shows conservative "3,000+".
+- Hybrid heat pump water heaters NOT a service — bullet removed.
+- Topline does NOT do financing.
 
-## Folder Rename (after closing Claude)
-```
-cd ~/Projects && mv toplineplumbing530 "Top Line Plumbing"
-mv ~/.claude/projects/-Users-blakeernst-Projects-toplineplumbing530 ~/.claude/projects/-Users-blakeernst-Projects-Top-Line-Plumbing
-```
+## Blake's Open Items (still pending from prior session)
+- iOS Silence Unknown Callers — Blake ON (safe, LC routes via VoIP), Joe OFF (would block forwarded leads — install carrier scam filter instead).
 
 ## Blockers
-- None on the website side. Everything shipped.
+- 🟡 LSA — both proofs submitted, awaiting Google verification email.
+
+## GBP Categories — Verified Setup (Blake mid-update on 2026-04-29)
+**IMPORTANT — verified taxonomy correction**: "Water Heater Installation" / "Water Heater Repair Service" do NOT exist in GBP. Categories that DO exist:
+- Primary: **Plumber** (keep)
+- Secondary 1: **Drain cleaning service** (must select from autocomplete dropdown)
+- Secondary 2: **Hot water system supplier** ← actual WH category
+- Secondary 3: **Gas installation service**
+- Secondary 4: **Gasfitter** (optional)
+Skip "Drainage service" (Blake hit autocomplete error). Source: daltonluka.com canonical 2026 list.
 
 ## Next Priority
-- Google LSA (still blocked on insurance proof — license now unblocked)
-- Portal updates pending in `client-portals` terminal (unchanged from prior session)
+1. **Finish GBP categories** — Blake mid-update. Remove broken "Drainage service" → add "Drain cleaning service" via autocomplete dropdown.
+2. **Add Services on GBP** — once categories save, "Services" tab autosuggests. Add custom services: "Water Heater Replacement", "Tankless Installation", "Annual Water Heater Flush", etc.
+3. **Wait for LSA verification email** — Google emails Joe directly when ready.
+4. **Mark `phone_call` as conversion** in GA4 Admin → Events (pending from prior session).
+5. **Review-request copy** — biggest local rank lever now: get customers to mention "water heater" in reviews. Blake can ask for help drafting.
+6. **DO NOT bother Joe with pricing/3000-jobs/heat-pump questions** — site converts on phone calls fine. Wait until LSA produces booked jobs, then leverage to ask for real pricing + pitch upsell sprint.
+
+## Asana Logged
+- Task `1214408219963328` — Sitewide pricing scrub + water heater LSA landing page
