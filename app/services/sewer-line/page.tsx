@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: 'How much does sewer line repair cost in Redding, CA?',
-    answer: 'Sewer line repair cost varies by location, depth, and extent of damage — a spot repair is far less than a full replacement, and trenchless methods are priced differently than dig-and-replace. Topline provides upfront written pricing after a camera inspection — no surprises. Call (530) 704-6989 for a free assessment.',
+    answer: 'Sewer line repair cost varies by location, depth, and extent of damage — a spot repair is far less than a full replacement, and trenchless methods are priced differently than dig-and-replace. Topline quotes every job upfront after a camera inspection — no surprises. Call (530) 704-6989 for a free assessment.',
   },
   {
     question: 'Do you offer trenchless sewer line repair?',

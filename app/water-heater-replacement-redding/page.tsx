@@ -39,7 +39,7 @@ const waterHeaterFAQs = [
   {
     question: 'How much does water heater replacement cost in Redding, CA?',
     answer:
-      'Standard 40–50 gallon tank replacement runs $1,200–$3,500 installed in Redding, including the unit, labor, permit, and disposal of the old tank. Tankless conversions run $3,000–$6,500 because of the additional gas line and venting work. We quote in writing before any work starts — no surprise charges.',
+      "Every replacement is quoted upfront before any work starts. The total includes the new unit, labor, permit, disposal, and seismic strapping. Tankless conversions are higher because of the additional gas line and venting work. Call (530) 704-6989 for a free estimate — no surprise charges.",
   },
   {
     question: 'Why do water heaters fail so fast in Redding?',
@@ -54,7 +54,7 @@ const waterHeaterFAQs = [
   {
     question: 'Is Topline Plumbing a licensed water heater installer?',
     answer:
-      'Yes. Topline Plumbing is a licensed, bonded, and insured California plumbing contractor — CSLB License #596557 — serving the Redding area since 1998. We pull permits on every water heater install, schedule the inspection, and back our installation labor with a written workmanship warranty.',
+      'Yes. Topline Plumbing is a licensed, bonded, and insured California plumbing contractor — CSLB License #596557 — serving the Redding area since 1998. We pull permits on every water heater install, schedule the inspection, and stand behind our installation labor.',
   },
   {
     question: 'Do you handle the permit and inspection?',
@@ -88,7 +88,7 @@ export default function WaterHeaterReplacementReddingPage() {
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-6 leading-relaxed">
             Local family-run plumbers — not a corporate dispatch center. Same-day tank replacement,
-            tankless conversions, and honest written pricing. CSLB #596557.
+            tankless conversions, and honest upfront pricing. CSLB #596557.
           </p>
 
           {/* Same-day note (matches existing /cost page language) */}
@@ -113,14 +113,14 @@ export default function WaterHeaterReplacementReddingPage() {
               <span className="whitespace-nowrap">Call: (530) 704-6989</span>
             </a>
             <Link
-              href="/cost/water-heater-replacement"
+              href="/contact"
               className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all shadow-lg text-lg"
             >
-              See Full Pricing
+              Get a Free Estimate
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Free written quote before work starts · Permit, disposal, and seismic strapping
+            Free estimate before work starts · Permit, disposal, and seismic strapping
             included · Mon–Fri 8:00a–4:30p
           </p>
         </div>
@@ -181,7 +181,7 @@ export default function WaterHeaterReplacementReddingPage() {
               Three Ways We Get Your Hot Water Back
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We'll diagnose the problem, give you a written quote, and let you choose — repair,
+              We'll diagnose the problem, quote it upfront, and let you choose — repair,
               standard replacement, or tankless upgrade.
             </p>
           </div>
@@ -196,7 +196,7 @@ export default function WaterHeaterReplacementReddingPage() {
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Best when the tank is under 8 years old and the failure is a single component —
                 thermostat, heating element, thermocouple, or gas valve. We'll quote the repair
-                in writing before any work starts.
+                upfront before any work starts.
               </p>
               <ul className="space-y-2 text-gray-700 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
@@ -333,12 +333,12 @@ export default function WaterHeaterReplacementReddingPage() {
                   <span>Old tank hauled away — no junk left behind</span>
                 </li>
               </ul>
-              <Link
-                href="/cost/water-heater-replacement"
+              <a
+                href="tel:5307046989"
                 className="text-primary-light font-semibold hover:underline"
               >
-                Full cost breakdown →
-              </Link>
+                Get a free quote: (530) 704-6989 →
+              </a>
             </div>
 
             {/* Tankless */}
@@ -430,8 +430,8 @@ export default function WaterHeaterReplacementReddingPage() {
                 body: 'Standard 40 and 50-gallon tanks stay stocked on our trucks. Call before noon during business hours, get hot water back the same day in most cases.',
               },
               {
-                title: 'Written Quote Up Front',
-                body: "We don't show up, pull the old tank, then surprise you with the price. You see the full quote — tank, labor, permit, disposal — in writing before we lift a wrench.",
+                title: 'Upfront Quote Before Work Starts',
+                body: "We don't show up, pull the old tank, then surprise you with the price. You see the full quote — tank, labor, permit, disposal — before we lift a wrench.",
               },
               {
                 title: 'Permits & Code Handled',

@@ -25,7 +25,7 @@ const repipingFAQs = [
   },
   {
     question: 'How much does whole-house repiping cost in Redding, CA?',
-    answer: 'Repiping cost varies by home size, pipe material (PEX vs. copper), and accessibility of existing pipes. We provide a free on-site estimate with detailed upfront written pricing before any work begins. Call (530) 704-6989 to schedule.',
+    answer: 'Repiping cost varies by home size, pipe material (PEX vs. copper), and accessibility of existing pipes. We provide a free on-site estimate with detailed upfront pricing before any work begins. Call (530) 704-6989 to schedule.',
   },
   {
     question: 'What is the difference between PEX and copper repiping?',

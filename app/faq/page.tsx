@@ -72,7 +72,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How much does it cost to replace a water heater in Redding?',
         answer:
-          'Replacement cost varies by job — the unit, installation complexity, permits, and whether you\'re going tank or tankless all factor in. We quote every replacement in writing before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free written quote.',
+          'Replacement cost varies by job — the unit, installation complexity, permits, and whether you\'re going tank or tankless all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate.',
       },
       {
         question: 'Should I upgrade to a tankless water heater?',

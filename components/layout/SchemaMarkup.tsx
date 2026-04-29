@@ -130,7 +130,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Water Heater Repair & Replacement",
-            "description": "Water heater repair and replacement for all makes and models. Same-day service available in Redding and surrounding areas. Upfront written pricing before any work begins.",
+            "description": "Water heater repair and replacement for all makes and models. Same-day service available in Redding and surrounding areas. Upfront pricing before any work begins.",
             "url": "https://toplineplumbingco.com/services/water-heater-repair",
             "serviceType": "Water Heater Installation"
           }
@@ -142,7 +142,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Tankless Water Heater Installation",
-            "description": "Tankless water heater installation and conversion. Rinnai, Navien, Noritz, and all major brands. Energy-efficient endless hot water. Upfront written pricing.",
+            "description": "Tankless water heater installation and conversion. Rinnai, Navien, Noritz, and all major brands. Energy-efficient endless hot water. Upfront pricing.",
             "url": "https://toplineplumbingco.com/services/tankless",
             "serviceType": "Tankless Water Heater Installation"
           }
@@ -154,7 +154,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Drain Cleaning",
-            "description": "Professional drain cleaning and clog removal. Power auger, hydrojetting, and camera inspection available. Upfront written pricing before any work begins.",
+            "description": "Professional drain cleaning and clog removal. Power auger, hydrojetting, and camera inspection available. Upfront pricing before any work begins.",
             "url": "https://toplineplumbingco.com/services/drain-cleaning",
             "serviceType": "Drain Cleaning"
           }
@@ -190,7 +190,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Repiping Services",
-            "description": "Whole-home repiping with PEX and copper. Upgrade aging galvanized or polybutylene pipes. Upfront written pricing.",
+            "description": "Whole-home repiping with PEX and copper. Upgrade aging galvanized or polybutylene pipes. Upfront pricing.",
             "url": "https://toplineplumbingco.com/services/repiping-services",
             "serviceType": "Repiping"
           }
