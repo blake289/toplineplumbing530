@@ -34,7 +34,7 @@ const waterHeaterFAQs = [
   {
     question: 'How fast can you replace my water heater in Redding?',
     answer:
-      "If you call before noon during business hours (Mon–Fri 8a–4:30p), most standard 40 and 50-gallon tank replacements happen the same day. We keep common units stocked on our trucks. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
+      "If you call before noon during business hours (Mon–Fri 8a–4:30p), we can usually have hot water back the same day. We keep standard 40 and 50-gallon gas and electric tanks stocked on our service trucks. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
   },
   {
     question: 'How much does water heater replacement cost in Redding, CA?',
@@ -91,10 +91,10 @@ export default function WaterHeaterReplacementReddingPage() {
             tankless conversions, and honest written pricing. CSLB #596557.
           </p>
 
-          {/* Same-day guarantee badge */}
+          {/* Same-day note (matches existing /cost page language) */}
           <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-10 text-base md:text-lg text-white font-semibold">
-            <span className="text-primary-light">Call before noon Mon–Fri →</span> hot water back the
-            same day
+            <span className="text-primary-light">Call before noon Mon–Fri →</span> usually back to hot
+            water the same day
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -139,8 +139,8 @@ export default function WaterHeaterReplacementReddingPage() {
               <div className="text-sm md:text-base text-gray-600 mt-1">Perfect Google Rating</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-navy-900">27 yrs</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Licensed CSLB #596557</div>
+              <div className="text-3xl md:text-4xl font-bold text-navy-900">CSLB</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">License #596557</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">Family</div>
@@ -150,11 +150,11 @@ export default function WaterHeaterReplacementReddingPage() {
         </div>
       </section>
 
-      {/* Stocked brands strip */}
+      {/* Brands we install */}
       <section className="bg-gray-50 py-10 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
           <p className="uppercase tracking-widest text-xs md:text-sm text-gray-500 font-semibold mb-4">
-            Stocked on Every Truck — No Order Wait
+            Brands We Install
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-lg md:text-xl font-heading font-bold text-navy-900">
             <span>Bradford White</span>
@@ -167,6 +167,9 @@ export default function WaterHeaterReplacementReddingPage() {
             <span className="text-gray-300">·</span>
             <span>Rinnai</span>
           </div>
+          <p className="text-sm text-gray-500 mt-3">
+            Standard 40 &amp; 50-gallon gas and electric tanks stocked on our service trucks.
+          </p>
         </div>
       </section>
 
@@ -439,12 +442,12 @@ export default function WaterHeaterReplacementReddingPage() {
                 body: "We've replaced 2,800+ water heaters in Northern California. We know which brands handle Redding's hard water, which installs fail inspection, and how to spot the hidden issues cheaper plumbers miss.",
               },
               {
-                title: 'Talk to the Owner — Not an Answering Service',
-                body: 'Mon–Fri 8a–4:30p. Real local business hours. You get the owner on the phone, not a midnight dispatcher routing your call to whoever is on shift. No after-hours markup pricing here.',
+                title: 'Real Local Business Hours',
+                body: 'Mon–Fri 8a–4:30p — straightforward hours from a real local family business. No after-hours markup pricing, no overnight dispatch surcharges, no hidden weekend rates.',
               },
               {
                 title: 'No Pushy Upsells',
-                body: "If a $300 thermostat replacement keeps your tank running another 3 years, that's what we'll recommend. We don't sell you a new tank when you don't need one.",
+                body: "If a repair keeps your existing tank running, that's what we'll recommend. We won't sell you a new tank when you don't need one — and we'll tell you when replacement is the smarter call.",
               },
             ].map((item) => (
               <div
@@ -486,22 +489,20 @@ export default function WaterHeaterReplacementReddingPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              Two things shorten water heater life in Redding faster than almost any other Northern
-              California market: <strong>hard, mineral-heavy water</strong> and <strong>110°F+
-              summer garage temperatures</strong>. Together, they shave 4–6 years off a tank's
-              expected lifespan.
+              Redding sits in a region with hard, mineral-heavy water — high in calcium, magnesium,
+              and sediment. That mineral load is the main reason water heaters here fail at 8–10
+              years instead of the 12–15 you'd see in soft-water markets.
             </p>
             <p>
-              Sediment settles at the bottom of the tank, insulates the burner or heating element,
-              and forces the unit to run hotter and longer. Add summer heat in an unconditioned
-              garage and the metal fatigues, the tank cracks, and it floods the floor. We see this
-              pattern at 8–10 years here — vs. 12–15 in soft-water, milder regions.
+              Sediment settles to the bottom of the tank, insulates the burner or heating element,
+              and forces the unit to run hotter and longer to heat the water above it. Eventually
+              the metal fatigues, the tank cracks, and it floods the garage.
             </p>
             <p>
-              We size every install for local conditions: anode-rod selection for Redding's water
-              chemistry, expansion tank sized to local pressure, seismic strapping per current
-              California code. Across Redding, Shasta Lake, Anderson, Palo Cedro, and Bella Vista,
-              that's the difference between a tank that lasts 8 years and one that lasts 12.
+              We've seen this pattern thousands of times across Redding, Shasta Lake, Anderson, Palo
+              Cedro, and Bella Vista. If your unit is rumbling, popping, producing rusty water, or
+              past 8 years old, plan the replacement before it fails on you — it's cheaper than the
+              flood damage cleanup.
             </p>
           </div>
 
