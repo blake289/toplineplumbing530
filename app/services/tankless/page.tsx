@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const tanklessFAQs = [
   {
     question: 'How much does tankless water heater installation cost in Redding, CA?',
-    answer: 'Tankless water heater installation in Redding typically ranges from $1,500–$3,500 depending on the unit, gas line requirements, and venting setup. We provide upfront pricing before any work begins. Call (530) 704-6989 for a free consultation.',
+    answer: 'Tankless installation cost varies by job — the unit, gas line requirements, and venting setup all factor in. We provide upfront written pricing before any work begins. Call (530) 704-6989 for a free consultation.',
   },
   {
     question: 'How much can I save by switching to tankless?',
@@ -52,11 +52,6 @@ export default function TanklessWaterHeaterPage() {
       <FAQSchema faqs={tanklessFAQs} />
       <ServicePageTemplate
       faqs={tanklessFAQs}
-      pricingCallout={{
-        priceRange: '$3,000–$6,500 installed',
-        href: '/cost/tankless-installation',
-        label: 'See Full Cost Guide',
-      }}
       hero={{
         title: 'Tankless Water Heater Installation in Redding — Endless Hot Water, Lower Bills',
         description: [

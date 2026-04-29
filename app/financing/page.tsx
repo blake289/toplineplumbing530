@@ -27,45 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-const pricingExamples = [
-  {
-    service: 'Drain Cleaning',
-    range: '$130 – $800',
-    note: 'Most clogs cleared same-day',
-    href: '/cost/drain-cleaning',
-  },
-  {
-    service: 'Water Heater Replacement',
-    range: '$1,200 – $3,500',
-    note: 'Installed same-day when in stock',
-    href: '/cost/water-heater-replacement',
-  },
-  {
-    service: 'Tankless Installation',
-    range: '$3,000 – $6,500',
-    note: 'Flexible payment available',
-    href: '/cost/tankless-installation',
-  },
-  {
-    service: 'Emergency Plumbing',
-    range: '$150 – $1,500',
-    note: 'Same rate as scheduled work during business hours',
-    href: '/cost/emergency-plumbing',
-  },
-  {
-    service: 'Whole-Home Repiping',
-    range: '$4,000 – $15,000',
-    note: 'Flexible payment available',
-    href: '/cost/repiping',
-  },
-  {
-    service: 'Sewer Line Repair',
-    range: '$400 – $25,000',
-    note: 'Trenchless options available',
-    href: '/services/sewer-line',
-  },
-];
-
 const financingFAQs = [
   {
     question: 'Do you offer financing for plumbing repairs?',
@@ -154,30 +115,24 @@ export default function FinancingPage() {
         </div>
       </section>
 
-      {/* Typical Pricing */}
+      {/* Quote-Driven Section */}
       <section className="py-16 md:py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4 text-center">
-            Typical Plumbing Costs in Redding
+        <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4">
+            We Quote Every Job Upfront
           </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg leading-relaxed max-w-2xl mx-auto">
-            Real pricing from real jobs. Every project is quoted individually, but these ranges give you a ballpark.
+          <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+            Every plumbing project is different, so we don&apos;t guess and we don&apos;t play games with hourly rates. Our plumber inspects the job, explains what&apos;s needed, and gives you a written price before any work begins. You approve first — no surprises, no hidden fees.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pricingExamples.map((item) => (
-              <Link
-                key={item.service}
-                href={item.href}
-                className="bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-200 p-6 transition-all hover:-translate-y-1 block group"
-              >
-                <h3 className="text-lg font-bold text-navy-900 group-hover:text-primary transition-colors mb-1">
-                  {item.service}
-                </h3>
-                <p className="text-2xl font-bold text-primary mb-2">{item.range}</p>
-                <p className="text-gray-500 text-sm">{item.note}</p>
-              </Link>
-            ))}
-          </div>
+          <a
+            href="tel:5307046989"
+            className="h-14 px-10 bg-primary text-white font-btn font-bold rounded-full inline-flex items-center justify-center gap-2 hover:bg-red-700 transition-all shadow-lg text-lg"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Get a Free Quote: (530) 704-6989
+          </a>
         </div>
       </section>
 

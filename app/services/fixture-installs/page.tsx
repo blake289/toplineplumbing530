@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const fixtureFAQs = [
   {
     question: 'How much does toilet installation cost in Redding, CA?',
-    answer: 'Toilet installation in Redding typically ranges from $150–$400 for labor, depending on the complexity of the job and whether the existing flange needs repair. This does not include the cost of the toilet itself. Call (530) 704-6989 for a free estimate.',
+    answer: 'Toilet installation cost varies by job — the complexity of the install and whether the existing flange needs repair both factor in. We provide upfront written pricing before any work begins. Call (530) 704-6989 for a free estimate.',
   },
   {
     question: 'Can you install a fixture I already purchased?',

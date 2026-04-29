@@ -42,12 +42,12 @@ export default function BellaVistaPage() {
       services={[
         {
           title: 'Complete Water Heater Services',
-          description: "From diagnostic inspections to full replacements, we handle all water heater needs. Service starting at $127 with same-day availability.",
+          description: "From diagnostic inspections to full replacements, we handle all water heater needs with same-day availability and upfront pricing.",
           href: '/services/water-heater-repair',
         },
         {
           title: 'Professional Drain Cleaning',
-          description: 'Clear tough clogs with professional mechanical augering. No harsh chemicals, just effective results. Starting at $130.',
+          description: 'Clear tough clogs with professional mechanical augering. No harsh chemicals, just effective results — quoted upfront before we start.',
           href: '/services/drain-cleaning',
         },
         {

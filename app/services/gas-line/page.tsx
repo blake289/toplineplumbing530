@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How much does gas line repair cost in Redding?',
-    answer: 'Gas line repair cost depends on the location of the leak, accessibility, and extent of damage. Minor repairs and leak fixes typically start around $200–$500. New gas line installation for appliances or outdoor BBQs runs $300–$800+. Topline Plumbing provides upfront pricing before any work begins. Call (530) 704-6989 for an estimate.',
+    answer: 'Gas line work cost depends on the location of the leak, accessibility, and extent of damage — minor leak fixes are very different from new line installs for appliances or outdoor BBQs. Topline provides upfront written pricing before any work begins. Call (530) 704-6989 for an estimate.',
   },
   {
     question: 'Can you install a gas line for my outdoor BBQ or fire pit?',

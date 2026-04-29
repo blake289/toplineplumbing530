@@ -193,10 +193,10 @@ export default function WaterHeaterReplacementReddingPage() {
                 Option 1
               </div>
               <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3">Repair</h3>
-              <div className="text-3xl font-bold text-navy-900 mb-4">$150–$600</div>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Best when the tank is under 8 years old and the failure is a single component —
-                thermostat, heating element, thermocouple, or gas valve.
+                thermostat, heating element, thermocouple, or gas valve. We'll quote the repair
+                in writing before any work starts.
               </p>
               <ul className="space-y-2 text-gray-700 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
@@ -508,7 +508,7 @@ export default function WaterHeaterReplacementReddingPage() {
 
           <div className="mt-10 p-6 bg-navy-900 text-white rounded-xl">
             <h3 className="text-xl font-heading font-bold mb-2">
-              Annual Flush — $127
+              Annual Flush Service
             </h3>
             <p className="text-gray-200 mb-4">
               The single best thing you can do to extend your water heater's life in Redding.

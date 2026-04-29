@@ -72,7 +72,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How much does it cost to replace a water heater in Redding?',
         answer:
-          'A standard 40–50 gallon tank water heater replacement in Redding typically costs $1,200–$3,500 installed, depending on the unit and installation complexity. Tankless water heater installations range from $3,000–$6,500. We provide upfront pricing before any work begins.',
+          'Replacement cost varies by job — the unit, installation complexity, permits, and whether you\'re going tank or tankless all factor in. We quote every replacement in writing before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free written quote.',
       },
       {
         question: 'Should I upgrade to a tankless water heater?',
@@ -93,7 +93,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How much does drain cleaning cost?',
         answer:
-          'Standard drain cleaning starts at $130 for a single drain. Complex clogs requiring a camera inspection or hydrojetting are priced separately after diagnosis. We always provide the price upfront before starting work.',
+          'Drain cleaning cost varies by job — a simple single-drain clear is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate.',
       },
       {
         question: 'What causes frequent drain clogs?',

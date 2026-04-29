@@ -25,7 +25,7 @@ const repipingFAQs = [
   },
   {
     question: 'How much does whole-house repiping cost in Redding, CA?',
-    answer: 'Whole-house repiping in Redding typically ranges from $4,000–$12,000 depending on the size of your home, the pipe material (PEX vs. copper), and the accessibility of existing pipes. We provide a free on-site estimate with detailed upfront pricing. Call (530) 704-6989 to schedule.',
+    answer: 'Repiping cost varies by home size, pipe material (PEX vs. copper), and accessibility of existing pipes. We provide a free on-site estimate with detailed upfront written pricing before any work begins. Call (530) 704-6989 to schedule.',
   },
   {
     question: 'What is the difference between PEX and copper repiping?',
@@ -52,11 +52,6 @@ export default function RepipingServicesPage() {
       <FAQSchema faqs={repipingFAQs} />
       <ServicePageTemplate
       faqs={repipingFAQs}
-      pricingCallout={{
-        priceRange: '$4,000–$15,000',
-        href: '/cost/repiping',
-        label: 'See Full Cost Guide',
-      }}
       hero={{
         title: 'Repiping Services in Redding — Upgrade Your Plumbing System',
         description: [

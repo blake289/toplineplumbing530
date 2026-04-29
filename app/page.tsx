@@ -41,7 +41,7 @@ const homepageFAQs = [
   },
   {
     question: "How much does a plumber cost in Redding, CA?",
-    answer: "Our pricing varies by job. Drain cleaning starts at $130, water heater service starts at $127, and emergency plumbing service is priced based on the repair needed. We always provide upfront pricing before any work begins — no hidden fees or surprise bills.",
+    answer: "Our pricing varies by job. We always provide upfront pricing before any work begins — no hidden fees or surprise bills. Call (530) 704-6989 for a free estimate.",
   },
   {
     question: "What areas does Topline Plumbing serve?",

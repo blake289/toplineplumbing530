@@ -163,7 +163,6 @@ export default function Navbar() {
                 </div>
 
                 {[
-                  ['Pricing', '/cost'],
                   ['FAQ', '/faq'],
                   ['Resources', '/resources'],
                   ['About', '/about'],

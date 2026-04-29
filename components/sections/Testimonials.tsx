@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: "Honest plumbers. Came out for what I thought was a huge issue, cleared a simple clog for $130, and didn't try to upsell me at all.",
+    text: "Honest plumbers. Came out for what I thought was a huge issue, cleared a simple clog at a fair price, and didn't try to upsell me at all.",
     name: 'David R.',
     location: 'Shasta Lake, CA',
     initials: 'DR',
