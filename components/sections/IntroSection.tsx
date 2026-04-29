@@ -17,7 +17,9 @@ export default function IntroSection() {
               width={600}
               height={750}
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="relative w-full aspect-[4/5] object-cover rounded-2xl shadow-md"
+              loading="eager"
+              fetchPriority="high"
+              className="relative z-10 w-full aspect-[4/5] object-cover rounded-2xl shadow-md"
             />
           </div>
 
