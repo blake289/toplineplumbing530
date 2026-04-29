@@ -265,21 +265,8 @@ export default function WaterHeaterReplacementReddingPage() {
                 Option 2
               </div>
               <h3 className="text-2xl font-heading font-bold text-white mb-3">Standard Replacement</h3>
-              <div className="space-y-1 mb-4">
-                <div className="flex items-baseline justify-between text-sm">
-                  <span className="text-gray-300">40-gallon installed</span>
-                  <span className="text-white font-bold text-lg">$1,200–$2,200</span>
-                </div>
-                <div className="flex items-baseline justify-between text-sm">
-                  <span className="text-gray-300">50-gallon installed</span>
-                  <span className="text-white font-bold text-lg">$1,500–$2,800</span>
-                </div>
-                <div className="flex items-baseline justify-between text-sm">
-                  <span className="text-gray-300">75-gal high-capacity</span>
-                  <span className="text-white font-bold text-lg">$2,500–$4,000</span>
-                </div>
-              </div>
               <p className="text-gray-200 mb-6 leading-relaxed">
+                Tank-to-tank replacement with a new 40, 50, or 75-gallon gas or electric unit.
                 Same-day install in most cases. Includes tank, labor, permit, disposal, seismic
                 strapping, and inspection scheduling.
               </p>
@@ -347,10 +334,10 @@ export default function WaterHeaterReplacementReddingPage() {
                 Option 3
               </div>
               <h3 className="text-2xl font-heading font-bold text-navy-900 mb-3">Tankless Conversion</h3>
-              <div className="text-3xl font-bold text-navy-900 mb-4">$3,000–$6,500</div>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Endless hot water, 20–30% energy savings, and 20+ year lifespan. Best for large
-                households or homeowners staying 7+ years.
+                households or homeowners staying 7+ years. We'll quote it upfront before any work
+                starts.
               </p>
               <ul className="space-y-2 text-gray-700 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
