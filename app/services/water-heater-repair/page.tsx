@@ -110,7 +110,6 @@ export default function WaterHeaterRepairPage() {
           items: [
             'Traditional tank water heaters',
             'Tankless on-demand systems',
-            'Hybrid heat pump water heaters',
             'Professional installation & disposal',
           ],
         },
