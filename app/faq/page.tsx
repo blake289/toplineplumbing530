@@ -126,11 +126,6 @@ const faqCategories: FAQCategory[] = [
         answer:
           'We accept cash, checks, all major credit cards, and debit cards. Payment is due upon completion of work.',
       },
-      {
-        question: 'Do you offer financing for large plumbing jobs?',
-        answer:
-          'For major projects like whole-home repiping, water heater replacements, or sewer line repairs, we can discuss flexible payment arrangements. Call us at (530) 704-6989 to discuss your options.',
-      },
     ],
   },
   {
