@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SchemaMarkup from "@/components/layout/SchemaMarkup";
 import MobileCallFab from "@/components/layout/MobileCallFab";
+import PhoneCallTracker from "@/components/analytics/PhoneCallTracker";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -74,6 +75,7 @@ export default function RootLayout({
             gtag('config', 'G-3ZFMX0QHX2');
           `}
         </Script>
+        <PhoneCallTracker />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
