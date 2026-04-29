@@ -145,7 +145,7 @@ export default function HowToShutOffMainWaterValvePage() {
           <p className="text-lg md:text-xl text-white/90 leading-relaxed">
             The single most important plumbing skill every homeowner should
             know. A working main shut-off is the difference between a
-            $200 repair and a $20,000 water damage claim.
+            quick repair and a major water damage claim.
           </p>
         </div>
       </section>
@@ -344,9 +344,9 @@ export default function HowToShutOffMainWaterValvePage() {
             <a href="tel:5307046989" className="text-primary font-bold">
               (530) 704-6989
             </a>
-            . Replacing a main shut-off is a simple, affordable job
-            ($150–$350 depending on access) — and it's the best $200 of
-            insurance you can buy for your home.
+            . Replacing a main shut-off is a simple, affordable job — and
+            it's some of the best insurance you can buy for your home. We
+            quote it upfront before any work begins.
           </p>
 
           <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-accent-green mt-10">

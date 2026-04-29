@@ -21,7 +21,7 @@ const services = [
       </svg>
     ),
     title: 'Water Heaters',
-    description: 'Expert installation, proactive repair, and complete system replacement. Service starting at $127.',
+    description: 'Expert installation, proactive repair, and complete system replacement with upfront pricing.',
     href: '/services/water-heater-repair',
   },
   {
@@ -31,7 +31,7 @@ const services = [
       </svg>
     ),
     title: 'Drain Cleaning',
-    description: 'We clear tough clogs and backed-up sewer lines with mechanical power augers. Starting at $130.',
+    description: 'We clear tough clogs and backed-up sewer lines with mechanical power augers.',
     href: '/services/drain-cleaning',
   },
   {

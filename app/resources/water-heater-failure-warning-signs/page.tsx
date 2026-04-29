@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '7 Warning Signs Your Water Heater Is About to Fail',
     description:
-      'The warning signs most homeowners miss until a flooded garage costs them $5,000. From a licensed Redding plumber since 1998.',
+      'The warning signs most homeowners miss until a flooded garage costs them thousands. From a licensed Redding plumber since 1998.',
     url: 'https://toplineplumbingco.com/resources/water-heater-failure-warning-signs',
     siteName: 'Topline Plumbing',
     images: [
@@ -45,7 +45,7 @@ const waterHeaterSignsFAQs = [
   {
     question: 'Is it better to replace a water heater before it fails?',
     answer:
-      'Yes — almost always. A scheduled replacement is $1,200–$3,500 with no water damage. A failed water heater that floods your garage can easily cause $3,000–$15,000 in drywall, flooring, and cleanup damage on top of the replacement cost. The math is simple: if your tank is 10+ years old, replace it on your schedule, not the tank\'s.',
+      "Yes — almost always. A scheduled replacement is a known, quoted cost with no water damage. A failed water heater that floods your garage can cause thousands in drywall, flooring, and cleanup damage on top of the replacement. The math is simple: if your tank is 10+ years old, replace it on your schedule, not the tank's.",
   },
   {
     question: 'Does rusty hot water mean my water heater is failing?',
@@ -103,16 +103,15 @@ export default function WaterHeaterFailureSignsPage() {
             Water heaters don't usually fail suddenly. They give you
             warning. The problem is that most homeowners don't know what
             the warning signs are — so they ignore the clues until a
-            flooded garage, ruined drywall, and a $10,000 water damage
+            flooded garage, ruined drywall, and a major water damage
             claim force their hand.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-10">
-            A scheduled water heater replacement runs $1,200–$3,500 in the
-            Redding area. A catastrophic failure that floods your home
-            averages $5,000–$15,000 in water damage on top of the
-            replacement. This guide covers the 7 signs Topline plumbers
-            check every single time we service a water heater — so you can
-            check yours right now.
+            A scheduled water heater replacement is a planned, quoted job. A
+            catastrophic failure that floods your home can mean significant
+            water damage and thousands in cleanup on top of the replacement.
+            This guide covers the 7 signs Topline plumbers check every single
+            time we service a water heater — so you can check yours right now.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-navy-900 mt-10 mb-4">
@@ -237,19 +236,15 @@ export default function WaterHeaterFailureSignsPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-5">
             If you're seeing <strong>one</strong> of the signs and the tank
             is under 8 years old, it may be repairable. Single components
-            like thermostats, heating elements, and thermocouples can be
-            replaced for $150–$450.
+            like thermostats, heating elements, and thermocouples can often
+            be replaced — we'll quote it before any work starts.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-5">
             If you're seeing <strong>two or more</strong> of the signs, or
             your tank is 10+ years old regardless, start planning the
-            replacement. A scheduled replacement costs $1,200–$3,500 in
-            the Redding area (see our{' '}
-            <Link href="/cost/water-heater-replacement" className="text-primary underline">
-              water heater replacement cost guide
-            </Link>
-            ). A failure while you're on vacation is a five-figure water
-            damage claim.
+            replacement. A scheduled replacement is a known, quoted job.
+            A failure while you're on vacation can mean significant water
+            damage and thousands in cleanup.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-5">
             If you're seeing <strong>visible moisture around the base</strong>,
@@ -264,13 +259,13 @@ export default function WaterHeaterFailureSignsPage() {
             </p>
             <ul className="space-y-1 text-lg text-navy-900">
               <li>
-                <Link href="/cost/water-heater-replacement" className="text-primary underline">
-                  Water Heater Replacement Cost in Redding
+                <Link href="/water-heater-replacement-redding" className="text-primary underline">
+                  Water Heater Replacement in Redding
                 </Link>
               </li>
               <li>
-                <Link href="/cost/tankless-installation" className="text-primary underline">
-                  Tankless Water Heater Installation Cost
+                <Link href="/services/tankless" className="text-primary underline">
+                  Tankless Water Heater Installation
                 </Link>
               </li>
               <li>

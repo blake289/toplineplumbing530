@@ -5,11 +5,11 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Drain Cleaning Services in Redding, CA | Topline Plumbing',
-  description: 'Professional drain cleaning in Redding starting at $130. We clear tough clogs and backed-up sewer lines. Call (530) 704-6989.',
+  description: 'Professional drain cleaning in Redding with upfront pricing. We clear tough clogs and backed-up sewer lines. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/drain-cleaning' },
   openGraph: {
     title: 'Drain Cleaning Services in Redding, CA | Topline Plumbing',
-    description: 'Professional drain cleaning in Redding starting at $130. We clear tough clogs and backed-up sewer lines. Call (530) 704-6989.',
+    description: 'Professional drain cleaning in Redding with upfront pricing. We clear tough clogs and backed-up sewer lines. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/drain-cleaning',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Drain Cleaning Services in Redding, CA' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const drainFAQs = [
   {
     question: 'How much does drain cleaning cost in Redding, CA?',
-    answer: 'Drain cleaning in Redding starts at $130 for standard sink or shower clogs using a power auger. Sewer line cleaning or camera inspection may cost more depending on the severity and location of the blockage. Call (530) 704-6989 for a free estimate.',
+    answer: 'Drain cleaning cost varies by job — a single fixture clog is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate.',
   },
   {
     question: 'What causes slow or clogged drains?',
@@ -52,11 +52,6 @@ export default function DrainCleaningPage() {
       <FAQSchema faqs={drainFAQs} />
       <ServicePageTemplate
       faqs={drainFAQs}
-      pricingCallout={{
-        priceRange: 'Starting at $130',
-        href: '/cost/drain-cleaning',
-        label: 'See Full Cost Guide',
-      }}
       hero={{
         title: 'Drain Cleaning in Redding — Fast, Thorough, & Guaranteed',
         description: [
@@ -66,7 +61,7 @@ export default function DrainCleaningPage() {
       }}
       services={[
         {
-          title: 'Power Auger Cleaning — Starting at $130',
+          title: 'Power Auger Cleaning',
           items: [
             'Mechanical augering for stubborn clogs',
             'Sinks, toilets, and shower drains',

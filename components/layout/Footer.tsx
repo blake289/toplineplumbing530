@@ -84,7 +84,6 @@ export default function Footer() {
               <Link href="/services/leak-detection" className="text-gray-400 hover:text-white transition-colors">Leak Detection</Link>
               <Link href="/services/gas-line" className="text-gray-400 hover:text-white transition-colors">Gas Line</Link>
               <Link href="/services/fixture-installs" className="text-gray-400 hover:text-white transition-colors">Fixture Installs</Link>
-              <Link href="/cost" className="text-gray-400 hover:text-white transition-colors">Pricing &amp; Cost</Link>
               <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link>
             </nav>
           </div>

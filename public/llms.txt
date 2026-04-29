@@ -75,7 +75,7 @@ Same-day emergency response during business hours (Mon–Fri, 8:00a–4:30p). Ca
 
 ## Why Choose Topline Plumbing
 
-- **Upfront pricing** — Written estimates before work begins, no hidden fees
+- **Upfront pricing** — Quoted before work begins, no hidden fees
 - **Same-day service** — Available for most repairs
 - **Licensed & insured** — Fully credentialed California plumber
 - **Same-day emergency response** — During business hours (Mon–Fri, 8:00a–4:30p)
@@ -115,16 +115,9 @@ A: We offer same-day service for most repairs. For emergencies, we dispatch imme
 - **Facebook**: https://www.facebook.com/profile.php?id=61551944100731
 - **Instagram**: https://www.instagram.com/toplineplumbing/
 
-## Pricing (Published Cost Ranges)
+## Pricing
 
-Topline publishes typical cost ranges for the Redding market — rare in this industry. Transparent, upfront pricing with no hidden fees.
-
-- **Water heater replacement**: $1,200–$3,500 installed — https://toplineplumbingco.com/cost/water-heater-replacement
-- **Tankless installation**: $3,000–$6,500 installed — https://toplineplumbingco.com/cost/tankless-installation
-- **Drain cleaning**: Starting at $130 — https://toplineplumbingco.com/cost/drain-cleaning
-- **Emergency plumbing**: $150–$800+ — https://toplineplumbingco.com/cost/emergency-plumbing
-- **Whole-house repiping**: $4,000–$15,000 — https://toplineplumbingco.com/cost/repiping
-- **Full pricing hub**: https://toplineplumbingco.com/cost
+**Pricing**: Topline quotes every job upfront before work begins. No hourly rates, no hidden fees. Call (530) 704-6989 or visit https://toplineplumbingco.com/contact for a free estimate.
 
 ## Resources / Guides
 
@@ -141,7 +134,6 @@ Free homeowner guides written by licensed Redding plumbers:
 - `/about` — About the company, meet the team
 - `/contact` — Contact form and phone booking
 - `/gallery` — Work portfolio and project photos
-- `/cost` — Pricing hub for all services
 - `/resources` — Homeowner guides and emergency response
 - `/services/emergency` — Same-Day Emergency Plumbing
 - `/services/water-heater-repair` — Water Heater Repair & Replacement

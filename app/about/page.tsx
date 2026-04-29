@@ -283,7 +283,7 @@ export default function AboutPage() {
                 ))}
               </div>
               <p className="text-gray-700 italic text-sm leading-relaxed mb-4">
-                "Honest plumbers. Came out for what I thought was a huge issue, cleared a simple clog for $130, and didn't try to upsell me at all."
+                "Honest plumbers. Came out for what I thought was a huge issue, cleared a simple clog at a fair price, and didn't try to upsell me at all."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center font-heading font-bold text-sm">

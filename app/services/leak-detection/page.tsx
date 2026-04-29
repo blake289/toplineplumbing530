@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'How much does leak detection cost in Redding, CA?',
-    answer: 'Professional leak detection in Redding typically runs $150–$400 depending on the complexity and location. This is almost always worth it — a hidden slab or wall leak left undetected can cause thousands in water damage and mold remediation. Call (530) 704-6989 for upfront pricing.',
+    answer: 'Leak detection cost varies by complexity and location. It is almost always worth it — a hidden slab or wall leak left undetected can cause thousands in water damage and mold remediation. We quote every job upfront before any work begins. Call (530) 704-6989 for an estimate.',
   },
   {
     question: 'Do you use non-invasive leak detection methods?',

@@ -35,7 +35,7 @@ const burstPipeHowToSchema = {
   '@type': 'HowTo',
   name: 'What to Do When a Pipe Bursts in Your Home',
   description:
-    'Step-by-step emergency response for a burst pipe. The first 10 minutes determine whether you have a $500 repair or a $15,000 water damage claim.',
+    'Step-by-step emergency response for a burst pipe. The first 10 minutes determine whether you have a manageable repair or a major water damage claim.',
   totalTime: 'PT10M',
   estimatedCost: {
     '@type': 'MonetaryAmount',
@@ -96,7 +96,7 @@ const burstPipeFAQs = [
   {
     question: 'How much does burst pipe repair cost in Redding?',
     answer:
-      'A simple burst pipe repair in an accessible location (under a sink, in a garage) runs $300–$800. In-wall, slab, or crawlspace burst pipes are $600–$1,500 due to access difficulty. Pipes that have burst from freezing can require replacement of longer sections — $800–$2,500. Topline quotes every emergency upfront.',
+      'Cost depends on access and scope. A simple burst in an accessible location (under a sink or in a garage) is far less than an in-wall, slab, or crawlspace repair. Pipes that have burst from freezing sometimes require replacement of longer sections. Topline quotes every emergency upfront before any work begins. Call (530) 704-6989 for a free estimate.',
   },
   {
     question: 'How much water comes out of a burst pipe?',
@@ -157,8 +157,8 @@ export default function BurstPipeEmergencyGuidePage() {
           </h1>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed">
             A burst pipe dumps 30–50 gallons of water per minute into your
-            home. The first 10 minutes determine whether you have a $500
-            repair or a $15,000 water damage claim. Here's exactly what to do.
+            home. The first 10 minutes determine whether you have a manageable
+            repair or a major water damage claim. Here's exactly what to do.
           </p>
         </div>
       </section>
@@ -401,11 +401,11 @@ export default function BurstPipeEmergencyGuidePage() {
             </p>
             <p>
               <strong className="text-primary">
-                Don't accept the first plumber quote without writing down
-                what's included.
+                Don't accept the first plumber quote without an itemized
+                breakdown of what's included.
               </strong>{' '}
               Even in an emergency, you have the right to an itemized
-              quote. Topline always quotes in writing before any work
+              quote. Topline always quotes upfront before any work
               starts.
             </p>
           </div>

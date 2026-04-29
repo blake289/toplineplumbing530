@@ -46,7 +46,7 @@ export default function ShastaLakePage() {
           href: '/services/water-heater-repair',
         },
         {
-          title: 'Expert Drain Cleaning ($130)',
+          title: 'Expert Drain Cleaning',
           description: 'From slow kitchen sinks to backed-up main sewer lines, our mechanical augers will restore flow to your home without the use of pipe-damaging chemicals.',
           href: '/services/drain-cleaning',
         },

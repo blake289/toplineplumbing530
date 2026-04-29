@@ -47,7 +47,7 @@ export default function PaloCedroPage() {
         },
         {
           title: 'Water Heater Maintenance & Repair',
-          description: 'Routine service starting at $127. Keep your water heater running efficiently and prevent costly breakdowns.',
+          description: 'Routine service with upfront pricing. Keep your water heater running efficiently and prevent costly breakdowns.',
           href: '/services/water-heater-repair',
         },
         {

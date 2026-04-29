@@ -25,7 +25,7 @@ const waterHeaterFAQs = [
   },
   {
     question: "How much does water heater replacement cost in Redding, CA?",
-    answer: "Water heater replacement in Redding typically ranges from $900–$1,800 depending on the unit size and type. We provide upfront pricing before any work begins. Call (530) 704-6989 for a free estimate.",
+    answer: "Replacement cost varies by job — the unit, installation complexity, and permits all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate.",
   },
   {
     question: "Can you replace my water heater the same day?",
@@ -52,11 +52,6 @@ export default function WaterHeaterRepairPage() {
       <FAQSchema faqs={waterHeaterFAQs} />
       <ServicePageTemplate
       faqs={waterHeaterFAQs}
-      pricingCallout={{
-        priceRange: '$1,200–$3,500 installed',
-        href: '/cost/water-heater-replacement',
-        label: 'See Full Cost Guide',
-      }}
       hero={{
         title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
         description: [
@@ -74,8 +69,8 @@ export default function WaterHeaterRepairPage() {
           description: 'A well-maintained system can save up to 1,500 gallons of water per year, reducing waste and lowering utility costs.',
         },
         {
-          value: '$200',
-          description: 'Homeowners can save up to $200 per year on energy bills with regular water heater maintenance.',
+          value: '20%',
+          description: 'Homeowners can lower annual water heating energy use by up to 20% with regular maintenance.',
         },
       ]}
       whenToRepair={[
@@ -93,7 +88,7 @@ export default function WaterHeaterRepairPage() {
       ]}
       services={[
         {
-          title: 'Routine Maintenance — $127',
+          title: 'Routine Maintenance',
           items: [
             'Flush sediment buildup',
             'Test pressure relief valve',
@@ -111,7 +106,7 @@ export default function WaterHeaterRepairPage() {
           ],
         },
         {
-          title: 'Full Replacement — From $1,000',
+          title: 'Full Replacement',
           items: [
             'Traditional tank water heaters',
             'Tankless on-demand systems',
