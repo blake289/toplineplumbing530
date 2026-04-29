@@ -48,7 +48,7 @@ export default function ProfessionalWork() {
             {/* Navy accent box behind image */}
             <div className="absolute -top-4 right-2 md:-right-4 w-full h-full bg-navy-900 rounded-2xl -z-10" />
             <Image
-              src="/images/joe-paulette.png"
+              src="/images/joe-paulette.webp"
               alt="Topline Plumbing Technician at Work"
               width={600}
               height={800}

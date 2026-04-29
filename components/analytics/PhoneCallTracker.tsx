@@ -9,12 +9,14 @@ declare global {
   }
 }
 
+const fired = new WeakSet<HTMLAnchorElement>();
+
 export default function PhoneCallTracker() {
   useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      const target = e.target as HTMLElement | null;
-      const link = target?.closest('a[href^="tel:"]') as HTMLAnchorElement | null;
-      if (!link) return;
+    const trackTelLink = (link: HTMLAnchorElement) => {
+      if (fired.has(link)) return;
+      fired.add(link);
+      setTimeout(() => fired.delete(link), 1500);
 
       const href = link.getAttribute('href') || '';
       const phone = href.replace(/^tel:/, '').replace(/[^\d+]/g, '');
@@ -31,6 +33,7 @@ export default function PhoneCallTracker() {
         page_location: window.location.href,
         source_section: sourceSection,
         link_text: (link.textContent || '').trim().slice(0, 80),
+        transport_type: 'beacon',
       };
 
       if (typeof window.gtag === 'function') {
@@ -40,8 +43,26 @@ export default function PhoneCallTracker() {
       }
     };
 
-    document.addEventListener('click', handler, { capture: true });
-    return () => document.removeEventListener('click', handler, { capture: true } as EventListenerOptions);
+    const findTelLink = (e: Event): HTMLAnchorElement | null => {
+      const target = e.target as HTMLElement | null;
+      return (target?.closest('a[href^="tel:"]') as HTMLAnchorElement) || null;
+    };
+
+    const onPointerDown = (e: PointerEvent) => {
+      const link = findTelLink(e);
+      if (link) trackTelLink(link);
+    };
+    const onClick = (e: MouseEvent) => {
+      const link = findTelLink(e);
+      if (link) trackTelLink(link);
+    };
+
+    document.addEventListener('pointerdown', onPointerDown, { capture: true });
+    document.addEventListener('click', onClick, { capture: true });
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown, { capture: true } as EventListenerOptions);
+      document.removeEventListener('click', onClick, { capture: true } as EventListenerOptions);
+    };
   }, []);
 
   return null;
