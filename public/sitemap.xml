@@ -3,7 +3,13 @@
   <!-- Core Pages -->
   <url>
     <loc>https://toplineplumbingco.com/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://toplineplumbingco.com/water-heater-replacement-redding</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
