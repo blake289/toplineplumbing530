@@ -98,7 +98,7 @@ export default function TanklessWaterHeaterPage() {
             'Assess your hot water needs',
             'Recommend the right size unit',
             'Upfront pricing with no hidden fees',
-            'Financing options available',
+            'Honest install timeline before you commit',
           ],
         },
       ]}
