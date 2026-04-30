@@ -91,7 +91,8 @@ export default function Navbar() {
                       <div className="w-60 bg-white rounded-lg shadow-xl border border-gray-100 py-2 origin-top animate-[fadeInScale_150ms_cubic-bezier(0.23,1,0.32,1)_forwards]">
                         {[
                           ['Emergency Plumbing', '/services/emergency'],
-                          ['Water Heaters', '/services/water-heater-repair'],
+                          ['Water Heater Repair', '/services/water-heater-repair'],
+                          ['Water Heater Replacement', '/water-heater-replacement-redding'],
                           ['Drain Cleaning', '/services/drain-cleaning'],
                           ['Tankless Upgrades', '/services/tankless'],
                           ['Sewer Line Repair', '/services/sewer-line'],

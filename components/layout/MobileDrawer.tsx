@@ -96,7 +96,14 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
-                  Water Heaters
+                  Water Heater Repair
+                </Link>
+                <Link
+                  href="/water-heater-replacement-redding"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Water Heater Replacement
                 </Link>
                 <Link
                   href="/services/drain-cleaning"
