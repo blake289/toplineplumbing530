@@ -4,7 +4,7 @@ import Card from '@/components/ui/Card';
 
 interface LocationService {
   title: string;
-  description: string;
+  description: React.ReactNode;
   href: string;
 }
 

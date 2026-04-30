@@ -4,15 +4,15 @@ import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
-  description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. 3,000+ jobs completed. Call (530) 704-6989 for a free inspection.",
+  title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic | Topline Plumbing',
+  description: "Topline Plumbing offers expert water heater repair in Redding — diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
   alternates: { canonical: 'https://toplineplumbingco.com/services/water-heater-repair' },
   openGraph: {
-    title: 'Water Heater Repair & Replacement in Redding, CA | Topline Plumbing',
-    description: "Topline Plumbing offers expert water heater repair, and same-day replacement in Redding. 3,000+ jobs completed. Call (530) 704-6989 for a free inspection.",
+    title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic | Topline Plumbing',
+    description: "Topline Plumbing offers expert water heater repair in Redding — diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com/services/water-heater-repair',
     siteName: 'Topline Plumbing',
-    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair & Replacement in Redding, CA' }],
+    images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair in Redding, CA' }],
     locale: 'en_US',
     type: 'website',
   },
@@ -29,7 +29,7 @@ const waterHeaterFAQs = [
   },
   {
     question: "Can you replace my water heater the same day?",
-    answer: "In most cases, yes. Topline Plumbing offers same-day water heater replacement in Redding, Anderson, Shasta Lake, and surrounding areas. We keep common units in stock. Call (530) 704-6989 and we'll let you know right away.",
+    answer: "In most cases, yes — see our dedicated water heater replacement page for full details on same-day install, brands stocked, and the permit process. We service Redding, Anderson, Shasta Lake, and surrounding areas. Call (530) 704-6989 and we'll let you know right away.",
   },
   {
     question: "What are the signs my water heater is failing?",
@@ -47,17 +47,22 @@ export default function WaterHeaterRepairPage() {
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://toplineplumbingco.com' },
         { name: 'Services', url: 'https://toplineplumbingco.com/services' },
-        { name: 'Water Heater Repair & Replacement', url: 'https://toplineplumbingco.com/services/water-heater-repair' },
+        { name: 'Water Heater Repair', url: 'https://toplineplumbingco.com/services/water-heater-repair' },
       ]} />
       <FAQSchema faqs={waterHeaterFAQs} />
       <ServicePageTemplate
       faqs={waterHeaterFAQs}
       hero={{
-        title: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
+        title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic',
         description: [
           "Is your water heater making strange noises? Running out of hot water faster than usual? Leaking around the base?",
-          "With 3,000+ jobs completed across Northern California, Topline Plumbing knows how to diagnose problems fast, repair what can be saved, and replace units that are beyond repair — all with same-day service."
+          "With 3,000+ jobs completed across Northern California, Topline Plumbing diagnoses water heater problems fast and repairs what can be saved — same-day service during business hours.",
         ],
+      }}
+      relatedCallout={{
+        title: 'Need a Full Replacement Instead?',
+        href: '/water-heater-replacement-redding',
+        label: 'See our Redding replacement guide',
       }}
       stats={[
         {
@@ -106,11 +111,11 @@ export default function WaterHeaterRepairPage() {
           ],
         },
         {
-          title: 'Full Replacement',
+          title: 'Diagnostic & Inspection',
           items: [
-            'Traditional tank water heaters',
-            'Tankless on-demand systems',
-            'Professional installation & disposal',
+            'Same-day failure diagnosis',
+            'Pilot light & ignition troubleshooting',
+            'Honest repair-vs-replace recommendation',
           ],
         },
       ]}

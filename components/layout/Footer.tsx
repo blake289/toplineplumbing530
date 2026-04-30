@@ -77,6 +77,7 @@ export default function Footer() {
             <nav className="flex flex-col gap-3 text-[15px]">
               <Link href="/services/emergency" className="text-gray-400 hover:text-white transition-colors">Emergency Plumbing</Link>
               <Link href="/services/water-heater-repair" className="text-gray-400 hover:text-white transition-colors">Water Heater Repair</Link>
+              <Link href="/water-heater-replacement-redding" className="text-gray-400 hover:text-white transition-colors">Water Heater Replacement</Link>
               <Link href="/services/tankless" className="text-gray-400 hover:text-white transition-colors">Tankless Installation</Link>
               <Link href="/services/drain-cleaning" className="text-gray-400 hover:text-white transition-colors">Drain Cleaning</Link>
               <Link href="/services/repiping-services" className="text-gray-400 hover:text-white transition-colors">Repiping Services</Link>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -42,7 +43,7 @@ export default function ShastaLakePage() {
       services={[
         {
           title: 'Water Heater Repair & Replacement',
-          description: "Is your 8-12 year old water heater showing signs of failure? We've installed thousands of units in Northern California. Get a free inspection today before a disaster strikes.",
+          description: <>Is your 8-12 year old water heater showing signs of failure? We&apos;ve installed thousands of units in Northern California — explore same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> options. Get a free inspection today before a disaster strikes.</>,
           href: '/services/water-heater-repair',
         },
         {
