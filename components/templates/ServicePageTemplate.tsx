@@ -24,6 +24,12 @@ interface PricingCallout {
   label: string;
 }
 
+interface RelatedCallout {
+  title: string;
+  href: string;
+  label: string;
+}
+
 interface ServicePageProps {
   hero: {
     title: string;
@@ -31,6 +37,7 @@ interface ServicePageProps {
     backgroundImage?: string;
   };
   pricingCallout?: PricingCallout;
+  relatedCallout?: RelatedCallout;
   stats?: Stat[];
   whenToRepair?: string[];
   whenToReplace?: string[];
@@ -42,6 +49,7 @@ interface ServicePageProps {
 export default function ServicePageTemplate({
   hero,
   pricingCallout,
+  relatedCallout,
   stats,
   whenToRepair,
   whenToReplace,
@@ -78,6 +86,40 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* Related Page Callout (if provided) */}
+      {relatedCallout && (
+        <section className="py-8 md:py-10 bg-gray-50 border-b border-gray-200">
+          <div className="max-w-4xl mx-auto px-6 md:px-12">
+            <Link
+              href={relatedCallout.href}
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-white rounded-2xl shadow-sm hover:shadow-md border border-gray-200 p-6 md:p-7 transition-all hover:-translate-y-0.5 group"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-primary font-bold mb-1">
+                    Related
+                  </p>
+                  <p className="text-xl md:text-2xl font-heading font-bold text-navy-900">
+                    {relatedCallout.title}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 text-primary font-semibold group-hover:translate-x-1 transition-transform">
+                <span>{relatedCallout.label}</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* Pricing Callout (if provided) */}
       {pricingCallout && (

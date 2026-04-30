@@ -41,7 +41,7 @@ export default function IntroSection() {
             </p>
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
-              Whether you need emergency drain cleaning or a water heater replacement, we are fully licensed, insured, and
+              Whether you need emergency drain cleaning or a <Link href="/water-heater-replacement-redding" className="text-primary font-semibold underline-offset-4 hover:underline">water heater replacement</Link>, we are fully licensed, insured, and
               dedicated to getting the job done right the first time with a 100% satisfaction guarantee. Skip the stress and
               the mess; call us now to secure your upfront estimate and see why your neighbors have trusted us for decades.
             </p>

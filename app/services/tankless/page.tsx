@@ -59,6 +59,11 @@ export default function TanklessWaterHeaterPage() {
           "Tankless water heaters provide hot water on demand, only heating water when you need it. That means endless hot water for your family and significant savings on your energy bill."
         ],
       }}
+      relatedCallout={{
+        title: 'Sticking with a Tank?',
+        href: '/water-heater-replacement-redding',
+        label: 'See our tank replacement guide',
+      }}
       stats={[
         {
           value: '30%',

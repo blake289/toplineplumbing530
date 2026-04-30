@@ -86,7 +86,7 @@ export default function ReddingPage() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater Repair & Installation Redding</Link>
                   </h3>
-                  <p className="text-gray-700">No hot water in Redding? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and replacement. Same-day water heater service available in Redding.</p>
+                  <p className="text-gray-700">No hot water in Redding? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement in Redding</Link>. Same-day water heater service available.</p>
                 </div>
 
                 <div>
@@ -174,6 +174,7 @@ export default function ReddingPage() {
                   <li><Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumbing</Link></li>
                   <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning</Link></li>
                   <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater</Link></li>
+                  <li><Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">Water Heater Replacement</Link></li>
                   <li><Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Upgrades</Link></li>
                   <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline">Repiping</Link></li>
                   <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline">Sewer Line</Link></li>

@@ -59,6 +59,11 @@ export default function WaterHeaterRepairPage() {
           "With 3,000+ jobs completed across Northern California, Topline Plumbing knows how to diagnose problems fast, repair what can be saved, and replace units that are beyond repair — all with same-day service."
         ],
       }}
+      relatedCallout={{
+        title: 'Need a Full Replacement?',
+        href: '/water-heater-replacement-redding',
+        label: 'See our Redding replacement guide',
+      }}
       stats={[
         {
           value: '15%',
