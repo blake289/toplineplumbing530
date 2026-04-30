@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Script from 'next/script';
+import Image from 'next/image';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -190,51 +191,67 @@ export default function WaterHeaterReplacementReddingPage() {
       />
 
       {/* Hero */}
-      <section className="py-20 md:py-28 bg-navy-900 text-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <p className="uppercase tracking-widest text-sm md:text-base text-primary-light font-semibold mb-4">
-            Redding's Water Heater Specialists · Licensed Since 1998
-          </p>
-          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-white leading-tight">
-            Water Heater Replacement in Redding, CA
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Local family-run plumbers — not a corporate dispatch center. Same-day tank replacement,
-            tankless conversions, and honest upfront pricing. CSLB #596557.
-          </p>
+      <section className="py-16 md:py-24 bg-navy-900 text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            {/* Left: copy */}
+            <div className="text-center lg:text-left">
+              <p className="uppercase tracking-widest text-sm md:text-base text-primary-light font-semibold mb-4">
+                Redding's Water Heater Specialists · Licensed Since 1998
+              </p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-white leading-tight">
+                Water Heater Replacement in Redding, CA
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
+                Local family-run plumbers — not a corporate dispatch center. Same-day tank replacement,
+                tankless conversions, and honest upfront pricing. CSLB #596557.
+              </p>
 
-          {/* Same-day note (matches existing /cost page language) */}
-          <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-10 text-base md:text-lg text-white font-semibold">
-            <span className="text-primary-light">Call before noon Mon–Fri →</span> usually back to hot
-            water the same day
-          </div>
+              <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
+                <span className="text-primary-light">Call before noon Mon–Fri →</span> usually back to hot
+                water the same day
+              </div>
 
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a
-              href="tel:5307046989"
-              className="h-14 px-8 bg-primary text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all shadow-lg text-lg"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              <span className="whitespace-nowrap">Call: (530) 704-6989</span>
-            </a>
-            <Link
-              href="/contact"
-              className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all shadow-lg text-lg"
-            >
-              Get a Free Estimate
-            </Link>
+              <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
+                <a
+                  href="tel:5307046989"
+                  className="h-14 px-8 bg-primary text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 hover:bg-primary-dark transition-all shadow-lg text-lg"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <span className="whitespace-nowrap">Call: (530) 704-6989</span>
+                </a>
+                <Link
+                  href="/contact"
+                  className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all shadow-lg text-lg"
+                >
+                  Get a Free Estimate
+                </Link>
+              </div>
+              <p className="mt-6 text-sm text-gray-300">
+                Free estimate before work starts · Permit, disposal, and seismic strapping
+                included · Mon–Fri 8:00a–4:30p
+              </p>
+            </div>
+
+            {/* Right: image */}
+            <div className="relative aspect-[4/3] lg:aspect-square w-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <Image
+                src="/images/wh-replacement-hero.webp"
+                alt="Topline Plumbing technician installing a new A.O. Smith ProLine water heater in a Redding, CA home"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           </div>
-          <p className="mt-6 text-sm text-gray-300">
-            Free estimate before work starts · Permit, disposal, and seismic strapping
-            included · Mon–Fri 8:00a–4:30p
-          </p>
         </div>
       </section>
 
@@ -705,30 +722,52 @@ export default function WaterHeaterReplacementReddingPage() {
 
       {/* Local context */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
-            Why Redding Water Heaters Fail Faster
-          </h2>
-          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-            <p>
-              Redding sits in a region with hard, mineral-heavy water — high in calcium, magnesium,
-              and sediment. That mineral load is the main reason water heaters here fail at 8–10
-              years instead of the 12–15 you'd see in soft-water markets.
-            </p>
-            <p>
-              Sediment settles to the bottom of the tank, insulates the burner or heating element,
-              and forces the unit to run hotter and longer to heat the water above it. Eventually
-              the metal fatigues, the tank cracks, and it floods the garage.
-            </p>
-            <p>
-              We've seen this pattern thousands of times across Redding, Shasta Lake, Anderson, Palo
-              Cedro, and Bella Vista. If your unit is rumbling, popping, producing rusty water, or
-              past 8 years old, plan the replacement before it fails on you — it's cheaper than the
-              flood damage cleanup.
-            </p>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            {/* Left: copy */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
+                Why Redding Water Heaters Fail Faster
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  Redding sits in a region with hard, mineral-heavy water — high in calcium, magnesium,
+                  and sediment. That mineral load is the main reason water heaters here fail at 8–10
+                  years instead of the 12–15 you'd see in soft-water markets.
+                </p>
+                <p>
+                  Sediment settles to the bottom of the tank, insulates the burner or heating element,
+                  and forces the unit to run hotter and longer to heat the water above it. Eventually
+                  the metal fatigues, the tank cracks, and it floods the garage.
+                </p>
+                <p>
+                  We've seen this pattern thousands of times across Redding, Shasta Lake, Anderson, Palo
+                  Cedro, and Bella Vista. If your unit is rumbling, popping, producing rusty water, or
+                  past 8 years old, plan the replacement before it fails on you — it's cheaper than the
+                  flood damage cleanup.
+                </p>
+              </div>
+            </div>
+
+            {/* Right: image */}
+            <figure className="lg:sticky lg:top-24">
+              <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-xl ring-1 ring-gray-200">
+                <Image
+                  src="/images/wh-redding-sediment-failure.webp"
+                  alt="Failed Redding water heater tank cut open showing thick mineral sediment buildup — the result of hard-water-driven corrosion that causes early failure"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="text-sm text-gray-500 mt-3 italic">
+                Real Redding-area water heater pulled from service — sediment crust like this is why
+                Redding tanks fail at 8–10 years.
+              </figcaption>
+            </figure>
           </div>
 
-          <div className="mt-10 p-6 bg-navy-900 text-white rounded-xl">
+          <div className="mt-12 p-6 bg-navy-900 text-white rounded-xl max-w-4xl">
             <h3 className="text-xl font-heading font-bold mb-2">
               Annual Flush Service
             </h3>
