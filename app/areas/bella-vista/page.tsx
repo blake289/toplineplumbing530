@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import LocationPageTemplate from '@/components/templates/LocationPageTemplate';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -42,7 +43,7 @@ export default function BellaVistaPage() {
       services={[
         {
           title: 'Complete Water Heater Services',
-          description: "From diagnostic inspections to full replacements, we handle all water heater needs with same-day availability and upfront pricing.",
+          description: <>From diagnostic inspections to full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>, we handle all water heater needs with same-day availability and upfront pricing.</>,
           href: '/services/water-heater-repair',
         },
         {

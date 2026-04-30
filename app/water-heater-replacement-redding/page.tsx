@@ -1,8 +1,108 @@
 import { Metadata } from 'next';
+import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
 import FAQSection from '@/components/layout/FAQSection';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#service',
+  name: 'Water Heater Replacement in Redding, CA',
+  serviceType: 'Water Heater Replacement',
+  description:
+    'Same-day water heater replacement in Redding, CA. Tank-to-tank installation (40, 50, 75-gallon gas or electric), tankless conversions, permit pulling, seismic strapping, and old unit disposal — all included in upfront pricing. Licensed plumber CSLB #596557, serving Redding since 1998.',
+  category: 'Plumbing',
+  url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Redding', sameAs: 'https://en.wikipedia.org/wiki/Redding,_California' },
+    { '@type': 'City', name: 'Shasta Lake', sameAs: 'https://en.wikipedia.org/wiki/Shasta_Lake,_California' },
+    { '@type': 'City', name: 'Anderson', sameAs: 'https://en.wikipedia.org/wiki/Anderson,_California' },
+    { '@type': 'City', name: 'Palo Cedro' },
+    { '@type': 'City', name: 'Bella Vista' },
+    { '@type': 'City', name: 'Red Bluff', sameAs: 'https://en.wikipedia.org/wiki/Red_Bluff,_California' },
+    { '@type': 'AdministrativeArea', name: 'Shasta County, CA' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Water Heater Replacement Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Standard Tank Water Heater Replacement (40 / 50 / 75-gallon)',
+          serviceType: 'Tank Water Heater Installation',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Gas Water Heater Installation',
+          serviceType: 'Gas Water Heater Installation',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Electric Water Heater Installation',
+          serviceType: 'Electric Water Heater Installation',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Tankless Water Heater Conversion',
+          serviceType: 'Tankless Water Heater Installation',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Annual Water Heater Flush & Maintenance',
+          serviceType: 'Water Heater Maintenance',
+        },
+      },
+    ],
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+  brand: [
+    { '@type': 'Brand', name: 'Bradford White' },
+    { '@type': 'Brand', name: 'Rheem' },
+    { '@type': 'Brand', name: 'AO Smith' },
+    { '@type': 'Brand', name: 'Navien' },
+    { '@type': 'Brand', name: 'Rinnai' },
+  ],
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#webpage',
+  url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
+  name: 'Water Heater Replacement in Redding, CA — Same-Day Service',
+  description:
+    "Redding's water heater specialists. Same-day replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#service' },
+  primaryImageOfPage: {
+    '@type': 'ImageObject',
+    url: 'https://toplineplumbingco.com/images/water-heater.webp',
+  },
+};
 
 export const metadata: Metadata = {
   title: 'Water Heater Replacement in Redding, CA — Same-Day Service | Topline Plumbing',
@@ -76,6 +176,18 @@ export default function WaterHeaterReplacementReddingPage() {
         ]}
       />
       <FAQSchema faqs={waterHeaterFAQs} />
+      <Script
+        id="service-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <Script
+        id="webpage-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
 
       {/* Hero */}
       <section className="py-20 md:py-28 bg-navy-900 text-white">
@@ -169,6 +281,129 @@ export default function WaterHeaterReplacementReddingPage() {
           </div>
           <p className="text-sm text-gray-500 mt-3">
             Standard 40 &amp; 50-gallon gas and electric tanks stocked on our service trucks.
+          </p>
+        </div>
+      </section>
+
+      {/* Tank Sizes We Install */}
+      <section className="py-16 md:py-20 bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-3">
+              Water Heater Sizes We Install in Redding
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We size every water heater to match your household — undersized units short-cycle and
+              fail early; oversized units waste energy.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <div className="text-2xl font-heading font-bold text-navy-900 mb-2">
+                40-Gallon Water Heater
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Best fit for households of 1–3 people. Most common size we replace in Redding —
+                stocked on our trucks for same-day install. Available in gas and electric.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <div className="text-2xl font-heading font-bold text-navy-900 mb-2">
+                50-Gallon Water Heater
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Best fit for households of 3–5 people. Standard for Redding-area homes with multiple
+                bathrooms. Stocked on our trucks. Available in gas and electric.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <div className="text-2xl font-heading font-bold text-navy-900 mb-2">
+                75-Gallon Water Heater
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Best fit for larger households (5+ people), homes with soaking tubs, or properties
+                with high simultaneous hot water demand. Available by special order, typically
+                installed within 24–48 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fuel Type Comparison */}
+      <section className="py-16 md:py-20 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-3">
+              Gas vs. Electric vs. Tankless — Which Is Right for Your Redding Home?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The right fuel type depends on what's already in your home, your hot water demand, and
+              how long you plan to stay.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                Gas Water Heater
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Heats faster than electric, recovers quicker, and runs cheaper to operate in Redding
+                where natural gas is widely available. Best replacement choice for homes already
+                plumbed for gas.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Lower per-month operating cost</li>
+                <li>• Fast recovery rate (good for big families)</li>
+                <li>• Works during power outages (with standing pilot)</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                Electric Water Heater
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Best fit for homes without natural gas service or installs where venting a gas unit
+                is impractical. Lower install cost than gas, but higher monthly operating cost.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Lower upfront install cost</li>
+                <li>• No venting or combustion air required</li>
+                <li>• Safer in tight closet installations</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl border-2 border-primary p-6 shadow-md relative">
+              <div className="absolute -top-3 left-6 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                Best Long-Term
+              </div>
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                Tankless Water Heater
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Endless hot water, 20+ year lifespan, and 20–30% energy savings. Higher upfront cost
+                but pays back over time, especially for households staying 7+ years.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Endless hot water on demand</li>
+                <li>• 20+ year lifespan (vs 8–12 for tank)</li>
+                <li>• Frees up garage / closet floor space</li>
+              </ul>
+              <Link
+                href="/services/tankless"
+                className="inline-block mt-4 text-primary font-semibold hover:underline text-sm"
+              >
+                See full tankless guide →
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
+            Not sure which is right? Call <a href="tel:5307046989" className="text-primary font-semibold hover:underline">(530) 704-6989</a> — we'll
+            assess your existing setup and give you an honest recommendation before quoting.
           </p>
         </div>
       </section>
