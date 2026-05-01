@@ -13,12 +13,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Server configuration error' }, { status: 500 });
     }
 
-    // Build contact payload for GHL v2 API
     const serviceTag = service ? [`service:${service}`] : [];
-    const customFields = [
-      ...(service ? [{ id: 'service', value: service }] : []),
-      ...(message ? [{ id: 'message', value: message }] : []),
-    ];
 
     const contactPayload = {
       firstName,
@@ -28,10 +23,9 @@ export async function POST(request: NextRequest) {
       locationId,
       tags: ['website-lead', ...serviceTag],
       source: 'Website Form',
-      ...(customFields.length > 0 && { customFields }),
     };
 
-    const response = await fetch('https://services.leadconnectorhq.com/contacts/', {
+    const upsertResponse = await fetch('https://services.leadconnectorhq.com/contacts/upsert', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
@@ -41,10 +35,37 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify(contactPayload),
     });
 
-    if (!response.ok) {
-      const error = await response.text();
-      console.error('GHL API error:', error);
+    if (!upsertResponse.ok) {
+      const errorText = await upsertResponse.text();
+      console.error('GHL upsert failed:', upsertResponse.status, errorText);
       return NextResponse.json({ error: 'Failed to submit to CRM' }, { status: 500 });
+    }
+
+    const upsertData = await upsertResponse.json();
+    const contactId = upsertData?.contact?.id;
+
+    if (contactId && (service || message)) {
+      const noteBody = [
+        service ? `Service requested: ${service}` : null,
+        message ? `Message: ${message}` : null,
+      ].filter(Boolean).join('\n\n');
+
+      const noteResponse = await fetch(
+        `https://services.leadconnectorhq.com/contacts/${contactId}/notes`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+            'Version': '2021-07-28',
+          },
+          body: JSON.stringify({ body: noteBody }),
+        }
+      );
+
+      if (!noteResponse.ok) {
+        console.error('GHL note creation failed:', noteResponse.status, await noteResponse.text());
+      }
     }
 
     return NextResponse.json({ success: true });
