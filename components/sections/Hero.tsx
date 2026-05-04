@@ -1,23 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white">
-      {/* Subtle background photo layer */}
-      <Image
-        src="/images/water-heater.webp"
-        alt=""
-        fill
-        priority
-        fetchPriority="high"
-        quality={85}
-        sizes="100vw"
-        className="object-cover object-center opacity-[0.08] pointer-events-none"
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-white/70 to-white/90 pointer-events-none" />
-
       {/* Decorative navy blob for subtle depth */}
       <div
         aria-hidden

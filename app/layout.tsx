@@ -10,7 +10,7 @@ import PhoneCallTracker from "@/components/analytics/PhoneCallTracker";
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
   display: 'swap',
 });
@@ -65,9 +65,9 @@ export default function RootLayout({
       <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KR1T2RGRB4"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
