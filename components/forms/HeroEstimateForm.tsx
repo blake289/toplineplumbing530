@@ -3,9 +3,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { contactFormSchema, type ContactFormData } from '@/lib/validation/contact-schema';
+import { heroFormSchema, type HeroFormData } from '@/lib/validation/hero-form-schema';
 import Input from '@/components/ui/Input';
-import Textarea from '@/components/ui/Textarea';
 import Button from '@/components/ui/Button';
 
 export default function HeroEstimateForm() {
@@ -17,19 +16,28 @@ export default function HeroEstimateForm() {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
+  } = useForm<HeroFormData>({
+    resolver: zodResolver(heroFormSchema),
   });
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = async (data: HeroFormData) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
+
+    const [firstName, ...rest] = data.name.trim().split(/\s+/);
+    const lastName = rest.join(' ');
 
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          phone: data.phone,
+          zip: data.zip,
+          service: data.service,
+        }),
       });
 
       if (!response.ok) throw new Error('Submission failed');
@@ -46,20 +54,12 @@ export default function HeroEstimateForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
-      <div className="grid grid-cols-2 gap-2.5">
-        <Input
-          label="First Name"
-          {...register('firstName')}
-          error={errors.firstName?.message}
-          required
-        />
-        <Input
-          label="Last Name"
-          {...register('lastName')}
-          error={errors.lastName?.message}
-          required
-        />
-      </div>
+      <Input
+        label="Name"
+        {...register('name')}
+        error={errors.name?.message}
+        required
+      />
 
       <Input
         label="Phone"
@@ -70,17 +70,17 @@ export default function HeroEstimateForm() {
       />
 
       <Input
-        label="Email"
-        type="email"
-        {...register('email')}
-        error={errors.email?.message}
+        label="ZIP"
+        type="text"
+        inputMode="numeric"
+        {...register('zip')}
+        error={errors.zip?.message}
         required
       />
 
-      {/* Service Required dropdown */}
       <div className="w-full">
         <label htmlFor="service" className="block mb-1 font-semibold text-gray-700 text-[13px]">
-          Service Required
+          Service Needed
         </label>
         <div className="relative">
           <select
@@ -109,17 +109,11 @@ export default function HeroEstimateForm() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
+        {errors.service && (
+          <p className="text-red-600 text-xs mt-1">{errors.service.message}</p>
+        )}
       </div>
 
-      <Textarea
-        label="Message"
-        {...register('message')}
-        placeholder="Brief description of your plumbing need..."
-        rows={1}
-        error={errors.message?.message}
-      />
-
-      {/* Consent Checkbox */}
       <div>
         <label className="flex items-start gap-2 cursor-pointer">
           <input
@@ -128,8 +122,8 @@ export default function HeroEstimateForm() {
             className="mt-0.5 w-4 h-4 text-primary bg-white border-gray-300 rounded focus:ring-primary focus:ring-2 cursor-pointer flex-shrink-0"
           />
           <span className="text-xs text-gray-500 leading-snug">
-            By submitting this form, I consent to receive SMS messages from Topline Plumbing regarding my service request and appointment updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out.{' '}
-            <a href="/privacy" className="text-primary underline">Privacy Policy</a>{' '}&amp;{' '}
+            By submitting, I consent to SMS from Topline Plumbing about my request. Msg &amp; data rates may apply. Reply STOP to opt out.{' '}
+            <a href="/privacy" className="text-primary underline">Privacy</a>{' '}&amp;{' '}
             <a href="/terms" className="text-primary underline">Terms</a>.
           </span>
         </label>
@@ -149,7 +143,7 @@ export default function HeroEstimateForm() {
 
       {submitStatus === 'success' && (
         <div className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-sm">
-          Thank you! We'll contact you shortly.
+          Thank you! We&apos;ll contact you shortly.
         </div>
       )}
 

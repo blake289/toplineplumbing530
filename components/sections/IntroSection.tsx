@@ -36,13 +36,13 @@ export default function IntroSection() {
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
               As the leading <strong>Redding plumber</strong> since 1998, Topline Plumbing provides the fast, reliable
-              solutions you need to stop leaks and clear drains today. Our family-owned team specializes in expert repairs,
-              upfront pricing, and comprehensive plumbing services for homeowners and businesses across Northern California.
+              solutions you need to stop leaks and clear drains today. Founded and operated by <strong>Joe and Paulette Torculas</strong>, our family-owned team specializes in expert repairs,
+              upfront pricing, and comprehensive plumbing services for homeowners and businesses across Northern California. CSLB License #596557.
             </p>
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
               Whether you need emergency drain cleaning or a <Link href="/water-heater-replacement-redding" className="text-primary font-semibold underline-offset-4 hover:underline">water heater replacement</Link>, we are fully licensed, insured, and
-              dedicated to getting the job done right the first time with a 100% satisfaction guarantee. Skip the stress and
+              dedicated to getting the job done right the first time — backed by the Topline Promise. Skip the stress and
               the mess; call us now to secure your upfront estimate and see why your neighbors have trusted us for decades.
             </p>
 

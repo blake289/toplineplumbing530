@@ -25,19 +25,19 @@ export default function ProfessionalWork() {
                 <svg className="w-6 h-6 text-primary group-hover:text-primary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-900">Licensed & Insured Professionals</span>
+                <span className="text-gray-900">Background-checked, drug-tested, and licensed</span>
               </li>
               <li className="flex items-center gap-3 text-base group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors duration-200">
                 <svg className="w-6 h-6 text-primary group-hover:text-primary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-900">Ongoing Training & Certification</span>
+                <span className="text-gray-900">Ongoing training and certification</span>
               </li>
               <li className="flex items-center gap-3 text-base group hover:bg-gray-50 p-2 -ml-2 rounded-lg transition-colors duration-200">
                 <svg className="w-6 h-6 text-primary group-hover:text-primary flex-shrink-0 transition-colors duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-900">100% Satisfaction Guaranteed</span>
+                <span className="text-gray-900">Backed by the Topline Promise</span>
               </li>
             </ul>
           </div>

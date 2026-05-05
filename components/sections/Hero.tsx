@@ -1,6 +1,10 @@
 import React from 'react';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
+const GOOGLE_REVIEW_COUNT = 7;
+const GOOGLE_REVIEW_RATING = 5.0;
+const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869';
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white">
@@ -31,9 +35,28 @@ export default function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-base lg:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-5">
+            <p className="text-base lg:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-4">
               Experienced, licensed technicians serving Redding and Northern California homeowners since 1998 — residential &amp; commercial.
             </p>
+
+            {/* Live Google review trust unit */}
+            <a
+              href={GOOGLE_BUSINESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mb-5 text-sm text-gray-700 hover:text-navy-900 transition-colors group"
+            >
+              <span className="flex items-center gap-0.5" aria-hidden>
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.446a1 1 0 00-.364 1.118l1.286 3.957c.3.922-.755 1.688-1.539 1.118l-3.368-2.446a1 1 0 00-1.176 0l-3.368 2.446c-.784.57-1.838-.196-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
+                  </svg>
+                ))}
+              </span>
+              <span className="font-semibold text-navy-900">{GOOGLE_REVIEW_RATING.toFixed(1)}</span>
+              <span className="text-gray-500">from {GOOGLE_REVIEW_COUNT}+ Google reviews</span>
+              <span className="text-primary font-medium group-hover:translate-x-0.5 transition-transform">→</span>
+            </a>
 
             {/* Trust row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-700 font-medium mb-6">

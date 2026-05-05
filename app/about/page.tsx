@@ -202,8 +202,8 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">100% Satisfaction Guarantee</h3>
-              <p className="text-white/70 text-sm leading-relaxed">We're not done until you're completely satisfied</p>
+              <h3 className="text-white font-semibold text-lg mb-2">The Topline Promise</h3>
+              <p className="text-white/70 text-sm leading-relaxed">Upfront pricing, on-time arrival, and we&apos;re not done until you&apos;re completely satisfied.</p>
             </div>
           </div>
         </div>

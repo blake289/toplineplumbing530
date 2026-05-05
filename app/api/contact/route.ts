@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, phone, email, service, message } = body;
+    const { firstName, lastName, phone, email, service, message, zip } = body;
 
     const apiKey = process.env.GHL_API_KEY;
     const locationId = process.env.GHL_LOCATION_ID;
@@ -16,23 +16,25 @@ export async function POST(request: NextRequest) {
     const serviceTag = service ? [`service:${service}`] : [];
     const servicesRequestedValue = [
       service ? `Service: ${service}` : null,
+      zip ? `ZIP: ${zip}` : null,
       message ? `Message: ${message}` : null,
     ].filter(Boolean).join('\n\n');
 
-    const contactPayload = {
+    const contactPayload: Record<string, unknown> = {
       firstName,
       lastName,
       phone,
-      email,
       locationId,
       tags: ['website-lead', ...serviceTag],
       source: 'Website Form',
-      ...(servicesRequestedValue && {
-        customFields: [
-          { key: 'services_requested', field_value: servicesRequestedValue },
-        ],
-      }),
     };
+    if (email) contactPayload.email = email;
+    if (zip) contactPayload.postalCode = zip;
+    if (servicesRequestedValue) {
+      contactPayload.customFields = [
+        { key: 'services_requested', field_value: servicesRequestedValue },
+      ];
+    }
 
     const upsertResponse = await fetch('https://services.leadconnectorhq.com/contacts/upsert', {
       method: 'POST',
