@@ -5,6 +5,8 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
 import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
+import LocalContext from '@/components/sections/LocalContext';
+import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
   title: 'Plumber in Palo Cedro, CA | Topline Plumbing',
@@ -30,6 +32,8 @@ export default function PaloCedroPage() {
         { name: 'Plumber in Palo Cedro, CA', url: 'https://toplineplumbingco.com/areas/palo-cedro' },
       ]} />
       <FAQSchema faqs={getCityFaqs('palo-cedro')} />
+      <LocalContext profile={getCityProfile('palo-cedro')} />
+
       <LocationPageTemplate
       locationName="Palo Cedro"
       hero={{

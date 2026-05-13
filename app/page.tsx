@@ -7,6 +7,7 @@ import ProfessionalWork from '@/components/sections/ProfessionalWork';
 import StatsSection from '@/components/sections/StatsSection';
 import Testimonials from '@/components/sections/Testimonials';
 import CTASection from '@/components/sections/CTASection';
+import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 import FAQSchema from '@/components/layout/FAQSchema';
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function HomePage() {
       <ProfessionalWork />
       <StatsSection />
       <Testimonials />
+      <AfterHoursCapture />
       <CTASection />
     </>
   );

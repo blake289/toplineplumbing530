@@ -5,6 +5,8 @@ import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
 import React from 'react';
 import Link from 'next/link';
+import LocalContext from '@/components/sections/LocalContext';
+import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
   title: 'Plumber in Red Bluff, CA | Topline Plumbing',
@@ -51,6 +53,8 @@ export default function RedBluffPage() {
         </div>
       </div>
 
+      <LocalContext profile={getCityProfile('red-bluff')} />
+
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -62,7 +66,7 @@ export default function RedBluffPage() {
                 Topline Plumbing 530 is proud to serve Red Bluff, Tehama County with professional plumbing services. Our licensed plumbers have been serving Red Bluff homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 5-Star Rated.
               </p>
               <p className="text-lg text-gray-700">
-                Whether you need emergency plumbing service at 2am or a scheduled water heater installation, our licensed plumbers in Red Bluff are ready to help. We offer same-day plumbing service for most repairs in Red Bluff and surrounding areas.
+                Whether you need same-day emergency repair during business hours (Mon–Fri 8:00a–4:30p) or a scheduled water heater installation, our licensed plumbers are ready to help. We offer same-day plumbing service for most repairs in Red Bluff and surrounding areas.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-6">Complete Plumbing Services in Red Bluff CA</h2>

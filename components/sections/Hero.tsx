@@ -63,6 +63,31 @@ export default function Hero() {
               </svg>
             </a>
 
+            {/* Owner trust unit */}
+            <a
+              href="/about"
+              className="inline-flex items-center gap-3 mb-5 group"
+              aria-label="Meet Joe and Paulette Torculas, owners of Topline Plumbing"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/joe-paulette.webp"
+                alt="Joe and Paulette Torculas — Topline Plumbing owners"
+                width={44}
+                height={44}
+                className="w-11 h-11 rounded-full object-cover ring-2 ring-white shadow-sm flex-shrink-0"
+                loading="eager"
+              />
+              <span className="text-left">
+                <span className="block text-[13px] font-semibold text-navy-900 leading-tight group-hover:underline">
+                  Joe &amp; Paulette Torculas
+                </span>
+                <span className="block text-[11px] text-gray-500 leading-tight">
+                  Family-owned · Serving Redding since 1998
+                </span>
+              </span>
+            </a>
+
             {/* Trust row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-700 font-medium mb-6">
               {[

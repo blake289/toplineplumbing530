@@ -88,7 +88,19 @@ export default function DrainCleaningPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230824_184759382.MP.jpg',
+          'PXL_20230825_184450871.MP.jpg',
+          'PXL_20230829_154222780.jpg',
+          'PXL_20230831_195044552.jpg',
+          'PXL_20230909_152106802.jpg',
+          'PXL_20230911_182112583.MP.jpg',
+        ],
+        title: 'Recent Drain & Sewer Work',
+        subtitle: 'Real drains, real sewer lines, real Northern California homes. Every photo is from a Topline job.',
+      }}
+          />
     </>
   );
 }

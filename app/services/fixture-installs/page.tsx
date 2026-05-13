@@ -88,7 +88,19 @@ export default function FixtureInstallsPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230825_162604778.MP.jpg',
+          'PXL_20230825_213739951.MP.jpg',
+          'PXL_20230830_180651564.jpg',
+          'PXL_20230907_172913442.jpg',
+          'PXL_20230911_181942769.jpg',
+          'PXL_20230911_183626309.jpg',
+        ],
+        title: 'Recent Fixture Installs',
+        subtitle: 'Faucets, toilets, sinks, showers, and disposal swaps — clean installs, no callbacks.',
+      }}
+          />
     </>
   );
 }

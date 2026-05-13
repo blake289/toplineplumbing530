@@ -88,7 +88,19 @@ export default function GasLinePage() {
             ],
           },
         ]}
-      />
+      gallery={{
+        photos: [
+          'PXL_20230824_203034325.jpg',
+          'PXL_20230825_212631722.jpg',
+          'PXL_20230829_172405158.jpg',
+          'PXL_20230905_205839104.jpg',
+          'PXL_20230909_212047234.jpg',
+          'PXL_20230911_182202168.jpg',
+        ],
+        title: 'Recent Gas Line Work',
+        subtitle: 'Licensed gas line installs, repairs, and pressure testing for residential and commercial.',
+      }}
+            />
     </>
   );
 }

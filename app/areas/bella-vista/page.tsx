@@ -5,6 +5,8 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
 import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
+import LocalContext from '@/components/sections/LocalContext';
+import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
   title: 'Plumber in Bella Vista, CA | Topline Plumbing',
@@ -30,6 +32,8 @@ export default function BellaVistaPage() {
         { name: 'Plumber in Bella Vista, CA', url: 'https://toplineplumbingco.com/areas/bella-vista' },
       ]} />
       <FAQSchema faqs={getCityFaqs('bella-vista')} />
+      <LocalContext profile={getCityProfile('bella-vista')} />
+
       <LocationPageTemplate
       locationName="Bella Vista"
       hero={{

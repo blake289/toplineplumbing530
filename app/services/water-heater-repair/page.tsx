@@ -119,7 +119,19 @@ export default function WaterHeaterRepairPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230824_190214986.jpg',
+          'PXL_20230825_184458238.jpg',
+          'PXL_20230829_154244043.jpg',
+          'PXL_20230831_195054222.jpg',
+          'PXL_20230909_193611657.jpg',
+          'PXL_20230911_182128368.MP.jpg',
+        ],
+        title: 'Recent Water Heater Jobs',
+        subtitle: 'Installs, replacements, repairs. Tank and tankless. Every photo is from a Topline job.',
+      }}
+          />
     </>
   );
 }

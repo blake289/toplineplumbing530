@@ -5,6 +5,8 @@ import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
 import React from 'react';
 import Link from 'next/link';
+import LocalContext from '@/components/sections/LocalContext';
+import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
   title: 'Plumber in Grass Valley, CA | Topline Plumbing',
@@ -51,6 +53,8 @@ export default function GrassValleyPage() {
         </div>
       </div>
 
+      <LocalContext profile={getCityProfile('grass-valley')} />
+
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -62,7 +66,7 @@ export default function GrassValleyPage() {
                 Topline Plumbing 530 is proud to serve Grass Valley, Nevada County with professional plumbing services. Our licensed plumbers have been serving Grass Valley homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 5-Star Rated.
               </p>
               <p className="text-lg text-gray-700">
-                Whether you need emergency plumbing service at 2am or a scheduled water heater installation, our licensed plumbers in Grass Valley are ready to help. We offer same-day plumbing service for most repairs in Grass Valley and surrounding areas.
+                Whether you need same-day emergency repair during business hours (Mon–Fri 8:00a–4:30p) or a scheduled water heater installation, our licensed plumbers are ready to help. We offer same-day plumbing service for most repairs in Grass Valley and surrounding areas.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-6">Complete Plumbing Services in Grass Valley CA</h2>
