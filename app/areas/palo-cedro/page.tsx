@@ -52,7 +52,7 @@ export default function PaloCedroPage() {
         },
         {
           title: 'Water Heater Maintenance & Repair',
-          description: <>Routine service with upfront pricing — and full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> when repair isn&apos;t the right call. Keep your water heater running efficiently and prevent costly breakdowns.</>,
+          description: <>Routine service with upfront pricing — and full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement</Link> when repair isn&apos;t the right call. Keep your water heater running efficiently and prevent costly breakdowns.</>,
           href: '/services/water-heater-repair',
         },
         {

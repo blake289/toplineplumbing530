@@ -54,7 +54,7 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
       >
         {/* Close Button */}
         <button
-          className="absolute top-4 right-4 text-gray-900 text-2xl p-2 hover:bg-gray-100 rounded transition-colors"
+          className="absolute top-3 right-3 text-gray-900 text-2xl p-3 hover:bg-gray-100 rounded-lg transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
           onClick={onClose}
           aria-label="Close Menu"
         >

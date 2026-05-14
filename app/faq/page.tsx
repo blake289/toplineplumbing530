@@ -212,7 +212,7 @@ export default function FAQPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="px-4 py-2 rounded-full text-sm font-medium text-navy-900 bg-white border border-gray-200 hover:bg-navy-900 hover:text-white hover:border-navy-900 transition-all"
+                className="px-4 py-2.5 rounded-full text-sm font-medium text-navy-900 bg-white border border-gray-200 hover:bg-navy-900 hover:text-white hover:border-navy-900 transition-all inline-flex items-center min-h-[44px]"
               >
                 {cat.name}
               </a>

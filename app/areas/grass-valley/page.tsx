@@ -45,9 +45,9 @@ export default function GrassValleyPage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Grass Valley CA</span>
         </div>
@@ -74,28 +74,28 @@ export default function GrassValleyPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumber Grass Valley</Link>
+                    <Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumber Grass Valley</Link>
                   </h3>
                   <p className="text-gray-700">Topline handles plumbing emergencies in Grass Valley during business hours (Mon–Fri 8:00a–4:30p) — burst pipes, water heater flooding, sewer backups, and all urgent plumbing problems. Same-day response across the Redding area.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning Service Grass Valley</Link>
+                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Grass Valley</Link>
                   </h3>
                   <p className="text-gray-700">Clogged drain in Grass Valley? Slow bathroom drain? Kitchen sink backup? Our licensed plumbers provide professional drain cleaning using advanced equipment. We clear clogged drains fast — usually in under an hour.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater Repair & Installation Grass Valley</Link>
+                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Grass Valley</Link>
                   </h3>
                   <p className="text-gray-700">No hot water in Grass Valley? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and replacement. Same-day water heater service available in Grass Valley.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Water Heater Installation Grass Valley</Link>
+                    <Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Water Heater Installation Grass Valley</Link>
                   </h3>
                   <p className="text-gray-700">Upgrade to a tankless water heater for endless hot water and energy savings. Professional installation with warranty.</p>
                 </div>
@@ -138,14 +138,14 @@ export default function GrassValleyPage() {
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Plumbing Service Areas Near Grass Valley</h2>
               <p className="text-gray-700 mb-4">In addition to Grass Valley, we provide licensed plumbing service throughout Northern California including:</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                <Link href="/areas/chico" className="text-blue-600 hover:underline">Plumber Chico</Link>
-                <Link href="/areas/redding" className="text-blue-600 hover:underline">Plumber Redding</Link>
-                <Link href="/areas/yuba-city" className="text-blue-600 hover:underline">Plumber Yuba City</Link>
-                <Link href="/areas/marysville" className="text-blue-600 hover:underline">Plumber Marysville</Link>
-                <Link href="/areas/paradise" className="text-blue-600 hover:underline">Plumber Paradise</Link>
-                <Link href="/areas/oroville" className="text-blue-600 hover:underline">Plumber Oroville</Link>
-                <Link href="/areas/red-bluff" className="text-blue-600 hover:underline">Plumber Red Bluff</Link>
-                <Link href="/areas/anderson" className="text-blue-600 hover:underline">Plumber Anderson</Link>
+                <Link href="/areas/chico" className="text-blue-600 hover:underline block py-2">Plumber Chico</Link>
+                <Link href="/areas/redding" className="text-blue-600 hover:underline block py-2">Plumber Redding</Link>
+                <Link href="/areas/yuba-city" className="text-blue-600 hover:underline block py-2">Plumber Yuba City</Link>
+                <Link href="/areas/marysville" className="text-blue-600 hover:underline block py-2">Plumber Marysville</Link>
+                <Link href="/areas/paradise" className="text-blue-600 hover:underline block py-2">Plumber Paradise</Link>
+                <Link href="/areas/oroville" className="text-blue-600 hover:underline block py-2">Plumber Oroville</Link>
+                <Link href="/areas/red-bluff" className="text-blue-600 hover:underline block py-2">Plumber Red Bluff</Link>
+                <Link href="/areas/anderson" className="text-blue-600 hover:underline block py-2">Plumber Anderson</Link>
               </div>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Grass Valley - Same-Day Service</h2>
@@ -174,16 +174,16 @@ export default function GrassValleyPage() {
               {/* Services Card */}
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Grass Valley Services</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumbing</Link></li>
-                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning</Link></li>
-                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater</Link></li>
-                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Upgrades</Link></li>
-                  <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline">Repiping</Link></li>
-                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline">Sewer Line</Link></li>
-                  <li><Link href="/services/gas-line" className="text-blue-600 hover:underline">Gas Line</Link></li>
-                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline">Leak Detection</Link></li>
-                  <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline">Fixture Installs</Link></li>
+                <ul>
+                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
+                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
+                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
+                  <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
+                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
+                  <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
+                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
+                  <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>
                 </ul>
               </div>
 
