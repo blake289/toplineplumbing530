@@ -22,7 +22,7 @@ export default function ContactPage() {
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 text-white">Contact Us</h1>
-          <p className="text-lg md:text-xl text-white text-opacity-90">Get a free estimate or schedule service today</p>
+          <p className="text-lg md:text-xl text-white text-opacity-90">Get a free estimate with any service or schedule today</p>
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function ContactPage() {
 
             <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden bg-white">
               <div className="p-8 md:p-10">
-                <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate</h2>
+                <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate With Any Service</h2>
                 <HeroEstimateForm />
               </div>
             </div>

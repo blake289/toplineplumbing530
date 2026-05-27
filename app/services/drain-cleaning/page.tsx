@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const drainFAQs = [
   {
     question: 'How much does drain cleaning cost in Redding, CA?',
-    answer: 'Drain cleaning cost varies by job — a single fixture clog is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate.',
+    answer: 'Drain cleaning cost varies by job — a single fixture clog is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate with any service.',
   },
   {
     question: 'What causes slow or clogged drains?',

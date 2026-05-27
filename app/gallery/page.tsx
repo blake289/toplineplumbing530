@@ -237,7 +237,7 @@ export default function GalleryPage() {
             Ready for Professional Plumbing?
           </h2>
           <p className="text-navy-200 text-lg mb-8">
-            Our team delivers quality work on every job. Call us today for a free estimate.
+            Our team delivers quality work on every job. Call us today for a free estimate with any service.
           </p>
           <a
             href="tel:5307046989"

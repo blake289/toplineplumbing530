@@ -63,7 +63,7 @@ export default function Pricing() {
               Upfront pricing. No surprises.
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-gray-600">
-              Flat, honest rates you see before work begins. Plus a free estimate on every job.
+              Flat, honest rates you see before work begins. Plus a free estimate with any service.
             </p>
           </div>
         </Reveal>

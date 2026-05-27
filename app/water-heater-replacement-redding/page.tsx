@@ -140,7 +140,7 @@ const waterHeaterFAQs = [
   {
     question: 'How much does water heater replacement cost in Redding, CA?',
     answer:
-      "Every replacement is quoted upfront before any work starts. The total includes the new unit, labor, permit, disposal, and seismic strapping. Tankless conversions are higher because of the additional gas line and venting work. Call (530) 704-6989 for a free estimate — no surprise charges.",
+      "Every replacement is quoted upfront before any work starts. The total includes the new unit, labor, permit, disposal, and seismic strapping. Tankless conversions are higher because of the additional gas line and venting work. Call (530) 704-6989 for a free estimate with any service — no surprise charges.",
   },
   {
     question: 'Why do water heaters fail so fast in Redding?',
@@ -235,7 +235,7 @@ export default function WaterHeaterReplacementReddingPage() {
                 </Link>
               </div>
               <p className="mt-6 text-sm text-gray-300">
-                Free estimate before work starts · Permit, disposal, and seismic strapping
+                Free estimate with any service · Permit, disposal, and seismic strapping
                 included · Mon–Fri 8:00a–4:30p
               </p>
             </div>

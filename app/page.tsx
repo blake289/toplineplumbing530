@@ -42,7 +42,7 @@ const homepageFAQs = [
   },
   {
     question: "How much does a plumber cost in Redding, CA?",
-    answer: "Our pricing varies by job. We always provide upfront pricing before any work begins — no hidden fees or surprise bills. Call (530) 704-6989 for a free estimate.",
+    answer: "Our pricing varies by job. We always provide upfront pricing before any work begins — no hidden fees or surprise bills. Call (530) 704-6989 for a free estimate with any service.",
   },
   {
     question: "What areas does Topline Plumbing serve?",
@@ -50,7 +50,7 @@ const homepageFAQs = [
   },
   {
     question: "Do you repair and replace water heaters in Redding?",
-    answer: "Yes. We repair and replace all makes and models of water heaters, including tankless water heaters. Same-day water heater service is available in most cases. Call (530) 704-6989 for a free estimate.",
+    answer: "Yes. We repair and replace all makes and models of water heaters, including tankless water heaters. Same-day water heater service is available in most cases. Call (530) 704-6989 for a free estimate with any service.",
   },
 ];
 
