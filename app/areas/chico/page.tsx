@@ -5,6 +5,8 @@ import FAQSection from '@/components/layout/FAQSection';
 import { getCityFaqs } from '@/lib/cityFaqs';
 import React from 'react';
 import Link from 'next/link';
+import LocalContext from '@/components/sections/LocalContext';
+import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
   title: 'Plumber in Chico, CA | Topline Plumbing',
@@ -43,13 +45,15 @@ export default function ChicoPage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Chico CA</span>
         </div>
       </div>
+
+      <LocalContext profile={getCityProfile('chico')} />
 
       {/* Main Content */}
       <section className="py-16 bg-white">
@@ -62,7 +66,7 @@ export default function ChicoPage() {
                 Topline Plumbing 530 is proud to serve Chico, Butte County with professional plumbing services. Our licensed plumbers have been serving Chico homeowners and businesses since 1998, completing thousands of plumbing jobs across Northern California with a 5-Star Rated.
               </p>
               <p className="text-lg text-gray-700">
-                Whether you need emergency plumbing service at 2am or a scheduled water heater installation, our licensed plumbers in Chico are ready to help. We offer same-day plumbing service for most repairs in Chico and surrounding areas.
+                Whether you need same-day emergency repair during business hours (Mon–Fri 8:00a–4:30p) or a scheduled water heater installation, our licensed plumbers are ready to help. We offer same-day plumbing service for most repairs in Chico and surrounding areas.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-6">Complete Plumbing Services in Chico CA</h2>
@@ -70,28 +74,28 @@ export default function ChicoPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumber Chico</Link>
+                    <Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumber Chico</Link>
                   </h3>
                   <p className="text-gray-700">Topline handles plumbing emergencies in Chico during business hours (Mon–Fri 8:00a–4:30p) — burst pipes, water heater flooding, sewer backups, and all urgent plumbing problems. Same-day response across the Redding area.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning Service Chico</Link>
+                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Chico</Link>
                   </h3>
                   <p className="text-gray-700">Clogged drain in Chico? Slow bathroom drain? Kitchen sink backup? Our licensed plumbers provide professional drain cleaning using advanced equipment. We clear clogged drains fast — usually in under an hour.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater Repair & Installation Chico</Link>
+                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Chico</Link>
                   </h3>
                   <p className="text-gray-700">No hot water in Chico? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and replacement. Same-day water heater service available in Chico.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Water Heater Installation Chico</Link>
+                    <Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Water Heater Installation Chico</Link>
                   </h3>
                   <p className="text-gray-700">Upgrade to a tankless water heater for endless hot water and energy savings. Professional installation with warranty.</p>
                 </div>
@@ -134,14 +138,14 @@ export default function ChicoPage() {
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Plumbing Service Areas Near Chico</h2>
               <p className="text-gray-700 mb-4">In addition to Chico, we provide licensed plumbing service throughout Northern California including:</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                <Link href="/areas/redding" className="text-blue-600 hover:underline">Plumber Redding</Link>
-                <Link href="/areas/yuba-city" className="text-blue-600 hover:underline">Plumber Yuba City</Link>
-                <Link href="/areas/marysville" className="text-blue-600 hover:underline">Plumber Marysville</Link>
-                <Link href="/areas/paradise" className="text-blue-600 hover:underline">Plumber Paradise</Link>
-                <Link href="/areas/oroville" className="text-blue-600 hover:underline">Plumber Oroville</Link>
-                <Link href="/areas/red-bluff" className="text-blue-600 hover:underline">Plumber Red Bluff</Link>
-                <Link href="/areas/anderson" className="text-blue-600 hover:underline">Plumber Anderson</Link>
-                <Link href="/areas/grass-valley" className="text-blue-600 hover:underline">Plumber Grass Valley</Link>
+                <Link href="/areas/redding" className="text-blue-600 hover:underline block py-2">Plumber Redding</Link>
+                <Link href="/areas/yuba-city" className="text-blue-600 hover:underline block py-2">Plumber Yuba City</Link>
+                <Link href="/areas/marysville" className="text-blue-600 hover:underline block py-2">Plumber Marysville</Link>
+                <Link href="/areas/paradise" className="text-blue-600 hover:underline block py-2">Plumber Paradise</Link>
+                <Link href="/areas/oroville" className="text-blue-600 hover:underline block py-2">Plumber Oroville</Link>
+                <Link href="/areas/red-bluff" className="text-blue-600 hover:underline block py-2">Plumber Red Bluff</Link>
+                <Link href="/areas/anderson" className="text-blue-600 hover:underline block py-2">Plumber Anderson</Link>
+                <Link href="/areas/grass-valley" className="text-blue-600 hover:underline block py-2">Plumber Grass Valley</Link>
               </div>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Chico - Same-Day Service</h2>
@@ -170,16 +174,16 @@ export default function ChicoPage() {
               {/* Services Card */}
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Chico Services</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline">Emergency Plumbing</Link></li>
-                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline">Drain Cleaning</Link></li>
-                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline">Water Heater</Link></li>
-                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline">Tankless Upgrades</Link></li>
-                  <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline">Repiping</Link></li>
-                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline">Sewer Line</Link></li>
-                  <li><Link href="/services/gas-line" className="text-blue-600 hover:underline">Gas Line</Link></li>
-                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline">Leak Detection</Link></li>
-                  <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline">Fixture Installs</Link></li>
+                <ul>
+                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
+                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
+                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
+                  <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
+                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
+                  <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
+                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
+                  <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>
                 </ul>
               </div>
 

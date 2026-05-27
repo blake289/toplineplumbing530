@@ -108,7 +108,19 @@ export default function TanklessWaterHeaterPage() {
         },
       ]}
       ctaText="Ready to Upgrade to Tankless?"
-    />
+      gallery={{
+        photos: [
+          'PXL_20230825_162506459.jpg',
+          'PXL_20230825_212741148.jpg',
+          'PXL_20230829_225325304.jpg',
+          'PXL_20230907_172844004.jpg',
+          'PXL_20230911_181844320.jpg',
+          'PXL_20230911_183623813.jpg',
+        ],
+        title: 'Recent Tankless Installs',
+        subtitle: 'Tankless water heater installs and upgrades across Northern California.',
+      }}
+          />
     </>
   );
 }

@@ -95,7 +95,19 @@ export default function RepipingServicesPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230824_203617356.jpg',
+          'PXL_20230825_212644110.jpg',
+          'PXL_20230829_225306088.MP.jpg',
+          'PXL_20230906_190237285.jpg',
+          'PXL_20230911_181811472.jpg',
+          'PXL_20230911_182304434.jpg',
+        ],
+        title: 'Recent Repipe Projects',
+        subtitle: 'Galvanized-to-copper, copper-to-PEX, full-home repipes — done clean, done right.',
+      }}
+          />
     </>
   );
 }

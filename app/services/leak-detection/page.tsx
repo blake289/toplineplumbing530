@@ -88,7 +88,19 @@ export default function LeakDetectionPage() {
             ],
           },
         ]}
-      />
+      gallery={{
+        photos: [
+          'PXL_20230825_162316080.MP.jpg',
+          'PXL_20230825_212727678.jpg',
+          'PXL_20230829_225313506.jpg',
+          'PXL_20230907_171527829.jpg',
+          'PXL_20230911_181819978.jpg',
+          'PXL_20230911_183238954.jpg',
+        ],
+        title: 'Recent Leak Detection Jobs',
+        subtitle: 'Slab leaks, supply line leaks, hidden moisture — found and fixed.',
+      }}
+            />
     </>
   );
 }

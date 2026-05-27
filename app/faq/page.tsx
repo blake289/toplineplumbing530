@@ -72,7 +72,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How much does it cost to replace a water heater in Redding?',
         answer:
-          'Replacement cost varies by job — the unit, installation complexity, permits, and whether you\'re going tank or tankless all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate.',
+          'Replacement cost varies by job — the unit, installation complexity, permits, and whether you\'re going tank or tankless all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate with any service.',
       },
       {
         question: 'Should I upgrade to a tankless water heater?',
@@ -93,7 +93,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How much does drain cleaning cost?',
         answer:
-          'Drain cleaning cost varies by job — a simple single-drain clear is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate.',
+          'Drain cleaning cost varies by job — a simple single-drain clear is different from a main line clog or one requiring camera inspection or hydrojetting. We always quote the price upfront before starting work. Call (530) 704-6989 for a free estimate with any service.',
       },
       {
         question: 'What causes frequent drain clogs?',
@@ -119,7 +119,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'Do you offer free estimates?',
         answer:
-          'We offer free phone estimates for straightforward jobs. For complex issues that require an on-site diagnosis (like slab leaks or sewer problems), there may be a diagnostic fee — which we waive if you hire us to do the repair.',
+          'Yes — free estimates are included with any service we perform. For straightforward jobs we can give you a ballpark range over the phone. For on-site diagnosis, the estimate is included when you book the work — we don\'t charge a separate fee for the estimate, but we also don\'t roll a truck just to quote and walk away.',
       },
       {
         question: 'What forms of payment do you accept?',
@@ -212,7 +212,7 @@ export default function FAQPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="px-4 py-2 rounded-full text-sm font-medium text-navy-900 bg-white border border-gray-200 hover:bg-navy-900 hover:text-white hover:border-navy-900 transition-all"
+                className="px-4 py-2.5 rounded-full text-sm font-medium text-navy-900 bg-white border border-gray-200 hover:bg-navy-900 hover:text-white hover:border-navy-900 transition-all inline-flex items-center min-h-[44px]"
               >
                 {cat.name}
               </a>

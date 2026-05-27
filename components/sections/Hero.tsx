@@ -63,6 +63,31 @@ export default function Hero() {
               </svg>
             </a>
 
+            {/* Owner trust unit */}
+            <a
+              href="/about"
+              className="inline-flex items-center gap-3 mb-5 group"
+              aria-label="Meet Joe and Paulette Torculas, owners of Topline Plumbing"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/joe-paulette.webp"
+                alt="Joe and Paulette Torculas — Topline Plumbing owners"
+                width={44}
+                height={44}
+                className="w-11 h-11 rounded-full object-cover ring-2 ring-white shadow-sm flex-shrink-0"
+                loading="eager"
+              />
+              <span className="text-left">
+                <span className="block text-[13px] font-semibold text-navy-900 leading-tight group-hover:underline">
+                  Joe &amp; Paulette Torculas
+                </span>
+                <span className="block text-[12px] text-gray-500 leading-tight">
+                  Family-owned · Serving Redding since 1998
+                </span>
+              </span>
+            </a>
+
             {/* Trust row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-700 font-medium mb-6">
               {[
@@ -101,7 +126,7 @@ export default function Hero() {
             {/* Trust badges */}
             {/* Trust badges */}
             <div className="mt-7 pt-6 border-t border-gray-200/60">
-              <p className="text-[11px] font-semibold tracking-[0.15em] text-gray-400 uppercase mb-3 text-center lg:text-left">
+              <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-400 uppercase mb-3 text-center lg:text-left">
                 Trusted &amp; Reviewed Across
               </p>
               <div className="grid grid-cols-4 gap-4">
@@ -150,7 +175,7 @@ export default function Hero() {
                     <div className="text-gray-400">{badge.icon}</div>
                     <div>
                       <p className="text-[13px] font-semibold text-gray-600 leading-tight">{badge.label}</p>
-                      <p className="text-[11px] text-gray-400 leading-tight">{badge.sub}</p>
+                      <p className="text-[12px] text-gray-400 leading-tight">{badge.sub}</p>
                     </div>
                   </div>
                 ))}
@@ -170,7 +195,7 @@ export default function Hero() {
                 </p>
               </div>
               <HeroEstimateForm />
-              <p className="mt-3 text-[11px] text-gray-400 text-center leading-relaxed">
+              <p className="mt-3 text-[12px] text-gray-400 text-center leading-relaxed">
                 By submitting you agree to be contacted by Topline Plumbing. We never share your information.
               </p>
             </div>

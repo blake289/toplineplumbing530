@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Card from '@/components/ui/Card';
 import FAQSection from '@/components/layout/FAQSection';
+import ServiceGallery from '@/components/sections/ServiceGallery';
 
 interface Stat {
   value: string;
@@ -30,6 +31,12 @@ interface RelatedCallout {
   label: string;
 }
 
+interface GalleryProp {
+  photos: string[];
+  title?: string;
+  subtitle?: string;
+}
+
 interface ServicePageProps {
   hero: {
     title: string;
@@ -43,6 +50,7 @@ interface ServicePageProps {
   whenToReplace?: string[];
   services: ServiceDetail[];
   faqs?: FAQ[];
+  gallery?: GalleryProp;
   ctaText?: string;
 }
 
@@ -55,6 +63,7 @@ export default function ServicePageTemplate({
   whenToReplace,
   services,
   faqs,
+  gallery,
   ctaText = "Not sure what you need?",
 }: ServicePageProps) {
   return (
@@ -264,6 +273,15 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* Gallery — only renders if gallery prop is provided */}
+      {gallery && gallery.photos.length > 0 && (
+        <ServiceGallery
+          photos={gallery.photos}
+          title={gallery.title}
+          subtitle={gallery.subtitle}
+        />
+      )}
 
       {/* FAQ Section — only renders if faqs prop is provided */}
       {faqs && faqs.length > 0 && (

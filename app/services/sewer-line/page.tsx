@@ -88,7 +88,19 @@ export default function SewerLinePage() {
             ],
           },
         ]}
-      />
+      gallery={{
+        photos: [
+          'PXL_20230824_190715691.jpg',
+          'PXL_20230825_210252443.jpg',
+          'PXL_20230829_172350300.jpg',
+          'PXL_20230905_173519922.MP.jpg',
+          'PXL_20230909_211732383.jpg',
+          'PXL_20230911_182142819.jpg',
+        ],
+        title: 'Recent Sewer Line Work',
+        subtitle: 'Camera inspections, root removal, line repairs across Shasta, Tehama, Butte, and Yuba counties.',
+      }}
+            />
     </>
   );
 }

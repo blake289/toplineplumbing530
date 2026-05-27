@@ -312,7 +312,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg text-white/80 mb-8">
-            Call now or request a free estimate — we respond fast.
+            Call now or request a free estimate with any service — we respond fast.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

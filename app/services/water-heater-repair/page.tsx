@@ -25,7 +25,7 @@ const waterHeaterFAQs = [
   },
   {
     question: "How much does water heater replacement cost in Redding, CA?",
-    answer: "Replacement cost varies by job — the unit, installation complexity, and permits all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate.",
+    answer: "Replacement cost varies by job — the unit, installation complexity, and permits all factor in. We quote every replacement upfront before any work begins, so you know the exact price before you approve. Call (530) 704-6989 for a free estimate with any service.",
   },
   {
     question: "Can you replace my water heater the same day?",
@@ -119,7 +119,19 @@ export default function WaterHeaterRepairPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230824_190214986.jpg',
+          'PXL_20230825_184458238.jpg',
+          'PXL_20230829_154244043.jpg',
+          'PXL_20230831_195054222.jpg',
+          'PXL_20230909_193611657.jpg',
+          'PXL_20230911_182128368.MP.jpg',
+        ],
+        title: 'Recent Water Heater Jobs',
+        subtitle: 'Installs, replacements, repairs. Tank and tankless. Every photo is from a Topline job.',
+      }}
+          />
     </>
   );
 }

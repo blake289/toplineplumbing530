@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
+import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 
 export const metadata: Metadata = {
   title: 'Emergency Plumbing in Redding, CA | Topline Plumbing',
@@ -140,7 +141,20 @@ export default function EmergencyPlumbingPage() {
         },
       ]}
       ctaText="Need Emergency Help Right Now?"
-    />
+      gallery={{
+        photos: [
+          'PXL_20230824_202929211.jpg',
+          'PXL_20230825_210300418.jpg',
+          'PXL_20230829_172359542.jpg',
+          'PXL_20230905_173548142.jpg',
+          'PXL_20230909_211752855.jpg',
+          'PXL_20230911_182154883.jpg',
+        ],
+        title: 'Recent Emergency Jobs',
+        subtitle: 'Burst pipes, water heater floods, sewer backups — same-day response during business hours.',
+      }}
+          />
+      <AfterHoursCapture />
     </>
   );
 }

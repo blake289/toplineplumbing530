@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const fixtureFAQs = [
   {
     question: 'How much does toilet installation cost in Redding, CA?',
-    answer: 'Toilet installation cost varies by job — the complexity of the install and whether the existing flange needs repair both factor in. We quote every job upfront before any work begins. Call (530) 704-6989 for a free estimate.',
+    answer: 'Toilet installation cost varies by job — the complexity of the install and whether the existing flange needs repair both factor in. We quote every job upfront before any work begins. Call (530) 704-6989 for a free estimate with any service.',
   },
   {
     question: 'Can you install a fixture I already purchased?',
@@ -88,7 +88,19 @@ export default function FixtureInstallsPage() {
           ],
         },
       ]}
-    />
+      gallery={{
+        photos: [
+          'PXL_20230825_162604778.MP.jpg',
+          'PXL_20230825_213739951.MP.jpg',
+          'PXL_20230830_180651564.jpg',
+          'PXL_20230907_172913442.jpg',
+          'PXL_20230911_181942769.jpg',
+          'PXL_20230911_183626309.jpg',
+        ],
+        title: 'Recent Fixture Installs',
+        subtitle: 'Faucets, toilets, sinks, showers, and disposal swaps — clean installs, no callbacks.',
+      }}
+          />
     </>
   );
 }
