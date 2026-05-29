@@ -5,11 +5,11 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumbing in Redding, CA | Topline Plumbing',
+  title: 'Emergency Plumber in Redding, CA | Topline Plumbing',
   description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/emergency' },
   openGraph: {
-    title: 'Emergency Plumbing in Redding, CA | Topline Plumbing',
+    title: 'Emergency Plumber in Redding, CA | Topline Plumbing',
     description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/emergency',
     siteName: 'Topline Plumbing',
@@ -105,7 +105,7 @@ export default function EmergencyPlumbingPage() {
       <ServicePageTemplate
       faqs={emergencyFAQs}
       hero={{
-        title: 'Emergency Plumbing in Redding — Same-Day Response During Business Hours',
+        title: 'Emergency Plumber in Redding — Same-Day Response During Business Hours',
         description: [
           "Burst pipe flooding your home? Sewage backing up? Gas leak during business hours? Call us now.",
           "Topline Plumbing handles emergency plumbing across Redding and Northern California Monday through Friday, 8:00a to 4:30p. Same-day response, upfront pricing, and licensed technicians who actually finish the job."
