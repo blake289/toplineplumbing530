@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated monthly report artifacts (scripts/run-monthly-report.sh)
+.planning/Topline-Plumbing-Report-*
+.planning/client-report-*
+.planning/monthly-report-*
+.planning/report-cron.log
+.planning/report-launchd.*.log
