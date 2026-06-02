@@ -62,6 +62,26 @@ export default function ShastaLakePage() {
         },
       ]}
     />
+      {/* City Service Links */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Plumbing Services in Shasta Lake</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/emergency-plumber-shasta-lake" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Emergency Plumber Shasta Lake</span>
+            </Link>
+            <Link href="/drain-cleaning-shasta-lake" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Drain Cleaning Shasta Lake</span>
+            </Link>
+            <Link href="/water-heater-repair-shasta-lake" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Water Heater Repair Shasta Lake</span>
+            </Link>
+            <Link href="/sewer-line-shasta-lake" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Sewer Line Shasta Lake</span>
+            </Link>
+          </div>
+        </div>
+      </section>
       <FAQSection faqs={getCityFaqs('shasta-lake')} />
     </>
   );

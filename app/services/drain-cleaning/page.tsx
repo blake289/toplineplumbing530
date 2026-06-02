@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
@@ -101,6 +102,19 @@ export default function DrainCleaningPage() {
         subtitle: 'Real drains, real sewer lines, real Northern California homes. Every photo is from a Topline job.',
       }}
           />
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Drain Cleaning by City</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <Link href="/drain-cleaning-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Redding</span></Link>
+            <Link href="/drain-cleaning-anderson" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Anderson</span></Link>
+            <Link href="/drain-cleaning-shasta-lake" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Shasta Lake</span></Link>
+            <Link href="/drain-cleaning-palo-cedro" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Palo Cedro</span></Link>
+            <Link href="/drain-cleaning-bella-vista" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Bella Vista</span></Link>
+            <Link href="/drain-cleaning-red-bluff" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Red Bluff</span></Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

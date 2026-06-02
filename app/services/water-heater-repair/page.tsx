@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
@@ -132,6 +133,16 @@ export default function WaterHeaterRepairPage() {
         subtitle: 'Installs, replacements, repairs. Tank and tankless. Every photo is from a Topline job.',
       }}
           />
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Water Heater Service by City</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <Link href="/water-heater-replacement-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Redding</span></Link>
+            <Link href="/water-heater-repair-anderson" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Anderson</span></Link>
+            <Link href="/water-heater-repair-shasta-lake" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Shasta Lake</span></Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

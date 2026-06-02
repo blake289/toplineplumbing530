@@ -235,6 +235,27 @@ export default function AndersonPage() {
         </div>
       </section>
 
+      {/* City Service Links */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Plumbing Services in Anderson</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/emergency-plumber-anderson" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Emergency Plumber Anderson</span>
+            </Link>
+            <Link href="/drain-cleaning-anderson" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Drain Cleaning Anderson</span>
+            </Link>
+            <Link href="/water-heater-repair-anderson" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Water Heater Repair Anderson</span>
+            </Link>
+            <Link href="/sewer-line-anderson" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Sewer Line Anderson</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <FAQSection faqs={getCityFaqs('anderson')} />
 

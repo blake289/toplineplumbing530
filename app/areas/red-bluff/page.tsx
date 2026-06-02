@@ -235,6 +235,21 @@ export default function RedBluffPage() {
         </div>
       </section>
 
+      {/* City Service Links */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Plumbing Services in Red Bluff</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <Link href="/emergency-plumber-red-bluff" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Emergency Plumber Red Bluff</span>
+            </Link>
+            <Link href="/drain-cleaning-red-bluff" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Drain Cleaning Red Bluff</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <FAQSection faqs={getCityFaqs('red-bluff')} />
 

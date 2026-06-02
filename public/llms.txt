@@ -160,6 +160,28 @@ Free homeowner guides written by licensed Redding plumbers:
 - `/areas/truckee` — Plumber in Truckee, CA
 - `/areas/south-lake-tahoe` — Plumber in South Lake Tahoe, CA
 
+## City + Service Pages
+
+Service-specific landing pages for each city we serve:
+
+- `/emergency-plumber-redding` — Emergency Plumber in Redding, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-anderson` — Emergency Plumber in Anderson, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-shasta-lake` — Emergency Plumber in Shasta Lake, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-palo-cedro` — Emergency Plumber in Palo Cedro, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-bella-vista` — Emergency Plumber in Bella Vista, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-red-bluff` — Emergency Plumber in Red Bluff, CA — same-day emergency plumbing during business hours
+- `/drain-cleaning-redding` — Drain Cleaning in Redding, CA — fast clog and drain clearing
+- `/drain-cleaning-anderson` — Drain Cleaning in Anderson, CA — fast clog and drain clearing
+- `/drain-cleaning-shasta-lake` — Drain Cleaning in Shasta Lake, CA — fast clog and drain clearing
+- `/drain-cleaning-palo-cedro` — Drain Cleaning in Palo Cedro, CA — fast clog and drain clearing
+- `/drain-cleaning-bella-vista` — Drain Cleaning in Bella Vista, CA — fast clog and drain clearing
+- `/drain-cleaning-red-bluff` — Drain Cleaning in Red Bluff, CA — fast clog and drain clearing
+- `/water-heater-repair-shasta-lake` — Water Heater Repair in Shasta Lake, CA — repair and replacement, all brands
+- `/water-heater-repair-anderson` — Water Heater Repair in Anderson, CA — repair and replacement, all brands
+- `/sewer-line-shasta-lake` — Sewer Line Service in Shasta Lake, CA — repair, replacement, camera inspection
+- `/sewer-line-anderson` — Sewer Line Service in Anderson, CA — repair, replacement, camera inspection
+- `/commercial-plumbing-redding` — Commercial Plumbing in Redding, CA — plumbing for businesses and property managers
+
 ## Extended Reference
 
 For complete service details, pricing ranges, and all FAQs, see: https://toplineplumbingco.com/llms-full.txt

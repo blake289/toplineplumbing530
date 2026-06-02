@@ -137,6 +137,30 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Popular City Services */}
+        <div className="pt-10 pb-2">
+          <h4 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Popular Services by City</h4>
+          <div className="flex flex-wrap gap-1.5">
+            {([
+              ['Emergency Plumber Redding', '/emergency-plumber-redding'],
+              ['Drain Cleaning Redding', '/drain-cleaning-redding'],
+              ['Commercial Plumbing Redding', '/commercial-plumbing-redding'],
+              ['Emergency Plumber Anderson', '/emergency-plumber-anderson'],
+              ['Drain Cleaning Anderson', '/drain-cleaning-anderson'],
+              ['Emergency Plumber Shasta Lake', '/emergency-plumber-shasta-lake'],
+              ['Drain Cleaning Shasta Lake', '/drain-cleaning-shasta-lake'],
+            ] as Array<[string, string]>).map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="inline-flex items-center px-3 py-2 rounded-full text-[13px] text-gray-400 bg-white/[0.04] border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-[background-color,color,border-color] duration-[160ms] ease-snappy"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="pt-8 mt-2 flex flex-col md:flex-row items-center justify-between gap-4 text-[15px]">
           <p className="text-white font-semibold tracking-tight">
