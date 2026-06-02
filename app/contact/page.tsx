@@ -118,6 +118,23 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <section className="pb-16 md:pb-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-lg">
+            <iframe
+              title="Topline Plumbing service area — Redding, CA"
+              src="https://www.google.com/maps?cid=353211204535522869&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

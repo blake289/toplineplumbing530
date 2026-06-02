@@ -81,17 +81,17 @@ const serviceSchema = {
         {
           title: 'Water Heater Repair & Replacement',
           description: <>Is your 8-12 year old water heater showing signs of failure? We&apos;ve installed thousands of units in Northern California — explore same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> options. Get a free inspection today before a disaster strikes.</>,
-          href: '/services/water-heater-repair',
+          href: '/water-heater-repair-shasta-lake',
         },
         {
           title: 'Expert Drain Cleaning',
           description: 'From slow kitchen sinks to backed-up main sewer lines, our mechanical augers will restore flow to your home without the use of pipe-damaging chemicals.',
-          href: '/services/drain-cleaning',
+          href: '/drain-cleaning-shasta-lake',
         },
         {
           title: 'Same-Day Emergency Plumbing',
           description: 'Burst pipes or a flooded garage during business hours? Call (530) 704-6989 Mon–Fri 8:00a–4:30p for same-day response and flat-rate, upfront pricing.',
-          href: '/services/emergency',
+          href: '/emergency-plumber-shasta-lake',
         },
       ]}
     />

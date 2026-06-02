@@ -42,6 +42,14 @@ export default function HeroEstimateForm() {
 
       if (!response.ok) throw new Error('Submission failed');
 
+      // GA4 conversion: fire generate_lead on successful submit
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          form: 'hero_estimate',
+          service: data.service,
+        });
+      }
+
       setSubmitStatus('success');
       reset();
     } catch (error) {

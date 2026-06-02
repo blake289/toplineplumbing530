@@ -92,13 +92,6 @@ export default function SchemaMarkup() {
       "https://www.instagram.com/toplineplumbing/",
       "https://www.google.com/maps?cid=353211204535522869"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "45",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

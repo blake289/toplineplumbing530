@@ -178,8 +178,15 @@ Service-specific landing pages for each city we serve:
 - `/drain-cleaning-red-bluff` — Drain Cleaning in Red Bluff, CA — fast clog and drain clearing
 - `/water-heater-repair-shasta-lake` — Water Heater Repair in Shasta Lake, CA — repair and replacement, all brands
 - `/water-heater-repair-anderson` — Water Heater Repair in Anderson, CA — repair and replacement, all brands
+- `/water-heater-repair-palo-cedro` — Water Heater Repair in Palo Cedro, CA — repair and replacement, all brands
+- `/water-heater-repair-bella-vista` — Water Heater Repair in Bella Vista, CA — repair and replacement, all brands
+- `/water-heater-repair-red-bluff` — Water Heater Repair in Red Bluff, CA — repair and replacement, all brands
 - `/sewer-line-shasta-lake` — Sewer Line Service in Shasta Lake, CA — repair, replacement, camera inspection
 - `/sewer-line-anderson` — Sewer Line Service in Anderson, CA — repair, replacement, camera inspection
+- `/sewer-line-redding` — Sewer Line Service in Redding, CA — repair, replacement, camera inspection
+- `/sewer-line-palo-cedro` — Sewer Line Service in Palo Cedro, CA — repair, replacement, camera inspection
+- `/sewer-line-bella-vista` — Sewer Line Service in Bella Vista, CA — repair, replacement, camera inspection
+- `/sewer-line-red-bluff` — Sewer Line Service in Red Bluff, CA — repair, replacement, camera inspection
 - `/commercial-plumbing-redding` — Commercial Plumbing in Redding, CA — plumbing for businesses and property managers
 - `/water-heater-replacement-redding` — Water Heater Replacement in Redding, CA — same-day replacement and tankless conversions
 

@@ -81,17 +81,17 @@ const serviceSchema = {
         {
           title: 'Complete Water Heater Services',
           description: <>From diagnostic inspections to full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>, we handle all water heater needs with same-day availability and upfront pricing.</>,
-          href: '/services/water-heater-repair',
+          href: '/water-heater-repair-bella-vista',
         },
         {
           title: 'Professional Drain Cleaning',
           description: 'Clear tough clogs with professional mechanical augering. No harsh chemicals, just effective results — quoted upfront before we start.',
-          href: '/services/drain-cleaning',
+          href: '/drain-cleaning-bella-vista',
         },
         {
           title: 'Same-Day Emergency Service',
           description: 'Burst pipes? Gas leak? Flooding? Call us during business hours (Mon–Fri 8:00a–4:30p) for same-day response and upfront pricing.',
-          href: '/services/emergency',
+          href: '/emergency-plumber-bella-vista',
         },
       ]}
     />

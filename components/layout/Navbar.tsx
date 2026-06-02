@@ -133,16 +133,10 @@ export default function Navbar() {
                         {[
                           ['Redding', '/areas/redding'],
                           ['Anderson', '/areas/anderson'],
-                          ['Chico', '/areas/chico'],
-                          ['Paradise', '/areas/paradise'],
-                          ['Oroville', '/areas/oroville'],
+                          ['Shasta Lake', '/areas/shasta-lake'],
+                          ['Palo Cedro', '/areas/palo-cedro'],
+                          ['Bella Vista', '/areas/bella-vista'],
                           ['Red Bluff', '/areas/red-bluff'],
-                          ['Yuba City', '/areas/yuba-city'],
-                          ['Marysville', '/areas/marysville'],
-                          ['South Lake Tahoe', '/areas/south-lake-tahoe'],
-                          ['Truckee', '/areas/truckee'],
-                          ['Grass Valley', '/areas/grass-valley'],
-                          ['Auburn', '/areas/auburn'],
                         ].map(([label, href]) => (
                           <Link
                             key={href}

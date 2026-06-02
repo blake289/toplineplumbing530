@@ -109,21 +109,21 @@ export default function AndersonPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumber Anderson</Link>
+                    <Link href="/emergency-plumber-anderson" className="text-blue-600 hover:underline block py-2">Emergency Plumber Anderson</Link>
                   </h3>
                   <p className="text-gray-700">Topline handles plumbing emergencies in Anderson during business hours (Mon–Fri 8:00a–4:30p) — burst pipes, water heater flooding, sewer backups, and all urgent plumbing problems. Same-day response across the Redding area.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Anderson</Link>
+                    <Link href="/drain-cleaning-anderson" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Anderson</Link>
                   </h3>
                   <p className="text-gray-700">Clogged drain in Anderson? Slow bathroom drain? Kitchen sink backup? Our licensed plumbers provide professional drain cleaning using advanced equipment. We clear clogged drains fast — usually in under an hour.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Anderson</Link>
+                    <Link href="/water-heater-repair-anderson" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Anderson</Link>
                   </h3>
                   <p className="text-gray-700">No hot water in Anderson? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>. Same-day water heater service available in Anderson.</p>
                 </div>
@@ -210,13 +210,13 @@ export default function AndersonPage() {
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Anderson Services</h3>
                 <ul>
-                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
-                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
-                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/emergency-plumber-anderson" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
+                  <li><Link href="/drain-cleaning-anderson" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
+                  <li><Link href="/water-heater-repair-anderson" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
                   <li><Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">Water Heater Replacement</Link></li>
                   <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
                   <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
-                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
+                  <li><Link href="/sewer-line-anderson" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
                   <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
                   <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
                   <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>

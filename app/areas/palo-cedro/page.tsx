@@ -86,12 +86,12 @@ const serviceSchema = {
         {
           title: 'Water Heater Maintenance & Repair',
           description: <>Routine service with upfront pricing — and full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> when repair isn&apos;t the right call. Keep your water heater running efficiently and prevent costly breakdowns.</>,
-          href: '/services/water-heater-repair',
+          href: '/water-heater-repair-palo-cedro',
         },
         {
           title: 'Same-Day Emergency Services',
           description: 'Burst pipes, water heater failures, or sewer backups? Call during business hours (Mon–Fri 8:00a–4:30p) for same-day response and upfront pricing.',
-          href: '/services/emergency',
+          href: '/emergency-plumber-palo-cedro',
         },
       ]}
     />
