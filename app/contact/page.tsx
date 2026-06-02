@@ -1,5 +1,19 @@
 import { Metadata } from 'next';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/contact#webpage',
+  url: 'https://toplineplumbingco.com/contact',
+  name: 'Contact Topline Plumbing | Redding, CA',
+  description:
+    'Contact Topline Plumbing for plumbing services in Redding, CA. Call (530) 704-6989 or request a free estimate online.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
 
 export const metadata: Metadata = {
   title: 'Contact Topline Plumbing | Redding, CA',
@@ -19,6 +33,16 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://toplineplumbingco.com/' },
+          { name: 'Contact', url: 'https://toplineplumbingco.com/contact' },
+        ]}
+      />
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 text-white">Contact Us</h1>

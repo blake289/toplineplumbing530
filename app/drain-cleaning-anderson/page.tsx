@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -89,16 +88,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Anderson, CA — Septic-Safe Augering | Topline Plumbing',
+  title: 'Drain Cleaning Anderson, CA | Topline Plumbing',
   description:
-    'Drain cleaning in Anderson, CA. Septic-safe mechanical power augering — no caustic chemicals — for kitchen, bathroom, and main line clogs. Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Drain cleaning in Anderson, CA. Septic-safe power augering for kitchen, bath, and main line clogs. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-anderson',
   },
   openGraph: {
-    title: 'Drain Cleaning in Anderson, CA — Septic-Safe Augering | Topline Plumbing',
+    title: 'Drain Cleaning Anderson, CA | Topline Plumbing',
     description:
-      'Drain cleaning in Anderson, CA. Septic-safe mechanical power augering — no caustic chemicals — for kitchen, bathroom, and main line clogs from a licensed local plumber since 1998.',
+      'Drain cleaning in Anderson, CA. Septic-safe power augering for kitchen, bath, and main line clogs. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-anderson',
     siteName: 'Topline Plumbing',
     images: [
@@ -170,18 +169,8 @@ export default function DrainCleaningAndersonPage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -332,8 +321,9 @@ export default function DrainCleaningAndersonPage() {
               one of the most common calls we get out here.
             </p>
             <p>
-              In the newer Riverside Ave subdivisions and older in-town homes on city sewer, the
-              usual suspects are grease and food in the kitchen line, hair and soap scum in the
+              In the newer Riverside Ave subdivisions and older in-town homes — the ones drawing
+              municipal water from the City of Anderson Water Department and tied into city sewer —
+              the usual suspects are grease and food in the kitchen line, hair and soap scum in the
               bathroom, and root intrusion in aging main lines. And in Anderson&rsquo;s manufactured
               and mobile homes, the smaller-diameter drain runs need the right equipment so we clear
               the clog without damaging the pipe. Whatever your Anderson address — city sewer or

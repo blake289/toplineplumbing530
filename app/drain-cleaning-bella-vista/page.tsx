@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -74,21 +73,21 @@ const webPageSchema = {
   url: 'https://toplineplumbingco.com/drain-cleaning-bella-vista',
   name: 'Drain Cleaning in Bella Vista, CA — Septic-Safe & Same-Day',
   description:
-    'Septic-safe drain cleaning in Bella Vista, CA. Mechanical power augering, sewer camera inspection, and same-day clog removal during business hours. Licensed since 1998. Call (530) 704-6989.',
+    'Septic-safe drain cleaning in Bella Vista, CA. Power augering, sewer camera inspection, and same-day clog removal. Licensed since 1998. Call (530) 704-6989.',
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/drain-cleaning-bella-vista#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Bella Vista, CA — Septic-Safe & Same-Day | Topline Plumbing',
+  title: 'Drain Cleaning Bella Vista, CA | Topline Plumbing',
   description:
-    'Septic-safe drain cleaning in Bella Vista, CA. Mechanical power augering, sewer camera inspection, and same-day clog removal during business hours (Mon–Fri 8a–4:30p). Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Septic-safe drain cleaning in Bella Vista, CA. Power augering, sewer camera inspection, and same-day clog removal. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-bella-vista',
   },
   openGraph: {
-    title: 'Drain Cleaning in Bella Vista, CA — Septic-Safe & Same-Day | Topline Plumbing',
+    title: 'Drain Cleaning Bella Vista, CA | Topline Plumbing',
     description:
       'Septic-safe drain cleaning in Bella Vista, CA. Mechanical power augering, sewer camera inspection, and same-day clog removal during business hours. Licensed since 1998.',
     url: 'https://toplineplumbingco.com/drain-cleaning-bella-vista',
@@ -162,18 +161,8 @@ export default function DrainCleaningBellaVistaPage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -311,7 +300,10 @@ export default function DrainCleaningBellaVistaPage() {
             <p>
               Bella Vista is rural Shasta County — large parcels, ranchettes, and homes spread across
               the foothills east of Redding. Wells, septic, and outbuildings are the norm rather than
-              the exception, and that changes how drains should be cleared. The chemical drain cleaner
+              the exception — much of the area gets its supply from the Bella Vista Water District,
+              which pulls from Sacramento River surface water plus local wells, while some outlying
+              properties draw from private wells of their own. Whatever feeds the tap, the drain side
+              still runs to septic out here, and that changes how drains should be cleared. The chemical drain cleaner
               under your sink is the wrong tool out here: it only masks the clog, and it can throw off
               the bacterial balance a septic system needs to work. We clear drains mechanically, which
               physically removes the blockage and protects your tank and leach field.

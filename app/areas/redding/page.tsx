@@ -23,6 +23,39 @@ export const metadata: Metadata = {
   },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/redding#webpage',
+  url: 'https://toplineplumbingco.com/areas/redding',
+  name: 'Plumber in Redding, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Redding, California. Same-day emergency plumbing, drain cleaning, water heater repair, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/redding#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Redding, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Redding' },
+    { '@type': 'AdministrativeArea', name: 'Shasta County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};
+
 export default function ReddingPage() {
   return (
     <>
@@ -32,6 +65,8 @@ export default function ReddingPage() {
         { name: 'Plumber in Redding, CA', url: 'https://toplineplumbingco.com/areas/redding' },
       ]} />
       <FAQSchema faqs={getCityFaqs('redding')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -45,9 +80,9 @@ export default function ReddingPage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Redding CA</span>
         </div>
@@ -90,7 +125,7 @@ export default function ReddingPage() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Redding</Link>
                   </h3>
-                  <p className="text-gray-700">No hot water in Redding? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement in Redding</Link>. Same-day water heater service available.</p>
+                  <p className="text-gray-700">No hot water in Redding? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement in Redding</Link>. Same-day water heater service available.</p>
                 </div>
 
                 <div>

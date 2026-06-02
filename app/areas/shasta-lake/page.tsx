@@ -23,7 +23,38 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ShastaLakePage() {
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/shasta-lake#webpage',
+  url: 'https://toplineplumbingco.com/areas/shasta-lake',
+  name: 'Plumber in Shasta Lake, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Shasta Lake, California. Same-day emergency plumbing, drain cleaning, water heater repair, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/shasta-lake#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Shasta Lake, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Shasta Lake' },
+    { '@type': 'AdministrativeArea', name: 'Shasta County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};export default function ShastaLakePage() {
   return (
     <>
       <BreadcrumbSchema items={[
@@ -32,6 +63,8 @@ export default function ShastaLakePage() {
         { name: 'Plumber in Shasta Lake, CA', url: 'https://toplineplumbingco.com/areas/shasta-lake' },
       ]} />
       <FAQSchema faqs={getCityFaqs('shasta-lake')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <LocalContext profile={getCityProfile('shasta-lake')} />
 
       <LocationPageTemplate
@@ -47,7 +80,7 @@ export default function ShastaLakePage() {
       services={[
         {
           title: 'Water Heater Repair & Replacement',
-          description: <>Is your 8-12 year old water heater showing signs of failure? We&apos;ve installed thousands of units in Northern California — explore same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement</Link> options. Get a free inspection today before a disaster strikes.</>,
+          description: <>Is your 8-12 year old water heater showing signs of failure? We&apos;ve installed thousands of units in Northern California — explore same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> options. Get a free inspection today before a disaster strikes.</>,
           href: '/services/water-heater-repair',
         },
         {

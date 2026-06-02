@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -88,65 +87,17 @@ const webPageSchema = {
   about: { '@id': 'https://toplineplumbingco.com/emergency-plumber-palo-cedro#service' },
 };
 
-const emergencyHowToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'What to Do in a Plumbing Emergency Before the Plumber Arrives',
-  description:
-    'Step-by-step emergency response to limit damage from a burst pipe, well-system failure, or active leak on a Palo Cedro property before the plumber arrives.',
-  totalTime: 'PT10M',
-  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
-  tool: [
-    { '@type': 'HowToTool', name: 'Main water shut-off valve' },
-    { '@type': 'HowToTool', name: 'Well pump / pressure tank breaker' },
-    { '@type': 'HowToTool', name: 'Towels or wet/dry vacuum' },
-    { '@type': 'HowToTool', name: 'Phone to call emergency plumber' },
-  ],
-  step: [
-    {
-      '@type': 'HowToStep',
-      position: 1,
-      name: 'Shut off the water at the main or the pressure tank',
-      text: 'On a well system, shut off the main supply valve at the pressure tank or where the line enters the house. This stops the flow and keeps the well pump from cycling against a leak.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 2,
-      name: 'Cut power to the well pump if water is still flowing',
-      text: 'If the leak continues, flip the breaker for the well pump so it stops pulling water from the well into the broken line.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 3,
-      name: 'Turn off the water heater',
-      text: 'For gas water heaters, turn the control knob to the pilot position. For electric, flip the water heater breaker so the tank does not run dry.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 4,
-      name: 'Call Topline Plumbing',
-      text: 'Call (530) 704-6989 for emergency plumbing in Palo Cedro during business hours (Mon–Fri 8:00a–4:30p). Same-day response. Upfront pricing.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 5,
-      name: 'Protect valuables and document damage',
-      text: 'Move furniture, electronics, and valuables out of the affected area, soak up standing water, and take photos of the damage for your insurance claim.',
-    },
-  ],
-};
-
 export const metadata: Metadata = {
-  title: 'Emergency Plumber in Palo Cedro, CA — Same-Day Response | Topline Plumbing',
+  title: 'Emergency Plumber Palo Cedro, CA | Topline Plumbing',
   description:
-    'Emergency plumber serving Palo Cedro, CA. Same-day response during business hours (Mon–Fri 8a–4:30p) for burst pipes, well-pump "no water" failures, and septic backups. CSLB #596557. Call (530) 704-6989.',
+    'Emergency plumber in Palo Cedro, CA. Same-day response for burst pipes, well-pump failures, and septic backups. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-palo-cedro',
   },
   openGraph: {
-    title: 'Emergency Plumber in Palo Cedro, CA — Same-Day Response | Topline Plumbing',
+    title: 'Emergency Plumber Palo Cedro, CA | Topline Plumbing',
     description:
-      'Emergency plumber serving Palo Cedro, CA. Same-day response during business hours for burst pipes, well-pump "no water" failures, and septic backups. Licensed local plumber since 1998.',
+      'Emergency plumber in Palo Cedro, CA. Same-day response for burst pipes, well-pump failures, and septic backups. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-palo-cedro',
     siteName: 'Topline Plumbing',
     images: [
@@ -213,24 +164,8 @@ export default function EmergencyPlumberPaloCedroPage() {
         ]}
       />
       <FAQSchema faqs={emergencyFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-      <Script
-        id="howto-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencyHowToSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -411,9 +346,12 @@ export default function EmergencyPlumberPaloCedroPage() {
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
               Palo Cedro is the unincorporated community just east of Redding — large-lot
-              residential, horse properties, and small ranches. Most homes here are on private wells
-              and septic systems rather than city utilities, which changes the plumbing landscape
-              completely. We treat these jobs differently than in-town work, and that matters most
+              residential, horse properties, and small ranches. Because it&apos;s unincorporated,
+              there&apos;s no single water provider: depending on where you are in Palo Cedro your
+              supply comes from the Bella Vista Water District or a private well, and which one you&apos;re
+              on changes how we shut things down in an emergency — district-fed homes need the main or
+              meter valve closed, while well-fed homes need the pump breaker flipped to stop it cycling
+              into a leak. We treat these jobs differently than in-town work, and that matters most
               when something fails on a weekday and water is moving where it shouldn&apos;t.
             </p>
             <p>

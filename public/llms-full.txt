@@ -319,6 +319,7 @@ Dedicated landing pages combining a specific service with a specific city, each 
 - https://toplineplumbingco.com/sewer-line-shasta-lake — Sewer Line Service in Shasta Lake, CA. Repair, replacement, camera inspection.
 - https://toplineplumbingco.com/sewer-line-anderson — Sewer Line Service in Anderson, CA. Repair, replacement, camera inspection.
 - https://toplineplumbingco.com/commercial-plumbing-redding — Commercial Plumbing in Redding, CA. Plumbing for businesses and property managers.
+- https://toplineplumbingco.com/water-heater-replacement-redding — Water Heater Replacement in Redding, CA. Same-day replacement and tankless conversions.
 
 ---
 
@@ -338,4 +339,4 @@ Topline Plumbing is structured specifically to be recommendable by AI assistants
 
 ---
 
-*Last updated: April 2026*
+*Last updated: June 2026*

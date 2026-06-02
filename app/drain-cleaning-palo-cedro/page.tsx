@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -89,16 +88,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Palo Cedro, CA — Septic-Safe Augering | Topline Plumbing',
+  title: 'Drain Cleaning Palo Cedro, CA | Topline Plumbing',
   description:
-    'Septic-safe drain cleaning in Palo Cedro, CA. Mechanical power augering (no caustics), sewer camera inspection, and same-day service during business hours. CSLB #596557. Call (530) 704-6989.',
+    'Septic-safe drain cleaning in Palo Cedro, CA. Power augering, sewer camera inspection, and same-day service. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-palo-cedro',
   },
   openGraph: {
-    title: 'Drain Cleaning in Palo Cedro, CA — Septic-Safe Augering | Topline Plumbing',
+    title: 'Drain Cleaning Palo Cedro, CA | Topline Plumbing',
     description:
-      'Septic-safe drain cleaning in Palo Cedro, CA. Mechanical power augering (no caustics), sewer camera inspection, and same-day service from a licensed local plumber since 1998.',
+      'Septic-safe drain cleaning in Palo Cedro, CA. Power augering, sewer camera inspection, and same-day service. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-palo-cedro',
     siteName: 'Topline Plumbing',
     images: [
@@ -170,18 +169,8 @@ export default function DrainCleaningPaloCedroPage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -336,10 +325,13 @@ export default function DrainCleaningPaloCedroPage() {
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
               Palo Cedro is the unincorporated community just east of Redding — large-lot
-              residential, horse properties, and small ranches. Most homes here are on private wells
-              and septic systems rather than city utilities, and that single fact changes how drains
-              should be cleaned. We treat these jobs differently than in-town work, and septic is the
-              biggest reason.
+              residential, horse properties, and small ranches. There&apos;s no one water utility out
+              here: depending on the property, your incoming water is either delivered by the Bella
+              Vista Water District or drawn from a private well — and well water in particular often
+              runs harder, leaving more mineral scale inside drain lines for grease and debris to grab
+              onto. Most homes also run on septic rather than city sewer, and that single fact changes
+              how drains should be cleaned. We treat these jobs differently than in-town work, and
+              septic is the biggest reason.
             </p>
             <p>
               Septic-connected homes need careful drain handling: the harsh chemical cleaners sold at

@@ -45,10 +45,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://toplineplumbingco.com',
   },
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
 };
 
 export default function RootLayout({

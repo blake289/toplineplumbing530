@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -80,7 +79,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/emergency-plumber-redding#webpage',
   url: 'https://toplineplumbingco.com/emergency-plumber-redding',
-  name: 'Emergency Plumber in Redding, CA — Same-Day Response | Topline Plumbing',
+  name: 'Emergency Plumber Redding, CA | Topline Plumbing',
   description:
     'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, sewage backups, and floods during business hours. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -88,64 +87,17 @@ const webPageSchema = {
   about: { '@id': 'https://toplineplumbingco.com/emergency-plumber-redding#service' },
 };
 
-const emergencyHowToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'What to Do in a Plumbing Emergency Before the Plumber Arrives',
-  description:
-    'Step-by-step emergency response to limit damage from a burst pipe, water heater failure, or active leak in your Redding home before the plumber arrives.',
-  totalTime: 'PT10M',
-  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
-  tool: [
-    { '@type': 'HowToTool', name: 'Main water shut-off valve' },
-    { '@type': 'HowToTool', name: 'Towels or wet/dry vacuum' },
-    { '@type': 'HowToTool', name: 'Phone to call emergency plumber' },
-  ],
-  step: [
-    {
-      '@type': 'HowToStep',
-      position: 1,
-      name: 'Shut off the main water valve',
-      text: 'Go to your main water shut-off valve (usually in the garage, near the hose bib, or in the crawlspace) and turn it off immediately. This stops the water flow and limits further damage.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 2,
-      name: 'Turn off the water heater',
-      text: 'For gas water heaters, turn the control knob to the pilot position. For electric, flip the water heater breaker. This prevents the tank from running dry and damaging the heating element.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 3,
-      name: 'Open faucets to drain the lines',
-      text: 'Open all faucets (hot and cold) to drain any remaining water from the supply lines. This minimizes how much water can leak from the burst or failure point.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 4,
-      name: 'Call Topline Plumbing',
-      text: 'Call (530) 704-6989 for emergency plumbing in Redding during business hours (Mon–Fri 8:00a–4:30p). Same-day response. Upfront pricing.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 5,
-      name: 'Protect valuables and document damage',
-      text: 'Move furniture, electronics, and valuables out of the affected area. Start soaking up water with towels or a wet/dry vacuum. Take photos of all damage for your insurance claim.',
-    },
-  ],
-};
-
 export const metadata: Metadata = {
-  title: 'Emergency Plumber in Redding, CA — Same-Day Response | Topline Plumbing',
+  title: 'Emergency Plumber Redding, CA | Topline Plumbing',
   description:
-    'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, sewage backups, and floods during business hours (Mon–Fri 8a–4:30p). Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-redding',
   },
   openGraph: {
-    title: 'Emergency Plumber in Redding, CA — Same-Day Response | Topline Plumbing',
+    title: 'Emergency Plumber Redding, CA | Topline Plumbing',
     description:
-      'Same-day emergency plumbing in Redding during business hours — burst pipes, slab leaks, sewage backups, floods. Licensed local plumber since 1998. CSLB #596557.',
+      'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -233,24 +185,8 @@ export default function EmergencyPlumberReddingPage() {
         ]}
       />
       <FAQSchema faqs={emergencyFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-      <Script
-        id="howto-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencyHowToSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -467,7 +403,10 @@ export default function EmergencyPlumberReddingPage() {
             </p>
             <p>
               Whether it is a kitchen or main-line backup, a water heater that finally let go from
-              years of hard-water sediment, or a galvanized line that pinholed behind a wall, we
+              years of hard-water sediment — the City of Redding Water Utility draws roughly 77% of
+              its supply from surface sources like the Sacramento River and Whiskeytown and about 23%
+              from groundwater, leaving moderate hardness that settles in tanks over time — or a
+              galvanized line that pinholed behind a wall, we
               respond same-day during business hours and quote it upfront before any work starts. If
               the smarter long-term answer is a repipe estimate for a 1960s–1970s galvanized home, we
               will tell you that too — no pressure, no urgency markup.

@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -81,16 +80,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Red Bluff, CA — Same-Day Service | Topline Plumbing',
+  title: 'Drain Cleaning Red Bluff, CA | Topline Plumbing',
   description:
-    "Drain cleaning in Red Bluff, CA with upfront pricing. Power augering, sewer camera inspection, and main line clearing — built for Red Bluff's older cast iron drains. CSLB #596557. Call (530) 704-6989.",
+    "Drain cleaning in Red Bluff, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-red-bluff',
   },
   openGraph: {
-    title: 'Drain Cleaning in Red Bluff, CA — Same-Day Service | Topline Plumbing',
+    title: 'Drain Cleaning Red Bluff, CA | Topline Plumbing',
     description:
-      "Drain cleaning in Red Bluff, CA with upfront pricing. Power augering, sewer camera inspection, and main line clearing — built for Red Bluff's older cast iron drains. CSLB #596557. Call (530) 704-6989.",
+      "Drain cleaning in Red Bluff, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com/drain-cleaning-red-bluff',
     siteName: 'Topline Plumbing',
     images: [
@@ -162,18 +161,8 @@ export default function DrainCleaningRedBluffPage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -325,8 +314,11 @@ export default function DrainCleaningRedBluffPage() {
                 we get from Red Bluff for exactly this reason.
               </p>
               <p>
-                Outside the historic core, ranch properties west of town run on wells and septic with
-                longer service lines. On those homes we keep it septic-safe: mechanical augering only,
+                In town, the City of Red Bluff Water Department supplies homes entirely from deep
+                municipal groundwater wells, and that well-sourced supply carries a mineral content
+                worth noting for fixtures and water heaters on the lines we clear. Outside the
+                historic core, ranch properties west of town run on wells and septic with longer
+                service lines. On those homes we keep it septic-safe: mechanical augering only,
                 never harsh chemical drain cleaners that disrupt a septic tank. We have served this
                 region since 1998 — typical Red Bluff arrival is 45–75 minutes during business hours,
                 usually under the hour, with the price quoted upfront before any work starts.

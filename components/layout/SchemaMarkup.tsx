@@ -95,7 +95,7 @@ export default function SchemaMarkup() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "7",
+      "reviewCount": "45",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -239,6 +239,7 @@ export default function SchemaMarkup() {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://toplineplumbingco.com/#website",
     "name": "Topline Plumbing",
     "url": "https://toplineplumbingco.com",
     "publisher": {

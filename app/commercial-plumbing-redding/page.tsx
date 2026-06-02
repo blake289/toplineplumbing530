@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -90,21 +89,21 @@ const webPageSchema = {
   url: 'https://toplineplumbingco.com/commercial-plumbing-redding',
   name: 'Commercial Plumbing in Redding, CA — Licensed Local Contractor',
   description:
-    "Commercial plumbing for Redding businesses — backflow testing, water heaters, drains, leak detection, and preventive maintenance from a licensed local plumber since 1998.",
+    "Commercial plumbing in Redding, CA. Backflow testing, water heaters, drains, leak detection, and maintenance. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/commercial-plumbing-redding#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Commercial Plumbing in Redding, CA — Licensed Local Contractor | Topline Plumbing',
+  title: 'Commercial Plumbing Redding, CA | Topline Plumbing',
   description:
-    "Commercial plumbing for Redding businesses — backflow testing, water heaters, drains, leak detection, and preventive maintenance from a licensed local plumber since 1998. CSLB #596557. Call (530) 704-6989.",
+    "Commercial plumbing in Redding, CA. Backflow testing, water heaters, drains, leak detection, and maintenance. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/commercial-plumbing-redding',
   },
   openGraph: {
-    title: 'Commercial Plumbing in Redding, CA — Licensed Local Contractor | Topline Plumbing',
+    title: 'Commercial Plumbing Redding, CA | Topline Plumbing',
     description:
       "Commercial plumbing for Redding businesses — backflow testing, water heaters, drains, leak detection, and preventive maintenance from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/commercial-plumbing-redding',
@@ -178,18 +177,8 @@ export default function CommercialPlumbingReddingPage() {
         ]}
       />
       <FAQSchema faqs={commercialFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -391,9 +380,10 @@ export default function CommercialPlumbingReddingPage() {
             </p>
             <p>
               The same conditions that wear on Redding homes hit businesses harder, because the
-              systems run all day. The Sacramento River and Shasta Lake supply means moderate
-              hardness, so sediment buildup shortens the life of commercial water heaters that are
-              cycling constantly for a kitchen or restroom block. Redding's long 110°F-plus summer
+              systems run all day. The City of Redding Water Utility supplies most local businesses
+              from surface sources — roughly 77% Sacramento River and Whiskeytown water, the balance
+              groundwater — which carries moderate hardness, so sediment buildup shortens the life of
+              commercial water heaters that are cycling constantly for a kitchen or restroom block. Redding's long 110°F-plus summer
               stretches accelerate wear on outdoor supply lines and the irrigation backflow
               assemblies that many commercial properties are required to have certified every year. And in
               older buildings near the original core, end-of-life galvanized steel supply lines show

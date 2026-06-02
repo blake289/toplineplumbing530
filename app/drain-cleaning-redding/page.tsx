@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -72,7 +71,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/drain-cleaning-redding#webpage',
   url: 'https://toplineplumbingco.com/drain-cleaning-redding',
-  name: 'Drain Cleaning in Redding, CA — Same-Day Service | Topline Plumbing',
+  name: 'Drain Cleaning Redding, CA | Topline Plumbing',
   description:
     'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection with upfront pricing. Licensed local plumber since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -81,16 +80,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Redding, CA — Same-Day Service | Topline Plumbing',
+  title: 'Drain Cleaning Redding, CA | Topline Plumbing',
   description:
-    'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection with upfront pricing — same-day service during business hours (Mon–Fri 8a–4:30p). Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-redding',
   },
   openGraph: {
-    title: 'Drain Cleaning in Redding, CA — Same-Day Service | Topline Plumbing',
+    title: 'Drain Cleaning Redding, CA | Topline Plumbing',
     description:
-      'Power-auger drain and sewer line cleaning in Redding with camera inspection and upfront pricing. Licensed local plumber since 1998. CSLB #596557.',
+      'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -190,18 +189,8 @@ export default function DrainCleaningReddingPage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -354,7 +343,10 @@ export default function DrainCleaningReddingPage() {
               Redding calls, and a big part of that is the age and mix of the housing stock. Post-war
               mid-century homes here were built with galvanized supply and older drain lines that
               narrow over the decades as scale, grease, and debris build up — so they clog more easily
-              and the clogs come back faster than in a newer PEX build out by Stillwater.
+              and the clogs come back faster than in a newer PEX build out by Stillwater. The
+              moderately hard supply delivered by the City of Redding Water Utility, blended roughly
+              77% from the Sacramento River and Whiskeytown surface water and the rest from
+              groundwater, leaves mineral scale that only adds to that buildup over the years.
             </p>
             <p>
               That is exactly why we use mechanical power augers instead of chemical cleaners. A

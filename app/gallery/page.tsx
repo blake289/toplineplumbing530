@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const photos = [
   '32d2390a5f08f9fa688adfd29bcded5f.jpg',
@@ -204,15 +205,16 @@ export default function GalleryPage() {
                 className="break-inside-avoid mb-3 overflow-hidden rounded-lg cursor-pointer group relative bg-gray-200"
                 onClick={() => openLightbox(index)}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={`/images/gallery/${encodeURIComponent(filename)}`}
                   alt={`Topline Plumbing project photo ${index + 1}`}
+                  width={600}
+                  height={800}
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   loading="lazy"
-                  decoding="async"
                   style={{ opacity: 0, transition: 'opacity 0.3s ease, transform 0.3s ease' }}
                   onLoad={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = '1'; }}
-                  className="w-full block object-cover group-hover:scale-105"
+                  className="w-full h-auto block object-cover group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                   <svg
@@ -289,12 +291,15 @@ export default function GalleryPage() {
             className="max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center px-16 md:px-24"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               key={lightboxIndex}
               src={`/images/gallery/${encodeURIComponent(photos[lightboxIndex])}`}
               alt={`Topline Plumbing project photo ${lightboxIndex + 1}`}
-              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              width={1600}
+              height={1200}
+              sizes="100vw"
+              priority
+              className="w-auto h-auto max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
             />
           </div>
 

@@ -23,6 +23,39 @@ export const metadata: Metadata = {
   },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/red-bluff#webpage',
+  url: 'https://toplineplumbingco.com/areas/red-bluff',
+  name: 'Plumber in Red Bluff, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Red Bluff, California. Same-day emergency plumbing, drain cleaning, water heater repair, repipes, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/red-bluff#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Red Bluff, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Red Bluff' },
+    { '@type': 'AdministrativeArea', name: 'Tehama County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};
+
 export default function RedBluffPage() {
   return (
     <>
@@ -32,6 +65,8 @@ export default function RedBluffPage() {
         { name: 'Plumber in Red Bluff, CA', url: 'https://toplineplumbingco.com/areas/red-bluff' },
       ]} />
       <FAQSchema faqs={getCityFaqs('red-bluff')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -45,9 +80,9 @@ export default function RedBluffPage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Red Bluff CA</span>
         </div>
@@ -90,7 +125,7 @@ export default function RedBluffPage() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Red Bluff</Link>
                   </h3>
-                  <p className="text-gray-700">No hot water in Red Bluff? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement</Link>. Same-day water heater service available in Red Bluff.</p>
+                  <p className="text-gray-700">No hot water in Red Bluff? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>. Same-day water heater service available in Red Bluff.</p>
                 </div>
 
                 <div>

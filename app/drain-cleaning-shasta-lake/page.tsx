@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -74,21 +73,21 @@ const webPageSchema = {
   url: 'https://toplineplumbingco.com/drain-cleaning-shasta-lake',
   name: 'Drain Cleaning in Shasta Lake, CA — Same-Day Service',
   description:
-    'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing from a licensed local plumber since 1998.',
+    'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing. Licensed since 1998. Call (530) 704-6989.',
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/drain-cleaning-shasta-lake#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Shasta Lake, CA — Same-Day Service | Topline Plumbing',
+  title: 'Drain Cleaning Shasta Lake, CA | Topline Plumbing',
   description:
-    'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing from a licensed local plumber since 1998. CSLB #596557. Call (530) 704-6989.',
+    'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-shasta-lake',
   },
   openGraph: {
-    title: 'Drain Cleaning in Shasta Lake, CA — Same-Day Service | Topline Plumbing',
+    title: 'Drain Cleaning Shasta Lake, CA | Topline Plumbing',
     description:
       'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing from a licensed local plumber since 1998.',
     url: 'https://toplineplumbingco.com/drain-cleaning-shasta-lake',
@@ -157,18 +156,8 @@ export default function DrainCleaningShastaLakePage() {
         ]}
       />
       <FAQSchema faqs={drainFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -320,8 +309,11 @@ export default function DrainCleaningShastaLakePage() {
             <p>
               On the residential side, the older housing near the original townsite — Project City
               and Central Valley — has aging supply and drain lines that are prone to root intrusion
-              and buildup. For recurring clogs in these homes, a sewer camera inspection tells us
-              exactly what is happening underground so we fix the cause, not just the symptom.
+              and buildup. These homes draw from the City of Shasta Lake&apos;s municipal water
+              system, whose mineral content gradually scales the inside of drain and waste lines and
+              gives buildup something to cling to. For recurring clogs in these homes, a sewer camera
+              inspection tells us exactly what is happening underground so we fix the cause, not just
+              the symptom.
               Whatever your drain is doing, call{' '}
               <a href="tel:5307046989" className="text-primary font-semibold hover:underline">
                 (530) 704-6989

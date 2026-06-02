@@ -23,7 +23,38 @@ export const metadata: Metadata = {
   },
 };
 
-export default function OrovillePage() {
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/oroville#webpage',
+  url: 'https://toplineplumbingco.com/areas/oroville',
+  name: 'Plumber in Oroville, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Oroville, California. Same-day emergency plumbing, drain cleaning, water heater repair, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/oroville#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Oroville, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Oroville' },
+    { '@type': 'AdministrativeArea', name: 'Butte County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};export default function OrovillePage() {
   return (
     <>
       <BreadcrumbSchema items={[
@@ -32,6 +63,8 @@ export default function OrovillePage() {
         { name: 'Plumber in Oroville, CA', url: 'https://toplineplumbingco.com/areas/oroville' },
       ]} />
       <FAQSchema faqs={getCityFaqs('oroville')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -45,9 +78,9 @@ export default function OrovillePage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Oroville CA</span>
         </div>

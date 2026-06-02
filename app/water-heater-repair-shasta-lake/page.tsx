@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -105,16 +104,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair in Shasta Lake, CA — Same-Day Diagnostic | Topline Plumbing',
+  title: 'Water Heater Repair Shasta Lake, CA | Topline Plumbing',
   description:
-    'Gas and electric water heater repair in Shasta Lake, CA. Same-day diagnosis during business hours, honest repair-vs-replace guidance, upfront pricing. Licensed since 1998. CSLB #596557. Call (530) 704-6989.',
+    'Gas and electric water heater repair in Shasta Lake, CA. Same-day diagnosis and honest repair-vs-replace advice. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-repair-shasta-lake',
   },
   openGraph: {
-    title: 'Water Heater Repair in Shasta Lake, CA — Same-Day Diagnostic | Topline Plumbing',
+    title: 'Water Heater Repair Shasta Lake, CA | Topline Plumbing',
     description:
-      'Gas and electric water heater repair in Shasta Lake, CA. Same-day diagnosis during business hours, honest repair-vs-replace guidance, upfront pricing. Licensed since 1998.',
+      'Gas and electric water heater repair in Shasta Lake, CA. Same-day diagnosis and honest repair-vs-replace advice. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/water-heater-repair-shasta-lake',
     siteName: 'Topline Plumbing',
     images: [
@@ -186,18 +185,8 @@ export default function WaterHeaterRepairShastaLakePage() {
         ]}
       />
       <FAQSchema faqs={waterHeaterRepairFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -517,9 +506,10 @@ export default function WaterHeaterRepairShastaLakePage() {
               <p>
                 On the residential side, the older housing near the original townsite — Project City
                 and Central Valley — tends to have aging supply lines and tanks that are already past
-                their service life. Combine that with the mineral-heavy water in this region and you
-                get sediment buildup that insulates the burner or element, forces the unit to overheat,
-                and triggers the rumbling, popping, and early failures we&apos;re called out for. On
+                their service life. Combine that with the mineral-heavy water delivered by the City of
+                Shasta Lake&apos;s municipal water system and you get sediment buildup that insulates
+                the burner or element, forces the unit to overheat, and triggers the rumbling,
+                popping, and early failures we&apos;re called out for. On
                 well-fed homes near Lakehead, untreated water can drive sediment and corrosion even
                 faster.
               </p>

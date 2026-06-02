@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -80,30 +79,30 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/sewer-line-anderson#webpage',
   url: 'https://toplineplumbingco.com/sewer-line-anderson',
-  name: 'Sewer Line Repair & Replacement in Anderson, CA | Topline Plumbing',
+  name: 'Sewer Line Repair Anderson, CA | Topline Plumbing',
   description:
-    "Anderson's sewer line specialists. Camera inspection, root removal, spot repair, and full replacement — plus honest septic-vs-sewer guidance — from a licensed local plumber since 1998.",
+    "Sewer line repair and replacement in Anderson, CA. Camera inspection, root removal, spot repair, and septic guidance. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/sewer-line-anderson#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Sewer Line Repair & Replacement in Anderson, CA | Topline Plumbing',
+  title: 'Sewer Line Repair Anderson, CA | Topline Plumbing',
   description:
-    "Anderson's sewer line specialists. Camera inspection, root removal, spot repair, and full replacement — plus honest septic-vs-sewer guidance — from a licensed local plumber since 1998. CSLB #596557. Call (530) 704-6989.",
+    "Sewer line repair and replacement in Anderson, CA. Camera inspection, root removal, spot repair, and septic guidance. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/sewer-line-anderson',
   },
   openGraph: {
-    title: 'Sewer Line Repair & Replacement in Anderson, CA | Topline Plumbing',
+    title: 'Sewer Line Repair Anderson, CA | Topline Plumbing',
     description:
       "Anderson's sewer line specialists. Camera inspection, root removal, spot repair, and full replacement — plus honest septic-vs-sewer guidance — from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/sewer-line-anderson',
     siteName: 'Topline Plumbing',
     images: [
       {
-        url: '/images/team-work.png',
+        url: '/images/truck.webp',
         width: 1200,
         height: 630,
         alt: 'Topline Plumbing — Sewer Line Repair & Replacement in Anderson, CA',
@@ -170,18 +169,8 @@ export default function SewerLineAndersonPage() {
         ]}
       />
       <FAQSchema faqs={sewerFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -367,9 +356,10 @@ export default function SewerLineAndersonPage() {
             </p>
             <p>
               A big part of the job in Anderson is figuring out whether a property is even on city sewer
-              at all. Many homes closer to Cottonwood Creek and rural Anderson are on private septic, not
-              the municipal sewer — so a backup that looks like a clogged main might actually be a septic
-              transition issue. Guessing wrong here costs homeowners real money. Our camera inspection
+              at all. In-town homes that take their water from the City of Anderson Water Department are
+              typically tied into the municipal sewer, while many homes closer to Cottonwood Creek and
+              rural Anderson are on private septic instead — so a backup that looks like a clogged main
+              might actually be a septic transition issue. Guessing wrong here costs homeowners real money. Our camera inspection
               traces the line, confirms whether it ties into a city main or a septic tank, and tells you
               exactly what you're dealing with before we quote a single repair.
             </p>

@@ -23,11 +23,13 @@ export interface CityProfile {
   intro: string;
   localRealities: string[];
   commonCalls: string[];
+  waterProvider: string;
 }
 
 export const cityProfiles: Record<CitySlug, CityProfile> = {
   redding: {
     slug: 'redding',
+    waterProvider: 'City of Redding Water Utility',
     name: 'Redding',
     county: 'Shasta County',
     distanceFromRedding: 'Headquarters',
@@ -48,6 +50,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   anderson: {
     slug: 'anderson',
+    waterProvider: 'City of Anderson (municipal wells)',
     name: 'Anderson',
     county: 'Shasta County',
     distanceFromRedding: '10 minutes south on I-5',
@@ -68,6 +71,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'shasta-lake': {
     slug: 'shasta-lake',
+    waterProvider: 'City of Shasta Lake municipal water',
     name: 'Shasta Lake',
     county: 'Shasta County',
     distanceFromRedding: '10 minutes north on I-5',
@@ -88,6 +92,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'palo-cedro': {
     slug: 'palo-cedro',
+    waterProvider: 'Bella Vista Water District or a private well, depending on location',
     name: 'Palo Cedro',
     county: 'Shasta County',
     distanceFromRedding: '15 minutes east on Highway 44',
@@ -108,6 +113,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'bella-vista': {
     slug: 'bella-vista',
+    waterProvider: 'Bella Vista Water District',
     name: 'Bella Vista',
     county: 'Shasta County',
     distanceFromRedding: '15 minutes northeast',
@@ -128,6 +134,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'red-bluff': {
     slug: 'red-bluff',
+    waterProvider: 'City of Red Bluff (municipal wells)',
     name: 'Red Bluff',
     county: 'Tehama County',
     distanceFromRedding: '30 minutes south on I-5',
@@ -148,6 +155,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   chico: {
     slug: 'chico',
+    waterProvider: 'California Water Service (Cal Water)',
     name: 'Chico',
     county: 'Butte County',
     distanceFromRedding: '75 minutes south on Highway 99',
@@ -168,6 +176,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   paradise: {
     slug: 'paradise',
+    waterProvider: 'Paradise Irrigation District',
     name: 'Paradise',
     county: 'Butte County',
     distanceFromRedding: '90 minutes south, Sierra foothills',
@@ -188,6 +197,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   oroville: {
     slug: 'oroville',
+    waterProvider: 'California Water Service (Cal Water)',
     name: 'Oroville',
     county: 'Butte County',
     distanceFromRedding: '100 minutes south',
@@ -208,6 +218,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'yuba-city': {
     slug: 'yuba-city',
+    waterProvider: 'City of Yuba City',
     name: 'Yuba City',
     county: 'Sutter County',
     distanceFromRedding: '2 hours south on Highway 99',
@@ -228,6 +239,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   marysville: {
     slug: 'marysville',
+    waterProvider: 'California Water Service (Cal Water)',
     name: 'Marysville',
     county: 'Yuba County',
     distanceFromRedding: '2 hours south',
@@ -248,6 +260,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   auburn: {
     slug: 'auburn',
+    waterProvider: 'Placer County Water Agency (PCWA)',
     name: 'Auburn',
     county: 'Placer County',
     distanceFromRedding: '3 hours southeast via I-5 / I-80',
@@ -268,6 +281,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'grass-valley': {
     slug: 'grass-valley',
+    waterProvider: 'City of Grass Valley or Nevada Irrigation District, depending on the parcel',
     name: 'Grass Valley',
     county: 'Nevada County',
     distanceFromRedding: '3 hours southeast',
@@ -288,6 +302,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   truckee: {
     slug: 'truckee',
+    waterProvider: 'Truckee Donner Public Utility District',
     name: 'Truckee',
     county: 'Nevada County',
     distanceFromRedding: '4 hours east via I-5 / I-80',
@@ -308,6 +323,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
 
   'south-lake-tahoe': {
     slug: 'south-lake-tahoe',
+    waterProvider: 'South Tahoe Public Utility District',
     name: 'South Lake Tahoe',
     county: 'El Dorado County',
     distanceFromRedding: '4.5 hours east',

@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -80,64 +79,17 @@ const webPageSchema = {
   about: { '@id': 'https://toplineplumbingco.com/emergency-plumber-red-bluff#service' },
 };
 
-const emergencyHowToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'What to Do in a Plumbing Emergency Before the Plumber Arrives',
-  description:
-    'Step-by-step emergency response to limit damage from a burst pipe, water heater failure, or active leak in your Red Bluff home before the plumber arrives.',
-  totalTime: 'PT10M',
-  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
-  tool: [
-    { '@type': 'HowToTool', name: 'Main water shut-off valve' },
-    { '@type': 'HowToTool', name: 'Towels or wet/dry vacuum' },
-    { '@type': 'HowToTool', name: 'Phone to call emergency plumber' },
-  ],
-  step: [
-    {
-      '@type': 'HowToStep',
-      position: 1,
-      name: 'Shut off the main water valve',
-      text: 'Go to your main water shut-off valve (usually in the garage, near the hose bib, or in the crawlspace) and turn it off immediately. This stops the water flow and limits further damage.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 2,
-      name: 'Turn off the water heater',
-      text: 'For gas water heaters, turn the control knob to the pilot position. For electric, flip the water heater breaker. This prevents the tank from running dry and damaging the heating element.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 3,
-      name: 'Open faucets to drain the lines',
-      text: 'Open all faucets (hot and cold) to drain any remaining water from the supply lines. This minimizes how much water can leak from the burst or failure point.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 4,
-      name: 'Call Topline Plumbing',
-      text: 'Call (530) 704-6989 for emergency plumbing in Red Bluff during business hours (Mon–Fri 8:00a–4:30p). Same-day response. Upfront pricing. After hours, text the same number and we respond first thing the next business day.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 5,
-      name: 'Protect valuables and document damage',
-      text: 'Move furniture, electronics, and valuables out of the affected area. Start soaking up water with towels or a wet/dry vacuum. Take photos of all damage for your insurance claim.',
-    },
-  ],
-};
-
 export const metadata: Metadata = {
-  title: 'Emergency Plumber in Red Bluff, CA — Same-Day Response | Topline Plumbing',
+  title: 'Emergency Plumber Red Bluff, CA | Topline Plumbing',
   description:
-    'Emergency plumber in Red Bluff, CA. Same-day response for burst pipes, sewer backups, and water heater floods during business hours (Mon–Fri 8a–4:30p). Licensed CSLB #596557. Call (530) 704-6989.',
+    'Emergency plumber in Red Bluff, CA. Same-day response for burst pipes, sewer backups, and water heater floods. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-red-bluff',
   },
   openGraph: {
-    title: 'Emergency Plumber in Red Bluff, CA — Same-Day Response | Topline Plumbing',
+    title: 'Emergency Plumber Red Bluff, CA | Topline Plumbing',
     description:
-      'Emergency plumber in Red Bluff, CA. Same-day response for burst pipes, sewer backups, and water heater floods during business hours. Licensed CSLB #596557. Call (530) 704-6989.',
+      'Emergency plumber in Red Bluff, CA. Same-day response for burst pipes, sewer backups, and water heater floods. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-red-bluff',
     siteName: 'Topline Plumbing',
     images: [
@@ -204,24 +156,8 @@ export default function EmergencyPlumberRedBluffPage() {
         ]}
       />
       <FAQSchema faqs={emergencyFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-      <Script
-        id="howto-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencyHowToSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -385,9 +321,12 @@ export default function EmergencyPlumberRedBluffPage() {
                 emergency repair and a bigger mess.
               </p>
               <p>
-                Summers here are some of the hottest in California, and that drives a seasonal spike
-                in two failures we respond to: water heater flue and venting problems, and outdoor PVC
-                that splits in the July and August heat. Both can turn into active leaks fast. Outside
+                The City of Red Bluff Water Department draws its supply entirely from deep municipal
+                groundwater wells, so the mineral content in that well-sourced water is worth keeping
+                in mind for the water heaters and fixtures we get called out on. Summers here are some
+                of the hottest in California, and that drives a seasonal spike in two failures we
+                respond to: water heater flue and venting problems, and outdoor PVC that splits in the
+                July and August heat. Both can turn into active leaks fast. Outside
                 the historic core, ranch properties west of town run on wells and septic with longer
                 service lines and more exposed outdoor plumbing — more places for an emergency to
                 start.

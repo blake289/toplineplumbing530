@@ -3,6 +3,60 @@ import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
+const areaServed = [
+  { '@type': 'City', name: 'Redding', sameAs: 'https://en.wikipedia.org/wiki/Redding,_California' },
+  { '@type': 'City', name: 'Anderson' },
+  { '@type': 'City', name: 'Shasta Lake' },
+  { '@type': 'City', name: 'Palo Cedro' },
+  { '@type': 'City', name: 'Bella Vista' },
+  { '@type': 'City', name: 'Red Bluff' },
+  { '@type': 'AdministrativeArea', name: 'Shasta County, CA' },
+];
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/services/leak-detection#service',
+  name: 'Leak Detection in Redding, CA',
+  serviceType: 'Leak Detection',
+  description:
+    'Professional leak detection in Redding, CA — electronic and acoustic equipment to pinpoint hidden leaks in walls, slabs, and buried pipe without unnecessary demolition. Slab leak detection, irrigation and pool line testing, and repair. Upfront pricing. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
+  category: 'Plumbing',
+  url: 'https://toplineplumbingco.com/services/leak-detection',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed,
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Leak Detection Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Electronic & Acoustic Leak Detection', serviceType: 'Leak Detection' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Slab Leak Detection & Repair', serviceType: 'Slab Leak Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wall & Ceiling Leak Detection', serviceType: 'Leak Detection' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Irrigation & Pool Line Testing', serviceType: 'Leak Detection' } },
+    ],
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/services/leak-detection#webpage',
+  url: 'https://toplineplumbingco.com/services/leak-detection',
+  name: 'Leak Detection Services in Redding, CA | Topline Plumbing',
+  description:
+    'Leak detection in Redding, CA. Find hidden leaks in walls, slabs, and pipes with non-invasive electronic methods. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/services/leak-detection#service' },
+};
+
 export const metadata: Metadata = {
   title: 'Leak Detection Services in Redding, CA | Topline Plumbing',
   description: 'Professional leak detection in Redding, CA. Find hidden water leaks in walls, slabs, and pipes fast. Non-invasive methods. Call (530) 704-6989.',
@@ -50,6 +104,8 @@ export default function LeakDetectionPage() {
         { name: 'Leak Detection', url: 'https://toplineplumbingco.com/services/leak-detection' },
       ]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <ServicePageTemplate
         faqs={faqs}
         hero={{

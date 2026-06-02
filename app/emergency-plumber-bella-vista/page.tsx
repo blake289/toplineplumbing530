@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -88,65 +87,17 @@ const webPageSchema = {
   about: { '@id': 'https://toplineplumbingco.com/emergency-plumber-bella-vista#service' },
 };
 
-const emergencyHowToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'What to Do in a Plumbing Emergency in Bella Vista Before the Plumber Arrives',
-  description:
-    'Step-by-step emergency response to limit damage from a burst pipe, frozen well line, or active leak in a Bella Vista home before the plumber arrives.',
-  totalTime: 'PT10M',
-  estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
-  tool: [
-    { '@type': 'HowToTool', name: 'Main water shut-off valve' },
-    { '@type': 'HowToTool', name: 'Well pump breaker' },
-    { '@type': 'HowToTool', name: 'Towels or wet/dry vacuum' },
-    { '@type': 'HowToTool', name: 'Phone to call emergency plumber' },
-  ],
-  step: [
-    {
-      '@type': 'HowToStep',
-      position: 1,
-      name: 'Shut off the main water valve',
-      text: 'Turn off your main water shut-off valve. On a well system this is usually at the pressure tank or where the line enters the house. Shutting it stops the flow and limits further damage.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 2,
-      name: 'Kill power to the well pump',
-      text: 'If the leak is on the well line or you hear the pump cycling nonstop, flip the well pump breaker. This stops the pump from forcing more water through the break.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 3,
-      name: 'Open faucets to drain the lines',
-      text: 'Open all faucets (hot and cold) to drain remaining water from the supply lines and reduce how much can leak from the failure point.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 4,
-      name: 'Call Topline Plumbing',
-      text: 'Call (530) 704-6989 for emergency plumbing in Bella Vista during business hours (Mon–Fri 8:00a–4:30p). Same-day response and upfront pricing. After hours, text the same number and we respond first thing the next business day.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 5,
-      name: 'Protect valuables and document damage',
-      text: 'Move furniture, electronics, and valuables out of the affected area. Soak up water with towels or a wet/dry vacuum, and photograph all damage for your insurance claim.',
-    },
-  ],
-};
-
 export const metadata: Metadata = {
-  title: 'Emergency Plumber in Bella Vista, CA — Same-Day During Business Hours | Topline Plumbing',
+  title: 'Emergency Plumber Bella Vista, CA | Topline Plumbing',
   description:
-    'Emergency plumber for Bella Vista, CA. Same-day response during business hours (Mon–Fri 8a–4:30p) for burst pipes, well-line leaks, frozen pump houses, and sewage backups. Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Emergency plumber in Bella Vista, CA. Same-day response for burst pipes, well-line leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-bella-vista',
   },
   openGraph: {
-    title: 'Emergency Plumber in Bella Vista, CA — Same-Day During Business Hours | Topline Plumbing',
+    title: 'Emergency Plumber Bella Vista, CA | Topline Plumbing',
     description:
-      'Emergency plumber for Bella Vista, CA. Same-day response during business hours for burst pipes, well-line leaks, frozen pump houses, and sewage backups. Licensed since 1998.',
+      'Emergency plumber in Bella Vista, CA. Same-day response for burst pipes, well-line leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-bella-vista',
     siteName: 'Topline Plumbing',
     images: [
@@ -218,24 +169,8 @@ export default function EmergencyPlumberBellaVistaPage() {
         ]}
       />
       <FAQSchema faqs={emergencyFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-      <Script
-        id="howto-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(emergencyHowToSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -416,7 +351,10 @@ export default function EmergencyPlumberBellaVistaPage() {
             <p>
               Bella Vista is rural Shasta County — large parcels, ranchettes, and homes spread across
               the foothills east of Redding. Out here, wells, septic, and outbuildings are the norm
-              rather than the exception. When a plumbing emergency hits, it usually involves longer
+              rather than the exception — though many homes are served by the Bella Vista Water District,
+              which delivers a blend of Sacramento River surface water and local wells, while some
+              outlying properties still rely on their own private wells. Either way, when a plumbing
+              emergency hits, it usually involves longer
               service lines, more outdoor exposure, and well-system components most in-town plumbers
               don't touch as often. That is exactly the work we do daily.
             </p>

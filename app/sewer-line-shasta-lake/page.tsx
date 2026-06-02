@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -80,23 +79,23 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/sewer-line-shasta-lake#webpage',
   url: 'https://toplineplumbingco.com/sewer-line-shasta-lake',
-  name: 'Sewer Line Repair & Replacement in Shasta Lake, CA | Topline Plumbing',
+  name: 'Sewer Line Repair Shasta Lake, CA | Topline Plumbing',
   description:
-    "Sewer line repair and replacement in Shasta Lake, CA. Camera inspection, root removal, spot repair, full replacement, and trenchless options from a licensed local plumber since 1998.",
+    "Sewer line repair and replacement in Shasta Lake, CA. Camera inspection, root removal, and trenchless options. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/sewer-line-shasta-lake#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Sewer Line Repair & Replacement in Shasta Lake, CA | Topline Plumbing',
+  title: 'Sewer Line Repair Shasta Lake, CA | Topline Plumbing',
   description:
-    'Sewer line repair and replacement in Shasta Lake, CA. Camera inspection to locate the problem, root removal, spot repair, full replacement, and trenchless options. Licensed since 1998, CSLB #596557. Call (530) 704-6989.',
+    'Sewer line repair and replacement in Shasta Lake, CA. Camera inspection, root removal, and trenchless options. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/sewer-line-shasta-lake',
   },
   openGraph: {
-    title: 'Sewer Line Repair & Replacement in Shasta Lake, CA | Topline Plumbing',
+    title: 'Sewer Line Repair Shasta Lake, CA | Topline Plumbing',
     description:
       'Sewer line repair and replacement in Shasta Lake, CA. Camera inspection, root removal, spot repair, full replacement, and trenchless options from a licensed local plumber since 1998.',
     url: 'https://toplineplumbingco.com/sewer-line-shasta-lake',
@@ -170,18 +169,8 @@ export default function SewerLineShastaLakePage() {
         ]}
       />
       <FAQSchema faqs={sewerFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -513,8 +502,11 @@ export default function SewerLineShastaLakePage() {
               <p>
                 The older housing near the original townsite — Project City and Central Valley — was
                 built decades ago, and a lot of it still runs on aging clay or cast iron sewer mains.
-                Those materials don&apos;t fail gracefully: roots find the joints, the pipe cracks or
-                bellies, and a slow problem becomes a backup. A camera inspection tells us instantly
+                These are the homes served by the City of Shasta Lake&apos;s municipal water system,
+                and decades of mineral-laden flow through their waste lines only accelerate the scaling
+                and corrosion that aging sewer pipe is already prone to. Those materials don&apos;t fail
+                gracefully: roots find the joints, the pipe cracks or bellies, and a slow problem
+                becomes a backup. A camera inspection tells us instantly
                 whether you&apos;re looking at a single bad section or a line that&apos;s reached the
                 end of its life.
               </p>

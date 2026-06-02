@@ -181,6 +181,7 @@ Service-specific landing pages for each city we serve:
 - `/sewer-line-shasta-lake` — Sewer Line Service in Shasta Lake, CA — repair, replacement, camera inspection
 - `/sewer-line-anderson` — Sewer Line Service in Anderson, CA — repair, replacement, camera inspection
 - `/commercial-plumbing-redding` — Commercial Plumbing in Redding, CA — plumbing for businesses and property managers
+- `/water-heater-replacement-redding` — Water Heater Replacement in Redding, CA — same-day replacement and tankless conversions
 
 ## Extended Reference
 
@@ -188,4 +189,4 @@ For complete service details, pricing ranges, and all FAQs, see: https://topline
 
 ---
 
-*Last updated: April 2026*
+*Last updated: June 2026*

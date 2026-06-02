@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import FAQSchema from '@/components/layout/FAQSchema';
@@ -88,23 +87,23 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/water-heater-repair-anderson#webpage',
   url: 'https://toplineplumbingco.com/water-heater-repair-anderson',
-  name: 'Water Heater Repair in Anderson, CA — Gas & Electric | Topline Plumbing',
+  name: 'Water Heater Repair Anderson, CA | Topline Plumbing',
   description:
-    "Anderson's water heater repair specialists. Same-day diagnostic during business hours, gas and electric, with honest repair-vs-replace guidance from a licensed local plumber since 1998.",
+    "Water heater repair in Anderson, CA, gas and electric. Same-day diagnostic and honest repair-vs-replace advice. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/water-heater-repair-anderson#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair in Anderson, CA — Gas & Electric | Topline Plumbing',
+  title: 'Water Heater Repair Anderson, CA | Topline Plumbing',
   description:
-    "Water heater repair in Anderson, CA — gas and electric. Same-day diagnostic during business hours, honest repair-vs-replace guidance, upfront pricing. Licensed since 1998. CSLB #596557. Call (530) 704-6989.",
+    "Water heater repair in Anderson, CA, gas and electric. Same-day diagnostic and honest repair-vs-replace advice. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-repair-anderson',
   },
   openGraph: {
-    title: 'Water Heater Repair in Anderson, CA — Gas & Electric | Topline Plumbing',
+    title: 'Water Heater Repair Anderson, CA | Topline Plumbing',
     description:
       "Anderson's water heater repair specialists. Same-day diagnostic during business hours, gas and electric, with honest repair-vs-replace guidance from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/water-heater-repair-anderson',
@@ -178,18 +177,8 @@ export default function WaterHeaterRepairAndersonPage() {
         ]}
       />
       <FAQSchema faqs={waterHeaterRepairFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -426,7 +415,10 @@ export default function WaterHeaterRepairAndersonPage() {
                 gets done right the first time instead of turning into a callback.
               </p>
               <p>
-                Out toward Cottonwood Creek and rural Anderson, many homes run on private wells. That
+                In-town Anderson homes draw municipal water from the City of Anderson Water Department,
+                which pumps 100% groundwater from local wells in the Anderson Subbasin — mineral content
+                that, over years, still leaves sediment in the bottom of a tank. Out toward Cottonwood
+                Creek and rural Anderson, many homes run on their own private wells instead. That
                 well water tends to be heavy with sediment and minerals, which settle in the bottom of
                 the tank, insulate the burner or element, and drive early failure — rumbling tanks,
                 tripped elements, and worn-out thermostats well before their time. When we repair a

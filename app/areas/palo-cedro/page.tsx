@@ -23,7 +23,38 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PaloCedroPage() {
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/palo-cedro#webpage',
+  url: 'https://toplineplumbingco.com/areas/palo-cedro',
+  name: 'Plumber in Palo Cedro, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Palo Cedro, California. Same-day emergency plumbing, drain cleaning, water heater repair, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/palo-cedro#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Palo Cedro, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Palo Cedro' },
+    { '@type': 'AdministrativeArea', name: 'Shasta County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};export default function PaloCedroPage() {
   return (
     <>
       <BreadcrumbSchema items={[
@@ -32,6 +63,8 @@ export default function PaloCedroPage() {
         { name: 'Plumber in Palo Cedro, CA', url: 'https://toplineplumbingco.com/areas/palo-cedro' },
       ]} />
       <FAQSchema faqs={getCityFaqs('palo-cedro')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <LocalContext profile={getCityProfile('palo-cedro')} />
 
       <LocationPageTemplate
@@ -52,7 +85,7 @@ export default function PaloCedroPage() {
         },
         {
           title: 'Water Heater Maintenance & Repair',
-          description: <>Routine service with upfront pricing — and full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement</Link> when repair isn&apos;t the right call. Keep your water heater running efficiently and prevent costly breakdowns.</>,
+          description: <>Routine service with upfront pricing — and full same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> when repair isn&apos;t the right call. Keep your water heater running efficiently and prevent costly breakdowns.</>,
           href: '/services/water-heater-repair',
         },
         {
