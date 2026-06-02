@@ -1,6 +1,6 @@
 # Topline Plumbing
 
-> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day emergency service across Northern California's entire 530 area code. Open Monday–Friday, 8:00a–4:30p.
+> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day emergency service across the greater Redding area. Open Monday–Friday, 8:00a–4:30p.
 
 ## Business Information
 
@@ -16,11 +16,9 @@
 
 ## Service Area
 
-Topline Plumbing serves the entire 530 area code across Northern California, including:
+Topline Plumbing serves the greater Redding area in Shasta and Tehama counties:
 
-- **Primary**: Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista
-- **North State**: Red Bluff, Chico, Oroville, Paradise, Marysville, Yuba City
-- **Sierra / Foothills**: Auburn, Grass Valley, Truckee, South Lake Tahoe
+- Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, Red Bluff
 
 ## Services
 
@@ -86,7 +84,7 @@ Same-day emergency response during business hours (Mon–Fri, 8:00a–4:30p). Ca
 ## Frequently Asked Questions
 
 **Q: What areas does Topline Plumbing serve?**
-A: We serve the entire 530 area code including Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, Red Bluff, Chico, Oroville, Paradise, Yuba City, Marysville, Auburn, Grass Valley, Truckee, and South Lake Tahoe.
+A: We serve the greater Redding area — Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and Red Bluff (Shasta and Tehama counties).
 
 **Q: What are your hours for emergency plumbing?**
 A: Topline Plumbing is open Monday–Friday, 8:00a–4:30p. We offer same-day emergency response during business hours. Call (530) 704-6989. For after-hours gas leaks, call PG&E at 1-800-743-5000 or 911. For burst pipes or active flooding outside business hours, shut off your main water valve and call us first thing the next business morning.
@@ -150,15 +148,6 @@ Free homeowner guides written by licensed Redding plumbers:
 - `/areas/palo-cedro` — Plumber in Palo Cedro, CA
 - `/areas/bella-vista` — Plumber in Bella Vista, CA
 - `/areas/red-bluff` — Plumber in Red Bluff, CA
-- `/areas/chico` — Plumber in Chico, CA
-- `/areas/oroville` — Plumber in Oroville, CA
-- `/areas/paradise` — Plumber in Paradise, CA
-- `/areas/yuba-city` — Plumber in Yuba City, CA
-- `/areas/marysville` — Plumber in Marysville, CA
-- `/areas/auburn` — Plumber in Auburn, CA
-- `/areas/grass-valley` — Plumber in Grass Valley, CA
-- `/areas/truckee` — Plumber in Truckee, CA
-- `/areas/south-lake-tahoe` — Plumber in South Lake Tahoe, CA
 
 ## City + Service Pages
 

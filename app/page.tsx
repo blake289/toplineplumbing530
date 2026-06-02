@@ -46,7 +46,7 @@ const homepageFAQs = [
   },
   {
     question: "What areas does Topline Plumbing serve?",
-    answer: "We serve Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, Red Bluff, Chico, Oroville, Yuba City, Marysville, Paradise, Auburn, Grass Valley, Truckee, South Lake Tahoe, and surrounding Northern California communities.",
+    answer: "We serve the greater Redding area — Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and Red Bluff, plus surrounding Shasta and Tehama county communities.",
   },
   {
     question: "Do you repair and replace water heaters in Redding?",

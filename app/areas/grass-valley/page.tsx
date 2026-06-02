@@ -9,6 +9,7 @@ import LocalContext from '@/components/sections/LocalContext';
 import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Plumber in Grass Valley, CA | Topline Plumbing',
   description: 'Licensed plumber in Grass Valley, California. Same-day emergency plumbing, drain cleaning, water heater repair. Same-day service in Grass Valley. Call (530) 704-6989',
   alternates: { canonical: 'https://toplineplumbingco.com/areas/grass-valley' },

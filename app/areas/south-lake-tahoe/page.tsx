@@ -9,6 +9,7 @@ import LocalContext from '@/components/sections/LocalContext';
 import { getCityProfile } from '@/lib/cityProfiles';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Plumber in South Lake Tahoe, CA | Topline Plumbing',
   description: 'Licensed plumber in South Lake Tahoe, California. Same-day emergency plumbing, drain cleaning, water heater repair. Same-day service in South Lake Tahoe. Call (530) 704-6989',
   alternates: { canonical: 'https://toplineplumbingco.com/areas/south-lake-tahoe' },

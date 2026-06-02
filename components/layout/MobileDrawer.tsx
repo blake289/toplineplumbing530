@@ -163,41 +163,23 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             </button>
             {areasExpanded && (
               <div className="pl-4 border-l-2 border-gray-100 ml-2 mb-2">
-                <Link href="/areas/chico" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Chico
-                </Link>
                 <Link href="/areas/redding" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   Redding
-                </Link>
-                <Link href="/areas/yuba-city" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Yuba City
-                </Link>
-                <Link href="/areas/marysville" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Marysville
-                </Link>
-                <Link href="/areas/paradise" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Paradise
-                </Link>
-                <Link href="/areas/oroville" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Oroville
-                </Link>
-                <Link href="/areas/red-bluff" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Red Bluff
                 </Link>
                 <Link href="/areas/anderson" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   Anderson
                 </Link>
-                <Link href="/areas/south-lake-tahoe" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  South Lake Tahoe
+                <Link href="/areas/shasta-lake" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Shasta Lake
                 </Link>
-                <Link href="/areas/truckee" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Truckee
+                <Link href="/areas/palo-cedro" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Palo Cedro
                 </Link>
-                <Link href="/areas/grass-valley" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Grass Valley
+                <Link href="/areas/bella-vista" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Bella Vista
                 </Link>
-                <Link href="/areas/auburn" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
-                  Auburn
+                <Link href="/areas/red-bluff" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Red Bluff
                 </Link>
                 <Link href="/areas" className="block py-3 px-2 text-primary font-semibold hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   View All Areas &rarr;
