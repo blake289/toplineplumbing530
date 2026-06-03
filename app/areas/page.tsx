@@ -3,14 +3,14 @@ import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'Service Areas — Plumber in Redding, Chico & Northern CA | Topline Plumbing',
+  title: 'Service Areas — Plumber in Redding & the Greater Redding Area | Topline Plumbing',
   description:
-    'Topline Plumbing serves 15+ cities across Northern California. Licensed plumbers in Redding, Anderson, Chico, Paradise, Oroville, Yuba City, and more. Same-day service. Call (530) 704-6989.',
+    'Topline Plumbing serves the greater Redding area across Shasta and Tehama counties. Licensed plumbers in Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and Red Bluff. Same-day service. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/areas' },
   openGraph: {
-    title: 'Service Areas — Plumber in Redding & Northern CA | Topline Plumbing',
+    title: 'Service Areas — Plumber in the Greater Redding Area | Topline Plumbing',
     description:
-      'Licensed plumbers serving 15+ Northern California cities. Same-day emergency service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.',
+      'Licensed plumbers serving the greater Redding area — Shasta and Tehama counties. Same-day emergency service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/areas',
     siteName: 'Topline Plumbing',
     images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: '/images/water-heater.webp',
         width: 1200,
         height: 630,
-        alt: 'Topline Plumbing — Northern California Service Areas',
+        alt: 'Topline Plumbing — Greater Redding Area Service Areas',
       },
     ],
     locale: 'en_US',
@@ -69,69 +69,6 @@ const serviceAreas = [
     description: 'Licensed plumber in Red Bluff for emergency service, water heaters, and all residential plumbing needs.',
     primary: false,
   },
-  {
-    city: 'Chico',
-    slug: 'chico',
-    county: 'Butte County',
-    description: 'Professional plumbing service for Chico homeowners — drain cleaning, water heaters, and emergency repairs.',
-    primary: false,
-  },
-  {
-    city: 'Paradise',
-    slug: 'paradise',
-    county: 'Butte County',
-    description: 'Trusted plumber in Paradise. Repiping, water heaters, and rebuild plumbing specialists.',
-    primary: false,
-  },
-  {
-    city: 'Oroville',
-    slug: 'oroville',
-    county: 'Butte County',
-    description: 'Licensed plumbing service in Oroville — emergency plumbing, leak detection, and drain cleaning.',
-    primary: false,
-  },
-  {
-    city: 'Yuba City',
-    slug: 'yuba-city',
-    county: 'Sutter County',
-    description: 'Professional plumber serving Yuba City with same-day service and upfront pricing.',
-    primary: false,
-  },
-  {
-    city: 'Marysville',
-    slug: 'marysville',
-    county: 'Yuba County',
-    description: 'Licensed plumbing in Marysville — water heater repair, drain cleaning, and emergency service.',
-    primary: false,
-  },
-  {
-    city: 'Auburn',
-    slug: 'auburn',
-    county: 'Placer County',
-    description: 'Trusted plumber in Auburn for residential and commercial plumbing needs.',
-    primary: false,
-  },
-  {
-    city: 'Grass Valley',
-    slug: 'grass-valley',
-    county: 'Nevada County',
-    description: 'Licensed plumber in Grass Valley — emergency plumbing, repiping, and water heater service.',
-    primary: false,
-  },
-  {
-    city: 'Truckee',
-    slug: 'truckee',
-    county: 'Nevada County',
-    description: 'Mountain plumbing specialists in Truckee — freeze protection, emergency service, and water heaters.',
-    primary: false,
-  },
-  {
-    city: 'South Lake Tahoe',
-    slug: 'south-lake-tahoe',
-    county: 'El Dorado County',
-    description: 'Licensed plumber in South Lake Tahoe for vacation homes, rentals, and emergency plumbing.',
-    primary: false,
-  },
 ];
 
 const primaryAreas = serviceAreas.filter((a) => a.primary);
@@ -151,12 +88,12 @@ export default function AreasServedPage() {
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-navy-900 text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 leading-tight text-white">
-            Areas We Serve in Northern California
+            Areas We Serve in the Greater Redding Area
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed max-w-3xl mx-auto">
             Topline Plumbing provides licensed, insured plumbing service across
-            15+ cities in Northern California. From our home base in Redding to
-            South Lake Tahoe — same-day service during business hours
+            the greater Redding area in Shasta and Tehama counties. From our home
+            base in Redding to Red Bluff — same-day service during business hours
             (Mon&ndash;Fri 8:00a&ndash;4:30p) and upfront pricing everywhere we go.
           </p>
           <p className="text-base text-white/70 leading-relaxed max-w-3xl mx-auto">
@@ -212,10 +149,10 @@ export default function AreasServedPage() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4 text-center">
-            Extended Service Area — Northern California
+            Extended Service Area — Tehama County
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg leading-relaxed max-w-2xl mx-auto">
-            Licensed plumbing service across Butte, Tehama, Sutter, Yuba, Placer, Nevada, and El Dorado counties.
+            Licensed plumbing service in Red Bluff and the surrounding Tehama County area.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {extendedAreas.map((area) => (
@@ -255,7 +192,7 @@ export default function AreasServedPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl font-heading font-bold text-navy-900 mb-6">
-            Why Northern California Homeowners Choose Topline
+            Why Greater Redding Homeowners Choose Topline
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left mt-10">
             {[
@@ -263,7 +200,7 @@ export default function AreasServedPage() {
               { title: 'Same-Day Service', desc: 'Most repairs scheduled same-day. No waiting around for a plumber — we show up when we say we will.' },
               { title: 'Same-Day Emergency Response', desc: 'Burst pipe, sewer backup, or water heater flooding? During business hours (Mon–Fri 8:00a–4:30p) we aim to be on-site same-day.' },
               { title: 'Upfront Pricing', desc: 'You see the price before we start work. No hourly surprises, no hidden fees, no urgency upcharges.' },
-              { title: '27+ Years Experience', desc: 'Family-owned since 1998. We\'ve completed thousands of jobs across Northern California.' },
+              { title: '27+ Years Experience', desc: 'Family-owned since 1998. We\'ve completed thousands of jobs across the greater Redding area.' },
               { title: 'All Major Services', desc: 'Water heaters, drains, sewer lines, gas lines, repiping, leak detection, and more.' },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-3">
@@ -284,10 +221,10 @@ export default function AreasServedPage() {
       <section className="py-16 md:py-24 bg-navy-900 text-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-            Need a Plumber in Northern California?
+            Need a Plumber in the Greater Redding Area?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            From Redding to South Lake Tahoe &mdash; Topline Plumbing is ready to help.
+            From Redding to Red Bluff &mdash; Topline Plumbing is ready to help.
             Same-day service during business hours (Mon&ndash;Fri 8:00a&ndash;4:30p) with upfront pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

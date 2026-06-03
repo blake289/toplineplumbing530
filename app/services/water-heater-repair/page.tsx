@@ -1,15 +1,70 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
+const areaServed = [
+  { '@type': 'City', name: 'Redding', sameAs: 'https://en.wikipedia.org/wiki/Redding,_California' },
+  { '@type': 'City', name: 'Anderson' },
+  { '@type': 'City', name: 'Shasta Lake' },
+  { '@type': 'City', name: 'Palo Cedro' },
+  { '@type': 'City', name: 'Bella Vista' },
+  { '@type': 'City', name: 'Red Bluff' },
+  { '@type': 'AdministrativeArea', name: 'Shasta County, CA' },
+];
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/services/water-heater-repair#service',
+  name: 'Water Heater Repair in Redding, CA',
+  serviceType: 'Water Heater Repair',
+  description:
+    'Water heater repair in Redding, CA — same-day diagnostic for no hot water, leaks, rumbling tanks, and pilot or ignition trouble. Thermostat and heating element replacement, sediment flush, anode rod and pressure relief valve service, plus honest repair-versus-replace advice. Upfront pricing. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
+  category: 'Plumbing',
+  url: 'https://toplineplumbingco.com/services/water-heater-repair',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed,
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Water Heater Repair Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Same-Day Diagnostic', serviceType: 'Water Heater Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Heating Element & Thermostat Replacement', serviceType: 'Water Heater Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Leak Diagnosis & Repair', serviceType: 'Water Heater Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sediment Flush & Routine Maintenance', serviceType: 'Water Heater Maintenance' } },
+    ],
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/services/water-heater-repair#webpage',
+  url: 'https://toplineplumbingco.com/services/water-heater-repair',
+  name: 'Water Heater Repair in Redding, CA | Topline Plumbing',
+  description:
+    'Water heater repair in Redding, CA. Same-day diagnostic, thermostat and element repair, leak and flush service. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/services/water-heater-repair#service' },
+};
+
 export const metadata: Metadata = {
-  title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic | Topline Plumbing',
-  description: "Topline Plumbing offers expert water heater repair in Redding — diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
+  title: 'Water Heater Repair in Redding, CA | Topline Plumbing',
+  description: "Expert water heater repair in Redding, CA with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
   alternates: { canonical: 'https://toplineplumbingco.com/services/water-heater-repair' },
   openGraph: {
-    title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic | Topline Plumbing',
-    description: "Topline Plumbing offers expert water heater repair in Redding — diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
+    title: 'Water Heater Repair in Redding, CA | Topline Plumbing',
+    description: "Expert water heater repair in Redding, CA with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com/services/water-heater-repair',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair in Redding, CA' }],
@@ -50,6 +105,8 @@ export default function WaterHeaterRepairPage() {
         { name: 'Water Heater Repair', url: 'https://toplineplumbingco.com/services/water-heater-repair' },
       ]} />
       <FAQSchema faqs={waterHeaterFAQs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <ServicePageTemplate
       faqs={waterHeaterFAQs}
       hero={{
@@ -132,6 +189,16 @@ export default function WaterHeaterRepairPage() {
         subtitle: 'Installs, replacements, repairs. Tank and tankless. Every photo is from a Topline job.',
       }}
           />
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Water Heater Service by City</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <Link href="/water-heater-replacement-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Redding</span></Link>
+            <Link href="/water-heater-repair-anderson" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Anderson</span></Link>
+            <Link href="/water-heater-repair-shasta-lake" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Shasta Lake</span></Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -4,13 +4,43 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 // Note: Metadata export only works in Server Components, but we need 'use client' for animations
 // The metadata is still valid for SEO when this component is rendered on the server initially
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/about#webpage',
+  url: 'https://toplineplumbingco.com/about',
+  name: 'About Topline Plumbing | Redding, CA',
+  description:
+    'Family-owned plumbing company serving Redding and Northern California since 1998. Founded by Joe Torculas. CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Joe Torculas',
+    jobTitle: 'Founder',
+    worksFor: { '@id': 'https://toplineplumbingco.com/#business' },
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://toplineplumbingco.com/' },
+          { name: 'About', url: 'https://toplineplumbingco.com/about' },
+        ]}
+      />
       {/* SECTION 1 — PAGE HERO BANNER */}
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-br from-navy-900 to-navy-700">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">

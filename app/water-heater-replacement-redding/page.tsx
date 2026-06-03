@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
@@ -95,7 +94,7 @@ const webPageSchema = {
   url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   name: 'Water Heater Replacement in Redding, CA — Same-Day Service',
   description:
-    "Redding's water heater specialists. Same-day replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
+    "Water heater replacement in Redding, CA. Same-day swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#service' },
@@ -106,14 +105,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Replacement in Redding, CA — Same-Day Service | Topline Plumbing',
+  title: 'Water Heater Replacement Redding, CA | Topline Plumbing',
   description:
-    "Redding's water heater specialists. Same-day replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998. CSLB #596557. Call (530) 704-6989.",
+    "Water heater replacement in Redding, CA. Same-day swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   },
   openGraph: {
-    title: 'Water Heater Replacement in Redding, CA — Same-Day Service | Topline Plumbing',
+    title: 'Water Heater Replacement Redding, CA | Topline Plumbing',
     description:
       "Redding's water heater specialists. Same-day replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
@@ -177,18 +176,8 @@ export default function WaterHeaterReplacementReddingPage() {
         ]}
       />
       <FAQSchema faqs={waterHeaterFAQs} />
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
 
       {/* Hero */}
       <section className="py-16 md:py-24 bg-navy-900 text-white">
@@ -732,7 +721,9 @@ export default function WaterHeaterReplacementReddingPage() {
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
                   Redding sits in a region with hard, mineral-heavy water — high in calcium, magnesium,
-                  and sediment. That mineral load is the main reason water heaters here fail at 8–10
+                  and sediment. The City of Redding Water Utility pulls about 77% of its supply from
+                  surface sources like the Sacramento River and Whiskeytown and the remaining 23% from
+                  groundwater, and that mineral load is the main reason water heaters here fail at 8–10
                   years instead of the 12–15 you'd see in soft-water markets.
                 </p>
                 <p>

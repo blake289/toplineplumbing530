@@ -63,6 +63,10 @@ export default function LocalContext({ profile }: LocalContextProps) {
           <span>
             <span className="font-semibold text-gray-700">From our shop:</span> {profile.distanceFromRedding}
           </span>
+          <span aria-hidden>·</span>
+          <span>
+            <span className="font-semibold text-gray-700">Water provider:</span> {profile.waterProvider}
+          </span>
         </div>
       </div>
     </section>

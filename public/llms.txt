@@ -1,6 +1,6 @@
 # Topline Plumbing
 
-> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day emergency service across Northern California's entire 530 area code. Open Monday–Friday, 8:00a–4:30p.
+> Licensed, bonded & insured plumber in Redding, California. Fast, reliable plumbing with same-day emergency service across the greater Redding area. Open Monday–Friday, 8:00a–4:30p.
 
 ## Business Information
 
@@ -16,11 +16,9 @@
 
 ## Service Area
 
-Topline Plumbing serves the entire 530 area code across Northern California, including:
+Topline Plumbing serves the greater Redding area in Shasta and Tehama counties:
 
-- **Primary**: Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista
-- **North State**: Red Bluff, Chico, Oroville, Paradise, Marysville, Yuba City
-- **Sierra / Foothills**: Auburn, Grass Valley, Truckee, South Lake Tahoe
+- Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, Red Bluff
 
 ## Services
 
@@ -86,7 +84,7 @@ Same-day emergency response during business hours (Mon–Fri, 8:00a–4:30p). Ca
 ## Frequently Asked Questions
 
 **Q: What areas does Topline Plumbing serve?**
-A: We serve the entire 530 area code including Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, Red Bluff, Chico, Oroville, Paradise, Yuba City, Marysville, Auburn, Grass Valley, Truckee, and South Lake Tahoe.
+A: We serve the greater Redding area — Redding, Anderson, Shasta Lake, Palo Cedro, Bella Vista, and Red Bluff (Shasta and Tehama counties).
 
 **Q: What are your hours for emergency plumbing?**
 A: Topline Plumbing is open Monday–Friday, 8:00a–4:30p. We offer same-day emergency response during business hours. Call (530) 704-6989. For after-hours gas leaks, call PG&E at 1-800-743-5000 or 911. For burst pipes or active flooding outside business hours, shut off your main water valve and call us first thing the next business morning.
@@ -150,15 +148,36 @@ Free homeowner guides written by licensed Redding plumbers:
 - `/areas/palo-cedro` — Plumber in Palo Cedro, CA
 - `/areas/bella-vista` — Plumber in Bella Vista, CA
 - `/areas/red-bluff` — Plumber in Red Bluff, CA
-- `/areas/chico` — Plumber in Chico, CA
-- `/areas/oroville` — Plumber in Oroville, CA
-- `/areas/paradise` — Plumber in Paradise, CA
-- `/areas/yuba-city` — Plumber in Yuba City, CA
-- `/areas/marysville` — Plumber in Marysville, CA
-- `/areas/auburn` — Plumber in Auburn, CA
-- `/areas/grass-valley` — Plumber in Grass Valley, CA
-- `/areas/truckee` — Plumber in Truckee, CA
-- `/areas/south-lake-tahoe` — Plumber in South Lake Tahoe, CA
+
+## City + Service Pages
+
+Service-specific landing pages for each city we serve:
+
+- `/emergency-plumber-redding` — Emergency Plumber in Redding, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-anderson` — Emergency Plumber in Anderson, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-shasta-lake` — Emergency Plumber in Shasta Lake, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-palo-cedro` — Emergency Plumber in Palo Cedro, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-bella-vista` — Emergency Plumber in Bella Vista, CA — same-day emergency plumbing during business hours
+- `/emergency-plumber-red-bluff` — Emergency Plumber in Red Bluff, CA — same-day emergency plumbing during business hours
+- `/drain-cleaning-redding` — Drain Cleaning in Redding, CA — fast clog and drain clearing
+- `/drain-cleaning-anderson` — Drain Cleaning in Anderson, CA — fast clog and drain clearing
+- `/drain-cleaning-shasta-lake` — Drain Cleaning in Shasta Lake, CA — fast clog and drain clearing
+- `/drain-cleaning-palo-cedro` — Drain Cleaning in Palo Cedro, CA — fast clog and drain clearing
+- `/drain-cleaning-bella-vista` — Drain Cleaning in Bella Vista, CA — fast clog and drain clearing
+- `/drain-cleaning-red-bluff` — Drain Cleaning in Red Bluff, CA — fast clog and drain clearing
+- `/water-heater-repair-shasta-lake` — Water Heater Repair in Shasta Lake, CA — repair and replacement, all brands
+- `/water-heater-repair-anderson` — Water Heater Repair in Anderson, CA — repair and replacement, all brands
+- `/water-heater-repair-palo-cedro` — Water Heater Repair in Palo Cedro, CA — repair and replacement, all brands
+- `/water-heater-repair-bella-vista` — Water Heater Repair in Bella Vista, CA — repair and replacement, all brands
+- `/water-heater-repair-red-bluff` — Water Heater Repair in Red Bluff, CA — repair and replacement, all brands
+- `/sewer-line-shasta-lake` — Sewer Line Service in Shasta Lake, CA — repair, replacement, camera inspection
+- `/sewer-line-anderson` — Sewer Line Service in Anderson, CA — repair, replacement, camera inspection
+- `/sewer-line-redding` — Sewer Line Service in Redding, CA — repair, replacement, camera inspection
+- `/sewer-line-palo-cedro` — Sewer Line Service in Palo Cedro, CA — repair, replacement, camera inspection
+- `/sewer-line-bella-vista` — Sewer Line Service in Bella Vista, CA — repair, replacement, camera inspection
+- `/sewer-line-red-bluff` — Sewer Line Service in Red Bluff, CA — repair, replacement, camera inspection
+- `/commercial-plumbing-redding` — Commercial Plumbing in Redding, CA — plumbing for businesses and property managers
+- `/water-heater-replacement-redding` — Water Heater Replacement in Redding, CA — same-day replacement and tankless conversions
 
 ## Extended Reference
 
@@ -166,4 +185,4 @@ For complete service details, pricing ranges, and all FAQs, see: https://topline
 
 ---
 
-*Last updated: April 2026*
+*Last updated: June 2026*

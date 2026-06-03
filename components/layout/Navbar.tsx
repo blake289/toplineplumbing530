@@ -133,16 +133,10 @@ export default function Navbar() {
                         {[
                           ['Redding', '/areas/redding'],
                           ['Anderson', '/areas/anderson'],
-                          ['Chico', '/areas/chico'],
-                          ['Paradise', '/areas/paradise'],
-                          ['Oroville', '/areas/oroville'],
+                          ['Shasta Lake', '/areas/shasta-lake'],
+                          ['Palo Cedro', '/areas/palo-cedro'],
+                          ['Bella Vista', '/areas/bella-vista'],
                           ['Red Bluff', '/areas/red-bluff'],
-                          ['Yuba City', '/areas/yuba-city'],
-                          ['Marysville', '/areas/marysville'],
-                          ['South Lake Tahoe', '/areas/south-lake-tahoe'],
-                          ['Truckee', '/areas/truckee'],
-                          ['Grass Valley', '/areas/grass-valley'],
-                          ['Auburn', '/areas/auburn'],
                         ].map(([label, href]) => (
                           <Link
                             key={href}
@@ -184,7 +178,7 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center">
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 px-6 h-11 rounded-full bg-accent-orange text-white text-[14px] font-semibold shadow-[0_4px_14px_-2px_rgba(249,115,22,0.4)] hover:bg-orange-500 hover:scale-[1.04] hover:shadow-[0_8px_24px_-4px_rgba(249,115,22,0.55)] active:scale-[1.01] focus-visible:scale-[1.04] transition-all duration-200 ease-out"
+                  className="group inline-flex items-center gap-2 px-6 h-11 rounded-full bg-primary text-white text-[14px] font-semibold shadow-[0_4px_14px_-2px_rgba(221,21,21,0.4)] hover:bg-primary-dark hover:scale-[1.04] hover:shadow-[0_8px_24px_-4px_rgba(221,21,21,0.55)] active:scale-[1.01] focus-visible:scale-[1.04] transition-all duration-200 ease-out"
                 >
                   Get a Free Estimate
                   <svg
@@ -205,7 +199,7 @@ export default function Navbar() {
                 <a
                   href="tel:5307046989"
                   aria-label="Call (530) 704-6989"
-                  className="flex items-center justify-center w-11 h-11 rounded-full bg-accent-orange text-white shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white shadow-sm hover:shadow-md transition-all"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>

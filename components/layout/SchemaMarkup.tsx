@@ -54,20 +54,11 @@ export default function SchemaMarkup() {
     },
     "areaServed": [
       { "@type": "City", "name": "Redding", "sameAs": "https://en.wikipedia.org/wiki/Redding,_California" },
-      { "@type": "City", "name": "Shasta Lake", "sameAs": "https://en.wikipedia.org/wiki/Shasta_Lake,_California" },
       { "@type": "City", "name": "Anderson", "sameAs": "https://en.wikipedia.org/wiki/Anderson,_California" },
+      { "@type": "City", "name": "Shasta Lake", "sameAs": "https://en.wikipedia.org/wiki/Shasta_Lake,_California" },
       { "@type": "City", "name": "Palo Cedro" },
       { "@type": "City", "name": "Bella Vista" },
       { "@type": "City", "name": "Red Bluff", "sameAs": "https://en.wikipedia.org/wiki/Red_Bluff,_California" },
-      { "@type": "City", "name": "Chico", "sameAs": "https://en.wikipedia.org/wiki/Chico,_California" },
-      { "@type": "City", "name": "Oroville", "sameAs": "https://en.wikipedia.org/wiki/Oroville,_California" },
-      { "@type": "City", "name": "Yuba City", "sameAs": "https://en.wikipedia.org/wiki/Yuba_City,_California" },
-      { "@type": "City", "name": "Marysville", "sameAs": "https://en.wikipedia.org/wiki/Marysville,_California" },
-      { "@type": "City", "name": "Paradise", "sameAs": "https://en.wikipedia.org/wiki/Paradise,_California" },
-      { "@type": "City", "name": "Auburn", "sameAs": "https://en.wikipedia.org/wiki/Auburn,_California" },
-      { "@type": "City", "name": "Grass Valley", "sameAs": "https://en.wikipedia.org/wiki/Grass_Valley,_California" },
-      { "@type": "City", "name": "Truckee", "sameAs": "https://en.wikipedia.org/wiki/Truckee,_California" },
-      { "@type": "City", "name": "South Lake Tahoe", "sameAs": "https://en.wikipedia.org/wiki/South_Lake_Tahoe,_California" },
       { "@type": "PostalCodeSpecification", "postalCode": "96001", "addressCountry": "US" },
       { "@type": "PostalCodeSpecification", "postalCode": "96002", "addressCountry": "US" },
       { "@type": "PostalCodeSpecification", "postalCode": "96003", "addressCountry": "US" },
@@ -75,30 +66,13 @@ export default function SchemaMarkup() {
       { "@type": "PostalCodeSpecification", "postalCode": "96019", "addressCountry": "US" },
       { "@type": "PostalCodeSpecification", "postalCode": "96073", "addressCountry": "US" },
       { "@type": "PostalCodeSpecification", "postalCode": "96049", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "96080", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95926", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95928", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95966", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95969", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95901", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95991", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95945", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "95603", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "96161", "addressCountry": "US" },
-      { "@type": "PostalCodeSpecification", "postalCode": "96150", "addressCountry": "US" }
+      { "@type": "PostalCodeSpecification", "postalCode": "96080", "addressCountry": "US" }
     ],
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61551944100731",
       "https://www.instagram.com/toplineplumbing/",
       "https://www.google.com/maps?cid=353211204535522869"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "7",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -239,6 +213,7 @@ export default function SchemaMarkup() {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://toplineplumbingco.com/#website",
     "name": "Topline Plumbing",
     "url": "https://toplineplumbingco.com",
     "publisher": {

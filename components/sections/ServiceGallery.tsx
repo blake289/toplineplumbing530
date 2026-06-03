@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ServiceGalleryProps {
   photos: string[];
@@ -41,13 +42,13 @@ export default function ServiceGallery({
               className="block aspect-square overflow-hidden rounded-lg bg-gray-200 group relative shadow-sm hover:shadow-md transition-shadow"
               aria-label={`View Topline Plumbing project photo ${idx + 1} in gallery`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={`/images/gallery/${encodeURIComponent(filename)}`}
                 alt={`Topline Plumbing project ${idx + 1}`}
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
                 loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" aria-hidden />
             </Link>

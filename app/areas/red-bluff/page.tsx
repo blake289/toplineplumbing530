@@ -23,6 +23,39 @@ export const metadata: Metadata = {
   },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://toplineplumbingco.com/areas/red-bluff#webpage',
+  url: 'https://toplineplumbingco.com/areas/red-bluff',
+  name: 'Plumber in Red Bluff, CA | Topline Plumbing',
+  description:
+    'Licensed plumber in Red Bluff, California. Same-day emergency plumbing, drain cleaning, water heater repair, repipes, and leak detection. Licensed since 1998, CSLB #596557.',
+  inLanguage: 'en-US',
+  isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
+  about: { '@id': 'https://toplineplumbingco.com/#business' },
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://toplineplumbingco.com/areas/red-bluff#service',
+  serviceType: 'Plumbing',
+  name: 'Plumbing Services in Red Bluff, CA',
+  provider: { '@id': 'https://toplineplumbingco.com/#business' },
+  areaServed: [
+    { '@type': 'City', name: 'Red Bluff' },
+    { '@type': 'AdministrativeArea', name: 'Tehama County' },
+  ],
+  hoursAvailable: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '16:30',
+  },
+  audience: { '@type': 'Audience', audienceType: 'Homeowners' },
+};
+
 export default function RedBluffPage() {
   return (
     <>
@@ -32,6 +65,8 @@ export default function RedBluffPage() {
         { name: 'Plumber in Red Bluff, CA', url: 'https://toplineplumbingco.com/areas/red-bluff' },
       ]} />
       <FAQSchema faqs={getCityFaqs('red-bluff')} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="py-20 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -45,9 +80,9 @@ export default function RedBluffPage() {
       {/* Breadcrumb */}
       <div className="bg-gray-100 py-3">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <Link href="/" className="text-blue-600 hover:underline block py-2">Home</Link>
+          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/areas" className="text-blue-600 hover:underline block py-2">Service Areas</Link>
+          <Link href="/areas" className="text-blue-600 hover:underline">Service Areas</Link>
           <span className="mx-2">/</span>
           <span>Red Bluff CA</span>
         </div>
@@ -74,23 +109,23 @@ export default function RedBluffPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumber Red Bluff</Link>
+                    <Link href="/emergency-plumber-red-bluff" className="text-blue-600 hover:underline block py-2">Emergency Plumber Red Bluff</Link>
                   </h3>
                   <p className="text-gray-700">Topline handles plumbing emergencies in Red Bluff during business hours (Mon–Fri 8:00a–4:30p) — burst pipes, water heater flooding, sewer backups, and all urgent plumbing problems. Same-day response across the Redding area.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Red Bluff</Link>
+                    <Link href="/drain-cleaning-red-bluff" className="text-blue-600 hover:underline block py-2">Drain Cleaning Service Red Bluff</Link>
                   </h3>
                   <p className="text-gray-700">Clogged drain in Red Bluff? Slow bathroom drain? Kitchen sink backup? Our licensed plumbers provide professional drain cleaning using advanced equipment. We clear clogged drains fast — usually in under an hour.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Red Bluff</Link>
+                    <Link href="/water-heater-repair-red-bluff" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Red Bluff</Link>
                   </h3>
-                  <p className="text-gray-700">No hot water in Red Bluff? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">water heater replacement</Link>. Same-day water heater service available in Red Bluff.</p>
+                  <p className="text-gray-700">No hot water in Red Bluff? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>. Same-day water heater service available in Red Bluff.</p>
                 </div>
 
                 <div>
@@ -175,13 +210,13 @@ export default function RedBluffPage() {
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Red Bluff Services</h3>
                 <ul>
-                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
-                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
-                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/emergency-plumber-red-bluff" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
+                  <li><Link href="/drain-cleaning-red-bluff" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
+                  <li><Link href="/water-heater-repair-red-bluff" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
                   <li><Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">Water Heater Replacement</Link></li>
                   <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
                   <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
-                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
+                  <li><Link href="/sewer-line-red-bluff" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
                   <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
                   <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
                   <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>
@@ -231,6 +266,21 @@ export default function RedBluffPage() {
                 </ul>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* City Service Links */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Plumbing Services in Red Bluff</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <Link href="/emergency-plumber-red-bluff" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Emergency Plumber Red Bluff</span>
+            </Link>
+            <Link href="/drain-cleaning-red-bluff" className="block p-5 bg-white border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+              <span className="font-semibold text-gray-900">Drain Cleaning Red Bluff</span>
+            </Link>
           </div>
         </div>
       </section>

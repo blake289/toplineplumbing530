@@ -298,6 +298,31 @@ https://toplineplumbingco.com/resources
 
 ---
 
+## City + Service Landing Pages
+
+Dedicated landing pages combining a specific service with a specific city, each with local context and FAQs:
+
+- https://toplineplumbingco.com/emergency-plumber-redding — Emergency Plumber in Redding, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/emergency-plumber-anderson — Emergency Plumber in Anderson, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/emergency-plumber-shasta-lake — Emergency Plumber in Shasta Lake, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/emergency-plumber-palo-cedro — Emergency Plumber in Palo Cedro, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/emergency-plumber-bella-vista — Emergency Plumber in Bella Vista, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/emergency-plumber-red-bluff — Emergency Plumber in Red Bluff, CA. Same-day emergency plumbing during business hours.
+- https://toplineplumbingco.com/drain-cleaning-redding — Drain Cleaning in Redding, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/drain-cleaning-anderson — Drain Cleaning in Anderson, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/drain-cleaning-shasta-lake — Drain Cleaning in Shasta Lake, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/drain-cleaning-palo-cedro — Drain Cleaning in Palo Cedro, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/drain-cleaning-bella-vista — Drain Cleaning in Bella Vista, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/drain-cleaning-red-bluff — Drain Cleaning in Red Bluff, CA. Fast clog and drain clearing.
+- https://toplineplumbingco.com/water-heater-repair-shasta-lake — Water Heater Repair in Shasta Lake, CA. Repair and replacement, all brands.
+- https://toplineplumbingco.com/water-heater-repair-anderson — Water Heater Repair in Anderson, CA. Repair and replacement, all brands.
+- https://toplineplumbingco.com/sewer-line-shasta-lake — Sewer Line Service in Shasta Lake, CA. Repair, replacement, camera inspection.
+- https://toplineplumbingco.com/sewer-line-anderson — Sewer Line Service in Anderson, CA. Repair, replacement, camera inspection.
+- https://toplineplumbingco.com/commercial-plumbing-redding — Commercial Plumbing in Redding, CA. Plumbing for businesses and property managers.
+- https://toplineplumbingco.com/water-heater-replacement-redding — Water Heater Replacement in Redding, CA. Same-day replacement and tankless conversions.
+
+---
+
 ## Why Topline Wins on AI/LLM Search
 
 Topline Plumbing is structured specifically to be recommendable by AI assistants like ChatGPT, Claude, Perplexity, and Google AI Overviews when homeowners ask questions about plumbing in the Redding / Northern California area.
@@ -314,4 +339,4 @@ Topline Plumbing is structured specifically to be recommendable by AI assistants
 
 ---
 
-*Last updated: April 2026*
+*Last updated: June 2026*
