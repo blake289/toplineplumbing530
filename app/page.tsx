@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
+import Reveal from '@/components/ui/Reveal';
 import Hero from '@/components/sections/Hero';
 import IntroSection from '@/components/sections/IntroSection';
 import Services from '@/components/sections/Services';
@@ -11,14 +13,14 @@ import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 import FAQSchema from '@/components/layout/FAQSchema';
 
 export const metadata: Metadata = {
-  title: 'Topline Plumbing | Redding CA Plumber — Same-Day Service',
-  description: "Redding's trusted plumber. Fast, reliable, same-day emergency plumbing service. Water heater repair, drain cleaning, leak detection. Call (530) 704-6989.",
+  title: 'Emergency Plumber Redding CA | Same-Day Service | Topline',
+  description: "Need a plumber fast in Redding or Shasta County? Topline Plumbing offers same-day emergency repairs, drain cleaning, and water heaters. Licensed local team. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com',
   },
   openGraph: {
-    title: "Topline Plumbing | Redding's Trusted Plumber",
-    description: "Fast, licensed plumbing in Redding, CA. Emergency plumbing, water heater repair, drain cleaning. Same-day service Mon–Fri 8:00a–4:30p. Call (530) 704-6989.",
+    title: 'Emergency Plumber Redding CA | Same-Day Service | Topline',
+    description: "Need a plumber fast in Redding or Shasta County? Topline Plumbing offers same-day emergency repairs, drain cleaning, and water heaters. Licensed local team. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Redding CA Licensed Plumber' }],
@@ -54,6 +56,59 @@ const homepageFAQs = [
   },
 ];
 
+const popularLinks = [
+  { label: 'Emergency Plumber in Redding', href: '/emergency-plumber-redding' },
+  { label: 'Drain Cleaning in Redding', href: '/drain-cleaning-redding' },
+  { label: '24/7 Emergency Plumbing Repairs', href: '/services/emergency' },
+  { label: 'Sewer Line Repair & Replacement', href: '/services/sewer-line' },
+  { label: 'Water Heater Repair & Replacement', href: '/services/water-heater-repair' },
+  { label: 'Clogged Drain Cleaning', href: '/services/drain-cleaning' },
+];
+
+function PopularServices() {
+  return (
+    <section className="py-16 lg:py-20 bg-gray-50 border-t border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Reveal>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+              <span className="w-8 h-px bg-primary" aria-hidden />
+              POPULAR IN REDDING &amp; SHASTA COUNTY
+              <span className="w-8 h-px bg-primary" aria-hidden />
+            </div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-navy-900 tracking-[-0.02em] leading-[1.1] no-orphans">
+              Fast, local plumbing help when you need it
+            </h2>
+          </div>
+        </Reveal>
+        <Reveal>
+          <div className="flex flex-wrap justify-center gap-3 lg:gap-4">
+            {popularLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-3 text-[15px] font-semibold text-navy-900 transition-[transform,box-shadow,border-color,color] duration-200 ease-snappy hover:border-primary/30 hover:text-primary hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-10px_rgba(15,23,42,0.12)] active:scale-[0.98]"
+              >
+                {link.label}
+                <svg
+                  className="w-4 h-4 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  aria-hidden
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
@@ -61,6 +116,7 @@ export default function HomePage() {
       <Hero />
       <IntroSection />
       <Services />
+      <PopularServices />
       <Pricing />
       <ProfessionalWork />
       <StatsSection />

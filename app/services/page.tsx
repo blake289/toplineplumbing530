@@ -180,6 +180,42 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Popular city pages */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#1e3a5f] mb-3">
+              Plumbing by City &amp; Service
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              Looking for a specific service in your town? Jump straight to the local page for the
+              fastest answer on response times, pricing, and what we cover in your area.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              ['/emergency-plumber-redding', 'Emergency Plumber in Redding'],
+              ['/drain-cleaning-redding', 'Drain Cleaning in Redding'],
+              ['/sewer-line-redding', 'Sewer Line Repair in Redding'],
+              ['/water-heater-replacement-redding', 'Water Heater Replacement in Redding'],
+              ['/emergency-plumber-anderson', 'Emergency Plumber in Anderson'],
+              ['/drain-cleaning-anderson', 'Drain Cleaning in Anderson'],
+              ['/emergency-plumber-shasta-lake', 'Emergency Plumber in Shasta Lake'],
+              ['/drain-cleaning-red-bluff', 'Drain Cleaning in Red Bluff'],
+              ['/commercial-plumbing-redding', 'Commercial Plumbing in Redding'],
+            ].map(([href, label]) => (
+              <Link
+                key={href}
+                href={href}
+                className="block bg-white border border-gray-200 rounded-lg px-5 py-4 text-[#1e3a5f] font-medium hover:border-[#dc2626] hover:text-[#dc2626] hover:shadow-sm transition-all"
+              >
+                {label} →
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA banner */}
       <section className="py-16 bg-[#dc2626]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">

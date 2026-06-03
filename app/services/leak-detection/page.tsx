@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
@@ -157,6 +158,19 @@ export default function LeakDetectionPage() {
         subtitle: 'Slab leaks, supply line leaks, hidden moisture — found and fixed.',
       }}
             />
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Related Plumbing Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <Link href="/services/repiping-services" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Repiping Services →</span></Link>
+            <Link href="/emergency-plumber-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Emergency Plumber in Redding →</span></Link>
+            <Link href="/services/sewer-line" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Sewer Line Repair →</span></Link>
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/services" className="text-primary font-semibold hover:underline">View all plumbing services →</Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

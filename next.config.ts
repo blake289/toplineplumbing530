@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.toplineplumbingco.com' }],
+        destination: 'https://toplineplumbingco.com/:path*',
+        permanent: true,
+      },
       { source: '/cost', destination: '/services', permanent: true },
       { source: '/cost/water-heater-replacement', destination: '/water-heater-replacement-redding', permanent: true },
       { source: '/cost/tankless-installation', destination: '/services/tankless', permanent: true },

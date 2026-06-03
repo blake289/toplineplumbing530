@@ -6,12 +6,12 @@ import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumber in Redding, CA | Topline Plumbing',
-  description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
+  title: 'Emergency Plumbing Services in Redding & Shasta County',
+  description: 'Emergency plumbing services across Redding and Shasta County. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/emergency' },
   openGraph: {
-    title: 'Emergency Plumber in Redding, CA | Topline Plumbing',
-    description: 'Emergency plumber in Redding. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
+    title: 'Emergency Plumbing Services in Redding & Shasta County',
+    description: 'Emergency plumbing services across Redding and Shasta County. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/emergency',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Emergency Plumbing in Redding, CA' }],
@@ -66,7 +66,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/emergency#webpage',
   url: 'https://toplineplumbingco.com/services/emergency',
-  name: 'Emergency Plumber in Redding, CA | Topline Plumbing',
+  name: 'Emergency Plumbing Services in Redding & Shasta County | Topline Plumbing',
   description:
     'Emergency plumber in Redding, CA. Same-day response for burst pipes, gas leaks, and flooding during business hours. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -222,6 +222,16 @@ export default function EmergencyPlumbingPage() {
             <Link href="/emergency-plumber-palo-cedro" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Palo Cedro</span></Link>
             <Link href="/emergency-plumber-bella-vista" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Bella Vista</span></Link>
             <Link href="/emergency-plumber-red-bluff" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Red Bluff</span></Link>
+          </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-center">
+            <span className="font-semibold text-gray-900">Related services:</span>
+            <Link href="/services/drain-cleaning" className="text-primary font-semibold hover:underline">Drain Cleaning</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services/water-heater-repair" className="text-primary font-semibold hover:underline">Water Heater Repair</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/commercial-plumbing-redding" className="text-primary font-semibold hover:underline">Commercial Plumbing</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services" className="text-primary font-semibold hover:underline">All Services</Link>
           </div>
         </div>
       </section>

@@ -226,9 +226,21 @@ export default function SewerLinePage() {
       <section className="py-16 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Sewer Line Service by City</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <Link href="/sewer-line-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Redding</span></Link>
             <Link href="/sewer-line-anderson" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Anderson</span></Link>
             <Link href="/sewer-line-shasta-lake" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Shasta Lake</span></Link>
+            <Link href="/sewer-line-palo-cedro" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Palo Cedro</span></Link>
+            <Link href="/sewer-line-bella-vista" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Bella Vista</span></Link>
+            <Link href="/sewer-line-red-bluff" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Red Bluff</span></Link>
+          </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-center">
+            <span className="font-semibold text-gray-900">Related services:</span>
+            <Link href="/services/drain-cleaning" className="text-primary font-semibold hover:underline">Drain Cleaning</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services/emergency" className="text-primary font-semibold hover:underline">Emergency Plumbing</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services" className="text-primary font-semibold hover:underline">All Services</Link>
           </div>
         </div>
       </section>

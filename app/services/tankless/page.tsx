@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
@@ -237,6 +238,19 @@ export default function TanklessWaterHeaterPage() {
               recommendation, and clean work backed by our 5.0 Google rating. Call (530) 704-6989,
               Monday through Friday 8:00a to 4:30p, to book a free tankless consultation.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Related Plumbing Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <Link href="/services/water-heater-repair" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Water Heater Repair →</span></Link>
+            <Link href="/water-heater-replacement-redding" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Water Heater Replacement in Redding →</span></Link>
+            <Link href="/services/leak-detection" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Leak Detection →</span></Link>
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/services" className="text-primary font-semibold hover:underline">View all plumbing services →</Link>
           </div>
         </div>
       </section>

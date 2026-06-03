@@ -234,6 +234,16 @@ export default function DrainCleaningPage() {
             <Link href="/drain-cleaning-bella-vista" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Bella Vista</span></Link>
             <Link href="/drain-cleaning-red-bluff" className="block p-4 bg-white border border-gray-200 rounded-lg text-center hover:border-primary hover:shadow-md transition-all"><span className="font-semibold text-gray-900">Red Bluff</span></Link>
           </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-center">
+            <span className="font-semibold text-gray-900">Related services:</span>
+            <Link href="/services/sewer-line" className="text-primary font-semibold hover:underline">Sewer Line Repair</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services/emergency" className="text-primary font-semibold hover:underline">Emergency Plumbing</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/commercial-plumbing-redding" className="text-primary font-semibold hover:underline">Commercial Plumbing</Link>
+            <span className="text-gray-400">·</span>
+            <Link href="/services" className="text-primary font-semibold hover:underline">All Services</Link>
+          </div>
         </div>
       </section>
     </>

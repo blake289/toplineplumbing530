@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ['/images/water-heater.webp'],
   },
   alternates: {
-    canonical: 'https://toplineplumbingco.com',
+    canonical: '/',
   },
 };
 
