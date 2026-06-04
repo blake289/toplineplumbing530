@@ -228,7 +228,7 @@ def plain_delta(cur, prv, lower_better=False):
     return f"{word} {abs(pct):.0f}% vs last month ({'good' if good else 'watch'})"
 
 
-def render_client(ga, gsc, gbp):
+def render_client(ga, gsc, gbp, ghl=None):
     L = []
     L.append("# Topline Plumbing")
     L.append(f"## Monthly Performance Report — {MONTH}\n")
@@ -236,7 +236,11 @@ def render_client(ga, gsc, gbp):
     # ---- Executive summary ----
     L.append("### The Short Version")
     bullets = []
-    if ga:
+    if ghl and ghl.get("inbound"):
+        bullets.append(f"**{ghl['inbound']} phone calls** came in from customers "
+                       f"this month ({ghl['answered']} answered, {ghl['missed']} "
+                       f"missed).")
+    elif ga:
         calls = ga["calls"]["cur"]
         bullets.append(f"**{calls} phone call{'s' if calls != '1' else ''}** came "
                        f"in directly from your website this month.")
@@ -259,12 +263,16 @@ def render_client(ga, gsc, gbp):
 
     # ---- Leads (the hero) ----
     L.append("### Your Leads This Month")
-    if ga:
+    if ghl and ghl.get("inbound"):
+        L.append(f"## {ghl['inbound']} phone calls from customers")
+        L.append(f"*Real inbound calls to your business line this month: "
+                 f"**{ghl['answered']} answered** and **{ghl['missed']} missed**. "
+                 f"Every missed call is a job that may have gone to a competitor — "
+                 f"the biggest opportunity we can help you capture.*")
+    elif ga:
         calls = ga["calls"]["cur"]
         L.append(f"## {calls} calls from your website")
-        L.append("*This counts people who tapped your phone number on the site. "
-                 "It does not yet include calls from your Google Maps listing — "
-                 "we're adding that next month so you see every lead in one place.*")
+        L.append("*This counts people who tapped your phone number on the site.*")
     else:
         L.append("> Call tracking data unavailable this run.")
     L.append("")
@@ -468,7 +476,14 @@ def main():
     except Exception as e:
         errors.append(f"GSC failed: {e}")
 
-    client_md = render_client(ga, gsc, gbp)
+    ghl = None
+    try:
+        import ghl_calls
+        ghl = ghl_calls.count_calls(CUR_START, CUR_END)
+    except Exception as e:
+        errors.append(f"GHL calls failed: {e}")
+
+    client_md = render_client(ga, gsc, gbp, ghl)
     internal_md = client_md + "\n\n<div style='page-break-before:always'></div>\n\n" \
         + render_appendix(ga, gsc)
 
