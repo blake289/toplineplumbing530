@@ -5,8 +5,8 @@ import Reveal from '@/components/ui/Reveal';
 const pricingCards = [
   {
     title: 'Water Heating Service',
-    price: '$127',
-    priceNote: 'Starting price',
+    price: 'Free Quote',
+    priceNote: 'Upfront, flat-rate pricing',
     description: 'Comprehensive diagnostics, annual flush, and safety inspections for tank or tankless systems.',
     features: [
       'Full system diagnostic check',
@@ -19,8 +19,8 @@ const pricingCards = [
   },
   {
     title: 'Drain Cleaning',
-    price: '$130',
-    priceNote: 'Starting price',
+    price: 'Free Quote',
+    priceNote: 'Upfront, flat-rate pricing',
     description: 'Professional mechanical augering for stubborn clogs in sinks, toilets, or main sewer lines.',
     features: [
       'Power auger cleaning',
@@ -33,8 +33,8 @@ const pricingCards = [
   },
   {
     title: 'Emergency Response',
-    price: 'Variable',
-    priceNote: 'Free quote upfront',
+    price: 'Free Quote',
+    priceNote: 'Upfront, flat-rate pricing',
     description: 'Emergency plumbing for burst pipes, gas leaks, and flooding — same-day response during business hours.',
     features: [
       'Mon–Fri 8a–4:30p',
@@ -63,7 +63,7 @@ export default function Pricing() {
               Upfront pricing. No surprises.
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-gray-600">
-              Flat, honest rates you see before work begins. Plus a free estimate with any service.
+              You approve a flat, upfront price before any work begins. Free estimate with every service, and no surprise service-call fees.
             </p>
           </div>
         </Reveal>

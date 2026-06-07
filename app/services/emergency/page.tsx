@@ -3,7 +3,6 @@ import Link from 'next/link';
 import ServicePageTemplate from '@/components/templates/ServicePageTemplate';
 import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
-import AfterHoursCapture from '@/components/sections/AfterHoursCapture';
 
 export const metadata: Metadata = {
   title: 'Emergency Plumbing Services in Redding & Shasta County',
@@ -211,7 +210,6 @@ export default function EmergencyPlumbingPage() {
         subtitle: 'Burst pipes, water heater floods, sewer backups — same-day response during business hours.',
       }}
           />
-      <AfterHoursCapture />
       <section className="py-16 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Emergency Plumber by City</h2>
