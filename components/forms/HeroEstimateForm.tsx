@@ -64,6 +64,8 @@ export default function HeroEstimateForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
       <Input
         label="Name"
+        type="text"
+        autoComplete="name"
         {...register('name')}
         error={errors.name?.message}
         required
@@ -72,6 +74,7 @@ export default function HeroEstimateForm() {
       <Input
         label="Phone"
         type="tel"
+        autoComplete="tel"
         {...register('phone')}
         error={errors.phone?.message}
         required
@@ -81,6 +84,7 @@ export default function HeroEstimateForm() {
         label="ZIP"
         type="text"
         inputMode="numeric"
+        autoComplete="postal-code"
         {...register('zip')}
         error={errors.zip?.message}
         required

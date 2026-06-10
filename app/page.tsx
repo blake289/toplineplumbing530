@@ -58,7 +58,7 @@ const homepageFAQs = [
 const popularLinks = [
   { label: 'Emergency Plumber in Redding', href: '/emergency-plumber-redding' },
   { label: 'Drain Cleaning in Redding', href: '/drain-cleaning-redding' },
-  { label: '24/7 Emergency Plumbing Repairs', href: '/services/emergency' },
+  { label: 'Same-Day Emergency Plumbing Repairs', href: '/services/emergency' },
   { label: 'Sewer Line Repair & Replacement', href: '/services/sewer-line' },
   { label: 'Water Heater Repair & Replacement', href: '/services/water-heater-repair' },
   { label: 'Clogged Drain Cleaning', href: '/services/drain-cleaning' },

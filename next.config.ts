@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       { source: '/cost/emergency-plumbing', destination: '/services/emergency', permanent: true },
       { source: '/cost/repiping', destination: '/services/repiping-services', permanent: true },
       { source: '/financing', destination: '/contact', permanent: true },
+      { source: '/water-heater-repair-redding', destination: '/services/water-heater-repair', permanent: true },
     ];
   },
   async headers() {

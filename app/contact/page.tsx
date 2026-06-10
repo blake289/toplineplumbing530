@@ -62,7 +62,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-base text-gray-900 uppercase tracking-wide mb-2">Phone</h3>
-                    <a href="tel:5307046989" className="text-lg text-navy-500 hover:text-navy-700">(530) 704-6989</a>
+                    <a href="tel:5307046989" className="inline-flex items-center min-h-[44px] text-lg text-navy-500 hover:text-navy-700">(530) 704-6989</a>
                     <p className="text-sm text-gray-600">Mon&ndash;Fri 8:00a&ndash;4:30p</p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <li className="flex items-center gap-2"><span className="text-primary">✓</span> Upfront pricing, no hidden fees</li>
                   <li className="flex items-center gap-2"><span className="text-primary">✓</span> Licensed & insured professionals</li>
                   <li className="flex items-center gap-2"><span className="text-primary">✓</span> Same-day service available</li>
-                  <li className="flex items-center gap-2"><span className="text-primary">✓</span> 100% satisfaction guarantee</li>
+                  <li className="flex items-center gap-2"><span className="text-primary">✓</span> Backed by the Topline Promise</li>
                 </ul>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
           <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-lg">
             <iframe
               title="Topline Plumbing service area — Redding, CA"
-              src="https://www.google.com/maps/embed?pb=!1m3!3m2!1m1!4s353211204535522869"
+              src="https://www.google.com/maps?q=Topline+Plumbing+Redding+CA&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}

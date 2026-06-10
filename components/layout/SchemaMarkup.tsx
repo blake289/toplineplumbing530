@@ -19,6 +19,7 @@ export default function SchemaMarkup() {
     },
     "founder": {
       "@type": "Person",
+      "@id": "https://toplineplumbingco.com/#joe-torculas",
       "name": "Joe Torculas"
     },
     "foundingDate": "1998",

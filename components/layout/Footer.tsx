@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Column 2: Services */}
           <div className="md:col-span-2">
-            <h4 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Services</h4>
+            <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Services</h3>
             <nav className="flex flex-col text-[15px]">
               <Link href="/services/emergency" className="text-gray-400 hover:text-white transition-colors py-2.5">Emergency Plumbing</Link>
               <Link href="/services/water-heater-repair" className="text-gray-400 hover:text-white transition-colors py-2.5">Water Heater Repair</Link>
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Column 3: Contact */}
           <div className="md:col-span-3">
-            <h4 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Contact</h4>
+            <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Contact</h3>
             <div className="flex flex-col gap-1 text-[15px]">
               <a href="tel:5307046989" className="text-white text-lg font-bold hover:text-primary-light transition-colors inline-flex items-center gap-2 py-2.5">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -113,7 +113,7 @@ export default function Footer() {
 
           {/* Column 4: Service Areas as pills */}
           <div className="md:col-span-3">
-            <h4 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Service Areas</h4>
+            <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Service Areas</h3>
             <div className="flex flex-wrap gap-1.5">
               {serviceAreas.map(([label, href]) => (
                 <Link
@@ -130,7 +130,7 @@ export default function Footer() {
 
         {/* Popular City Services */}
         <div className="pt-10 pb-2">
-          <h4 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Popular Services by City</h4>
+          <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Popular Services by City</h3>
           <div className="flex flex-wrap gap-1.5">
             {([
               ['Emergency Plumber Redding', '/emergency-plumber-redding'],

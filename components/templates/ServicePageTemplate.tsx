@@ -70,16 +70,17 @@ export default function ServicePageTemplate({
     <>
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-navy-900">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center text-white flex flex-col">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold uppercase mb-6 leading-tight text-white">
             {hero.title}
           </h1>
-          {hero.description.map((paragraph, index) => (
-            <p key={index} className="text-lg md:text-xl mb-4 text-white text-opacity-90 leading-relaxed">
-              {paragraph}
+          {hero.description[0] && (
+            <p className="text-lg md:text-xl mb-4 text-white text-opacity-90 leading-relaxed">
+              {hero.description[0]}
             </p>
-          ))}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          )}
+          {/* On mobile the CTA buttons render here, directly below the first paragraph; on sm+ they order last (below all paragraphs) as before */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 sm:mt-4 sm:order-1">
             <Link
               href="/contact"
               className="h-12 px-8 bg-primary text-white font-btn font-bold rounded-xl inline-flex items-center justify-center hover:bg-primary-dark hover:-translate-y-1 active:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)] shadow-lg"
@@ -93,6 +94,14 @@ export default function ServicePageTemplate({
               Call (530) 704-6989
             </a>
           </div>
+          {hero.description.slice(1).map((paragraph, index) => (
+            <p
+              key={index}
+              className={`text-lg md:text-xl mb-4 text-white text-opacity-90 leading-relaxed ${index === 0 ? 'mt-8 sm:mt-0' : ''}`}
+            >
+              {paragraph}
+            </p>
+          ))}
         </div>
       </section>
 

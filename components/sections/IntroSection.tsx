@@ -36,7 +36,7 @@ export default function IntroSection() {
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-prose">
               As the leading <strong>Redding plumber</strong> since 1998, Topline Plumbing provides the fast, reliable
-              solutions you need to stop leaks and clear drains today. Founded and operated by <strong>Joe and Paulette Torculas</strong>, our family-owned team specializes in expert repairs,
+              solutions you need to stop leaks and clear drains today. Founded by <strong>Joe and Paulette Torculas</strong>, with son Josiah working alongside Joe in the field, our family-owned team specializes in expert repairs,
               upfront pricing, and comprehensive plumbing services for homeowners and businesses across Northern California. CSLB License #596557.
             </p>
 
