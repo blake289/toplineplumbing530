@@ -173,14 +173,11 @@ export default function RedBluffPage() {
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Plumbing Service Areas Near Red Bluff</h2>
               <p className="text-gray-700 mb-4">In addition to Red Bluff, we provide licensed plumbing service throughout Northern California including:</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                <Link href="/areas/chico" className="text-blue-600 hover:underline block py-2">Plumber Chico</Link>
                 <Link href="/areas/redding" className="text-blue-600 hover:underline block py-2">Plumber Redding</Link>
-                <Link href="/areas/yuba-city" className="text-blue-600 hover:underline block py-2">Plumber Yuba City</Link>
-                <Link href="/areas/marysville" className="text-blue-600 hover:underline block py-2">Plumber Marysville</Link>
-                <Link href="/areas/paradise" className="text-blue-600 hover:underline block py-2">Plumber Paradise</Link>
-                <Link href="/areas/oroville" className="text-blue-600 hover:underline block py-2">Plumber Oroville</Link>
-                <Link href="/areas/red-bluff" className="text-blue-600 hover:underline block py-2">Plumber Red Bluff</Link>
                 <Link href="/areas/anderson" className="text-blue-600 hover:underline block py-2">Plumber Anderson</Link>
+                <Link href="/areas/bella-vista" className="text-blue-600 hover:underline block py-2">Plumber Bella Vista</Link>
+                <Link href="/areas/palo-cedro" className="text-blue-600 hover:underline block py-2">Plumber Palo Cedro</Link>
+                <Link href="/areas/shasta-lake" className="text-blue-600 hover:underline block py-2">Plumber Shasta Lake</Link>
               </div>
 
               <h2 className="text-3xl font-bold text-gray-900 pt-8">Emergency Plumber Red Bluff - Same-Day Service</h2>

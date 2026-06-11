@@ -42,10 +42,13 @@ export default function HeroEstimateForm() {
 
       if (!response.ok) throw new Error('Submission failed');
 
-      // GA4 conversion: fire generate_lead on successful submit
+      // GA4 conversion: fire generate_lead on successful submit.
+      // form_id/form_name mirror the <form> attrs so this matches the
+      // auto form_start event from GA4 Enhanced Measurement.
       if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
         window.gtag('event', 'generate_lead', {
-          form: 'hero_estimate',
+          form_id: 'hero_estimate',
+          form_name: 'Hero Estimate Form',
           service: data.service,
         });
       }
@@ -61,7 +64,7 @@ export default function HeroEstimateForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+    <form id="hero_estimate" name="Hero Estimate Form" onSubmit={handleSubmit(onSubmit)} className="space-y-3">
       <Input
         label="Name"
         type="text"

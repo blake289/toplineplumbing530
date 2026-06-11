@@ -21,7 +21,16 @@ const nextConfig: NextConfig = {
       { source: '/cost/emergency-plumbing', destination: '/services/emergency', permanent: true },
       { source: '/cost/repiping', destination: '/services/repiping-services', permanent: true },
       { source: '/financing', destination: '/contact', permanent: true },
-      { source: '/water-heater-repair-redding', destination: '/services/water-heater-repair', permanent: true },
+      { source: '/water-heater-repair-redding', destination: '/water-heater-replacement-redding', permanent: true },
+      { source: '/areas/auburn', destination: '/areas', permanent: true },
+      { source: '/areas/chico', destination: '/areas', permanent: true },
+      { source: '/areas/grass-valley', destination: '/areas', permanent: true },
+      { source: '/areas/marysville', destination: '/areas', permanent: true },
+      { source: '/areas/oroville', destination: '/areas', permanent: true },
+      { source: '/areas/paradise', destination: '/areas', permanent: true },
+      { source: '/areas/south-lake-tahoe', destination: '/areas', permanent: true },
+      { source: '/areas/truckee', destination: '/areas', permanent: true },
+      { source: '/areas/yuba-city', destination: '/areas', permanent: true },
     ];
   },
   async headers() {

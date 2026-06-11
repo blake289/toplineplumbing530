@@ -92,9 +92,9 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#webpage',
   url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
-  name: 'Water Heater Replacement in Redding, CA — Same-Day Service',
+  name: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
   description:
-    "Water heater replacement in Redding, CA. Same-day swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
+    "Water heater repair & replacement in Redding, CA. Same-day repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#service' },
@@ -105,16 +105,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Replacement Redding, CA | Topline Plumbing',
+  title: 'Water Heater Repair & Replacement Redding, CA | Topline Plumbing',
   description:
-    "Water heater replacement in Redding, CA. Same-day swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
+    "Water heater repair & replacement in Redding, CA. Same-day repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   },
   openGraph: {
-    title: 'Water Heater Replacement Redding, CA | Topline Plumbing',
+    title: 'Water Heater Repair & Replacement Redding, CA | Topline Plumbing',
     description:
-      "Redding's water heater specialists. Same-day replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
+      "Redding's water heater specialists. Same-day repair and replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -189,7 +189,7 @@ export default function WaterHeaterReplacementReddingPage() {
                 Redding's Water Heater Specialists · Licensed Since 1998
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-white leading-tight">
-                Water Heater Replacement in Redding, CA
+                Water Heater Repair & Replacement in Redding, CA
               </h1>
               <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
                 Local family-run plumbers — not a corporate dispatch center. Same-day tank replacement,
@@ -844,10 +844,10 @@ export default function WaterHeaterReplacementReddingPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4 text-center">
-            Water Heater Service Across Shasta County & Beyond
+            Water Heater Service Across Shasta County
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-            Same-day service in city limits. Foothill and Tahoe-area installs typically scheduled
+            Same-day service in city limits. Outlying installs typically scheduled
             24–48 hours out.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-w-3xl mx-auto">
@@ -858,12 +858,6 @@ export default function WaterHeaterReplacementReddingPage() {
               ['palo-cedro', 'Palo Cedro'],
               ['bella-vista', 'Bella Vista'],
               ['red-bluff', 'Red Bluff'],
-              ['chico', 'Chico'],
-              ['paradise', 'Paradise'],
-              ['oroville', 'Oroville'],
-              ['yuba-city', 'Yuba City'],
-              ['marysville', 'Marysville'],
-              ['grass-valley', 'Grass Valley'],
             ].map(([slug, label]) => (
               <Link
                 key={slug}
