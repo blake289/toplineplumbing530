@@ -27,6 +27,66 @@ GA4_PROPERTY = "533184222"  # property ID (NOT 391501776 — that's the account 
 SITE_DOMAIN = "toplineplumbingco.com"
 KEY_EVENT = "phone_call"
 
+# Per-month state so the report can show month-over-month deltas (calls, new
+# reviews) without re-scanning prior months. Keyed by "YYYY-MM".
+STATE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          ".planning", "report-state.json")
+
+
+def _project_env():
+    """Read the project's .env.local into a dict (GHL token, Places key, etc.)."""
+    env = {}
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     ".env.local")
+    if os.path.exists(p):
+        with open(p) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    env[k.strip()] = v.strip()
+    return env
+
+
+def load_state():
+    if os.path.exists(STATE_PATH):
+        try:
+            with open(STATE_PATH) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def save_state(state):
+    try:
+        with open(STATE_PATH, "w") as f:
+            json.dump(state, f, indent=2)
+    except OSError as e:
+        print(f">>> state save skipped: {e}")
+
+
+def gbp_reviews():
+    """Live rating + review count from the Places API (New). Returns dict or None."""
+    env = _project_env()
+    key = env.get("GOOGLE_PLACES_API_KEY")
+    place_id = env.get("GBP_PLACE_ID")
+    if not key or not place_id:
+        return None
+    import urllib.request
+    url = f"https://places.googleapis.com/v1/places/{place_id}"
+    req = urllib.request.Request(url, headers={
+        "X-Goog-Api-Key": key,
+        "X-Goog-FieldMask": "displayName,rating,userRatingCount,businessStatus",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            d = json.load(r)
+        return {"rating": d.get("rating"), "count": d.get("userRatingCount"),
+                "status": d.get("businessStatus")}
+    except Exception:
+        return None
+
 
 def auth():
     creds = None
@@ -211,6 +271,21 @@ def delta(cur, prv):
 MONTH = CUR_START.strftime("%B %Y")        # the month being reported (previous month)
 
 
+def work_done_notes():
+    """Client-facing 'what we did' bullets for the reported month.
+
+    Read from .planning/report-notes/<YYYY-MM>.md so the list is always real
+    work, hand-curated, never auto-guessed. Returns the markdown body or None.
+    """
+    fn = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                      ".planning", "report-notes", CUR_START.strftime("%Y-%m") + ".md")
+    if os.path.exists(fn):
+        with open(fn) as f:
+            body = f.read().strip()
+        return body or None
+    return None
+
+
 def plain_delta(cur, prv, lower_better=False):
     """Human phrase for a change, or None when there's no real prior baseline."""
     try:
@@ -228,10 +303,10 @@ def plain_delta(cur, prv, lower_better=False):
     return f"{word} {abs(pct):.0f}% vs last month ({'good' if good else 'watch'})"
 
 
-def render_client(ga, gsc, gbp, ghl=None):
+def render_client(ga, gsc, gbp, ghl=None, reviews=None, deltas=None):
+    deltas = deltas or {}
     L = []
-    L.append("# Topline Plumbing")
-    L.append(f"## Monthly Performance Report — {MONTH}\n")
+    # (Report title + month live in the branded PDF header band — see md_to_pdf.)
 
     # ---- Executive summary ----
     L.append("### The Short Version")
@@ -248,14 +323,17 @@ def render_client(ga, gsc, gbp, ghl=None):
         cu, pv = gsc["cur"], gsc["prv"]
         moved = pv["position"] - cu["position"]
         if moved > 0.5:
-            bullets.append(f"Your Google ranking **improved** — you moved up about "
+            bullets.append(f"Your Google ranking **improved**. You moved up about "
                            f"{moved:.0f} spots (from position {pv['position']:.0f} to "
                            f"{cu['position']:.0f}), climbing from page 2 toward page 1.")
+        impr_word = ("up from" if cu["impressions"] > pv["impressions"]
+                     else "compared to" if cu["impressions"] == pv["impressions"]
+                     else "down from")
         bullets.append(f"**{int(cu['impressions']):,} times** your business showed up "
-                       f"in Google search results — up from {int(pv['impressions']):,} "
-                       f"last month.")
+                       f"in Google search results, {impr_word} "
+                       f"{int(pv['impressions']):,} last month.")
     bullets.append("Next month we're focused on the searches where you're sitting "
-                   "*just* below page 1 (like “emergency plumber”) — getting "
+                   "*just* below page 1 (like “emergency plumber”). Getting "
                    "those onto page 1 is where the next jump in calls comes from.")
     for b in bullets:
         L.append(f"- {b}")
@@ -264,14 +342,47 @@ def render_client(ga, gsc, gbp, ghl=None):
     # ---- Leads (the hero) ----
     L.append("### Your Leads This Month")
     if ghl and ghl.get("inbound"):
-        L.append(f"## {ghl['inbound']} phone calls from customers")
-        L.append(f"*Real inbound calls to your business line this month: "
-                 f"**{ghl['answered']} answered** and **{ghl['missed']} missed**. "
-                 f"Every missed call is a job that may have gone to a competitor — "
-                 f"the biggest opportunity we can help you capture.*")
+        L.append("")
+        L.append('<div class="stats">'
+                 f'<div class="stat"><div class="stat-num">{ghl["inbound"]}</div>'
+                 '<div class="stat-label">Phone Calls In</div></div>'
+                 f'<div class="stat"><div class="stat-num">{ghl["answered"]}</div>'
+                 '<div class="stat-label">Answered</div></div>'
+                 f'<div class="stat stat-warn"><div class="stat-num">{ghl["missed"]}</div>'
+                 '<div class="stat-label">Missed</div></div>'
+                 '</div>')
+        L.append("")
+        # Month-over-month on the call volume, when we have a prior snapshot.
+        mom = ""
+        cp = deltas.get("calls_prev")
+        if cp and int(cp) >= 2:
+            d = ghl["inbound"] - int(cp)
+            if d > 0:
+                mom = f" That is {d} more than last month ({cp})."
+            elif d < 0:
+                mom = f" That is {abs(d)} fewer than last month ({cp})."
+            else:
+                mom = f" About the same as last month ({cp})."
+        L.append(f"*Real inbound calls to your business line this month.{mom} "
+                 f"Every missed call is a job that may have gone to a competitor, "
+                 f"so it is the biggest opportunity we help you capture.*")
+        # Missed-call text-back: turn the "missed" number into proof the system works.
+        mctb = ghl.get("mctb_saves")
+        if mctb:
+            L.append("")
+            L.append(f"> **{mctb} of those {ghl['missed']} missed calls got an "
+                     f"instant automated text back** within seconds, reopening the "
+                     f"conversation so the lead is not lost to the next plumber. "
+                     f"That is the missed-call text-back system working for you "
+                     f"around the clock.")
     elif ga:
         calls = ga["calls"]["cur"]
-        L.append(f"## {calls} calls from your website")
+        L.append("")
+        L.append('<div class="stats">'
+                 f'<div class="stat"><div class="stat-num">{calls}</div>'
+                 '<div class="stat-label">Calls from Your Website</div></div>'
+                 '</div>')
+        L.append("")
         L.append("*This counts people who tapped your phone number on the site.*")
     else:
         L.append("> Call tracking data unavailable this run.")
@@ -291,18 +402,25 @@ def render_client(ga, gsc, gbp, ghl=None):
                  f"{pv['position']:.1f} |")
         L.append("")
         moved = pv["position"] - cu["position"]
-        climb = (f"up about {moved:.0f} spots from {pv['position']:.0f} last month"
-                 if moved > 0.5 else "holding steady")
+        if moved > 0.5:
+            climb = (f"up about {moved:.0f} spots from {pv['position']:.0f} last "
+                     f"month, real movement toward page 1")
+        elif moved < -0.5:
+            climb = (f"down about {abs(moved):.0f} spots from "
+                     f"{pv['position']:.0f} last month. Normal fluctuation as "
+                     f"Google evaluates the new pages; we're watching it")
+        else:
+            climb = "holding steady"
         # brand rank, pulled live from the query data
         brand = next((po for q, cl, im, ct, po in gsc["top_queries"]
                       if q.strip().lower() == "topline plumbing"), None)
         brand_line = (f" And when someone searches your name, "
-                      f"**“topline plumbing,” you rank #{brand:.0f}** — strong "
+                      f"**“topline plumbing,” you rank #{brand:.0f}**, strong "
                       f"brand visibility." if brand else "")
         L.append(f"**What this means:** “Average position” is roughly where "
-                 f"you land in Google's results — **lower is better** (position 1 is "
-                 f"the top of the page). You're at **{cu['position']:.1f}**, {climb} "
-                 f"— that's real movement toward page 1." + brand_line + "\n")
+                 f"you land in Google's results, and **lower is better** (position 1 is "
+                 f"the top of the page). You're at **{cu['position']:.1f}**, {climb}."
+                 + brand_line + "\n")
     # GBP / Maps
     L.append("#### Your Google Maps Listing")
     if gbp:
@@ -331,28 +449,60 @@ def render_client(ga, gsc, gbp, ghl=None):
         L.append(f"- **{users} people** visited your site ({sess} total visits).")
         if eng:
             L.append(f"- **{float(eng)*100:.0f}%** of visits were engaged (they "
-                     "actually read or interacted — not a quick bounce).")
+                     "actually read or interacted, not a quick bounce).")
         ch = {n: int(v) for n, v in ga["channels"]}
         org = ch.get("Organic Search", 0); direct = ch.get("Direct", 0)
         soc = ch.get("Organic Social", 0)
         L.append(f"- Where they came from: **{org} from Google search**, "
                  f"**{direct} typed you in directly**, {soc} from social.")
-        L.append("\n*What this means: search and direct are split roughly evenly — "
-                 "people are both finding you fresh on Google and coming back to you "
+        L.append("\n*What this means: search and direct are split roughly evenly. "
+                 "People are both finding you fresh on Google and coming back to you "
                  "by name, which is exactly the healthy mix you want.*\n")
 
     # ---- Reviews ----
-    L.append("### Reviews")
-    L.append("> *Coming next month* alongside the Maps data: your current star "
-             "rating, total reviews, and new reviews this month (tied to the "
-             "review-request campaign running on past customers).\n")
+    L.append("### Your Google Reviews")
+    if reviews and reviews.get("rating") is not None:
+        rating = reviews["rating"]
+        count = reviews.get("count")
+        cards = (f'<div class="stat"><div class="stat-num">{rating:.1f}★</div>'
+                 '<div class="stat-label">Star Rating</div></div>'
+                 f'<div class="stat"><div class="stat-num">{count}</div>'
+                 '<div class="stat-label">Total Reviews</div></div>')
+        nr = deltas.get("new_reviews")
+        if nr is not None:
+            cards += (f'<div class="stat"><div class="stat-num">+{nr}</div>'
+                      '<div class="stat-label">New This Month</div></div>')
+        L.append("")
+        L.append(f'<div class="stats">{cards}</div>')
+        L.append("")
+        if nr is not None:
+            nr_line = (f"You added **{nr} new review{'s' if nr != 1 else ''}** this "
+                       f"month, " if nr else "")
+            L.append(f"*{nr_line}holding a perfect {rating:.1f}-star rating across "
+                     f"{count} reviews. The review-request campaign keeps asking "
+                     f"happy past customers, and every new 5-star review lifts how "
+                     f"high you show up in the Map Pack.*")
+        else:
+            L.append(f"*A perfect {rating:.1f}-star rating across {count} Google "
+                     f"reviews. We are now tracking your review count each month, so "
+                     f"next month's report shows exactly how many new ones came in.*")
+    else:
+        L.append("> Review data unavailable this run.")
+    L.append("")
+
+    # ---- What we did (the value justification) ----
+    notes = work_done_notes()
+    if notes:
+        L.append("### What We Did This Month")
+        L.append(notes)
+        L.append("")
 
     # ---- What's next ----
     L.append("### What We're Working On Next")
     L.append("- **Push the “near-miss” searches onto page 1.** You're "
              "ranking just below the top results for high-intent searches like "
              "“emergency plumber,” “drain cleaning near me,” and "
-             "“plumbing company.” These are people ready to call — moving "
+             "“plumbing company.” These are people ready to call, and moving "
              "up a spot or two turns them into phone calls.")
     L.append("- **Bring your Google Maps numbers into this report** so every lead "
              "source is in one place.")
@@ -366,7 +516,7 @@ def render_client(ga, gsc, gbp, ghl=None):
 def render_appendix(ga, gsc):
     """Blake-only analyst detail."""
     L = []
-    L.append("# Internal Appendix — Blake Only")
+    L.append("# Internal Appendix (Blake Only)")
     L.append(f"*Topline Plumbing · {MONTH} · do not send to client*\n")
 
     if ga:
@@ -416,29 +566,70 @@ def render_appendix(ga, gsc):
     return "\n".join(L)
 
 
-HTML_HEAD = """<!doctype html><html><head><meta charset="utf-8"><style>
-@page { margin: 18mm 15mm; }
-body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  color:#1a1a1a; font-size:12px; line-height:1.5; }
-h1 { color:#0a2a4a; font-size:23px; margin:0 0 2px;
-  border-bottom:3px solid #c0392b; padding-bottom:8px; }
-h2 { color:#0a2a4a; font-size:16px; margin:22px 0 8px;
-  border-bottom:1px solid #d8dee6; padding-bottom:4px; }
-h3 { color:#244; font-size:13px; margin:16px 0 6px; }
-table { border-collapse:collapse; width:100%; margin:6px 0 12px; font-size:11px; }
-th { background:#0a2a4a; color:#fff; text-align:left; padding:6px 9px; }
-td { border-bottom:1px solid #e3e8ee; padding:5px 9px; }
-tr:nth-child(even) td { background:#f6f8fa; }
-blockquote { background:#fff8e6; border-left:4px solid #e0a800; margin:8px 0;
-  padding:8px 12px; color:#5a4a00; font-size:11px; }
-code { background:#eef1f4; padding:1px 4px; border-radius:3px; font-size:10.5px; }
-em { color:#667; } strong { color:#0a2a4a; } hr { border:none; }
+# Brand tokens pulled from the site's tailwind.config.ts
+NAVY = "#001E38"      # navy-900 — headers/navigation
+NAVY_MID = "#1C3959"  # navy-700
+RED = "#dd1515"       # primary — CTAs/accents
+CREAM = "#f5f1e8"     # logo wordmark cream
+
+HTML_HEAD = f"""<!doctype html><html><head><meta charset="utf-8"><style>
+* {{ box-sizing: border-box; }}
+body {{ font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color:#1f2733; font-size:12px; line-height:1.55; margin:0; }}
+
+/* ---- branded header card ---- */
+.band {{ background:{NAVY}; color:{CREAM}; padding:22px 28px;
+  display:flex; align-items:center; gap:20px; border-radius:14px;
+  border-bottom:4px solid {RED}; }}
+.band img {{ width:74px; height:74px; }}
+.band .b-name {{ font-size:24px; font-weight:800; letter-spacing:.04em;
+  color:#fff; margin:0; }}
+.band .b-sub {{ font-size:12.5px; letter-spacing:.22em; text-transform:uppercase;
+  color:#9fb3c8; margin-top:5px; }}
+.band .b-month {{ margin-left:auto; text-align:right; }}
+.band .b-month .m1 {{ font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  color:#9fb3c8; }}
+.band .b-month .m2 {{ font-size:19px; font-weight:700; color:#fff; margin-top:3px; }}
+
+.content {{ padding: 4px 2px 0; }}
+
+h1 {{ color:{NAVY}; font-size:21px; margin:26px 0 4px;
+  border-bottom:3px solid {RED}; padding-bottom:8px; }}
+h2 {{ color:{NAVY}; font-size:16px; margin:24px 0 8px;
+  border-bottom:1px solid #d8dee6; padding-bottom:5px; }}
+h3 {{ color:{NAVY}; font-size:13.5px; margin:24px 0 8px; text-transform:uppercase;
+  letter-spacing:.08em; }}
+h3::before {{ content:""; display:inline-block; width:18px; height:3px;
+  background:{RED}; margin-right:8px; vertical-align:3px; }}
+h4 {{ color:{NAVY_MID}; font-size:12.5px; margin:16px 0 6px; }}
+
+/* ---- hero stat cards ---- */
+.stats {{ display:flex; gap:12px; margin:12px 0 4px; }}
+.stat {{ flex:1; background:#f2f5f9; border:1px solid #dfe6ee; border-radius:10px;
+  padding:16px 12px 13px; text-align:center; }}
+.stat-num {{ font-size:34px; font-weight:800; color:{NAVY}; line-height:1; }}
+.stat-label {{ font-size:10.5px; text-transform:uppercase; letter-spacing:.12em;
+  color:#5a6b7e; margin-top:7px; }}
+.stat-warn .stat-num {{ color:{RED}; }}
+
+table {{ border-collapse:collapse; width:100%; margin:8px 0 14px; font-size:11.5px; }}
+th {{ background:{NAVY}; color:#fff; text-align:left; padding:8px 11px;
+  font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; }}
+td {{ border-bottom:1px solid #e3e8ee; padding:7px 11px; }}
+tr:nth-child(even) td {{ background:#f6f8fa; }}
+
+blockquote {{ background:#f2f5f9; border-left:4px solid {NAVY_MID}; margin:10px 0;
+  padding:9px 14px; color:#3d4f63; font-size:11px; border-radius:0 8px 8px 0; }}
+blockquote p {{ margin:0; }}
+code {{ background:#eef1f4; padding:1px 4px; border-radius:3px; font-size:10.5px; }}
+em {{ color:#5a6b7e; }} strong {{ color:{NAVY}; }} hr {{ border:none; }}
+li {{ margin-bottom:4px; }}
 </style></head><body>
 """
 
 
 def md_to_pdf(md_text, pdf_path):
-    """Render markdown text to a styled PDF. Returns path or None."""
+    """Render markdown text to a branded PDF. Returns path or None."""
     pandoc = shutil.which("pandoc")
     converter = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                              "html-to-pdf.mjs")
@@ -447,10 +638,27 @@ def md_to_pdf(md_text, pdf_path):
         return None
     body = subprocess.run([pandoc, "-f", "gfm", "-t", "html"],
                           input=md_text, capture_output=True, text=True).stdout
+
+    # Embed the real logo so the PDF renders identically anywhere.
+    import base64
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    logo_b64 = ""
+    logo_file = os.path.join(repo, "public", "images", "logo.png")
+    if os.path.exists(logo_file):
+        with open(logo_file, "rb") as f:
+            logo_b64 = base64.b64encode(f.read()).decode()
+    logo_tag = (f'<img src="data:image/png;base64,{logo_b64}" alt="Topline Plumbing">'
+                if logo_b64 else "")
+    band = (f'<div class="band">{logo_tag}'
+            '<div><div class="b-name">TOPLINE PLUMBING</div>'
+            '<div class="b-sub">Monthly Performance Report</div></div>'
+            f'<div class="b-month"><div class="m1">Reporting Period</div>'
+            f'<div class="m2">{MONTH}</div></div></div>')
+
     html_path = pdf_path.replace(".pdf", ".html")
     with open(html_path, "w") as f:
-        f.write(HTML_HEAD + body + "</body></html>")
-    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        f.write(HTML_HEAD + band + '<div class="content">' + body
+                + "</div></body></html>")
     try:
         r = subprocess.run(["node", converter, html_path, pdf_path],
                            capture_output=True, text=True, timeout=60, cwd=repo)
@@ -483,7 +691,30 @@ def main():
     except Exception as e:
         errors.append(f"GHL calls failed: {e}")
 
-    client_md = render_client(ga, gsc, gbp, ghl)
+    reviews = gbp_reviews()
+    if reviews is None:
+        errors.append("GBP reviews pull failed (Places API)")
+
+    # ---- month-over-month deltas via the state file ----
+    state = load_state()
+    cur_key = CUR_START.strftime("%Y-%m")
+    prv_key = PRV_START.strftime("%Y-%m")
+    prev = state.get(prv_key, {})
+    deltas = {
+        "calls_prev": prev.get("calls"),
+        "reviews_prev": prev.get("reviews"),
+    }
+    if reviews and reviews.get("count") is not None and deltas["reviews_prev"]:
+        deltas["new_reviews"] = max(0, reviews["count"] - deltas["reviews_prev"])
+    # Record this month's snapshot for next month's report.
+    state[cur_key] = {
+        "calls": (ghl or {}).get("inbound"),
+        "reviews": (reviews or {}).get("count"),
+        "rating": (reviews or {}).get("rating"),
+    }
+    save_state(state)
+
+    client_md = render_client(ga, gsc, gbp, ghl, reviews, deltas)
     internal_md = client_md + "\n\n<div style='page-break-before:always'></div>\n\n" \
         + render_appendix(ga, gsc)
 
