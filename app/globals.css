@@ -110,7 +110,7 @@
     transform: translateY(0);
   }
 
-  /* Status Dot Animation for 24/7 badge */
+  /* Status Dot Animation for the Mon–Fri business-hours badge */
   .status-dot {
     @apply w-2 h-2 rounded-full bg-accent-green;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
