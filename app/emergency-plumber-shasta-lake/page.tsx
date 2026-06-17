@@ -88,14 +88,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumber Shasta Lake, CA | Topline Plumbing',
+  title: 'Same-Day Emergency Plumber in Shasta Lake | Topline',
   description:
     'Emergency plumber in Shasta Lake, CA. Same-day response for burst pipes, water heater floods, and frozen bibs. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-shasta-lake',
   },
   openGraph: {
-    title: 'Emergency Plumber Shasta Lake, CA | Topline Plumbing',
+    title: 'Same-Day Emergency Plumber in Shasta Lake | Topline',
     description:
       'Emergency plumber in Shasta Lake, CA. Same-day response for burst pipes, water heater floods, and frozen hose bibs during business hours from a licensed local plumber since 1998.',
     url: 'https://toplineplumbingco.com/emergency-plumber-shasta-lake',

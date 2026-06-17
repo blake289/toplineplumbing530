@@ -88,14 +88,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumber Redding, CA | Topline Plumbing',
+  title: 'Same-Day Emergency Plumber in Redding, CA | Topline',
   description:
     'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-redding',
   },
   openGraph: {
-    title: 'Emergency Plumber Redding, CA | Topline Plumbing',
+    title: 'Same-Day Emergency Plumber in Redding, CA | Topline',
     description:
       'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-redding',

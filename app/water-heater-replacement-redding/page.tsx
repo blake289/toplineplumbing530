@@ -105,14 +105,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair & Replacement Redding, CA | Topline Plumbing',
+  title: 'Water Heater Repair & Replacement, Redding CA | Topline',
   description:
     "Water heater repair & replacement in Redding, CA. Same-day repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   },
   openGraph: {
-    title: 'Water Heater Repair & Replacement Redding, CA | Topline Plumbing',
+    title: 'Water Heater Repair & Replacement, Redding CA | Topline',
     description:
       "Redding's water heater specialists. Same-day repair and replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
     url: 'https://toplineplumbingco.com/water-heater-replacement-redding',

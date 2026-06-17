@@ -80,14 +80,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning Redding, CA | Topline Plumbing',
+  title: 'Same-Day Drain Cleaning in Redding, CA | Topline',
   description:
     'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-redding',
   },
   openGraph: {
-    title: 'Drain Cleaning Redding, CA | Topline Plumbing',
+    title: 'Same-Day Drain Cleaning in Redding, CA | Topline',
     description:
       'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-redding',

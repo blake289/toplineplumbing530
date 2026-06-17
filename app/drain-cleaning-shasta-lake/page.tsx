@@ -80,14 +80,14 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning Shasta Lake, CA | Topline Plumbing',
+  title: 'Same-Day Drain Cleaning in Shasta Lake, CA | Topline',
   description:
     'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing. Licensed since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-shasta-lake',
   },
   openGraph: {
-    title: 'Drain Cleaning Shasta Lake, CA | Topline Plumbing',
+    title: 'Same-Day Drain Cleaning in Shasta Lake, CA | Topline',
     description:
       'Drain cleaning in Shasta Lake, CA. Power augering, sewer camera inspection, and main line clearing with upfront pricing from a licensed local plumber since 1998.',
     url: 'https://toplineplumbingco.com/drain-cleaning-shasta-lake',
