@@ -98,6 +98,8 @@ export default function Navbar() {
                           ['Sewer Line Repair', '/services/sewer-line'],
                           ['Gas Line Services', '/services/gas-line'],
                           ['Leak Detection', '/services/leak-detection'],
+                          ['Repiping Services', '/services/repiping-services'],
+                          ['Fixture Installs', '/services/fixture-installs'],
                         ].map(([label, href]) => (
                           <Link
                             key={href}

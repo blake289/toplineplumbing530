@@ -112,7 +112,7 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-gray-100 shadow-lg overflow-hidden bg-white">
               <div className="p-8 md:p-10">
                 <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Request a Free Estimate With Any Service</h2>
-                <HeroEstimateForm />
+                <HeroEstimateForm formLocation="contact" />
               </div>
             </div>
           </div>

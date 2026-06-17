@@ -7,7 +7,7 @@ import { heroFormSchema, type HeroFormData } from '@/lib/validation/hero-form-sc
 import Input from '@/components/ui/Input';
 import Button from '@/components/ui/Button';
 
-export default function HeroEstimateForm() {
+export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocation?: string }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -45,12 +45,18 @@ export default function HeroEstimateForm() {
       // GA4 conversion: fire generate_lead on successful submit.
       // form_id/form_name mirror the <form> attrs so this matches the
       // auto form_start event from GA4 Enhanced Measurement.
-      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', {
+      if (typeof window !== 'undefined') {
+        const leadPayload = {
           form_id: 'hero_estimate',
           form_name: 'Hero Estimate Form',
+          form_location: formLocation,
           service: data.service,
-        });
+        };
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', leadPayload);
+        } else if (Array.isArray(window.dataLayer)) {
+          window.dataLayer.push({ event: 'generate_lead', ...leadPayload });
+        }
       }
 
       setSubmitStatus('success');

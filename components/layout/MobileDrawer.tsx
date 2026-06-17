@@ -140,6 +140,20 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 >
                   Leak Detection
                 </Link>
+                <Link
+                  href="/services/repiping-services"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Repiping Services
+                </Link>
+                <Link
+                  href="/services/fixture-installs"
+                  className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                  onClick={onClose}
+                >
+                  Fixture Installs
+                </Link>
               </div>
             )}
           </div>

@@ -4,24 +4,24 @@ import Reveal from '@/components/ui/Reveal';
 const testimonials = [
   {
     rating: 5,
-    text: 'Joe and his team saved us when our pipe burst at 2am. They were professional, fast, and fair. Highly recommend!',
-    name: 'James M.',
-    location: 'Redding, CA',
-    initials: 'JM',
+    text: 'My water main broke at my house and Topline Plumbing was here within an hour to fix it. Excellent work and communication. If I ever need a plumber again they will be my first call. Thank you again Joe & Josiah.',
+    name: 'Gary Atkison',
+    location: 'Verified Google Review',
+    initials: 'GA',
   },
   {
     rating: 5,
-    text: 'Installed our new tankless water heater effortlessly. They explained everything clearly and left the garage cleaner than they found it.',
-    name: 'Tina P.',
-    location: 'Anderson, CA',
-    initials: 'TP',
+    text: "Very good experience, within quote, clean repair, with system back on in a very short period of time. Couldn't be happier. Not the first job that they did for me. Highly recommend for your plumbing needs.",
+    name: 'Michael Quinn',
+    location: 'Verified Google Review',
+    initials: 'MQ',
   },
   {
     rating: 5,
-    text: "Honest plumbers. Came out for what I thought was a huge issue, cleared a simple clog at a fair price, and didn't try to upsell me at all.",
-    name: 'David R.',
-    location: 'Shasta Lake, CA',
-    initials: 'DR',
+    text: 'Had a toilet leaking like crazy. They fit me in the very next morning for my service call. Fixed the leak on my old toilet promptly. Fast, efficient and very knowledgeable! Highly recommend!!',
+    name: 'Tracy Holt',
+    location: 'Verified Google Review',
+    initials: 'TH',
   },
 ];
 
