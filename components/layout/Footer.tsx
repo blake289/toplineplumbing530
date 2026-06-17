@@ -11,6 +11,55 @@ const serviceAreas: Array<[string, string]> = [
   ['Red Bluff', '/areas/red-bluff'],
 ];
 
+// Full city x service link matrix — every landing page gets a sitewide link
+// so internal authority reaches the pages that would otherwise be orphaned.
+const cityServiceColumns: Array<{ title: string; links: Array<[string, string]> }> = [
+  {
+    title: 'Emergency Plumber',
+    links: [
+      ['Redding', '/emergency-plumber-redding'],
+      ['Anderson', '/emergency-plumber-anderson'],
+      ['Shasta Lake', '/emergency-plumber-shasta-lake'],
+      ['Palo Cedro', '/emergency-plumber-palo-cedro'],
+      ['Bella Vista', '/emergency-plumber-bella-vista'],
+      ['Red Bluff', '/emergency-plumber-red-bluff'],
+    ],
+  },
+  {
+    title: 'Drain Cleaning',
+    links: [
+      ['Redding', '/drain-cleaning-redding'],
+      ['Anderson', '/drain-cleaning-anderson'],
+      ['Shasta Lake', '/drain-cleaning-shasta-lake'],
+      ['Palo Cedro', '/drain-cleaning-palo-cedro'],
+      ['Bella Vista', '/drain-cleaning-bella-vista'],
+      ['Red Bluff', '/drain-cleaning-red-bluff'],
+    ],
+  },
+  {
+    title: 'Water Heater',
+    links: [
+      ['Redding', '/water-heater-replacement-redding'],
+      ['Anderson', '/water-heater-repair-anderson'],
+      ['Shasta Lake', '/water-heater-repair-shasta-lake'],
+      ['Palo Cedro', '/water-heater-repair-palo-cedro'],
+      ['Bella Vista', '/water-heater-repair-bella-vista'],
+      ['Red Bluff', '/water-heater-repair-red-bluff'],
+    ],
+  },
+  {
+    title: 'Sewer Line',
+    links: [
+      ['Redding', '/sewer-line-redding'],
+      ['Anderson', '/sewer-line-anderson'],
+      ['Shasta Lake', '/sewer-line-shasta-lake'],
+      ['Palo Cedro', '/sewer-line-palo-cedro'],
+      ['Bella Vista', '/sewer-line-bella-vista'],
+      ['Red Bluff', '/sewer-line-red-bluff'],
+    ],
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#111827] text-gray-300">
@@ -128,28 +177,33 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Popular City Services */}
+        {/* Plumbing Services by City — full internal link matrix */}
         <div className="pt-10 pb-2">
-          <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-5">Popular Services by City</h3>
-          <div className="flex flex-wrap gap-1.5">
-            {([
-              ['Emergency Plumber Redding', '/emergency-plumber-redding'],
-              ['Drain Cleaning Redding', '/drain-cleaning-redding'],
-              ['Commercial Plumbing Redding', '/commercial-plumbing-redding'],
-              ['Emergency Plumber Anderson', '/emergency-plumber-anderson'],
-              ['Drain Cleaning Anderson', '/drain-cleaning-anderson'],
-              ['Emergency Plumber Shasta Lake', '/emergency-plumber-shasta-lake'],
-              ['Drain Cleaning Shasta Lake', '/drain-cleaning-shasta-lake'],
-            ] as Array<[string, string]>).map(([label, href]) => (
-              <Link
-                key={href}
-                href={href}
-                className="inline-flex items-center px-3 py-2 rounded-full text-[13px] text-gray-400 bg-white/[0.04] border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-[background-color,color,border-color] duration-[160ms] ease-snappy"
-              >
-                {label}
-              </Link>
+          <h3 className="text-white text-[13px] font-semibold tracking-[0.08em] uppercase mb-6">Plumbing Services by City</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-8">
+            {cityServiceColumns.map((col) => (
+              <div key={col.title}>
+                <p className="text-gray-500 text-[12px] font-semibold uppercase tracking-wide mb-3">{col.title}</p>
+                <nav className="flex flex-col">
+                  {col.links.map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="text-gray-400 hover:text-white transition-colors text-[14px] py-1.5"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
             ))}
           </div>
+          <p className="text-[14px] text-gray-500 mt-7">
+            Also:{' '}
+            <Link href="/commercial-plumbing-redding" className="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">
+              Commercial Plumbing in Redding
+            </Link>
+          </p>
         </div>
 
         {/* Bottom bar */}
