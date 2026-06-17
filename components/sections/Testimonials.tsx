@@ -3,6 +3,8 @@ import Reveal from '@/components/ui/Reveal';
 
 const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869';
 const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/onlineservices/checklicenseII/checklicense.aspx';
+const GOOGLE_REVIEW_RATING = 5.0;
+const GOOGLE_REVIEW_COUNT = 50; // Live GBP count (verified via Places API 2026-06-17); update as it grows.
 
 const testimonials = [
   {
@@ -117,9 +119,27 @@ export default function Testimonials() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1] no-orphans">
               Don&apos;t just take our word for it.
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               See what homeowners across Northern California say about working with Topline Plumbing.
             </p>
+            {/* Live aggregate — verified 5.0 / 50 on Google */}
+            <a
+              href={GOOGLE_BUSINESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${GOOGLE_REVIEW_RATING.toFixed(1)} stars from ${GOOGLE_REVIEW_COUNT} Google reviews — read them on Google`}
+              className="inline-flex items-center gap-2.5 rounded-full border border-gray-200 bg-white px-5 py-2.5 shadow-sm hover:shadow-md hover:border-gray-300 transition-[box-shadow,border-color] duration-200"
+            >
+              <span className="text-xl font-bold text-navy-900">{GOOGLE_REVIEW_RATING.toFixed(1)}</span>
+              <span className="flex items-center gap-0.5" aria-hidden>
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </span>
+              <span className="text-sm font-medium text-gray-600">{GOOGLE_REVIEW_COUNT} Google reviews</span>
+            </a>
           </div>
         </Reveal>
 
