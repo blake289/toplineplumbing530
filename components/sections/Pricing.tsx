@@ -5,8 +5,8 @@ import Reveal from '@/components/ui/Reveal';
 const pricingCards = [
   {
     title: 'Water Heating Service',
-    price: 'Free Quote',
-    priceNote: 'Upfront, flat-rate pricing',
+    price: 'Free Estimate',
+    priceNote: 'Upfront quote before any work',
     description: 'Comprehensive diagnostics, annual flush, and safety inspections for tank or tankless systems.',
     features: [
       'Full system diagnostic check',
@@ -19,8 +19,8 @@ const pricingCards = [
   },
   {
     title: 'Drain Cleaning',
-    price: 'Free Quote',
-    priceNote: 'Upfront, flat-rate pricing',
+    price: 'Free Estimate',
+    priceNote: 'Upfront quote before any work',
     description: 'Professional mechanical augering for stubborn clogs in sinks, toilets, or main sewer lines.',
     features: [
       'Power auger cleaning',
@@ -33,8 +33,8 @@ const pricingCards = [
   },
   {
     title: 'Emergency Response',
-    price: 'Free Quote',
-    priceNote: 'Upfront, flat-rate pricing',
+    price: 'Free Estimate',
+    priceNote: 'Upfront quote before any work',
     description: 'Emergency plumbing for burst pipes, gas leaks, and flooding — same-day response during business hours.',
     features: [
       'Mon–Fri 8a–4:30p',
@@ -56,11 +56,11 @@ export default function Pricing() {
           <div className="text-center mb-14 lg:mb-16">
             <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
               <span className="w-8 h-px bg-primary" aria-hidden />
-              TRANSPARENT PRICING
+              FREE, UPFRONT ESTIMATES
               <span className="w-8 h-px bg-primary" aria-hidden />
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-4 tracking-[-0.02em] leading-[1.1]">
-              Upfront pricing. No surprises.
+              Free estimates. No surprises.
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-gray-600">
               You approve a flat, upfront price before any work begins. Free estimate with every service, and no surprise service-call fees.
@@ -137,7 +137,7 @@ export default function Pricing() {
                     : 'border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white'
                 }`}
               >
-                Book Service
+                Get a Free Estimate
               </Link>
             </div>
           ))}

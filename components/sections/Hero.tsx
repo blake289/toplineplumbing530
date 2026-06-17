@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 const GOOGLE_REVIEW_RATING = 5.0;
@@ -6,15 +7,20 @@ const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white">
-      {/* Decorative navy blob for subtle depth */}
-      <div
-        aria-hidden
-        className="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-navy-900/[0.035] blur-3xl"
+    <section className="relative overflow-hidden bg-navy-900">
+      {/* Hero photo — service van in a Redding neighborhood — with navy overlay for contrast.
+          NOTE: AI-generated placeholder, NOT Topline's actual van. Swap before go-live. */}
+      <Image
+        src="/images/hero-truck-neighborhood.webp"
+        alt="Plumbing service van parked in a Redding residential neighborhood"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[30%_center] -z-0"
       />
       <div
         aria-hidden
-        className="absolute bottom-0 -left-40 w-[440px] h-[440px] rounded-full bg-primary/[0.04] blur-3xl"
+        className="absolute inset-0 bg-gradient-to-br from-navy-900/95 via-navy-900/85 to-navy-900/70"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14 lg:pt-16 lg:pb-20">
@@ -22,19 +28,19 @@ export default function Hero() {
           {/* LEFT — Copy + CTAs */}
           <div className="text-center lg:text-left">
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary mb-4">
+            <div className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.12em] text-primary-light mb-4">
               <span className="w-8 h-px bg-primary" aria-hidden />
               REDDING · ANDERSON · SHASTA LAKE
             </div>
 
             {/* Headline — mixed case, tight tracking, varied weight */}
-            <h1 className="text-[2rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-navy-900 leading-[1.12] tracking-[-0.02em] mb-4">
+            <h1 className="text-[2rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-white leading-[1.12] tracking-[-0.02em] mb-4">
               Redding&apos;s go-to plumber for{' '}
-              <span className="text-primary">same-day emergencies</span> &amp; trusted repairs.
+              <span className="text-primary-light">same-day repairs</span> &amp; trusted service.
             </h1>
 
             {/* Subheadline */}
-            <p className="text-base lg:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-4">
+            <p className="text-base lg:text-lg text-gray-200 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-5">
               Experienced, licensed technicians serving Redding and Northern California homeowners since 1998 — residential &amp; commercial.
             </p>
 
@@ -44,17 +50,17 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${GOOGLE_REVIEW_RATING.toFixed(1)} stars on Google — read reviews`}
-              className="inline-flex items-center gap-2 mb-5 text-sm text-gray-700 hover:text-navy-900 transition-colors"
+              className="inline-flex items-center gap-2 mb-5 text-sm text-gray-200 hover:text-white transition-colors"
             >
-              <span className="font-semibold text-navy-900">{GOOGLE_REVIEW_RATING.toFixed(1)}</span>
-              <span className="flex items-center gap-0.5" aria-hidden>
+              <span className="font-semibold text-white">{GOOGLE_REVIEW_RATING.toFixed(1)}</span>
+              <span className="flex items-center gap-0.5 ml-1.5" aria-hidden>
                 {[0, 1, 2, 3, 4].map((i) => (
                   <svg key={i} className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.446a1 1 0 00-.364 1.118l1.286 3.957c.3.922-.755 1.688-1.539 1.118l-3.368-2.446a1 1 0 00-1.176 0l-3.368 2.446c-.784.57-1.838-.196-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
                   </svg>
                 ))}
               </span>
-              <span className="text-gray-500">on</span>
+              <span className="text-gray-300">on</span>
               <svg className="w-4 h-4" viewBox="0 0 24 24" aria-hidden>
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
                 <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
@@ -64,7 +70,7 @@ export default function Hero() {
             </a>
 
             {/* Trust row */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-700 font-medium mb-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-100 font-medium mb-6">
               {[
                 '27+ Years Serving Redding',
                 'Licensed & Insured — CSLB',
@@ -92,16 +98,16 @@ export default function Hero() {
               </a>
               <a
                 href="#estimate-form"
-                className="lg:hidden h-12 px-7 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center gap-2 border-2 border-navy-900 hover:bg-navy-900 hover:text-white active:scale-[0.97] transition-[transform,background-color,color,box-shadow] duration-200 ease-snappy text-[15px]"
+                className="lg:hidden h-12 px-7 bg-white/10 text-white font-semibold rounded-full inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:bg-white hover:text-navy-900 active:scale-[0.97] transition-[transform,background-color,color,box-shadow] duration-200 ease-snappy text-[15px] backdrop-blur-sm"
               >
-                Book Your Service
+                Get a Free Estimate
               </a>
             </div>
 
             {/* Trust badges */}
             {/* Trust badges */}
-            <div className="mt-7 pt-6 border-t border-gray-200/60">
-              <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-400 uppercase mb-3 text-center lg:text-left">
+            <div className="mt-7 pt-6 border-t border-white/15">
+              <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-300 uppercase mb-3 text-center lg:text-left">
                 Trusted &amp; Reviewed Across
               </p>
               <div className="grid grid-cols-4 gap-4">
@@ -146,11 +152,11 @@ export default function Hero() {
                     sub: 'CA CSLB',
                   },
                 ].map((badge) => (
-                  <div key={badge.sub} className="flex flex-col items-center lg:items-start text-center lg:text-left gap-1.5">
-                    <div className="text-gray-400">{badge.icon}</div>
+                  <div key={badge.sub} className="flex flex-col items-center text-center gap-1.5">
+                    <div className="text-gray-200">{badge.icon}</div>
                     <div>
-                      <p className="text-[13px] font-semibold text-gray-600 leading-tight">{badge.label}</p>
-                      <p className="text-[12px] text-gray-400 leading-tight">{badge.sub}</p>
+                      <p className="text-[13px] font-semibold text-gray-100 leading-tight">{badge.label}</p>
+                      <p className="text-[12px] text-gray-300 leading-tight">{badge.sub}</p>
                     </div>
                   </div>
                 ))}

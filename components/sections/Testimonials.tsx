@@ -1,6 +1,9 @@
 import React from 'react';
 import Reveal from '@/components/ui/Reveal';
 
+const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869';
+const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/onlineservices/checklicenseII/checklicense.aspx';
+
 const testimonials = [
   {
     rating: 5,
@@ -93,7 +96,7 @@ function LicensedBadge() {
       </div>
       <div className="flex flex-col leading-tight">
         <span className="text-[15px] font-black text-navy-900">Licensed &amp; Insured</span>
-        <span className="text-[11px] font-semibold text-gray-500 tracking-wide">California CSLB</span>
+        <span className="text-[11px] font-semibold text-gray-500 tracking-wide">CA CSLB #596557 · verify</span>
       </div>
     </div>
   );
@@ -165,10 +168,14 @@ export default function Testimonials() {
             Trusted &amp; reviewed across
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-14">
-            <GoogleReviewsBadge />
+            <a href={GOOGLE_BUSINESS_URL} target="_blank" rel="noopener noreferrer" aria-label="Read Topline Plumbing reviews on Google" className="rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <GoogleReviewsBadge />
+            </a>
             <BBBBadge />
             <YelpBadge />
-            <LicensedBadge />
+            <a href={CSLB_LOOKUP_URL} target="_blank" rel="noopener noreferrer" aria-label="Verify Topline Plumbing license #596557 on the CSLB website" className="rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <LicensedBadge />
+            </a>
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ export default function IntroSection() {
                 href="/contact"
                 className="inline-flex h-12 px-8 bg-primary text-white font-btn font-semibold rounded-full items-center justify-center hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-lg active:translate-y-0 active:scale-[0.97] active:shadow-sm transition-[transform,box-shadow,background-color] duration-200 ease-snappy shadow-md touch-target"
               >
-                Request Estimate
+                Get a Free Estimate
               </Link>
             </div>
           </div>
