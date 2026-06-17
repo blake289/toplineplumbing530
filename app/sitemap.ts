@@ -36,6 +36,7 @@ const moneyPages = [
   '/sewer-line-red-bluff',
   '/sewer-line-redding',
   '/sewer-line-shasta-lake',
+  '/water-heater-repair-redding',
   '/water-heater-repair-anderson',
   '/water-heater-repair-bella-vista',
   '/water-heater-repair-palo-cedro',
