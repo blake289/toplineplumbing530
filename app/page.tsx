@@ -13,13 +13,13 @@ import CTASection from '@/components/sections/CTASection';
 import FAQSchema from '@/components/layout/FAQSchema';
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumber Redding CA | Topline Plumbing',
+  title: 'Topline Plumbing | Licensed Plumber in Redding, CA',
   description: "Need a plumber fast in Redding or Shasta County? Topline Plumbing offers same-day emergency repairs, drain cleaning, and water heaters. Licensed local team. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com',
   },
   openGraph: {
-    title: 'Emergency Plumber Redding CA | Topline Plumbing',
+    title: 'Topline Plumbing | Licensed Plumber in Redding, CA',
     description: "Need a plumber fast in Redding or Shasta County? Topline Plumbing offers same-day emergency repairs, drain cleaning, and water heaters. Licensed local team. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com',
     siteName: 'Topline Plumbing',

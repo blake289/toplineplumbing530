@@ -24,6 +24,11 @@ export default function SchemaMarkup() {
     },
     "foundingDate": "1998",
     "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "50"
+    },
     "currenciesAccepted": "USD",
     "paymentAccepted": "Cash, Credit Card, Debit Card, Check",
     "hasCredential": {

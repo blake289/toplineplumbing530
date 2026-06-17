@@ -90,13 +90,12 @@ export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocati
       />
 
       <Input
-        label="ZIP"
+        label="ZIP (optional)"
         type="text"
         inputMode="numeric"
         autoComplete="postal-code"
         {...register('zip')}
         error={errors.zip?.message}
-        required
       />
 
       <div className="w-full">
