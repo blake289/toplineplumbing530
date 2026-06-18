@@ -420,7 +420,7 @@ export default function WaterHeaterRepairRedBluffPage() {
                 content is exactly what drives water heater sediment here. Dissolved minerals settle
                 in the bottom of the tank, insulate the burner or element, and force early failure:
                 rumbling, popping, lukewarm water, and tripped elements. Add some of the hottest
-                summers in California, which stress water heater flue and venting in July and August,
+                summers in California, which stress water heater flue and venting in the summer heat,
                 and you have a town where water heaters work hard. When we repair one, we check the
                 sediment load, the flue, and whether a flush, anode rod, or softener would stop the
                 same failure from coming back. That&apos;s the honest fix, not just the fast one.

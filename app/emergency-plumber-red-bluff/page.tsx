@@ -326,7 +326,7 @@ export default function EmergencyPlumberRedBluffPage() {
                 in mind for the water heaters and fixtures we get called out on. Summers here are some
                 of the hottest in California, and that drives a seasonal spike in two failures we
                 respond to: water heater flue and venting problems, and outdoor PVC that splits in the
-                July and August heat. Both can turn into active leaks fast. Outside
+                summer heat. Both can turn into active leaks fast. Outside
                 the historic core, ranch properties west of town run on wells and septic with longer
                 service lines and more exposed outdoor plumbing — more places for an emergency to
                 start.

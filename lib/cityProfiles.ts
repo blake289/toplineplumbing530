@@ -133,7 +133,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
       "Red Bluff is the Tehama County seat, about 30 miles south of Redding on I-5. The historic downtown dates to the 1850s — meaning some of the oldest housing stock we service. Outside the historic core, you have a mix of mid-century residential and ranches stretching west toward the coast range and east toward the Cascade foothills.",
     localRealities: [
       "Historic downtown homes (pre-1920) frequently have a layered plumbing history: original cast iron drains, galvanized supply, partial copper retrofits, and modern fixtures all in the same house. Every repair has to account for what's behind the wall.",
-      "Summers in Red Bluff are some of the hottest in California — water heater flue and venting issues, plus outdoor PVC failures, peak in July and August.",
+      "Summers in Red Bluff are some of the hottest in California — the summer heat is hard on water heater flue and venting and on outdoor PVC supply lines.",
       "Ranch properties west of town run on wells and septic, with longer service lines and more outdoor plumbing exposure.",
     ],
     commonCalls: [

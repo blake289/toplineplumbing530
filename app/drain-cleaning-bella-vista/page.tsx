@@ -119,7 +119,7 @@ const drainFAQs = [
   {
     question: 'How fast can you clear a drain in Bella Vista?',
     answer:
-      'We offer same-day drain cleaning in Bella Vista during business hours (Mon–Fri 8a–4:30p). It sits about 15 miles northeast of Redding and we serve it daily, so typical arrival is 30–60 minutes. Call (530) 704-6989 to check availability.',
+      'We offer same-day drain cleaning in Bella Vista during business hours (Mon–Fri 8a–4:30p). It sits about 15 minutes northeast of Redding and we serve it daily, so typical arrival is 30–60 minutes. Call (530) 704-6989 to check availability.',
   },
   {
     question: 'How do I know if I have a main sewer line clog?',

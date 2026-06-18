@@ -117,7 +117,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can a plumber get to Bella Vista in an emergency?',
     answer:
-      'During business hours (Mon–Fri 8a–4:30p) we typically reach Bella Vista in 30–60 minutes — it sits about 15 miles northeast of Redding and we serve it daily. Call (530) 704-6989 and we will tell you straight whether we can be there today and give you an arrival window before we head out.',
+      'During business hours (Mon–Fri 8a–4:30p) we typically reach Bella Vista in 30–60 minutes — it sits about 15 minutes northeast of Redding and we serve it daily. Call (530) 704-6989 and we will tell you straight whether we can be there today and give you an arrival window before we head out.',
   },
   {
     question: 'When does Topline Plumbing handle emergencies in Bella Vista?',
@@ -268,7 +268,7 @@ export default function EmergencyPlumberBellaVistaPage() {
               },
               {
                 title: 'Fast Rural Response',
-                body: 'Bella Vista is about 15 miles northeast of Redding and we serve it daily — typical arrival is 30–60 minutes during business hours.',
+                body: 'Bella Vista is about 15 minutes northeast of Redding and we serve it daily — typical arrival is 30–60 minutes during business hours.',
               },
               {
                 title: 'Upfront Pricing',

@@ -64,7 +64,7 @@ const CITY_META: Record<string, CityMeta> = {
     name: "Bella Vista",
     county: "Shasta County",
     responseTime: "30–60 minutes",
-    distanceNote: "Bella Vista is about 15 miles northeast of Redding — we serve it daily.",
+    distanceNote: "Bella Vista is about 15 minutes northeast of Redding — we serve it daily.",
     uniqueQ: {
       question: "Do you service homes on private wells in Bella Vista?",
       answer: "Yes. Many Bella Vista homes are on well systems, and we handle pressure tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when needed.",
