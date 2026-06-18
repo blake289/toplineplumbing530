@@ -366,7 +366,7 @@ export default function SewerLineBellaVistaPage() {
               The defining challenge here is distance. A long well-to-house or house-to-tank service run means
               a leak can be 50-plus feet from the house, so detection takes more than a stethoscope to the
               slab — it takes a camera in the pipe. Foothill cold snaps hit harder than in town, cracking
-              exposed pipes and pump-house lines, and many properties mix original 1970s–1980s plumbing with
+              exposed pipes and pump-house lines, and many properties mix decades-old original plumbing with
               later additions, creating pipe-material transitions that have to be handled correctly. We
               camera, pinpoint, and dig one spot — not the whole yard.
             </p>

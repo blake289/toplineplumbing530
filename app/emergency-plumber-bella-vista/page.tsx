@@ -369,7 +369,7 @@ export default function EmergencyPlumberBellaVistaPage() {
             <p>
               Foothill cold snaps also hit Bella Vista harder than in town. Exposed pipes, hose bibs,
               and pump-house plumbing are the first things to freeze and split, and many properties run
-              a mix of original 1970s–1980s plumbing alongside additions and remodels — so a failure in
+              a mix of decades-old original plumbing alongside additions and remodels — so a failure in
               one spot often exposes a material-transition problem somewhere else. We repair the
               emergency fast, then tell you straight what else is at risk before next winter. No upsell
               theater — just the honest read from a licensed plumber who has worked these foothills since

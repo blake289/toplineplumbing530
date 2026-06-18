@@ -113,7 +113,7 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
     localRealities: [
       "Long well-to-house service runs mean a leak can be 50+ feet from the house — detection takes more than a stethoscope to the slab.",
       "Cold snaps in the foothills hit harder than in town — exposed pipes, hose bibs, and pump houses need freeze protection.",
-      "Many properties have a mix of original 1970s–1980s plumbing and additions/remodels, which creates compatibility issues between pipe materials.",
+      "Many properties have a mix of decades-old original plumbing and additions/remodels, which creates compatibility issues between pipe materials.",
     ],
     commonCalls: [
       'Underground service-line leak detection',

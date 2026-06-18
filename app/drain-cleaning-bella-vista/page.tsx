@@ -129,7 +129,7 @@ const drainFAQs = [
   {
     question: 'Can you inspect the drain line with a camera?',
     answer:
-      'Yes. We run sewer camera inspections to locate the exact position and cause of a blockage — root intrusion, a collapsed section, grease, or a pipe-material transition. This is especially useful on older Bella Vista properties where original 1970s–1980s plumbing meets newer remodel work. Call (530) 704-6989 to schedule.',
+      'Yes. We run sewer camera inspections to locate the exact position and cause of a blockage — root intrusion, a collapsed section, grease, or a pipe-material transition. This is especially useful on older Bella Vista properties where decades-old original plumbing meets newer remodel work. Call (530) 704-6989 to schedule.',
   },
   {
     question: 'What causes recurring clogs in rural Bella Vista homes?',
@@ -311,7 +311,7 @@ export default function DrainCleaningBellaVistaPage() {
             <p>
               Recurring clogs on Bella Vista properties usually trace back to one of a few causes. Long
               buried lines invite root intrusion. Kitchen drains build up grease and food. And many
-              homes run a mix of original 1970s–1980s plumbing alongside additions and remodels — so
+              homes run a mix of decades-old original plumbing alongside additions and remodels — so
               debris snags at the rough spot where old galvanized pipe meets newer PEX or ABS. A camera
               inspection finds the exact problem, and mechanical augering removes it, instead of you
               calling back about the same drain every few months.
