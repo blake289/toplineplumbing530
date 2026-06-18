@@ -403,9 +403,10 @@ export default function EmergencyPlumberReddingPage() {
             </p>
             <p>
               Whether it is a kitchen or main-line backup, a water heater that finally let go from
-              years of hard-water sediment — the City of Redding Water Utility draws roughly 77% of
-              its supply from surface sources like the Sacramento River and Whiskeytown and about 23%
-              from groundwater, leaving moderate hardness that settles in tanks over time — or a
+              years of sediment buildup — the City of Redding draws roughly 77% of its supply from
+              surface sources like the Sacramento River and Whiskeytown and about 23% from
+              groundwater, and even soft-to-moderate water leaves sediment that settles in tanks over
+              time — or a
               galvanized line that pinholed behind a wall, we
               respond same-day during business hours and quote it upfront before any work starts. If
               the smarter long-term answer is a repipe estimate for a 1960s–1970s galvanized home, we

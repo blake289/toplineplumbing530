@@ -217,8 +217,9 @@ export default function TanklessWaterHeaterPage() {
               leave.
             </p>
             <p>
-              Redding's hard, mineral-heavy water is hard on any water heater, and tankless units are
-              no exception — scale builds up on the heat exchanger over time. We size and install with
+              Mineral scale is hard on any water heater, and tankless units are
+              no exception — scale builds up on the heat exchanger over time, and homes on harder
+              well water see it faster. We size and install with
               that in mind and explain the periodic descaling flush that keeps a tankless unit running
               efficiently for its full 20-plus-year life. Every job is properly permitted where
               required and quoted in full before we start, so the price you approve is the price you

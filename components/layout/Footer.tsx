@@ -120,6 +120,7 @@ export default function Footer() {
               <Link href="/services/water-heater-repair" className="text-gray-400 hover:text-white transition-colors py-2.5">Water Heater Repair</Link>
               <Link href="/water-heater-replacement-redding" className="text-gray-400 hover:text-white transition-colors py-2.5">Water Heater Replacement</Link>
               <Link href="/services/tankless" className="text-gray-400 hover:text-white transition-colors py-2.5">Tankless Installation</Link>
+              <Link href="/water-softener-redding" className="text-gray-400 hover:text-white transition-colors py-2.5">Water Softeners</Link>
               <Link href="/services/drain-cleaning" className="text-gray-400 hover:text-white transition-colors py-2.5">Drain Cleaning</Link>
               <Link href="/hydro-jetting-redding" className="text-gray-400 hover:text-white transition-colors py-2.5">Hydro Jetting</Link>
               <Link href="/services/repiping-services" className="text-gray-400 hover:text-white transition-colors py-2.5">Repiping Services</Link>

@@ -503,7 +503,7 @@ export default function SewerLineShastaLakePage() {
                 The older housing near the original townsite — Project City and Central Valley — was
                 built decades ago, and a lot of it still runs on aging clay or cast iron sewer mains.
                 These are the homes served by the City of Shasta Lake&apos;s municipal water system,
-                and decades of mineral-laden flow through their waste lines only accelerate the scaling
+                and decades of flow through their waste lines only accelerate the scaling
                 and corrosion that aging sewer pipe is already prone to. Those materials don&apos;t fail
                 gracefully: roots find the joints, the pipe cracks or bellies, and a slow problem
                 becomes a backup. A camera inspection tells us instantly

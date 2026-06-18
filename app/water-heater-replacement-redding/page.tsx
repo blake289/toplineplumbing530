@@ -142,9 +142,9 @@ const waterHeaterFAQs = [
       "Every replacement is quoted upfront before any work starts. The total includes the new unit, labor, permit, disposal, and seismic strapping. Tankless conversions are higher because of the additional gas line and venting work. Call (530) 704-6989 for a free estimate with any service — no surprise charges.",
   },
   {
-    question: 'Why do water heaters fail so fast in Redding?',
+    question: 'What makes a water heater fail early in Redding?',
     answer:
-      "Redding's hard, mineral-heavy water is the main reason. Sediment settles to the bottom of the tank, insulates the burner or element, and causes overheating that cracks the tank. Most Redding-area water heaters fail at 8–10 years instead of the 12–15 you'd see in soft-water regions. Annual flushing helps, but tanks past 10 years are on borrowed time.",
+      "Sediment is the usual culprit, not water hardness specifically — the City of Redding actually classifies its treated water as soft, drawing about 77% from surface sources like the Sacramento River and Whiskeytown and 23% from groundwater that tests moderately harder. Either way, minerals and grit settle to the bottom of the tank, insulate the burner or element, and cause the overheating that cracks a tank early. Tank heaters generally last 8–12 years; annual flushing clears the sediment and is the cheapest way to push toward the top of that range. Homes on private wells with untreated water tend to build sediment faster.",
   },
   {
     question: 'Should I switch to a tankless water heater?',
@@ -667,7 +667,7 @@ export default function WaterHeaterReplacementReddingPage() {
               },
               {
                 title: 'Specialists, Not Generalists',
-                body: "We've replaced 2,800+ water heaters in Northern California. We know which brands handle Redding's hard water, which installs fail inspection, and how to spot the hidden issues cheaper plumbers miss.",
+                body: "We've replaced 2,800+ water heaters in Northern California. We know which brands hold up to local water and sediment, which installs fail inspection, and how to spot the hidden issues cheaper plumbers miss.",
               },
               {
                 title: 'Real Local Business Hours',
@@ -716,15 +716,16 @@ export default function WaterHeaterReplacementReddingPage() {
             {/* Left: copy */}
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
-                Why Redding Water Heaters Fail Faster
+                What Actually Wears Out Redding Water Heaters
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Redding sits in a region with hard, mineral-heavy water — high in calcium, magnesium,
-                  and sediment. The City of Redding Water Utility pulls about 77% of its supply from
-                  surface sources like the Sacramento River and Whiskeytown and the remaining 23% from
-                  groundwater, and that mineral load is the main reason water heaters here fail at 8–10
-                  years instead of the 12–15 you'd see in soft-water markets.
+                  It usually comes down to sediment, not extreme hardness. The City of Redding pulls
+                  about 77% of its supply from surface sources like the Sacramento River and
+                  Whiskeytown and the remaining 23% from groundwater, and classifies its treated water
+                  as soft — though the groundwater portion tests moderately hard, and rural homes on
+                  private wells often run harder still. Whatever the source, minerals and grit settle
+                  in the tank, and that buildup is what wears a water heater out early.
                 </p>
                 <p>
                   Sediment settles to the bottom of the tank, insulates the burner or heating element,
@@ -745,15 +746,15 @@ export default function WaterHeaterReplacementReddingPage() {
               <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-xl ring-1 ring-gray-200">
                 <Image
                   src="/images/wh-redding-sediment-failure.webp"
-                  alt="Failed Redding water heater tank cut open showing thick mineral sediment buildup — the result of hard-water-driven corrosion that causes early failure"
+                  alt="Failed Redding water heater tank cut open showing thick mineral sediment buildup — the kind of sediment that causes early failure"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
               <figcaption className="text-sm text-gray-500 mt-3 italic">
-                Real Redding-area water heater pulled from service — sediment crust like this is why
-                Redding tanks fail at 8–10 years.
+                Real Redding-area water heater pulled from service — sediment crust like this is what
+                wears a tank out early.
               </figcaption>
             </figure>
           </div>

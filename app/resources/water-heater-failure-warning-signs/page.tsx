@@ -35,7 +35,7 @@ const waterHeaterSignsFAQs = [
   {
     question: 'How long do water heaters last in Redding, CA?',
     answer:
-      "Most tank water heaters in Redding last 8–12 years. Redding's hard, mineral-heavy water shortens lifespan compared to softer-water regions — a tank that would last 15 years in the Bay Area might only last 10 years in Redding. Tankless units typically last 20+ years. Annual flushing can extend life by 2–3 years.",
+      "Most tank water heaters last 8–12 years. Sediment buildup is the main thing that shortens that lifespan — minerals and grit settle in the tank and make the burner work harder — and homes on harder well water tend to land at the lower end. Tankless units typically last 20+ years. Annual flushing can extend life by 2–3 years.",
   },
   {
     question: 'What are the first signs of water heater failure?',
@@ -119,9 +119,8 @@ export default function WaterHeaterFailureSignsPage() {
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-5">
             Age is the single biggest predictor of failure. Most residential
-            tank water heaters last 8–12 years — and in Redding, where the
-            water is hard and mineral-heavy, you're usually at the lower
-            end of that range.
+            tank water heaters last 8–12 years — and sediment buildup tends to
+            push units toward the lower end of that range.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             Check the manufacturer label on the side of your tank. The
@@ -137,9 +136,9 @@ export default function WaterHeaterFailureSignsPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-5">
             When you hear popping or rumbling from the water heater during
             its heating cycle, that's the sound of water boiling through
-            hardened sediment at the bottom of the tank. Minerals from
-            Redding's hard water settle out and form a crust that the
-            burner has to heat through — dramatically overworking the tank.
+            hardened sediment at the bottom of the tank. Minerals settle out
+            and form a crust that the burner has to heat through — dramatically
+            overworking the tank.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             You can sometimes extend life by flushing the tank annually,

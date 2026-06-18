@@ -264,7 +264,7 @@ export default function HydroJettingReddingPage() {
             <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
               <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">Mineral Scale</h3>
               <ul className="text-gray-700 space-y-2">
-                <li>• Hard-water scale inside older lines</li>
+                <li>• Mineral scale inside older lines</li>
                 <li>• Narrowed pipe diameter</li>
                 <li>• Repeat clogs after snaking</li>
                 <li>• Sluggish whole-house drainage</li>
@@ -379,9 +379,9 @@ export default function HydroJettingReddingPage() {
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Two things drive most of the recurring drain calls we run in Redding: hard water and
-                mature trees. Redding&apos;s mineral-heavy water — the same hard water that scales up
-                water heaters here — also leaves scale on the inside of older drain and sewer lines.
+                Two things drive most of the recurring drain calls we run in Redding: mineral scale and
+                mature trees. Mineral deposits leave scale on the inside of older drain and sewer
+                lines — heaviest in homes on harder well water.
                 Over years that narrows the pipe, catches grease and debris, and turns a line that
                 used to flow fine into one that clogs every few months no matter how many times it
                 gets snaked.
@@ -442,7 +442,7 @@ export default function HydroJettingReddingPage() {
               },
               {
                 title: 'Roots, Grease & Scale',
-                body: 'Cutting heads for roots, the pressure to strip hardened grease, and the experience to know what Redding hard water does to older lines.',
+                body: 'Cutting heads for roots, the pressure to strip hardened grease, and the experience to know what years of mineral scale do to older lines.',
               },
               {
                 title: 'Licensed Local Family Business',
@@ -564,7 +564,7 @@ export default function HydroJettingReddingPage() {
                 Water Heater Repair in Redding
               </h3>
               <p className="text-gray-600 text-sm">
-                The other thing Redding hard water wears out early — gas and electric repair.
+                The other thing sediment wears out early — gas and electric repair.
               </p>
             </Link>
             <Link

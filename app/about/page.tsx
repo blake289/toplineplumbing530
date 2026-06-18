@@ -110,8 +110,8 @@ export default function AboutPage() {
                 jobs — water heater installs, drain clearings,
                 hundreds of full home repipes, and countless emergency
                 responses. That experience
-                matters — we know which water heaters fail first in Redding's
-                hard water, which neighborhoods have the worst sewer line root
+                matters — we know which water heaters fail first to sediment
+                around here, which neighborhoods have the worst sewer line root
                 intrusion, and which shortcuts other plumbers take that show
                 up as problems two years later.
               </p>

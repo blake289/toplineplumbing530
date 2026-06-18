@@ -18,6 +18,7 @@ const moneyPages = [
   '/services/water-heater-repair',
   '/commercial-plumbing-redding',
   '/hydro-jetting-redding',
+  '/water-softener-redding',
   '/water-heater-replacement-redding',
   '/drain-cleaning-anderson',
   '/drain-cleaning-bella-vista',

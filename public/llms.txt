@@ -166,6 +166,7 @@ Service-specific landing pages for each city we serve:
 - `/drain-cleaning-bella-vista` — Drain Cleaning in Bella Vista, CA — fast clog and drain clearing
 - `/drain-cleaning-red-bluff` — Drain Cleaning in Red Bluff, CA — fast clog and drain clearing
 - `/hydro-jetting-redding` — Hydro Jetting in Redding, CA — high-pressure drain and sewer cleaning for grease, mineral scale, and tree roots; camera-inspected first
+- `/water-softener-redding` — Water Softener Installation in Redding, CA — honest needs assessment first (the City of Redding classifies its water as soft, so many homes don't need one); best fit is private wells and harder groundwater
 - `/water-heater-repair-redding` — Water Heater Repair in Redding, CA — gas and electric component repair, honest repair-vs-replace guidance
 - `/water-heater-repair-shasta-lake` — Water Heater Repair in Shasta Lake, CA — repair and replacement, all brands
 - `/water-heater-repair-anderson` — Water Heater Repair in Anderson, CA — repair and replacement, all brands

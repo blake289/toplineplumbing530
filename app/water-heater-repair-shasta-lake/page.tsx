@@ -158,7 +158,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'Why do Shasta Lake water heaters fail early?',
     answer:
-      "Two big reasons. Older homes near the original townsite (Project City and Central Valley) often have aging tanks already past their service life, and the mineral-heavy water in this region drives sediment buildup that insulates the burner or element and forces the unit to overheat. On well-fed homes near Lakehead, untreated water can accelerate sediment and corrosion even faster. Annual flushing slows it, but a sediment-choked tank is on borrowed time.",
+      "Two big reasons. Older homes near the original townsite (Project City and Central Valley) often have aging tanks already past their service life, and sediment buildup in any tank insulates the burner or element and forces the unit to overheat. On well-fed homes near Lakehead, untreated water can run harder and accelerate that sediment and corrosion. Annual flushing slows it, but a sediment-choked tank is on borrowed time.",
   },
   {
     question: 'Is Topline Plumbing licensed to repair water heaters?',
@@ -506,12 +506,11 @@ export default function WaterHeaterRepairShastaLakePage() {
               <p>
                 On the residential side, the older housing near the original townsite — Project City
                 and Central Valley — tends to have aging supply lines and tanks that are already past
-                their service life. Combine that with the mineral-heavy water delivered by the City of
-                Shasta Lake&apos;s municipal water system and you get sediment buildup that insulates
-                the burner or element, forces the unit to overheat, and triggers the rumbling,
-                popping, and early failures we&apos;re called out for. On
-                well-fed homes near Lakehead, untreated water can drive sediment and corrosion even
-                faster.
+                their service life. Combine that with everyday sediment buildup — minerals and grit
+                settling in the tank — and you get the insulated burner, overheating, and the
+                rumbling, popping, and early failures we&apos;re called out for. On
+                well-fed homes near Lakehead, untreated water can run harder and drive sediment and
+                corrosion even faster.
               </p>
               <p>
                 We&apos;ve handled these calls across Shasta Lake, Redding, Anderson, and the

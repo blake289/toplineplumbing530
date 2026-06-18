@@ -145,7 +145,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'Why does my Redding water heater keep failing early?',
     answer:
-      "Redding's hard, mineral-heavy water is usually the culprit. The City of Redding Water Utility draws most of its supply from surface sources like the Sacramento River and Whiskeytown plus local groundwater, and that mineral load settles as sediment in the bottom of the tank. It insulates the burner or element, forces the unit to overheat, and burns out components — thermostats, elements, and gas valves — well before their time. When we repair on hard water, we also check whether a flush, a fresh anode rod, or a softener would stop the same failure from coming back. That's the honest fix, not just the fast one.",
+      "Sediment is usually the culprit. The City of Redding draws most of its supply from surface sources like the Sacramento River and Whiskeytown plus local groundwater, and classifies its treated water as soft — but minerals and grit still settle as sediment in the bottom of the tank. That sediment insulates the burner or element, forces the unit to overheat, and burns out components — thermostats, elements, and gas valves — well before their time. When we repair a unit, we also check whether a flush, a fresh anode rod, or (for homes on harder well water) a softener would stop the same failure from coming back. That's the honest fix, not just the fast one.",
   },
   {
     question: 'Is Topline Plumbing licensed to repair water heaters?',
@@ -398,23 +398,27 @@ export default function WaterHeaterRepairReddingPage() {
                 water heater quits in town, we can usually have a tech diagnosing it the same day if
                 you call before noon. We&apos;ve run thousands of these calls across Redding, from
                 older homes near downtown and the Garden Tract to the newer subdivisions out in
-                Enterprise, and the failures follow a pattern driven by one thing: the water.
+                Enterprise, and the failures usually trace back to one thing: sediment.
               </p>
               <p>
-                Redding sits in a region with hard, mineral-heavy water. The City of Redding Water
-                Utility draws most of its supply from surface sources like the Sacramento River and
-                Whiskeytown, plus local groundwater, and that mineral load is the main reason water
-                heaters here wear out parts at 8–10 years instead of the 12–15 you&apos;d see in
-                soft-water markets. Sediment settles in the bottom of the tank, insulates the burner
-                or heating element, and forces the unit to run hotter and longer — which burns out
-                thermostats, elements, gas valves, and thermocouples ahead of schedule.
+                The City of Redding draws most of its supply from surface sources like the Sacramento
+                River and Whiskeytown, plus local groundwater, and classifies its treated water as
+                soft — though the groundwater portion tests moderately hard and rural wells can run
+                harder still. Either way, minerals and grit settle in the bottom of the tank, insulate
+                the burner or heating element, and force the unit to run hotter and longer — which
+                burns out thermostats, elements, gas valves, and thermocouples ahead of schedule. Tank
+                heaters generally last 8–12 years; sediment is what pushes a unit toward the low end.
               </p>
               <p>
                 The good news is that most of those are repairs, not replacements. A worn thermostat,
                 a failed element, a bad thermocouple, or a leaking T&amp;P valve can usually be fixed
-                in a single visit and buy your tank years more life. When we repair a unit on
-                Redding&apos;s hard water, we also check whether a sediment flush, a fresh anode rod,
-                or a softener would stop the same failure from coming back. That&apos;s the honest
+                in a single visit and buy your tank years more life. When we repair a unit, we also
+                check whether a sediment flush, a fresh anode rod, or (for homes on harder well water)
+                a{' '}
+                <Link href="/water-softener-redding" className="text-primary font-semibold hover:underline">
+                  water softener
+                </Link>{' '}
+                would stop the same failure from coming back. That&apos;s the honest
                 fix, not just the fast one — and if the tank itself is too far gone, we&apos;ll tell
                 you that straight and point you to{' '}
                 <Link href="/water-heater-replacement-redding" className="text-primary font-semibold hover:underline">
@@ -454,8 +458,8 @@ export default function WaterHeaterRepairReddingPage() {
                 body: 'Thermostats, heating elements, thermocouples, and relief valves ride on the truck, so most water heater repairs are finished in a single visit.',
               },
               {
-                title: 'Built for Redding Hard Water',
-                body: "Redding's mineral-heavy water is what kills most tanks early. We don't just swap the failed part — we check the sediment, anode, and whether a flush or softener stops the next failure.",
+                title: 'We Tackle the Sediment, Not Just the Part',
+                body: "Sediment buildup is what kills most tanks early. We don't just swap the failed part — we check the sediment, anode, and whether a flush or softener stops the next failure.",
               },
               {
                 title: 'Honest Repair-vs-Replace Calls',

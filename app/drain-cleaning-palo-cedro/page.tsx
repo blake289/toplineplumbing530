@@ -329,7 +329,11 @@ export default function DrainCleaningPaloCedroPage() {
               here: depending on the property, your incoming water is either delivered by the Bella
               Vista Water District or drawn from a private well — and well water in particular often
               runs harder, leaving more mineral scale inside drain lines for grease and debris to grab
-              onto. Most homes also run on septic rather than city sewer, and that single fact changes
+              onto — and it&apos;s the kind of water where a{' '}
+              <Link href="/water-softener-redding" className="text-primary font-semibold hover:underline">
+                water softener
+              </Link>{' '}
+              can be worth it. Most homes also run on septic rather than city sewer, and that single fact changes
               how drains should be cleaned. We treat these jobs differently than in-town work, and
               septic is the biggest reason.
             </p>
