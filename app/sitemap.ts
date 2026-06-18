@@ -17,6 +17,7 @@ const moneyPages = [
   '/services/tankless',
   '/services/water-heater-repair',
   '/commercial-plumbing-redding',
+  '/hydro-jetting-redding',
   '/water-heater-replacement-redding',
   '/drain-cleaning-anderson',
   '/drain-cleaning-bella-vista',
