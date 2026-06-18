@@ -344,9 +344,10 @@ export default function DrainCleaningReddingPage() {
               mid-century homes here were built with galvanized supply and older drain lines that
               narrow over the decades as scale, grease, and debris build up — so they clog more easily
               and the clogs come back faster than in a newer PEX build out by Stillwater. The
-              moderately hard supply delivered by the City of Redding Water Utility, blended roughly
+              City of Redding Water Utility classifies its supply as soft, blended roughly
               77% from the Sacramento River and Whiskeytown surface water and the rest from
-              groundwater, leaves mineral scale that only adds to that buildup over the years.
+              groundwater that runs moderately harder — but even soft-to-moderate water leaves some
+              mineral scale that adds to that buildup over the years.
             </p>
             <p>
               That is exactly why we use mechanical power augers instead of chemical cleaners. A

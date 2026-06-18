@@ -322,7 +322,7 @@ export default function DrainCleaningAndersonPage() {
             </p>
             <p>
               In the newer Riverside Ave subdivisions and older in-town homes — the ones drawing
-              municipal water from the City of Anderson Water Department and tied into city sewer —
+              municipal water from the City of Anderson water utility and tied into city sewer —
               the usual suspects are grease and food in the kitchen line, hair and soap scum in the
               bathroom, and root intrusion in aging main lines. And in Anderson&rsquo;s manufactured
               and mobile homes, the smaller-diameter drain runs need the right equipment so we clear

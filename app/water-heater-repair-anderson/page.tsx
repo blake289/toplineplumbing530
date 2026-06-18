@@ -415,7 +415,7 @@ export default function WaterHeaterRepairAndersonPage() {
                 gets done right the first time instead of turning into a callback.
               </p>
               <p>
-                In-town Anderson homes draw municipal water from the City of Anderson Water Department,
+                In-town Anderson homes draw municipal water from the City of Anderson water utility,
                 which pumps 100% groundwater from local wells in the Anderson Subbasin — mineral content
                 that, over years, still leaves sediment in the bottom of a tank. Out toward Cottonwood
                 Creek and rural Anderson, many homes run on their own private wells instead. That

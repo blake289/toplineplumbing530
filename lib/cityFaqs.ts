@@ -47,7 +47,7 @@ const CITY_META: Record<string, CityMeta> = {
     distanceNote: "Anderson is 10 miles south of Redding on I-5, so we typically arrive within an hour.",
     uniqueQ: {
       question: "Do you service rural properties outside Anderson city limits?",
-      answer: "Yes. We service properties throughout the Anderson area including Happy Valley, Cottonwood, and surrounding rural Shasta County addresses. Septic-connected homes welcome.",
+      answer: "Yes. We service properties throughout the Anderson area including Happy Valley, Cottonwood, and surrounding rural addresses. Septic-connected homes welcome.",
     },
   },
   "palo-cedro": {
@@ -67,7 +67,7 @@ const CITY_META: Record<string, CityMeta> = {
     distanceNote: "Bella Vista is about 15 miles northeast of Redding — we serve it daily.",
     uniqueQ: {
       question: "Do you service homes on private wells in Bella Vista?",
-      answer: "Yes. Most Bella Vista homes are on well systems, and we handle pressure tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when needed.",
+      answer: "Yes. Many Bella Vista homes are on well systems, and we handle pressure tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when needed.",
     },
   },
   "red-bluff": {

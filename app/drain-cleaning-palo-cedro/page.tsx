@@ -117,7 +117,7 @@ const drainFAQs = [
   {
     question: 'Is your drain cleaning safe for septic systems in Palo Cedro?',
     answer:
-      "Yes — and it's the whole reason rural Palo Cedro homes call us. Most properties here are on septic, not city sewer, and harsh chemical drain cleaners can damage the bacterial balance a septic system depends on. We clear clogs with mechanical power augering, never caustics. The auger physically removes the blockage instead of dumping chemicals into your tank and leach field.",
+      "Yes — and it's the whole reason rural Palo Cedro homes call us. Many properties here are on septic rather than a city sewer main, and harsh chemical drain cleaners can damage the bacterial balance a septic system depends on. We clear clogs with mechanical power augering, never caustics. The auger physically removes the blockage instead of dumping chemicals into your tank and leach field.",
   },
   {
     question: 'How much does drain cleaning cost in Palo Cedro, CA?',
@@ -256,7 +256,7 @@ export default function DrainCleaningPaloCedroPage() {
               Septic-Safe Drain Cleaning — No Caustic Chemicals
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Most Palo Cedro homes run on septic, not city sewer. Chemical drain cleaners kill the
+              Many Palo Cedro homes run on septic rather than a city sewer main. Chemical drain cleaners kill the
               bacteria a septic system needs and can lead to backups and costly system damage. We
               clear every clog with mechanical power augering that physically removes the blockage —
               nothing corrosive goes into your tank or leach field.

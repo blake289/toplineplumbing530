@@ -142,7 +142,7 @@ const emergencyFAQs = [
   {
     question: 'Do you service homes on private wells and septic in Bella Vista?',
     answer:
-      'Yes. Most Bella Vista homes are on wells and septic, and we handle pressure-tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when a problem crosses into the pump itself, and we clear septic-fed drain lines with mechanical augering rather than harsh chemicals.',
+      'Yes. Many Bella Vista homes are on wells and septic, and we handle pressure-tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when a problem crosses into the pump itself, and we clear septic-fed drain lines with mechanical augering rather than harsh chemicals.',
   },
   {
     question: 'What should I do while waiting for the plumber?',
@@ -421,7 +421,7 @@ export default function EmergencyPlumberBellaVistaPage() {
               },
               {
                 title: 'Well & Septic Comfortable',
-                body: 'Most Bella Vista homes run on wells and septic. We handle pressure-tank issues, well-line repairs, and septic-safe drain clearing, and coordinate with pump techs when needed.',
+                body: 'Many Bella Vista homes run on wells and septic. We handle pressure-tank issues, well-line repairs, and septic-safe drain clearing, and coordinate with pump techs when needed.',
               },
               {
                 title: 'Real Leak Detection',

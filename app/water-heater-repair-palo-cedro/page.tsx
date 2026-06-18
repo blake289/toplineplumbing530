@@ -140,7 +140,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'My Palo Cedro home is on a private well — why does my water heater keep failing?',
     answer:
-      "Most Palo Cedro homes are on private wells, and well water often carries heavy sediment and minerals. That sediment settles in the bottom of the tank, insulates the burner or element, and forces early failure — rumbling tanks, tripped elements, and worn thermostats well before their time. When we repair a well-fed water heater here, we also check whether the pressure tank, a flush, an anode rod, or a softener/filter would stop the same failure from coming back. That's the honest fix, not just the fast one.",
+      "Many Palo Cedro homes are on private wells, and well water often carries heavy sediment and minerals. That sediment settles in the bottom of the tank, insulates the burner or element, and forces early failure — rumbling tanks, tripped elements, and worn thermostats well before their time. When we repair a well-fed water heater here, we also check whether the pressure tank, a flush, an anode rod, or a softener/filter would stop the same failure from coming back. That's the honest fix, not just the fast one.",
   },
   {
     question: 'Should I repair or replace my water heater?',
@@ -461,7 +461,7 @@ export default function WaterHeaterRepairPaloCedroPage() {
               },
               {
                 title: 'Well-Water & Rural-Ready',
-                body: "Most Palo Cedro homes are on private wells. We check the pressure tank and sediment load, not just the part that failed, so the same well-water issue doesn't kill the unit again.",
+                body: "Many Palo Cedro homes are on private wells. We check the pressure tank and sediment load, not just the part that failed, so the same well-water issue doesn't kill the unit again.",
               },
               {
                 title: 'Honest Repair-vs-Replace Calls',

@@ -356,7 +356,7 @@ export default function SewerLineAndersonPage() {
             </p>
             <p>
               A big part of the job in Anderson is figuring out whether a property is even on city sewer
-              at all. In-town homes that take their water from the City of Anderson Water Department are
+              at all. In-town homes that take their water from the City of Anderson water utility are
               typically tied into the municipal sewer, while many homes closer to Cottonwood Creek and
               rural Anderson are on private septic instead — so a backup that looks like a clogged main
               might actually be a septic transition issue. Guessing wrong here costs homeowners real money. Our camera inspection

@@ -381,9 +381,9 @@ export default function CommercialPlumbingReddingPage() {
             <p>
               The same conditions that wear on Redding homes hit businesses harder, because the
               systems run all day. The City of Redding Water Utility supplies most local businesses
-              from surface sources — roughly 77% Sacramento River and Whiskeytown water, the balance
-              groundwater — which carries moderate hardness, so sediment buildup shortens the life of
-              commercial water heaters that are cycling constantly for a kitchen or restroom block. Redding's long 110°F-plus summer
+              from surface sources it classifies as soft — roughly 77% Sacramento River and Whiskeytown
+              water, the balance groundwater that runs moderately harder — so sediment buildup still
+              shortens the life of commercial water heaters that are cycling constantly for a kitchen or restroom block. Redding's long 110°F-plus summer
               stretches accelerate wear on outdoor supply lines and the irrigation backflow
               assemblies that many commercial properties are required to have certified every year. And in
               older buildings near the original core, end-of-life galvanized steel supply lines show

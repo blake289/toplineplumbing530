@@ -184,7 +184,7 @@ export default function SewerLineBellaVistaPage() {
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
               Topline Plumbing is a licensed (CSLB #596557) sewer and septic line repair company serving
-              Bella Vista, CA. Out here the lines run long and most homes are on septic — so we camera the
+              Bella Vista, CA. Out here the lines run long and many homes are on septic — so we camera the
               line, pinpoint the break underground, and quote every job upfront. Same-day service during
               business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.
             </p>
@@ -409,7 +409,7 @@ export default function SewerLineBellaVistaPage() {
               },
               {
                 title: 'Septic-Safe Methods',
-                body: "Most Bella Vista homes are on septic. We use mechanical augering, not caustic chemicals that can wreck a septic system, and handle the line accordingly.",
+                body: "Many Bella Vista homes are on septic. We use mechanical augering, not caustic chemicals that can wreck a septic system, and handle the line accordingly.",
               },
               {
                 title: 'Upfront Quote Before Work Starts',

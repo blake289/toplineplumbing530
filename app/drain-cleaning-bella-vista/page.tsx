@@ -114,7 +114,7 @@ const drainFAQs = [
   {
     question: 'Is your drain cleaning safe for my septic system?',
     answer:
-      'Yes. Most Bella Vista homes run on septic, so we clear drains with mechanical power augering rather than harsh chemical drain cleaners. Chemicals can damage the bacterial balance a septic system depends on — and they only mask the clog anyway. Augering physically removes the blockage and protects your tank and leach field.',
+      'Yes. Many Bella Vista homes run on septic, so we clear drains with mechanical power augering rather than harsh chemical drain cleaners. Chemicals can damage the bacterial balance a septic system depends on — and they only mask the clog anyway. Augering physically removes the blockage and protects your tank and leach field.',
   },
   {
     question: 'How fast can you clear a drain in Bella Vista?',
@@ -247,7 +247,7 @@ export default function DrainCleaningBellaVistaPage() {
               How We Clear Drains in Bella Vista
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We don't just push the clog further down the line — we remove it. And because most homes
+              We don't just push the clog further down the line — we remove it. And because many homes
               out here are on septic, every method we use is septic-safe.
             </p>
           </div>

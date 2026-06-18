@@ -310,8 +310,8 @@ export default function DrainCleaningShastaLakePage() {
               On the residential side, the older housing near the original townsite — Project City
               and Central Valley — has aging supply and drain lines that are prone to root intrusion
               and buildup. These homes draw from the City of Shasta Lake&apos;s municipal water
-              system, whose mineral content gradually scales the inside of drain and waste lines and
-              gives buildup something to cling to. For recurring clogs in these homes, a sewer camera
+              system, and over the decades scale, grease, and debris accumulate inside aging drain and
+              waste lines and give new buildup something to cling to. For recurring clogs in these homes, a sewer camera
               inspection tells us exactly what is happening underground so we fix the cause, not just
               the symptom.
               Whatever your drain is doing, call{' '}

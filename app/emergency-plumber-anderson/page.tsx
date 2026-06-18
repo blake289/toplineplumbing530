@@ -396,7 +396,7 @@ export default function EmergencyPlumberAndersonPage() {
             </p>
             <p>
               In the newer Riverside Ave subdivisions and in-town homes on city water — served by the
-              City of Anderson Water Department — the calls are more familiar: burst supply lines,
+              City of Anderson water utility — the calls are more familiar: burst supply lines,
               water heater floods, main-line backups. And in
               Anderson&rsquo;s manufactured and mobile homes, the supply lines, P-traps, and water
               heater closets follow their own standards, so we bring the right materials to do it

@@ -122,7 +122,7 @@ const sewerFAQs = [
   {
     question: 'Most Palo Cedro homes are on septic — do you handle that?',
     answer:
-      "Yes, and it's a big part of what we do out here. Palo Cedro is unincorporated, so most properties run on private septic rather than a city sewer main. We camera the line from the house to the septic tank, diagnose backups and slow drains, and use mechanical augering instead of caustic chemicals that can damage a septic system. We handle the line and the house-to-tank connection; when the tank itself needs pumping or a leach-field repair, we'll tell you straight and coordinate the right specialist.",
+      "Yes, and it's a big part of what we do out here. Palo Cedro is unincorporated, so many properties run on private septic rather than a city sewer main. We camera the line from the house to the septic tank, diagnose backups and slow drains, and use mechanical augering instead of caustic chemicals that can damage a septic system. We handle the line and the house-to-tank connection; when the tank itself needs pumping or a leach-field repair, we'll tell you straight and coordinate the right specialist.",
   },
   {
     question: 'How much does sewer or septic line repair cost in Palo Cedro, CA?',
@@ -132,7 +132,7 @@ const sewerFAQs = [
   {
     question: 'Am I on city sewer or septic in Palo Cedro?',
     answer:
-      "Almost certainly septic. Palo Cedro is unincorporated and most homes here are not on a city sewer main — they run to a private septic tank instead. Water is just as variable: depending on your location, it comes from the Bella Vista Water District or a private well. A camera inspection settles the waste side for sure — we trace the line, confirm it ties into a septic tank, and tell you exactly what you're dealing with before quoting any repair.",
+      "Usually septic. Palo Cedro is unincorporated and most homes here are not on a city sewer main — they run to a private septic tank instead. Water is just as variable: depending on your location, it comes from the Bella Vista Water District or a private well. A camera inspection settles the waste side for sure — we trace the line, confirm it ties into a septic tank, and tell you exactly what you're dealing with before quoting any repair.",
   },
   {
     question: 'Do you do camera inspections before digging on rural property?',
@@ -349,7 +349,7 @@ export default function SewerLinePaloCedroPage() {
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
               Palo Cedro is the unincorporated community just east of Redding — large-lot residential,
-              horse properties, and small ranches, about 15 minutes out on Highway 44. Most homes here are
+              horse properties, and small ranches, about 15 minutes out on Highway 44. Many homes here are
               on private wells and septic systems rather than city utilities, and that changes the waste-line
               landscape completely. We treat these jobs differently than in-town work, because the line
               you're dealing with usually runs to a septic tank on your own property, not a city main down
@@ -358,8 +358,8 @@ export default function SewerLinePaloCedroPage() {
             <p>
               The utility picture out here is genuinely split, and we don't pretend otherwise: depending on
               location, a Palo Cedro home's water comes from the Bella Vista Water District or a private
-              well — and on the waste side, the overwhelming majority of properties are on septic, not city
-              sewer. That distinction drives everything. We use mechanical augering instead of harsh chemical
+              well — and on the waste side, most properties out here are on septic rather than a city sewer
+              main. That distinction drives everything. We use mechanical augering instead of harsh chemical
               cleaners, because caustics can damage a septic system, and we camera the line to confirm whether
               a backup is a cracked pipe, a root intrusion, or actually a full tank or leach-field problem
               before we quote a dime of repair.
