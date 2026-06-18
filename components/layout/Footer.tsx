@@ -39,7 +39,8 @@ const cityServiceColumns: Array<{ title: string; links: Array<[string, string]> 
   {
     title: 'Water Heater',
     links: [
-      ['Redding', '/water-heater-replacement-redding'],
+      ['Redding (Repair)', '/water-heater-repair-redding'],
+      ['Redding (Replace)', '/water-heater-replacement-redding'],
       ['Anderson', '/water-heater-repair-anderson'],
       ['Shasta Lake', '/water-heater-repair-shasta-lake'],
       ['Palo Cedro', '/water-heater-repair-palo-cedro'],
@@ -120,6 +121,7 @@ export default function Footer() {
               <Link href="/water-heater-replacement-redding" className="text-gray-400 hover:text-white transition-colors py-2.5">Water Heater Replacement</Link>
               <Link href="/services/tankless" className="text-gray-400 hover:text-white transition-colors py-2.5">Tankless Installation</Link>
               <Link href="/services/drain-cleaning" className="text-gray-400 hover:text-white transition-colors py-2.5">Drain Cleaning</Link>
+              <Link href="/hydro-jetting-redding" className="text-gray-400 hover:text-white transition-colors py-2.5">Hydro Jetting</Link>
               <Link href="/services/repiping-services" className="text-gray-400 hover:text-white transition-colors py-2.5">Repiping Services</Link>
               <Link href="/services/sewer-line" className="text-gray-400 hover:text-white transition-colors py-2.5">Sewer Line</Link>
               <Link href="/services/leak-detection" className="text-gray-400 hover:text-white transition-colors py-2.5">Leak Detection</Link>

@@ -236,6 +236,8 @@ export default function DrainCleaningPage() {
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-center">
             <span className="font-semibold text-gray-900">Related services:</span>
+            <Link href="/hydro-jetting-redding" className="text-primary font-semibold hover:underline">Hydro Jetting</Link>
+            <span className="text-gray-400">·</span>
             <Link href="/services/sewer-line" className="text-primary font-semibold hover:underline">Sewer Line Repair</Link>
             <span className="text-gray-400">·</span>
             <Link href="/services/emergency" className="text-primary font-semibold hover:underline">Emergency Plumbing</Link>

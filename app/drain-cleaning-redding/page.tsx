@@ -482,6 +482,17 @@ export default function DrainCleaningReddingPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link
+              href="/hydro-jetting-redding"
+              className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-primary hover:shadow-md transition-all"
+            >
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-2">
+                Hydro Jetting in Redding
+              </h3>
+              <p className="text-gray-700">
+                For recurring clogs, grease, or roots — high-pressure jetting that cleans the whole pipe.
+              </p>
+            </Link>
+            <Link
               href="/services/drain-cleaning"
               className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-primary hover:shadow-md transition-all"
             >
