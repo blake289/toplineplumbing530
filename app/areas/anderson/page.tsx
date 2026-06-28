@@ -125,14 +125,21 @@ export default function AndersonPage() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     <Link href="/water-heater-repair-anderson" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Anderson</Link>
                   </h3>
-                  <p className="text-gray-700">No hot water in Anderson? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link>. Same-day water heater service available in Anderson.</p>
+                  <p className="text-gray-700">No hot water in Anderson? Water heater leaking? Strange popping or rumbling noises? Those sounds are usually sediment, and Anderson sees a lot of it. The city draws its water from municipal groundwater wells, which runs harder than surface water, so scale builds up inside the tank and is one of the most common reasons water heaters here fail before their time. We repair pilot, thermostat, and valve faults, flush sediment, and when a tank is past saving we do same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement</Link> with upfront pricing.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     <Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Water Heater Installation Anderson</Link>
                   </h3>
-                  <p className="text-gray-700">Upgrade to a tankless water heater for endless hot water and energy savings. Professional installation with warranty.</p>
+                  <p className="text-gray-700">Upgrade to a tankless water heater for endless hot water and lower standby energy use. Because Anderson's well water carries more minerals, we size the unit correctly for the home and recommend periodic descaling so scale doesn't shorten its life. Professional installation with warranty.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                    <Link href="/sewer-line-anderson" className="text-blue-600 hover:underline block py-2">Sewer Line Repair Anderson</Link>
+                  </h3>
+                  <p className="text-gray-700">Recurring drain backups, gurgling toilets, or sewage odors usually point past a single fixture to the main or sewer line. On rural Anderson parcels and septic-connected homes near Cottonwood and Happy Valley, that line can run long, so we diagnose the actual cause before quoting the repair. Upfront pricing, no surprises.</p>
                 </div>
               </div>
 

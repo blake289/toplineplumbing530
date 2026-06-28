@@ -217,8 +217,8 @@ export default function DrainCleaningPage() {
             <p>
               Topline Plumbing has served the Redding area since 1998 — family owned, licensed under
               California CSLB #596557, bonded, and insured, with a 5.0 Google rating. We offer same-day
-              drain cleaning during business hours, Monday through Friday 8:00a to 4:30p, with a typical
-              30 to 60 minute response inside the Redding city limits. Call (530) 704-6989.
+              drain cleaning during business hours, Monday through Friday 8:00a to 4:30p, across Redding
+              and the surrounding area. Call (530) 704-6989.
             </p>
           </div>
         </div>

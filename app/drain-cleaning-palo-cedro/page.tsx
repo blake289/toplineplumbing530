@@ -127,7 +127,7 @@ const drainFAQs = [
   {
     question: 'How fast can you get to Palo Cedro for a clogged drain?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), Topline can typically reach most Palo Cedro properties in 30–60 minutes — it's about 15 minutes east of our Redding base on Highway 44, and we cover it daily. Call (530) 704-6989 to check same-day availability.",
+      "We offer same-day drain cleaning in Palo Cedro during business hours (Mon–Fri 8:00a–4:30p) — it's about 15 minutes east of our Redding base on Highway 44, and we cover it daily. Call (530) 704-6989 to check same-day availability.",
   },
   {
     question: 'Why shouldn’t I use chemical drain cleaner on a septic system?',
@@ -216,7 +216,7 @@ export default function DrainCleaningPaloCedroPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Palo Cedro response 30–60 minutes
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
           </p>
         </div>
       </section>
@@ -405,7 +405,7 @@ export default function DrainCleaningPaloCedroPage() {
               },
               {
                 title: 'Same-Day, Mon–Fri',
-                body: 'Roughly 30–60 minutes out to Palo Cedro from our Redding shop during business hours.',
+                body: 'Same-day service out to Palo Cedro from our Redding shop during business hours.',
               },
               {
                 title: 'Licensed Since 1998',

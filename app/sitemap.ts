@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getAllPosts } from '@/lib/blog';
 
 const BASE_URL = 'https://toplineplumbingco.com';
 
@@ -78,10 +79,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority,
   });
 
+  const posts = getAllPosts();
+  const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }));
+
   return [
     entry('/', 1),
     ...moneyPages.map((route) => entry(route, 0.8)),
     ...hubPages.map((route) => entry(route, 0.6)),
+    entry('/blog', 0.6),
+    ...blogEntries,
     ...legalPages.map((route) => entry(route, 0.3)),
   ];
 }

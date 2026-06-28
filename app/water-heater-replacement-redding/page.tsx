@@ -92,9 +92,9 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#webpage',
   url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
-  name: 'Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
+  name: 'Hot Water Heater Repair & Replacement in Redding, CA — Same-Day Service',
   description:
-    "Water heater repair & replacement in Redding, CA. Same-day repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
+    "Hot water heater repair & replacement in Redding, CA. Same-day tank repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/water-heater-replacement-redding#service' },
@@ -105,16 +105,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair & Replacement, Redding CA | Topline',
+  title: 'Water Heater Replacement Near Me — Redding, CA | Topline',
   description:
-    "Water heater repair & replacement in Redding, CA. Same-day repairs, tank swaps, tankless conversions, and honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
+    "Water heater replacement and tankless installation in Redding, CA. Tank swaps and upgrades with honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   },
   openGraph: {
-    title: 'Water Heater Repair & Replacement, Redding CA | Topline',
+    title: 'Water Heater Replacement Near Me — Redding, CA | Topline',
     description:
-      "Redding's water heater specialists. Same-day repair and replacement, tankless conversions, and honest pricing from a licensed local plumber since 1998.",
+      "Redding's hot water heater specialists. Tank replacement, installation, and tankless conversions, with permit, disposal, and strapping in one upfront price.",
     url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -131,6 +131,21 @@ export const metadata: Metadata = {
 };
 
 const waterHeaterFAQs = [
+  {
+    question: 'Do you do hot water heater repair near me in Redding?',
+    answer:
+      "Yes. Topline is a local, family-owned plumber serving greater Redding and Shasta County, so when you search hot water heater repair near me you're getting a real local crew, not a call center. We repair both traditional tank and high-efficiency tankless water heaters. Call (530) 704-6989 before noon during business hours (Mon–Fri 8a–4:30p) and same-day repair is usually possible.",
+  },
+  {
+    question: 'Should I repair or replace my hot water heater?',
+    answer:
+      "If the tank is under about 8 years old and one part has failed — a heating element, thermostat, thermocouple, or gas valve — a hot water heater repair is usually the smarter, cheaper fix. Replace instead of repair when the tank itself is leaking, the water is rusty, the unit is 10+ years old, or the repair would cost a large share of a new unit. We'll diagnose it, quote it upfront, and tell you honestly which way the math points before any work starts.",
+  },
+  {
+    question: 'What brands of water heater do you install and service?',
+    answer:
+      "We install and service major water heater brands including Bradford White, Rheem, and A.O. Smith for tank units. For tankless, Topline is a Navien and Rinnai certified installer. Whether you need hot water heater repair or a full replacement, we'll match the right unit to your home and stand behind the installation.",
+  },
   {
     question: 'How fast can you replace my water heater in Redding?',
     answer:
@@ -189,11 +204,13 @@ export default function WaterHeaterReplacementReddingPage() {
                 Redding's Water Heater Specialists · Licensed Since 1998
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-white leading-tight">
-                Water Heater Repair & Replacement in Redding, CA
+                Water Heater Replacement & Installation in Redding, CA
               </h1>
               <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
-                Local family-run plumbers — not a corporate dispatch center. Same-day tank replacement,
-                tankless conversions, and honest upfront pricing. CSLB #596557.
+                Searching for water heater replacement near me in Redding? Topline is a local,
+                family-run plumber — not a corporate dispatch center. We replace and install both
+                traditional tank and tankless water heaters, with same-day service when possible and
+                honest upfront pricing. CSLB #596557.
               </p>
 
               <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
@@ -490,10 +507,16 @@ export default function WaterHeaterReplacementReddingPage() {
                 </li>
               </ul>
               <Link
-                href="/services/water-heater-repair"
+                href="/water-heater-repair-redding"
                 className="text-primary font-semibold hover:underline"
               >
-                Learn more →
+                Water heater repair in Redding →
+              </Link>
+              <Link
+                href="/services/water-heater-repair"
+                className="mt-2 text-primary font-semibold hover:underline"
+              >
+                Repair service overview →
               </Link>
             </div>
 
@@ -638,8 +661,139 @@ export default function WaterHeaterReplacementReddingPage() {
         </div>
       </section>
 
+      {/* Repair vs Replace */}
+      <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4">
+              Hot Water Heater Repair or Replacement — Which Do You Actually Need?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Not every failed water heater needs to be replaced. Here's how we decide, and how
+              we'll talk you through it on the phone or on site.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                When repair is usually the smarter call
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                If your tank is under about 8 years old and the problem is one failed part, a
+                repair often gets your hot water back for far less than a full replacement. The
+                most common hot water heater repairs we make in Redding:
+              </p>
+              <ul className="text-gray-700 space-y-2 leading-relaxed">
+                <li>• No hot water from an electric unit — failed heating element or thermostat</li>
+                <li>• Pilot won't stay lit on a gas unit — thermocouple or gas valve</li>
+                <li>• Water not hot enough — miscalibrated or failing thermostat</li>
+                <li>• Leaking fittings, drain valve, or pressure-relief (T&amp;P) valve</li>
+              </ul>
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                Need just the repair?{' '}
+                <Link
+                  href="/water-heater-repair-redding"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  See our hot water heater repair in Redding
+                </Link>{' '}
+                or our{' '}
+                <Link
+                  href="/services/water-heater-repair"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  water heater repair service overview
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                Signs it's time to replace, not repair
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Once the tank itself is failing, a repair only buys you time. Replace instead of
+                repair when you see:
+              </p>
+              <ul className="text-gray-700 space-y-2 leading-relaxed">
+                <li>• Water pooling under the tank — a leaking tank can't be repaired</li>
+                <li>• Rusty or discolored hot water</li>
+                <li>• Rumbling or popping from heavy sediment buildup</li>
+                <li>• The unit is 10+ years old (tanks generally last 8–12 years)</li>
+                <li>• You're facing a repair that costs a large share of a new unit</li>
+              </ul>
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                We'll always tell you straight which way the math points before quoting — no pushy
+                upsell to replace a tank that has good years left.
+              </p>
+            </div>
+          </div>
+
+          {/* Certified tankless callout */}
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-navy-900 text-white rounded-xl p-8">
+              <h3 className="text-xl font-heading font-bold mb-3">
+                Navien &amp; Rinnai Certified Tankless Install
+              </h3>
+              <p className="text-gray-200 leading-relaxed mb-4">
+                If you're upgrading to tankless, the install matters as much as the unit. Topline is
+                a Navien and Rinnai certified installer, and we repair and replace high-efficiency
+                tankless systems as well as traditional tanks. We handle the gas line sizing,
+                venting, and condensate work in-house so the system runs the way the manufacturer
+                intends.
+              </p>
+              <Link
+                href="/services/tankless"
+                className="inline-flex text-primary-light font-semibold hover:underline"
+              >
+                Full tankless water heater installation guide →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+                What affects the cost of repair or replacement
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                Every job is quoted upfront before any work starts, so you'll never get a surprise
+                charge. The honest factors that move the price:
+              </p>
+              <ul className="text-gray-700 space-y-2 leading-relaxed">
+                <li>• Repair vs. full replacement, and which part failed</li>
+                <li>• Tank size (40 / 50 / 75-gallon) and fuel type (gas vs. electric)</li>
+                <li>• Tank-to-tank swap vs. a tankless conversion (added gas line and venting)</li>
+                <li>• Bringing an older install up to current code during replacement</li>
+              </ul>
+              <p className="text-gray-700 mt-3 leading-relaxed">
+                Call{' '}
+                <a href="tel:5307046989" className="text-primary font-semibold hover:underline">
+                  (530) 704-6989
+                </a>{' '}
+                for a free estimate on any service.
+              </p>
+            </div>
+          </div>
+
+          {/* Why local / near me */}
+          <div className="mt-8 bg-white rounded-xl border border-gray-200 p-8 shadow-sm max-w-4xl">
+            <h3 className="text-xl font-heading font-bold text-navy-900 mb-3">
+              Why "near me" matters for water heater service
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              When you search hot water heater repair near me, you want someone who can actually get
+              to you today — not a call center routing your job two counties away. Topline is based
+              in the Redding area and serves greater Redding and Shasta County. Because we stock
+              standard 40 and 50-gallon gas and electric tanks on our trucks, a same-day repair or
+              replacement is realistic when you call before noon during business hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Topline */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-4">
@@ -667,7 +821,7 @@ export default function WaterHeaterReplacementReddingPage() {
               },
               {
                 title: 'Specialists, Not Generalists',
-                body: "We've replaced 2,800+ water heaters in Northern California. We know which brands hold up to local water and sediment, which installs fail inspection, and how to spot the hidden issues cheaper plumbers miss.",
+                body: "We've replaced 1,000+ water heaters across Northern California. We know which brands hold up to local water and sediment, which installs fail inspection, and how to spot the hidden issues cheaper plumbers miss.",
               },
               {
                 title: 'Real Local Business Hours',
@@ -710,7 +864,7 @@ export default function WaterHeaterReplacementReddingPage() {
       </section>
 
       {/* Local context */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             {/* Left: copy */}

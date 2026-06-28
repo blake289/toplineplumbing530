@@ -127,7 +127,7 @@ const drainFAQs = [
   {
     question: 'How fast can a plumber get to Anderson for a drain clog?',
     answer:
-      "Anderson is 10 miles south of our Redding base on I-5, so we typically arrive within 30–60 minutes during business hours (Mon–Fri 8a–4:30p). We offer same-day drain cleaning in Anderson and the surrounding area when a truck is open. Call (530) 704-6989 to check availability.",
+      "Anderson is 10 miles south of our Redding base on I-5. We offer same-day drain cleaning in Anderson and the surrounding area during business hours (Mon–Fri 8a–4:30p) when a truck is open. Call (530) 704-6989 to check availability.",
   },
   {
     question: 'What causes slow or clogged drains in Anderson homes?',
@@ -216,8 +216,7 @@ export default function DrainCleaningAndersonPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Anderson arrival 30–60 minutes during
-            business hours
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
           </p>
         </div>
       </section>
@@ -361,7 +360,7 @@ export default function DrainCleaningAndersonPage() {
               },
               {
                 title: 'Fast From Redding',
-                body: 'Anderson is 10 miles south on I-5, so we typically arrive within 30–60 minutes during business hours. Same-day drain cleaning when a truck is open.',
+                body: 'Anderson is 10 miles south on I-5, so we typically arrive same-day during business hours. Same-day drain cleaning when a truck is open.',
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -369,7 +368,7 @@ export default function DrainCleaningAndersonPage() {
               },
               {
                 title: '5.0 Rating, 3,000+ Jobs',
-                body: 'A 5.0 perfect rating on Google and more than 3,000 jobs since 1998. Licensed, bonded, and insured — CSLB #596557.',
+                body: 'A 5.0 perfect rating on Google and 3,000+ jobs since 1998. Licensed, bonded, and insured — CSLB #596557.',
               },
             ].map((item) => (
               <div

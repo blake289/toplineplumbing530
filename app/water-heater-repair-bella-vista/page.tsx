@@ -125,7 +125,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'How fast can a plumber get to Bella Vista for water heater repair?',
     answer:
-      "Bella Vista is about 15 minutes northeast of Redding, so we typically arrive within 30–60 minutes during business hours (Mon–Fri 8a–4:30p), and we serve the area daily. If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
+      "Bella Vista is about 15 minutes northeast of Redding, so we typically reach Bella Vista the same day during business hours (Mon–Fri 8a–4:30p), and we serve the area daily. If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
   },
   {
     question: 'How much does water heater repair cost in Bella Vista, CA?',
@@ -199,8 +199,8 @@ export default function WaterHeaterRepairBellaVistaPage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">15 minutes northeast →</span> typically on-site
-              in 30–60 minutes
+              <span className="text-primary-light">15 minutes northeast →</span> typically same-day
+              during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -227,7 +227,7 @@ export default function WaterHeaterRepairBellaVistaPage() {
             </div>
             <p className="mt-6 text-sm text-gray-300">
               Free estimate with any service · Upfront quote before any work starts · Mon–Fri
-              8:00a–4:30p · CSLB #596557 · Bella Vista response 30–60 min
+              8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function WaterHeaterRepairBellaVistaPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -402,8 +402,8 @@ export default function WaterHeaterRepairBellaVistaPage() {
               <p>
                 Bella Vista is rural Shasta County — large parcels, ranchettes, and homes spread out
                 across the foothills northeast of Redding, about 15 minutes from our base. We serve
-                the area daily, so a water heater that quit overnight usually gets a tech on-site in
-                30–60 minutes during business hours. Out here, wells, septic, and outbuildings are
+                the area daily, so a water heater that quit overnight usually gets us out the same day
+                during business hours. Out here, wells, septic, and outbuildings are
                 the norm rather than the exception, and the spread-out parcels mean longer service
                 runs and more outdoor exposure than an in-town Redding job — all of which shapes how
                 a water heater is fed, drained, and how it fails.
@@ -447,8 +447,8 @@ export default function WaterHeaterRepairBellaVistaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: '30–60 Minutes to Bella Vista',
-                body: "Bella Vista is about 15 minutes northeast of Redding, so we typically arrive within 30–60 minutes during business hours and serve the area daily. Call before noon and we can usually diagnose and repair the same day.",
+                title: 'Same-Day to Bella Vista',
+                body: "Bella Vista is about 15 minutes northeast of Redding, so we typically reach Bella Vista the same day during business hours and serve the area daily. Call before noon and we can usually diagnose and repair the same day.",
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -676,7 +676,7 @@ export default function WaterHeaterRepairBellaVistaPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Bella Vista response 30–60 min
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Same-day response during business hours
           </p>
         </div>
       </section>

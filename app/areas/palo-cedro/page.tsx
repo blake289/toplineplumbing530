@@ -75,7 +75,7 @@ const serviceSchema = {
       }}
       about={{
         intro: "Palo Cedro homeowners trust Topline Plumbing for honest, reliable service. We treat every home with the care and respect it deserves.",
-        details: "With 30+ years of experience serving Northern California, we bring professional expertise and transparent pricing to every job. From routine maintenance to emergency repairs, we're here for you.",
+        details: "With 28 years of experience serving Northern California, we bring professional expertise and transparent pricing to every job. From routine maintenance to emergency repairs, we're here for you.",
       }}
       services={[
         {

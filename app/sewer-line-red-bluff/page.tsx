@@ -117,7 +117,7 @@ const sewerFAQs = [
   {
     question: 'How fast can a plumber get to Red Bluff for a sewer problem?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for Red Bluff is 45–75 minutes. Red Bluff is 30 miles south of Redding on I-5, so typical arrival is around an hour. For sewer work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
+      "During business hours (Mon–Fri 8:00a–4:30p), we typically reach Red Bluff the same day. Red Bluff is 30 miles south of Redding on I-5, and we serve it daily. For sewer work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
   },
   {
     question: 'How much does sewer line repair cost in Red Bluff, CA?',
@@ -217,7 +217,7 @@ export default function SewerLineRedBluffPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Red Bluff response 45–75 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -555,7 +555,7 @@ export default function SewerLineRedBluffPage() {
             Sewer Line Service Across Shasta &amp; Tehama County
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-            We dispatch from Redding and serve the surrounding cities — Red Bluff in 45–75 minutes during
+            We dispatch from Redding and serve the surrounding cities — Red Bluff the same day during
             business hours.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-3xl mx-auto">

@@ -113,7 +113,7 @@ export default function StatsSection() {
         {/* Stats row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 items-center md:divide-x md:divide-white/10">
           <div className="md:pl-0 md:pr-6">
-            <StatCard target={27} label="Years of experience" suffix="+" />
+            <StatCard target={28} label="Years of experience" suffix="+" />
           </div>
           <div className="md:px-6 md:text-center">
             <StatCard target={3000} label="Jobs completed" suffix="+" />

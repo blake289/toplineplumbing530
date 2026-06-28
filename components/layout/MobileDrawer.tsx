@@ -217,6 +217,13 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             Resources
           </Link>
           <Link
+            href="/blog"
+            className="py-3 px-2 text-gray-900 font-medium hover:bg-gray-50 rounded transition-colors"
+            onClick={onClose}
+          >
+            Blog
+          </Link>
+          <Link
             href="/about"
             className="py-3 px-2 text-gray-900 font-medium hover:bg-gray-50 rounded transition-colors"
             onClick={onClose}

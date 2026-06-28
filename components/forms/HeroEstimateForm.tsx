@@ -35,7 +35,6 @@ export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocati
           firstName,
           lastName,
           phone: data.phone,
-          zip: data.zip,
           service: data.service,
         }),
       });
@@ -87,15 +86,6 @@ export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocati
         {...register('phone')}
         error={errors.phone?.message}
         required
-      />
-
-      <Input
-        label="ZIP (optional)"
-        type="text"
-        inputMode="numeric"
-        autoComplete="postal-code"
-        {...register('zip')}
-        error={errors.zip?.message}
       />
 
       <div className="w-full">

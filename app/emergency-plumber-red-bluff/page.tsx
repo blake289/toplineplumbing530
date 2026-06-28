@@ -109,7 +109,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can a plumber get to Red Bluff?',
     answer:
-      'During business hours (Mon–Fri 8a–4:30p), typical arrival in Red Bluff is 45–75 minutes — usually under an hour. Red Bluff is 30 miles south of Redding on I-5, and we dispatch from the Redding area. Call (530) 704-6989 and we will tell you straight when we can be there.',
+      'During business hours (Mon–Fri 8a–4:30p), we typically reach Red Bluff the same day. Red Bluff is 30 miles south of Redding on I-5, and we dispatch from the Redding area. Call (530) 704-6989 and we will tell you straight when we can be there.',
   },
   {
     question: 'Does Topline Plumbing offer 24/7 emergency service in Red Bluff?',
@@ -134,7 +134,7 @@ const emergencyFAQs = [
   {
     question: 'Can you respond to ranch and well/septic properties west of Red Bluff?',
     answer:
-      'Yes. We service ranch properties west of town that run on wells and septic, with longer service lines and more exposed outdoor plumbing. We handle the same-day response during business hours; rural addresses may land at the longer end of the 45–75 minute window.',
+      'Yes. We service ranch properties west of town that run on wells and septic, with longer service lines and more exposed outdoor plumbing. We handle same-day response during business hours; rural addresses may take a little longer to reach.',
   },
   {
     question: 'Is Topline Plumbing licensed to work in Red Bluff and Tehama County?',
@@ -176,8 +176,8 @@ export default function EmergencyPlumberRedBluffPage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">Mon–Fri 8a–4:30p →</span> typical arrival in Red
-              Bluff 45–75 minutes
+              <span className="text-primary-light">Mon–Fri 8a–4:30p →</span> same-day response in Red
+              Bluff during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -203,7 +203,7 @@ export default function EmergencyPlumberRedBluffPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Red Bluff arrival 45–75 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day Red Bluff response during business hours
             </p>
           </div>
         </div>
@@ -215,7 +215,7 @@ export default function EmergencyPlumberRedBluffPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -333,7 +333,7 @@ export default function EmergencyPlumberRedBluffPage() {
               </p>
               <p>
                 We have served this region since 1998, and Red Bluff is squarely inside our service
-                area — typical arrival is 45–75 minutes during business hours, usually under the hour.
+                area — we typically reach Red Bluff the same day during business hours.
                 We bring fully stocked trucks so most emergencies get fixed on the same visit, with the
                 price quoted upfront before we touch anything.
               </p>
@@ -358,7 +358,7 @@ export default function EmergencyPlumberRedBluffPage() {
             {[
               {
                 title: 'Same-Day During Business Hours',
-                body: 'Call during business hours and we schedule same-day for Red Bluff emergencies — typical arrival 45–75 minutes, usually under an hour from the Redding area.',
+                body: 'Call during business hours and we schedule same-day for Red Bluff emergencies — same-day during business hours from the Redding area.',
               },
               {
                 title: 'Honest About Our Hours',
@@ -496,7 +496,7 @@ export default function EmergencyPlumberRedBluffPage() {
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
             Same-day response in city limits during business hours. Red Bluff and outlying addresses
-            typically arrive within 45–75 minutes.
+            are typically reached the same day during business hours.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-3xl mx-auto">
             {[

@@ -117,7 +117,7 @@ const sewerFAQs = [
   {
     question: 'How fast can a plumber get to Bella Vista for a sewer problem?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for Bella Vista is 30–60 minutes. Bella Vista is about 15 minutes northeast of Redding, and we serve it daily. For waste-line work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
+      "During business hours (Mon–Fri 8:00a–4:30p), we typically reach Bella Vista the same day. Bella Vista is about 15 minutes northeast of Redding, and we serve it daily. For waste-line work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
   },
   {
     question: 'My waste line runs a long way from the house — can you find the break?',
@@ -217,7 +217,7 @@ export default function SewerLineBellaVistaPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Bella Vista response 30–60 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -553,7 +553,7 @@ export default function SewerLineBellaVistaPage() {
             Sewer &amp; Septic Service Across Shasta County &amp; Beyond
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-            We dispatch from Redding and serve the surrounding cities — Bella Vista in 30–60 minutes during
+            We dispatch from Redding and serve the surrounding cities — Bella Vista the same day during
             business hours.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-3xl mx-auto">

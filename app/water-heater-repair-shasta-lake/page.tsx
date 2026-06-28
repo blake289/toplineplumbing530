@@ -133,7 +133,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'How fast can a plumber get to Shasta Lake for a water heater repair?',
     answer:
-      "Shasta Lake is just 10 miles north of our Redding base, so dispatch is fast — typically 30–60 minutes during business hours (Mon–Fri 8a–4:30p). If you call before noon, we can usually diagnose your water heater and complete most common repairs the same day. Call (530) 704-6989 for current availability.",
+      "Shasta Lake is just 10 miles north of our Redding base, so we typically reach Shasta Lake the same day during business hours (Mon–Fri 8a–4:30p). If you call before noon, we can usually diagnose your water heater and complete most common repairs the same day. Call (530) 704-6989 for current availability.",
   },
   {
     question: 'How much does water heater repair cost in Shasta Lake, CA?',
@@ -207,7 +207,7 @@ export default function WaterHeaterRepairShastaLakePage() {
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
               <span className="text-primary-light">Same-day repair during business hours →</span>{' '}
-              typically on site in 30–60 minutes
+              typically on site the same day
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -233,7 +233,7 @@ export default function WaterHeaterRepairShastaLakePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on site in 30–60 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on site the same day
             </p>
           </div>
         </div>
@@ -245,7 +245,7 @@ export default function WaterHeaterRepairShastaLakePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -423,7 +423,7 @@ export default function WaterHeaterRepairShastaLakePage() {
             {[
               {
                 title: 'Fast to Shasta Lake',
-                body: 'We&apos;re based 10 miles south in Redding, so dispatch to Shasta Lake is typically 30–60 minutes during business hours. Call before noon and most repairs are done the same day.',
+                body: 'We&apos;re based 10 miles south in Redding, so we typically reach Shasta Lake the same day during business hours. Call before noon and most repairs are done the same day.',
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -514,7 +514,7 @@ export default function WaterHeaterRepairShastaLakePage() {
               </p>
               <p>
                 We&apos;ve handled these calls across Shasta Lake, Redding, Anderson, and the
-                surrounding Shasta County communities for over 25 years. If your unit is rumbling,
+                surrounding Shasta County communities for 28 years. If your unit is rumbling,
                 producing rusty or lukewarm water, or simply not heating, we&apos;ll find out why and
                 tell you honestly whether a repair makes sense or it&apos;s time to replace.
               </p>

@@ -22,6 +22,7 @@ TOKEN_PATH = f"{HOME}/.claude/scripts/google-report-token.json"
 SCOPES = [
     "https://www.googleapis.com/auth/analytics.readonly",
     "https://www.googleapis.com/auth/webmasters.readonly",
+    "https://www.googleapis.com/auth/business.manage",  # GBP performance metrics
 ]
 GA4_PROPERTY = "533184222"  # property ID (NOT 391501776 — that's the account ID)
 SITE_DOMAIN = "toplineplumbingco.com"
@@ -88,10 +89,63 @@ def gbp_reviews():
         return None
 
 
+# GBP Business Profile Performance daily metrics, grouped into the four report
+# rows. "searches" sums the four impression surfaces (desktop/mobile × maps/search).
+# Enum names verified against the Performance API DailyMetric reference.
+GBP_PERF_METRICS = {
+    "calls": ["CALL_CLICKS"],
+    "directions": ["BUSINESS_DIRECTION_REQUESTS"],
+    "website": ["WEBSITE_CLICKS"],
+    "searches": ["BUSINESS_IMPRESSIONS_DESKTOP_MAPS",
+                 "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH",
+                 "BUSINESS_IMPRESSIONS_MOBILE_MAPS",
+                 "BUSINESS_IMPRESSIONS_MOBILE_SEARCH"],
+}
+
+
+def gbp_performance(s):
+    """Sum the reported month's Google Business Profile (Maps) metrics: calls,
+    direction requests, website clicks, and Maps/Search impressions. Returns a
+    dict {calls, directions, website, searches} or None when not configured
+    (GBP_LOCATION_ID unset — i.e. before the re-consent + location discovery)."""
+    env = _project_env()
+    loc = env.get("GBP_LOCATION_ID")
+    if not loc:
+        return None
+    loc_id = loc.split("/")[-1]  # accept "locations/123" or bare "123"
+    all_metrics = [m for ms in GBP_PERF_METRICS.values() for m in ms]
+    params = [f"dailyMetrics={m}" for m in all_metrics] + [
+        f"dailyRange.start_date.year={CUR_START.year}",
+        f"dailyRange.start_date.month={CUR_START.month}",
+        f"dailyRange.start_date.day={CUR_START.day}",
+        f"dailyRange.end_date.year={CUR_END.year}",
+        f"dailyRange.end_date.month={CUR_END.month}",
+        f"dailyRange.end_date.day={CUR_END.day}",
+    ]
+    url = ("https://businessprofileperformance.googleapis.com/v1/"
+           f"locations/{loc_id}:fetchMultiDailyMetricsTimeSeries?"
+           + "&".join(params))
+    r = s.get(url)
+    if not r.ok:
+        raise RuntimeError(f"GBP {r.status_code}: {r.text[:300]}")
+    # value is a string int64 and is OMITTED entirely when the day's count is 0.
+    totals = {}
+    for multi in r.json().get("multiDailyMetricTimeSeries", []):
+        for series in multi.get("dailyMetricTimeSeries", []):
+            metric = series.get("dailyMetric")
+            dv = series.get("timeSeries", {}).get("datedValues", [])
+            totals[metric] = sum(int(d.get("value", 0)) for d in dv)
+    return {label: sum(totals.get(m, 0) for m in metrics)
+            for label, metrics in GBP_PERF_METRICS.items()}
+
+
 def auth():
     creds = None
     if os.path.exists(TOKEN_PATH):
-        creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
+        # Adopt whatever scopes the saved token actually has, so a token that
+        # predates the business.manage re-consent never trips a "scope changed"
+        # error on refresh. (Re-consent is done via gbp-reauth-discover.py.)
+        creds = Credentials.from_authorized_user_file(TOKEN_PATH)
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
@@ -694,6 +748,14 @@ def main():
     reviews = gbp_reviews()
     if reviews is None:
         errors.append("GBP reviews pull failed (Places API)")
+
+    try:
+        gbp = gbp_performance(s)
+        if gbp is None:
+            errors.append("GBP performance skipped (set GBP_LOCATION_ID in "
+                          ".env.local after running gbp-reauth-discover.py)")
+    except Exception as e:
+        errors.append(f"GBP performance failed: {e}")
 
     # ---- month-over-month deltas via the state file ----
     state = load_state()

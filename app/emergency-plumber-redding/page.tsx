@@ -11,7 +11,7 @@ const serviceSchema = {
   name: 'Emergency Plumber in Redding, CA',
   serviceType: 'Emergency Plumbing',
   description:
-    'Same-day emergency plumbing in Redding, CA during business hours (Mon–Fri 8a–4:30p) — burst pipes, slab leaks, sewage backups, water heater floods, and gas-line problems. Typical on-site response 30–60 minutes in the Redding city limits. Licensed plumber CSLB #596557, serving the Redding area since 1998. Upfront pricing, no urgency upcharge.',
+    'Same-day emergency plumbing in Redding, CA during business hours (Mon–Fri 8a–4:30p) — burst pipes, slab leaks, sewage backups, water heater floods, and gas-line problems. Same-day on-site response in the Redding city limits during business hours. Licensed plumber CSLB #596557, serving the Redding area since 1998. Upfront pricing, no urgency upcharge.',
   category: 'Plumbing',
   url: 'https://toplineplumbingco.com/emergency-plumber-redding',
   provider: { '@id': 'https://toplineplumbingco.com/#business' },
@@ -81,23 +81,23 @@ const webPageSchema = {
   url: 'https://toplineplumbingco.com/emergency-plumber-redding',
   name: 'Emergency Plumber Redding, CA | Topline Plumbing',
   description:
-    'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, sewage backups, and floods during business hours. Licensed since 1998, CSLB #596557.',
+    'Emergency plumber in Redding, CA. Same-day response for burst pipe repair, emergency drain service, slab leaks, sewage backups, and floods during business hours. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
   isPartOf: { '@id': 'https://toplineplumbingco.com/#website' },
   about: { '@id': 'https://toplineplumbingco.com/emergency-plumber-redding#service' },
 };
 
 export const metadata: Metadata = {
-  title: 'Same-Day Emergency Plumber in Redding, CA | Topline',
+  title: 'Emergency Plumber Redding, CA | Same-Day Service | Topline',
   description:
-    'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
+    'Emergency plumber in Redding, CA for burst pipes, emergency drain service, and major leaks — same-day response during business hours. Upfront pricing, local since 1998. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/emergency-plumber-redding',
   },
   openGraph: {
-    title: 'Same-Day Emergency Plumber in Redding, CA | Topline',
+    title: 'Emergency Plumber Redding, CA | Same-Day Service | Topline',
     description:
-      'Emergency plumber in Redding, CA. Same-day response for burst pipes, slab leaks, and sewage backups. Licensed since 1998. Call (530) 704-6989.',
+      'Emergency plumber in Redding, CA for burst pipes, emergency drain service, and major leaks — same-day response during business hours. Upfront pricing, local since 1998. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/emergency-plumber-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -117,7 +117,17 @@ const emergencyFAQs = [
   {
     question: 'How fast can an emergency plumber get to my Redding home?',
     answer:
-      'During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for a Redding emergency is 30–60 minutes. Redding is our home base — we serve the entire city directly from our Redding location, from Enterprise and East Redding to Mary Lake, the Garden Tract, and Quartz Hill. Call (530) 704-6989 and we will tell you straight whether we can be there within the hour.',
+      'During business hours (Mon–Fri 8:00a–4:30p), we typically reach a Redding emergency the same day. Redding is our home base — we serve the entire city directly from our Redding location, from Enterprise and East Redding to Mary Lake, the Garden Tract, and Quartz Hill. Call (530) 704-6989 and we will tell you straight whether we can be there today.',
+  },
+  {
+    question: 'Do you offer same-day emergency plumbing in Redding?',
+    answer:
+      'Yes. We offer same-day emergency plumbing services in Redding during business hours — Monday through Friday, 8:00a to 4:30p. If you call in that window, we aim to be on-site the same day inside the Redding city limits. We are not a 24/7 operation, so for problems outside our hours, shut off your main valve and text (530) 704-6989 and we respond first thing the next business day.',
+  },
+  {
+    question: 'Do you do burst pipe repair and emergency drain service near me in Redding?',
+    answer:
+      'Yes — burst pipe repair and emergency drain service are two of our most common emergency calls. For a burst or pinhole-leaking pipe we stop the water and repair on the spot, carrying parts for most fixes on the truck. For a backed-up drain or main line, we clear it same-day with power augers and a camera inspection during business hours. Call (530) 704-6989 and we will tell you straight whether we can be out the same day.',
   },
   {
     question: 'Is Topline Plumbing available 24/7 for emergencies in Redding?',
@@ -199,9 +209,11 @@ export default function EmergencyPlumberReddingPage() {
               Emergency Plumber in Redding, CA
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
-              Topline Plumbing is a licensed (CSLB #596557) emergency plumber serving Redding, CA. We
-              offer same-day service during business hours (Mon–Fri 8a–4:30p) with upfront pricing and
-              a typical 30–60 minute on-site response in the Redding city limits. Call (530) 704-6989.
+              Searching for an emergency plumber near me in Redding? Topline Plumbing is a licensed
+              (CSLB #596557) local shop offering same-day emergency plumbing services during business
+              hours (Mon–Fri 8a–4:30p) — burst pipe repair, emergency drain service, major leaks, and
+              sewer backups — with upfront pricing and same-day on-site response in the
+              Redding city limits during business hours. Call (530) 704-6989.
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
@@ -232,8 +244,7 @@ export default function EmergencyPlumberReddingPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Redding response 30–60 minutes during
-              business hours
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day Redding response during business hours
             </p>
           </div>
         </div>
@@ -245,7 +256,7 @@ export default function EmergencyPlumberReddingPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -283,8 +294,8 @@ export default function EmergencyPlumberReddingPage() {
                 body: 'Mon–Fri 8:00a–4:30p, a real person answers and dispatches. No phone tree, no overseas call center.',
               },
               {
-                title: '30–60 Minute Response',
-                body: 'Redding is home base. Typical on-site arrival is 30–60 minutes inside the city limits during business hours.',
+                title: 'Same-Day Response',
+                body: 'Redding is home base. We typically reach you the same day inside the city limits during business hours.',
               },
               {
                 title: 'Upfront Pricing',
@@ -304,6 +315,78 @@ export default function EmergencyPlumberReddingPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Common emergencies handled */}
+      <section className="py-16 md:py-20 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-3">
+              Common Plumbing Emergencies We Handle in Redding
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              If water is actively damaging your home or you have no water at all, treat it as an
+              emergency — shut off your main valve and call. Here is what we get called for most.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Burst Pipe Repair',
+                body: 'A burst or pinhole-leaking pipe can flood a room in minutes — common in older galvanized-supply Redding homes. We stop the leak fast and repair it on the spot.',
+              },
+              {
+                title: 'Emergency Drain Service',
+                body: 'Backed-up drains, slow main lines, and water rising in a sink or tub get cleared same-day with power augers and camera inspection during business hours.',
+              },
+              {
+                title: 'Sewage Backup',
+                body: 'Sewage coming up through a floor drain or toilet is a health hazard. We clear the main line and find the cause before it spreads further into your home.',
+              },
+              {
+                title: 'Water Heater Failure',
+                body: 'A tank that ruptures or floods the garage from years of sediment buildup needs fast attention. We shut it down, dry it out, and repair or replace.',
+              },
+              {
+                title: 'Major or Slab Leaks',
+                body: 'Slab leaks in 1960s–1970s Enterprise and East Redding tract homes show up as a warm floor spot or a jumped water bill. We locate and repair them.',
+              },
+              {
+                title: 'Gas Line Problems',
+                body: 'If you smell gas, leave the building and call your gas company first. For a confirmed gas-line issue, we diagnose and repair it safely and to code.',
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm"
+              >
+                <h3 className="text-lg font-heading font-bold text-navy-900 mb-2">{item.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-gray-700 mt-10 max-w-3xl mx-auto leading-relaxed">
+            Not sure what to do first? Read our guides on{' '}
+            <Link href="/resources/burst-pipe-emergency-guide" className="text-primary font-semibold hover:underline">
+              what to do during a burst pipe emergency
+            </Link>{' '}
+            and{' '}
+            <Link href="/resources/how-to-shut-off-main-water-valve" className="text-primary font-semibold hover:underline">
+              how to shut off your main water valve
+            </Link>
+            . For non-emergency work, see our{' '}
+            <Link href="/water-heater-repair-redding" className="text-primary font-semibold hover:underline">
+              Redding water heater repair
+            </Link>{' '}
+            and{' '}
+            <Link href="/drain-cleaning-redding" className="text-primary font-semibold hover:underline">
+              drain cleaning
+            </Link>{' '}
+            pages.
+          </p>
         </div>
       </section>
 
@@ -626,7 +709,7 @@ export default function EmergencyPlumberReddingPage() {
             Plumbing Emergency in Redding Right Now?
           </h2>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-            Call during business hours for same-day response, typically on-site in 30–60 minutes in
+            Call during business hours for same-day response, on-site the same day in
             the Redding city limits. Upfront pricing, no urgency upcharge.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">

@@ -117,7 +117,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can an emergency plumber get to Anderson, CA?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), Topline typically arrives in Anderson within 30–60 minutes — Anderson is 10 miles south of our Redding base on I-5. Call (530) 704-6989 and we'll tell you straight whether we can be there today. We service the whole Anderson area, including Happy Valley, Cottonwood, and surrounding rural Shasta County addresses.",
+      "During business hours (Mon–Fri 8:00a–4:30p), Topline typically reaches Anderson the same day — Anderson is 10 miles south of our Redding base on I-5. Call (530) 704-6989 and we'll tell you straight whether we can be there today. We service the whole Anderson area, including Happy Valley, Cottonwood, and surrounding rural Shasta County addresses.",
   },
   {
     question: 'When does Topline Plumbing handle emergencies in Anderson?',
@@ -188,8 +188,8 @@ export default function EmergencyPlumberAndersonPage() {
           </p>
 
           <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-            <span className="text-primary-light">Anderson is 10 min south on I-5 →</span> typical
-            arrival 30–60 minutes during business hours
+            <span className="text-primary-light">Anderson is 10 min south on I-5 →</span> typically
+            same-day during business hours
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -215,8 +215,7 @@ export default function EmergencyPlumberAndersonPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Anderson arrival 30–60 minutes during
-            business hours
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day Anderson response during business hours
           </p>
         </div>
       </section>
@@ -227,7 +226,7 @@ export default function EmergencyPlumberAndersonPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -267,7 +266,7 @@ export default function EmergencyPlumberAndersonPage() {
               },
               {
                 title: 'Same-Day Response',
-                body: 'Anderson is 10 minutes south of our Redding base on I-5, so dispatch is quick — typically within 30–60 minutes during business hours. Same-day scheduling for Anderson emergencies whenever we have an open truck.',
+                body: 'Anderson is 10 minutes south of our Redding base on I-5, so dispatch is quick — typically same-day during business hours. Same-day scheduling for Anderson emergencies whenever we have an open truck.',
               },
               {
                 title: 'Upfront Pricing — Even in Emergencies',
@@ -423,7 +422,7 @@ export default function EmergencyPlumberAndersonPage() {
             {[
               {
                 title: 'Fast From Redding',
-                body: 'Anderson is 10 miles south on I-5, so we typically arrive within 30–60 minutes during business hours. Close enough to be your true local emergency plumber.',
+                body: 'Anderson is 10 miles south on I-5, so we typically reach you the same day during business hours. Close enough to be your true local emergency plumber.',
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -443,7 +442,7 @@ export default function EmergencyPlumberAndersonPage() {
               },
               {
                 title: '5.0 Rating, 3,000+ Jobs',
-                body: 'A 5.0 perfect rating on Google and more than 3,000 jobs since 1998. Licensed, bonded, and insured — CSLB #596557.',
+                body: 'A 5.0 perfect rating on Google and 3,000+ jobs since 1998. Licensed, bonded, and insured — CSLB #596557.',
               },
             ].map((item) => (
               <div

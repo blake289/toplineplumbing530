@@ -125,7 +125,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'How fast can a plumber get to Red Bluff for water heater repair?',
     answer:
-      "Red Bluff is about 30 miles south of Redding on I-5, so typical on-site arrival is 45–75 minutes during business hours (Mon–Fri 8a–4:30p). If you call before midday, we can often diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
+      "Red Bluff is about 30 miles south of Redding on I-5, so we typically reach Red Bluff the same day during business hours (Mon–Fri 8a–4:30p). If you call before midday, we can often diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
   },
   {
     question: 'How much does water heater repair cost in Red Bluff, CA?',
@@ -199,8 +199,8 @@ export default function WaterHeaterRepairRedBluffPage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">30 miles south on I-5 →</span> typically on-site
-              in 45–75 minutes
+              <span className="text-primary-light">30 miles south on I-5 →</span> typically same-day
+              during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -227,7 +227,7 @@ export default function WaterHeaterRepairRedBluffPage() {
             </div>
             <p className="mt-6 text-sm text-gray-300">
               Free estimate with any service · Upfront quote before any work starts · Mon–Fri
-              8:00a–4:30p · CSLB #596557 · Red Bluff response 45–75 min
+              8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function WaterHeaterRepairRedBluffPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -398,8 +398,8 @@ export default function WaterHeaterRepairRedBluffPage() {
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Red Bluff is the Tehama County seat, about 30 miles south of Redding on I-5, with
-                typical on-site arrival of 45–75 minutes during business hours. Its historic downtown
+                Red Bluff is the Tehama County seat, about 30 miles south of Redding on I-5, and we
+                typically reach Red Bluff the same day during business hours. Its historic downtown
                 dates to the 1850s, which means some of the oldest housing stock we service. Outside
                 that core, you have mid-century neighborhoods and ranches stretching west toward the
                 coast range and east onto the Sacramento Valley floor. Each of those carries a
@@ -445,8 +445,8 @@ export default function WaterHeaterRepairRedBluffPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: '45–75 Minutes to Red Bluff',
-                body: "Red Bluff is 30 miles south of Redding on I-5, so typical arrival is 45–75 minutes during business hours. Call before midday and we can often diagnose and repair the same day.",
+                title: 'Same-Day to Red Bluff',
+                body: "Red Bluff is 30 miles south of Redding on I-5, so we typically reach Red Bluff the same day during business hours. Call before midday and we can often diagnose and repair the same day.",
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -674,7 +674,7 @@ export default function WaterHeaterRepairRedBluffPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Red Bluff response 45–75 min
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Same-day response during business hours
           </p>
         </div>
       </section>

@@ -125,7 +125,7 @@ const commercialFAQs = [
   {
     question: 'How fast can a commercial plumber get to my Redding business?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), our typical on-site response for Redding is 30–60 minutes. Redding is our home base, so dispatch is fast. When a plumbing problem is shutting down your operation — a backed-up kitchen line, a failed water heater, a leak over the sales floor — call (530) 704-6989 and we'll tell you straight whether we can be there today.",
+      "During business hours (Mon–Fri 8:00a–4:30p), we typically respond the same day for Redding. Redding is our home base, so dispatch is fast. When a plumbing problem is shutting down your operation — a backed-up kitchen line, a failed water heater, a leak over the sales floor — call (530) 704-6989 and we'll tell you straight whether we can be there today.",
   },
   {
     question: 'Do you offer after-hours or 24/7 commercial plumbing in Redding?',
@@ -225,8 +225,7 @@ export default function CommercialPlumbingReddingPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Redding response 30–60 minutes during
-              business hours
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day Redding service during business hours
             </p>
           </div>
         </div>
@@ -238,7 +237,7 @@ export default function CommercialPlumbingReddingPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">Of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -336,9 +335,8 @@ export default function CommercialPlumbingReddingPage() {
                 Fast Local Dispatch
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Redding is our home base. During business hours, typical on-site response is 30–60
-                minutes — so a backed-up line or failed water heater gets handled before it costs you
-                a full day.
+                Redding is our home base. During business hours we work same-day — so a backed-up
+                line or failed water heater gets handled before it costs you a full day.
               </p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">

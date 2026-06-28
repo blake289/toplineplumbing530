@@ -84,7 +84,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-[15px] leading-relaxed max-w-xs mb-6">
-              Redding&apos;s most trusted plumber. Same-day service, upfront pricing, and 27+ years of local experience.
+              Redding&apos;s most trusted plumber. Same-day service, upfront pricing, and 28 years of local experience.
             </p>
             <div className="flex gap-3">
               <a
@@ -129,6 +129,7 @@ export default function Footer() {
               <Link href="/services/gas-line" className="text-gray-400 hover:text-white transition-colors py-2.5">Gas Line</Link>
               <Link href="/services/fixture-installs" className="text-gray-400 hover:text-white transition-colors py-2.5">Fixture Installs</Link>
               <Link href="/faq" className="text-gray-400 hover:text-white transition-colors py-2.5">FAQ</Link>
+              <Link href="/blog" className="text-gray-400 hover:text-white transition-colors py-2.5">Blog</Link>
             </nav>
           </div>
 

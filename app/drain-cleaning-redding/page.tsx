@@ -80,16 +80,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Same-Day Drain Cleaning in Redding, CA | Topline',
+  title: 'Drain Cleaning in Redding, CA | Topline Plumbing',
   description:
-    'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
+    'Drain cleaning in Redding, CA. Local clogged drain service since 1998 — power augers, hydro jetting, camera diagnosis, upfront pricing, same-day. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-redding',
   },
   openGraph: {
-    title: 'Same-Day Drain Cleaning in Redding, CA | Topline',
+    title: 'Drain Cleaning in Redding, CA | Topline Plumbing',
     description:
-      'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection, same-day service. Licensed since 1998. Call (530) 704-6989.',
+      'Drain cleaning in Redding, CA. Local clogged drain service since 1998 — power augers, hydro jetting, camera diagnosis, upfront pricing, same-day. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -114,7 +114,17 @@ const drainFAQs = [
   {
     question: 'Do you offer same-day drain cleaning in Redding?',
     answer:
-      'Yes. Topline offers same-day drain cleaning in Redding during business hours (Mon–Fri 8:00a–4:30p), with a typical 30–60 minute on-site response inside the city limits — Redding is our home base. We keep fully stocked service trucks so most clogs get cleared on the first visit. Call (530) 704-6989 to check today’s availability.',
+      'Yes. Topline offers same-day drain cleaning in Redding during business hours (Mon–Fri 8:00a–4:30p) — Redding is our home base. We keep fully stocked service trucks so most clogs get cleared on the first visit. Call (530) 704-6989 to check today’s availability.',
+  },
+  {
+    question: 'What should I look for in a drain cleaning company near me?',
+    answer:
+      'When you search for drain cleaning companies near you, look for a licensed, bonded, and insured contractor (ask for the CSLB number), upfront pricing quoted before work starts, and mechanical methods like power augering and hydro jetting rather than just pouring chemicals. A local, family-owned drain cleaning company that knows Redding’s older lines will usually clear the clog faster and stand behind the work. Topline is licensed CSLB #596557 and has served the Redding area since 1998 — call (530) 704-6989.',
+  },
+  {
+    question: 'Is there a clogged drain service near me in Redding that can come out today?',
+    answer:
+      'Yes — Topline is a local Redding clogged drain service and we offer same-day appointments during business hours (Mon–Fri 8:00a–4:30p) inside the city limits. If you searched "clogged drain service near me," call (530) 704-6989 and we will check today’s availability and quote the price upfront before we start.',
   },
   {
     question: 'How do I know if I have a main sewer line clog?',
@@ -168,7 +178,7 @@ const services = [
     title: 'Same-Day Service',
     body: 'Redding is home base, so urgent clogs get a fast, fully stocked truck during business hours — with the price quoted before we start.',
     items: [
-      'Typical 30–60 minute Redding response',
+      'Same-day response during business hours',
       'Same-day scheduling during business hours',
       'Upfront pricing before we start',
       'Most clogs cleared on the first visit',
@@ -203,10 +213,11 @@ export default function DrainCleaningReddingPage() {
               Drain Cleaning in Redding, CA
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
-              Topline Plumbing is a licensed (CSLB #596557) drain cleaning service serving Redding, CA.
-              We clear tough clogs and backed-up sewer lines with mechanical power augers — not
-              chemicals — and offer same-day service during business hours (Mon–Fri 8a–4:30p) with
-              upfront pricing. Call (530) 704-6989.
+              Looking for drain cleaning in Redding, CA, or a clogged drain service near you? Topline
+              Plumbing is a licensed (CSLB #596557), family-owned local drain cleaning company serving
+              Redding and Shasta County since 1998. We clear tough clogs and backed-up sewer lines with
+              mechanical power augers — not chemicals — and offer same-day service during business
+              hours (Mon–Fri 8a–4:30p) with upfront pricing. Call (530) 704-6989.
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
@@ -237,8 +248,7 @@ export default function DrainCleaningReddingPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Redding response 30–60 minutes during
-              business hours
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -369,6 +379,87 @@ export default function DrainCleaningReddingPage() {
         </div>
       </section>
 
+      {/* Signs + process */}
+      <section className="py-16 md:py-24 bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
+            Signs You Need a Professional Drain Cleaning
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            A plunger and a little patience clear plenty of minor clogs. But when the same drain backs
+            up again and again, or more than one fixture is affected, the blockage is deeper in the
+            line and it is time to call a professional clogged drain service. Watch for these signs in
+            your Redding home:
+          </p>
+          <ul className="space-y-3 text-lg text-gray-700 mb-10">
+            {[
+              'Water drains slowly even after you plunge it, or it backs up within a day or two of clearing.',
+              'More than one fixture is affected at once — a sink and a tub, or every drain on one side of the house.',
+              'The toilet gurgles when you run the sink, or water rises in the shower when you flush (a classic main-line sign).',
+              'A sewage or rotten-egg smell rises from a floor drain or the kitchen sink.',
+              'You hear gurgling or see standing water at a cleanout or floor drain.',
+            ].map((sign) => (
+              <li key={sign} className="flex items-start gap-3">
+                <svg
+                  className="w-6 h-6 text-primary flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{sign}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg text-gray-700 leading-relaxed mb-10">
+            Several drains backing up at once usually points to a{' '}
+            <Link href="/sewer-line-redding" className="text-primary font-semibold hover:underline">
+              main sewer line clog in your Redding home
+            </Link>
+            , which can become an{' '}
+            <Link href="/emergency-plumber-redding" className="text-primary font-semibold hover:underline">
+              emergency plumbing situation
+            </Link>{' '}
+            fast — and no amount of store-bought drain cleaner will touch it.
+          </p>
+
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
+            How Our Drain Cleaning Process Works
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <p>
+              <span className="font-semibold text-navy-900">1. Diagnose.</span> We find out where the
+              clog is and what is causing it before we touch anything — a single grease plug under the
+              kitchen sink is a very different job from a root-clogged main line, and the price reflects
+              that. For recurring or main-line backups, a sewer camera shows us the exact spot and
+              cause.
+            </p>
+            <p>
+              <span className="font-semibold text-navy-900">2. Auger / snake the line.</span> We run a
+              mechanical power auger (a motorized cable, also called snaking) down the line to cut
+              through and pull out the clog at the source — hair, grease, food, or roots — instead of
+              just punching a hole through it the way a chemical cleaner does.
+            </p>
+            <p>
+              <span className="font-semibold text-navy-900">3. Hydro jet when it is needed.</span> For
+              grease-caked lines, heavy root intrusion, or clogs that keep coming back, augering alone
+              is not enough. In those cases we recommend{' '}
+              <Link href="/hydro-jetting-redding" className="text-primary font-semibold hover:underline">
+                hydro jetting in Redding
+              </Link>
+              , which uses high-pressure water to scour the full inside of the pipe back to bare wall,
+              not just bore a channel through the blockage.
+            </p>
+            <p>
+              <span className="font-semibold text-navy-900">4. Confirm and quote upfront.</span> You see
+              the full price before any work starts, and we make sure the line runs clean before we
+              pack up. No diagnostic surprises, no add-ons after the fact.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Topline */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -401,7 +492,7 @@ export default function DrainCleaningReddingPage() {
               },
               {
                 title: 'Same-Day During Business Hours',
-                body: 'Redding is home base — typical on-site response is 30–60 minutes inside the city limits, Mon–Fri 8a–4:30p.',
+                body: 'Redding is home base — same-day response during business hours inside the city limits, Mon–Fri 8a–4:30p.',
               },
               {
                 title: 'Licensed, Bonded & Insured',
@@ -491,6 +582,17 @@ export default function DrainCleaningReddingPage() {
               </h3>
               <p className="text-gray-700">
                 For recurring clogs, grease, or roots — high-pressure jetting that cleans the whole pipe.
+              </p>
+            </Link>
+            <Link
+              href="/sewer-line-redding"
+              className="bg-gray-50 border border-gray-200 rounded-xl p-6 hover:border-primary hover:shadow-md transition-all"
+            >
+              <h3 className="text-xl font-heading font-bold text-navy-900 mb-2">
+                Sewer Line Cleaning in Redding
+              </h3>
+              <p className="text-gray-700">
+                Main sewer line clogs, root intrusion, and recurring backups, with camera diagnosis.
               </p>
             </Link>
             <Link
@@ -591,8 +693,8 @@ export default function DrainCleaningReddingPage() {
             Clogged Drain in Redding? Let's Clear It Today.
           </h2>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-            Call during business hours for same-day drain cleaning, typically on-site in 30–60 minutes
-            in the Redding city limits. Power augers, camera diagnosis, and upfront pricing.
+            Call during business hours for same-day drain cleaning in the Redding city limits. Power
+            augers, camera diagnosis, and upfront pricing.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a

@@ -59,6 +59,11 @@ def _iso_in_range(iso, start, end):
     return start <= d <= end
 
 
+def _iso_ms(iso):
+    return int(datetime.datetime.fromisoformat(
+        iso.replace("Z", "+00:00")).timestamp() * 1000)
+
+
 def count_calls(start, end, token=None, loc=None):
     """start/end are datetime.date. Returns dict with inbound totals."""
     if token is None:
@@ -67,7 +72,7 @@ def count_calls(start, end, token=None, loc=None):
                    tzinfo=datetime.timezone.utc).timestamp() * 1000)
 
     res = {"inbound": 0, "answered": 0, "missed": 0,
-           "convs_scanned": 0, "outbound": 0}
+           "convs_scanned": 0, "outbound": 0, "mctb_saves": 0}
     cursor = None
     pages = 0
     while pages < 60:  # guard: 60 * 100 = 6000 convs
@@ -92,10 +97,15 @@ def count_calls(start, end, token=None, loc=None):
             msgs = _get(f"{BASE}/conversations/{c['id']}/messages", token, soft=True)
             mlist = msgs.get("messages", {})
             mlist = mlist.get("messages", mlist) if isinstance(mlist, dict) else mlist
+            missed_times = []      # epoch-ms of in-range missed inbound calls
+            out_sms_times = []     # epoch-ms of outbound SMS (any time, this conv)
             for m in (mlist or []):
-                if m.get("messageType") != "TYPE_CALL":
-                    continue
+                mt = m.get("messageType")
                 da = m.get("dateAdded")
+                if mt == "TYPE_SMS" and m.get("direction") == "outbound" and da:
+                    out_sms_times.append(_iso_ms(da))
+                if mt != "TYPE_CALL":
+                    continue
                 if not da or not _iso_in_range(da, start, end):
                     continue
                 if m.get("direction") == "inbound":
@@ -106,8 +116,14 @@ def count_calls(start, end, token=None, loc=None):
                         res["answered"] += 1
                     else:
                         res["missed"] += 1
+                        missed_times.append(_iso_ms(da))
                 else:
                     res["outbound"] += 1
+            # Missed-call text-back: a missed inbound call followed by an
+            # outbound SMS within 5 minutes = the auto text-back fired (a "save").
+            for mt_ms in missed_times:
+                if any(0 <= (st - mt_ms) <= 5 * 60 * 1000 for st in out_sms_times):
+                    res["mctb_saves"] += 1
         cursor = convs[-1].get("lastMessageDate")
         if stop or len(convs) < 100:
             break

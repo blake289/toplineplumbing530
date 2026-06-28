@@ -36,6 +36,16 @@
 - [x] Schema markup upgraded — corrected to 5.0-star rating + 7 reviews (actual GBP data); enables star rating display in Google Search results
 - [x] Sitemap expanded — from 6 URLs to 27 (all service pages + all 15 area pages)
 
+### SEO Depth + Conversion (branch: gaps-from-research, pending review)
+
+*Why this matters: research audit against 25 top-performing plumber site patterns found 5 gaps blocking local SEO ranking + on-page conversion. Fix lifts trust signals, kills cookie-cutter location pages (a Google people-first negative signal), and surfaces proof-of-work where intent is highest.*
+
+- [ ] **15 unique area pages** — replaced cookie-cutter clones with city-specific local context (housing stock, climate, water-source patterns, common call types). Differentiates pages Google previously saw as near-duplicates.
+- [ ] **Proof-of-work galleries on 9 service pages** — surfaced 54 of 122 job photos directly on drain, water heater, sewer, emergency, gas, repipe, leak, tankless, fixture pages (was: zero, all buried at /gallery).
+- [ ] **Owner trust unit in hero** — Joe & Paulette headshot + "Family-owned since 1998" above CTA. Housecall Pro data: 58% of homeowners say technician identity reassurance shifts hiring decision.
+- [ ] **AfterHoursCapture module** — explicit "we're a daytime plumber, here's how to reach us after-hours" on homepage + emergency page. Recovers the 41% of online bookings that happen after hours.
+- [ ] **Stale "service at 2am" claim removed** — 12 area pages had language conflicting with honest Mon–Fri 8–4:30 hours. Removed.
+
 ---
 
 ## GoHighLevel (CRM & Automation)
@@ -396,3 +406,197 @@
 - Removed all unverified pricing claims and "written quote" language from website pages and LLM training data to ensure compliance with accuracy standards
 - Corrected Google Analytics tracking configuration and fixed broken image assets across multiple service pages
 - Verified all changes deployed successfully to production environment
+
+### 2026-04-29
+- Completed comprehensive pricing and financing claims audit across all service pages and landing pages, removing all unverified statements about written estimates, upfront pricing, and financing options
+- Removed hybrid heat pump installation claim pending verification
+- Deployed water heater replacement landing page with corrected pricing/financing content sitewide
+
+### 2026-04-29
+- Removed unverified service claims and corrected financing information across all service pages and site content
+- Implemented internal linking strategy to boost Water Heater Replacement landing page authority sitewide
+- Completed comprehensive pricing and financing content audit to ensure accuracy and compliance
+
+### 2026-04-30
+- Updated water heater replacement landing page with improved internal site navigation
+- Enhanced footer and service page templates for better user experience
+- Completed build verification and deployment preparation
+
+### 2026-04-30
+- Implemented comprehensive SEO schema and internal linking structure for water heater replacement service page
+- Updated site navigation and footer to prominently feature new service offering across all pages
+- Built out full content depth and intent-targeting framework to improve search visibility for this service
+
+### 2026-04-30
+- Implemented comprehensive SEO optimization for water heater replacement service page with enhanced schema markup and improved internal linking structure
+- Updated site navigation and footer to prominently feature water heater replacement landing page across all customer touchpoints
+- Built and validated full production deployment with all schema, content depth, and intent-based optimizations applied
+
+### 2026-04-30
+- Split Water Heaters navigation into separate Repair and Replacement service paths for clearer customer navigation
+- Launched Water Heater Replacement as primary service page with real installation and failure photos
+- Implemented comprehensive SEO optimization including schema markup and content depth across the replacement service offering
+
+### 2026-04-30
+- Integrated live Google Reviews directly into website with automatic updates
+- Reorganized Water Heaters navigation to clearly separate repair and replacement services
+- Enhanced Water Heater Replacement page with real installation photos and comprehensive SEO optimization across the site
+
+### 2026-05-01
+- Updated exclusion criteria to refine reactivation campaign targeting and improve customer segmentation
+- Documented campaign strategy and feedback mechanisms for the customer reactivation initiative
+- Established guidelines for managing feedback-based exclusions in future outreach efforts
+
+### 2026-05-01
+- Updated reactivation campaign exclusion criteria to refine target audience and improve campaign effectiveness
+- Documented campaign strategy and exclusion rules in centralized knowledge base for team reference
+- Refined feedback mechanisms and exclusion protocols for the reactivation initiative
+
+### 2026-05-01
+- Updated contact form to use upsert endpoint for improved duplicate handling and data consistency
+- Integrated message capture as note field in backend contact processing
+- Deployed and verified contact form updates to production environment
+
+### 2026-05-01
+- Fixed contact form to properly store customer messages and service requests in the CRM system
+- Implemented upsert functionality to prevent duplicate contact submissions
+- Deployed updated contact form to production environment
+
+### 2026-05-08
+- Configured project tracking system for reimbursables management
+- Established Asana project structure with organized sections and task categories
+- Set up automated task management workflow for project coordination
+
+### 2026-05-08
+- Updated project reference documentation and memory systems to track client requests and pending deliverables
+- Verified authentication credentials for project management integration
+
+### 2026-05-08
+- Updated project documentation and internal knowledge base with current client requirements and pending requests
+- Verified system configuration and authentication setup for project management tools
+
+### 2026-05-09
+- Updated NAP business reference documentation and project tracking systems
+- Verified authentication credentials and system access for Asana integration
+- Documented pending client requests and requirements for upcoming work
+
+### 2026-05-11
+- Updated city profiles database and optimized local context handling for improved location-based service delivery
+- Enhanced service gallery and page templates with improved visual presentation and user experience
+- Refined after-hours service capture form and hero section for better customer engagement
+
+### 2026-05-12
+- Updated city profile data structure and service gallery displays across multiple service pages
+- Enhanced hero sections and after-hours contact capture functionality for improved user engagement
+- Refined page templates and routing to ensure consistent presentation across service offerings
+
+### 2026-05-13
+- Updated city profiles database with enhanced service information and routing
+- Redesigned service gallery and page templates for improved user experience and mobile responsiveness
+- Implemented after-hours service request capture system and optimized hero section across service pages
+
+### 2026-05-13
+- Differentiated area service pages with unique content and local SEO optimization
+- Added proof-of-work gallery and owner trust components to build credibility
+- Enhanced hero sections and after-hours contact capture across service pages
+
+### 2026-05-13
+- Differentiated service pages for each service area with unique content and SEO optimization
+- Added proof-of-work gallery and owner trust section to build credibility with potential customers
+- Implemented after-hours contact capture to convert leads outside business hours
+
+### 2026-05-13
+- Differentiated service pages for each service area with unique content and SEO optimization
+- Added owner trust and credibility section featuring testimonials and proof of work
+- Improved mobile experience across service pages with responsive design refinements
+
+### 2026-05-13
+- Improved mobile usability across all pages with larger touch targets and better font readability
+- Enhanced service gallery and hero sections for mobile devices
+- Conducted comprehensive mobile performance audit to ensure quality across iPhone and Android devices
+
+### 2026-05-18
+- Differentiated service area pages with unique content and local SEO optimization to improve search visibility in each market
+- Added trust-building proof-of-work gallery and owner credentials to homepage to increase customer confidence
+- Audited and fixed mobile experience issues including tap targets, font sizes, and responsive layout across all pages
+
+### 2026-05-25
+- Established feedback submission protocol requiring approval before customer communication
+- Updated project memory and documentation to reflect new workflow requirements
+
+### 2026-05-25
+- Established feedback approval workflow to ensure quality control before customer communications
+- Updated project documentation and customer database records
+
+### 2026-05-25
+- Established approval workflow for customer communications to ensure quality and compliance
+- Updated project documentation and customer database records
+- Created operational guidelines for feedback handling processes
+
+### 2026-05-27
+- Established approval workflow to ensure all customer feedback is reviewed before sending to clients
+- Updated project documentation and customer records with current information
+- Created reference materials for consistent communication processes
+
+### 2026-05-27
+- Clarified "free estimate" messaging across the website to specify "free estimate with any service" to reduce customer confusion
+- Merged mobile audit fixes and gap resolutions from research phase
+- Updated site copy and internal documentation
+
+### 2026-05-27
+- Merged updates addressing identified content gaps and mobile experience improvements
+- Clarified "free estimate" messaging across the site to specify it applies with any service
+
+### 2026-05-27
+- Clarified "free estimate" messaging across the website to specify "free estimate with any service" to reduce customer confusion
+- Merged research findings addressing identified gaps and completed mobile experience audit
+- Updated and refined website copy to improve clarity on service offerings
+
+### 2026-05-28
+- Audited credential security configuration and file system access permissions
+- Verified proper isolation of authentication credentials from user directories
+
+### 2026-05-28
+- Updated reporting system to generate comprehensive service metrics and performance documentation
+- Enhanced PDF export functionality for streamlined report delivery to stakeholders
+- Reviewed and organized project configuration and credential management protocols
+
+### 2026-05-28
+- Audited and documented project structure, dependencies, and reporting tooling for topline-plumbing account
+- Reviewed and organized monthly reporting workflows and data integration processes
+- Established session documentation and handoff procedures for continuity
+
+### 2026-05-28
+- Reviewed and documented monthly reporting infrastructure and tooling setup
+- Audited project configuration files and authentication credential locations
+- Prepared documentation for report generation and PDF export processes
+
+### 2026-05-28
+- Audited and documented service account credentials and API configuration for reporting infrastructure
+- Updated project documentation and session tracking to reflect current tooling setup
+- Reviewed and consolidated monthly reporting processes and requirements
+
+### 2026-05-28
+- Set up automated monthly reporting to run on schedule with previous month's data ranges
+- Optimized emergency plumber landing page for search visibility with exact-match keywords in title and headers
+- Configured credentials and automated PDF generation for monthly performance reports
+
+### 2026-05-31
+- Automated monthly report generation with scheduled execution capability
+- Implemented emergency plumber landing page with SEO-optimized exact-match targeting
+- Integrated PDF conversion and credential management for reporting infrastructure
+
+### 2026-06-02
+- Configured automated monthly reporting system with service account credentials and LaunchAgent scheduling
+- Enhanced emergency plumber page with SEO optimization targeting exact-match keywords
+- Established project documentation and handoff procedures for ongoing report generation
+
+### 2026-06-02
+- Configured automated monthly reporting system with scheduled execution and credential management
+- Enhanced emergency services page with SEO-optimized title and heading for "emergency plumber" search targeting
+- Established report generation pipeline converting analytics data to PDF delivery format
+
+### 2026-06-02
+- Created 17 optimized landing pages for service×city combinations with exact-match keywords in titles and headers to improve search visibility
+- Implemented internal linking structure across new pages to distribute authority and improve site crawlability
+- Updated automated reporting pipeline to track performance of new landing page content

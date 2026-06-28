@@ -97,7 +97,7 @@ export default function AreasServedPage() {
             (Mon&ndash;Fri 8:00a&ndash;4:30p) and upfront pricing everywhere we go.
           </p>
           <p className="text-base text-white/70 leading-relaxed max-w-3xl mx-auto">
-            Family-owned since 1998 &bull; Licensed CA Plumber &bull; 27+ years experience
+            Family-owned since 1998 &bull; Licensed CA Plumber &bull; 28 years experience
           </p>
         </div>
       </section>
@@ -200,7 +200,7 @@ export default function AreasServedPage() {
               { title: 'Same-Day Service', desc: 'Most repairs scheduled same-day. No waiting around for a plumber — we show up when we say we will.' },
               { title: 'Same-Day Emergency Response', desc: 'Burst pipe, sewer backup, or water heater flooding? During business hours (Mon–Fri 8:00a–4:30p) we aim to be on-site same-day.' },
               { title: 'Upfront Pricing', desc: 'You see the price before we start work. No hourly surprises, no hidden fees, no urgency upcharges.' },
-              { title: '27+ Years Experience', desc: 'Family-owned since 1998. We\'ve completed thousands of jobs across the greater Redding area.' },
+              { title: '28+ Years Experience', desc: 'Family-owned since 1998. We\'ve completed thousands of jobs across the greater Redding area.' },
               { title: 'All Major Services', desc: 'Water heaters, drains, sewer lines, gas lines, repiping, leak detection, and more.' },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-3">

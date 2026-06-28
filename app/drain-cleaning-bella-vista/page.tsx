@@ -119,7 +119,7 @@ const drainFAQs = [
   {
     question: 'How fast can you clear a drain in Bella Vista?',
     answer:
-      'We offer same-day drain cleaning in Bella Vista during business hours (Mon–Fri 8a–4:30p). It sits about 15 minutes northeast of Redding and we serve it daily, so typical arrival is 30–60 minutes. Call (530) 704-6989 to check availability.',
+      'We offer same-day drain cleaning in Bella Vista during business hours (Mon–Fri 8a–4:30p). It sits about 15 minutes northeast of Redding and we serve it daily. Call (530) 704-6989 to check availability.',
   },
   {
     question: 'How do I know if I have a main sewer line clog?',
@@ -182,8 +182,8 @@ export default function DrainCleaningBellaVistaPage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">Septic-safe &amp; same-day →</span> typically in
-              Bella Vista within 30–60 minutes
+              <span className="text-primary-light">Septic-safe &amp; same-day →</span> same-day
+              service in Bella Vista during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -209,7 +209,7 @@ export default function DrainCleaningBellaVistaPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day service in Bella Vista within 30–60 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day service in Bella Vista during business hours
             </p>
           </div>
         </div>
@@ -374,7 +374,7 @@ export default function DrainCleaningBellaVistaPage() {
               },
               {
                 title: 'Same-Day During Business Hours',
-                body: 'Call during business hours (Mon–Fri 8a–4:30p) and we schedule Bella Vista drain work same-day, typically arriving within 30–60 minutes.',
+                body: 'Call during business hours (Mon–Fri 8a–4:30p) and we schedule Bella Vista drain work same-day when our schedule allows.',
               },
               {
                 title: 'Camera Diagnostics',

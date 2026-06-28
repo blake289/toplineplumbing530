@@ -106,7 +106,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Over 27+ years in business, we've completed more than 3,000+
+                28 years in business, we've completed more than 3,000+
                 jobs — water heater installs, drain clearings,
                 hundreds of full home repipes, and countless emergency
                 responses. That experience
@@ -381,7 +381,7 @@ function StatsBar() {
           let yearsCount = 0;
           const yearsInterval = setInterval(() => {
             yearsCount += 1;
-            if (yearsCount >= 27) {
+            if (yearsCount >= 28) {
               clearInterval(yearsInterval);
             }
             setCounts(prev => ({ ...prev, years: yearsCount }));

@@ -114,7 +114,7 @@ const drainFAQs = [
   {
     question: 'How fast can you get to Shasta Lake for a clogged drain?',
     answer:
-      'Shasta Lake is just 10 miles north of our Redding base on I-5, so during business hours (Mon–Fri 8a–4:30p) we typically reach Shasta Lake addresses in 30–60 minutes. We offer same-day drain cleaning when our schedule allows — call (530) 704-6989 to check availability.',
+      'Shasta Lake is just 10 miles north of our Redding base on I-5. We offer same-day drain cleaning during business hours (Mon–Fri 8a–4:30p) when our schedule allows — call (530) 704-6989 to check availability.',
   },
   {
     question: 'What causes slow or clogged drains?',
@@ -203,8 +203,8 @@ export default function DrainCleaningShastaLakePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on-site in Shasta Lake within 30–60
-              minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day service in Shasta Lake during business
+              hours
             </p>
           </div>
         </div>
@@ -344,7 +344,7 @@ export default function DrainCleaningShastaLakePage() {
               },
               {
                 title: 'Fast From Redding',
-                body: 'We are based 10 minutes south in Redding. During business hours we typically reach Shasta Lake addresses in 30–60 minutes, with same-day scheduling when available.',
+                body: 'We are based 10 minutes south in Redding. We offer same-day service to Shasta Lake addresses during business hours, with scheduling when available.',
               },
               {
                 title: 'Upfront Quote, Always',

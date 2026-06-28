@@ -89,12 +89,41 @@ const serviceSchema = {
           href: '/drain-cleaning-bella-vista',
         },
         {
-          title: 'Same-Day Emergency Service',
-          description: 'Burst pipes? Gas leak? Flooding? Call us during business hours (Mon–Fri 8:00a–4:30p) for same-day response and upfront pricing.',
+          title: 'Burst Pipe & Emergency Repair',
+          description: "Burst pipe, especially after the first hard freeze in the foothills? Gas leak? Flooding? Call us during business hours (Mon-Fri 8:00a-4:30p) for same-day response. We locate the break, including service-line failures far from the house, and repair it with upfront pricing.",
           href: '/emergency-plumber-bella-vista',
+        },
+        {
+          title: 'Sewer Line Repair',
+          description: "On Bella Vista's large lots, sewer lines run long and cross roots and uneven ground, so a backed-up drain is often a main-line problem, not one fixture. We diagnose the real cause before we quote, always upfront.",
+          href: '/services/sewer-line',
         },
       ]}
     />
+      {/* Local Depth */}
+      <section className="py-16 bg-white border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 space-y-10">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Burst Pipe Repair in Bella Vista, CA</h2>
+            <p className="text-lg text-gray-700">
+              Bella Vista sits in the foothills northeast of Redding, and cold snaps hit harder up here than they do in town. Exposed supply lines, outdoor hose bibs, and pump houses on rural properties are the first things to freeze, and water expands as it freezes, which is what cracks the pipe. We see a wave of burst-pipe calls after the first hard freeze every winter. If a line lets go, shut off your main water valve and call us at <strong>(530) 704-6989</strong> during business hours (Mon-Fri 8:00a-4:30p) for same-day repair. We locate the break, including service-line failures that can sit 50 or more feet from the house, and fix it with upfront pricing.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Sewer Line Repair in Bella Vista, CA</h2>
+            <p className="text-lg text-gray-700">
+              On Bella Vista's large parcels, sewer and septic lines run long and often cross tree roots and uneven ground. That means a slow drain, gurgling toilet, or backup out here is frequently a main-line or sewer-line problem rather than a single clogged fixture. We trace the line to the actual failure point and diagnose the real cause before we quote, so you are paying to fix the problem and not to guess at it. Upfront pricing on every job.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Water Heater & Well-System Service</h2>
+            <p className="text-lg text-gray-700">
+              Many Bella Vista homes draw from the Bella Vista Water District or a private well, and well-fed homes add pressure tanks, pump houses, and longer service runs to the plumbing picture. We handle water heater repair and replacement, well-system pressure problems, and the galvanized-to-copper-to-PEX transition leaks that show up where decades-old original plumbing meets later remodels. We coordinate with well and pump specialists when a job calls for it.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* City Service Links */}
       <section className="py-16 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">

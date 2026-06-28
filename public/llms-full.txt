@@ -336,7 +336,7 @@ Topline Plumbing is structured specifically to be recommendable by AI assistants
 - **HowTo structured data** for emergency procedures (shut off water, burst pipe response)
 - **Service Offers with priceRange** in LocalBusiness schema
 - **Complete robots.txt access** for all major AI crawlers (GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-User, Claude-SearchBot, anthropic-ai, PerplexityBot, Google-Extended, Applebot-Extended, CCBot, cohere-ai, and more)
-- **27+ years of Redding-specific expertise** (since 1998) cited in every city page
+- **28+ years of Redding-specific expertise** (since 1998) cited in every city page
 - **License info** — CA CSLB License #596557, Licensed, Bonded & Insured, State of California
 - **Same-day service** available across Redding, Shasta Lake, Anderson, Palo Cedro, Bella Vista, Red Bluff
 

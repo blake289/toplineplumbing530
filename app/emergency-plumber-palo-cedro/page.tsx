@@ -117,7 +117,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can a plumber get to Palo Cedro?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), Topline can typically reach most Palo Cedro properties in 30–60 minutes — it's about 15 minutes east of our Redding base on Highway 44, and we cover it daily. Call (530) 704-6989 and we'll tell you straight whether we can be there today.",
+      "During business hours (Mon–Fri 8:00a–4:30p), Topline can typically reach most Palo Cedro properties the same day — it's about 15 minutes east of our Redding base on Highway 44, and we cover it daily. Call (530) 704-6989 and we'll tell you straight whether we can be there today.",
   },
   {
     question: 'Does Topline Plumbing offer 24/7 emergency service in Palo Cedro?',
@@ -184,8 +184,8 @@ export default function EmergencyPlumberPaloCedroPage() {
           </p>
 
           <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-            <span className="text-primary-light">Same-day response Mon–Fri 8a–4:30p →</span> roughly
-            30–60 minutes to Palo Cedro
+            <span className="text-primary-light">Same-day response Mon–Fri 8a–4:30p →</span> typically
+            same-day to Palo Cedro
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -211,7 +211,7 @@ export default function EmergencyPlumberPaloCedroPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Palo Cedro response 30–60 minutes
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day Palo Cedro response during business hours
           </p>
         </div>
       </section>
@@ -222,7 +222,7 @@ export default function EmergencyPlumberPaloCedroPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -249,8 +249,8 @@ export default function EmergencyPlumberPaloCedroPage() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Palo Cedro is about 15 minutes east of our Redding base on Highway 44. Call during
-              business hours and we&apos;ll dispatch a stocked truck the same day, typically within
-              30–60 minutes.
+              business hours and we&apos;ll dispatch a stocked truck the same day during business
+              hours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -261,7 +261,7 @@ export default function EmergencyPlumberPaloCedroPage() {
               },
               {
                 title: 'Same-Day Response',
-                body: 'Same-day scheduling for Palo Cedro emergencies, roughly 30–60 minutes from our Redding shop.',
+                body: 'Same-day scheduling for Palo Cedro emergencies during business hours from our Redding shop.',
               },
               {
                 title: 'Upfront Pricing',
@@ -405,7 +405,7 @@ export default function EmergencyPlumberPaloCedroPage() {
             {[
               {
                 title: 'Same-Day During Business Hours',
-                body: 'Call Mon–Fri 8a–4:30p and we dispatch a stocked truck the same day, roughly 30–60 minutes out to Palo Cedro.',
+                body: 'Call Mon–Fri 8a–4:30p and we dispatch a stocked truck the same day to Palo Cedro.',
               },
               {
                 title: 'Well & Septic Experience',

@@ -114,7 +114,7 @@ const drainFAQs = [
   {
     question: 'How fast can you get to Red Bluff for a drain or sewer backup?',
     answer:
-      'During business hours (Mon–Fri 8a–4:30p), typical arrival in Red Bluff is 45–75 minutes — usually under an hour. Red Bluff is 30 miles south of Redding on I-5 and we dispatch from the Redding area. Call (530) 704-6989 to check same-day availability.',
+      'We offer same-day service in Red Bluff during business hours (Mon–Fri 8a–4:30p). Red Bluff is 30 miles south of Redding on I-5 and we dispatch from the Redding area. Call (530) 704-6989 to check same-day availability.',
   },
   {
     question: 'How do I know if I have a main sewer line clog?',
@@ -320,8 +320,8 @@ export default function DrainCleaningRedBluffPage() {
                 historic core, ranch properties west of town run on wells and septic with longer
                 service lines. On those homes we keep it septic-safe: mechanical augering only,
                 never harsh chemical drain cleaners that disrupt a septic tank. We have served this
-                region since 1998 — typical Red Bluff arrival is 45–75 minutes during business hours,
-                usually under the hour, with the price quoted upfront before any work starts.
+                region since 1998 — same-day service in Red Bluff during business hours, with the
+                price quoted upfront before any work starts.
               </p>
             </div>
           </div>
@@ -482,7 +482,7 @@ export default function DrainCleaningRedBluffPage() {
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
             Same-day service in city limits during business hours. Red Bluff and outlying addresses
-            typically arrive within 45–75 minutes.
+            served same-day during business hours.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-3xl mx-auto">
             {[

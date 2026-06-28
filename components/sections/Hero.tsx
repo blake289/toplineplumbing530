@@ -3,7 +3,7 @@ import Image from 'next/image';
 import HeroEstimateForm from '@/components/forms/HeroEstimateForm';
 
 const GOOGLE_REVIEW_RATING = 5.0;
-const GOOGLE_REVIEW_COUNT = 50; // Live GBP count (verified via Places API 2026-06-17); update as it grows.
+const GOOGLE_REVIEW_COUNT = 52; // Live GBP count (verified via Places API 2026-06-26); update as it grows.
 const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869';
 
 export default function Hero() {
@@ -25,7 +25,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14 lg:pt-16 lg:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.35fr_1fr] gap-10 lg:gap-10 items-start">
           {/* LEFT — Copy + CTAs */}
           <div className="text-center lg:text-left">
             {/* Eyebrow */}
@@ -72,13 +72,13 @@ export default function Hero() {
             </a>
 
             {/* Trust row */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-100 font-medium mb-6">
+            <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-start gap-x-5 gap-y-2 text-sm text-gray-100 font-medium mb-6">
               {[
-                '27+ Years Serving Redding',
+                '28+ Years Serving Redding',
                 'Licensed & Insured — CSLB',
                 '3,000+ Jobs Completed',
               ].map((item) => (
-                <span key={item} className="flex items-center gap-2">
+                <span key={item} className="flex items-center gap-2 whitespace-nowrap">
                   <svg className="w-4 h-4 text-accent-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden>
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -108,8 +108,8 @@ export default function Hero() {
 
             {/* Trust badges */}
             {/* Trust badges */}
-            <div className="mt-7 pt-6 border-t border-white/15">
-              <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-300 uppercase mb-3 text-center lg:text-left">
+            <div className="mt-12 pt-6 border-t border-white/15">
+              <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-300 uppercase mb-8 text-center">
                 Trusted &amp; Reviewed Across
               </p>
               <div className="grid grid-cols-4 gap-4">
@@ -178,9 +178,6 @@ export default function Hero() {
                 </p>
               </div>
               <HeroEstimateForm />
-              <p className="mt-3 text-[12px] text-gray-400 text-center leading-relaxed">
-                By submitting you agree to be contacted by Topline Plumbing. We never share your information.
-              </p>
             </div>
           </div>
         </div>

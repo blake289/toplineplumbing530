@@ -14,16 +14,15 @@ export interface CityFaq {
 interface CityMeta {
   name: string;
   county: string;
-  responseTime: string;
   distanceNote: string;
   uniqueQ: { question: string; answer: string };
+  extraFaqs?: CityFaq[];
 }
 
 const CITY_META: Record<string, CityMeta> = {
   redding: {
     name: "Redding",
     county: "Shasta County",
-    responseTime: "30–60 minutes",
     distanceNote: "Redding is our home base — we serve the entire city directly from our Redding location.",
     uniqueQ: {
       question: "What zip codes in Redding does Topline Plumbing serve?",
@@ -33,7 +32,6 @@ const CITY_META: Record<string, CityMeta> = {
   "shasta-lake": {
     name: "Shasta Lake",
     county: "Shasta County",
-    responseTime: "30–60 minutes",
     distanceNote: "Shasta Lake is just 10 miles north of our Redding base, so dispatch is fast.",
     uniqueQ: {
       question: "Do you handle well water and pump issues in Shasta Lake?",
@@ -43,17 +41,29 @@ const CITY_META: Record<string, CityMeta> = {
   anderson: {
     name: "Anderson",
     county: "Shasta County",
-    responseTime: "30–60 minutes",
-    distanceNote: "Anderson is 10 miles south of Redding on I-5, so we typically arrive within an hour.",
+    distanceNote: "Anderson is 10 miles south of Redding on I-5, so we serve it same-day during business hours.",
     uniqueQ: {
       question: "Do you service rural properties outside Anderson city limits?",
       answer: "Yes. We service properties throughout the Anderson area including Happy Valley, Cottonwood, and surrounding rural addresses. Septic-connected homes welcome.",
     },
+    extraFaqs: [
+      {
+        question: "Do you do water heater repair in Anderson, CA?",
+        answer: "Yes. Water heater repair is one of our most common Anderson calls. We diagnose no-hot-water, leaking tanks, pilot and thermostat faults, and noisy units, and we carry common parts so many repairs can be done same day during business hours. When a tank is past saving, we offer same-day replacement with upfront pricing.",
+      },
+      {
+        question: "Can you install a tankless water heater in Anderson, CA?",
+        answer: "Yes. We install tankless water heaters throughout Anderson and the surrounding area. Anderson's municipal well water tends to run harder, so we size the unit correctly and recommend periodic descaling to protect it from mineral scale. You get endless hot water, lower standby energy use, and a professional installation with warranty.",
+      },
+      {
+        question: "Why do water heaters fail early in Anderson?",
+        answer: "Anderson draws its water from municipal groundwater wells, which carries more mineral content than surface water. That hardness leaves sediment and scale inside the tank, which is one of the most common reasons water heaters in the Anderson area fail before their expected lifespan. Periodic flushing and descaling extends the life of both tank and tankless units.",
+      },
+    ],
   },
   "palo-cedro": {
     name: "Palo Cedro",
     county: "Shasta County",
-    responseTime: "30–60 minutes",
     distanceNote: "Palo Cedro is roughly 15 minutes east of Redding — we cover it daily.",
     uniqueQ: {
       question: "Can you handle whole-home repipes on rural Palo Cedro properties?",
@@ -63,18 +73,30 @@ const CITY_META: Record<string, CityMeta> = {
   "bella-vista": {
     name: "Bella Vista",
     county: "Shasta County",
-    responseTime: "30–60 minutes",
     distanceNote: "Bella Vista is about 15 minutes northeast of Redding — we serve it daily.",
     uniqueQ: {
       question: "Do you service homes on private wells in Bella Vista?",
       answer: "Yes. Many Bella Vista homes are on well systems, and we handle pressure tank issues, well-line repairs, and full plumbing service for well-fed homes. We coordinate with well/pump techs when needed.",
     },
+    extraFaqs: [
+      {
+        question: "Do you do burst pipe repair in Bella Vista, CA?",
+        answer: "Yes. Burst pipes are a common Bella Vista call, especially after the first hard freeze of the season, since exposed pipes, hose bibs, and pump houses in the foothills freeze before they do in town. During business hours (Mon-Fri 8:00a-4:30p) we respond same day, locate the break, and repair it with upfront pricing. For after-hours bursts, shut off your main water valve and text (530) 704-6989 and we'll respond first thing the next business day.",
+      },
+      {
+        question: "Can you repair a sewer line in Bella Vista, CA?",
+        answer: "Yes. We handle sewer line repair on Bella Vista's larger lots, where lines run long and often cross tree roots and uneven ground. A slow or backed-up drain out here is frequently a main-line or sewer-line problem rather than a single clogged fixture, so we diagnose the actual cause before quoting the repair, always with upfront pricing.",
+      },
+      {
+        question: "Why do pipes freeze and burst more often in Bella Vista?",
+        answer: "Bella Vista sits in the foothills northeast of Redding, and cold snaps hit harder up here than they do in town. Exposed supply lines, outdoor hose bibs, and pump houses on rural properties are the first things to freeze, and water expands as it freezes, which is what cracks the pipe. Insulating exposed lines and protecting pump houses before winter prevents most of these failures.",
+      },
+    ],
   },
   "red-bluff": {
     name: "Red Bluff",
     county: "Tehama County",
-    responseTime: "45–75 minutes",
-    distanceNote: "Red Bluff is 30 miles south of Redding on I-5 — typical arrival is under an hour.",
+    distanceNote: "Red Bluff is 30 miles south of Redding on I-5 — we serve it same-day during business hours.",
     uniqueQ: {
       question: "Do you handle older home plumbing in Red Bluff's historic district?",
       answer: "Yes. Red Bluff has many older homes with galvanized or cast iron plumbing. We handle repipes, sewer line replacements, and modernization for historic homes throughout Red Bluff and Tehama County.",
@@ -86,7 +108,7 @@ export function getCityFaqs(slug: string): CityFaq[] {
   const meta = CITY_META[slug];
   if (!meta) return [];
 
-  const { name, responseTime, distanceNote, uniqueQ } = meta;
+  const { name, distanceNote, uniqueQ, extraFaqs } = meta;
 
   return [
     {
@@ -95,7 +117,7 @@ export function getCityFaqs(slug: string): CityFaq[] {
     },
     {
       question: `How fast can a plumber get to ${name}?`,
-      answer: `During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for ${name} emergencies is ${responseTime}. ${distanceNote} For non-emergency service, we usually offer same-day or next-business-day appointments.`,
+      answer: `During business hours (Mon–Fri 8:00a–4:30p), we typically respond the same day for ${name} emergencies. ${distanceNote} For non-emergency service, we usually offer same-day or next-business-day appointments.`,
     },
     {
       question: `How much does a plumber cost in ${name}, CA?`,
@@ -110,5 +132,6 @@ export function getCityFaqs(slug: string): CityFaq[] {
       answer: `We offer the full range of plumbing services in ${name}: emergency plumbing (during business hours), drain cleaning and hydrojetting, water heater repair and replacement, tankless water heater installation, sewer line repair, leak detection, whole-home repiping, gas line service, and fixture installation. Both residential and commercial.`,
     },
     uniqueQ,
+    ...(extraFaqs ?? []),
   ];
 }

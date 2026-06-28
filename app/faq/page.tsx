@@ -145,7 +145,7 @@ const faqCategories: FAQCategory[] = [
       {
         question: 'How long have you been in business?',
         answer:
-          'Topline Plumbing was founded by Joe Torculas in 1998. We\'ve been serving Redding and Northern California for over 27 years, completing thousands of residential and commercial plumbing jobs.',
+          'Topline Plumbing was founded by Joe Torculas in 1998. We\'ve been serving Redding and Northern California for 28 years, completing thousands of residential and commercial plumbing jobs.',
       },
     ],
   },

@@ -27,7 +27,7 @@ export default function SchemaMarkup() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "50"
+      "reviewCount": "52"
     },
     "currenciesAccepted": "USD",
     "paymentAccepted": "Cash, Credit Card, Debit Card, Check",

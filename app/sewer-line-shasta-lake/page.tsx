@@ -117,7 +117,7 @@ const sewerFAQs = [
   {
     question: 'How fast can a plumber get to Shasta Lake for a sewer problem?',
     answer:
-      "Shasta Lake is just 10 miles north of our Redding base, so we typically reach Shasta Lake addresses in 30–60 minutes during business hours (Mon–Fri 8a–4:30p). For an active sewage backup, call (530) 704-6989 and we'll give you a same-day arrival window. If it's after hours, text (530) 704-6989 and we respond first thing the next business day — for a major flood, shut off your main water valve first.",
+      "Shasta Lake is just 10 miles north of our Redding base, so we typically reach Shasta Lake addresses the same day during business hours (Mon–Fri 8a–4:30p). For an active sewage backup, call (530) 704-6989 and we'll give you a same-day arrival window. If it's after hours, text (530) 704-6989 and we respond first thing the next business day — for a major flood, shut off your main water valve first.",
   },
   {
     question: 'How much does sewer line repair cost in Shasta Lake, CA?',
@@ -191,7 +191,7 @@ export default function SewerLineShastaLakePage() {
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
               <span className="text-primary-light">Same-day service during business hours →</span>{' '}
-              typically on-site in 30–60 minutes
+              we typically reach Shasta Lake the same day
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -217,8 +217,7 @@ export default function SewerLineShastaLakePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on-site in Shasta Lake within 30–60
-              minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -448,7 +447,7 @@ export default function SewerLineShastaLakePage() {
               },
               {
                 title: 'Fast Dispatch to Shasta Lake',
-                body: "Shasta Lake is just 10 miles north of our Redding base, so we typically arrive in 30–60 minutes during business hours.",
+                body: "Shasta Lake is just 10 miles north of our Redding base, so we typically reach it the same day during business hours.",
               },
               {
                 title: 'Sewer & Septic Aware',

@@ -117,7 +117,7 @@ const sewerFAQs = [
   {
     question: 'How fast can a plumber get to Anderson for a sewer problem?',
     answer:
-      "During business hours (Mon–Fri 8:00a–4:30p), typical on-site response for Anderson is 30–60 minutes. Anderson is 10 miles south of Redding on I-5, so we typically arrive within an hour. For sewer line work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
+      "During business hours (Mon–Fri 8:00a–4:30p), we typically reach Anderson the same day. Anderson is 10 miles south of Redding on I-5, so we serve it daily. For sewer line work that needs a camera inspection and quote, we usually offer same-day or next-business-day appointments. Call (530) 704-6989 for current availability.",
   },
   {
     question: 'How much does sewer line repair cost in Anderson, CA?',
@@ -217,7 +217,7 @@ export default function SewerLineAndersonPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typical Anderson response 30–60 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -415,7 +415,7 @@ export default function SewerLineAndersonPage() {
               },
               {
                 title: 'Local & Fast to Anderson',
-                body: 'Anderson is 10 miles south of our Redding base on I-5. Typical on-site response during business hours is 30–60 minutes — usually within the hour.',
+                body: 'Anderson is 10 miles south of our Redding base on I-5. Same-day response during business hours.',
               },
               {
                 title: 'Sewer & Septic Both',
@@ -551,7 +551,7 @@ export default function SewerLineAndersonPage() {
             Sewer Line Service Across Shasta County &amp; Beyond
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-            We dispatch from Redding and serve the surrounding cities — Anderson in 30–60 minutes during
+            We dispatch from Redding and serve the surrounding cities — Anderson the same day during
             business hours.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-3xl mx-auto">

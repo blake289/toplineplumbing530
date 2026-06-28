@@ -162,6 +162,7 @@ export default function Navbar() {
                 {[
                   ['FAQ', '/faq'],
                   ['Resources', '/resources'],
+                  ['Blog', '/blog'],
                   ['About', '/about'],
                   ['Contact', '/contact'],
                 ].map(([label, href]) => (

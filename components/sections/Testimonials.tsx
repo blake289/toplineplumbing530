@@ -4,7 +4,7 @@ import Reveal from '@/components/ui/Reveal';
 const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869';
 const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/onlineservices/checklicenseII/checklicense.aspx';
 const GOOGLE_REVIEW_RATING = 5.0;
-const GOOGLE_REVIEW_COUNT = 50; // Live GBP count (verified via Places API 2026-06-17); update as it grows.
+const GOOGLE_REVIEW_COUNT = 52; // Live GBP count (verified via Places API 2026-06-26); update as it grows.
 
 const testimonials = [
   {

@@ -117,7 +117,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can a plumber get to Bella Vista in an emergency?',
     answer:
-      'During business hours (Mon–Fri 8a–4:30p) we typically reach Bella Vista in 30–60 minutes — it sits about 15 minutes northeast of Redding and we serve it daily. Call (530) 704-6989 and we will tell you straight whether we can be there today and give you an arrival window before we head out.',
+      'During business hours (Mon–Fri 8a–4:30p) we typically reach Bella Vista the same day — it sits about 15 minutes northeast of Redding and we serve it daily. Call (530) 704-6989 and we will tell you straight whether we can be there today and give you an arrival window before we head out.',
   },
   {
     question: 'When does Topline Plumbing handle emergencies in Bella Vista?',
@@ -191,7 +191,7 @@ export default function EmergencyPlumberBellaVistaPage() {
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
               <span className="text-primary-light">Same-day during business hours →</span> typically
-              in Bella Vista within 30–60 minutes
+              reaching Bella Vista the same day
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -217,7 +217,7 @@ export default function EmergencyPlumberBellaVistaPage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response in Bella Vista within 30–60 minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Same-day response in Bella Vista during business hours
             </p>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function EmergencyPlumberBellaVistaPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -268,7 +268,7 @@ export default function EmergencyPlumberBellaVistaPage() {
               },
               {
                 title: 'Fast Rural Response',
-                body: 'Bella Vista is about 15 minutes northeast of Redding and we serve it daily — typical arrival is 30–60 minutes during business hours.',
+                body: 'Bella Vista is about 15 minutes northeast of Redding and we serve it daily — typically same-day during business hours.',
               },
               {
                 title: 'Upfront Pricing',
@@ -417,7 +417,7 @@ export default function EmergencyPlumberBellaVistaPage() {
             {[
               {
                 title: 'Same-Day During Business Hours',
-                body: 'Call during business hours (Mon–Fri 8a–4:30p) and we schedule Bella Vista emergencies same-day, typically arriving within 30–60 minutes.',
+                body: 'Call during business hours (Mon–Fri 8a–4:30p) and we schedule Bella Vista emergencies same-day during business hours.',
               },
               {
                 title: 'Well & Septic Comfortable',

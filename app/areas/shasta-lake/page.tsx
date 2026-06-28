@@ -75,7 +75,7 @@ const serviceSchema = {
       }}
       about={{
         intro: "Whether you're exploring Shasta Lake Caverns, touring the historic Shasta Dam, or enjoying the natural beauty of Burney Falls, the last thing you want to deal with when you get home is a plumbing emergency.",
-        details: "At Topline Plumbing, we are proud to serve the residents of Shasta Lake, CA. From water heater failures to clogged drains, our family-owned business brings 30+ years of experience straight to your door.",
+        details: "At Topline Plumbing, we are proud to serve the residents of Shasta Lake, CA. From water heater failures to clogged drains, our family-owned business brings 28 years of experience straight to your door.",
       }}
       services={[
         {

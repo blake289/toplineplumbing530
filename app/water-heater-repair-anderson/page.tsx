@@ -125,7 +125,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'How fast can a plumber get to Anderson for water heater repair?',
     answer:
-      "Anderson is 10 miles south of Redding on I-5, so we typically arrive within 30–60 minutes during business hours (Mon–Fri 8a–4:30p). If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
+      "Anderson is 10 miles south of Redding on I-5, so we typically reach Anderson the same day during business hours (Mon–Fri 8a–4:30p). If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
   },
   {
     question: 'How much does water heater repair cost in Anderson, CA?',
@@ -198,8 +198,8 @@ export default function WaterHeaterRepairAndersonPage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">10 minutes south on I-5 →</span> typically on-site
-              in 30–60 minutes
+              <span className="text-primary-light">10 minutes south on I-5 →</span> typically same-day
+              during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -226,7 +226,7 @@ export default function WaterHeaterRepairAndersonPage() {
             </div>
             <p className="mt-6 text-sm text-gray-300">
               Free estimate with any service · Upfront quote before any work starts · Mon–Fri
-              8:00a–4:30p · CSLB #596557 · Anderson response 30–60 min
+              8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function WaterHeaterRepairAndersonPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -400,8 +400,7 @@ export default function WaterHeaterRepairAndersonPage() {
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
                 Anderson sits just 10 minutes south of Redding on I-5 — a quick run from our base,
-                which means we typically have a tech on your Anderson driveway in 30–60 minutes during
-                business hours. The town is a real mix: older single-family homes near downtown, newer
+                which means we typically reach Anderson the same day during business hours. The town is a real mix: older single-family homes near downtown, newer
                 subdivisions off Riverside Ave, manufactured-home communities, and rural parcels
                 stretching toward Happy Valley and Cottonwood. Each of those carries a different water
                 heater story.
@@ -446,8 +445,8 @@ export default function WaterHeaterRepairAndersonPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: '30–60 Minutes to Anderson',
-                body: "Anderson is 10 miles south of Redding on I-5, so we typically arrive within 30–60 minutes during business hours. Call before noon and we can usually diagnose and repair the same day.",
+                title: 'Same-Day to Anderson',
+                body: "Anderson is 10 miles south of Redding on I-5, so we typically reach Anderson the same day during business hours. Call before noon and we can usually diagnose and repair the same day.",
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -674,7 +673,7 @@ export default function WaterHeaterRepairAndersonPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Anderson response 30–60 min
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Same-day response during business hours
           </p>
         </div>
       </section>

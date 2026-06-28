@@ -209,7 +209,7 @@ export default function WaterSoftenerReddingPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-navy-900">27+</div>
+              <div className="text-3xl md:text-4xl font-bold text-navy-900">28+</div>
               <div className="text-sm md:text-base text-gray-600 mt-1">Years in Redding</div>
             </div>
             <div>

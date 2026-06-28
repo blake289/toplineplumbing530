@@ -125,7 +125,7 @@ const waterHeaterRepairFAQs = [
   {
     question: 'How fast can a plumber get to Palo Cedro for water heater repair?',
     answer:
-      "Palo Cedro is about 15 minutes east of Redding on Highway 44, so we typically arrive within 30–60 minutes during business hours (Mon–Fri 8a–4:30p), and we cover it daily. If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
+      "Palo Cedro is about 15 minutes east of Redding on Highway 44, so we typically reach Palo Cedro the same day during business hours (Mon–Fri 8a–4:30p), and we cover it daily. If you call before noon, we can usually diagnose and repair the same day. Call (530) 704-6989 for current availability — we'll tell you straight whether we can be there today.",
   },
   {
     question: 'How much does water heater repair cost in Palo Cedro, CA?',
@@ -200,7 +200,7 @@ export default function WaterHeaterRepairPaloCedroPage() {
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
               <span className="text-primary-light">15 minutes east on Hwy 44 →</span> typically
-              on-site in 30–60 minutes
+              same-day during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
@@ -227,7 +227,7 @@ export default function WaterHeaterRepairPaloCedroPage() {
             </div>
             <p className="mt-6 text-sm text-gray-300">
               Free estimate with any service · Upfront quote before any work starts · Mon–Fri
-              8:00a–4:30p · CSLB #596557 · Palo Cedro response 30–60 min
+              8:00a–4:30p · CSLB #596557 · Same-day response during business hours
             </p>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function WaterHeaterRepairPaloCedroPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -401,8 +401,8 @@ export default function WaterHeaterRepairPaloCedroPage() {
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
                 Palo Cedro is the unincorporated community just east of Redding — 15 minutes out on
-                Highway 44, which means we typically have a tech on your driveway in 30–60 minutes
-                during business hours, and we cover the area daily. This isn&apos;t suburban tract
+                Highway 44, which means we typically reach Palo Cedro the same day during business
+                hours, and we cover the area daily. This isn&apos;t suburban tract
                 work: Palo Cedro is large-lot residential, horse properties, and small ranches, and
                 most homes here run on private wells and septic rather than city utilities. That
                 changes the water heater landscape, so we treat these jobs differently than in-town
@@ -448,8 +448,8 @@ export default function WaterHeaterRepairPaloCedroPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: '30–60 Minutes to Palo Cedro',
-                body: "Palo Cedro is 15 minutes east on Highway 44, so we typically arrive within 30–60 minutes during business hours and cover the area daily. Call before noon and we can usually diagnose and repair the same day.",
+                title: 'Same-Day to Palo Cedro',
+                body: "Palo Cedro is 15 minutes east on Highway 44, so we typically reach Palo Cedro the same day during business hours and cover the area daily. Call before noon and we can usually diagnose and repair the same day.",
               },
               {
                 title: 'Upfront Quote Before Work Starts',
@@ -677,7 +677,7 @@ export default function WaterHeaterRepairPaloCedroPage() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-300">
-            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Palo Cedro response 30–60 min
+            Mon–Fri 8:00a–4:30p · CSLB #596557 · Licensed, bonded, insured · Same-day response during business hours
           </p>
         </div>
       </section>

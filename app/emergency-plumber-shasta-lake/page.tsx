@@ -117,7 +117,7 @@ const emergencyFAQs = [
   {
     question: 'How fast can an emergency plumber get to Shasta Lake?',
     answer:
-      "Shasta Lake is just 10 miles north of our Redding base on I-5, so during business hours (Mon–Fri 8a–4:30p) we typically reach Shasta Lake addresses in 30–60 minutes. Call (530) 704-6989 and we'll tell you straight whether we can be there today.",
+      "Shasta Lake is just 10 miles north of our Redding base on I-5, so during business hours (Mon–Fri 8a–4:30p) we typically reach Shasta Lake addresses the same day. Call (530) 704-6989 and we'll tell you straight whether we can be there today.",
   },
   {
     question: 'Is Topline Plumbing a 24/7 emergency plumber in Shasta Lake?',
@@ -184,8 +184,8 @@ export default function EmergencyPlumberShastaLakePage() {
             </p>
 
             <div className="inline-block bg-primary/15 border border-primary/40 rounded-full px-6 py-3 mb-8 text-base md:text-lg text-white font-semibold">
-              <span className="text-primary-light">Same-day response →</span> typically on-site in
-              30–60 minutes during business hours
+              <span className="text-primary-light">Same-day response →</span> typically on-site the
+              same day during business hours
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -211,8 +211,8 @@ export default function EmergencyPlumberShastaLakePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-300">
-              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on-site in Shasta Lake within 30–60
-              minutes
+              Mon–Fri 8:00a–4:30p · CSLB #596557 · Typically on-site in Shasta Lake the same day
+              during business hours
             </p>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function EmergencyPlumberShastaLakePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">3,000+</div>
-              <div className="text-sm md:text-base text-gray-600 mt-1">Jobs Since 1998</div>
+              <div className="text-sm md:text-base text-gray-600 mt-1">of Jobs Since 1998</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy-900">5.0★</div>
@@ -263,7 +263,7 @@ export default function EmergencyPlumberShastaLakePage() {
               },
               {
                 title: 'Fast, Same-Day Response',
-                body: "Shasta Lake is 10 minutes north of our Redding base on I-5. During business hours we typically reach Shasta Lake addresses in 30–60 minutes for same-day emergency scheduling.",
+                body: "Shasta Lake is 10 minutes north of our Redding base on I-5. During business hours we typically reach Shasta Lake addresses the same day for same-day emergency scheduling.",
               },
               {
                 title: 'Upfront Pricing — No Surprises',
@@ -394,7 +394,7 @@ export default function EmergencyPlumberShastaLakePage() {
             {[
               {
                 title: 'Fast From Redding',
-                body: 'We are based 10 minutes south in Redding. During business hours we typically reach Shasta Lake addresses in 30–60 minutes for same-day emergency scheduling.',
+                body: 'We are based 10 minutes south in Redding. During business hours we typically reach Shasta Lake addresses the same day for same-day emergency scheduling.',
               },
               {
                 title: 'Honest About Our Hours',

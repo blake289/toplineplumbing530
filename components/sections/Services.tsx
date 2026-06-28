@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Reveal from '@/components/ui/Reveal';
 
 const services = [
@@ -12,6 +13,7 @@ const services = [
     title: 'Emergency Plumbing',
     description: "Burst pipes, gas leaks, and floods — same-day response during our business hours.",
     href: '/services/emergency',
+    image: '/images/services/emergency-plumbing.webp',
   },
   {
     icon: (
@@ -23,6 +25,7 @@ const services = [
     title: 'Water Heaters',
     description: 'Expert installation, proactive repair, and complete system replacement with upfront pricing.',
     href: '/services/water-heater-repair',
+    image: '/images/services/water-heaters.webp',
   },
   {
     icon: (
@@ -33,6 +36,7 @@ const services = [
     title: 'Drain Cleaning',
     description: 'We clear tough clogs and backed-up sewer lines with mechanical power augers.',
     href: '/services/drain-cleaning',
+    image: '/images/services/drain-cleaning.webp',
   },
   {
     icon: (
@@ -43,6 +47,7 @@ const services = [
     title: 'Tankless Upgrades',
     description: 'Endless hot water and lower energy bills with high-efficiency tankless water heater systems.',
     href: '/services/tankless',
+    image: '/images/services/tankless-upgrades.webp',
   },
   {
     icon: (
@@ -53,6 +58,7 @@ const services = [
     title: 'Repiping Services',
     description: 'Upgrade old, failing galvanized or polybutylene pipes to reliable, modern PEX or copper.',
     href: '/services/repiping-services',
+    image: '/images/services/repiping-services.webp',
   },
   {
     icon: (
@@ -63,6 +69,7 @@ const services = [
     title: 'Fixture Installs',
     description: 'Professional installation for sinks, toilets, faucets, showers, and garbage disposals.',
     href: '/services/fixture-installs',
+    image: '/images/services/fixture-installs.webp',
   },
 ];
 
@@ -93,36 +100,45 @@ export default function Services() {
             <Link
               key={service.href}
               href={service.href}
-              className="group relative bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full cursor-pointer transition-[transform,box-shadow,border-color] duration-200 ease-snappy hover:border-navy-900/20 hover:-translate-y-[3px] hover:shadow-[0_16px_36px_-10px_rgba(15,23,42,0.10)] active:scale-[0.98] active:shadow-sm"
+              className="group relative bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col h-full cursor-pointer transition-[transform,box-shadow,border-color] duration-200 ease-snappy hover:border-navy-900/20 hover:-translate-y-[3px] hover:shadow-[0_16px_36px_-10px_rgba(15,23,42,0.10)] active:scale-[0.98] active:shadow-sm"
             >
-              {/* Icon badge */}
-              <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-navy-900/[0.04] text-navy-900 group-hover:bg-primary/[0.08] group-hover:text-primary transition-colors duration-200 ease-snappy">
-                {service.icon}
+              {/* Photo banner */}
+              <div className="relative w-full aspect-[3/2] overflow-hidden bg-gray-100">
+                <Image
+                  src={service.image}
+                  alt={`${service.title} by Topline Plumbing in Redding, CA`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 ease-snappy group-hover:scale-[1.04]"
+                />
               </div>
 
-              {/* Title */}
-              <h3 className="text-xl font-bold text-navy-900 mb-3 tracking-tight">
-                {service.title}
-              </h3>
+              {/* Content */}
+              <div className="p-7 lg:p-8 flex flex-col flex-grow">
+                {/* Title */}
+                <h3 className="text-xl font-bold text-navy-900 mb-3 tracking-tight">
+                  {service.title}
+                </h3>
 
-              {/* Description */}
-              <p className="text-[15px] text-gray-600 leading-relaxed flex-grow mb-6">
-                {service.description}
-              </p>
+                {/* Description */}
+                <p className="text-[15px] text-gray-600 leading-relaxed flex-grow mb-6">
+                  {service.description}
+                </p>
 
-              {/* CTA Link */}
-              <div className="flex items-center gap-2 text-navy-900 font-semibold text-sm group-hover:text-primary transition-colors">
-                Learn more
-                <svg
-                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  aria-hidden
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                {/* CTA Link */}
+                <div className="flex items-center gap-2 text-navy-900 font-semibold text-sm group-hover:text-primary transition-colors">
+                  Learn more
+                  <svg
+                    className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    aria-hidden
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
               </div>
             </Link>
           ))}
