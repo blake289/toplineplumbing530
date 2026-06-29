@@ -36,7 +36,7 @@ export default function Hero() {
 
             {/* Headline — mixed case, tight tracking, varied weight */}
             <h1 className="text-[2rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-white leading-[1.12] tracking-[-0.02em] mb-4">
-              Redding&apos;s go-to plumber for{' '}
+              Topline Plumbing, Redding&apos;s go-to plumber for{' '}
               <span className="text-primary-light">same-day repairs</span> &amp; trusted service.
             </h1>
 

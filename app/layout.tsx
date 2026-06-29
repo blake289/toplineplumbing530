@@ -59,19 +59,23 @@ export default function RootLayout({
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM context" />
       </head>
       <body>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KR1T2RGRB4"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KR1T2RGRB4');
-          `}
-        </Script>
-        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-KR1T2RGRB4"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-KR1T2RGRB4');
+              `}
+            </Script>
+          </>
+        )}
+        {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_CLARITY_ID && (
           <Script id="microsoft-clarity" strategy="afterInteractive">
             {`
               (function(c,l,a,r,i,t,y){

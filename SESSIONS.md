@@ -1,6 +1,28 @@
-# Session Status — 2026-06-26
+# Session Status — 2026-06-29
 
-## Latest pass — site-wide claim sweep (response-time + jobs count) + homepage 28yr canon (LIVE)
+## Latest pass — GSC access fix + GSC/GA4/Clarity audit + brand-drop fix + 530 duplicate kill
+- **GSC access restored.** `blake@omnipresent.app` had dropped to `siteUnverifiedUser` on domain property `sc-domain:toplineplumbingco.com` (old DNS TXT verification token was removed; `_rAs1vb7…` in DNS belongs to another account). Re-verified by adding Blake's token `google-site-verification=RJUkC0M1sxhXrZAM2vRGiIEitJpVxGRS1HcqLtG4qgg` as a TXT @ on Namecheap. Owner again. API pulls (google-report-token.json) work again. NEVER delete that TXT record.
+- **3-source audit (all live API).** GSC 28d: 29 clicks / 8,497 impr / pos 21.1 — impressions ~4x'd but clicks fell; ranks for nearly every Redding money term at pos 7-15 (not top 3). 33 striking-distance queries at 0 clicks. GA4 28d: 113 sessions but ~71% noise (29% Blake's SD testing + ~40% bots); REAL Redding ≈ 9 sessions → 2 leads. Clarity: too small + contaminated to read, 0 JS errors / 0 rage. **Verdict: site converts, TRAFFIC is the bottleneck. Lever = GBP + LSA + Search ads, not site edits.**
+- **Brand-drop root cause (verified via git):** homepage `<title>` changed 3x in-window (Jun 3 demoted brand to end → Jun 17 restored brand-first, current). That depressed "topline plumbing" 3.9→8.9. Already fixed; needs re-index. "local plumbing services near me" (was pos 1.0/144 impr → 0) lived on the HOMEPAGE (still live + healthy) — it's a Local Pack/GBP query loss, not a site issue. NOT the f04042e prune.
+- **530.com duplicate KILLED.** `toplineplumbing530.com` (transfer to Blake's Namecheap completed 6/29) was a live 2nd site with the WRONG phone (768-9446). Switched NS Cloudflare→Namecheap BasicDNS, added 301 URL Redirect (@ + www) → `https://toplineplumbingco.com`. DNS resolves to NC redirect IP 162.255.119.35; SSL provisioning pending (https 301 goes live in ~hrs).
+- **Code shipped this pass (build-verified):** Clarity + GA4 gated to `NODE_ENV==='production'` (stops localhost dev leak into both datasets); homepage H1 now leads with "Topline Plumbing,". → see commit below.
+- **OPEN / Blake's manual UI:** GSC Request Indexing on homepage; GA4 mark `generate_lead` key event + demote `form_start` + internal-IP filter for SD. **Next lever = GBP investigation** (the "near me" loss + traffic problem both point there) + LSA/Search ads.
+
+## Earlier (2026-06-27) — pre-commit claim audit + SEO cleanup + FULL COMMIT/PUSH/DEPLOY (LIVE)
+- **Two parallel adversarial subagents** (claim audit + technical SEO audit). Both flagged real issues; I verified each against source before acting (caught 2 FALSE-ABSENCE claims from the SEO agent — see below).
+- **CLAIM FIXES (all source-verified, deployed):**
+  - Review count **50 → 52** (Hero, Testimonials, LocalBusiness schema). Verified LIVE via Places API: rating 5.0, **userRatingCount 52**. The hardcoded 50 (comment "verified 6/17") was STALE — reviews grew. Live schema now shows reviewCount 52. ✅
+  - Two stray **"27+ years" → "28+"** (areas/page card, water-softener-redding stat, llms-full.txt) — contradicted "since 1998 / 28 years" canon. Final grep: zero "27 near year" left.
+  - Removed unverified **"30-60 minute response inside Redding city limits"** ARRIVAL claim (drain-cleaning service page). Job-duration "30-60 min" on fixture-installs correctly LEFT.
+- **SEO FIXES (deployed):**
+  - **Killed the /water-heater-repair-redding 301 redirect** (Blake decision: keep page, kill redirect). Page was fully built (own title/H1, 7 internal links incl. footer "Redding (Repair)") but redirected to nowhere. Now LIVE, returns 200, targets distinct "water heater repair redding" query.
+  - **Differentiated the replacement page** (title/desc/H1 now lead with "Replacement & Installation," dropped "Repair") to avoid cannibalizing the now-live repair page + fixed its over-length title/desc.
+  - **Deleted dead app/robots.ts** (public/robots.txt shadows it in App Router — was a maintenance footgun, both allowed-all so no live harm).
+- **TWO FALSE ABSENCES caught (no-unverified-absence rule):** SEO agent claimed (a) /faq has no FAQPage schema and (b) money pages lack FAQPage schema. BOTH WRONG — verified `FAQSchema` (emits FAQPage JSON-LD) renders on ~50 pages incl. /faq, homepage, every city/area/service page. Zero gaps. Did NOT add duplicate schema.
+- **COMMITTED + PUSHED + DEPLOYED:** 67 files in one clean commit `a10c04e` (no junk staged — excluded screenshots/PDFs/logs/caches/scratch scripts; added blog source + 6 service webp). Pushed to origin/main. Deployed to prod, live-verified (repair page 200, schema 52).
+- **STILL OPEN (Blake's call, NOT fixed):** CSLB #596557 UNVERIFIED (couldn't read CA board via API/WebFetch — appears 243× site-wide, verify on cslb.ca.gov); "most trusted" / "Top-rated on Google" superlatives (about:102, Footer:87, llms*.txt); "family owned" 78× (confirm true once); "bonded" claim (confirm bond is real). "3,000+ jobs" + "1,000+ water heaters" = owner-asserted, kept by prior decision.
+
+## Earlier pass — site-wide claim sweep (response-time + jobs count) + homepage 28yr canon (LIVE)
 - **"30-60 min response" GUARANTEE removed site-wide** (23 pages, ~50 instances → "same-day during business hours"). 5 parallel subagents grouped by page-type. The real liability. Faucet JOB-DURATION "30-60 minutes" (fixture-installs:87) correctly LEFT (it's how long the task takes, not an arrival promise) — that was the landmine.
 - **"3,000+ jobs" KEPT** (Blake decision: plausible ~2/week×28yr, + it's the homepage hero stat + animated counters). Agents had softened it to "Thousands/1000s" → reverted all 27 stat blocks + prose back to "3,000+" via git-diff-guided perl (only reverted the jobs-number; pre-existing "thousands in water damage / homeowners" untouched).
 - **Homepage years 27→28** (Hero pill "28+ Years Serving Redding", StatsSection StatCard target 27→28, About counter cap 27→28) — earlier 1998-canon sweep had missed these homepage spots.
