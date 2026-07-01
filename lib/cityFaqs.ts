@@ -102,6 +102,51 @@ const CITY_META: Record<string, CityMeta> = {
       answer: "Yes. Red Bluff has many older homes with galvanized or cast iron plumbing. We handle repipes, sewer line replacements, and modernization for historic homes throughout Red Bluff and Tehama County.",
     },
   },
+  millville: {
+    name: "Millville",
+    county: "Shasta County",
+    distanceNote: "Millville is about 20 minutes east of Redding past Palo Cedro — we serve it during business hours.",
+    uniqueQ: {
+      question: "Do you service homes on private wells and septic in Millville?",
+      answer: "Yes. Many Millville properties are on private wells and septic. We handle pressure tank issues, well-line and service-line repairs, and septic-safe drain cleaning (mechanical augering, not caustic chemicals), and we coordinate with well/pump techs when a pump replacement is needed.",
+    },
+  },
+  cottonwood: {
+    name: "Cottonwood",
+    county: "Shasta County",
+    distanceNote: "Cottonwood is about 20 minutes south of Redding on I-5, just past Anderson — we serve it same-day during business hours.",
+    uniqueQ: {
+      question: "Do you service rural Cottonwood properties on wells and septic?",
+      answer: "Yes. We service both the Cottonwood town center and the surrounding rural parcels toward the creek and the county line, including homes on private wells and septic. Pressure tanks, well lines, septic-safe drain cleaning, and long main-line runs are all routine work for us out here.",
+    },
+  },
+  "lake-california": {
+    name: "Lake California",
+    county: "Tehama County",
+    distanceNote: "Lake California is about 25 minutes south of Redding, east of Cottonwood — we serve it during business hours.",
+    uniqueQ: {
+      question: "Do you serve the Lake California community in Tehama County?",
+      answer: "Yes. We serve Lake California with the full range of residential plumbing — water heater repair and replacement, drain cleaning, leak detection, repiping, and fixture work. Same-day scheduling during business hours (Mon-Fri 8:00a-4:30p) with upfront pricing.",
+    },
+  },
+  igo: {
+    name: "Igo",
+    county: "Shasta County",
+    distanceNote: "Igo is about 25 minutes southwest of Redding toward the coast range — we serve it during business hours.",
+    uniqueQ: {
+      question: "Do you drive out to rural Igo properties on wells?",
+      answer: "Yes. Igo is rural, large-parcel country and most homes are on private wells and septic. We handle pressure tanks, well-line and service-line repairs, septic-safe drain cleaning, and the outdoor plumbing that comes with rural properties, and we coordinate with well/pump techs when needed.",
+    },
+  },
+  "happy-valley": {
+    name: "Happy Valley",
+    county: "Shasta County",
+    distanceNote: "Happy Valley is about 20 minutes south of Redding between Anderson and Olinda — we serve it during business hours.",
+    uniqueQ: {
+      question: "Do you service homes on wells and septic in Happy Valley?",
+      answer: "Yes. Many Happy Valley homes are on private wells and septic on large lots. We handle pressure tank and well-line issues, septic-safe drain cleaning, and long sewer and main-line runs, and we coordinate with well/pump specialists when a pump replacement is needed.",
+    },
+  },
 };
 
 export function getCityFaqs(slug: string): CityFaq[] {

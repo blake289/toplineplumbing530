@@ -4,7 +4,12 @@ export type CitySlug =
   | 'shasta-lake'
   | 'palo-cedro'
   | 'bella-vista'
-  | 'red-bluff';
+  | 'red-bluff'
+  | 'millville'
+  | 'cottonwood'
+  | 'lake-california'
+  | 'igo'
+  | 'happy-valley';
 
 export interface CityProfile {
   slug: CitySlug;
@@ -147,6 +152,120 @@ export const cityProfiles: Record<CitySlug, CityProfile> = {
       'Galvanized-to-copper repipe sections',
       'Water heater flue and venting issues',
       'Outdoor and ranch plumbing repairs',
+    ],
+  },
+
+  millville: {
+    slug: 'millville',
+    waterProvider: 'Private well or local water service, depending on location',
+    name: 'Millville',
+    county: 'Shasta County',
+    distanceFromRedding: 'About 20 minutes east of Redding',
+    intro:
+      "Millville is a small rural community in eastern Shasta County, out past Palo Cedro toward the foothills. It's large-parcel country — ranches, ranchettes, and spread-out homes rather than tract subdivisions. A lot of properties here run on private wells and septic systems, with longer service lines and outbuildings, so the plumbing looks different than it does in town and most in-town plumbers don't work on it as often.",
+    localRealities: [
+      "Many Millville properties are on private wells, so 'no water' or 'low pressure' calls often trace back to a pressure tank, well line, or pump rather than anything inside the house.",
+      "Septic-connected homes need careful drain handling. Harsh chemical cleaners can damage the system, so we clear lines mechanically rather than with caustics.",
+      "Foothill cold snaps freeze exposed pipes, hose bibs, and pump houses before town does, which is when we see a wave of burst-line calls.",
+      "Longer meter-to-house and well-to-house service runs mean a leak can be well away from the house, so we trace the line to the real failure point before digging.",
+    ],
+    commonCalls: [
+      'Well pressure tank and service-line problems',
+      'Septic-safe drain cleaning',
+      'Burst pipe repair after winter freezes',
+      'Water heater repair and replacement',
+      'Yard hydrant and outbuilding plumbing',
+    ],
+  },
+
+  cottonwood: {
+    slug: 'cottonwood',
+    waterProvider: 'Private well or local water service, depending on location',
+    name: 'Cottonwood',
+    county: 'Shasta County',
+    distanceFromRedding: 'About 20 minutes south on I-5',
+    intro:
+      "Cottonwood sits at the south end of Shasta County near the Tehama County line and Cottonwood Creek, just south of Anderson on I-5. It's a mix: a small town center plus a lot of surrounding ranches and rural parcels. Closer in, homes are on local water service; out toward the creek and the county line, many are on wells and septic. That one detail changes how we approach almost every job here.",
+    localRealities: [
+      "Rural Cottonwood parcels are commonly on well water and septic, so pressure tanks, well pumps, and septic-safe drain work are part of the picture, not just the fixtures inside.",
+      "Summers at the south end of the valley run hot, which is hard on water heater venting and on outdoor PVC supply and irrigation lines.",
+      "Properties near Cottonwood Creek and the county line often have long sewer or main-line runs, so a recurring backup is frequently a main-line problem rather than a single clogged fixture.",
+      "Older homes and later additions sometimes mix galvanized, copper, and PEX, and leaks tend to show up where those materials transition.",
+    ],
+    commonCalls: [
+      'Well pump and pressure tank service',
+      'Septic-safe drain cleaning',
+      'Sewer line and main-line backups on rural lots',
+      'Water heater repair and replacement',
+      'Outdoor, irrigation, and outbuilding plumbing',
+    ],
+  },
+
+  'lake-california': {
+    slug: 'lake-california',
+    waterProvider: 'Community water system or private well, depending on the property',
+    name: 'Lake California',
+    county: 'Tehama County',
+    distanceFromRedding: 'About 25 minutes south, east of Cottonwood',
+    intro:
+      "Lake California is a residential community in Tehama County, on the east side of the Sacramento River near Cottonwood and south of Redding. It's a planned subdivision of single-family homes rather than ranch country, with lots ranging from established older builds to newer construction. We serve it the same way we serve the rest of the south end, with same-day scheduling during business hours and upfront pricing.",
+    localRealities: [
+      "Home ages across the community vary, so we see a mix of pipe materials. Leaks often turn up where older galvanized or copper meets newer PEX.",
+      "Tehama County summers are some of the hottest in the state, which is hard on water heater flue and venting and on outdoor supply lines.",
+      "Properties along the river corridor and the rural edges of the community sometimes add irrigation and outdoor plumbing that a standard in-town home doesn't have.",
+    ],
+    commonCalls: [
+      'Water heater repair and replacement',
+      'Drain cleaning, kitchen and main line',
+      'Leak detection and repair',
+      'Repipe sections at material transitions',
+      'Fixture installation and replacement',
+    ],
+  },
+
+  igo: {
+    slug: 'igo',
+    waterProvider: 'Private well or local water service, depending on location',
+    name: 'Igo',
+    county: 'Shasta County',
+    distanceFromRedding: 'About 25 minutes southwest of Redding',
+    intro:
+      "Igo is a small rural community in western Shasta County, out toward the coast range southwest of Redding. This is large-parcel, foothill country, and most homes are on private wells and septic rather than city utilities. The plumbing out here centers on well systems, long service lines, and outdoor work, which is exactly the kind of rural job a lot of in-town plumbers would rather not drive out for. We do.",
+    localRealities: [
+      "Most Igo properties are on private wells, so 'no water' and 'low pressure' calls usually trace back to a pressure tank, well line, or pump rather than anything inside the house.",
+      "Septic-connected homes need septic-safe drain work. We clear lines mechanically instead of with caustic chemicals that can harm the system.",
+      "Foothill freezes hit exposed pipes, hose bibs, and pump houses before town does, which is when burst-line calls spike.",
+      "Long well-to-house and meter-to-house runs mean a leak can be far from the building, so we trace the line to the real failure point before digging.",
+    ],
+    commonCalls: [
+      'Well pressure tank and service-line problems',
+      'Septic-safe drain cleaning',
+      'Burst pipe repair after winter freezes',
+      'Water heater repair and replacement',
+      'Yard hydrant and outbuilding plumbing',
+    ],
+  },
+
+  'happy-valley': {
+    slug: 'happy-valley',
+    waterProvider: 'Private well or local water service, depending on location',
+    name: 'Happy Valley',
+    county: 'Shasta County',
+    distanceFromRedding: 'About 20 minutes south of Redding',
+    intro:
+      "Happy Valley is rural Shasta County south of Redding, between Anderson and Olinda. It's spread-out, large-lot living, with ranchettes and rural homes rather than subdivisions, and a lot of properties run on private wells and septic. We serve the area regularly, and the jobs here lean toward well systems, sewer and septic lines, and the outdoor plumbing that comes with rural parcels.",
+    localRealities: [
+      "Many Happy Valley homes are on well water and septic, so pressure tanks, well pumps, and septic-safe drain handling are part of the work, not just the fixtures inside.",
+      "Large lots mean long sewer and main-line runs, so a recurring backup is often a main-line problem rather than a single clogged fixture.",
+      "Cold snaps freeze exposed lines, hose bibs, and pump houses on rural parcels, which drives a wave of burst-pipe calls after the first hard freeze.",
+      "Service lines from the meter or well to the house can run long, so leak detection means tracing the line to the actual break.",
+    ],
+    commonCalls: [
+      'Well pump and pressure tank service',
+      'Septic-safe drain cleaning',
+      'Sewer line and main-line backups on large lots',
+      'Burst pipe repair after winter freezes',
+      'Water heater repair and replacement',
     ],
   },
 };
