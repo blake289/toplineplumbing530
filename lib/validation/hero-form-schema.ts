@@ -8,6 +8,8 @@ export const heroFormSchema = z.object({
   consent: z.boolean().refine((val) => val === true, {
     message: 'You must agree to be contacted',
   }),
+  // Honeypot — hidden from humans; anything filled in marks the submit as spam.
+  company: z.string().optional(),
 });
 
 export type HeroFormData = z.infer<typeof heroFormSchema>;

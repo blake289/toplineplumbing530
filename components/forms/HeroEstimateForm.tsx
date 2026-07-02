@@ -21,6 +21,13 @@ export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocati
   });
 
   const onSubmit = async (data: HeroFormData) => {
+    // Honeypot filled = bot. Show success, send nothing, fire no GA4 event.
+    if (data.company) {
+      setSubmitStatus('success');
+      reset();
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -70,6 +77,15 @@ export default function HeroEstimateForm({ formLocation = 'hero' }: { formLocati
 
   return (
     <form id="hero_estimate" name="Hero Estimate Form" onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+      {/* Honeypot — visually hidden, skipped by keyboard/screen readers. Bots autofill it. */}
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute -left-[9999px] h-0 w-0 opacity-0"
+        {...register('company')}
+      />
       <Input
         label="Name"
         type="text"

@@ -5,6 +5,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { firstName, lastName, phone, email, service, message, zip } = body;
 
+    // Honeypot — bots that POST directly and fill the hidden field get a fake
+    // success. No GHL contact, no notification email.
+    if (body.company) {
+      return NextResponse.json({ success: true });
+    }
+
     const apiKey = process.env.GHL_API_KEY;
     const locationId = process.env.GHL_LOCATION_ID;
 
