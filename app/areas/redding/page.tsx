@@ -123,14 +123,14 @@ export default function ReddingPage() {
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Redding</Link>
+                    <Link href="/water-heater-repair-redding" className="text-blue-600 hover:underline block py-2">Water Heater Repair & Installation Redding</Link>
                   </h3>
                   <p className="text-gray-700">No hot water in Redding? Water heater leaking? Strange noises? Our plumbers specialize in water heater repair and same-day <Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline">water heater replacement in Redding</Link>. Same-day water heater service available.</p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                    <Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Water Heater Installation Redding</Link>
+                    <Link href="/tankless-water-heater-redding" className="text-blue-600 hover:underline block py-2">Tankless Water Heater Installation Redding</Link>
                   </h3>
                   <p className="text-gray-700">Upgrade to a tankless water heater for endless hot water and energy savings. Professional installation with warranty.</p>
                 </div>
@@ -209,13 +209,13 @@ export default function ReddingPage() {
                 <ul>
                   <li><Link href="/emergency-plumber-redding" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
                   <li><Link href="/drain-cleaning-redding" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
-                  <li><Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/water-heater-repair-redding" className="text-blue-600 hover:underline block py-2">Water Heater Repair</Link></li>
                   <li><Link href="/water-heater-replacement-redding" className="text-blue-600 hover:underline block py-2">Water Heater Replacement</Link></li>
-                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
+                  <li><Link href="/tankless-water-heater-redding" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
                   <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
                   <li><Link href="/sewer-line-redding" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
                   <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
-                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
+                  <li><Link href="/leak-detection-redding" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
                   <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>
                 </ul>
               </div>

@@ -18,7 +18,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/tankless#service',
-  name: 'Tankless Water Heater Installation in Redding, CA',
+  name: 'Tankless Water Heater Installation',
   serviceType: 'Tankless Water Heater Installation',
   description:
     'Tankless water heater installation in Redding, CA — endless on-demand hot water and lower energy bills. Navien, Rinnai, Noritz, and Rheem units sized to your household, with gas line and venting upgrades handled and old tank removal included. Free consultation, upfront pricing, licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -50,7 +50,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/tankless#webpage',
   url: 'https://toplineplumbingco.com/services/tankless',
-  name: 'Tankless Water Heater Installation in Redding, CA | Topline Plumbing',
+  name: 'Tankless Water Heater Installation | Topline Plumbing',
   description:
     'Tankless water heater installation in Redding, CA. Endless hot water, lower energy bills, free consultation. Licensed plumber since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -59,12 +59,12 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Tankless Water Heater Installation Redding, CA | Topline',
-  description: 'Tankless water heater installation in Redding, CA. Endless on-demand hot water and lower energy bills, free consultation, upfront pricing. Call (530) 704-6989.',
+  title: 'Tankless Water Heater Installation | Topline Plumbing',
+  description: 'Tankless water heater installation with endless on-demand hot water and lower energy bills. Free consultation. Serving Redding and Shasta County. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/tankless' },
   openGraph: {
-    title: 'Tankless Water Heater Installation Redding, CA | Topline',
-    description: 'Tankless water heater installation in Redding, CA. Endless on-demand hot water and lower energy bills, free consultation, upfront pricing. Call (530) 704-6989.',
+    title: 'Tankless Water Heater Installation | Topline Plumbing',
+    description: 'Tankless water heater installation with endless on-demand hot water and lower energy bills. Free consultation. Serving Redding and Shasta County. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/tankless',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Tankless Water Heater Installation in Redding, CA' }],
@@ -110,16 +110,16 @@ export default function TanklessWaterHeaterPage() {
       <ServicePageTemplate
       faqs={tanklessFAQs}
       hero={{
-        title: 'Tankless Water Heater Installation in Redding — Endless Hot Water, Lower Bills',
+        title: 'Tankless Water Heater Installation: Endless Hot Water, Lower Bills',
         description: [
           "Tired of running out of hot water? Want to cut your energy bills by 30%?",
           "Tankless water heaters provide hot water on demand, only heating water when you need it. That means endless hot water for your family and significant savings on your energy bill."
         ],
       }}
       relatedCallout={{
-        title: 'Sticking with a Tank?',
-        href: '/water-heater-replacement-redding',
-        label: 'See our tank replacement guide',
+        title: 'Going Tankless in Redding?',
+        href: '/tankless-water-heater-redding',
+        label: 'See our Redding tankless page',
       }}
       stats={[
         {

@@ -18,7 +18,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/water-heater-repair#service',
-  name: 'Water Heater Repair in Redding, CA',
+  name: 'Water Heater Repair Services',
   serviceType: 'Water Heater Repair',
   description:
     'Water heater repair in Redding, CA — same-day diagnostic for no hot water, leaks, rumbling tanks, and pilot or ignition trouble. Thermostat and heating element replacement, sediment flush, anode rod and pressure relief valve service, plus honest repair-versus-replace advice. Upfront pricing. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -50,7 +50,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/water-heater-repair#webpage',
   url: 'https://toplineplumbingco.com/services/water-heater-repair',
-  name: 'Water Heater Repair in Redding, CA | Topline Plumbing',
+  name: 'Water Heater Repair Services | Topline Plumbing',
   description:
     'Water heater repair in Redding, CA. Same-day diagnostic, thermostat and element repair, leak and flush service. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -59,12 +59,12 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Repair in Redding, CA | Topline Plumbing',
-  description: "Expert water heater repair in Redding, CA with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
+  title: 'Water Heater Repair Services | Topline Plumbing',
+  description: "Expert water heater repair with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Serving Redding and Shasta County. Call (530) 704-6989.",
   alternates: { canonical: 'https://toplineplumbingco.com/services/water-heater-repair' },
   openGraph: {
-    title: 'Water Heater Repair in Redding, CA | Topline Plumbing',
-    description: "Expert water heater repair in Redding, CA with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Call (530) 704-6989.",
+    title: 'Water Heater Repair Services | Topline Plumbing',
+    description: "Expert water heater repair with same-day diagnostic, thermostat, heating element, leak repair, and annual flush service. Serving Redding and Shasta County. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com/services/water-heater-repair',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Water Heater Repair in Redding, CA' }],
@@ -110,16 +110,16 @@ export default function WaterHeaterRepairPage() {
       <ServicePageTemplate
       faqs={waterHeaterFAQs}
       hero={{
-        title: 'Water Heater Repair in Redding, CA — Same-Day Diagnostic',
+        title: 'Water Heater Repair: Same-Day Diagnostic',
         description: [
           "Is your water heater making strange noises? Running out of hot water faster than usual? Leaking around the base?",
           "With 3,000+ jobs completed across Northern California, Topline Plumbing diagnoses water heater problems fast and repairs what can be saved — same-day service during business hours.",
         ],
       }}
       relatedCallout={{
-        title: 'Need a Full Replacement Instead?',
-        href: '/water-heater-replacement-redding',
-        label: 'See our Redding replacement guide',
+        title: 'Need Water Heater Repair in Redding?',
+        href: '/water-heater-repair-redding',
+        label: 'See our Redding water heater repair page',
       }}
       stats={[
         {

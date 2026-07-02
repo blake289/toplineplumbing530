@@ -89,15 +89,17 @@ export default function Navbar() {
                   {openDropdown === 'services' && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
                       <div className="w-60 bg-white rounded-lg shadow-xl border border-gray-100 py-2 origin-top animate-[fadeInScale_150ms_cubic-bezier(0.23,1,0.32,1)_forwards]">
+                        {/* City money pages get the sitewide nav authority; generic
+                            /services pages are education hubs linked from page bodies. */}
                         {[
-                          ['Emergency Plumbing', '/services/emergency'],
-                          ['Water Heater Repair', '/services/water-heater-repair'],
+                          ['Emergency Plumbing', '/emergency-plumber-redding'],
+                          ['Water Heater Repair', '/water-heater-repair-redding'],
                           ['Water Heater Replacement', '/water-heater-replacement-redding'],
-                          ['Drain Cleaning', '/services/drain-cleaning'],
-                          ['Tankless Upgrades', '/services/tankless'],
-                          ['Sewer Line Repair', '/services/sewer-line'],
+                          ['Drain Cleaning', '/drain-cleaning-redding'],
+                          ['Tankless Upgrades', '/tankless-water-heater-redding'],
+                          ['Sewer Line Repair', '/sewer-line-redding'],
                           ['Gas Line Services', '/services/gas-line'],
-                          ['Leak Detection', '/services/leak-detection'],
+                          ['Leak Detection', '/leak-detection-redding'],
                           ['Repiping Services', '/services/repiping-services'],
                           ['Fixture Installs', '/services/fixture-installs'],
                         ].map(([label, href]) => (
@@ -139,6 +141,11 @@ export default function Navbar() {
                           ['Palo Cedro', '/areas/palo-cedro'],
                           ['Bella Vista', '/areas/bella-vista'],
                           ['Red Bluff', '/areas/red-bluff'],
+                          ['Cottonwood', '/areas/cottonwood'],
+                          ['Millville', '/areas/millville'],
+                          ['Happy Valley', '/areas/happy-valley'],
+                          ['Igo', '/areas/igo'],
+                          ['Lake California', '/areas/lake-california'],
                         ].map(([label, href]) => (
                           <Link
                             key={href}

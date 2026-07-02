@@ -9,6 +9,11 @@ const serviceAreas: Array<[string, string]> = [
   ['Palo Cedro', '/areas/palo-cedro'],
   ['Bella Vista', '/areas/bella-vista'],
   ['Red Bluff', '/areas/red-bluff'],
+  ['Cottonwood', '/areas/cottonwood'],
+  ['Millville', '/areas/millville'],
+  ['Happy Valley', '/areas/happy-valley'],
+  ['Igo', '/areas/igo'],
+  ['Lake California', '/areas/lake-california'],
 ];
 
 // Full city x service link matrix — every landing page gets a sitewide link
@@ -41,7 +46,9 @@ const cityServiceColumns: Array<{ title: string; links: Array<[string, string]> 
     links: [
       ['Redding (Repair)', '/water-heater-repair-redding'],
       ['Redding (Replace)', '/water-heater-replacement-redding'],
+      ['Redding (Tankless)', '/tankless-water-heater-redding'],
       ['Anderson', '/water-heater-repair-anderson'],
+      ['Anderson (Tankless)', '/tankless-water-heater-anderson'],
       ['Shasta Lake', '/water-heater-repair-shasta-lake'],
       ['Palo Cedro', '/water-heater-repair-palo-cedro'],
       ['Bella Vista', '/water-heater-repair-bella-vista'],
@@ -206,6 +213,14 @@ export default function Footer() {
             Also:{' '}
             <Link href="/commercial-plumbing-redding" className="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">
               Commercial Plumbing in Redding
+            </Link>
+            {' · '}
+            <Link href="/commercial-plumbing-shasta-lake" className="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">
+              Commercial Plumbing in Shasta Lake
+            </Link>
+            {' · '}
+            <Link href="/leak-detection-redding" className="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">
+              Leak Detection in Redding
             </Link>
           </p>
         </div>

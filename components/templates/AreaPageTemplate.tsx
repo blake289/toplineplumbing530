@@ -20,20 +20,35 @@ const ALL_AREAS: { slug: CitySlug; name: string }[] = [
   { slug: 'lake-california', name: 'Lake California' },
 ];
 
+// Nearest town that has dedicated city-service money pages — the service links
+// below point there so template towns feed authority to real landing pages.
+const NEAREST_MONEY_CITY: Partial<Record<CitySlug, string>> = {
+  cottonwood: 'anderson',
+  millville: 'palo-cedro',
+  'happy-valley': 'anderson',
+  igo: 'redding',
+  'lake-california': 'red-bluff',
+};
+
 const SERVICES = [
-  { href: '/services/emergency', label: 'Emergency Plumbing', desc: (c: string) => `Burst pipes, water heater flooding, and sewer backups in ${c} — same-day response during business hours (Mon–Fri 8:00a–4:30p).` },
-  { href: '/services/drain-cleaning', label: 'Drain Cleaning', desc: (c: string) => `Clogged or slow drains in ${c}? We clear kitchen, bathroom, and main lines with professional equipment, usually in under an hour.` },
-  { href: '/services/water-heater-repair', label: 'Water Heater Repair & Replacement', desc: (c: string) => `No hot water, a leaking tank, or rumbling noises in ${c}? We repair pilot, thermostat, and valve faults, flush sediment, and replace tanks same-day with upfront pricing.` },
-  { href: '/services/tankless', label: 'Tankless Water Heater Installation', desc: (c: string) => `Endless hot water and lower standby energy use for ${c} homes. We size the unit correctly and install it with warranty.` },
-  { href: '/services/sewer-line', label: 'Sewer Line Repair', desc: (c: string) => `Recurring backups, gurgling toilets, or sewage odors in ${c} usually point past a single fixture to the main or sewer line. We diagnose the real cause before quoting.` },
-  { href: '/services/leak-detection', label: 'Leak Detection', desc: (c: string) => `Hidden leaks and unexplained water bills in ${c}. We trace the line to the actual failure point before any digging or cutting.` },
+  { href: (m: string) => `/emergency-plumber-${m}`, label: 'Emergency Plumbing', desc: (c: string) => `Burst pipes, water heater flooding, and sewer backups in ${c} — same-day response during business hours (Mon–Fri 8:00a–4:30p).` },
+  { href: (m: string) => `/drain-cleaning-${m}`, label: 'Drain Cleaning', desc: (c: string) => `Clogged or slow drains in ${c}? We clear kitchen, bathroom, and main lines with professional equipment, usually in under an hour.` },
+  { href: (m: string) => `/water-heater-repair-${m}`, label: 'Water Heater Repair & Replacement', desc: (c: string) => `No hot water, a leaking tank, or rumbling noises in ${c}? We repair pilot, thermostat, and valve faults, flush sediment, and replace tanks same-day with upfront pricing.` },
+  { href: () => '/tankless-water-heater-redding', label: 'Tankless Water Heater Installation', desc: (c: string) => `Endless hot water and lower standby energy use for ${c} homes. We size the unit correctly and install it with warranty.` },
+  { href: (m: string) => `/sewer-line-${m}`, label: 'Sewer Line Repair', desc: (c: string) => `Recurring backups, gurgling toilets, or sewage odors in ${c} usually point past a single fixture to the main or sewer line. We diagnose the real cause before quoting.` },
+  { href: () => '/leak-detection-redding', label: 'Leak Detection', desc: (c: string) => `Hidden leaks and unexplained water bills in ${c}. We trace the line to the actual failure point before any digging or cutting.` },
 ];
 
 export default function AreaPageTemplate({ slug }: { slug: CitySlug }) {
   const profile = getCityProfile(slug);
   const { name, county } = profile;
   const url = `https://toplineplumbingco.com/areas/${slug}`;
-  const nearby = ALL_AREAS.filter((a) => a.slug !== slug).slice(0, 6);
+  // Rotate from this town's position so every area page (including the newest
+  // towns) receives inbound links from siblings — plain slice(0, 6) always
+  // returned the same first six and left the rest orphaned.
+  const idx = ALL_AREAS.findIndex((a) => a.slug === slug);
+  const nearby = [...ALL_AREAS.slice(idx + 1), ...ALL_AREAS.slice(0, Math.max(idx, 0))].slice(0, 6);
+  const money = NEAREST_MONEY_CITY[slug] ?? 'redding';
 
   const webPageSchema = {
     '@context': 'https://schema.org',
@@ -117,9 +132,9 @@ export default function AreaPageTemplate({ slug }: { slug: CitySlug }) {
               <h2 className="text-3xl font-bold text-gray-900 pt-6">Complete Plumbing Services in {name}</h2>
               <div className="space-y-6">
                 {SERVICES.map((s) => (
-                  <div key={s.href}>
+                  <div key={s.label}>
                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                      <Link href={s.href} className="text-blue-600 hover:underline block py-2">{s.label}</Link>
+                      <Link href={s.href(money)} className="text-blue-600 hover:underline block py-2">{s.label}</Link>
                     </h3>
                     <p className="text-gray-700">{s.desc(name)}</p>
                   </div>
@@ -174,14 +189,14 @@ export default function AreaPageTemplate({ slug }: { slug: CitySlug }) {
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                 <h3 className="text-xl font-bold mb-4 text-gray-900">{name} Services</h3>
                 <ul>
-                  <li><Link href="/services/emergency" className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
-                  <li><Link href="/services/drain-cleaning" className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
-                  <li><Link href="/services/water-heater-repair" className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
-                  <li><Link href="/services/tankless" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
+                  <li><Link href={`/emergency-plumber-${money}`} className="text-blue-600 hover:underline block py-2">Emergency Plumbing</Link></li>
+                  <li><Link href={`/drain-cleaning-${money}`} className="text-blue-600 hover:underline block py-2">Drain Cleaning</Link></li>
+                  <li><Link href={`/water-heater-repair-${money}`} className="text-blue-600 hover:underline block py-2">Water Heater</Link></li>
+                  <li><Link href="/tankless-water-heater-redding" className="text-blue-600 hover:underline block py-2">Tankless Upgrades</Link></li>
                   <li><Link href="/services/repiping-services" className="text-blue-600 hover:underline block py-2">Repiping</Link></li>
-                  <li><Link href="/services/sewer-line" className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
+                  <li><Link href={`/sewer-line-${money}`} className="text-blue-600 hover:underline block py-2">Sewer Line</Link></li>
                   <li><Link href="/services/gas-line" className="text-blue-600 hover:underline block py-2">Gas Line</Link></li>
-                  <li><Link href="/services/leak-detection" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
+                  <li><Link href="/leak-detection-redding" className="text-blue-600 hover:underline block py-2">Leak Detection</Link></li>
                   <li><Link href="/services/fixture-installs" className="text-blue-600 hover:underline block py-2">Fixture Installs</Link></li>
                 </ul>
               </div>
@@ -219,7 +234,7 @@ export default function AreaPageTemplate({ slug }: { slug: CitySlug }) {
               </svg>
               <span className="whitespace-nowrap">Call: (530) 704-6989</span>
             </a>
-            <Link href="/" className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all shadow-lg text-lg">
+            <Link href="/services" className="h-14 px-8 bg-white text-navy-900 font-semibold rounded-full inline-flex items-center justify-center hover:bg-gray-100 transition-all shadow-lg text-lg">
               View All Services
             </Link>
           </div>

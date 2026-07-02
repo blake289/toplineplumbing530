@@ -5,12 +5,12 @@ import FAQSchema from '@/components/layout/FAQSchema';
 import BreadcrumbSchema from '@/components/layout/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'Emergency Plumbing Services in Redding & Shasta County',
-  description: 'Emergency plumbing services across Redding and Shasta County. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
+  title: 'Emergency Plumbing: What We Fix Same-Day | Topline Plumbing',
+  description: 'Emergency plumbing services with same-day response for burst pipes, gas leaks, and flooding during business hours. Serving Redding and Shasta County. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/emergency' },
   openGraph: {
-    title: 'Emergency Plumbing Services in Redding & Shasta County',
-    description: 'Emergency plumbing services across Redding and Shasta County. Same-day response for burst pipes, gas leaks, and flooding during business hours (Mon–Fri 8a–4:30p). Call (530) 704-6989.',
+    title: 'Emergency Plumbing: What We Fix Same-Day | Topline Plumbing',
+    description: 'Emergency plumbing services with same-day response for burst pipes, gas leaks, and flooding during business hours. Serving Redding and Shasta County. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/emergency',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Emergency Plumbing in Redding, CA' }],
@@ -33,7 +33,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/emergency#service',
-  name: 'Emergency Plumber in Redding, CA',
+  name: 'Emergency Plumbing Services',
   serviceType: 'Emergency Plumbing',
   description:
     'Emergency plumbing in Redding, CA — same-day response during business hours (Mon–Fri 8a–4:30p) for burst pipes, major leaks, sewage backups, water heater flooding, and gas line problems. Upfront pricing, fully stocked trucks, no emergency upcharge during business hours. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -65,7 +65,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/emergency#webpage',
   url: 'https://toplineplumbingco.com/services/emergency',
-  name: 'Emergency Plumbing Services in Redding & Shasta County | Topline Plumbing',
+  name: 'Emergency Plumbing: What We Fix Same-Day | Topline Plumbing',
   description:
     'Emergency plumber in Redding, CA. Same-day response for burst pipes, gas leaks, and flooding during business hours. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -161,11 +161,16 @@ export default function EmergencyPlumbingPage() {
       <ServicePageTemplate
       faqs={emergencyFAQs}
       hero={{
-        title: 'Emergency Plumber in Redding — Same-Day Response During Business Hours',
+        title: 'Emergency Plumbing: Same-Day Response During Business Hours',
         description: [
           "Burst pipe flooding your home? Sewage backing up? Gas leak during business hours? Call us now.",
           "Topline Plumbing handles emergency plumbing across Redding and Northern California Monday through Friday, 8:00a to 4:30p. Same-day response, upfront pricing, and licensed technicians who actually finish the job."
         ],
+      }}
+      relatedCallout={{
+        title: 'Plumbing Emergency in Redding?',
+        href: '/emergency-plumber-redding',
+        label: 'See our Redding emergency plumber page',
       }}
       services={[
         {

@@ -18,7 +18,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/leak-detection#service',
-  name: 'Leak Detection in Redding, CA',
+  name: 'Leak Detection Services',
   serviceType: 'Leak Detection',
   description:
     'Professional leak detection in Redding, CA — electronic and acoustic equipment to pinpoint hidden leaks in walls, slabs, and buried pipe without unnecessary demolition. Slab leak detection, irrigation and pool line testing, and repair. Upfront pricing. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -50,7 +50,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/leak-detection#webpage',
   url: 'https://toplineplumbingco.com/services/leak-detection',
-  name: 'Leak Detection Services in Redding, CA | Topline Plumbing',
+  name: 'Leak Detection Services: Find Hidden Leaks | Topline Plumbing',
   description:
     'Leak detection in Redding, CA. Find hidden leaks in walls, slabs, and pipes with non-invasive electronic methods. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -59,12 +59,12 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Leak Detection Services in Redding, CA | Topline Plumbing',
-  description: 'Professional leak detection in Redding, CA. Find hidden water leaks in walls, slabs, and pipes fast. Non-invasive methods. Call (530) 704-6989.',
+  title: 'Leak Detection Services: Find Hidden Leaks | Topline Plumbing',
+  description: 'Professional leak detection to find hidden water leaks in walls, slabs, and pipes with non-invasive methods. Serving Redding and Shasta County. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/leak-detection' },
   openGraph: {
-    title: 'Leak Detection Services in Redding, CA | Topline Plumbing',
-    description: 'Professional leak detection in Redding, CA. Find hidden water leaks in walls, slabs, and pipes fast. Non-invasive methods. Call (530) 704-6989.',
+    title: 'Leak Detection Services: Find Hidden Leaks | Topline Plumbing',
+    description: 'Professional leak detection to find hidden water leaks in walls, slabs, and pipes with non-invasive methods. Serving Redding and Shasta County. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/leak-detection',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Leak Detection Services in Redding, CA' }],
@@ -110,11 +110,16 @@ export default function LeakDetectionPage() {
       <ServicePageTemplate
         faqs={faqs}
         hero={{
-          title: 'Leak Detection in Redding, CA — Find It Before It Becomes a Disaster',
+          title: 'Leak Detection: Find It Before It Becomes a Disaster',
           description: [
             "A hidden water leak can quietly destroy your walls, floors, and foundation for months before you notice visible damage. By then, the repair bill is 10x what it would have been.",
             "Topline Plumbing uses electronic and acoustic leak detection equipment to find leaks in walls, under slabs, and in buried pipes — without unnecessary demolition. We find it, we fix it.",
           ],
+        }}
+        relatedCallout={{
+          title: 'Need Leak Detection in Redding?',
+          href: '/leak-detection-redding',
+          label: 'See our Redding leak detection page',
         }}
         services={[
           {

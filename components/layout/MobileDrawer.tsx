@@ -85,14 +85,14 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             {servicesExpanded && (
               <div className="pl-4 border-l-2 border-gray-100 ml-2 mb-2">
                 <Link
-                  href="/services/emergency"
+                  href="/emergency-plumber-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Emergency Plumbing
                 </Link>
                 <Link
-                  href="/services/water-heater-repair"
+                  href="/water-heater-repair-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
@@ -106,21 +106,21 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                   Water Heater Replacement
                 </Link>
                 <Link
-                  href="/services/drain-cleaning"
+                  href="/drain-cleaning-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Drain Cleaning
                 </Link>
                 <Link
-                  href="/services/tankless"
+                  href="/tankless-water-heater-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
                   Tankless Upgrades
                 </Link>
                 <Link
-                  href="/services/sewer-line"
+                  href="/sewer-line-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
@@ -134,7 +134,7 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                   Gas Line Services
                 </Link>
                 <Link
-                  href="/services/leak-detection"
+                  href="/leak-detection-redding"
                   className="block py-3.5 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
                   onClick={onClose}
                 >
@@ -194,6 +194,21 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 </Link>
                 <Link href="/areas/red-bluff" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   Red Bluff
+                </Link>
+                <Link href="/areas/cottonwood" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Cottonwood
+                </Link>
+                <Link href="/areas/millville" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Millville
+                </Link>
+                <Link href="/areas/happy-valley" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Happy Valley
+                </Link>
+                <Link href="/areas/igo" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Igo
+                </Link>
+                <Link href="/areas/lake-california" className="block py-3 px-2 text-gray-700 hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
+                  Lake California
                 </Link>
                 <Link href="/areas" className="block py-3 px-2 text-primary font-semibold hover:bg-gray-50 rounded transition-colors" onClick={onClose}>
                   View All Areas &rarr;

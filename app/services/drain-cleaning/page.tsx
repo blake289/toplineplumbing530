@@ -18,7 +18,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/drain-cleaning#service',
-  name: 'Drain Cleaning in Redding, CA',
+  name: 'Drain Cleaning Services',
   serviceType: 'Drain Cleaning',
   description:
     'Professional drain cleaning in Redding, CA — kitchen, bathroom, and main sewer line clogs cleared with mechanical power augers, not chemicals. Sewer camera inspection for recurring clogs and root intrusion. Same-day service during business hours (Mon–Fri 8a–4:30p) with upfront pricing. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -50,7 +50,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/drain-cleaning#webpage',
   url: 'https://toplineplumbingco.com/services/drain-cleaning',
-  name: 'Drain Cleaning Services in Redding, CA | Topline Plumbing',
+  name: 'Drain Cleaning: How We Clear Any Clog | Topline Plumbing',
   description:
     'Drain cleaning in Redding, CA. Power-auger clog removal and sewer camera inspection with upfront pricing. Licensed local plumber since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -59,12 +59,12 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning Services in Redding, CA | Topline Plumbing',
-  description: 'Professional drain cleaning in Redding, CA with upfront pricing. We clear tough clogs and backed-up sewer lines, not just mask them. Call (530) 704-6989.',
+  title: 'Drain Cleaning: How We Clear Any Clog | Topline Plumbing',
+  description: 'Professional drain cleaning with mechanical power augers and upfront pricing. We clear tough clogs and backed-up sewer lines. Serving Redding and Shasta County. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/drain-cleaning' },
   openGraph: {
-    title: 'Drain Cleaning Services in Redding, CA | Topline Plumbing',
-    description: 'Professional drain cleaning in Redding, CA with upfront pricing. We clear tough clogs and backed-up sewer lines, not just mask them. Call (530) 704-6989.',
+    title: 'Drain Cleaning: How We Clear Any Clog | Topline Plumbing',
+    description: 'Professional drain cleaning with mechanical power augers and upfront pricing. We clear tough clogs and backed-up sewer lines. Serving Redding and Shasta County. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/drain-cleaning',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Drain Cleaning Services in Redding, CA' }],
@@ -110,11 +110,16 @@ export default function DrainCleaningPage() {
       <ServicePageTemplate
       faqs={drainFAQs}
       hero={{
-        title: 'Drain Cleaning in Redding — Fast, Thorough, & Guaranteed',
+        title: 'Drain Cleaning: Fast, Thorough, & Guaranteed',
         description: [
           "Slow drain? Backed-up sink? Sewage smell? Don't reach for the chemical drain cleaner — it only masks the problem.",
           "Topline Plumbing uses professional mechanical power augers to clear tough clogs and backed-up sewer lines. We don't just push the clog further down; we remove it completely."
         ],
+      }}
+      relatedCallout={{
+        title: 'Need Drain Cleaning in Redding?',
+        href: '/drain-cleaning-redding',
+        label: 'See our Redding drain cleaning page',
       }}
       services={[
         {

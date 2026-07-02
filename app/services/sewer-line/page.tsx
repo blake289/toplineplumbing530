@@ -18,7 +18,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://toplineplumbingco.com/services/sewer-line#service',
-  name: 'Sewer Line Repair & Replacement in Redding, CA',
+  name: 'Sewer Line Repair & Replacement Services',
   serviceType: 'Sewer Line Repair',
   description:
     'Sewer line repair and replacement in Redding, CA — camera inspection to diagnose the exact problem before digging, spot repairs, root removal, trenchless options when conditions allow, and full line replacement. Upfront pricing after inspection, properly permitted. Licensed plumber CSLB #596557, serving the Redding area since 1998.',
@@ -50,7 +50,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   '@id': 'https://toplineplumbingco.com/services/sewer-line#webpage',
   url: 'https://toplineplumbingco.com/services/sewer-line',
-  name: 'Sewer Line Repair & Replacement in Redding, CA | Topline Plumbing',
+  name: 'Sewer Line Repair & Replacement Services | Topline Plumbing',
   description:
     'Sewer line repair and replacement in Redding, CA. Camera inspection, root removal, trenchless options, full replacement. Licensed since 1998, CSLB #596557.',
   inLanguage: 'en-US',
@@ -59,12 +59,12 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Sewer Line Repair & Replacement Redding, CA | Topline',
-  description: 'Expert sewer line repair and replacement in Redding, CA. Camera inspection, trenchless options available. Licensed, same-day response. Call (530) 704-6989.',
+  title: 'Sewer Line Repair & Replacement Services | Topline Plumbing',
+  description: 'Expert sewer line repair and replacement with camera inspection before we dig. Trenchless options available. Serving Redding and Shasta County. Call (530) 704-6989.',
   alternates: { canonical: 'https://toplineplumbingco.com/services/sewer-line' },
   openGraph: {
-    title: 'Sewer Line Repair & Replacement Redding, CA | Topline',
-    description: 'Expert sewer line repair and replacement in Redding, CA. Camera inspection, trenchless options available. Licensed, same-day response. Call (530) 704-6989.',
+    title: 'Sewer Line Repair & Replacement Services | Topline Plumbing',
+    description: 'Expert sewer line repair and replacement with camera inspection before we dig. Trenchless options available. Serving Redding and Shasta County. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/services/sewer-line',
     siteName: 'Topline Plumbing',
     images: [{ url: '/images/water-heater.webp', width: 1200, height: 630, alt: 'Topline Plumbing — Sewer Line Services in Redding, CA' }],
@@ -110,11 +110,16 @@ export default function SewerLinePage() {
       <ServicePageTemplate
         faqs={faqs}
         hero={{
-          title: 'Sewer Line Repair & Replacement in Redding, CA',
+          title: 'Sewer Line Repair & Replacement: We Diagnose Before We Dig',
           description: [
             "A broken sewer line is one of the most serious plumbing problems a homeowner can face — raw sewage backing up into your home, foul odors, and potential foundation damage if left untreated.",
             "Topline Plumbing uses sewer camera inspection to diagnose the exact problem before we ever dig. We give you upfront pricing, explain all your options, and get it fixed right the first time.",
           ],
+        }}
+        relatedCallout={{
+          title: 'Need Sewer Line Service in Redding?',
+          href: '/sewer-line-redding',
+          label: 'See our Redding sewer line page',
         }}
         services={[
           {
