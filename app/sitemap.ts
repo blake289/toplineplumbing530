@@ -4,7 +4,7 @@ import { getAllPosts } from '@/lib/blog';
 const BASE_URL = 'https://toplineplumbingco.com';
 
 // Honest build stamp. Update when site content is materially revised.
-const BUILD_DATE = new Date('2026-06-11');
+const BUILD_DATE = new Date('2026-07-01');
 
 // priority tiers: home 1.0, money pages 0.8, hubs 0.6, legal 0.3
 const moneyPages = [
@@ -18,7 +18,11 @@ const moneyPages = [
   '/services/tankless',
   '/services/water-heater-repair',
   '/commercial-plumbing-redding',
+  '/commercial-plumbing-shasta-lake',
   '/hydro-jetting-redding',
+  '/leak-detection-redding',
+  '/tankless-water-heater-anderson',
+  '/tankless-water-heater-redding',
   '/water-softener-redding',
   '/water-heater-replacement-redding',
   '/drain-cleaning-anderson',
