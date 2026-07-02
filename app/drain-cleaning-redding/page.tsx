@@ -80,16 +80,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Drain Cleaning in Redding, CA | Topline Plumbing',
+  title: 'Drain Cleaning Redding, CA. Same-Day, 5.0 Stars | Topline',
   description:
-    'Drain cleaning in Redding, CA. Local clogged drain service since 1998 — power augers, hydro jetting, camera diagnosis, upfront pricing, same-day. Call (530) 704-6989.',
+    'Clogged drain in Redding? Same-day drain clearing with the price quoted upfront before work starts. 5.0 stars on Google. Call (530) 704-6989.',
   alternates: {
     canonical: 'https://toplineplumbingco.com/drain-cleaning-redding',
   },
   openGraph: {
-    title: 'Drain Cleaning in Redding, CA | Topline Plumbing',
+    title: 'Drain Cleaning Redding, CA. Same-Day, 5.0 Stars | Topline',
     description:
-      'Drain cleaning in Redding, CA. Local clogged drain service since 1998 — power augers, hydro jetting, camera diagnosis, upfront pricing, same-day. Call (530) 704-6989.',
+      'Clogged drain in Redding? Same-day drain clearing with the price quoted upfront before work starts. 5.0 stars on Google. Call (530) 704-6989.',
     url: 'https://toplineplumbingco.com/drain-cleaning-redding',
     siteName: 'Topline Plumbing',
     images: [
@@ -115,6 +115,11 @@ const drainFAQs = [
     question: 'Do you offer same-day drain cleaning in Redding?',
     answer:
       'Yes. Topline offers same-day drain cleaning in Redding during business hours (Mon–Fri 8:00a–4:30p) — Redding is our home base. We keep fully stocked service trucks so most clogs get cleared on the first visit. Call (530) 704-6989 to check today’s availability.',
+  },
+  {
+    question: 'Who should I call for a clogged sink or drain in Redding?',
+    answer:
+      'A licensed local plumber. Topline Plumbing is a licensed (CSLB #596557), family-owned plumber based in Redding, and we clear clogged sinks, tubs, toilets, and main sewer lines with same-day service during business hours (Mon–Fri 8:00a–4:30p). Call (530) 704-6989 for a free estimate with any service, and we quote the price upfront before any work starts.',
   },
   {
     question: 'What should I look for in a drain cleaning company near me?',

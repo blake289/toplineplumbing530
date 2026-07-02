@@ -140,6 +140,11 @@ const sewerFAQs = [
       "Always. We run a high-definition camera through the line first to find the exact location, depth, and cause of the problem — root intrusion, a crack, a collapse, or a clog. You see the footage yourself. That inspection tells us whether a spot repair will do or the line needs full replacement, so you only pay to fix what's actually wrong. No guessing, no digging blind.",
   },
   {
+    question: 'Do you offer sewer camera inspections near me in Redding?',
+    answer:
+      'Yes. Topline runs high-definition sewer and plumbing camera inspections across Redding and the surrounding Shasta County area. The camera shows the exact location, depth, and cause of the problem, and you see the footage yourself before any repair is quoted. We usually offer same-day or next-business-day camera appointments during business hours. Call (530) 704-6989. The estimate is free with any service.',
+  },
+  {
     question: 'Can you handle tree-root intrusion in older Redding sewer lines?',
     answer:
       "Yes. Root intrusion is one of the most common sewer problems we see across Redding's older neighborhoods — roots seek out the moisture in the line, work into the joints, and crack the pipe. We cut and clear the roots, camera the line to assess the damage, and tell you honestly whether mechanical clearing buys you time or the section needs to be repaired or replaced.",
@@ -386,6 +391,35 @@ export default function SewerLineReddingPage() {
             >
               Book a camera inspection: (530) 704-6989 →
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Sewer camera inspection */}
+      <section className="py-16 md:py-24 bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy-900 mb-6">
+            Sewer Camera Inspection in Redding
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <p>
+              Searching for a sewer inspection near me or a plumbing camera near me? This is that
+              service, based right here in Redding. We run a high-definition camera through your
+              sewer line to pinpoint the exact location, depth, and cause of the problem: root
+              intrusion, a crack, a bellied or collapsed section, or a stubborn blockage. You watch
+              the footage yourself, so you know exactly what is wrong before any repair is quoted.
+            </p>
+            <p>
+              A camera inspection is the right first step for recurring backups, whole-house slow
+              drains, and older Redding homes with clay or cast iron mains. We usually offer
+              same-day or next-business-day camera appointments during business hours (Mon–Fri
+              8:00a–4:30p), the estimate is free with any service, and every job is quoted upfront
+              before work starts. Call{' '}
+              <a href="tel:5307046989" className="text-primary font-semibold hover:underline">
+                (530) 704-6989
+              </a>{' '}
+              to book.
+            </p>
           </div>
         </div>
       </section>

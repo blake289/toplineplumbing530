@@ -105,16 +105,16 @@ const webPageSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Water Heater Replacement Near Me — Redding, CA | Topline',
+  title: 'Water Heater Replacement Redding. Same-Day Swap | Topline',
   description:
-    "Water heater replacement and tankless installation in Redding, CA. Tank swaps and upgrades with honest upfront pricing. Licensed since 1998. Call (530) 704-6989.",
+    "Same-day water heater replacement in Redding, CA. Upfront pricing quoted before work starts, free estimates, 5.0 stars on Google. Call (530) 704-6989.",
   alternates: {
     canonical: 'https://toplineplumbingco.com/water-heater-replacement-redding',
   },
   openGraph: {
-    title: 'Water Heater Replacement Near Me — Redding, CA | Topline',
+    title: 'Water Heater Replacement Redding. Same-Day Swap | Topline',
     description:
-      "Redding's hot water heater specialists. Tank replacement, installation, and tankless conversions, with permit, disposal, and strapping in one upfront price.",
+      "Same-day water heater replacement in Redding, CA. Upfront pricing quoted before work starts, free estimates, 5.0 stars on Google. Call (530) 704-6989.",
     url: 'https://toplineplumbingco.com/water-heater-replacement-redding',
     siteName: 'Topline Plumbing',
     images: [
