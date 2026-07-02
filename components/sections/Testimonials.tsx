@@ -54,35 +54,17 @@ function GoogleReviewsBadge() {
   );
 }
 
-function BBBBadge() {
+function FamilyOwnedBadge() {
   return (
     <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
-      <div className="relative flex items-center justify-center w-11 h-11 rounded-lg bg-[#004B87] text-white">
-        <span className="text-[11px] font-black tracking-tight leading-none">BBB</span>
+      <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-navy-900/5 text-navy-900">
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
       </div>
       <div className="flex flex-col leading-tight">
-        <span className="text-[15px] font-black text-[#004B87]">A+ Rating</span>
-        <span className="text-[11px] font-semibold text-gray-500 tracking-wide">Better Business Bureau</span>
-      </div>
-    </div>
-  );
-}
-
-function YelpBadge() {
-  return (
-    <div className="flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-[filter,opacity] duration-200 ease-snappy">
-      <svg className="w-9 h-9" viewBox="0 0 228 228" aria-hidden>
-        <path fill="#D32323" d="M193.564 124.04l-41.696-13.586s-13.046-3.938-10.11-13.01c0 0 .947-3.048 4.55-7.77l43.77-51.55s3.99-4.85 6.57-6.09c3.27-1.58 7.12-1.2 10.08.46 4.55 2.55 26.46 25.73 30.99 35.58 0 0 8.67 18.95 11.94 45.23 1.34 10.87-.56 18.14-8.25 20.11-7.29 1.86-35.03-9.37-35.03-9.37h-.01zM133.53 151.14L74 105.2S59.24 94.28 67.44 84.38c0 0 3.5-4.35 17.94-6.37l64.38-8.86s5.74-.71 8.82-.25c5.36.8 8.49 4.02 9.71 8.15 1.92 6.55-1.9 40.85-6.16 52.77 0 0-5.17 20.67-22.64 16.43l-5.96-1.1v5.99zM118.02 24.87c-1.76-9.01-5.41-20.67-9.53-25.89-6.24-7.88-33.87-9.03-55.2.58C32.32 9.43 17.4 30.76 15 45.12c-1.97 11.83 4.09 14.82 4.09 14.82l66.21 40.87s8.84 6.49 16.68-.31c8.57-7.42 20.83-60.43 16.04-75.63z"/>
-      </svg>
-      <div className="flex flex-col leading-tight">
-        <div className="flex items-center gap-0.5">
-          {[...Array(5)].map((_, i) => (
-            <svg key={i} className="w-3.5 h-3.5 text-[#D32323] fill-current" viewBox="0 0 20 20" aria-hidden>
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-        <span className="text-[11px] font-semibold text-gray-500 tracking-wide mt-0.5">Yelp Reviews</span>
+        <span className="text-[15px] font-black text-navy-900">Family Owned</span>
+        <span className="text-[11px] font-semibold text-gray-500 tracking-wide">Serving Redding since 1998</span>
       </div>
     </div>
   );
@@ -185,14 +167,13 @@ export default function Testimonials() {
         {/* Trust Badges Row */}
         <div className="pt-10 border-t border-gray-200">
           <p className="text-center text-[11px] font-semibold tracking-[0.12em] text-gray-400 uppercase mb-7">
-            Trusted &amp; reviewed across
+            Why homeowners trust Topline
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-14">
             <a href={GOOGLE_BUSINESS_URL} target="_blank" rel="noopener noreferrer" aria-label="Read Topline Plumbing reviews on Google" className="rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
               <GoogleReviewsBadge />
             </a>
-            <BBBBadge />
-            <YelpBadge />
+            <FamilyOwnedBadge />
             <a href={CSLB_LOOKUP_URL} target="_blank" rel="noopener noreferrer" aria-label="Verify Topline Plumbing license #596557 on the CSLB website" className="rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
               <LicensedBadge />
             </a>
