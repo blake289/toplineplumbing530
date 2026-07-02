@@ -14,7 +14,7 @@ const pricingCards = [
       'Temperature & pressure test',
       'Sediment flush & cleaning',
     ],
-    href: '/services/water-heater-repair',
+    href: '/water-heater-repair-redding',
     featured: false,
   },
   {
@@ -25,10 +25,10 @@ const pricingCards = [
     features: [
       'Power auger cleaning',
       'Sewer line inspection',
-      'Clog removal guarantee',
+      'Kitchen, bath & main lines',
       'Same-day service available',
     ],
-    href: '/services/drain-cleaning',
+    href: '/drain-cleaning-redding',
     featured: true,
   },
   {
@@ -42,7 +42,7 @@ const pricingCards = [
       'Emergency diagnostics',
       'Upfront pricing',
     ],
-    href: '/services/emergency',
+    href: '/emergency-plumber-redding',
     featured: false,
   },
 ];
@@ -63,7 +63,7 @@ export default function Pricing() {
               Free estimates. No surprises.
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-gray-600">
-              You approve a flat, upfront price before any work begins. Free estimate with every service, and no surprise service-call fees.
+              You approve a flat, upfront price before any work begins. Free estimate with every service, and no surprise fees.
             </p>
           </div>
         </Reveal>

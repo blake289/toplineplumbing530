@@ -9,15 +9,15 @@ const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?cid=353211204535522869'
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy-900">
-      {/* Hero photo — service van in a Redding neighborhood — with navy overlay for contrast.
-          NOTE: AI-generated placeholder, NOT Topline's actual van. Swap before go-live. */}
+      {/* Hero photo — REAL photo of Joe Torculas installing a water heater
+          (was an AI-generated van placeholder; swapped 2026-07-01). */}
       <Image
-        src="/images/hero-truck-neighborhood.webp"
-        alt="Plumbing service van parked in a Redding residential neighborhood"
+        src="/images/truck.webp"
+        alt="Joe Torculas of Topline Plumbing installing a water heater in Redding"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[30%_center] -z-0"
+        className="object-cover object-[70%_30%] -z-0"
       />
       <div
         aria-hidden
@@ -110,7 +110,7 @@ export default function Hero() {
             {/* Trust badges */}
             <div className="mt-12 pt-6 border-t border-white/15">
               <p className="text-[12px] font-semibold tracking-[0.15em] text-gray-300 uppercase mb-8 text-center">
-                Trusted &amp; Reviewed Across
+                Why Homeowners Trust Topline
               </p>
               <div className="grid grid-cols-4 gap-4">
                 {[
@@ -128,21 +128,21 @@ export default function Hero() {
                   },
                   {
                     icon: (
-                      <div className="w-7 h-7 bg-gray-400 rounded flex items-center justify-center">
-                        <span className="text-white text-[9px] font-bold leading-none">BBB</span>
-                      </div>
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
                     ),
-                    label: 'A+ Rating',
-                    sub: 'BBB',
+                    label: 'Family Owned',
+                    sub: 'Since 1998',
                   },
                   {
                     icon: (
-                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                        <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.27-.635-.936-1.42l2.465-5.344c.333-.72 1.14-.468 1.37.24l1.91 4.362c.228.545.08 1.016-.814.73zm-8.144 5.25l1.07-5.116c.192-.92 1.213-.79 1.66-.116l3.244 4.572c.468.665.073 1.258-.666 1.12l-4.37-.786c-.668-.12-1.13-.755-.938-1.674zm-2.39-1.172l-4.33 2.36c-.738.4-1.37-.168-1.14-.905l1.66-5.27c.226-.72 1.01-.823 1.43-.2l3.132 4.586c.42.617.027 1.074-.753.43zm-.984-5.588L4.3 9.274c-.73-.334-.655-1.12.04-1.41L9.584 5.4c.696-.29 1.184.115 1.12.846l-.474 5.196c-.063.73-.67 1.045-1.588.642zm3.028-2.53l.82-5.156c.116-.726.944-.93 1.43-.42l3.336 3.51c.486.51.262 1.186-.488 1.29l-4.156.624c-.75.112-1.1-.395-.942-1.848z" />
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                       </svg>
                     ),
-                    label: '5-Star Rated',
-                    sub: 'Yelp',
+                    label: 'Free Estimates',
+                    sub: 'Every Job',
                   },
                   {
                     icon: (
